@@ -4,9 +4,9 @@ description: Med Adobe Photoshop-modulerna kan du starta ett Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 371adb5a5558674ecb8aa38b503b8a958c9fc5f5
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3714'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe Photoshop]-moduler:
               <p>Ange lösenordet för filen.</p>
             </li>
             <li value="5">
-              <p>Klicka på <b>Spara</b> för att extrahera filen och återgå till [!UICONTROL ]e-anslutningsinställningarna.</p>
+              <p>Klicka på <b>Spara</b> för att extrahera filen och återgå till anslutningsinställningarna.</p>
             </li>
           </ol>
         </td>

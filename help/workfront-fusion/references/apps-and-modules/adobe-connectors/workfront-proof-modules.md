@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: b1b206a0554832aadc9c42ce0b4f952301474086
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2727'
 ht-degree: 0%
 
 ---
@@ -696,8 +696,8 @@ När du konfigurerar den här modulen visas följande fält.
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Workfront Proof]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>Sök efter</td> 
-   <td> <p>Se[!UICONTROL ]Välj den typ av post som du vill att modulen ska söka efter.</p> 
+   <td>[!UICONTROL Search for]</td> 
+   <td> <p>Välj den typ av post som du vill att modulen ska söka efter.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>Ange korrekturnamnet för det korrektur som du vill söka efter.</p> </li> 
      <li> <p><strong>[!UICONTROL Recipient]</strong> </p> <p>Ange e-postadressen till mottagaren som du vill söka efter.</p> </li> 

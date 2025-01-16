@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du använda Markdo
 author: Becky
 feature: Workfront Fusion
 exl-id: f1134bbf-c244-4f52-8744-f97453b2ce8a
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1e95c93213c48aea9297a82669fb2012dbb27601
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL GitHub Flavored Markdown] </td> 
-   <td> <p>Aktivera det här alternativet om du vill konvertera GitHub Flavsted Markdown till HTML.</p> <p>Mer information finns i faktablad för mar[!DNL ]kdown i [!DNL GitHub] -dokumentationen.</p> </td> 
+   <td> <p>Aktivera det här alternativet om du vill konvertera GitHub Flavsted Markdown till HTML.</p> <p>Mer information finns i markeringsdatabladet i dokumentationen för [!DNL GitHub].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sanitize]</td> 

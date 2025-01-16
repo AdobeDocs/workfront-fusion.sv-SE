@@ -5,9 +5,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 8bd08379fc88c4d4f31ba1faba922869d7957b4a
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,7 @@ Den här åtgärdsmodulen skapar en enda post i [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Instruktioner om hur du ansluter ditt [!DNL Workday]-konto till Workfront Fusion finns i <a href="#Connect" class="MCXref xre[!DNL ]f" > Anslut [!DNL Workday] till [!DNL Workfront Fusion]</a>.</td>
+            <td>Instruktioner om hur du ansluter ditt [!DNL Workday]-konto till Workfront Fusion finns i <a href="#Connect" class="MCXref xref" > Anslut [!DNL Workday] till [!DNL Workfront Fusion]</a>.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record Type]</td>
@@ -195,7 +195,7 @@ Den här åtgärdsmodulen tar bort en enskild post i [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Instruktioner om hur du ansluter ditt [!DNL Workday]-konto till [!DNL Workfront Fusion] finns i <a href="#Connect" class="MCXref xre[!DNL ]f" >Anslut [!DNL Workday] till [!DNL Workfront Fusion]</a>.</td>
+            <td>Instruktioner om hur du ansluter ditt [!DNL Workday]-konto till [!DNL Workfront Fusion] finns i <a href="#Connect" class="MCXref xref" >Anslut [!DNL Workday] till [!DNL Workfront Fusion]</a>.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record type]</td>
@@ -231,7 +231,7 @@ Modulen returnerar statuskoden, tillsammans med rubrikerna och brödtexten för 
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!DNL Connection]</p> </td> 
-            <td>Instruktioner om hur du ansluter ditt [!DNL Workday]-konto till [!DNL Workfront Fusion] finns i <a href="#Connect" class="MCXref xre[!DNL ]f" >Anslut [!DNL Workday] till [!DNL Workfront Fusion]</a>.</td>
+            <td>Instruktioner om hur du ansluter ditt [!DNL Workday]-konto till [!DNL Workfront Fusion] finns i <a href="#Connect" class="MCXref xref" >Anslut [!DNL Workday] till [!DNL Workfront Fusion]</a>.</td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -272,8 +272,8 @@ Den här åtgärdsmodulen uppdaterar en enskild post i [!DNL Workday].
             <td>Instruktioner om hur du ansluter ditt [!DNL Workday]-konto till Workfront Fusion finns i <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] till Workfront Fusion]</a></td>
         </tr>
         <tr>
-            <td  role="rowheader">Posttyp</td>
-            <td>Välj den typ av post [!UICONTROL ]som du vill uppdatera.</td>
+            <td  role="rowheader">[!UICONTROL Record Type]</td>
+            <td>Välj den typ av post som du vill uppdatera.</td>
         </tr>
         <tr>
             <td role="rowheader">[!UICONTROL ID] </td>

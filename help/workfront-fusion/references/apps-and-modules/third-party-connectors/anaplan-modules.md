@@ -3,9 +3,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 99f2e558db3d2b126adf748d7e013a4a39735bcd
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
@@ -456,8 +456,8 @@ Den här sökmodulen returnerar alla tillgängliga poster av den valda typen.
        <li> <p><b>[!UICONTROL Line items]</b> </p> <p>Markera eller mappa ID:t för modellen som innehåller de [!DNL line] objekt som du vill hämta.</p> </li> 
        <li> <p><b>[!UICONTROL Model lists]</b> </p> <p>Markera eller mappa det ID för Workspace och det modell-ID som innehåller de modelllistor som du vill hämta.</p> </li> 
        <li> <p><b>[!UICONTROL Model calendar]</b> </p> <p>Markera eller mappa ID:t för den Workspace som innehåller den modellkalender som du vill hämta.</p> </li> 
-       <li> <p><b>Modellversioner</b> </p> </li> 
-       <li> <p>Markera eller mappa [!UICONTROL ]ID:t för den modell som innehåller de modellversioner som du vill hämta.</p> </li> 
+       <li> <p><b>[!UICONTROL Model versions]</b> </p> </li> 
+       <li> <p>Markera eller mappa ID:t för den modell som innehåller de modellversioner som du vill hämta.</p> </li> 
        <li> <p><b>[!UICONTROL Users]</b> </p> </li> 
        <li> <p><b>[!UICONTROL Views]</b> </p> <p>Välj om du vill välja vy efter modul eller modell och markera eller mappa sedan ID:t för modulen eller modellen som innehåller vyn som du vill hämta.</p> </li> 
       </ul> 

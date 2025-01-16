@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 9cf9ccb282514efc0de7a836f0433f2db2f9caf1
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3307'
 ht-degree: 0%
 
 ---
@@ -747,7 +747,7 @@ När du konfigurerar den här modulen visas följande fält.
 
 ### Iteratorer (borttagna)
 
-Modulerna [!UICONTROL iterate attachments] och [!UICONTROL iterate attendees] har tagits bort. Använd modulen [!UICONTROL Flow Control] > [!UICONTROL Iterator] för att iterera igenom bilagor eller deltagare. Mer information finns i [Iterator-modulen](/help/workfront-fusion/references/modules/iterator-module.md)
+Modulerna [!UICONTROL iterate attachments] och [!UICONTROL iterate attendees] har tagits bort. Använd modulen [!UICONTROL Flow Control] > [!UICONTROL Iterator] för att iterera igenom bilagor eller deltagare. Mer information finns i [Iteratormodul](/help/workfront-fusion/references/modules/iterator-module.md)
 
 ### Övriga
 
