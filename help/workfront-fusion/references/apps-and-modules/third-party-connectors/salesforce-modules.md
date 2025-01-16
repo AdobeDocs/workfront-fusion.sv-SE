@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2604'
 ht-degree: 0%
 
 ---
@@ -234,6 +234,7 @@ Denna utlösarmodul startar ett scenario när ett fält uppdateras i [!DNL Sales
 * [[!UICONTROL Custom API Call]](#custom-api-call)
 * [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument)
 * [[!UICONTROL Download Attachment/Document]](#download-attachmentdocument)
+* [Överför fil](#upload-file)
 
 #### [!UICONTROL Create a Record]
 
@@ -498,6 +499,41 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
  </tbody> 
 </table>
+
+#### Överför fil
+
+Den här åtgärdsmodulen överför en fil till Salesforce.
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL  Adobe Workfront Fusion] - grundläggande instruktioner</a></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Document linking]</td> 
+   <td>Välj om en innehållsdokumentlänk ska användas.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL linkedEntityId]</td> 
+   <td>Om du använder dokumentlänkning anger eller mappar du det länkade objektets ID.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ShareType]</td> 
+   <td>Om du använder dokumentlänkning väljer du behörigheter för filen.<ul><li><b>Behörighet för visningsprogram</b><p>Användaren kan visa filen.</p></li><li><b>Medarbetarbehörighet</b><p>Användaren kan visa och redigera filen.</p></li><li><b>Inkommande behörigheter</b><p>Behörigheterna baseras på användarens behörigheter till den relaterade posten, till exempel ett bibliotek.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Visibility]</td> 
+   <td>Om du använder dokumentlänkning anger eller mappar du dokumentets synlighet.<ul><li><b>AllaAnvändare</b><p>Tillgängligt för alla användare med behörigheter</p></li><li><b>InternalUsers</b><p>Tillgängligt för interna användare med behörigheter.</p></li><li><b>SharedUsers</b><p>Tillgängligt för användare som kan se den feed som filen skickas till.</p></li></ul></td> 
+  </tr>
 
 ### Sökningar
 
