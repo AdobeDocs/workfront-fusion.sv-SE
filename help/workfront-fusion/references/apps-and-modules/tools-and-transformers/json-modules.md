@@ -81,10 +81,9 @@ Om JSON-strängfältet innehåller en samling `{ ... }` är utdata ett enda pake
 >
 >```
 >{
->       "name" : "Peter",
+>    "name" : "Peter",
 >
->    
-   "ID" : 1
+>    "ID" : 1
 >}
 >```
 >
@@ -98,16 +97,15 @@ Om JSON-strängfältet innehåller arrayen `[ ... ]` är utdata en serie paket. 
 >
 >```
 >[
->   {
->       "name" : "Peter",
->       "ID" : 1
->   },
+>  {
+>    "name" : "Peter",
+>    "ID" : 1
+>  },
 >
->  
- {
->       "name" : "Mike",
->       "ID" : 2
->   }
+>  {
+>    "name" : "Mike",
+>    "ID" : 2
+>  }
 >]
 >```
 >
@@ -238,48 +236,49 @@ Den här åtgärdsmodulen omvandlar ett objekt till en json-sträng.
 >
 >1. Placera modulen [!DNL Google Sheets] > [!UICONTROL Select rows] i ditt scenario för att hämta data. Konfigurera modulen för att hämta rader från ditt [!DNL Google]-kalkylblad. Ställ in &#x200B;**[!UICONTROL Maximum number of returned rows]** på ett litet tal, men större än ett för testningsändamål (exempel, tre). Kör modulen [!DNL Google Sheets] genom att högerklicka på den och välja **[!UICONTROL Run this module only]**. Kontrollera modulens utdata.
 >
-1. Anslut modulen [!UICONTROL Array Aggregator] efter modulen [!DNL Google Sheets]. Välj modulen [!DNL Google Sheets] i fältet **[!UICONTROL Source node]** i modulens konfiguration. Låt de andra fälten vara som de är för tillfället.
+>1. Anslut modulen [!UICONTROL Array Aggregator] efter modulen [!DNL Google Sheets]. Välj modulen [!DNL Google Sheets] i fältet **[!UICONTROL Source node]** i modulens konfiguration. Låt de andra fälten vara som de är för tillfället.
 >
-1. Anslut [!UICONTROL JSON] > [!UICONTROL Create JSON] efter modulen [!UICONTROL Array Aggregator]. Modulens konfiguration kräver en datastruktur som beskriver JSON-formatet. Klicka på **[!UICONTROL Add]** för att öppna datastrukturinställningarna. Det enklaste sättet att skapa den här datastrukturen är att generera den automatiskt från ett JSON-exempel. Klicka på **[!UICONTROL Generator]** och klistra in JSON-exemplet i fältet **[!UICONTROL Sample data]**:
+>1. Anslut [!UICONTROL JSON] > [!UICONTROL Create JSON] efter modulen [!UICONTROL Array Aggregator]. Modulens konfiguration kräver en datastruktur som beskriver JSON-formatet. Klicka på **[!UICONTROL Add]** för att öppna datastrukturinställningarna. Det enklaste sättet att skapa den här datastrukturen är att generera den automatiskt från ett JSON-exempel. Klicka på **[!UICONTROL Generator]** och klistra in JSON-exemplet i fältet **[!UICONTROL Sample data]**:
 >
-**Exempel:**
+>     **Exempel:**
 >
-```
-{
-
-"books": [
-
-{
-
-"id": "ID",
-
-"title": "Title",
-
-"author": "Author"
-
-}
-
-]
-
-}
-```
+>     ```
+>     {
+>     
+>     "books": [
+>     
+>     {
+>     
+>     "id": "ID",
+>     
+>     "title": "Title",
+>     
+>     "author": "Author"
+>     
+>     }
+>     
+>     ]
+>     
+>     }
+>     
+>     ```
 >
-1. Klicka på **[!UICONTROL Save]**. Fältet [!UICONTROL Specification] i datastrukturen innehåller nu den genererade strukturen.
-1. Ändra namnet på datastrukturen till något mer specifikt och klicka på **[!UICONTROL Save]**. Ett fält som motsvarar rotarrayattributet visas som ett mappningsbart fält i JSON-modulens inställningar.
+>1. Klicka på **[!UICONTROL Save]**. Fältet [!UICONTROL Specification] i datastrukturen innehåller nu den genererade strukturen.
+>1. Ändra namnet på datastrukturen till något mer specifikt och klicka på **[!UICONTROL Save]**. Ett fält som motsvarar rotarrayattributet visas som ett mappningsbart fält i JSON-modulens inställningar.
 >
-1. Klicka på knappen **[!UICONTROL Map]** bredvid fältet och mappa `Array[]`-objektet från Array-aggregatorns utdata till det.
+>1. Klicka på knappen **[!UICONTROL Map]** bredvid fältet och mappa `Array[]`-objektet från Array-aggregatorns utdata till det.
 >
-1. Klicka på **[!UICONTROL OK]** för att stänga konfigurationen för modulen [!UICONTROL JSON].
+>1. Klicka på **[!UICONTROL OK]** för att stänga konfigurationen för modulen [!UICONTROL JSON].
 >
-1. Öppna konfigurationen för modulen [!UICONTROL Array Aggregator]. Ändra **[!UICONTROL Target structure]** från [!UICONTROL Custom] till fältet i modulen [!UICONTROL JSON] som motsvarar rotmatrisattributet. Mappa objekt från modulen [!DNL Google Sheets] till rätt fält.
+>1. Öppna konfigurationen för modulen [!UICONTROL Array Aggregator]. Ändra **[!UICONTROL Target structure]** från [!UICONTROL Custom] till fältet i modulen [!UICONTROL JSON] som motsvarar rotmatrisattributet. Mappa objekt från modulen [!DNL Google Sheets] till rätt fält.
 >
-1. Klicka på **[!UICONTROL OK]** för att stänga konfigurationen för modulen [!UICONTROL Array Aggregator].
+>1. Klicka på **[!UICONTROL OK]** för att stänga konfigurationen för modulen [!UICONTROL Array Aggregator].
 >
-1. Kör scenariot.
+>1. Kör scenariot.
 >
-Modulen [!UICONTROL JSON] matar ut rätt JSON-format.
+>Modulen [!UICONTROL JSON] matar ut rätt JSON-format.
 >
-1. Öppna inställningarna för modulen [!DNL Google Sheets] och öka [!UICONTROL Maximum number of returned rows] så att det blir större än antalet rader i kalkylbladet för att bearbeta alla data.
+>1. Öppna inställningarna för modulen [!DNL Google Sheets] och öka [!UICONTROL Maximum number of returned rows] så att det blir större än antalet rader i kalkylbladet för att bearbeta alla data.
 
 ## Felsökning
 
@@ -293,6 +292,6 @@ När du använder villkorssatser som `if` i JSON placerar du citattecknen utanf�
 
 >[!INFO]
 >
-**Exempel:**
+>**Exempel:**
 >
-![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
