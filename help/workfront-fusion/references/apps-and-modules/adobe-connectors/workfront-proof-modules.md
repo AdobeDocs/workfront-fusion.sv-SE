@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: b1b206a0554832aadc9c42ce0b4f952301474086
+source-git-commit: 27c1d38d4c9e4b47d2d9da094b005a0e72ce9bd0
 workflow-type: tm+mt
-source-wordcount: '2727'
+source-wordcount: '2664'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
 <table style="table-layout:auto">
@@ -32,35 +34,37 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet], [!UICONTROL [!DNL Workfront Fusion] för Automatisering av arbete]</p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Information om Workfront Proof
 
@@ -100,11 +104,11 @@ Du kan skapa en anslutning till ditt [!DNL Workfront Proof]-konto direkt inifrå
                 <td>Ange ett namn för anslutningen</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL connections.environmentType]</td>
+                <td  role="rowheader">[!UICONTROL Environment]</td>
                 <td>Ange om det är en produktionsmiljö eller en icke-produktionsmiljö som Förhandsgranska eller Sandbox.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL connections.authenticationType]</td>
+                <td role="rowheader">[!UICONTROL Type]</td>
                 <td>Ange om det här är ett tjänstkonto eller ett personligt konto.</td>
             </tr>
             <tr>
@@ -125,7 +129,7 @@ Du kan skapa en anslutning till ditt [!DNL Workfront Proof]-konto direkt inifrå
             </tr>
             <tr>
                 <td  role="rowheader">[!UICONTROL Production, Preview, or Custom Environment]</td>
-                <td>Välj en anslutning till en produktion, förhandsgranskning eller en anpassad miljö.</td>
+                <td>Produktions-, förhandsgransknings- eller anpassad miljö som du vill ansluta till.</td>
             </tr>
         </tbody>
     </table>
@@ -147,9 +151,61 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ### Utlösare
 
-* [Titta på korrektur](#watch-proofs)
 * [Se PDF i korthet](#watch-for-pdf-summary)
 * [[!UICONTROL Watch Proof Activity]](#watch-proof-activity)
+* [Titta på korrektur](#watch-proofs)
+
+#### [!UICONTROL Watch for PDF Summary]
+
+Den här snabbutlösarmodulen kör ett scenario när någon skapar en PDF-sammanfattning för ett korrektur.
+
+En webkrok krävs i den här modulen.
+
+Modulen returnerar alla standardfält som är associerade med korrekturet, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Den skapar också en ny händelseprenumeration för PDF-sammanfattningar och matar ut innehållet från attributet `pdf_url` som skickas i nyttolasten. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Webhook name]</td> 
+   <td>Ange eller mappa ett namn för den nya webkroken</td> 
+  </tr> 
+  <tr> 
+   <td>[!DNL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Workfront Proof]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Watch Proof Activity]
+
+Den här utlösarmodulen kör ett scenario när en angiven aktivitet inträffar på ett korrekturbevis.
+
+Modulen returnerar alla standardfält som är associerade med korrekturet, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Den skapar också en ny händelseprenumeration för PDF-sammanfattningar och matar ut innehållet från attributet `pdf_url` som skickas i nyttolasten. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!DNL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Workfront Proof]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Activity type]</td> 
+   <td>Välj om du bara vill se ett nytt beslut (inklusive korrekturstatusändringar) eller om den övergripande korrekturstatusen ska ändras.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Limit]</td> 
+   <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Watch Proofs]
 
@@ -173,71 +229,15 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td role="rowheader">Posttyp</td> 
-   <td>Välj den typ av [!DNL Workfront Proof]-post som du vill att modulen ska bevaka.</td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Utdata</td> 
-   <td> <p>Välj den information som du vill inkludera i utdatapaketet för den här modulen.</p> </td> 
+   <td>Välj om du vill hålla utkik efter nya korrektur eller efter nya generella korrekturbeslut.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Gräns</td> 
    <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
   </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch for PDF Summary]
-
-Den här snabbutlösarmodulen kör ett scenario när någon skapar en PDF-sammanfattning för ett korrektur.
-
-En webkrok krävs i den här modulen.
-
-Modulen returnerar alla standardfält som är associerade med korrekturet, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Den skapar också en ny händelseprenumeration för PDF-sammanfattningar och matar ut innehållet från det pdf_url-attribut som skickas i nyttolasten. Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-När du konfigurerar den här modulen visas följande fält.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Workfront Proof]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Webhook]</td> 
-   <td>Du kan välja en befintlig webbkrok eller skapa en ny. Mer information finns i <!--<a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->" class="MCXref xref"&gt;Direktutlösare (webhooks) i [!DNL Adobe Workfront Fusion]</a>. </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch Proof Activity]
-
-Den här utlösarmodulen kör ett scenario när en angiven aktivitet inträffar på ett korrekturbevis.
-
-Modulen returnerar alla standardfält som är associerade med korrekturet, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Den skapar också en ny händelseprenumeration för PDF-sammanfattningar och matar ut innehållet från attributet `pdf_url` som skickas i nyttolasten. Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-När du konfigurerar den här modulen visas följande fält.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Workfront Proof]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Activity type]</td> 
-   <td>Välj om du bara vill se ett nytt beslut (inklusive [!UICONTROL proof] statusändringar) eller om den övergripande korrekturstatusen ska ändras.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Objekt per sida</td> 
+   <td> <p>Om du vill numrera resultaten anger eller mappar du antalet returnerade resultat som ska visas på varje resultatsida. Talet måste vara mindre än eller lika med 100.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -254,11 +254,13 @@ När du konfigurerar den här modulen visas följande fält.
 
 #### [!UICONTROL Create Proof]
 
+<!--Cannot test Jan 2025-->
+
 Denna åtgärdsmodul skapar ett nytt korrektur eller en ny version av ett korrektur i [!DNL Workfront Proof].
 
 Du anger parametrarna för det nya korrekturet och källkorrekturet om du skapar en ny version.
 
-Modulen returnerar ID:t för den nya korrektur- eller korrekturversionen. Du kan mappa informationen i efterföljande moduler i scenariot.
+Modulen returnerar ID:t för den nya korrektur- eller korrekturversionen. Du kan mappa den här informationen i efterföljande moduler i scenariot.
 
 När du konfigurerar den här modulen visas följande fält.
 
@@ -372,7 +374,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Require login]</td> 
-   <td> <p>Ange om du vill att det skapade korrekturet ska kräva inloggning. </p> <!--<p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p>--> </td> 
+   <td> <p>Ange om du vill att det skapade korrekturet ska kräva inloggning. </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Resolution ID]</td> 
@@ -400,6 +402,8 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
  </tbody> 
 </table>
+
+
 
 #### [!UICONTROL Custom API Call]
 
@@ -459,7 +463,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Skriv det unika ID:t för beviset som finns på sidan [!UICONTROL Proof Details]. <!--For more information, see <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p>--> </td> 
+   <td> <p>Skriv det unika ID:t för beviset som finns på sidan [!UICONTROL Proof Details].  </td> 
   </tr> 
  </tbody> 
 </table>
@@ -557,11 +561,11 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Skriv det unika ID:t för beviset som finns på sidan [!UICONTROL Proof Details]. <!--For more information, see <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p> --></td> 
+   <td> <p>Skriv det unika ID:t för beviset som finns på sidan [!UICONTROL Proof Details]. </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Deadline]</td> 
-   <td> <p>Ange den deadline du vill ha för korrekturet som skapas. Använd följande datumformat:</p> <p><code>YYYY-MM-DD hh:mm</code></p> </td> 
+   <td> <p>Ange den deadline du vill ha för korrekturet som skapas. Använd datumformatet <code>YYYY-MM-DD hh:mm</code>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Default email notifications for subscribers]</td> 
@@ -585,7 +589,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions]</td> 
-   <td>Välj om personer som inte är deltagare ska kunna prenumerera på beviset.<br>Om du väljer det här alternativet kan du även välja [!UICONTROL Default Role] för prenumeranter, vilket beskrivs i den här tabellen.</td> 
+   <td>Välj om personer som inte är deltagare ska kunna prenumerera på beviset.<br>Om du väljer det här alternativet kan du även välja ett alternativ i fältet [!UICONTROL Default Role].</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions Validation]</td> 
@@ -613,7 +617,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td>[!UICONTROL Require login]</td> 
-   <td> <p>Ange om du vill att det skapade korrekturet ska kräva inloggning. </p> <!--<p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p>--> </td> 
+   <td> <p>Ange om du vill att det skapade korrekturet ska kräva inloggning. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Show Versions Like]</td> 
@@ -718,25 +722,3 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Workflow Templates]
-
-I den här sökmodulen visas alla tillgängliga arbetsflödesmallar.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Workfront Proof]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Outputs]</td> 
-   <td> <p>Välj den information som du vill inkludera i utdatapaketet för den här modulen.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Limit]</td> 
-   <td> <p>Ange eller mappa det maximala antalet mallar som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>

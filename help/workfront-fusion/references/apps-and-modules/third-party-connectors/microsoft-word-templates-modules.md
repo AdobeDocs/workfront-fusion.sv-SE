@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: 9e560995ff9f58a76bbecc521f7d2eef9d47fa48
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -21,42 +21,46 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
-   <td> <p>[!UICONTROL [!DNL Workfront Fusion] för automatisering och integrering av arbetet] </p> </td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
+   <td>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
+   <p>eller</p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
-   <td>Din organisation måste köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</td> 
-  </tr> <!--
-   <tr> 
-    <td role="rowheader">Access level configurations*</td> 
-    <td> 
-      <p>You must be a Workfront Fusion administrator for your organization.</p>
-     --> <!--
-      <p>You must be a Workfront Fusion administrator for your team.</p>
-     --> </td> 
-   </tr>
+   <td>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
+   <p>eller</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -133,11 +137,6 @@ I dokumentet visas telefonnumret så här:
 
 Du kan använda en loop-tagg, som också kallas avsnittstagg, för att upprepa ett textavsnitt. Radbryt texten genom att placera den mellan de inledande och avslutande looptaggarna. Namnet på en öppningstagg föregås av hash-tecknet #; namnet på en avslutande tagg föregås av ett snedstreck /.
 
-* [Slinga taggen med Fyll i en dokumentmodul](#loop-tag-with-fill-out-a-document-module)
-  <!-- [Loop tag with Fill a document with a batch of data module](#loop-tag-with-fill-a-document-with-a-batch-of-data-module)-->
-
-#### Loopa tagg med Fylla i en dokumentmodul {#loop-tag-with-fill-out-a-document-module}
-
 **Exempel:** Om du vill skapa ett dokument med namn och telefonnummer för varje kontakt i en kundlista kan du använda en [!DNL Microsoft Word Template]-modul och skapa följande mall:
 
 ```
@@ -158,29 +157,6 @@ Modulen skulle skapa följande dokument:
 > Eduard Salo, 4445552345
 ```
 
-<!--
-
-#### Loop tag with Fill a document with a batch of data module {#loop-tag-with-fill-a-document-with-a-batch-of-data-module}
-
-**Example:** You can export Google contacts into a table that you create using loop tags.
-
-The first module loads the template. The next module retrieves all contacts from the group you specify in [!DNL Google Contacts]. The aggregator module aggregates all values retrieved from Google Contacts and merges them into the template. And the last module saves the filled template to the desired location.
-
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-scenario-350x124.png)
-
-You could use this scenario with the following template:
-
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-template-350x26.png)
-
-To do this, you would set up the module as follows:
-
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-module-setup-350x323.png)
-
-The module would create the following document:
-
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-document-350x46.png)
--->
-
 ## [!DNL Microsoft Word Template] moduler
 
 Dessa moduler kräver ingen anslutning.
@@ -198,15 +174,15 @@ Med den här transformerarmodulen kan du fylla ett dokument med data som du ange
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
-   <td> <p>Ange de tecken som du vill markera början av texten som ska ersättas. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exempel: </b></span></span>Ange <code>&#91;&#91;</code> om du vill ersätta en text som liknar den här: <code>[[replace_me]]</code></p> </td> 
+   <td> <p>Ange de tecken som du vill markera början av texten som ska ersättas. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exempel: </b></span></span>Ange <code>&#91;&#91;</code> som ska ersätta <code>[[replace_me]]</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
-   <td> <p>Ange de tecken som du vill markera slutet av texten som ska ersättas. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exempel: </b></span></span>Ange <code>&#93;&#93;</code> om du vill ersätta en text som liknar den här: <code>[[replace_me]]</code></p> </td> 
+   <td> <p>Ange de tecken som du vill markera slutet av texten som ska ersättas. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exempel: </b></span></span>Ange <code>&#93;&#93;</code> som ska ersättas <code>[[replace_me]]</code></p>. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p> Mappa filen som du vill överföra från den tidigare modulen (t.ex. HTTP &gt; Hämta en fil eller Dropbox &gt; Hämta en filmodul). Eller ange datafilen manuellt.</p> </td> 
+   <td> <p> Välj en källfil från en tidigare modul eller mappa källfilens data.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
@@ -260,11 +236,11 @@ Den här aggregeringsmodulen är särskilt användbar när du vill skapa listor 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
-   <td> <p>Ange de tecken som du vill markera början av texten som ska ersättas. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exempel: </b></span></span>Ange <code>&#91;&#91;</code> om du vill ersätta en text som liknar den här: <code>[[replace_me]]</code></p> </td> 
+   <td> <p>Ange de tecken som du vill markera början av texten som ska ersättas. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exempel: </b></span></span>Ange <code>&#91;&#91;</code> som ska ersätta <code>[[replace_me]]</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
-   <td> <p>Ange de tecken som du vill markera slutet av texten som ska ersättas. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exempel: </b></span></span>Ange <code>&#93;&#93;</code> om du vill ersätta en text som liknar den här: <code>[[replace_me]]</code></p> </td> 
+   <td> <p>Ange de tecken som du vill markera slutet av texten som ska ersättas. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exempel: </b></span></span>Ange <code>&#93;&#93;</code> som ska ersätta <code>[[replace_me]]</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Group by]</td> 
@@ -276,15 +252,11 @@ Den här aggregeringsmodulen är särskilt användbar när du vill skapa listor 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p> Mappa filen som du vill överföra från den tidigare modulen (t.ex. HTTP &gt; Hämta en fil eller Dropbox &gt; Hämta en filmodul). Eller ange datafilen manuellt.</p> </td> 
+   <td> <p> Välj en källfil från en tidigare modul eller mappa källfilens data.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
    <td>Ange ett filnamn (inklusive filtillägg) för målutdatafilen.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Data source]</td> 
-   <td> <p>Välj ett alternativ för att ange om de data du använder kommer från ett formulär eller från en samling rådata (obearbetade datordata).</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Values]</td> 
