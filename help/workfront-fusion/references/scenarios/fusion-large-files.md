@@ -4,9 +4,9 @@ description: Stöd för stora filer finns för närvarande för Workfront- och H
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
+source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
@@ -27,15 +27,26 @@ Om du vill hantera större filer måste du uppdatera dina scenarier.
 
 ## Kopplingar som stöder stora filer
 
-För den första versionen har följande anslutningar stöd för stora filer.
+För närvarande har följande kopplingar stöd för stora filer.
 
-* Workfront > Överför dokument
-* Adobe Experience Manager Assets > Överför dokument
-* Workfront Proof > Överför fil
-* Adobe Authenticator > Anropa ett anpassat API
-* SharePoint > Skapa en fil och SharePoint > Hämta en fil
-* Salesforce > Överför fil
-* AWS S3 > Överför fil och AWS S3 > Hämta fil
+* Workfront
+   * Överför dokument
+   * Hämta dokument
+* Adobe Experience Manager Assets
+   * Överför dokument
+* Workfront Proof
+   * Överför fil
+   * Hämta korrektur för
+* Adobe Authenticator
+   * Göra ett anpassat API-anrop
+* SharePoint
+   * Skapa en fil
+   * Hämta en fil
+* Salesforce
+   * Överför fil
+* AWS S3
+   * Överför fil
+   * Hämta fil
 * HTTP
 
 Andra anslutningar stöds i framtida versioner.
@@ -74,7 +85,7 @@ Nej, antalet åtgärder som utförs av en modul är lika.
 
 ### När uppdateras Fusions användargränssnitt för att visa filöverföringsdata?
 
-Vi arbetar aktivt med uppdateringar av Fusions användargränssnitt för filöverföring på instrumentpanelen och sidan med information om scenariokörning, med en målinriktad version under första kvartalet 2025.
+Den här funktionen har redan slutförts och distribuerats till produktionen.
 
 ### Hur tänker jag på de nya filbearbetningsgränserna som kan hjälpa mig att utforma scenarier?
 
