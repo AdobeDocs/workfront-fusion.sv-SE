@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 4e45e691ed453cec5af1fa7b52204031af83f869
 workflow-type: tm+mt
-source-wordcount: '1809'
+source-wordcount: '1881'
 ht-degree: 0%
 
 ---
@@ -15,50 +15,54 @@ ht-degree: 0%
 
 I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som använder [!DNL Jira Software] samt ansluta det till flera tredjepartsprogram och -tjänster.
 
+Dessa instruktioner gäller både Jira Cloud- och Jira Server-moduler.
+
 Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
 
-<!-- Bob Fix this compared to original -->
-
 ## Åtkomstkrav
+
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
 
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -110,10 +114,10 @@ Om du vill ansluta [!DNL Jira Software] till [!DNL Workfront Fusion] måste du s
 
 #### Skapa en API-token i [!DNL Jira]
 
-1. Gå till [https://id.atlassian.com/manage/api-tokens](https://id.atlassian.com/manage/api-tokens) och logga in.
-1. Klicka på **[!UICONTROL Create API token]**.
-1. Ange ett namn för token, till exempel *Workfront Fusion*.
-1. Kopiera token med knappen **[!UICONTROL Copy to clipboard]**.
+1. Skapa en API-token i Jira.
+
+   Vi rekommenderar att du söker efter&quot;Skapa en API-token&quot; i Jiras dokumentation.
+1. När du har skapat token kopierar du den till en säker plats.
 
    >[!IMPORTANT]
    >
@@ -123,9 +127,11 @@ Om du vill ansluta [!DNL Jira Software] till [!DNL Workfront Fusion] måste du s
 
 #### Konfigurera API-token [!DNL Jira] i [!DNL Workfront Fusion]
 
-1. I [!DNL Workfront Fusion] lägger du till en [!DNL Jira]-modul i ett scenario för att öppna rutan **[!UICONTROL Create a connection]**.
+1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL connection] i någon [!DNL Jira Cloud]-modul i [!DNL Workfront Fusion].
 1. Ange följande information:
 
+   * **Miljö**
+   * **Typ**
    * **[!UICONTROL Service URL]:** Detta är den bas-URL som du använder för att komma åt ditt Jira-konto. Exempel: `yourorganization.atlassian.net`
    * **[!UICONTROL Username]**
    * **[!UICONTROL API token]:** Detta är den API-token som du skapade i avsnittet [Skapa en API-token i  [!DNL Jira]](#create-an-api-token-in-jira) i den här artikeln.
@@ -133,10 +139,6 @@ Om du vill ansluta [!DNL Jira Software] till [!DNL Workfront Fusion] måste du s
 1. Klicka på [!UICONTROL Continue] för att skapa anslutningen och återgå till modulen.
 
 ### Anslut [!DNL Jira Server] till [!DNL Workfront Fusion]
-
-<!--
-<p style="color: #ff1493;">Becky: Find out and document how to find these things</p>
--->
 
 Om du vill auktorisera en anslutning mellan [!DNL Workfront Fusion] och [!DNL Jira Server] behöver du din konsumentnyckel, privata nyckel och tjänst-URL. Du kan behöva kontakta din [!DNL Jira]-administratör för att få tillgång till den här informationen.
 
@@ -160,8 +162,7 @@ Om du vill hämta en privat nyckel för din [!DNL Workfront Fusion Jira]-anslutn
 
    * `openssl pkcs8 -topk8 -nocrypt -in jira_privatekey.pem -out jira_privatekey.pcks8`
 
-     Det här kommandot extraherar den privata nyckeln (PKCS8-format) till `jira_privatekey.pcks8`
--fil.
+     Det här kommandot extraherar den privata nyckeln (PKCS8-format) till filen `jira_privatekey.pcks8`.
 
    * `openssl x509 -pubkey -noout -in jira_publickey.cer  > jira_publickey.pem`
 
@@ -175,7 +176,7 @@ Om du vill hämta en privat nyckel för din [!DNL Workfront Fusion Jira]-anslutn
      >   
      >   `openssl x509 -pubkey -noout -in jira_publickey.cer`
      >   
-     >1. Kopiera terminalutdata (inklusive `-------BEGIN PUBLIC KEY--------` och `-------END PUBLIC KEY--------`)
+     >1. Kopiera terminalutdata, inklusive `-------BEGIN PUBLIC KEY--------` och `-------END PUBLIC KEY--------`.
      >   
      >1. Klistra in terminalutdata i en fil med namnet `jira_publickey.pem`.
 
@@ -251,6 +252,14 @@ Om du vill hämta en privat nyckel för din [!DNL Workfront Fusion Jira]-anslutn
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
       <td> <p>Ange ett namn för anslutningen</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
+      <td> <p>Välj om du använder en produktionsmiljö eller icke-produktionsmiljö.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Type]</p> </td> 
+      <td> <p>Ange om du använder ett tjänstkonto eller ett personligt konto.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Consumer Key]</td> 
@@ -340,7 +349,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Issue ID or Keys]</td> 
-   <td>Lägg till ett ärende-ID eller en nyckel för varje problem som du vill lägga till i skrivaren.</td> 
+   <td>För varje problem eller nyckel som du vill se upplevelsen klickar du på <b>[!UICONTROL Add item]</b> och anger ett ärende-ID eller en nyckel. Du kan ange upp till 50 i en modul.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -363,7 +372,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td> <p>Välj den typ av post som du vill att modulen ska skapa. När du väljer en posttyp visas andra fält som är specifika för den posttypen i modulen.</p> 
+   <td> <p>Välj den typ av post som du vill att modulen ska skapa och fyll sedan i de andra fälten som är specifika för den posttypen visas i modulen.</p> 
     <ul> 
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Comment]</li> 
@@ -378,7 +387,7 @@ När du konfigurerar den här modulen visas följande fält.
 
 #### [!UICONTROL Custom API Call]
 
-Med den här åtgärdsmodulen kan du göra ett anpassat autentiserat anrop till API:t [!DNL Jira Software]. På så sätt kan du skapa en dataflödesautomatisering som inte kan utföras av de andra [!DNL Jira Software]-modulerna.
+Med den här åtgärdsmodulen kan du göra ett anpassat autentiserat anrop till API:t [!DNL Jira Software]. Använd den här modulen för att skapa en dataflödesautomatisering som inte kan utföras av de andra [!DNL Jira Software]-modulerna.
 
 När du konfigurerar den här modulen visas följande fält.
 
@@ -416,7 +425,7 @@ När du konfigurerar den här modulen visas följande fält.
 
 #### [!UICONTROL Delete a record]
 
-Den här åtgärdsmodulen tar bort en viss post.
+Den här åtgärdsmodulen tar bort den angivna posten.
 
 Du anger postens ID.
 
@@ -542,7 +551,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID or Key]</td> 
-   <td>Ange eller mappa ID:t eller nyckeln för den post som du vill uppdatera.</td> 
+   <td>Ange eller mappa ID:t eller nyckeln för den post som du vill uppdatera och fyll sedan i de andra fälten som är specifika för den posttypen som visas i modulen.</td> 
   </tr> 
  </tbody> 
 </table>
