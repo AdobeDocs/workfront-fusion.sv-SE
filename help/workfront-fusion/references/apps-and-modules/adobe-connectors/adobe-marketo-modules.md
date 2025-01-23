@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1814'
 ht-degree: 0%
 
 ---
@@ -25,42 +25,46 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -87,11 +91,51 @@ Marketo Connector använder följande:
 
 ## Anslut [!DNL Marketo] till Workfront Fusion {#connect-marketo-to-workfront-fusion}
 
-Du kan skapa en anslutning till ditt [!DNL Marketo]-konto direkt inifrån modulen [!DNL Marketo].
+Du kan skapa en anslutning till ditt [!DNL Marketo]-konto direkt inifrån en [!DNL Marketo]-modul.
 
-1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL Connection] i någon [!DNL Marketo]-modul.
-1. Ange ditt [!DNL Marketo]-konto eller [!DNL Marketo] [!UICONTROL Munchkin]-ID. Detta är den unika delen av bas-URL:en eller slutpunkten som tilldelats ditt konto och som du använder för att komma åt [!DNL Marketo] via dess [!UICONTROL REST]-API. Instruktioner om hur du hittar detta finns i [Bas-URL](https://developers.marketo.com/rest-api/base-url/) i [!DNL Marketo] -dokumentationen.
-1. Ange din [!UICONTROL Client ID] och [!UICONTROL Client secret]. Instruktioner om hur du hittar dessa finns i [Autentisering](https://developers.marketo.com/rest-api/authentication/) i [!DNL Marketo]-dokumentationen.
+1. Klicka på **Lägg till** bredvid anslutningsfältet i en Marketo-modul.
+1. Fyll i följande fält:
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Ange ett namn för den nya anslutningen.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>
+          <p>Välj om du ansluter till en produktionsmiljö eller icke-produktionsmiljö.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>
+          <p>Ange om du ansluter till ett tjänstkonto eller ett personligt konto.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Account / Munchkin ID]</td>
+        <td>
+          <p>Ange ditt [!DNL Marketo]-konto eller [!DNL Marketo] [!UICONTROL Munchkin]-ID. Detta är den unika delen av bas-URL:en eller slutpunkten som tilldelats ditt konto och som du använder för att komma åt [!DNL Marketo] via dess [!UICONTROL REST]-API. Instruktioner om hur du hittar detta finns i [Bas-URL](https://developers.marketo.com/rest-api/base-url/) i [!DNL Marketo]-dokumentationen.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Ange ditt Marketo klient-ID. Instruktioner om hur du hittar det här finns i [Autentisering](https://developers.marketo.com/rest-api/authentication/) i [!DNL Marketo]-dokumentationen.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Ange din Marketo Client-hemlighet. Instruktioner om hur du hittar dessa finns i [Autentisering](https://developers.marketo.com/rest-api/authentication/) i [!DNL Marketo]-dokumentationen.</td>
+      </tr>
+     </tbody>
+    </table>
 1. Klicka på **[!UICONTROL Continue]** för att skapa anslutningen och gå tillbaka till modulen.
 
 ## [!DNL Marketo] moduler och deras fält
@@ -121,7 +165,7 @@ Den här utlösarmodulen startar ett scenario när en post skapas eller uppdater
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Webhook]</p> </td> 
-   <td> <p>Ange den webkrok som du vill att modulen ska använda.</p> <p>Mer information om webhooks finns i <!--<a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->" class="MCXref xref"&gt;Direktutlösare (webhooks) i [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Ange den webkrok som du vill att modulen ska använda.</p> <p>Mer information om webbhooks finns i <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md" class="MCXref xref">Webbhooks</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -147,13 +191,13 @@ Den här utlösarmodulen startar ett scenario när en post skapas eller uppdater
    <td> <p>Välj den typ av post som du vill skapa.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Activity]</strong> </p> <p>Välj den aktivitetstyp som du vill bevaka. </p> <p>Modulen söker endast efter nya aktiviteter.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Lead]</strong> </p> <p>Välj om du vill söka efter nya poster, uppdaterade poster, både nya och uppdaterade poster eller specifika fältuppdateringar. Om du väljer att bevaka specifika fältuppdateringar markerar du det fält som du vill att modulen ska bevaka.</p> </li> 
-     <li> <p><strong>[!UICONTROL Program]</strong> </p> <p>Välj om du vill söka efter nya poster, uppdaterade poster eller både nya och uppdaterade poster.</p> </li> 
+     <li> <p><strong>[!UICONTROL Lead]</strong> </p> <p>I fältet <b>Händelsetyp</b> väljer du om du vill söka efter nya poster, uppdaterade poster, både nya och uppdaterade poster eller specifika fältuppdateringar. Om du väljer att bevaka specifika fältuppdateringar markerar du det fält som du vill att modulen ska bevaka.</p> </li> 
+     <li> <p><strong>[!UICONTROL Program]</strong> </p> <p>I fältet <b>Händelsetyp</b> väljer du om du vill söka efter nya poster, uppdaterade poster eller både nya och uppdaterade poster.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td> <p>Välj den information som du vill inkludera i utdatapaketet för den här modulen.</p> </td> 
+   <td> <p>Markera de fält som du vill inkludera i utdatapaketet för den här modulen.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -177,7 +221,7 @@ Den här utlösarmodulen startar ett scenario när en post skapas eller uppdater
 
 #### [!UICONTROL Add Leads to a List]
 
-Den här åtgärdsmodulen lägger till en eller flera leads till en lista med lead-ID:t.
+Den här åtgärdsmodulen lägger till en eller flera leads till en lista med lead-ID:t. Du kan lägga till upp till 300 leads i taget.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -300,7 +344,7 @@ Med den här åtgärdsmodulen kan du göra ett anpassat autentiserat anrop till 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metoder för HTTP-begäran i [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metoder för HTTP-begäran</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -311,15 +355,8 @@ Med den här åtgärdsmodulen kan du göra ett anpassat autentiserat anrop till 
    <td> <p>Lägg till frågan för API-anropet i form av ett standard-JSON-objekt.</p> <p>Exempel: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Lägg till brödinnehållet för API-anropet i form av ett standard-JSON-objekt.</p> <p>Obs!  <p>När du använder villkorssatser som <code>if</code> i JSON placerar du citattecknen utanför villkorssatsen.</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska arbeta med under varje körningscykel för scenario.</p> </td> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td> <p>För varje fält som du vill lägga till i API-anropet klickar du på <b>Lägg till objekt</b> och anger fältets nyckel och värde.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -338,7 +375,7 @@ Den här åtgärdsmodulen hämtar en fil med hjälp av fil-ID:t.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>Mappa ID:t för filen som du vill hämta.</td> 
+   <td>Ange eller mappa ID:t för filen som du vill hämta.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -379,7 +416,7 @@ Den här åtgärdsmodulen läser information om en post med hjälp av dess ID.
 
 #### [!UICONTROL Remove Leads from a List]
 
-Den här åtgärdsmodulen tar bort en eller flera leads från en lista med lead-ID:t.
+Den här åtgärdsmodulen tar bort en eller flera leads från en lista med lead-ID:t. Du kan ta bort upp till 300 leads i taget.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -395,7 +432,7 @@ Den här åtgärdsmodulen tar bort en eller flera leads från en lista med lead-
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Lead IDs]</td> 
-   <td> <p>För varje lead som du vill ta bort från listan klickar du på <b>[!UICONTROL Add]</b> och anger eller mappar sedan ID:t för det lead som du vill ta bort. Du kan lägga till upp till 300 leads för modulen som ska tas bort från listan. </p> <p>Klicka på kartväxeln för att mappa en befintlig samling leads som du vill ta bort från listan.</p> </td> 
+   <td> <p>För varje lead som du vill ta bort från listan klickar du på <b>[!UICONTROL Add item]</b> och anger eller mappar sedan ID:t för det lead som du vill ta bort. Du kan lägga till upp till 300 leads för modulen som ska tas bort från listan. </p> <p>Klicka på kartväxeln för att mappa en befintlig samling leads som du vill ta bort från listan.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -418,7 +455,7 @@ Den här åtgärdsmodulen schemalägger en befintlig kampanj för ett visst datu
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Schedule for Date]</p> </td> 
-   <td>Välj det datum då du vill att kampanjen ska köras. Om fältet lämnas tomt körs kampanjen fem minuter efter att scenariot började.</td> 
+   <td>Välj det datum då du vill att kampanjen ska köras. Om fältet lämnas tomt körs kampanjen fem minuter efter att scenariot börjar.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -570,11 +607,11 @@ Den här sökmodulen hämtar en lista med poster som matchar specifika sökvillk
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Field]</p> </td> 
-   <td> <p>Välj om du vill söka efter namn, programnamn eller arbetsytans namn.</p> </td> 
+   <td> <p>Markera fältet som du vill söka efter.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values]</td> 
-   <td>För varje värde som du vill söka efter klickar du på <b>[!UICONTROL Add item]</b> och anger värdet.</td> 
+   <td role="rowheader">[!UICONTROL Value / values]</td> 
+   <td>Ange värdet för det fält som du vill söka efter. Om fältet tillåter dig att söka efter flera värden, för varje värde som du vill söka efter, klickar du på <b>[!UICONTROL Add item]</b> och anger värdet.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output]</td> 

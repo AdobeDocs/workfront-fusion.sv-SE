@@ -4,7 +4,7 @@ description: Du kan använda Adobe Workfront Fusion Adobe Workfront-kontakten f�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
 source-wordcount: '6208'
 ht-degree: 0%
@@ -104,7 +104,7 @@ Du kan skapa en anslutning till ditt Workfront-konto direkt inifrån en Workfron
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Ange ditt Workfront klient-ID. Detta finns under OAuth2-program under Konfigurera i Workfront. Om du inte har någon klienthemlighet för OAuth2-programmet i Workfront kan du generera en annan. Instruktioner finns i dokumentationen för Workfront.</td>
+        <td>Ange din Workfront-klienthemlighet. Detta finns under OAuth2-program under Konfigurera i Workfront. Om du inte har någon klienthemlighet för OAuth2-programmet i Workfront kan du generera en annan. Instruktioner finns i dokumentationen för Workfront.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Authentication URL]</td>
