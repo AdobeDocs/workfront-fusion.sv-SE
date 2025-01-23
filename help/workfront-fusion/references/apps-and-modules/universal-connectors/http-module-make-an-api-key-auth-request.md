@@ -4,9 +4,9 @@ description: Denna [!DNL Adobe Workfront Fusion] åtgärdsmodul skickar en HTTPS
 author: Becky
 feature: Workfront Fusion
 exl-id: 362b80b5-42f4-4b82-b06c-39c7c5a1eb1a
-source-git-commit: 6398261775584e33515c546de4e7a72d5830ebe0
+source-git-commit: c7309422b44b3804a233bcf09443e24808dbffd8
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '844'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,8 @@ Mer information om [!UICONTROL Adobe Workfront Fusion] licenser finns i [Adobe W
 När du konfigurerar modulen [!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request] visar [!DNL Adobe Workfront Fusion] fälten som listas nedan. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan i [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto"> 
  <col> 
