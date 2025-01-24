@@ -4,9 +4,9 @@ description: Stöd för stora filer finns för närvarande för Workfront- och H
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
+source-git-commit: 0e69dfa23fc12cb20c3fed772d72ef348536ea24
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '991'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,11 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Stora filmöjligheter är bara tillgängliga för Workfront Ultimate-kunder och är en fasad utrullning. Alla Fusion-organisationer med en Workfront Ultimate-plan kommer att ha stor filkapacitet i januari 2025.
+>Stora filfunktioner är bara tillgängliga för företag som har Workfront Ultimate-paketet.
 
 Förbättrade dataöverföringsfunktioner finns nu i Workfront Fusion, vilket gör att man kan hantera betydligt större filer i olika scenarier.
 
 Om du vill hantera större filer måste du uppdatera dina scenarier.
-
->[!NOTE]
->
->Den här funktionen är endast tillgänglig för användare som har Ultimate Workfront-paketet.
 
 ## Kopplingar som stöder stora filer
 
