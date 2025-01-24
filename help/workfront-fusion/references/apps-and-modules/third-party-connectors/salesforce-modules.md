@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 17ac09a19562839a9fdfc11bd274a6ed11f6d8f5
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2704'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Salesforce Connector använder följande:
   </tr> 
   <tr> 
    <td role="rowheader">API-version</td> 
-   <td> v46.0 </td> 
+   <td> v62.0 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">API-tagg</td> 
@@ -104,6 +104,60 @@ När du söker efter objekt kan du antingen ange enskilda sökord eller skapa en
 * Använd operatorn för citattecken (&quot; &quot;) för att hitta en exakt frasmatchning. Till exempel:&quot;Månadsmöte&quot;
 
 Mer information om sökmöjligheter finns i [!DNL Salesforce]-utvecklardokumentationen om SOQL och SOSL.
+
+## Skapa en anslutning till [!DNL Salesforce]
+
+Så här skapar du en anslutning för dina [!DNL Salesforce]-moduler:
+
+1. Klicka på **[!UICONTROL Add]** bredvid anslutningsrutan i någon [!DNL Salesforce]-modul.
+
+1. Fyll i följande fält:
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Ange ett namn för den nya anslutningen.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>
+          <p>Välj om du ansluter till en produktionsmiljö eller icke-produktionsmiljö.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>
+          <p>Ange om du ansluter till ett tjänstkonto eller ett personligt konto.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Ange ditt Salesforce klient-ID.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Ange din Salesforce-klienthemlighet. </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Sandbox]</td>
+        <td>Aktivera det här alternativet om det är en sandlådemiljö.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL API Version]</td>
+        <td>Ange den version av Salesforce API som du vill använda. Standardversionen är 62.0.</td>
+      </tr>
+    </tbody>
+    </table>
+
+1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
+
 
 ## [!DNL Salesforce]-moduler och deras fält
 
