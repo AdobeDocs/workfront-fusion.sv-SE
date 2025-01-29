@@ -4,9 +4,9 @@ description: Avsnittet  [!DNL Adobe Workfront Fusion Tools] innehåller flera an
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 757580687ff5d1617f83432952d9870bd697925e
+source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1994'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Du kan använda den här modulen för kontakter eller andra listor som är schem
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bundle]</td> 
-   <td> <p>Skapa anpassade paket genom att lägga till arrayobjekt. Arrayen består av par name - value.</p> </td> 
+   <td> <p>Skapa anpassade paket genom att lägga till arrayobjekt. För varje objekt som du vill lägga till i paketet klickar du på <b>Lägg till objekt</b> och anger objektets namn och värde.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -97,32 +97,30 @@ Du kan använda den här modulen för kontakter eller andra listor som är schem
 
 Den här modulen hämtar värden som tidigare har skapats av modulen [!UICONTROL Set Variable] eller [!UICONTROL Set Multiple Variables].
 
-Den här modulen kan läsa variabler som har angetts var som helst i scenariot, även om variabeln har angetts i en annan väg än där modulen [!UICONTROL Get Multiple Variables] finns. Det enda kravet är att modulen [!UICONTROL Tools] > [!UICONTROL Set Variable] eller [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] körs före modulen [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables]. Mer information om i vilken ordning moduler körs finns i [Routermodulen i [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Den här modulen kan läsa variabler som har angetts var som helst i scenariot, även om variabeln har angetts i en annan väg än där modulen [!UICONTROL Get Multiple Variables] finns. Det enda kravet är att modulen [!UICONTROL Tools] > [!UICONTROL Set Variable] eller [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] körs före modulen [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables]. Mer information om i vilken ordning moduler körs finns i [Lägg till en routermodul och konfigurera vägar](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto">
     <tr>
         <td>[!UICONTROL Variables]</td>
-        <td>Lägg till de variabler som du vill att modulen ska hämta.</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Variable name]</td>
-        <td>Mappa namnet på variabeln som du vill hämta för varje variabel som du lägger till.</td>
+        <td>För varje variabel som du vill att modulen ska hämta klickar du på <b>Lägg till objekt</b> och anger namnet på variabeln.</td>
     </tr>
 </table>
 
->[!INFO]
->
->**Exempel:** Följande är möjliga användningar av modulerna [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)]:
->
->* Om du vill lagra ett beräknat värde för senare användning, även i en annan väg. Detta är användbart när värdet används i flera moduler och formeln för att beräkna värdet är alltför komplex.
->* Felsöka en formel. Om en formel som används i en modul inte verkar ge rätt resultat kopierar du formeln och klistrar in den i en [!UICONTROL Set Variable]-modul som du infogar före den relevanta modulen. Koppla från modulerna efter modulen [!UICONTROL Set Variable] och kör scenariot. Verifiera utdata från modulen [!UICONTROL Set Variable], justera eller förenkla formeln, kör scenariot igen och fortsätt göra det tills problemet har lösts.
+>[!BEGINSHADEBOX]
+
+**Exempel:** Följande är möjliga användningar av modulerna [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)]:
+
+* Om du vill lagra ett beräknat värde för senare användning, även i en annan väg. Detta är användbart när värdet används i flera moduler och formeln för att beräkna värdet är alltför komplex.
+* Felsöka en formel. Om en formel som används i en modul inte verkar ge rätt resultat kopierar du formeln och klistrar in den i en [!UICONTROL Set Variable]-modul som du infogar före den relevanta modulen. Koppla från modulerna efter modulen [!UICONTROL Set Variable] och kör scenariot. Verifiera utdata från modulen [!UICONTROL Set Variable], justera eller förenkla formeln, kör scenariot igen och fortsätt göra det tills problemet har lösts.
+
+>[!ENDSHADEBOX]
 
 
 #### [!UICONTROL Get Variable]
 
 Den här modulen hämtar ett värde som tidigare har skapats av modulen [!UICONTROL Set Variable] eller [!UICONTROL Set Multiple Variables].
 
-Den här modulen kan läsa variabler som har angetts var som helst i scenariot, även om variabeln har angetts i en annan väg än där modulen [!UICONTROL Get Variable] finns. Det enda kravet är att modulen [!UICONTROL Tools] > [!UICONTROL Set Variable] eller [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] körs före modulen [!UICONTROL Tools] > [!UICONTROL Get Variable]. Mer information om i vilken ordning moduler körs finns i [Routermodulen i [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Den här modulen kan läsa variabler som har angetts var som helst i scenariot, även om variabeln har angetts i en annan väg än där modulen [!UICONTROL Get Variable] finns. Det enda kravet är att modulen [!UICONTROL Tools] > [!UICONTROL Set Variable] eller [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] körs före modulen [!UICONTROL Tools] > [!UICONTROL Get Variable]. Mer information om i vilken ordning moduler körs finns i [Lägg till en routermodul och konfigurera vägar](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -137,7 +135,7 @@ Den här modulen kan läsa variabler som har angetts var som helst i scenariot, 
 
 #### [!UICONTROL Increment function]
 
-Den här modulen returnerar ett värde som ökas med 1 efter varje moduls åtgärd.
+Den här modulen returnerar ett värde som ökas med 1 efter varje cykel eller varje scenario som körs.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -145,7 +143,7 @@ Den här modulen returnerar ett värde som ökas med 1 efter varje moduls åtgä
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reset a value]</td> 
-   <td> <p>Välj när du vill att modulen ska öka värdet. </p> 
+   <td> <p>Välj när du vill att modulen ska återställa värdet. Det är när du vill att värdet ska börja om vid det första värdet.</p> 
     <ul> 
      <li>[!UICONTROL After one cycle]</li> 
      <li>[!UICONTROL After one scenario run]</li> 
@@ -155,27 +153,30 @@ Den här modulen returnerar ett värde som ökas med 1 efter varje moduls åtgä
  </tbody> 
 </table>
 
->[!INFO]
->
->**Exempel:**
->
->Ett av användningsområdena för modulen är att implementera en tilldelning av aktiviteter, leads, e-postmeddelanden och så vidare, till användare i en grupp. Algoritmen väljer tilldelningar från en grupp i någon rationell ordning, som vanligtvis går uppifrån och ned i en lista. När algoritmen når slutet av listan ger den sedan nästa tilldelning till användaren högst upp i listan och fortsätter att göra tilldelningar nedåt i listan.
->
->Följande scenario skickar ett e-postmeddelande till den första mottagaren efter varje ojämnt numrerad körning av ett scenario och till den andra mottagaren efter varje jämn körning av ett scenario.
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-email-350x246.gif)
->
->1. Så här skapar du det här scenariot:
->1. Ange att fältet **[!UICONTROL Reset a value]** för modulen ska vara Aldrig.
->1. Ange flöde för udda värden. Ange filtret för den här vägen med den modulus-matematiska funktionen som är lika med `1`:
->
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd-350x459.png)
->
->  **Obs!**: Glöm inte att ändra operatorn [!UICONTROL Equal to] från standardoperatorn [!UICONTROL Text] till operatorn [!UICONTROL Numeric].
->
->1. Ange vägen för jämna värden med den modulus-matematiska funktionen som är lika med `0`:
->
->Ökningsfunktionen lägger till en varje gång scenariot körs. Filtren kontrollerar ökningen och agerar utifrån dess värde och ser till att e-postmeddelandena distribueras jämnt.
+>[!BEGINSHADEBOX]
+
+**Exempel:**
+
+Den här modulen kan användas för att implementera en tilldelning av uppgifter, leads, e-postmeddelanden och så vidare till användare i en grupp. Algoritmen väljer tilldelningar från en grupp i någon rationell ordning, som vanligtvis går uppifrån och ned i en lista. När algoritmen når slutet av listan ger den sedan nästa tilldelning till användaren högst upp i listan och fortsätter att göra tilldelningar nedåt i listan.
+
+Följande scenario skickar ett e-postmeddelande till den första mottagaren efter varje ojämnt numrerad körning av ett scenario och till den andra mottagaren efter varje jämn körning av ett scenario.
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+
+Så här skapar du det här scenariot:
+
+1. Ange att fältet **[!UICONTROL Reset a value]** för modulen ska vara Aldrig.
+1. Ange flöde för udda värden. Ange filtret för den här vägen med den modulus-matematiska funktionen som är lika med `1`:
+
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+
+**Obs!**: Glöm inte att ändra operatorn [!UICONTROL Equal to] från standardoperatorn [!UICONTROL Text] till operatorn [!UICONTROL Numeric].
+
+1. Ange vägen för jämna värden med den modulus-matematiska funktionen som är lika med `0`:
+
+Ökningsfunktionen lägger till en varje gång scenariot körs. Filtren kontrollerar ökningen och agerar utifrån dess värde och ser till att e-postmeddelandena distribueras jämnt.
+
+>[!ENDSHADEBOX]
 
 #### [!UICONTROL Set Multiple Variables]
 
@@ -187,21 +188,13 @@ Den här modulen skapar variabler som kan mappas av andra moduler i flödet. Var
  <tbody> 
   <tr> 
    <td>[!UICONTROL Variables]</td> 
-   <td>Lägg till de variabler som du vill att modulen ska ställa in.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable name] </td> 
-   <td>Ange variabelnamnet för varje variabel. Det här namnet visas när variabeln mappas i andra moduler. </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable value] </td> 
-   <td>För varje variabel anger du värdet för variabeln. </td> 
+   <td>För varje variabel som du vill lägga till klickar du på <b>Lägg till objekt</b> och anger variabelns namn och värde.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>Ange hur länge du vill att variablerna ska förbli giltiga (behåll samma värde).</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>: Variabeln är giltig för en cykel. Användbart när flera webbhooks i en enda scenariokörning tas emot (fler webbhooks = fler cykler). </li> 
+     <li><strong>[!UICONTROL One cycle]</strong>: Variabeln är giltig för en cykel. Detta är användbart när flera webbhooks tas emot i ett scenario, eftersom fler webbhooks skapar fler cykler. </li> 
      <li><strong>[!UICONTROL One execution]</strong>: Variabeln är giltig för körning av ett scenario. En körning kan innehålla en eller flera cykler.</li> 
     </ul> </td> 
   </tr> 
@@ -358,19 +351,21 @@ Den här modulen sammanfogar värden från de valda fälten i mottagna paket til
    <td> <p>Definiera ett uttryck som innehåller ett eller flera mappade objekt. De aggregerade data separeras under Grupper med samma uttrycksvärde. Varje grupp returnerar som ett separat paket som innehåller en nyckel med det utvärderade uttrycket och den aggregerade texten. På så sätt kan du använda Key (Nyckel) som ett filter i efterföljande moduler.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text]</td> 
-   <td> <p> Ange eller mappa den text som du vill att modulen ska sammanfoga.</p> </td> 
-  </tr> 
-  <tr> 
    <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
    <td>Välj det här alternativet om du vill stoppa scenariot när det inte finns några resultat.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Text]</td> 
+   <td> <p> Ange eller mappa den text som du vill att modulen ska sammanfoga.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**Exempel:** Du kan använda textaggregatorn för att infoga fler värden (till exempel kundnamn eller anteckningar) i ett paket och skicka ett e-postmeddelande som innehåller alla värden i e-postmeddelandets brödtext eller e-postmeddelandets ämne.
+>[!BEGINSHADEBOX]
+
+**Exempel:** Du kan använda textaggregatorn för att infoga fler värden (till exempel kundnamn eller anteckningar) i ett paket och skicka ett e-postmeddelande som innehåller alla värden i e-postmeddelandets brödtext eller e-postmeddelandets ämne.
+
+>[!ENDSHADEBOX]
 
 ### Transformers
 
@@ -380,7 +375,7 @@ Den här modulen sammanfogar värden från de valda fälten i mottagna paket til
 
 #### [!UICONTROL Compose a string]
 
-Konverterar alla värden till en strängdatatyp (text). Det gör mappningen enklare när du till exempel mappar binära data.
+Konverterar alla värden till en strängdatatyp (text). Detta gör mappningen enklare vid mappning, till exempel binära data.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -443,7 +438,7 @@ Kontrollerar om indatavärdet matchar den angivna listan med värden. Returnerar
   </tr> 
   <tr> 
    <td>[!UICONTROL Cases] </td> 
-   <td> <p>Om indata innehåller ett värde som har angetts för fältet [!UICONTROL Pattern], returneras värdet som har angetts för fältet [!UICONTROL Output].</p> <p>Om indata inte matchar något av de värden som du har angett i ett [!UICONTROL Pattern]-fält händer något av följande:</p> 
+   <td> För varje fall som du vill lägga till klickar du på <b>Lägg till objekt</b> och anger objektets mönster och utdata. <p>Om indata innehåller ett värde som har angetts för fältet [!UICONTROL Pattern], returneras värdet som har angetts för fältet [!UICONTROL Output].</p> <p>Om indata inte matchar något av de värden som du har angett i ett [!UICONTROL Pattern]-fält händer något av följande:</p> 
     <ul> 
      <li>Värdet från fältet [!UICONTROL Else] returneras</li> 
      <li>Om det inte finns något värde i fältet [!UICONTROL Else] returneras inga utdata.</li> 
