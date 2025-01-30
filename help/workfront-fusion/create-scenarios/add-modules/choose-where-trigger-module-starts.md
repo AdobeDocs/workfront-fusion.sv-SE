@@ -4,7 +4,7 @@ description: Vissa utlösarmoduler låter dig välja det första paket från vil
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: 9ec972ef7677874965d6b4cb646e87c0b2240214
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -119,4 +119,4 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
     </tbody> 
    </table>
 
-   <!--Markdown 0032 placeholder-->
+
