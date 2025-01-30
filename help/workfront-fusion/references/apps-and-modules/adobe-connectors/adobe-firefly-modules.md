@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 1219642306c03cb0aa6037493ce2f02ced80b99d
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,8 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
 <table style="table-layout:auto">
@@ -28,27 +30,27 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront package</td> 
    <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens</td> 
-   <td> <p>Nytt: [!UICONTROL Standard]</p><p>eller</p><p>Aktuell: [!UICONTROL Work] eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuell: Inga [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Äldre: Alla </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Workfront] Plan: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Planen [!DNL Workfront Fusion] ingår.</li></ul>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -57,6 +59,8 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -128,49 +132,6 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-### Göra ett anpassat API-anrop
-
-Den här åtgärdsmodulen gör ett anpassat anrop till Firefly API.
-
-Mer information om tillgängliga API:er finns i [Adobe Firefly API](https://developer.adobe.com/firefly-services/docs/firefly-api/) i Adobe Developer-dokumentationen.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Firefly] finns i <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Firefly]</a> i den här artikeln.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL URL]</td>
-      <td>
-        <p>Ange en relativ sökväg till <code>https://firefly-api-enterprise-stage.adobe.io/</code>.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Method]</p>
-      </td>
-   <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
-      <td>
-        <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p>
-        <p>Exempel: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] lägger till auktoriseringshuvuden automatiskt.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Lägg till brödinnehållet för API-anropet i form av ett standard-JSON-objekt.</p> <p>Obs!  <p>När du använder villkorssatser som <code>if</code> i JSON placerar du citattecknen utanför villkorssatsen.</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td>     </tr>
-  </tbody>
-</table>
-
 ### Expandera en bild
 
 Den här åtgärdsmodulen expanderar en bild, eventuellt med innehåll från en fråga som du anger.
@@ -206,7 +167,7 @@ Den här åtgärdsmodulen expanderar en bild, eventuellt med innehåll från en 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Seed]</td> 
-   <td>Ange eller mappa ett heltal. Du kan använda samma startvärde i en annan expanderingsmodul om du vill generera en liknande bild med olika format. </td> 
+   <td>För varje startvärde som du vill använda klickar du på <b>Lägg till objekt</b> och anger eller mappar ett heltal. Du kan använda samma startvärde i en annan expanderingsmodul om du vill generera en liknande bild med olika format. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -238,12 +199,12 @@ Den här åtgärdsmodulen fyller det maskerade området i en bild, eventuellt me
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Image]</td> 
-   <td>  <p> Klicka på <b>Lägg till en bild</b>. Välj en källfil från en tidigare modul eller mappa källfilens bildfilnamn och bilddata.</p> </td> 
+   <td>  <p> För varje bild som du vill fylla klickar du på <b>Lägg till en bild</b> och väljer sedan en källfil från en tidigare modul eller mappar källfilens bildfilnamn och bilddata.</p> </td> 
 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Mask]</td> 
-   <td>  <p> Klicka på <b>Lägg till en mask</b>. Välj en källfil från en tidigare modul eller mappa källfilens maskfilnamn och maskdata. Maskfilen representerar den anpassade mask som ska fyllas med genererat innehåll.</p> </td> 
+   <td>  <p>  Klicka på <b>Lägg till en mask</b> för varje mask som du vill använda. Välj en källfil från en tidigare modul eller mappa källfilens maskfilnamn och maskdata. Maskfilen representerar den anpassade mask som ska fyllas med genererat innehåll.</p> </td> 
 </td> 
   </tr> 
   <tr> 
@@ -320,3 +281,49 @@ Den här åtgärdsmodulen genererar en bild som baseras på en fråga som du ang
   </tr> 
  </tbody> 
 </table>
+
+
+
+### Göra ett anpassat API-anrop
+
+Den här åtgärdsmodulen gör ett anpassat anrop till Firefly API.
+
+Mer information om tillgängliga API:er finns i [Adobe Firefly API](https://developer.adobe.com/firefly-services/docs/firefly-api/) i Adobe Developer-dokumentationen.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Firefly] finns i <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Firefly]</a> i den här artikeln.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL URL]</td>
+      <td>
+        <p>Ange en relativ sökväg till <code>https://firefly-api.adobe.io/</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Method]</p>
+      </td>
+   <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td>
+        <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p>
+        <p>Exempel: <code>{"Content-type":"application/json"}</code></p>
+        <p>[!DNL Workfront Fusion] lägger till auktoriseringshuvuden automatiskt.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Body]</td>
+   <td> <p>Lägg till brödinnehållet för API-anropet i form av ett standard-JSON-objekt.</p> <p>Obs!  <p>När du använder villkorssatser som <code>if</code> i JSON placerar du citattecknen utanför villkorssatsen.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td>     </tr>
+  </tbody>
+</table>
+
