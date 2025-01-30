@@ -4,9 +4,9 @@ description: Med scenarioredigeraren kan du skapa och redigera scenarier i ett v
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Med scenarioredigeraren kan du skapa och redigera scenarier i ett visuellt gränssnitt.
 
-![](assets/scenario-editor.jpg)
+![Scenarioredigerare](assets/scenario-editor.jpg)
 
 ## Åtkomstkrav
 
@@ -71,7 +71,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 ## Öppna scenarioredigeraren och lägg till en modul:
 
-1. Klicka på **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) i den vänstra panelen.
+1. Klicka på **[!UICONTROL Scenarios]** ![Scenarioikonen](assets/scenarios-icon.png) i den vänstra panelen.
 1. Klicka på frågetecknet ![frågeikonen](assets/question-mark-full-size.png) och sök efter och klicka sedan på det program eller den tjänst som du vill börja med. Mer information om hur du konfigurerar en modul finns i [Konfigurera en modul](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
 ## Tillgängliga scenarioredigeringsåtgärder

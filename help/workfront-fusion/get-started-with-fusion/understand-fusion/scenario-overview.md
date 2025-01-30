@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion kräver en Adobe Workfront Fusion-licens fö
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Med Workfront Fusion kan du automatisera enkla eller komplexa arbetsflöden i Wo
 
 I det här exemplet utlöses scenariot när ett angivet fält ändras i en aktivitet eller ett problem i [!DNL Workfront]. När scenariot aktiveras hämtas information i det relaterade projektet och en skräddarsydd uppdatering skapas för en person som tilldelats en specifik roll i projektet.
 
-![](assets/fusion-template-example.png)
+![Mallexempel](assets/fusion-template-example.png)
 
 +++
 
@@ -90,7 +90,7 @@ Många program har dedikerade [!DNL Workfront Fusion]-anslutningar. Om det inte 
 
 I det här exemplet utlöses scenariot när en användare läggs till i ett [!DNL Excel]-kalkylblad. Scenariot kontrollerar om användaren är i [!DNL Workfront]. Om så inte är fallet skapas användaren i [!DNL Workfront] och användar-ID:t för Workfront läggs tillbaka i kalkylbladet.
 
-![](assets/fusion-integration-example.png)
+![Integrationsexempel](assets/fusion-integration-example.png)
 
 En lista över dedikerade anslutningar finns i [Fusion-program och deras modulreferenser: artikelindex](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 

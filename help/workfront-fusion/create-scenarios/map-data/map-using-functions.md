@@ -4,9 +4,9 @@ description: När du mappar objekt kan du använda funktioner för att skapa enk
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Så här infogar du en funktion i ett fält:
 
 I det här exemplet begränsar delsträngsfunktionen projektnamnet till 50 tecken.
 
-![](assets/example-meet-length-restriction-350x184.png)
+![Exempel på begränsning av möteslängd](assets/example-meet-length-restriction-350x184.png)
 
 >[!ENDSHADEBOX]
 
@@ -119,7 +119,7 @@ Du kan kapsla in funktioner i varandra.
 
 I det här exemplet begränsar delsträngsfunktionen det trimmade projektnamnet till 50 tecken.
 
-![](assets/trimmed-name-under-50.png)
+![Rensat namn](assets/trimmed-name-under-50.png)
 
 >[!ENDSHADEBOX]
 
@@ -150,9 +150,9 @@ Om [!DNL Workfront Fusion] inte innehåller någon funktion som du vill använda
 
       Du kan använda utdata från föregående moduler som vanligt.
 
-      ![](assets/exploit-google-sheet-functions-350x218.png)
+      ![Använd funktioner för Google-blad](assets/exploit-google-sheet-functions-350x218.png)
 
 1. Infoga modulen **[!UICONTROL Google Sheets]>[!UICONTROL Get a cell]** för att få fram det beräknade resultatet.
 1. Konfigurera modulen med samma cell-ID som du använde i steg 4.
 
-   ![](assets/exploit-google-sheet-functions-2-350x187.png)
+   ![Använd funktioner för Google-blad](assets/exploit-google-sheet-functions-2-350x187.png)

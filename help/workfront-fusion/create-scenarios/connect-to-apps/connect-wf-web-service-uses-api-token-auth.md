@@ -4,9 +4,9 @@ description: Vissa tjänster tillåter inte integreringslösningar som Adobe Wor
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a8ac816-52de-41e8-96d7-1c8cde2ebe32
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -185,7 +185,7 @@ Mer information om JSON-modulerna finns i [JSON-moduler](/help/workfront-fusion/
 
 1. Ange eller mappa de värden som du vill skapa JSON från.
 
-   ![](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
+   ![JSON-värden](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
 
 1. Anslut JSON > Create JSON-modulen till HTTP > Make a Request module.
 1. Mappa JSON-strängen från modulen Create JSON till innehållsfältet Request i HTTP > Make a Request module.

@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 9e560995ff9f58a76bbecc521f7d2eef9d47fa48
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -84,11 +84,11 @@ Du kan använda en [!DNL Microsoft Word Template]-modul för att sammanfoga data
 
 Du kan till exempel använda den här [!DNL Microsoft Word]-mallen:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
+![Word-mall före](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
 
 Så här skapar du det här dokumentet:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
+![Word-mallen fylld](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
 
 ## Om värdetaggar
 
@@ -110,7 +110,7 @@ En enkel värdetagg ersätts med ett motsvarande värde. Taggens namn motsvarar 
 
 Om du vill göra det ställer du in modulen enligt följande:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
+![Enkelt värde för Word-mall](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
 
 ### Villkorstagg {#condition-tag}
 
@@ -125,7 +125,7 @@ Du kan använda ett villkorsmärkord för att figursätta text som bara ska åte
 
 Om du vill göra det ställer du in modulen enligt följande:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
+![Villkorlig Word-mall](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
 
 I dokumentet visas telefonnumret så här:
 
@@ -148,7 +148,7 @@ Du kan använda en loop-tagg, som också kallas avsnittstagg, för att upprepa e
 Om du vill göra det ställer du in modulen enligt följande:
 
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
+![Fylla i ett dokument](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
 
 Modulen skulle skapa följande dokument:
 

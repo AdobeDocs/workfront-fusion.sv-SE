@@ -4,9 +4,9 @@ description: I den här artikeln beskrivs händelser som inträffar när ett  [!
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Om ett fel inträffar under operations- eller implementeringsfasen i en modul av
 >
 >Alla [!DNL Workfront Fusion]-moduler som stöder återställning (kallas även för transaktioner) markeras med ACID-taggen.
 >
->![](assets/acid-modules.png)
+>![Acid-moduler](assets/acid-modules.png)
 >
 >Moduler som inte är markerade med den här taggen kan inte återställas till det ursprungliga läget när fel inträffar i andra moduler. Ett typiskt exempel på en modul som inte är en ACID-modul är åtgärden [!UICONTROL Email] >[!UICONTROL Send an Email]. När e-postmeddelandet har skickats kan du inte ångra det.
 

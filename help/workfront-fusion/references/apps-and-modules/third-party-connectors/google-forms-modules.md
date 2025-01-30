@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Workfront Fusion Google Forms] -modulerna kan du �
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Om du vill arbeta med formulärsvaren måste du skapa kalkylbladet från svaren.
 
 1. Öppna formuläret.
 1. Gå till fliken **[!UICONTROL Responses]**.
-1. Klicka på ikonen **[!UICONTROL Create Spreadsheet]** ![](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
+1. Klicka på ikonen **[!UICONTROL Create Spreadsheet]** ![Kalkylblad](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
 
 1. Välj om du vill skapa ett nytt kalkylblad eller ett befintligt kalkylblad
 1. Klicka på **[!UICONTROL Create]**.

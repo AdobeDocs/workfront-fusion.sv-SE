@@ -4,9 +4,9 @@ description: När du skapar eller redigerar ett scenario kan du konfigurera inst
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: ce2f13866fef97b5687991dfcf5d9579a5e539e4
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -62,13 +62,13 @@ Du kan till exempel använda en [!UICONTROL Repeater]-modul för att skicka fem 
 
 Så här använder du en [!UICONTROL Repeater]-modul:
 
-1. Klicka på ikonen [!UICONTROL Flow Control] ![](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) längst ned på skärmen och klicka sedan på **[!UICONTROL Repeater]** på menyn som visas.
+1. Klicka på ikonen [!UICONTROL Flow Control] ![Flödeskontroll](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) längst ned på skärmen och klicka sedan på **[!UICONTROL Repeater]** på den meny som visas.
 1. Klicka på paketet [!UICONTROL Repeater] och klicka sedan på **[!UICONTROL Connect automatically]** i rutan som visas.
 1. I rutan [!UICONTROL Flow Control] som visas skriver du det antal upprepningar (utgående paket) som du vill ha i rutan **[!UICONTROL Repeats]**.
 
    I vårt e-postexempel skriver du 5.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
+   ![Upprepare](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
    Objektets värde ökar i varje repetition med det här värdet som anges i fältet **[!UICONTROL Step]**, som du kan visa genom att välja **[!UICONTROL Show advanced settings]**. Numret är som standard 1.
 
@@ -79,7 +79,7 @@ Så här använder du en [!UICONTROL Repeater]-modul:
 
    I vårt e-postexempel skriver du Hello i rutan [!UICONTROL Subject] och sedan mappar du `i` från den upprepade modulen.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
+   ![Upprepare](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
 | Objekt | Beskrivning |
 |---|---|

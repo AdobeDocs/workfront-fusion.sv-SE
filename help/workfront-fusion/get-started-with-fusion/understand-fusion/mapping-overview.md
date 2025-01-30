@@ -4,9 +4,9 @@ description: Mappning är processen att tilldela en moduls utdata, strukturerade
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,15 @@ När du klickar på ett fält där du kan infoga ett värde som matats ut från 
 
 Ett objekt
 
-![](assets/map-single.png)
+![Mappa enstaka objekt](assets/map-single.png)
 
 Flera objekt med text
 
-![](assets/map-multiple-with-text.png)
+![Mappa flera objekt](assets/map-multiple-with-text.png)
 
 Funktion med flera objekt och text
 
-![](assets/map-formula-with-text.png)
+![Mappa formel med text](assets/map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
@@ -56,11 +56,11 @@ Instruktioner om mappning finns i artiklarna under [Kartdata: artikelindex](/hel
 
 När du klickar i ett fält där du kan mappa data öppnas mappningspanelen.
 
-På den första fliken ![](assets/toolbar-icon-functions-you-map-from-other-modules.png) visas objekt som du kan mappa från andra moduler.
+På den första fliken ![Karta från andra moduler](assets/toolbar-icon-functions-you-map-from-other-modules.png) visas objekt som du kan mappa från andra moduler.
 
 De andra flikarna innehåller funktioner, operatorer och nyckelord som du kan använda för att skapa formler. Dessa sorteras på olika flikar baserat på vilken typ av data de hanterar.
 
-![](assets/mapping-panel-blank.png)
+![Mappningspanelen](assets/mapping-panel-blank.png)
 
 
 Mer information om funktionsflikar finns i [Funktionsöversikt](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
@@ -73,13 +73,13 @@ Objekt kan innehålla flera värden av olika typer. Det här är objekt av samli
 
 Samlingstyppaket visar `(Collection)` bredvid paketetiketten i modulutdata.
 
-![](assets/collection.png)
+![Samling](assets/collection.png)
 
 I de flesta fall mappar du samlingens element i stället för att mappa objektet som representerar hela samlingen.
 
 Om du vill hitta elementet i en samling på mappningspanelen klickar du på pilen bredvid samlingen.
 
-![](assets/collection-dropdown.png)
+![Listrutan Samling](assets/collection-dropdown.png)
 
 Mer information om samlingar finns i [Objektdatatyper](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
@@ -93,6 +93,6 @@ Paket av matristyp visar `(Array)` bredvid paketetiketten i modulutdata.
 
 På mappningspanelen visas arrayer med hakparenteser. Du kan identifiera ett arraytypobjekt med hakparenteser i slutet av objektets etikett. Om du vill hitta ett specifikt arrayelement på mappningspanelen klickar du på pilen bredvid arrayen.
 
-![](assets/array.png)
+![Array](assets/array.png)
 
 Mer information och instruktioner om att mappa arrayer och arrayelement finns i [Mappa arrayer och arrayelement](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).

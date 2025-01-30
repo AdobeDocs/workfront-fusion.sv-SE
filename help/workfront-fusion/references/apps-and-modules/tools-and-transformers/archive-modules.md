@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du ansluta ett ark
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Modulen returnerar filens ID och eventuella associerade fält, tillsammans med e
 >
 >**Exempel:** Hämta ZIP-filen från den definierade [!DNL Dropbox]-mappen (till exempel Arkiv), extrahera den med modulen [!UICONTROL Archive] och skicka extraherade filer till den önskade e-postadressen som bilagor med modulen [!UICONTROL Email] eller [!DNL Gmail].
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
+>![Exempel på Dropbox](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
 
 ## [!UICONTROL Create an archive]
 
@@ -98,7 +98,7 @@ När du konfigurerar den här modulen visas följande fält.
 >
 >**Exempel:** Titta på inkommande e-post med modulen [!DNL Gmail] >[!UICONTROL Watch emails]. Om ett e-postmeddelande tas emot itereras dess bilagor in i enskilda paket, arkiveras sedan i filen [!DNL ZIP] och sparas i den angivna Dropbox-mappen.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
+>![Exempel på Gmail](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 
 ## [!UICONTROL Inflate]
 

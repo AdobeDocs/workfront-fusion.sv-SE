@@ -4,9 +4,9 @@ description: Med XML-appen kan du tolka en XML-formaterad text via XML-modulen &
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1302'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ Modulen [!UICONTROL XML] > [!UICONTROL Parse XML] tolkar en XML-formaterad text 
 >
 >   **URL**: URL för XML-filen (t.ex. `https://siftrss.com/f/rqLy05ayMBJ`)
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
+>   ![URL för XML-filexempel](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
 >
 >1. Klicka på &#x200B; **[!UICONTROL OK]** för att spara och stänga modulens konfiguration.
 1. Lägg till [!UICONTROL XML] > modulen [!UICONTROL Parse XML], anslut den efter modulen [!UICONTROL HTTP] > [!UICONTROL Get a file] och konfigurera den enligt följande:
@@ -143,7 +143,7 @@ Som standard placerar modulen [!UICONTROL XML] > [!UICONTROL Parse XML] attribut
 
 konverteras till det här paketet:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
+![XML konverterad till paket](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
 
 ## Skapa XML
 
@@ -198,7 +198,7 @@ Modulens konfiguration kräver en datastruktur som beskriver strukturen för XML
 >
 1. Klicka på knappen **[!UICONTROL Generator]** och klistra in XML-exemplet i fältet [!UICONTROL Sample data]:
 >
-![](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
+![Exempeldatafält](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 >
 1. Klicka på **[!UICONTROL Save]**. Fältet Specifikation i datastrukturen innehåller nu den genererade strukturen.
 1. Ändra namnet på datastrukturen till något mer specifikt och klicka på **[!UICONTROL Save]**. Ett fält som motsvarar rotarrayattributet visas som ett mappningsbart fält i JSON-modulens inställningar.

@@ -4,9 +4,9 @@ description: Du kan använda  [!DNL Adobe Workfront Fusion] för att ansluta til
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,6 @@ Om en annan modul försöker få åtkomst till samma data måste den vänta till
 
 Aktivera Automatisk implementering. Den automatiska implementeringen slutför (verkställer) alla transaktioner omedelbart efter att modulen har körts.
 
-1. Klicka på ikonen [!UICONTROL Scenario settings] ![](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) längst ned på skärmen.
+1. Klicka på ikonen [!UICONTROL Scenario settings] ![Scenarioinställningar](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) längst ned på skärmen.
 1. Klicka i kryssrutan **[!UICONTROL Auto commit]**.
 1. Klicka på **[!UICONTROL OK]** om du vill spara scenarioinställningarna.

@@ -4,9 +4,9 @@ description: Med Adobe Workfront Fusion Google Presentations-modulerna kan du sk
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 6f5f97b9-b06a-4336-b349-ee9e2606d4bf
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -457,17 +457,17 @@ Utför ett godtyckligt auktoriserat API-anrop.
 >
 >**Exempel:** Om du använder ett API-anrop kan du få presentationsinformation för det presentations-ID du har angett. Du kan hitta presentations-ID:t i URL:en när du öppnar presentationen i [!DNL Google Slides].
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
+>![Exempel på API-anrop](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
 >
 >Följande API-anrop returnerar presentationsinformationen:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
+>![Presentationsinformation](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
 >
 >Det går att hitta matchningar av sökningen i modulens utdata under [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL presentationId].
 >
 >I det här exemplet returnerades de begärda presentationsdetaljerna:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+>![Presentationsinformation](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
 
 #### [!UICONTROL Insert Links in a Presentation]
 

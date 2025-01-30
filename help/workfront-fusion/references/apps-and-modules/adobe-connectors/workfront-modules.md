@@ -4,9 +4,9 @@ description: Du kan använda Adobe Workfront Fusion Adobe Workfront-kontakten f�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '6208'
+source-wordcount: '6213'
 ht-degree: 0%
 
 ---
@@ -2068,7 +2068,7 @@ Följande operatorer är tillgängliga i Workfront > filtret Bevakningshändelse
 >
 >Med hjälp av händelsefiltret kan du ställa in webkroken för att utlösa scenariot när ett problem tilldelas Ana när problemet skapas. Ana har användar-ID b378489d8f7cd3cee0539260720a84b7.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
+>![Händelsefilter](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
 >
 >Om 100 utgåvor skapas per dag, men bara två av dem tilldelas till Ana, körs scenariot två gånger.
 >
@@ -2076,7 +2076,7 @@ Följande operatorer är tillgängliga i Workfront > filtret Bevakningshändelse
 >
 >Om du vill filtrera händelser så att endast ärenden som tilldelats Ana behandlas, kan du skapa ett filter efter modulen [!UICONTROL Watch Events].
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
+>![Utan händelsefilter](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
 >
 >Om 100 utgåvor skapas per dag, men bara två av dem tilldelas till Ana, körs scenariot 100 gånger. 98 av körningarna stoppades vid filtret, men utlösarmodulen använder fortfarande data och utför åtgärder i alla körningar.
 

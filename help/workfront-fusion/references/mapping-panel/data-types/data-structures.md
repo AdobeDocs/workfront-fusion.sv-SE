@@ -4,9 +4,9 @@ description: En datastruktur är ett dokument som i detalj beskriver formatet p�
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -24,4 +24,4 @@ Datatyper som stöds beskrivs i artikeln [Datatyper](/help/workfront-fusion/refe
 
 Datastrukturer behöver inte alltid skapas. Du kan göra det enklare genom att använda en mall från vår inbyggda generator. Genom att tillhandahålla ett dataexempel kommer generatorn automatiskt att skapa en datastruktur baserat på det dataexempel du har angett. Den datastruktur som skapas kan sedan ändras manuellt.
 
-![](assets/data-structure-generator-350x341.jpg)
+![Datastrukturgenerator](assets/data-structure-generator-350x341.jpg)

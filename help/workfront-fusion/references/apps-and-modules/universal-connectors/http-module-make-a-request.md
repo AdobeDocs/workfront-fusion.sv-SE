@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion HTTP&gt; Make a request module är en univer
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 4377870d9441a3e84c51a547f17f154a78fb8f59
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 >
 >**Exempel:** I det här exemplet visas hur du ställer in modulen så att den skickar en [!UICONTROL POST]-begäran med JSON-nyttolast:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+>![Gör ett exempel på en förfrågan](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
 
 >[!NOTE]
 >

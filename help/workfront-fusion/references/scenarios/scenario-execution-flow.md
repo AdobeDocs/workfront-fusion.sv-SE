@@ -5,9 +5,9 @@ description: I den här artikeln beskrivs hur ett scenario körs och hur data fl
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Scenariots första steg, som utförs av den första modulen, är att bevaka beg�
 
 Om den första modulen returnerar ett paket, skickas paketet igenom resten av scenariot. I det här exemplet går paketet till den andra modulen, som konverterar begäran till ett projekt.
 
-![](assets/example-execution-flow-wf-only.png)
+![Körningsflöde för Workfront-scenario](assets/example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +50,7 @@ Scenariots första steg, som utförs av den första modulen, är att bevaka doku
 
 Om ett paket returneras skickas paketet igenom resten av scenariot. I det här exemplet består resten av scenariot av den andra modulen, som överför paketet till mappen [!DNL Dropbox].
 
-![](assets/example-execution-flow-wf-dropbox.png)
+![Körningsflöde för integrationsscenario](assets/example-execution-flow-wf-dropbox.png)
 
 Om den första modulen returnerar flera paket överförs det första paketet till [!DNL Dropbox] innan det andra paketet överförs. Sedan överförs det andra paketet, det tredje och så vidare.
 
@@ -71,7 +71,7 @@ För varje modul går paketet igenom en process i fyra steg innan du går vidare
 
 När ett scenario har körts visas en ikon som visar antalet åtgärder som har utförts i varje modul. Du kan klicka på den här ikonen om du vill visa detaljerad information om de bearbetade paketen för varje steg i processen. Du kan se vilka modulinställningar som användes och vilka paket som returnerades av varje modul.
 
-![](assets/Info-processed-bundles.png)
+![Bearbetade paket](assets/Info-processed-bundles.png)
 
 I det här exemplet tog modulen emot indatainformation som:
 

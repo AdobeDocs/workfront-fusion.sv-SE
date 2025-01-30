@@ -4,9 +4,9 @@ description: Många tjänster tillhandahåller webbhookar för att leverera snab
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 4c0f050e40d28f236d6086e7dccea53d49252aa8
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Många tjänster tillhandahåller webhooks för att leverera snabbmeddelanden när en viss ändring (händelse) inträffar i tjänsten. Om du vill bearbeta de här händelserna rekommenderar vi att du använder snabbutlösare. Direktutlösare visar taggen `Instant` i listan med moduler för en given koppling.
 
-![](assets/instant.png)
+![Direkt](assets/instant.png)
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ En videointroduktion till webbhooks i Workfront Fusion finns på:
 
 När du konfigurerar en direktutlösare uppmanas du att välja när den körs.
 
-![](assets/schedule-setting.png)
+![Schemainställning](assets/schedule-setting.png)
 
 Välj `Immediately` om du vill köra scenariot omedelbart när [!DNL Workfront Fusion] tar emot nya händelser från tjänsten. Dessa händelser skickas omedelbart till en kö och bearbetas sedan i scenariot en i taget i samma ordning som data tas emot.
 
@@ -62,7 +62,7 @@ Mer information om cykler finns i [Scenariokörning, cykler och faser](/help/wor
 
 Om du använder någon annan schemainställning än [!UICONTROL Immediately] körs scenariot med de intervall du anger. Eftersom det går att samla in flera webbböcker i kön under intervallet rekommenderar vi att du anger ett högre värde för alternativet [!UICONTROL Maximum number of cycles] än standardvärdet 1 för att bearbeta fler webbhooks i en enda scenariokörning:
 
-1. Klicka på ikonen [!UICONTROL Scenario settings] ![](assets/scenario-settings-icon.png) längst ned i ditt scenario.
+1. Klicka på ikonen [!UICONTROL Scenario settings] ![Scenarioinställningar](assets/scenario-settings-icon.png) längst ned i ditt scenario.
 1. På panelen **[!UICONTROL Scenario settings]** som visas anger du en siffra i fältet **[!UICONTROL Max number of cycles]** som anger antalet händelser från kön som du vill köra varje gång du kör scenariot.
 
 Återstående händelser i kön bearbetas nästa gång scenariot körs, upp till det antal som anges i fältet Max antal cykler.

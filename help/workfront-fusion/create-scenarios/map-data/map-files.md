@@ -4,9 +4,9 @@ description: Vissa moduler kan bearbeta filer. Dessa moduler kan antingen return
 author: Becky
 feature: Workfront Fusion
 exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -92,10 +92,10 @@ Så här mappar du en fil:
 1. I målmodulen, som är det mål som du mappar till, letar du reda på **Source-filområdet**.
 1. Om du vill mappa en fils utdata från en tidigare modul markerar du modulen som utdata från filen.
 
-   ![](assets/wf-download-document.png)
+   ![Workfront nedladdningsdokument](assets/wf-download-document.png)
 
 1. Om du vill mappa namn och data manuellt väljer du Karta och anger eller mappar sedan filens namn och data.
 
-   ![](assets/use-the-map-option.png)
+   ![Använd kartalternativet](assets/use-the-map-option.png)
 
 1. Fortsätt konfigurera modulen eller klicka på **OK**.

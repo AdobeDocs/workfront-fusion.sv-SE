@@ -4,9 +4,9 @@ description: Mappen [!UICONTROL Incomplete executions] lagrar scenariekörningar
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Om en modul påträffar ett fel under åtgärden läggs en ny ofullständig kör
 
 <!--
 
-![](assets/incomplete-executions-tab-350x102.png)
+![Incomplete executions tab](assets/incomplete-executions-tab-350x102.png)
 
 -->
 
@@ -113,7 +113,7 @@ Om du vill se loggen för alla åtgärder i modulen innan du försöker lösa de
 1. Öppna modulens logg där alla åtgärder i modulen visas.
 1. Leta reda på den misslyckade åtgärden och klicka på **[!UICONTROL Resolve]**:
 
-   ![](assets/resolve-btn-350x188.png)
+   ![Knappen Lös](assets/resolve-btn-350x188.png)
 
 ## Alternativ för ofullständiga körningar
 

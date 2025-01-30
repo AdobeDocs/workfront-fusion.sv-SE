@@ -4,9 +4,9 @@ description: Mappen [!UICONTROL Incomplete executions] lagrar scenariekörningar
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Fliken [!UICONTROL History] visar fler detaljer än vad som är tillgängligt p�
 
    eller
 
-   Om du arbetar med scenariot i scenarioredigeraren klickar du på vänsterpilen ![](assets/exit-editing-arrow.png) i fönstrets övre vänstra hörn.
+   Om du arbetar med scenariot i scenredigeraren klickar du på vänsterpilen ![Avsluta redigeringspilen](assets/exit-editing-arrow.png) i fönstrets övre vänstra hörn.
 
 1. Klicka på **Historik** bredvid namnet på scenariot.
    ![fliken Historik](assets/history-tab.png)
@@ -115,7 +115,7 @@ Fliken [!UICONTROL History] visar fler detaljer än vad som är tillgängligt p�
 
    eller
 
-   Om du arbetar med scenariot i scenarioredigeraren klickar du på vänsterpilen ![](assets/exit-editing-arrow.png) i fönstrets övre vänstra hörn.
+   Om du arbetar med scenariot i scenredigeraren klickar du på vänsterpilen ![Avsluta redigeringspilen](assets/exit-editing-arrow.png) i fönstrets övre vänstra hörn.
 
 1. Klicka på fliken **[!UICONTROL History]** i den högra panelen.
 1. (Valfritt) Om du vill ha detaljerad information om en vald scenariokörning klickar du på körningen i den högra panelen.
@@ -133,7 +133,7 @@ Fliken [!UICONTROL History] visar fler detaljer än vad som är tillgängligt p�
 Du kan filtrera körningshistoriken så att endast körningar med angivna värden visas.
 
 1. Öppna helsideshistoriken för ett scenario enligt beskrivningen i [Visa historik för scenariokörning på fliken [!UICONTROL History] ](#view-scenario-history-on-the-history-tab) i den här artikeln.
-1. Klicka på ikonen [!UICONTROL filter] ![](assets/fusion-scenario-filter-icon.png) i kolumnrubriken som du vill filtrera efter.
+1. Klicka på ikonen [!UICONTROL filter] ![Scenariofilterikon](assets/fusion-scenario-filter-icon.png) i kolumnrubriken som du vill filtrera efter.
 1. Ange de värden som du vill filtrera efter i dialogrutan [!UICONTROL filter].
 1. Klicka på **[!UICONTROL Save]**.
 

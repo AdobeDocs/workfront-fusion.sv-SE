@@ -4,9 +4,9 @@ description: CloudConvert-moduler
 author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2498'
 ht-degree: 0%
 
 ---
@@ -541,7 +541,7 @@ Utlöses när ett jobb i ditt konto eller din uppgift skapas, avslutas eller mis
 >* Om du arbetar med Array Aggregator (du t.ex. har många filer i olika format att konvertera) använder du alternativet **[!UICONTROL I don't know the input format]** i dialogrutan [!UICONTROL Add a task]. Annars returneras felet.
 >* Länkar aktiviteter inom jobbet (namn > indata, namn > indata,..):
 >
->  ![](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
+>  ![Länkar namn mellan jobb](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
 
 ### Uppgifter
 
@@ -745,13 +745,13 @@ URL: `/v2/tasks`
 
 Metod: `GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
+![API-exempelindata](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
 
 Det går att hitta matchningar av sökningen i modulens utdata under [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL data].
 
 I vårt exempel returnerades 6 uppgifter:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
+![API-exempelutdata](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
 
 ## Felsökning {#troubleshooting}
 
@@ -817,6 +817,6 @@ I följande tabell finns information om möjliga fel och deras lösningar:
 >1. Öppna modulens inställningar.
 >1. Konfigurera modulen enligt nedan:
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
+>   ![Exempel på CloudConvert](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
 >
 >1. Se till att inkludera alla inställningar i fältet Konvertering och motorspecifika alternativ: för varje inställning från steg 5 letar du reda på motsvarande parameter från steg 13 och dess motsvarande värde.

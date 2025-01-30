@@ -4,9 +4,9 @@ description: En aggregeringsmodul är en typ av modul som utformats för att sam
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ När en [!UICONTROL Aggregator]-modul körs gör den följande:
 
 I följande bild visas en typisk inställning för modulen [!UICONTROL Aggregator]:
 
-![](assets/array-aggregator.png)
+![Matrisaggregering](assets/array-aggregator.png)
 
 <table style="table-layout:auto">
  <col> 
@@ -113,7 +113,7 @@ I följande bild visas en typisk inställning för modulen [!UICONTROL Aggregato
 
 I det här exempelscenariot visas hur du komprimerar alla e-postbilagor och överför ZIP till [!DNL Dropbox].
 
-![](assets/dropbox-archive.png)
+![Exempel på Dropbox-arkiv](assets/dropbox-archive.png)
 
 Scenariot nedan visar hur man gör:
 
@@ -129,4 +129,4 @@ Scenariot nedan visar hur man gör:
 
 Nedan visas ett exempel på konfiguration av [!UICONTROL Archive] > [!UICONTROL Create an archive]-aggregatorn:
 
-![](assets/archive-create-an-archive.png)
+![Skapa ett arkiv](assets/archive-create-an-archive.png)

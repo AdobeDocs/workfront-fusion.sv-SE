@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Workfront Fusion] HubSpot CRM-modulerna kan du öv
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '5655'
+source-wordcount: '5661'
 ht-degree: 0%
 
 ---
@@ -1969,13 +1969,13 @@ Gör att du kan utföra ett anpassat API-anrop.
 >
 >**Metod**: `GET`
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-config.png)
+>![Konfiguration av Hubspot-API](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-config.png)
 >
 >Det går att hitta matchningar av sökningen i modulens utdata under [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL contacts].
 >
 >I vårt exempel returnerades tre kontakter:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-output.png)
+>![Utdata för Hubspot-API](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-output.png)
 
 +++
 

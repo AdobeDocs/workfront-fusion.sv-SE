@@ -4,9 +4,9 @@ description: Du kan kopiera moduler, grupper av moduler eller hela scenarier i A
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ När du klonar ett scenario skapas en kopia av scenariot, som du sedan kan redig
 
       eller
 
-      Om du arbetar med scenariot i scenarioredigeraren klickar du på vänsterpilen ![](assets/exit-editing-arrow.png) i fönstrets övre vänstra hörn.
+      Om du arbetar med scenariot i scenarioredigeraren klickar du på vänsterpilen ![Avsluta redigeringspilen](assets/exit-editing-arrow.png) i fönstrets övre vänstra hörn.
 
 1. Högerklicka på **[!UICONTROL Options]** längst upp till höger på sidan.
 1. Välj **[!UICONTROL Clone]**.

@@ -5,9 +5,9 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 94a823a6-3c70-42a1-b6cf-298591dbca15
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
@@ -229,13 +229,13 @@ Med den här åtgärdsmodulen kan du utföra ett anpassat API-anrop.
 >
 >Anger när begäran börjar söka efter statusändringar för kuvert i kontot.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-docusign-setup-350x770.png)
+>![Exempel på Docusign-konfiguration](/help/workfront-fusion/references/apps-and-modules/assets/example-docusign-setup-350x770.png)
 >
 >Resultatet finns i modulens Utdata under Paket > Brödtext > Omslag.
 >
 >I vårt exempel returnerades 6 kuvert:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
+>![Exempel på dokumentutdata](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
 
 #### [!UICONTROL Download a document]
 

@@ -4,9 +4,9 @@ description: Med Adobe Workfront Fusion Devtool kan du förstå och felsöka sce
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1324'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ Workfront Fusion Devtool är uppdelat i tre huvudavsnitt. De finns i den vänstr
 
 Live Stream visar vad som händer i bakgrunden när du klickar på Kör en gång i ditt scenario.
 
-1. Klicka på ikonen **[!UICONTROL Live Stream]** ![](assets/live-stream-icon.png) för att öppna Live Stream-avsnittet.
+1. Klicka på **[!UICONTROL Live Stream]**-ikonen ![Live-strömsikonen](assets/live-stream-icon.png) för att öppna Live-strömsavsnittet.
 1. Gör något av följande:
 
    <table style="table-layout:auto"> 
@@ -153,7 +153,7 @@ Live Stream visar vad som händer i bakgrunden när du klickar på Kör en gång
 
 Scenariofelsökaren är användbar för mer komplexa scenarier. Den visar historiken för scenariot som körs och gör att du kan söka efter moduler efter namn eller ID.
 
-1. Klicka på ikonen **[!UICONTROL Scenario Debugger]** ![](assets/scenario-debugger-icon.png) för att öppna felsökningsprogrammet för scenarier.
+1. Klicka på ikonen **[!UICONTROL Scenario Debugger]** ![Felsökning](assets/scenario-debugger-icon.png) för att öppna Felsökning för scenario.
 1. (Valfritt) Ange söktermen (namn eller modul-ID) i sökfältet.
 1. Klicka på modulnamnet.
 1. Klicka på åtgärden för att visa information om begäran.
@@ -162,7 +162,7 @@ Scenariofelsökaren är användbar för mer komplexa scenarier. Den visar histor
 
 Utvecklingsverktyget [!DNL Workfront Fusion] innehåller verktyg som gör det enklare att konfigurera ditt scenario.
 
-1. Klicka på ikonen **[!UICONTROL Tools]** ![](assets/console-tools-icon.png) för att öppna verktygen.
+1. Klicka på ikonen **[!UICONTROL Tools]** ![Konsolverktyg](assets/console-tools-icon.png) för att öppna verktygen.
 1. Välj det verktyg som du vill använda
 1. Konfigurera fälten enligt nedan.
 1. Klicka på **[!UICONTROL Run]**.

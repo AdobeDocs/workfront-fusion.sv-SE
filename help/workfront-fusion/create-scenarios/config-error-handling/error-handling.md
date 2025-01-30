@@ -4,9 +4,9 @@ description: När fel inträffar under körningen av ett scenario beror det ofta
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Så här lägger du till en felhanterare i en modul:
 1. Klicka någonstans i scenariot för att öppna Scenarioredigeraren.
 1. Högerklicka på den modul efter vilken du vill lägga till en felhanterarväg och välj **[!UICONTROL Add error handler]**:
 
-   ![](assets/error-handler-route.png)
+   ![Felhanterarväg](assets/error-handler-route.png)
 
    En felhanterarväg läggs till i modulen. Om modulen är den sista modulen i ett flöde följer felhanteraren direkt modulen. Om modulen har fler moduler efter det läggs en separat felhanterarväg till.
 

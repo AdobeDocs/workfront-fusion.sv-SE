@@ -4,7 +4,7 @@ description: Du kan använda modulen SOAP för att ansluta till SOAP API:er i Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: bf9af473f08463c00578a1a8b07c800239225f09
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Om modulen [!UICONTROL SOAP] vägrar att bearbeta WSDL-filen eller genererar oli
     </tbody> 
    </table>
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
+   <!--![Workaround](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
 
 1. Öppna ett nytt webbläsarfönster eller en ny flik.
 1. Klistra in WSDL-URL:en i webbläsarens adressfält och hämta XML-filen.
@@ -129,7 +129,7 @@ Om modulen [!UICONTROL SOAP] vägrar att bearbeta WSDL-filen eller genererar oli
 1. Om WSDL-filen inte visas direkt i webbläsaren öppnar du den hämtade filen i en textredigerare.
 1. Sök efter taggen `<service>` eller `<wsdl:service>`:
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
+   <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Kopiera URL-adressen från attributet `location` när den har hittats.
 1. I [!DNL Workfront Fusion] klistrar du in URL-adressen i HTTP-modulens URL-fält.
@@ -141,7 +141,7 @@ Om modulen [!UICONTROL SOAP] vägrar att bearbeta WSDL-filen eller genererar oli
 1. I [!UICONTROL Workfront Fusion] klistrar du in det kopierade innehållet i modulens URL-fält.
 1. Ange värden för valda parametrar genom att ersätta frågetecknen med faktiska värden:
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
+   <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 
 1. Stäng modulens konfiguration genom att klicka på **[!UICONTROL OK]**.
 1. Kör scenariot eller modulen.

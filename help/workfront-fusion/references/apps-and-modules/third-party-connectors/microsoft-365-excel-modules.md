@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2180'
 ht-degree: 0%
 
 ---
@@ -426,7 +426,7 @@ Detta startar ett scenario när en ny rad läggs till i en tabell.
 >
 >Tabellen här refererar till det inbäddade tabellelementet i arbetsboken. Inte hela tabellen (arbetsbok/ark).
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
+![Inbäddad tabell](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
 
 <table style="table-layout:auto"> 
  <col> 

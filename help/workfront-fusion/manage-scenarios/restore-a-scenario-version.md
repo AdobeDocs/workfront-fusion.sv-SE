@@ -4,9 +4,9 @@ description: Du kan återställa en tidigare version av ett scenario. På så s�
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 ## Återställa en scenarioversion
 
 1. Öppna ditt scenario.
-1. Klicka på ikonen [!UICONTROL More] ![](assets/more-icon.png) längst ned på skärmen och klicka sedan på **[!UICONTROL Previous Versions]**.
+1. Klicka på ikonen [!UICONTROL More] ![Mer ](assets/more-icon.png) längst ned på skärmen och klicka sedan på **[!UICONTROL Previous Versions]**.
 
 1. Klicka på **[!UICONTROL Pick the version]** och klicka sedan på den version som du vill återställa.
 1. Klicka på **[!UICONTROL OK]**.

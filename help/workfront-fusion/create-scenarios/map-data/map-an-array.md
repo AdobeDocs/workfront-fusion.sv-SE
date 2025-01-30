@@ -4,9 +4,9 @@ description: Du kan mappa en array eller enskilda arrayelement till ett modulfä
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Så här lägger du till element i arrayen:
 
 Arrayelement visas som ett tal inom hakparenteser efter arraynamnet. Du kan mappa ett enskilt element i en array till ett fält genom att använda detta indexnummer.
 
-![](assets/map-array-1st-element.png)
+![Mappa första elementet](assets/map-array-1st-element.png)
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Så här mappar du ett arrayelement:
 
 1. Om du vill mappa ett annat element i arrayen klickar du på [1] och anger indexnumret för det arrayelement som du vill mappa.
 
-   ![](assets/access-another-element.png)
+   ![Gå till ett annat element](assets/access-another-element.png)
 
 ### Mappa ett arrayelement med en given nyckel
 
@@ -138,13 +138,13 @@ Vissa arrayer innehåller samlingar med nyckelvärdesobjekt som metadata, attrib
 
 I följande exempel visas utdata för appen [!DNL Jira].
 
-![](assets/output-of-jira-app-350x100.png)
+![Utdata från Jira-modulen](assets/output-of-jira-app-350x100.png)
 
 I det här exemplet hämtas ett filnamn från en array med bilagor, för den specifika bilagan med ID 10108.
 
 I det här exemplet genereras följande utdata:
 
-![](assets/output-from-jira-350x261.png)
+![Utdata från Jira-modulen](assets/output-from-jira-350x261.png)
 
 Formeln kan förklaras på följande sätt:
 
@@ -153,7 +153,7 @@ Formeln kan förklaras på följande sätt:
    1. Den första parametern i funktionen `map()` är hela arrayobjektet.
    1. Den andra parametern är värdobjektets raw-namn. Håll markören över objektet på panelen [!UICONTROL mapping] om du vill få Raw-namnet:
 
-      ![](assets/obtain-raw-name-350x124.png)
+      ![Hämta raw-namn](assets/obtain-raw-name-350x124.png)
 
       >[!NOTE]
       >
@@ -161,7 +161,7 @@ Formeln kan förklaras på följande sätt:
 
    1. Den tredje parametern är nyckelobjektets raw-namn:
 
-      ![](assets/3rd-parameter-350x166.png)
+      ![Tredje parametern](assets/3rd-parameter-350x166.png)
 
    1. Den fjärde parametern är det angivna nyckelvärdet.
 
@@ -175,7 +175,7 @@ Formeln kan förklaras på följande sätt:
 
 I det här exemplet genereras följande utdata:
 
-![](assets/output-from-jira-350x261.png)
+![Utdata från Jira-modulen](assets/output-from-jira-350x261.png)
 
 >[!ENDSHADEBOX]
 
@@ -187,4 +187,4 @@ Mer information om funktionen `get()` finns i [Allmänna funktioner](/help/workf
 
 Matriser kan konverteras till en serie paket med modulen [!UICONTROL Iterator]. Mer information finns i [[!UICONTROL Iterator] modul](/help/workfront-fusion/references/modules/iterator-module.md).
 
-![](assets/series-of-bundles.png)
+![Paketserie](assets/series-of-bundles.png)

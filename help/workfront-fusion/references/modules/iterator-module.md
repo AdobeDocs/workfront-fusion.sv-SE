@@ -4,9 +4,9 @@ description: En Iterator-modul är en särskild typ av modul som konverterar en 
 author: Becky
 feature: Workfront Fusion
 exl-id: 43d39955-3dd7-453d-8eb0-3253a768e114
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -63,11 +63,11 @@ Mer information om Adobe Workfront Fusion-licenser finns i [[!DNL Adobe Workfron
 
 Den allmänna iteratormodulen har ett enda fält, fältet [!UICONTROL Array]. Det här fältet innehåller arrayen som ska konverteras eller delas upp i separata paket.
 
-![](assets/set-up-iterator.jpg)
+![Konfigurera iterator](assets/set-up-iterator.jpg)
 
 Andra kopplingar kan innehålla iteratormoduler som är specifika för den iteratorn. Dessa innehåller ett Source-modulfält, där du kan markera modulen som returnerar den array som du vill iterera från.
 
-![](assets/specialized-iterators.jpg)
+![Specialiserade iteratorer](assets/specialized-iterators.jpg)
 
 Mer information finns i [Konfigurera en modul](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
@@ -79,7 +79,7 @@ Mer information finns i [Konfigurera en modul](/help/workfront-fusion/create-sce
 
   E-postmeddelanden kan innehålla en array med bilagor. Modulen [!UICONTROL Iterator] efter den första modulen gör att scenariot kan hantera varje bifogad fil separat. Modulen [!UICONTROL Iterator] delar upp arrayen med bilagor i enskilda paket. Varje paket, med en bifogad fil, sparas sedan en i taget i en markerad [!DNL Dropbox]-mapp. Fältet [!UICONTROL Array] i iteratormodulen ska innehålla arrayen `Attachments`.
 
-  ![](assets/attachments-array.jpg)
+  ![Matris för bifogade filer](assets/attachments-array.jpg)
 
 >[!ENDSHADEBOX]
 
@@ -90,7 +90,7 @@ Mer information finns i [Konfigurera en modul](/help/workfront-fusion/create-sce
 
 När en [!UICONTROL Iterator]-modul inte har information om strukturen för arrayens objekt, visar mappningspanelen i modulerna efter [!UICONTROL Iterator]-modulen bara två objekt under [!UICONTROL Iterator]-modulen: `Total number of bundles` och `Bundle order position`.
 
-![](assets/mapping-panel-doesnt-display.png)
+![Mappningspanelen visas inte](assets/mapping-panel-doesnt-display.png)
 
 Detta beror på att varje modul ansvarar för att tillhandahålla information om de objekt den skickar ut, så att dessa objekt kan visas korrekt på mappningspanelen i efterföljande moduler. Det kan dock hända att flera moduler inte kan tillhandahålla den här informationen i vissa fall. [!UICONTROL JSON] > [!UICONTROL Parse JSON] eller [!UICONTROL Webhooks] > [!UICONTROL Custom Webhook] moduler som saknar datastruktur ger till exempel ingen information.
 
@@ -100,11 +100,11 @@ Lösningen är att manuellt köra scenariot. Detta tvingar modulen att skapa utd
 
 Ett scenario innehåller till exempel en [!UICONTROL JSON] > [!UICONTROL Parse JSON]-modul utan datastruktur.
 
-![](assets/json-parse-json.png)
+![Tolka JSON](assets/json-parse-json.png)
 
 En [!UICONTROL Iterator]-modul som är ansluten till den här JSON-modulen kan inte mappa modulens utdata till fältet Array på inställningspanelen i modulen [!UICONTROL Iterator].
 
-![](assets/connect-iterator-module.png)
+![Anslut iteratormodul](assets/connect-iterator-module.png)
 
 Så här löser du det:
 
@@ -120,8 +120,8 @@ Starta scenariot manuellt i scenarioredigeraren.
 
 När [!UICONTROL JSON] > [!UICONTROL Parse JSON] har körts kan den sedan tillhandahålla information om dess utdata till alla efterföljande moduler, inklusive Iterator-modulen. Mappningspanelen i Iteratorns inställningar visar sedan objekten:
 
-![](assets/mapping-panel-displays-items.png)
+![På mappningspanelen visas objekt](assets/mapping-panel-displays-items.png)
 
 Mappningspanelen i modulerna som är anslutna efter modulen [!UICONTROL Iterator] visar dessutom objekten i arrayen:
 
-![](assets/items-contained-in-array.png)
+![Objekt i arrayen](assets/items-contained-in-array.png)

@@ -4,9 +4,9 @@ description: I vissa scenarier behöver du bara arbeta med paket som uppfyller s
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Du måste lägga till båda modulerna i ett scenario innan du kan lägga till et
 
    Om du till exempel vill att filtret ska skicka filer i [!DNL Adobe Workfront] som slutar med XML, anger du **[!UICONTROL File name]** i den första rutan och .**[!UICONTROL xml]** i den andra rutan. I listrutan mellan dem väljer du **[!UICONTROL Ends with (case insensitive)]**. Det här filtret gäller inkommande paket från den första modulen (Workfront). Endast paket som innehåller XML-filer överförs till nästa modul.
 
-   ![](assets/set-up-filter-box.png)
+   ![Konfigurera ett filter](assets/set-up-filter-box.png)
 
 1. Klicka på **[!DNL OK]**.
 
@@ -110,7 +110,7 @@ Om du vill kopiera ett filter utan att kopiera moduler kan du använda Fusion De
 
    Om du inte ser ikonen DevTool läser du [Felsöka ett scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) för instruktioner om hur du öppnar DevTool.
 
-1. Klicka på ikonen **[!UICONTROL Tools]** ![](assets/devtools-tools-icon.png) i det vänstra fältet.
+1. Klicka på ikonen **[!UICONTROL Tools]** ![DevTool-verktyg](assets/devtools-tools-icon.png) i det vänstra fältet.
 
 1. Klicka på **[!UICONTROL Copy Filter]** och konfigurera sedan verktyget **[!UICONTROL Copy Filter]** på den högra panelen:
 

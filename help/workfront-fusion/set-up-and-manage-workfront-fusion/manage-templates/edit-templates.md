@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 473dba8b-faa4-432f-9357-c2146e86b261
-source-git-commit: 86b0d7b16a4ed7e15888f6ee1a58f0279e96fb70
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -73,13 +73,13 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. Klicka på **[!UICONTROL All Templates]** i den vänstra navigeringspanelen.
 1. Klicka på **[!UICONTROL Detail]** till höger om mallen som du vill redigera.
 1. (Valfritt) Byt namn på mallen genom att klicka på **Alternativ** i det övre högra hörnet och välja **Byt namn**.
-1. (Valfritt) Om du vill ändra språk för mallen klickar du på **[!UICONTROL Create a new template]** ![](assets/fusion-scenario-settings-icon.png) och väljer språk i listrutan Språk.
+1. (Valfritt) Om du vill ändra språk på mallen klickar du på ikonen **[!UICONTROL Create a new template]** ![Scenarioinställningar](assets/fusion-scenario-settings-icon.png) och väljer språk i listrutan Språk.
 
    >[!IMPORTANT]
    >
    >Valet Språk motsvarar de tillgängliga språken i systeminställningarna och gäller endast namnet på den offentliga mallen och dess beskrivning. Du kan inte ändra ett mallspråk när mallen har sparats.
 
-1. (Valfritt) Om du vill redigera mallbeskrivningen klickar du på **[!UICONTROL Set up a template]** ![](assets/fusion-scenario-settings-icon.png) och anger beskrivningen.
+1. (Valfritt) Om du vill redigera mallbeskrivningen klickar du på ikonen **[!UICONTROL Set up a template]** ![Scenarioinställningar](assets/fusion-scenario-settings-icon.png) och anger beskrivningen.
 1. Lägg till eller redigera program, moduler och verktyg på samma sätt som när du skapar ett standardscenario.
 
    Mer information om hur du lägger till sammanhangsbaserad hjälp till modulerna finns i [Konfigurera [!UICONTROL Wizard]-funktioner](#set-up-wizard-functionality) i den här artikeln.
@@ -91,7 +91,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
    >Om mallen innehåller moduler som kräver att anslutningen, inloggningsuppgifterna eller annan sekretesskänslig information läggs till, delas informationen inte med mallanvändarna.
 
 1. (Valfritt) Klicka på **[!UICONTROL Run once]** för att testa mallen.
-1. Klicka på ikonen **[!UICONTROL Save]** ![](assets/save-icon.png).
+1. Klicka på ikonen **[!UICONTROL Save]** ![Spara ](assets/save-icon.png).
 
 
 ## Konfigurera [!UICONTROL Wizard]-funktioner

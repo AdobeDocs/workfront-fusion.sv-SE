@@ -4,9 +4,9 @@ description: Följande datum- och tidsfunktioner är tillgängliga i panelen fö
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1800'
 ht-degree: 0%
 
 ---
@@ -333,7 +333,7 @@ Funktionen `formatDate` returnerar en textrepresentation av det angivna Date-vä
 
 **Exempel:** Scenario och Web timezone var båda inställda på `Europe/Prague` i dessa exempel.
 
-![](assets/date&time-functions-examples-350x61.png)
+![Exempel på funktion för datum/tid](assets/date&time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -463,7 +463,7 @@ Det här avsnittet är anpassat för [!DNL Workfront Fusion] från webbsidan [!D
 
 Om du behöver beräkna ett datum som motsvarar den n:e veckodagen i månaden (till exempel den första tisdagen, den tredje fredagen och så vidare) kan du använda följande formel:
 
-![](assets/date&time-functions-calc-nth-day-350x31.png)
+![Beräkna dag ](assets/date&time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
@@ -510,7 +510,7 @@ Om du bara vill beräkna ett specifikt fall, till exempel varje onsdag, kan du e
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![](assets/nth-day-variable-value-350x33.png)
+![Variabelvärde för dag ](assets/nth-day-variable-value-350x33.png)
 
 #### Förklaring:
 
@@ -521,7 +521,7 @@ Om du bara vill beräkna ett specifikt fall, till exempel varje onsdag, kan du e
 
 En möjlighet är att använda följande uttryck:
 
-![](assets/calculate-days-between-dates-350x68.png)
+![Beräkna dagar mellan datum](assets/calculate-days-between-dates-350x68.png)
 
 ```
 {{round((2.value - 1.value) / 1000 / 60 / 60 / 24)}}
@@ -541,7 +541,7 @@ När du anger ett datumintervall, till exempel i en sökmodul, måste du beräkn
 
 Formeln nedan visar ett sätt att beräkna den sista dagen i föregående månad:
 
-![](assets/last-day-prev-month.png)
+![Sista dagen i föregående månad](assets/last-day-prev-month.png)
 
 ```
 {{addDays(setDate(now; 1); -1)}}
@@ -553,7 +553,7 @@ I vissa fall behöver du inte bara beräkna den sista dagen i månaden, utan bok
 
 Den här formeln visar ett sätt att beräkna den sista millisekunddelen i föregående månad:
 
-![](assets/last-millisecond-prev-month-350x45.png)
+![Senaste millisekunden i föregående månad](assets/last-millisecond-prev-month-350x45.png)
 
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}
@@ -561,7 +561,7 @@ Den här formeln visar ett sätt att beräkna den sista millisekunddelen i före
 
 Om du behöver resultatet för att använda tidszonsinställningen utelämnar du UTC-argumentet:
 
-![](assets/omit-utc-argument-350x45.png)
+![Uteslut UTC](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 

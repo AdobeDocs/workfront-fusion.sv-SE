@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Acrobat Sign] modulerna kan du starta ett [!DNL Ad
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '5488'
+source-wordcount: '5501'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Nya användare av [!DNL Adobe Sign] bör vara noga med att uppdatera avtal. Avta
 
 [!DNL Adobe Sign] avtal behöver ett fält att arbeta med. Det finns vissa alternativ för att göra detta, men det enklaste och vanligaste är att överföra ett tillfälligt dokument och sedan mappa dokumentet till ditt avtal.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
+![Adobe Sign rekommendationer](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
 
 ## [!DNL Adobe Acrobat Sign]-moduler och deras fält
 
@@ -941,11 +941,11 @@ Den här åtgärdsmodulen uppdaterar poster som är relaterade till ett specifik
 
 **Exempel:** I det här arbetsflödet överförs det dokument som ska signeras (som tidigare hämtats från Workfront) som ett tillfälligt dokument.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
+(/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
 
 Modulen [!UICONTROL Upload document] ger dokumentet ett [!DNL Adobe Acrobat Sign]-ID som kan refereras i senare moduler. När avtalet skapas inkluderas det överförda dokumentets ID i fältet [!UICONTROL Files to send].
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
+![Exempel på signering](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
 
 +++
 

@@ -4,9 +4,9 @@ description: HTTP-appen  [!DNL Adobe Workfront Fusion] innehåller olika moduler
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: 6398261775584e33515c546de4e7a72d5830ebe0
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Du kan generera en JWT-token med hjälp av inbyggda funktioner:
 
 Sidhuvud:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
+![JWT-rubrik](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
 
 Kod för kopiera&amp;klistra in:
 
@@ -115,7 +115,7 @@ Kod för kopiera&amp;klistra in:
 
 Nyttolast:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
+![JWT-nyttolast](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
 
 Kod för kopiera&amp;klistra in:
 
@@ -125,7 +125,7 @@ Kod för kopiera&amp;klistra in:
 
 Token:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
+![JWT-token](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
 
 Kod för kopiera&amp;klistra in:
 

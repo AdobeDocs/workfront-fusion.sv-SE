@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '4256'
+source-wordcount: '4259'
 ht-degree: 0%
 
 ---
@@ -1212,7 +1212,7 @@ Den här åtgärdsmodulen lägger till en kommentar på ett markerat kort.
 
 Om du vill redigera ett kort eller skapa en ny kommentar måste du känna till kortets ID eller dess kortlänk. Du kan hämta den här informationen från utdata för utlösaren [!UICONTROL New Card]. Du kan även få genvägen för ett kort genom att öppna kortet och klicka på knappen [!UICONTROL Share]. Kortlänken finns i rutan [!UICONTROL Link to this card], i slutet av URL:en efter `https://trello.com/c/`.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
+![Dela och mer](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
 
 ### Söka efter ID:n för andra objekt i [!DNL Trello]
 

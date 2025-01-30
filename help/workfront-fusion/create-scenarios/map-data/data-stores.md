@@ -4,9 +4,9 @@ description: Ett datalager, som liknar en databas eller en enkel tabell, kan lag
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -197,8 +197,8 @@ Du kan redigera egenskaperna och innehållet i ett befintligt datalager i områd
 
 Egenskaperna för ett datalager omfattar datastrukturen som används i datalagret samt storleken på datalagret.
 
-1. Klicka på **[!UICONTROL Data stores]** ![](assets/data-store-icon.png) i den vänstra navigeringspanelen för att öppna området [!UICONTROL Data stores].
-1. Klicka på **[!UICONTROL Edit]** ![](assets/data-store-edit.png) bredvid datalagret som du vill redigera.
+1. Klicka på **[!UICONTROL Data stores]** ![ikonen för datalagring](assets/data-store-icon.png) i den vänstra navigeringspanelen för att öppna området [!UICONTROL Data stores].
+1. Klicka på **[!UICONTROL Edit]** ![Redigera datalager](assets/data-store-edit.png) bredvid datalagret som du vill redigera.
 1. (Valfritt) Om du vill ändra den datastruktur som används av det här datalagret till en annan befintlig datastruktur väljer du den i listrutan **[!UICONTROL Data structure]**.
 
    eller
@@ -210,7 +210,7 @@ Egenskaperna för ett datalager omfattar datastrukturen som används i datalagre
 
 ### Redigera innehållet i ett datalager
 
-1. Klicka på ikonen **[!UICONTROL Data Store]** ![](assets/data-store-icon.png) i den vänstra navigeringspanelen för att öppna området [!UICONTROL Data Store].
+1. Klicka på ikonen **[!UICONTROL Data Store]** ![ för datalagring ](assets/data-store-icon.png) i den vänstra navigeringspanelen för att öppna området [!UICONTROL Data Store].
 1. Klicka på **[!UICONTROL Browse]** bredvid det datalager som du vill redigera.
 1. (Valfritt) Ändra ordning på kolumner genom att dra dem till önskad plats.
 1. (Valfritt) [!UICONTROL Edit] en enskild cell genom att klicka på ikonen **[!UICONTROL Edit]** i den cellen och sedan ange önskat värde.

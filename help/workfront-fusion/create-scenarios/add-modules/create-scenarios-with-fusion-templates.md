@@ -4,9 +4,9 @@ description: Med funktionen Adobe Workfront Fusion Templates kan du skapa och an
 author: Becky
 feature: Workfront Fusion
 exl-id: 9bc5f195-c406-45e9-9a1e-5c8a2a0e0ded
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Offentliga mallar är tillgängliga utan krav.
 
 ## Skapa ett scenario från en mall
 
-1. Klicka på fliken **Mallar** ![](assets/templates-icon.png) i den vänstra navigeringspanelen.
+1. Klicka på ikonen **Mallar** ![Mallar](assets/templates-icon.png) i den vänstra navigeringspanelen.
 1. Klicka på fliken som innehåller mallen som du vill använda (**Offentliga mallar** eller **Team-mallar**).
 1. Sök efter en viss mall med hjälp av sökfältet i skärmens övre vänstra hörn. Du kan söka efter mallnamn eller inkluderade program.
 1. Klicka på mallen som du vill använda för att skapa ett scenario.
@@ -84,6 +84,6 @@ Offentliga mallar är tillgängliga utan krav.
 
 1. När du har konfigurerat alla inställningar som krävs för mallen får du ett meddelande om att mallen är klar att användas och standardscenarioalternativen visas längst ned på skärmen. Du kan nu fortsätta att skapa ditt scenario.
 
-1. Klicka på ikonen **Spara** ![](assets/save-icon.png) längst ned på skärmen för att spara ditt scenario.
+1. Klicka på ikonen **Spara** ![Spara ](assets/save-icon.png) längst ned på skärmen för att spara ditt scenario.
 
    Scenariot sparas i scenarioområdet i Workfront Fusion.

@@ -4,9 +4,9 @@ description: Med funktionen Adobe Workfront FusionTemplates kan du skapa och anv
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Du måste skapa en mall innan du kan använda den.
 
 ## Skapa ett scenario från en mall
 
-1. Klicka på ikonen **[!UICONTROL Templates]** ![](assets/templates-icon.png) i den vänstra navigeringspanelen.
+1. Klicka på ikonen **[!UICONTROL Templates]** ![Mallar ](assets/templates-icon.png) i den vänstra navigeringspanelen.
 1. Klicka på fliken som innehåller mallen som du vill använda (offentliga mallar eller gruppmallar).
 1. Klicka på mallen som du vill använda för att börja skapa ett scenario. Du kan använda sökrutan i det övre högra hörnet för att hitta mallen efter dess namn eller namnet på programmet som ingår i den.
 1. (Villkorligt) Om du är medlem i mer än en organisation eller team väljer du vilken organisation eller vilket team du vill skapa ditt scenario för och klickar på **[!UICONTROL Continue]**.
@@ -78,4 +78,4 @@ Du måste skapa en mall innan du kan använda den.
 
    Mer information om hur du skapar ett scenario finns i [Arbetsflöde för att skapa ett scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
 
-1. Klicka på ikonen **[!UICONTROL Save]** ![](assets/save-icon.png) för att spara ditt scenario. Scenariot sparas i Scenarioområdet i Workfront Fusion.
+1. Klicka på ikonen **[!UICONTROL Save]** ![Spara ](assets/save-icon.png) för att spara ditt scenario. Scenariot sparas i Scenarioområdet i Workfront Fusion.

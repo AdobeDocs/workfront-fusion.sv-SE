@@ -7,9 +7,9 @@ description: Lär dig skapa ett enkelt automatiseringsscenario med Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 8884aef2237ad358c774110b81ac17b9efb386d4
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
    Namnet visas precis nedanför modulen. Under det finns en kort beskrivning av den typ av åtgärd som har utförts av modulen i [!DNL Workfront Fusion].
 
-   ![](assets/module-renamed-wf.png)
+   ![Modulen har bytt namn](assets/module-renamed-wf.png)
 
 1. Fortsätt med [Lägg till och konfigurera den andra modulen](#add-and-configure-the-second-module).
 
@@ -191,9 +191,9 @@ I det här scenariot skulle ett lyckat test resultera i att begäran lokaliseras
 >
 >1. Stäng området **[!UICONTROL Notes]**.
 >
->     När du har lagt till en anteckning i ett scenario visas en orange punkt på ikonen **[!UICONTROL Notes]** ![](assets/notes-icon-w-dot.png) längst ned i scenarioredigeraren.
+>     När du har lagt till en anteckning i ett scenario visas en orange punkt på **[!UICONTROL Notes]**-ikonen ![Anteckningsikonen med en punkt ](assets/notes-icon-w-dot.png) längst ned i scenarioredigeraren.
 >
->1. Klicka på ikonen **[!UICONTROL Notes]** ![](assets/notes-icon-w-dot.png) för att visa dina anteckningar.
+>1. Klicka på ikonen **[!UICONTROL Notes]** ![Anteckningar med punkt ](assets/notes-icon-w-dot.png) om du vill visa anteckningarna.
 >
 
 ## Aktivera scenariot

@@ -4,9 +4,9 @@ description: Vissa utlösarmoduler låter dig välja det första paket från vil
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 9ec972ef7677874965d6b4cb646e87c0b2240214
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
    Högerklicka på ikonen för utlösarmodulen och välj **Välj var du vill starta**.
 
-   ![](assets/choose-where-to-start.png)
+   ![Välj var du vill börja](assets/choose-where-to-start.png)
 
 1. Välj ett alternativ i rutan **[!UICONTROL Choose where to start]** som visas.
 

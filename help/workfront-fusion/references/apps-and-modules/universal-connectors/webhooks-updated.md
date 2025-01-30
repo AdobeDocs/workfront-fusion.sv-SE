@@ -4,9 +4,9 @@ description: En webkrok är ett HTTP-anrop som aktiveras av en händelse. Du kan
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: d5ab7dc135206a7269ad4fa0b5c02bf77b97d873
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1331'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Du kan också skicka exempeldata via modulen [!UICONTROL HTTP] > [!UICONTROL Mak
     </tbody> 
    </table>
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
+   ![Ny scenariokonfiguration](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
 
 1. Öppna scenariot med modulen [!UICONTROL Webhooks] på en separat webbläsarflik eller i ett separat fönster.
 1. Klicka på **[!UICONTROL Redetermine data structure]** i webbmodulen.
@@ -132,7 +132,7 @@ Du kan också skicka exempeldata via modulen [!UICONTROL HTTP] > [!UICONTROL Mak
 
    Ett [!UICONTROL Successfully determined]-meddelande betyder att modulen har fastställt datastrukturen.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
+   ![Kontrollerades](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
 
 1. Klicka på **[!UICONTROL OK]** om du vill spara datastrukturen.
 
@@ -241,7 +241,7 @@ Du kan extrahera ett visst rubrikvärde med kombinationen av funktionerna `map()
 >
 >I exemplet nedan visas en formel som extraherar värdet för huvudet `authorization` från arrayen `Headers[]`. Formeln används i ett filter som jämför det extraherade värdet med den angivna texten för att skicka endast webhooks om det finns en matchning.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
+>![Konfigurera ett filter](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
 >Mer information om hur du hämtar en arrays element med en viss nyckel finns i [Mappa en arrays element med en viss nyckel](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key) i artikeln Mappa en array.
 
@@ -311,11 +311,11 @@ Tidsgränsen för att skicka ett svar är 40 sekunder. Om svaret inte är tillg�
 &gt; </tbody> 
 &gt;</table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
+>![Anpassade rubriker](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
 >Detta ger ett svar från HTML som visas i en webbläsare:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
+>![HEML-svar](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
 
 ### Exempel på omdirigering
 
@@ -342,7 +342,7 @@ Tidsgränsen för att skicka ett svar är 40 sekunder. Om svaret inte är tillg�
 &gt; </tbody> 
 &gt;</table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
+>![Webkrok-svar](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
 ## Webkroks-inaktivering
 
@@ -360,6 +360,6 @@ Inaktiverade webhooks tas bort och avregistreras automatiskt om de inte är ansl
 
 Om några objekt saknas i mappningspanelen i inställningarna för modulerna efter modulen [!UICONTROL Webhooks] > [!UICONTROL Custom Webhook] klickar du på modulen **[!UICONTROL Webhooks]>[!UICONTROL Custom Webhook]** för att öppna dess inställningar och sedan på **[!UICONTROL Re-determine data structure]**:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
+![Identifiera om datastrukturen](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 Följ sedan de steg som beskrivs i avsnittet [Konfigurera webkrockens datastruktur](#configure-the-webhook-s-data-structure) i den här artikeln.

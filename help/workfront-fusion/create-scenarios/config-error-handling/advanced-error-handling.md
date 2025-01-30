@@ -4,9 +4,9 @@ description: Du kan lägga till avancerade felhanteringstekniker i felhanterings
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ I det här exemplet visas hur dessa filter fungerar för felhantering.
 
 Om du använder Dropbox > Skapa en mappmodul och det redan finns en mapp med samma namn, genereras ett DataError-fel i modulen:
 
-![](assets/dropbox.png)
+![Fel i Dropbox](assets/dropbox.png)
 
 Det fullständiga scenariot fungerar så här:
 
-![](assets/dropbox-scenario.png)
+![Dropbox scenario](assets/dropbox-scenario.png)
 
 1. Verktyg > Ange variabel-modulen innehåller mappnamnet
 1. HTTP > Hämta en filmodul hämtar filen som behöver överföras till mappen
@@ -111,19 +111,19 @@ Nedan finns en detaljerad förklaring av DataError-flödet.
 
 Om du vill använda den befintliga mappen i efterföljande moduler, till exempel Överför en fil, måste du lägga till en felhanterarväg till modulen och hämta mappsökvägen som ska mappas till modulen Återuppta direktiv enligt följande:
 
-![](assets/add-error-handler-route.png)
+![Lägg till felhanterarväg](assets/add-error-handler-route.png)
 
 Filtret på den första vägen är inställt på att endast hantera det specifika felet (DataError) som visas när det redan finns en mapp med samma namn:
 
-![](assets/condition.png)
+![Villkor](assets/condition.png)
 
 Dropbox > Lista alla filer i en mappmodul är konfigurerad att returnera alla mappar i målmappen. Följande filter skickar bara det som vi ursprungligen försökte skapa. (Mappnamnet sparas i mappen 33. Mappnamn.)
 
-![](assets/condition2.png)
+![Villkor](assets/condition2.png)
 
 Direktivet Återuppta anger sedan mappsökvägen som utdata för den felaktiga modulen. Observera att mapp-ID:t har lämnats tomt eftersom det inte behövs av modulen Överför en fil.
 
-![](assets/flow-control.png)
+![Flödeskontroll](assets/flow-control.png)
 
 >[!ENDSHADEBOX]
 
@@ -137,7 +137,7 @@ Exempel:
 
 En kapslad felhanterarväg med filter:
 
-![](assets/nested-error-handling-route.png)
+![Kapslat felhanteringsflöde](assets/nested-error-handling-route.png)
 
 I det här scenariot kapslas den andra felhanterarvägen under den första felhanterarvägen.
 

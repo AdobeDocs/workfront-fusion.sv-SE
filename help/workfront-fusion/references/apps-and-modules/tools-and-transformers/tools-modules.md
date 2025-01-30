@@ -4,9 +4,9 @@ description: Avsnittet  [!DNL Adobe Workfront Fusion Tools] innehåller flera an
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Avsnittet [!DNL Adobe Workfront Fusion Tools] innehåller flera användbara moduler som kan förbättra ditt scenario.
 
-[!UICONTROL Tools] moduler är tillgängliga i listan över appar eller från [!UICONTROL Tools]-ikonen ![](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) längst ned på skärmen.
+[!UICONTROL Tools] moduler är tillgängliga i listan över program eller från [!UICONTROL Tools] ikonen ![Verktygsikonen](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) längst ned på skärmen.
 
 ## Åtkomstkrav
 
@@ -161,14 +161,14 @@ Den här modulen kan användas för att implementera en tilldelning av uppgifter
 
 Följande scenario skickar ett e-postmeddelande till den första mottagaren efter varje ojämnt numrerad körning av ett scenario och till den andra mottagaren efter varje jämn körning av ett scenario.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+![Exempel på e-post](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
 
 Så här skapar du det här scenariot:
 
 1. Ange att fältet **[!UICONTROL Reset a value]** för modulen ska vara Aldrig.
 1. Ange flöde för udda värden. Ange filtret för den här vägen med den modulus-matematiska funktionen som är lika med `1`:
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+   ![Udda siffror](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
 **Obs!**: Glöm inte att ändra operatorn [!UICONTROL Equal to] från standardoperatorn [!UICONTROL Text] till operatorn [!UICONTROL Numeric].
 

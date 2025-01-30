@@ -7,9 +7,9 @@ description: Adobe Workfront Fusion kräver en Adobe Workfront Fusion-licens fö
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-source-git-commit: a252de430a3c712c48c1677433ce6176292bc6ce
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Instruktioner om hur du skapar ett scenario från en mall finns i [Skapa scenari
 
 Du kan redigera alla mallar som är tillgängliga på fliken [!UICONTROL Team templates].
 
-1. Klicka på ikonen **[!UICONTROL Templates]** ![](assets/templates-icon.png) på sidnavigeringsmenyn.
+1. Klicka på ikonen **[!UICONTROL Templates]** ![Mallar](assets/templates-icon.png) på sidnavigeringsmenyn.
 1. Klicka på fliken **[!UICONTROL Team templates]**.
 1. Klicka på fliken **[!UICONTROL Private]**.
 1. Klicka på mallen som du vill redigera.
@@ -128,7 +128,7 @@ Du kan redigera alla mallar som är tillgängliga på fliken [!UICONTROL Team te
    Klicka på malldiagrammet.
 
 1. Gör ändringar i mallen. Du kan komma åt alla alternativ som var tillgängliga när du skapade mallen. Information om de här alternativen finns i [Skapa nya mallar](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md).
-1. Klicka på ikonen **[!UICONTROL Save]** ![](assets/save-icon.png).
+1. Klicka på ikonen **[!UICONTROL Save]** ![Spara ](assets/save-icon.png).
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Du kan bara ta bort mallar som ännu inte har godkänts. Kontakta administratör
 
 Observera att mallen inte kan återställas när du har tagit bort den. Teammallar är tillgängliga för alla medlemmar i ditt team, så innan du tar bort en mall rekommenderar vi att du kontrollerar med dina team att mallen inte behövs.
 
-1. Klicka på ikonen **[!UICONTROL Templates]** ![](assets/templates-icon.png) på sidnavigeringsmenyn.
+1. Klicka på ikonen **[!UICONTROL Templates]** ![Mallar](assets/templates-icon.png) på sidnavigeringsmenyn.
 1. Klicka på fliken **[!UICONTROL Team templates]**.
 1. Klicka på **[!UICONTROL Delete]** bredvid mallnamnet
 

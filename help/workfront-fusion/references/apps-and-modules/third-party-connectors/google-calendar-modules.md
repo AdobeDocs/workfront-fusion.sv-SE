@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3306'
+source-wordcount: '3314'
 ht-degree: 0%
 
 ---
@@ -829,7 +829,7 @@ Du kan utlösa ett scenario en viss tid före en händelse med hjälp av standar
 
 1. Använd modulen [!UICONTROL Google Calendar] >[!UICONTROL Update an event] för att lägga till en e-postpåminnelse till din händelse:
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
+   ![Utlös scenario före händelse](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
 
 1. Skapa ett nytt scenario som börjar med modulen [!UICONTROL Webhooks] >[!UICONTROL Custom mailhook].
 
@@ -847,11 +847,11 @@ Du kan utlösa ett scenario en viss tid före en händelse med hjälp av standar
    1. Klicka på bubblan ovanför modulen för att kontrollera modulens utdata.
    1. Expandera objektet `Text` och kopiera bekräftelsekoden:
 
-      ![](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
+      ![Bekräftelsekod](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
    1. I Gmail klistrar du in bekräftelsekoden i redigeringsrutan och klickar på &#x200B;**[!UICONTROL Verify]**:
 
-      ![](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
+      ![Klistra in kod](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
 
    1. Öppna fliken **[!UICONTROL Filters and Blocked Addresses]**.
    1. Klicka på **[!UICONTROL Create a new filter]**.

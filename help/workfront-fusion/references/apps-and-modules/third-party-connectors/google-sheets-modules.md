@@ -4,9 +4,9 @@ description: För att kunna använda  [!DNL Google Sheets] med [!DNL Adobe Workf
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3372'
 ht-degree: 0%
 
 ---
@@ -726,7 +726,7 @@ Använd modulen [!UICONTROL Search Rows (Advanced)] och använd den här formeln
 1. Kör scenariot.
 1. I Google Sheets väljer du **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**.. på huvudmenyraden.
 
-1. I fönstret [!UICONTROL Drawing] klickar du på ikonen **[!UICONTROL Text box]** ![](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) i fönstrets övre del.
+1. Klicka på **[!UICONTROL Text box]** -ikonen ![Textrutan](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) i fönstret [!UICONTROL Drawing].
 1. Utforma en knapp och klicka på knappen **[!UICONTROL Save and Close]** i det övre högra hörnet:
 1. Knappen placeras i kalkylbladet. Klicka på de tre lodräta prickarna i knappens övre högra hörn:
 1. Välj **[!UICONTROL Assign script..].** på menyn.
@@ -750,7 +750,7 @@ Använd modulen [!UICONTROL Search Rows (Advanced)] och använd den här formeln
 
 Om du lagrar ett datumvärde i ett kalkylblad utan formatering, visas det i kalkylbladet som text i ISO 8601-format. [!DNL Google Sheets] formler eller funktioner som fungerar med datum som inte förstår den här texten (Exempel: formel `=A1+10`) kommer att visa följande fel:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
+![Fel](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
 
 För att [!DNL Google Sheets] ska kunna förstå datumet formaterar du det med funktionen [[!UICONTROL formatDate] (date; format; [timezone])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatda). Det korrekta format som skickas till funktionen som det andra argumentet beror på kalkylbladets språkinställningar.
 
@@ -764,7 +764,7 @@ Så här avgör du korrekt format:
 
 **Exempel:** Användning av formatet `MM/DD/YYYY HH:mm:ss` för USA:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
+![Tidsformel för språkinställning](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
 
 ## Utnyttjar [!DNL Google Sheets] funktioner
 

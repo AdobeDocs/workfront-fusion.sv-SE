@@ -4,9 +4,9 @@ description: Ibland kan det vara användbart att köra en felande modul igen om 
 author: Becky
 feature: Workfront Fusion
 exl-id: 08e19a1a-7ca9-4c79-a165-f200048a5cda
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Repeatermodulens lösning är mer komplex, men mer anpassningsbar.
 
 I det här exempelscenariot representerar modulen [!UICONTROL HTTP] > [!UICONTROL Make a request] den modul som kan misslyckas:
 
-![](assets/http-make-request.png)
+![HTTP-begäran](assets/http-make-request.png)
 
 >[!ENDSHADEBOX]
 

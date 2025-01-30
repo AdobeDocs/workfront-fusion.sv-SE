@@ -4,9 +4,9 @@ description: Med routermodulen kan du dela in ditt flöde i flera flöden och be
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -71,13 +71,13 @@ Du måste lägga till en routermodul innan du konfigurerar vägar.
 1. Klicka på det högra handtaget i modulen som du vill lägga till routern efter i scenarieredigeraren.
 1. Välj **[!UICONTROL Flow Control]** > **Router** i listan med moduler som visas.
 
-   ![](assets/connect-the-router-350x108.png)
+   ![Anslut vägen](assets/connect-the-router-350x108.png)
 
    eller
 
    Om du vill infoga routermodulen mellan två moduler klickar du på skiftnyckelsikonen under vägen som förbinder de två modulerna och väljer **[!UICONTROL Add a router]** på menyn.
 
-   ![](assets/insert-router-350x191.png)
+   ![Infoga router](assets/insert-router-350x191.png)
 1. Lägg till den första vägen till routern genom att klicka på routerns högra handtag och lägga till en modul, ungefär som när du lägger till en modul.
 1. Klicka på routermodulen om du vill lägga till en annan väg. En rutt visas. Lägg till moduler på det här flödet efter behov.
 
@@ -125,13 +125,13 @@ Du kan aktivera ett reservflöde på filterpanelen.
 1. Lägg till en etikett i etikettfältet på panelen som visas. Den här etiketten visas i scenariot.
 1. Markera kryssrutan för reservflöde.
 
-   ![](assets/fallback-route-350x260.png)
+   ![Reservflöde](assets/fallback-route-350x260.png)
 
 1. Klicka på **[!UICONTROL OK]** om du vill spara filterinställningarna.
 
 Reservvägen är markerad med en annan pil i routermodulen:
 
-![](assets/arrow-sign-in-router-module-350x361.png)
+![Pilsignatur i routern](assets/arrow-sign-in-router-module-350x361.png)
 
 ## Exempel: `if/else` användningsfall
 
@@ -141,10 +141,10 @@ Ett typiskt användningsfall för reservflödet är att fortsätta flödet med e
 
 I det här exemplet konfigureras den första vägen med ett filter. Detta representerar komponenten `if`.
 
-![](assets/set-up-a-filter-2-350x242.png)
+![Konfigurera ett filter i flödet](assets/set-up-a-filter-2-350x242.png)
 
 Den andra vägen är konfigurerad som en reservväg. Detta representerar komponenten `else`.
 
-![](assets/enable-fallback-route-option-350x238.png)
+![Aktivera alternativ för återgång](assets/enable-fallback-route-option-350x238.png)
 
 >[!ENDSHADEBOX]

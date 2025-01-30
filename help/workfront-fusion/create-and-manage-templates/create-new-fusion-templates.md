@@ -4,9 +4,9 @@ description: Du kan skapa nya scenariomallar i  [!DNL Adobe] Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 exl-id: 9cb9bd04-e9ae-4162-a1b9-d71566582b7a
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -71,16 +71,16 @@ Du kan skapa en mall på ungefär samma sätt som när du skapar ett scenario. F
 
 ### Skapa en mall
 
-1. Klicka på **[!UICONTROL Templates]** ![](assets/templates-icon.png) i den vänstra navigeringspanelen.
+1. Klicka på **[!UICONTROL Templates]** ![Mallikon](assets/templates-icon.png) i den vänstra navigeringspanelen.
 1. Klicka på **[!UICONTROL Create a new template]** i det övre högra hörnet.
 1. (Valfritt) Byt namn på mallen genom att ersätta standardvärdet **[!UICONTROL New template name]** i det övre vänstra hörnet.
-1. (Valfritt) Om du vill ändra språk för mallen klickar du på **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) och väljer språk i listrutan Språk.
+1. (Valfritt) Om du vill ändra språk på mallen klickar du på ikonen **[!UICONTROL Set up a template]** ![Scenarioinställningar](assets/scenario-settings-icon.png) och väljer språk i listrutan Språk.
 
    >[!IMPORTANT]
    >
    >Valet Språk motsvarar de tillgängliga språken i systeminställningarna och gäller endast namnet på den offentliga mallen och dess beskrivning. Du kan inte ändra ett mallspråk när mallen har sparats.
 
-1. (Valfritt) Om du vill ange en beskrivning av mallen klickar du på **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) och anger beskrivningen.
+1. (Valfritt) Om du vill ange en beskrivning av mallen klickar du på ikonen **[!UICONTROL Set up a template]** ![Scenarioinställningar](assets/scenario-settings-icon.png) och anger beskrivningen.
 1. Lägg till program, moduler och verktyg, med samma processer som att lägga till moduler i ett scenario.
 
    Instruktioner finns i artiklarna under [Lägg till moduler](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
@@ -94,7 +94,7 @@ Du kan skapa en mall på ungefär samma sätt som när du skapar ett scenario. F
    >Om mallen innehåller moduler som kräver att anslutningen, inloggningsuppgifterna eller annan sekretesskänslig information läggs till, delas informationen inte med mallanvändarna.
 
 1. (Valfritt) Klicka på **[!UICONTROL Run once]** om du vill testa mallen.
-1. Klicka på ikonen **[!UICONTROL Save]** ![](assets/save-icon.png) för att spara mallen.
+1. Klicka på ikonen **[!UICONTROL Save]** ![Spara ](assets/save-icon.png) för att spara mallen.
 
 När du sparar mallen blir den synlig för dina teammedlemmar. Om du vill att mallen ska vara tillgänglig utanför ditt team måste du skicka in en begäran om att den ska godkännas och publiceras. Begäran skickas till Adobe Workfront Fusion-teamet för godkännande. När mallen har godkänts är den tillgänglig för andra utanför teamet.
 
@@ -113,13 +113,13 @@ Mer information om publiceringsmallar finns i [Publish och dela [!DNL Adobe Work
 
    Scenariot kopieras till en ny mallsida.
 1. (Valfritt) Byt namn på mallen genom att ersätta standardvärdet **[!UICONTROL New template name]** i det övre vänstra hörnet.
-1. (Valfritt) Om du vill ändra språk för mallen klickar du på **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) och väljer språk i listrutan Språk.
+1. (Valfritt) Om du vill ändra språk på mallen klickar du på ikonen **[!UICONTROL Set up a template]** ![Scenarioinställningar](assets/scenario-settings-icon.png) och väljer språk i listrutan Språk.
 
    >[!IMPORTANT]
    >
    >Valet Språk motsvarar de tillgängliga språken i systeminställningarna och gäller endast namnet på den offentliga mallen och dess beskrivning. Du kan inte ändra ett mallspråk när mallen har sparats.
 
-1. (Valfritt) Om du vill ange en beskrivning av mallen klickar du på **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) och anger beskrivningen.
+1. (Valfritt) Om du vill ange en beskrivning av mallen klickar du på ikonen **[!UICONTROL Set up a template]** ![Scenarioinställningar](assets/scenario-settings-icon.png) och anger beskrivningen.
 1. Redigera program, moduler och verktyg efter behov, med samma processer som när du lägger till moduler i ett scenario.
 
    Instruktioner finns i artiklarna under [Lägg till moduler](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
@@ -131,7 +131,7 @@ Mer information om publiceringsmallar finns i [Publish och dela [!DNL Adobe Work
    >Om mallen innehåller moduler som kräver att anslutningen, inloggningsuppgifterna eller annan sekretesskänslig information läggs till, delas informationen inte med mallanvändarna.
 
 1. (Valfritt) Klicka på **[!UICONTROL Run once]** om du vill testa mallen.
-1. Klicka på ikonen **[!UICONTROL Save]** ![](assets/save-icon.png).
+1. Klicka på ikonen **[!UICONTROL Save]** ![Spara ](assets/save-icon.png).
 
 ## Konfigurera [!UICONTROL Wizard]-funktioner {#set-up-wizard-functionality}
 

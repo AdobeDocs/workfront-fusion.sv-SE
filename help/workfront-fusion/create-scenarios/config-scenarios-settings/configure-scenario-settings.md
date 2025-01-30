@@ -5,9 +5,9 @@ description: Du kan konfigurera specifika inställningar för scenarier på pane
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3afa631a44c6dae8b1e6def6f842a9ced9de741e
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1198'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 1. Klicka var som helst i scenariot för att ange scenarioredigeraren.
 1. Klicka på kugghjulsikonen i det nedre vänstra hörnet på sidan.
 
-   ![](assets/scenario-settings-350x221.png)
+   ![Scenarioinställningar](assets/scenario-settings-350x221.png)
 
    På panelen [!UICONTROL Scenario settings] som visas kan du konfigurera olika avancerade inställningar för scenariot.
 1. Aktivera eller inaktivera inställningarna för scenario efter behov. Se [Alternativ för scenarioinställningar](#scenario-settings-options) nedan.
@@ -162,13 +162,13 @@ Det kan vara praktiskt att ange fler cykler när du vill förhindra avbrott i an
 
 **Exempel:** [!DNL Workfront] > [!UICONTROL Watch record] söker efter nya problem som kommer in, och [!DNL Workfront] >[!UICONTROL Convert object] konverterar den nya begäran till ett projekt och tilldelar den lämplig mall.
 
-![](assets/scenario-settings-ex-1-350x157.png)
+![Scenarioinställningar](assets/scenario-settings-ex-1-350x157.png)
 
 En [!UICONTROL more cycles]-inställning används bara när du schemalägger din scenariokörning. När du använder knappen [!UICONTROL Run once] beaktas cykelinställningarna.
 
 #### Maximalt antal cykler är 1 (standard)
 
-![](assets/max-number-cycles-1-350x201.png)
+![Maximalt antal cykler](assets/max-number-cycles-1-350x201.png)
 
 Maximalt antal cykler i modulen Workfront > Bevakade poster är `10`.
 Om 100 begäranden skickas till [!DNL Workfront], och fältet Max antal cykler är inställt på 10, lämnas 90 filer obearbetade efter att ett scenario har körts. De nästa 10 filerna bearbetas i nästa körning av schemalagda scenario.
@@ -183,7 +183,7 @@ Alla filer bearbetas inom 1 scenariokörning.
 
 Du kan se de cykler som redan körs i scenarioinformationen:
 
-![](assets/scenario-detail-350x207.png)
+![Scenarioinformation](assets/scenario-detail-350x207.png)
 
 Mer information om den här sidan finns i [Scenarioinformation](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 
