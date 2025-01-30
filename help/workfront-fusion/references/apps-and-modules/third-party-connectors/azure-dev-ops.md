@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 66378d6f937f3b3b173447bd36fdef991d9956af
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1546'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,8 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
 <table style="table-layout:auto">
@@ -28,35 +30,37 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -104,6 +108,7 @@ Azure DevOps-kopplingen använder följande:
         </tr>
     </table>
 
+1. Om du vill ange ett program-ID eller klienthemlighet för Azure DevOps klickar du på <b>Visa avancerade inställningar</b> och anger dem i fälten som öppnas.
 1. Klicka på **[!UICONTROL Continue]** för att slutföra konfigurationen av anslutningen och fortsätta skapa ditt scenario.
 
 ## [!UICONTROL Azure DevOps]-moduler och deras fält
@@ -134,7 +139,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>Välj eller lägg till en webkrok för modulen.</p> <!--<p>For more information on webhooks in trigger modules, see <a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/)." class="MCXref xref">Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]</a>.</p> <p>For information on how to create a webhook, see <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md" class="MCXref xref">Webhooks</a>.--></p> </td> 
+   <td> <p>Välj eller lägg till en webkrok för modulen.</p> <p>Mer information om webhooks i utlösarmoduler finns i <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">Direktutlösare (webhooks)</a>.</p> <p>Mer information om hur du skapar en webkrok finns i <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md" class="MCXref xref">Webhooks</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -148,6 +153,43 @@ När du konfigurerar den här modulen visas följande fält.
 * [Läs post](#read-record)
 * [Uppdatera en arbetsuppgift](#update-a-work-item)
 * [[!UICONTROL Upload an attachment]](#upload-an-attachment)
+
+#### [!UICONTROL Create a record]
+
+Den här åtgärdsmodulen skapar ett nytt projekt eller en ny arbetsuppgift.
+
+Modulen matar ut objekt-ID:t för det nya arbetsobjektet eller URL:en och statuskoden för ett nyligen skapat projekt.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td> <p>Välj om du vill skapa en arbetsuppgift eller ett projekt.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Project]</strong> </p> <p>Fyll i följande fält:</p> 
+      <ul> 
+       <li> <p><strong>[!UICONTROL Name]</strong>: Ange eller mappa ett namn för det nya projektet.</p> </li> 
+       <li> <p><strong>[!UICONTROL Description]</strong>: Ange eller mappa en beskrivning för det nya projektet. </p> </li> 
+       <li> <p><strong>[!UICONTROL Visibility]</strong>: Välj om du vill att projektet ska vara offentligt eller privat. Användarna måste vara inloggade i organisationen och ha beviljats åtkomst till projektet för att kunna interagera med ett privat projekt. Offentliga projekt är synliga för användare som inte är inloggade på din organisation.</p> </li> 
+       <li> <p><strong>[!UICONTROL Version control]</strong>: Välj om du vill att projektet ska använda [!DNL Git] eller [!UICONTROL Team Foundation Version Control (TFCV)] för versionskontroll.</p> </li> 
+       <li> <p><strong>[!UICONTROL Work item process]</strong>: Välj den arbetsprocess som du vill använda för projektet. Alternativen är [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] och [!UICONTROL Agile].</p> <p>Mer information om [!DNL Azure DevOps]-processer finns i <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">Standardprocesser och processmallar</a> i [!DNL Azure DevOps]-dokumentationen.</p> </li> 
+      </ul> </li> 
+     <li> <p><strong>[!UICONTROL Work item]</strong> </p> <p>Fyll i följande fält:</p> 
+      <ul> 
+       <li> <p><strong>[!UICONTROL Project]</strong>: Välj det projekt där du vill skapa arbetsposten.</p> </li> 
+       <li> <p><strong>[!UICONTROL Work item type]</strong>: Välj den typ av arbetsuppgift som du vill skapa.</p> </li> 
+       <li> <p><strong>[!UICONTROL Other fields]</strong>: I dessa fält anger du det värde som du vill att arbetsposten ska ha för en viss egenskap. Vilka fält som är tillgängliga beror på arbetsobjekttypen.</p> </li> 
+      </ul> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Custom API Call]
 
@@ -169,7 +211,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Relative URL]</td> 
-   <td> <p>Ange den relativa URL som du vill ansluta till för detta API-anrop.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exempel: </b></span></span><code>{organization}/_apis[/{area}]/{resource}</code> </p> </td> 
+   <td> <p>Ange den relativa URL som du vill ansluta till för detta API-anrop.</p> <p><b>Exempel: </b><code>{organization}/_apis[/{area}]/{resource}</code> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL API Version]</td> 
@@ -193,43 +235,6 @@ När du konfigurerar den här modulen visas följande fält.
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Create a record]
-
-Den här åtgärdsmodulen skapar ett nytt projekt eller en ny arbetsuppgift.
-
-Modulen matar ut objekt-ID:t för det nya arbetsobjektet eller URL:en och statuskoden för ett nyligen skapat projekt.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
-   <td> <p>Välj om du vill skapa en arbetsuppgift eller ett projekt.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Project]</strong> </p> <p>Fyll i följande fält:</p> 
-      <ul> 
-       <li> <p><strong>[!UICONTROL Name]</strong>:Ange eller mappa ett namn för det nya projektet.</p> </li> 
-       <li> <p><strong>[!UICONTROL Description]</strong>:Ange eller mappa en beskrivning för det nya projektet. </p> </li> 
-       <li> <p><strong>[!UICONTROL Visibility]</strong>: Välj om du vill att projektet ska vara offentligt eller privat. Användarna måste vara inloggade i organisationen och ha beviljats åtkomst till projektet för att kunna interagera med ett privat projekt. Offentliga projekt är synliga för användare som inte är inloggade på din organisation.</p> </li> 
-       <li> <p><strong>[!UICONTROL Version control]</strong>: Välj om du vill att projektet ska använda [!DNL Git] eller [!UICONTROL Team Foundation Version Control (TFCV)] för versionskontroll.</p> </li> 
-       <li> <p><strong>[!UICONTROL Work item process]</strong>: Välj den arbetsprocess som du vill använda för projektet. Alternativen är [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] och [!UICONTROL Agile].</p> <p>Mer information om [!DNL Azure DevOps]-processer finns i <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">Välj en process</a> i [!DNL Azure DevOps]-dokumentationen.</p> </li> 
-      </ul> </li> 
-     <li> <p><strong>[!UICONTROL Work item]</strong> </p> <p>Fyll i följande fält:</p> 
-      <ul> 
-       <li> <p><strong>[!UICONTROL Project]</strong>: Välj det projekt där du vill skapa arbetsposten.</p> </li> 
-       <li> <p><strong>[!UICONTROL Work item type]</strong>: Välj den typ av arbetsuppgift som du vill skapa.</p> </li> 
-       <li> <p><strong>[!UICONTROL Other fields]</strong>:I dessa fält anger du det värde som du vill att arbetsposten ska ha för en viss egenskap. Vilka fält som är tillgängliga beror på arbetsobjekttypen.</p> </li> 
-      </ul> </li> 
-    </ul> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -259,10 +264,6 @@ Modulen returnerar filinnehållet i den bifogade filen.
 
 Den här åtgärdsmodulen länkar två arbetsobjekt och definierar relationen mellan dem.
 
-Modulen returnerar ID:t för huvudobjektet och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-När du konfigurerar den här modulen visas följande fält.
-
 <table style="table-layout:auto">
  <col> 
  <col> 
@@ -281,7 +282,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Link Type]</td> 
-   <td> <p>Definiera relationen mellan arbetsobjekten som du vill länka.</p> <p>Mer information finns i <a href="https://docs.microsoft.com/en-us/azure/devops/boards/queries/link-type-reference?view=azure-devops">Referens för länktyp</a> i [!UICONTROL Azure DevOps] -dokumentationen.</p> </td> 
+   <td> <p>Definiera relationen mellan arbetsobjekten som du vill länka.</p> <p>Mer information finns i <a href="https://docs.microsoft.com/en-us/azure/devops/boards/queries/link-type-reference?view=azure-devops">Referenshandbok för länktyper</a> i [!UICONTROL Azure DevOps] -dokumentationen.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment]</td> 
