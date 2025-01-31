@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ab94fe400af51d4beb4439c603ddd91a6b3f421d
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2715'
 ht-degree: 0%
 
 ---
@@ -31,42 +31,46 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -167,9 +171,36 @@ Så här skapar du en anslutning för dina [!DNL Salesforce]-moduler:
 
 ### Utlösare
 
+* [[!UICONTROL Watch a field]](#watch-a-field)
 * [[!UICONTROL Watch for Records]](#watch-for-records)
 * [[!UICONTROL Watch Outbound Messages]](#watch-outbound-messages)
-* [[!UICONTROL Watch a field]](#watch-a-field)
+
+#### [!UICONTROL Watch a field]
+
+Denna utlösarmodul startar ett scenario när ett fält uppdateras i [!DNL Salesforce].
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Record Type] </td> 
+   <td> <p>Välj den typ av post som innehåller fältet som du vill att modulen ska bevaka. Du måste välja en posttyp som har [!UICONTROL Field History] aktiverat i [!DNL Salesforce]-konfigurationen. Mer information finns i <a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">Spåra fälthistorik</a> i [!DNL Salesforce]-dokumentationen. </p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Field]</td> 
+   <td> <p>Markera de fält som du vill att modulen ska bevaka för ändringar.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Limit]</td> 
+   <td> <p>Ange eller mappa det maximala antal fält som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Watch for Records]
 
@@ -253,41 +284,14 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
-#### *[!UICONTROL Watch a field]*
-
-Denna utlösarmodul startar ett scenario när ett fält uppdateras i [!DNL Salesforce].
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Record Type] </td> 
-   <td> <p>Välj den typ av post som innehåller fältet som du vill att modulen ska bevaka. Du måste välja en posttyp som har [!UICONTROL Field History] aktiverat i [!DNL Salesforce]-konfigurationen. Mer information finns i <a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">Spåra fälthistorik</a> i [!DNL Salesforce]-dokumentationen. </p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Field]</td> 
-   <td> <p>Markera de fält som du vill att modulen ska bevaka för ändringar.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td> <p>Ange eller mappa det maximala antal fält som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 ### Åtgärder
 
 * [[!UICONTROL Create a Record]](#create-a-record)
-* [[!UICONTROL Read a Record]](#read-a-record)
-* [[!UICONTROL Delete a Record]](#delete-a-record)
 * [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument)
+* [[!UICONTROL Delete a Record]](#delete-a-record)
 * [[!UICONTROL Download Attachment/Document]](#download-attachmentdocument)
+* [[!UICONTROL Read a Record]](#read-a-record)
+* [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument)
 * [Överför fil](#upload-file)
 
 #### [!UICONTROL Create a Record]
@@ -315,68 +319,6 @@ När du konfigurerar den här modulen visas följande fält.
   <tr> 
    <td>[!UICONTROL Select fields to map]</td> 
    <td> <p>Markera de fält som du vill att modulen ska konfigurera när den nya posten skapas. Obligatoriska fält visas högst upp i listan. </p> <p>Fälten som du väljer öppnas under det här fältet. Du kan nu ange värden i dessa fält.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Read a Record]
-
-Den här åtgärdsmodulen läser data från ett enskilt objekt i [!DNL Salesforce].
-
-Du anger postens ID.
-
-Modulen returnerar postens ID och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-När du konfigurerar den här modulen visas följande fält.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr>
-    <td>[!UICONTROL Connection]</td>
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr>
-    <td>[!UICONTROL Record Type]</td>
-    <td>Välj den typ av [!DNL Salesforce]-post som du vill att modulen ska [åtgärd].read.</td>
-  </tr> 
-  <tr>
-    <td>[!UICONTROL Record Fields]</td>
-    <td>Markera de fält som du vill att modulen ska läsa. Du måste markera minst ett fält.</td>
-  </tr> 
-  <tr>
-    <td>[!UICONTROL ID]</td>
-    <td> <p>Ange eller mappa det unika [!DNL Salesforce]-ID:t för posten som du vill att modulen ska läsa.</p> <p>Om du vill hämta ID:t öppnar du objektet [!DNL Salesforce] i webbläsaren och kopierar texten i slutet av URL:en efter det sista snedstrecket (/). Exempel: <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td>
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Delete a Record]
-
-Den här åtgärdsmodulen tar bort en befintlig post i ett objekt.
-
-Du anger postens ID.
-
-Modulen returnerar postens ID och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-När du konfigurerar den här modulen visas följande fält.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Record Type] </td> 
-   <td> <p>Välj den typ av [!DNL Salesforce]-post som du vill att modulen ska ta bort.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL ID]</td> 
-   <td> <p>Ange eller mappa det unika [!DNL Salesforce]-ID:t för posten som du vill att modulen ska ta bort.</p> <p>Om du vill hämta ID:t öppnar du objektet [!DNL Salesforce] i webbläsaren och kopierar texten i slutet av URL:en efter det sista snedstrecket (/). Exempel: <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -430,58 +372,31 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
->[!INFO]
->
->**Exempel:** Följande API-anrop returnerar listan över alla användare i ditt [!DNL Salesforce]-konto:
->
->* **URL**: `query`
->
->* **Metod**: [!UICONTROL GET]
->
->* **Frågesträng**:
->
->* **Nyckel**: `q`
->
->* **Värde**: `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
->
->Det går att hitta matchningar av sökningen i modulens utdata under **[!UICONTROL Bundle]> [!UICONTROL Body] >[!UICONTROL records]**.
->
->I vårt exempel returnerades sex användare:
->
->![Matchar för sökningen](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+#### [!UICONTROL Delete a Record]
 
+Den här åtgärdsmodulen tar bort en befintlig post i ett objekt.
 
-#### [!UICONTROL Upload Attachment/Document]
+Du anger postens ID.
 
-Den här åtgärdsmodulen överför en fil och bifogar den till en post som du anger, eller överför ett dokument.
-
-Modulen returnerar ID:t för den bifogade filen eller dokumentet och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+Modulen returnerar postens ID och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
 
 När du konfigurerar den här modulen visas följande fält.
 
 <table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
+ <col> 
+ <col> 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Type of Upload]</td> 
-   <td>Välj om du vill att modulen ska överföra en bifogad fil eller ett dokument.</td> 
+   <td>[!UICONTROL Record Type] </td> 
+   <td> <p>Välj den typ av [!DNL Salesforce]-post som du vill att modulen ska ta bort.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID]</td> 
-   <td>Ange eller mappa ID:t för objektet som du vill överföra en bifogad fil till.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder]</td> 
-   <td>Markera den mapp som innehåller den fil som du vill att modulen ska överföra. </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Source File]</td> 
-   <td>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</td> 
+   <td> <p>Ange eller mappa det unika [!DNL Salesforce]-ID:t för posten som du vill att modulen ska ta bort.</p> <p>Om du vill hämta ID:t öppnar du objektet [!DNL Salesforce] i webbläsaren och kopierar texten i slutet av URL:en efter det sista snedstrecket (/). Exempel: <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -520,6 +435,59 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
+#### [!UICONTROL Read a Record]
+
+Den här åtgärdsmodulen läser data från ett enskilt objekt i [!DNL Salesforce].
+
+Du anger postens ID.
+
+Modulen returnerar postens ID och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr>
+    <td>[!UICONTROL Connection]</td>
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr>
+    <td>[!UICONTROL Record Type]</td>
+    <td>Välj den typ av [!DNL Salesforce]-post som du vill att modulen ska [åtgärd].read.</td>
+  </tr> 
+  <tr>
+    <td>[!UICONTROL Record Fields]</td>
+    <td>Markera de fält som du vill att modulen ska läsa. Du måste markera minst ett fält.</td>
+  </tr> 
+  <tr>
+    <td>[!UICONTROL ID]</td>
+    <td> <p>Ange eller mappa det unika [!DNL Salesforce]-ID:t för posten som du vill att modulen ska läsa.</p> <p>Om du vill hämta ID:t öppnar du objektet [!DNL Salesforce] i webbläsaren och kopierar texten i slutet av URL:en efter det sista snedstrecket (/). Exempel: <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td>
+  </tr> 
+ </tbody> 
+</table>
+
+>[!INFO]
+>
+>**Exempel:** Följande API-anrop returnerar listan över alla användare i ditt [!DNL Salesforce]-konto:
+>
+>* **URL**: `query`
+>
+>* **Metod**: [!UICONTROL GET]
+>
+>* **Frågesträng**:
+>
+>* **Nyckel**: `q`
+>
+>* **Värde**: `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
+>
+>Det går att hitta matchningar av sökningen i modulens utdata under **[!UICONTROL Bundle]> [!UICONTROL Body] >[!UICONTROL records]**.
+>
+>I vårt exempel returnerades sex användare:
+>
+>![Matchar för sökningen](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+
 
 #### [!UICONTROL Update a Record]
 
@@ -550,6 +518,42 @@ När du konfigurerar den här modulen visas följande fält.
   <tr> 
    <td>[!UICONTROL Select fields to map]</td> 
    <td> <p>Markera de fält som du vill att modulen ska konfigurera när den nya posten skapas. Obligatoriska fält visas högst upp i listan. </p> <p>Fälten som du väljer öppnas under det här fältet. Du kan nu ange värden i dessa fält.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+#### [!UICONTROL Upload Attachment/Document]
+
+Den här åtgärdsmodulen överför en fil och bifogar den till en post som du anger, eller överför ett dokument.
+
+Modulen returnerar ID:t för den bifogade filen eller dokumentet och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Type of Upload]</td> 
+   <td>Välj om du vill att modulen ska överföra en bifogad fil eller ett dokument.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL ID]</td> 
+   <td>Ange eller mappa ID:t för objektet som du vill överföra en bifogad fil till.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Folder]</td> 
+   <td>Markera den mapp som innehåller den fil som du vill att modulen ska överföra. </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Source File]</td> 
+   <td>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</td> 
   </tr> 
  </tbody> 
 </table>

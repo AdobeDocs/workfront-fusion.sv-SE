@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 2ef98aa858c1459f214b12be3bf52f4f731012a2
 workflow-type: tm+mt
-source-wordcount: '2180'
+source-wordcount: '2260'
 ht-degree: 0%
 
 ---
@@ -21,42 +21,46 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
-   </td>  
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -112,9 +116,59 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ### Arbetsbok
 
-* [Se arbetsböcker](#watch-workbooks)
-* [Sök i arbetsböcker](#search-workbooks)
 * [Hämta en arbetsbok](#download-a-workbook)
+* [Sök i arbetsböcker](#search-workbooks)
+* [Se arbetsböcker](#watch-workbooks)
+
+#### [!UICONTROL Download a Workbook]
+
+Den här åtgärdsmodulen hämtar innehållet i den angivna Excel-arbetsboken.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Download a workbook]</td> 
+   <td> <p>Välj hur du vill identifiera arbetsboken för modulen som ska hämtas.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>I fältet [!UICONTROL Workbook ID] anger eller mappar du ID:t för den specifika arbetsbok som du vill att modulen ska hämta.</p> </li> 
+     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>I fältet [!UICONTROL Workbook] väljer du arbetsboken som du vill att modulen ska hämta, inklusive sökvägen om den inte finns i rotmappen.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody>
+
+#### [!UICONTROL Search Workbooks]
+
+Denna åtgärdsmodul söker efter [!DNL Excel] arbetsböcker.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Välj den mapp som du vill söka efter arbetsböcker i.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
+   <td> <p>Du kan ställa in ett filter så att du bara söker efter arbetsböcker som uppfyller de villkor du väljer.</p> <p>För varje filter anger du fältet som du vill att filtret ska utvärderas, operatorn och värdet som du vill att filtret ska tillåta. Du kan använda mer än ett filter genom att lägga till OCH- eller OR-regler.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Ange eller mappa det maximala antal kalkylblad som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+</table>
 
 #### [!UICONTROL Watch Workbooks]
 
@@ -143,73 +197,46 @@ Den här utlösarmodulen startar ett scenario när en arbetsbok skapas.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Workbooks]
-
-Denna åtgärdsmodul söker efter [!DNL Excel] arbetsböcker.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
-   <td> <p>Välj den mapp som du vill söka efter arbetsböcker i.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
-   <td> <p>Du kan ställa in ett filter så att du bara söker efter arbetsböcker som uppfyller de villkor du väljer.</p> <p>För varje filter anger du fältet som du vill att filtret ska utvärderas, operatorn och värdet som du vill att filtret ska tillåta. Du kan använda mer än ett filter genom att lägga till OCH- eller OR-regler.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Ange eller mappa det maximala antal kalkylblad som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Download a Workbook]
-
-Den här åtgärdsmodulen hämtar innehållet i den angivna Excel-arbetsboken.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Download a workbook]</td> 
-   <td> <p>Välj hur du vill identifiera arbetsboken för modulen som ska hämtas.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>I fältet [!UICONTROL Workbook ID] anger eller mappar du ID:t för den specifika arbetsbok som du vill att modulen ska hämta.</p> </li> 
-     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>I fältet [!UICONTROL Workbook] väljer du arbetsboken som du vill att modulen ska hämta.</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 ### Kalkylblad
 
-* [[!UICONTROL Watch Worksheet Rows]](#watch-worksheet-rows)
-* [[!UICONTROL List Worksheets]](#list-worksheets)
-* [[!UICONTROL List Worksheet Rows]](#list-worksheet-rows)
 * [[!UICONTROL Add a Worksheet]](#add-a-worksheet)
 * [[!UICONTROL Add a Worksheet Row]](#add-a-worksheet-row)
-* [[!UICONTROL Update a Worksheet Row]](#update-a-worksheet-row)
 * [[!UICONTROL Delete a Worksheet Row]](#delete-a-worksheet-row)
+* [[!UICONTROL List Worksheet Rows]](#list-worksheet-rows)
+* [[!UICONTROL List Worksheets]](#list-worksheets)
+* [[!UICONTROL Update a Worksheet Row]](#update-a-worksheet-row)
+* [[!UICONTROL Watch Worksheet Rows]](#watch-worksheet-rows)
 
-#### [!UICONTROL Watch Worksheet Rows]
+#### [!UICONTROL Add a Worksheet]
 
-Denna utlösarmodul startar ett scenario när en ny rad läggs till i bladet.
+Den här åtgärdsmodulen skapar ett nytt kalkylblad i den valda arbetsboken.
 
 <table style="table-layout:auto"> 
- <col> 
- <col> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Markera arbetsboken där du vill lägga till ett kalkylblad, inklusive sökvägen om arbetsboken inte finns i rotkatalogen.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Name] </td>
+   <td> <p>Ange eller mappa ett namn för det nya kalkylbladet.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Add a Worksheet Row]
+
+Den här åtgärdsmodulen lägger till en ny rad i det markerade kalkylbladet.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
@@ -217,11 +244,74 @@ Denna utlösarmodul startar ett scenario när en ny rad läggs till i bladet.
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Markera arbetsboken som innehåller det kalkylblad som du vill bevaka för nya rader.</p> </td> 
+   <td> <p>Markera arbetsboken som innehåller kalkylbladet där du vill lägga till en rad, inklusive sökvägen om arbetsboken inte finns i rotkatalogen.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Markera det kalkylblad där du vill lägga till en rad.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Type of values being entered]</p> </td> 
+   <td> <p>Välj vilken typ av värde som ska anges i kalkylbladet. </p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Formulas]</strong> </p> <p> Excel försöker utvärdera det angivna uttrycket. Namnen på funktionerna i en formel är på engelska. Exempel: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
+     <li> <p><strong>[!UICONTROL Formulas local]</strong> </p> <p>Excel försöker utvärdera det angivna uttrycket. Funktionsnamnen är på samma språk som i Excel-programmet. Exempel: <code>=SUM(A1, 1.5)</code> vs <code>=SUMME(A1; 1,5)</code></p> </li> 
+     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Excel utvärderar inte värdet. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Row]</td>
+    <td>För varje kolumn anger du det värde som du vill att kolumnen ska ha i den nya raden.</td>
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a Worksheet Row]
+
+Den här åtgärdsmodulen tar bort en rad från ett kalkylblad.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Markera arbetsboken som innehåller kalkylbladet som innehåller raden som du vill ta bort.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet]</td>
+   <td> <p> Markera kalkylbladet som innehåller raden som du vill ta bort.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Row ID]</td>
+   <td>Ange eller mappa ID:t för raden som du vill ta bort.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List Worksheet Rows]
+
+Den här åtgärdsmodulen hämtar en lista med rader i det angivna kalkylbladet.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr>
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Markera arbetsboken som innehåller kalkylbladet som innehåller de rader som du vill visa, inklusive sökvägen om arbetsboken inte finns i rotkatalogen.</p> </td> 
+  </tr> 
+  <tr> 
     <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Markera det Excel-blad som du vill bevaka för nya rader.</p> </td> 
+   <td> <p>Markera kalkylbladet som innehåller raderna som du vill visa.</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Limit]</td>
@@ -249,92 +339,6 @@ Den här åtgärdsmodulen hämtar en lista med kalkylblad i den angivna arbetsbo
   <tr> 
     <td role="rowheader" >[!UICONTROL Limit]</td>
    <td> <p>Ange eller mappa det maximala antal kalkylblad som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List Worksheet Rows]
-
-Den här åtgärdsmodulen hämtar en lista med rader i det angivna kalkylbladet.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Markera arbetsboken som innehåller kalkylbladet som innehåller de rader som du vill visa.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Markera kalkylbladet som innehåller raderna som du vill visa.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Ange eller mappa det maximala antalet kalkylbladsrader som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add a Worksheet]
-
-Den här åtgärdsmodulen skapar ett nytt kalkylblad i den valda arbetsboken.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Markera arbetsboken där du vill lägga till ett kalkylblad.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Name] </td>
-   <td> <p>Ange eller mappa ett namn för det nya kalkylbladet.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add a Worksheet Row]
-
-Den här åtgärdsmodulen lägger till en ny rad i det markerade kalkylbladet.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Markera arbetsboken som innehåller kalkylbladet där du vill lägga till en rad.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Markera det kalkylblad där du vill lägga till en rad.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Type of values being entered]</p> </td> 
-   <td> <p>Välj vilken typ av värde som ska anges i kalkylbladet. </p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Formulas]</strong> </p> <p> Excel försöker utvärdera det angivna uttrycket. Namnen på funktionerna i en formel är på engelska. Exempel: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Formulas local]</strong> </p> <p>Excel försöker utvärdera det angivna uttrycket. Funktionsnamnen är på samma språk som i Excel-programmet. Exempel: <code>=SUM(A1, 1.5)</code> vs <code>=SUMME(A1; 1,5)</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Excel utvärderar inte värdet. </p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Row]</td>
-    <td>För varje kolumn anger du det värde som du vill att kolumnen ska ha i den nya raden.</td>
   </tr> 
  </tbody> 
 </table>
@@ -375,18 +379,17 @@ Den här åtgärdsmodulen uppdaterar en befintlig kalkylbladsrad.
   <tr> 
     <td role="rowheader" >[!UICONTROL Row]</td>
     <td>För varje kolumn anger du det värde som du vill att kolumnen ska ha i den nya raden.</td>
-   —&gt; 
-  </tr> 
+    </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Worksheet Row]
+#### [!UICONTROL Watch Worksheet Rows]
 
-Den här åtgärdsmodulen tar bort en rad från ett kalkylblad.
+Denna utlösarmodul startar ett scenario när en ny rad läggs till i bladet.
 
 <table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
+ <col> 
+ <col> 
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
@@ -394,151 +397,33 @@ Den här åtgärdsmodulen tar bort en rad från ett kalkylblad.
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Markera arbetsboken som innehåller kalkylbladet som innehåller raden som du vill ta bort.</p> </td> 
+   <td> <p>Markera arbetsboken som innehåller det kalkylblad som du vill bevaka för nya rader.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Markera det Excel-blad som du vill bevaka för nya rader.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Skip Empty Rows] </td>
+   <td> <p>Aktivera det här alternativet om du inte vill returnera paket för tomma rader i kalkylbladet.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet]</td>
-   <td> <p> Markera kalkylbladet som innehåller raden som du vill ta bort.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Row ID]</td>
-   <td>Ange eller mappa ID:t för raden som du vill ta bort.</td> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Ange eller mappa det maximala antalet kalkylbladsrader som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Tabell
 
-* [[!UICONTROL Watch table rows]](#watch-table-rows)
-* [[!UICONTROL List tables]](#list-tables)
-* [[!UICONTROL List table rows]](#list-table-rows)
-* [[!UICONTROL Get a Table]](#get-a-table)
 * [[!UICONTROL Add a table]](#add-a-table)
 * [[!UICONTROL Add a table row]](#add-a-table-row)
-* [[!UICONTROL Update a table]](#update-a-table)
 * [[!UICONTROL Delete a table]](#delete-a-table)
-
-#### [!UICONTROL Watch table rows]
-
-Detta startar ett scenario när en ny rad läggs till i en tabell.
-
->[!NOTE]
->
->Tabellen här refererar till det inbäddade tabellelementet i arbetsboken. Inte hela tabellen (arbetsbok/ark).
-
-![Inbäddad tabell](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Workbook]</p> </td> 
-   <td> <p>Markera arbetsboken som innehåller tabellen som du vill bevaka.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p> Markera det kalkylblad som innehåller tabellen som du vill titta på.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Table]</p> </td> 
-   <td> <p>Markera tabellen som du vill bevaka.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Ange eller mappa det maximala antal rader som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List tables]
-
-Den här sökmodulen hämtar en lista med alla tabellobjekt.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Markera arbetsboken som innehåller de tabeller som du vill visa.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Markera kalkylbladet som innehåller de tabeller som du vill visa</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Ange eller mappa det maximala antalet tabeller som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List table rows]
-
-Den här sökmodulen hämtar en lista med alla tabellrader i en arbetsbok.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Markera arbetsboken som innehåller tabellen som innehåller raderna som du vill visa.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Markera kalkylbladet som innehåller tabellen som innehåller raderna som du vill visa</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Table] </td>
-   <td> <p>Markera tabellen som innehåller raderna som du vill visa.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Ange eller mappa det maximala antalet tabellrader som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get a Table]
-
-Den här åtgärdsmodulen hämtar metadata för den angivna tabellen.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> 
-     <p >[!UICONTROL Connection]</p>
-   </td> 
-   <td> 
-     <p>Instruktioner om hur du ansluter Office 365-kontot till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p>
-    —&gt; </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Get a table]</td> 
-   <td> <p>Välj hur du vill identifiera tabellen som du vill hämta.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Ange eller mappa ID:t för arbetsboken som innehåller tabellen som du vill hämta i fältet [!UICONTROL Workbook ID].</p> <p>I fältet [!UICONTROL Table Name] anger eller mappar du namnet på tabellen som du vill hämta.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Markera arbetsboken och kalkylbladet som innehåller tabellen som du vill hämta och markera sedan tabellen.</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Get a Table]](#get-a-table)
+* [[!UICONTROL List table rows]](#list-table-rows)
+* [[!UICONTROL List tables]](#list-tables)
+* [[!UICONTROL Update a table]](#update-a-table)
+* [[!UICONTROL Watch table rows]](#watch-table-rows)
 
 #### [!UICONTROL Add a table]
 
@@ -606,6 +491,114 @@ Den här åtgärdsmodulen ändrar en befintlig tabell.
  </tbody> 
 </table>
 
+#### [!UICONTROL Delete a table]
+
+Den här åtgärdsmodulen tar bort den angivna tabellen från ett [!DNL Excel]-kalkylblad.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Delete a table]</td> 
+   <td> <p>Välj hur du vill identifiera tabellen som du vill ta bort.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Ange eller mappa ID:t för arbetsboken som innehåller tabellen som du vill ta bort och ange eller mappa sedan ID:t för det kalkylblad som innehåller tabellen.</p> <p>I fältet [!UICONTROL Table Name] anger eller mappar du namnet på tabellen som du vill ta bort.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Markera arbetsboken och kalkylbladet som innehåller tabellen som du vill ta bort och markera sedan tabellen.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get a Table]
+
+Den här åtgärdsmodulen hämtar metadata för den angivna tabellen.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> 
+     <p >[!UICONTROL Connection]</p>
+   </td> 
+   <td> 
+     <p>Instruktioner om hur du ansluter Office 365-kontot till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p>
+    —&gt; </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Get a table]</td> 
+   <td> <p>Välj hur du vill identifiera tabellen som du vill hämta.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Ange eller mappa ID:t för arbetsboken som innehåller tabellen som du vill hämta och ange eller mappa sedan ID:t för det kalkylblad som innehåller tabellen.</p> <p>I fältet [!UICONTROL Table Name] anger eller mappar du namnet på tabellen som du vill hämta.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Markera arbetsboken och kalkylbladet som innehåller tabellen som du vill hämta och markera sedan tabellen.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List table rows]
+
+Den här sökmodulen hämtar en lista med alla tabellrader i en arbetsbok.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Markera arbetsboken som innehåller tabellen som innehåller raderna som du vill visa.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Markera kalkylbladet som innehåller tabellen som innehåller raderna som du vill visa</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Table] </td>
+   <td> <p>Markera tabellen som innehåller raderna som du vill visa.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Ange eller mappa det maximala antalet tabellrader som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List tables]
+
+Den här sökmodulen hämtar en lista med alla tabellobjekt.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Markera arbetsboken som innehåller de tabeller som du vill visa.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Markera kalkylbladet som innehåller de tabeller som du vill visa</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Ange eller mappa det maximala antalet tabeller som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### [!UICONTROL Update a table]
 
 Den här åtgärdsmodulen uppdaterar en befintlig tabell.
@@ -627,10 +620,6 @@ Den här åtgärdsmodulen uppdaterar en befintlig tabell.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Table] </td> 
-   <td> <p>Markera tabellen som du vill uppdatera.</p> </td> 
-  </tr> 
-  <tr> 
    <td role="rowheader">[!UICONTROL Name]</td> 
    <td> <p>Om du vill byta namn på tabellen anger eller mappar du ett nytt namn för tabellen.</p> </td> 
   </tr> 
@@ -649,9 +638,15 @@ Den här åtgärdsmodulen uppdaterar en befintlig tabell.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a table]
+#### [!UICONTROL Watch table rows]
 
-Den här åtgärdsmodulen tar bort den angivna tabellen från ett [!DNL Excel]-kalkylblad.
+Detta startar ett scenario när en ny rad läggs till i en tabell.
+
+>[!NOTE]
+>
+>Tabellen här refererar till det inbäddade tabellelementet i arbetsboken. Inte hela tabellen (arbetsbok/ark).
+
+![Inbäddad tabell](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
 
 <table style="table-layout:auto"> 
  <col> 
@@ -662,47 +657,28 @@ Den här åtgärdsmodulen tar bort den angivna tabellen från ett [!DNL Excel]-k
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Get a table]</td> 
-   <td> <p>Välj hur du vill identifiera tabellen som du vill ta bort.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Ange eller mappa ID:t för arbetsboken som innehåller tabellen som du vill ta bort i fältet [!UICONTROL Workbook ID].</p> <p>I fältet [!UICONTROL Table Name] anger eller mappar du namnet på tabellen som du vill ta bort.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Markera arbetsboken och kalkylbladet som innehåller tabellen som du vill ta bort och markera sedan tabellen.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Workbook]</p> </td> 
+   <td> <p>Markera arbetsboken som innehåller tabellen som du vill bevaka.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p> Markera det kalkylblad som innehåller tabellen som du vill titta på.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Table]</p> </td> 
+   <td> <p>Markera tabellen som du vill bevaka.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Ange eller mappa det maximala antal rader som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Övriga
 
-* [[!UICONTROL Retrieve data]](#retrieve-data)
 * [[!UICONTROL Make an API Call]](#make-an-api-call)
-
-#### [!UICONTROL Retrieve data]
-
-Den här åtgärden hämtar data från det definierade kalkylbladsområdet och returnerar ett paket för varje rad.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Workbook] </td> 
-   <td> <p>Markera arbetsboken som innehåller de data som du vill hämta.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Worksheet] </td> 
-   <td> <p>Markera det kalkylblad som innehåller de data som du vill hämta.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Range] </td> 
-   <td> <p>Ange det område i bladet som du vill hämta data från genom att ange cellerna längst upp till vänster och längst ned till höger. Exempel: <code>A1:D10</code></p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Retrieve data]](#retrieve-data)
 
 #### [!UICONTROL Make an API Call]
 
@@ -738,6 +714,33 @@ Med den här åtgärdsmodulen kan du göra ett anpassat API-anrop.
      <div class="example" data-mc-autonum="<b>Example: </b>">  
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Retrieve data]
+
+Den här åtgärden hämtar data från det definierade kalkylbladsområdet och returnerar ett paket för varje rad.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workbook] </td> 
+   <td> <p>Markera arbetsboken som innehåller de data som du vill hämta.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Worksheet] </td> 
+   <td> <p>Markera det kalkylblad som innehåller de data som du vill hämta.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Range] </td> 
+   <td> <p>Ange det område i bladet som du vill hämta data från genom att ange cellerna längst upp till vänster och längst ned till höger. Exempel: <code>A1:D10</code></p> </td> 
   </tr> 
  </tbody> 
 </table>

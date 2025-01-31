@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Campaign] modulerna kan du starta ett [!DNL Adobe 
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 9bcda2cc1a5f483a8db49eae8e4f3d10f0d39c67
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
@@ -17,49 +17,53 @@ Med modulerna [!DNL Adobe Campaign] kan du starta ett [!DNL Adobe Workfront Fusi
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
-   <td> <p>[!UICONTROL Pro] eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
 Du måste lägga till Fusion-IP-adresserna till [!DNL Adobe Campaign].
 
 * Instruktioner om hur du lägger till IP-adresser i Campaign-tillåtelselista finns i [Lägga till IP-adresser i tillåtelselista](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) i Adobe Campaign-dokumentationen.
-* En lista över IP-adresser som ska läggas till i tillåtelselista finns i [IP-adresser för åtkomst till Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
+* En lista över IP-adresser som ska läggas till i tillåtelselista finns i [Konfigurera IP-adresser för Fusion i din organisations tillåtelselista](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
 ## Adobe Campaign API-information
 
@@ -124,15 +128,7 @@ Adobe Campaign Connector använder följande:
           <td role="rowheader">[!UICONTROL Client Secret]</td>
           <td>Om du skapar en server-till-server-anslutning anger du din [!DNL Adobe] [!UICONTROL Client Secret]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].
         </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Environment]</td>
-          <td>Ange om du är ansluten till en produktionsmiljö eller icke-produktionsmiljö.
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Type]</td>
-          <td>Ange om du ansluter till ett tjänstkonto eller ett personligt konto.
-        </tr>
-   </tbody>
+     </tbody>
     </table>
 1. Klicka på **[!UICONTROL Continue]** för att skapa anslutningen och gå tillbaka till modulen.
 
@@ -144,15 +140,15 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Utlösare](#triggers)
+<!--* [Triggers](#triggers)-->
 * [Åtgärder](#actions)
 * [Sökningar](#searches)
 
-### Utlösare
+<!--### Triggers
 
 #### [!UICONTROL Watch records]
 
-Denna schemalagda utlösarmodul startar ett scenario när en post ändras.
+This scheduled trigger module starts a scenario when a record changes.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -160,39 +156,39 @@ Denna schemalagda utlösarmodul startar ett scenario när en post ändras.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Campaign] finns i <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Campaign]</a> i den här artikeln.</td> 
+   <td>For instructions on creating a connection to [!DNL Adobe Campaign], see <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Create a connection to [!DNL Adobe Campaign]</a> in this article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filter]</td> 
-   <td>Välj om du vill söka efter nya poster, uppdaterade poster eller båda.</td> 
+   <td>Select whether you want to watch for new records, updated records, or both.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Välj den resurs som du vill bevaka.</td> 
+   <td>Select the resource that you want to watch for.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields to include in output]</td> 
-   <td>Markera de fält som du vill inkludera i modulens utdata.</td> 
+   <td>Select the fields that you want to include in the module's output.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Custom fields to include in output]</td> 
-   <td>För varje anpassat fält som du vill ta med i utdata klickar du på <b>[!UICONTROL Add]</b> och anger namnet på det anpassade fältet.</td> 
+   <td>For each custom field that you want to include in output, click <b>[!UICONTROL Add]</b> and enter the name of the custom field.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned results]</td> 
-   <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
+   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
   </tr> 
  </tbody> 
-</table>
+</table>-->
 
 
 ### Åtgärder
 
 * [[!UICONTROL Create a record]](#create-a-record)
-* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
 * [[!UICONTROL Delete a record]](#delete-record)
+* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
 * [[!UICONTROL Perform an action]](#perform-an-action)
-* [[!UICONTROL Read a record]](#-read-a-record)
+* [[!UICONTROL Read a record]](#read-a-record)
 * [[!UICONTROL Subscribe or unsubscribe]](#subscribe-or-unsubscribe)
 * [[!UICONTROL Update a record]](#update-record)
 
@@ -219,6 +215,29 @@ Den här åtgärdsmodulen skapar en ny post i [!DNL Adobe Campaign].
   <tr> 
    <td role="rowheader">[!UICONTROL Custom fields]</td> 
    <td> För varje anpassat fält som du vill lägga till i den nya posten klickar du på <b>[!UICONTROL Add item]</b> och anger eller mappar fältets namn och värde. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete Record]
+
+Den här åtgärdsmodulen tar bort en post från [!DNL Adobe Campaign].
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Campaign] finns i <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Campaign]</a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td>Välj den typ av resurs som du vill ta bort.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID]</td> 
+   <td>Ange eller mappa ID:t för resursen som du vill ta bort.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -259,29 +278,6 @@ Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Campaign]
   </tbody>
 </table>
 
-#### [!UICONTROL Delete Record]
-
-Den här åtgärdsmodulen tar bort en post från [!DNL Adobe Campaign].
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Campaign] finns i <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Campaign]</a> i den här artikeln.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Välj den typ av resurs som du vill ta bort.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL ID]</td> 
-   <td>Ange eller mappa ID:t för resursen som du vill ta bort.</td> 
-  </tr> 
- </tbody> 
-</table>
-
 
 #### [!UICONTROL Perform an action]
 
@@ -308,7 +304,7 @@ Mer information om specifika åtgärder och fält finns i [[!DNL Adobe Campaign]
    <li><p><b>[!UICONTROL Delete]</b></p><p> Information om tillgängliga fält finns i <a href="#delete-record" class="MCXref xref" >[!UICONTROL Delete a record]</a> i den här artikeln. </p></li>
    </ul>
    </td>
-</tr> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -419,6 +415,10 @@ Sökmodulen returnerar poster baserat på angivna villkor.
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
    <td>Välj den typ av [!DNL Adobe Campaign]-post som du vill skapa.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Search criteria]</td> 
+   <td>Ange de fält och värden som du vill att sökningen ska använda. Fälten beror på vald resurs.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
