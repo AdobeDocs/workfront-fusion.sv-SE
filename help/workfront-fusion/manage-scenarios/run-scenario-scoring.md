@@ -4,14 +4,18 @@ description: Scenariobedömningsexperten kan hjälpa dig att se till att ditt sc
 author: Becky
 feature: Workfront Fusion
 exl-id: b668e7f6-dac5-4ac9-b3f3-109f70eaa2c4
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 1ac1c4358901ef81bb7375c24fcdf1a44119af13
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
 
 # Kör scenariobedömningsexperten
+
+>[!IMPORTANT]
+>
+>Scenariobedömningsexperten har tillfälligt inaktiverats.
 
 Scenariobedömningsexperten kan hjälpa dig att se till att ditt scenario är konfigurerat på ett sätt som följer bästa praxis. Den kontrollerar ditt scenario och ger rekommendationer om dess struktur och organisation.
 
