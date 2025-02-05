@@ -4,9 +4,9 @@ description: Alternativen för e-postmeddelanden anges på teamnivå.
 author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 410676b7def1e36de12fee9d6df79feba566d741
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Alternativen för e-postmeddelanden anges på teamnivå.
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Scenario deactivation]</p> </td> 
-      <td><p>Få ett e-postmeddelande när ett scenario inaktiveras.</p><p><b>Obs!</b> Du meddelas bara om scenarioinaktivering när scenariot har inaktiverats automatiskt på grund av fel. Du får inga meddelanden om scenarier som inaktiveras manuellt.</p><p>I vissa fall kan ett scenario inaktiveras av [!DNL Workfront Fusion]-tekniker eftersom scenariot orsakar prestandaproblem eller andra problem. I dessa fall får du inga meddelanden i [!DNL Workfront Fusion]. </p></td>
+      <td><p>Få ett e-postmeddelande när ett scenario inaktiveras.</p><p>I vissa fall kan ett scenario inaktiveras av [!DNL Workfront Fusion]-tekniker eftersom scenariot orsakar prestandaproblem eller andra problem. I dessa fall får du inga meddelanden i [!DNL Workfront Fusion]. </p></td>
 
 </tr>
 </tbody>
