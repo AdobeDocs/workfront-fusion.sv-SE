@@ -4,18 +4,14 @@ description: Adobe Workfront Fusion HTTP&gt; Make a request module är en univer
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL HTTP] > [!UICONTROL Make a request]-modulen
-
->[!NOTE]
->
->Adobe Workfront Fusion kräver en [!DNL Adobe Workfront Fusion]-licens utöver en [!DNL Adobe Workfront]-licens.
 
 [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL Make a request module] är en universell modul som gör att du kan konfigurera en HTTP-begäran och skicka den till en server. Det mottagna HTTP-svaret finns sedan i utdatapaketet.
 
@@ -27,50 +23,48 @@ ht-degree: 0%
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
-   <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
-   <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Workfront Fusion-licens krävs inte.</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## [!UICONTROL HTTP] >[!UICONTROL Make a request] modulkonfiguration
++++
 
-När du konfigurerar modulen [!UICONTROL HTTP] >[!UICONTROL Make a request] visar [!DNL Adobe Workfront Fusion] fälten som listas nedan. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+## [!UICONTROL HTTP] > [!UICONTROL Make a request] modulkonfiguration
 
-Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan i [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
-
-![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+När du konfigurerar modulen [!UICONTROL HTTP] > [!UICONTROL Make a request] visar [!DNL Adobe Workfront Fusion] fälten som listas nedan. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -82,7 +76,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
-   <td> <p>Ange den URL som du vill skicka en begäran till, t.ex. en API-slutpunkt, webbplats osv.</p> </td> 
+   <td> <p>Ange den URL som du vill skicka en begäran till, till exempel en API-slutpunkt eller webbplats.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
@@ -90,7 +84,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers] </td> 
-   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.Till exempel <code>{"Content-type":"application/json"}</code></p> </td> 
+   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt. Exempel: <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -110,13 +104,13 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL  Multipart/form-data] är en HTTP-multipart-begäran som används för att skicka filer och data. Det används ofta för att överföra filer till servern.</p> <p>Lägg till fält som ska skickas i begäran. Varje fält måste innehålla nyckelvärdepar.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Ange nyckeln och värdet som ska skickas i begärandetexten.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Ange nyckeln och ange den källfil som du vill skicka i begärandetexten.</p> <p>Mappa filen som du vill överföra från föregående modul (till exempel [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] eller [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)]) eller ange filnamnet och fildata manuellt.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Ange nyckeln och ange den källfil som du vill skicka i begärandetexten.</p> <p>Mappa filen som du vill överföra från den tidigare modulen (till exempel [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] eller [!UICONTROL Google Drive] &gt; Hämta en fil) eller ange filnamnet och fildata manuellt.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse response]</p> </td> 
-   <td> <p>Aktivera det här alternativet om du vill analysera svar automatiskt och konvertera JSON- och XML-svar så att du inte behöver använda [!UICONTROL JSON] &gt; [!UICONTROL Parse JSON] eller [!UICONTROL XML] &gt; [!UICONTROL Parse XML]-moduler.</p> <p>Innan du kan använda tolkat JSON- eller XML-innehåll kör du modulen en gång manuellt, så att modulen kan identifiera svarsinnehållet och mappa det i efterföljande moduler.</p> </td> 
+   <td> <p>Aktivera det här alternativet om du vill att svar ska tolkas automatiskt och konverteras till JSON- och XML-svar.</p> <p>Innan du kan använda tolkat JSON- eller XML-innehåll kör du modulen en gång manuellt, så att modulen kan identifiera svarsinnehållet och mappa det i efterföljande moduler.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL User name]</p> </td> 
@@ -136,7 +130,25 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Self-signed certificate]</td> 
-   <td> <p> Överför ditt certifikat om du vill använda TLS med ditt självsignerade certifikat.</p> </td> 
+   <td> <p>Så här lägger du till ett självsignerat certifikat:</p>
+          <ol>
+            <li value="1">
+              <p>Klicka på <b>[!UICONTROL Extract]</b>.</p>
+            </li>
+            <li value="2">
+              <p>Välj vilken typ av fil du extraherar.</p>
+            </li>
+            <li value="3">
+              <p>Markera filen som innehåller certifikatet eller certifikatet.</p>
+            </li>
+            <li value="4">
+              <p>Ange lösenordet för filen.</p>
+            </li>
+            <li value="5">
+              <p>Klicka på <b>[!UICONTROL Save]</b> för att extrahera filen och återgå till modulinställningarna.</p>
+            </li>
+          </ol>
+</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 
@@ -160,19 +172,17 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Use Mutual TLS]</td> 
-   <td> <p>Aktivera det här alternativet om du vill använda ömsesidig TLS i HTTP-begäran.</p> <p>Mer information om ömsesidigt TLS finns i <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Använd ömsesidigt TLS i HTTP-moduler i [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Aktivera det här alternativet om du vill använda ömsesidig TLS i HTTP-begäran.</p> <p>Mer information om ömsesidigt TLS finns i <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Använd ömsesidigt TLS i HTTP-moduler</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**Exempel:** I det här exemplet visas hur du ställer in modulen så att den skickar en [!UICONTROL POST]-begäran med JSON-nyttolast:
->
->![Gör ett exempel på en förfrågan](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+>[!BEGINSHADEBOX]
 
->[!NOTE]
->
->Om du vill vara säker på att [!UICONTROL JSON] är giltig kan du använda någon av de tillgängliga onlinetjänsterna, till exempel [https://jsonlint.com/](https://jsonlint.com/). Du kan också använda [!UICONTROL JSON] >[!UICONTROL Create JSON module] för att skapa JSON dynamiskt och ta hand om all nödvändig flytning.
->
->Att blanda JSON-bitar med uttryck och objekt direkt i fältet [!UICONTROL Request content] rekommenderas inte eftersom det kan resultera i ogiltig JSON.
+**Exempel:** I det här exemplet visas hur du ställer in modulen så att den skickar en [!UICONTROL POST]-begäran med JSON-nyttolast:
+
+![Gör ett exempel på en förfrågan](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+
+Vi rekommenderar inte att JSON-bitar blandas med uttryck och objekt direkt i fältet [!UICONTROL Request content] eftersom det kan resultera i ogiltig JSON.
+
+>[!ENDSHADEBOX]

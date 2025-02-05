@@ -4,9 +4,9 @@ description: Med Adobe Workfront Fusion [!DNL Google Docs] -modulerna kan du öv
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3222'
 ht-degree: 0%
 
 ---

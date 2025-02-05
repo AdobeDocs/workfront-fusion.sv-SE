@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Acrobat Sign] modulerna kan du starta ett [!DNL Ad
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
 workflow-type: tm+mt
-source-wordcount: '5501'
+source-wordcount: '5503'
 ht-degree: 0%
 
 ---
@@ -229,7 +229,7 @@ Den här åtgärdsmodulen skapar en ny post av den valda typen.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.Till exempel <code>{"Content-type":"application/json"}</code></td> 
+   <td>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt. Exempel: <code>{"Content-type":"application/json"}</code></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
@@ -361,7 +361,7 @@ Den här åtgärdsmodulen skapar ett avtal, skickar det för signering och retur
 <td>Instruktioner om hur du ansluter ditt [!DNL Adobe Acrobat Sign]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a></td>  </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.Till exempel <code>{"Content-type":"application/json"}</code></td> 
+   <td>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt. Exempel: <code>{"Content-type":"application/json"}</code></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Files to send]</td> 
