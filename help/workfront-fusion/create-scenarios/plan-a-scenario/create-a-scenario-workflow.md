@@ -4,9 +4,9 @@ description: Följ det här allmänna arbetsflödet för att skapa ett scenario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 0029e6a79c6fb7479ddd0948c773349efa075403
+source-git-commit: c34adf455ce01da52c321d3f997a58f8251d97bf
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -139,35 +139,41 @@ Du kan använda följande kortkommandon när du skapar eller redigerar ett scena
   <tr> 
    <td role="rowheader">[!UICONTROL Save] </td> 
    <td>Ctrl+Skift+S</td> 
-   <td><span style="font-weight: normal;">Cmd+Skift+S</span> </td> 
+   <td>Cmd+Skift+S</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Run Once]</td> 
    <td>Ctrl+Skift+Retur</td> 
-   <td><span style="font-weight: normal;">Cmd+Skift+Retur</span> </td> 
+   <td>Cmd+Skift+Enter</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
    <td>F12</td> 
-   <td><span style="font-weight: normal;">Ctrl+Fn+F12</span> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Copy]</td> 
-   <td>Ctrl+C</td> 
-   <td><span style="font-weight: normal;">Cmd+C</span> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Paste]</td> 
-   <td>Ctrl+V</td> 
-   <td><span style="font-weight: normal;">Cmd+V</span> </td> 
+   <td>Ctrl+Fn+F12</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
    <td>Skift+dra</td> 
-   <td><span style="font-weight: normal;">Skift+dra</span> </td> 
+   <td>Skift+dra</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Copy]</td> 
+   <td>Ctrl+C</td> 
+   <td>Cmd+C</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td>Ctrl+V</td> 
+   <td>Cmd+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Klistra in cURL i scenario för att skapa HTTP-modul</td> 
+   <td colspan="2">Kopiera cURL och klistra sedan in var som helst i scenarioredigeraren.<p>Mer information finns i <a href="/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md">Använd cURL för att lägga till en HTTP-modul</a>.</td> 
   </tr> 
  </tbody> 
 </table>
+
+
 
 
 
