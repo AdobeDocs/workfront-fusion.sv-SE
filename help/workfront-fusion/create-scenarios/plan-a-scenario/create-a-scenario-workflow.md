@@ -4,9 +4,9 @@ description: Följ det här allmänna arbetsflödet för att skapa ett scenario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: c34adf455ce01da52c321d3f997a58f8251d97bf
+source-git-commit: 394f80a2d7c124bbd00e1a5b51ad3dc6e73a996b
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ Scenarier har tagits fram för att uppfylla organisationens behov, med program o
 * [Konfigurera scenarioinställningar](#onfigure-scenario-settings)
 * [Testa och revidera](#test-and-revise)
 * [Aktivera scenariot](#activate-the-scenario)
+* [Kortkommandon för Workfront Fusion-scenarier](#workfront-fusion-scenario-keyboard-shortcuts)
 
 Kortkommandon
 
