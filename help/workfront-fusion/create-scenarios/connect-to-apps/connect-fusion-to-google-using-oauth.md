@@ -4,7 +4,7 @@ description: Du kan använda Adobe Workfront Fusion för att ansluta till Google
 author: Becky
 feature: Workfront Fusion
 exl-id: 2f0bc289-4ecf-4a31-9d7b-641bbca6fc95
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: 5971b2210eaac8f8a75fd7a4aac5a9f7954d27ef
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 0%
@@ -84,7 +84,7 @@ Så här skapar du ett projekt på Google Cloud Platform:
 
 1. Börja skapa ett projekt på Google Cloud Platform.
 
-   Instruktioner finns i [Skapa ett Google Cloud-projekt](https://developers.google.com/workspace/guides/create-project) i dokumentationen för Gogle.
+   Instruktioner finns i [Skapa ett Google Cloud-projekt](https://developers.google.com/workspace/guides/create-project) i Google-dokumentationen.
 1. När du aktiverar API:er måste du aktivera Google Drive API samt API:t för alla Google-program som du vill använda (till exempel Google Sheets API).
 1. Slutför projektet.
 1. Fortsätt till avsnittet [Konfigurera inställningar för OAuth-medgivande](#configure-oauth-consent-settings) i den här artikeln.
