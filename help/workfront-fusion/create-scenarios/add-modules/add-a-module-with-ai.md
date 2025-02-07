@@ -4,9 +4,9 @@ description: Du kan använda AI för att ange en textprompt som beskriver vad du
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 9d29abc82a3bb09affc4d17d7ea214d7bb850294
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,15 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 +++
 
+## Förutsättningar
+
+Din organisation måste uppfylla följande krav för att kunna använda den här funktionen:
+
+* Din organisation måste ha deltagit i Workfront AI Assistant Beta.
+* Adobe måste ha ett signerat Adobe Gen AI-avtal till din organisation.
+
+  Mer information om hur du signerar avtalet finns i [Signera Adobe Gen AI-avtalet](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) i artikeln AI Assistant-översikt i Workfront-dokumentationen.
+
 ## AI-modulprogram som stöds för närvarande
 
 Fusion AI kan för närvarande generera moduler som ansluter till följande program:
@@ -95,15 +104,8 @@ Fusion AI kan för närvarande generera moduler som ansluter till följande prog
 1. Klicka på fliken **[!UICONTROL Scenarios]** i den vänstra panelen.
 1. Välj det scenario där du vill lägga till en modul.
 1. Klicka någonstans i scenariot för att öppna Scenarioredigeraren.
-1. Klicka på ikonen Generera med AI ![Generera med AI](assets/generate-with-ai-icon-beta.png) längst ned på sidan för scenarieredigering.
-
-   eller
-
-   Börja lägga till en modul och välj **Generera med AI** i listan över program. Det här alternativet visas inte när den första (utlösande) modulen läggs till i ett scenario.
-
-   AI-assistentpanelen öppnas.
-1. (Villkorligt) Om det här är första gången som du använder AI för att lägga till ett scenariosegment ska du läsa avtalet som visas och klicka på **Godkänn**.
-1. Skriv en textruta i rutan.
+1. Klicka på ikonen **AI-assistenten** ![AI-assistenten](assets/ai-assistant-icon.png) i skärmens övre högra hörn.
+1. Skriv en textprompt i AI Assistant-panelen.
 
    Tips om uppmaningar finns i [Tips om hur du skapar uppmaningar för scenariosegment](#tips-for-creating-prompts-for-scenario-segments) i den här artikeln.
 
