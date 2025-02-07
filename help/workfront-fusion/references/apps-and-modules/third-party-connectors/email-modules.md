@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du ansluta ditt e-
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: add63edf94cc430113bf2cfd0c389cca04aa92f8
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2023'
 ht-degree: 0%
 
 ---
@@ -17,47 +17,51 @@ I ett [!DNL Adobe Workfront Fusion]-scenario kan du ansluta ditt e-postkonto til
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Koppla ditt e-postmeddelande till Workfront Fusion {#connect-your-email-to-workfront-fusion}
 
 * [Anslut till Google](#connect-to-google)
-* [Anslut till andra e-posttjänster (SMAP)](#connect-to-other-email-services-smap)
+* [Anslut till andra e-posttjänster (IMAP)](#connect-to-other-email-services-smap)
 
 ### Anslut till [!DNL Google]
 
@@ -71,17 +75,28 @@ Du kan skapa en anslutning till ditt [!DNL Google]-konto direkt från en e-postm
 1. (Valfritt) Ange [!UICONTROL [!DNL Google] Client ID] och [!UICONTROL Client Secret].
 1. Klicka på **[!UICONTROL Continue]** för att skapa anslutningen och gå tillbaka till modulen.
 
-### Anslut till andra e-posttjänster (SMAP)
+### Anslut till andra e-posttjänster (IMAP)
 
-Med SMAP-anslutning kan du få fjärråtkomst till din postlåda och läsa eller ändra meddelanden i din postlåda. SMAP-anslutningen används av de flesta e-postmoduler.
+Med IMAP-anslutning kan du få fjärråtkomst till din postlåda och läsa eller ändra meddelanden i din postlåda. IMAP-anslutningen används av de flesta e-postmoduler.
 
 1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL Connection] i någon e-postmodul.
 1. Välj **[!UICONTROL Others (SMTP)]** som anslutningstyp.
 1. Ange en **[!UICONTROL Name]** för anslutningen.
 1. Välj **[!UICONTROL Email provider]** i listan. Om din e-postleverantör inte finns med i listan väljer du Annan.
-1. Ange din **[!UICONTROL Email address]**, **[!UICONTROL Your full name]**, din **[!UICONTROL User name]** och din **[!UICONTROL Password]**.
+1. Ange **[!UICONTROL User name]** och **[!UICONTROL Password]** för e-postkontot.
 1. (Villkorligt) Om din leverantör inte finns med i listan anger du din **[!UICONTROL SMTP server]** och **[!UICONTROL Port]** och anger om du vill **[!UICONTROL Use a secure connection (TLS)]**. Du hittar den här informationen i avsnittet [!UICONTROL Help] för din postlåda. Kontakta din e-postleverantör om du inte har den här informationen tillgänglig.
+1. Om du vill använda ett självsignerat certifikat aktiverar du alternativet **Avvisa oauktoriserade certifikat** och överför ditt självsignerade certifikat. Instruktioner finns i [Överföra ett självsignerat certifikat](#upload-a-self-signed-certificate)
 1. Klicka på **[!UICONTROL Continue]** för att skapa anslutningen och gå tillbaka till modulen.
+
+#### Överför ett självsignerat certifikat
+
+Så här lägger du till ett självsignerat certifikat:
+
+1. Klicka på **Extract**.
+1. Välj vilken typ av fil du extraherar.
+1. Markera filen som innehåller certifikatet eller certifikatet.
+1. Ange lösenordet för filen.
+1. Klicka på **Spara** för att extrahera filen och återgå till modulinställningarna.
 
 ## [!UICONTROL Email]-moduler och deras fält
 
@@ -105,7 +120,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 #### [!UICONTROL Watch Emails]
 
-Utlöses när ett nytt e-postmeddelande tas emot för bearbetning enligt angivna villkor.
+Den här utlösarmodulen startar ett scenario när ett nytt e-postmeddelande tas emot för bearbetning enligt angivna villkor.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -132,17 +147,13 @@ Utlöses när ett nytt e-postmeddelande tas emot för bearbetning enligt angivna
    <td role="rowheader">[!UICONTROL Sender Email Address] </td> 
    <td> <p>Ange e-postadressen till den avsändare vars e-postmeddelanden du vill bevaka.</p> </td> 
   </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Recipient Email Address]</td> 
-   <td> <p> Ange e-postadressen till mottagaren vars e-postmeddelanden du vill bevaka.</p> </td> 
-  </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subject] </td> 
    <td> <p>Ange ämnet för det e-postmeddelande som du vill titta på.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Phrase] </td> 
-   <td> <p>Ange eventuella nyckelord om du bara vill se de e-postmeddelanden som innehåller specifika fraser.</p> </td> 
+   <td> <p>Ange eventuella nyckelord om du bara vill se de e-postmeddelanden som innehåller nyckelorden.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Mark message(s) as read when fetched]</td> 
@@ -150,21 +161,301 @@ Utlöses när ett nytt e-postmeddelande tas emot för bearbetning enligt angivna
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of results]</td> 
-   <td> <p> Det högsta antalet e-postmeddelanden [!DNL Workfront Fusion] ska returneras under en körningscykel för scenario.</p> </td> 
+   <td> <p> Ange eller mappa det maximala antalet e-postmeddelanden som [!DNL Workfront Fusion] ska returnera under en körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Åtgärder
 
-* [[!UICONTROL Send an Email]](#send-an-email)
+* [[!UICONTROL Copy an Email]](#copy-an-email)
 * [[!UICONTROL Create a Draft]](#create-a-draft)
+* [[!UICONTROL Delete an Email]](#delete-an-email)
+* [[!UICONTROL Get Emails]](#get-emails)
 * [[!UICONTROL Mark an Email as Read]](#mark-an-email-as-read)
 * [[!UICONTROL Mark an Email as Unread]](#mark-an-email-as-unread)
 * [[!UICONTROL Move an Email]](#move-an-email)
-* [[!UICONTROL Copy an Email]](#copy-an-email)
-* [[!UICONTROL Delete an Email]](#delete-an-email)
-* [[!UICONTROL Get Emails]](#get-emails)
+* [[!UICONTROL Send an Email]](#send-an-email)
+
+#### [!UICONTROL Copy an Email]
+
+Den här åtgärdsmodulen kopierar ett e-postmeddelande eller ett utkast till en markerad mapp.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till [!UICONTROL Workfront Fusion] finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Anslut din e-post till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td>
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source Folder]</td> 
+   <td>Välj den mapp som du vill kopiera e-postmeddelandet från. Exempel: Primär.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Destination Folder]</td> 
+   <td> <p> Markera den mapp som du vill kopiera e-postmeddelandet till. Exempel: Arbete.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
+   <td> <p>Ange e-postadressen till UID-postmeddelandet som du vill kopiera till målmappen.</p> <p>Du kan hämta UID för e-postmeddelandet genom att använda modulen [!UICONTROL Email] &gt; [!UICONTROL Watch Email] eller [!UICONTROL Search Email] .</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Create a Draft]
+
+Den här åtgärdsmodulen skapar och lägger till ett nytt utkast i en markerad mapp.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till [!UICONTROL Workfront Fusion] finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Anslut din e-post till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td>
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td>Markera den mapp där du vill skapa e-postutkastet.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL To] </td> 
+   <td> <p>Ange eller mappa den e-postadress som du vill skicka e-postmeddelandet till.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Subject] </td> 
+   <td> <p>Ange eller mappa ämnesraden för e-postmeddelandet.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Content] </td> 
+   <td> <p>Ange eller mappa e-postinnehållet i HTML-format med HTML-taggar eller i oformaterad text.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
+   <td> <p>För varje bifogad fil som du vill lägga till klickar du på <b>Lägg till objekt</b> och anger följande:</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL File name]</strong> </p> <p>Ange filnamnet, inklusive filtillägget. </p> </li> 
+     <li> <p><strong>[!UICONTROL Data]</strong> </p> <p>Ange sökvägen till den mapp där du vill överföra den bifogade filen.</p> </li> 
+     <li> <p><strong>[!UICONTROL Content-ID]</strong> </p> <p>Ange innehålls-ID:t som den bifogade filen (bilden) ska infogas i innehållet.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Copy Recipient] </td> 
+   <td> <p>För varje e-postadress som du vill skicka en kopia av det här e-postmeddelandet till klickar du på <b>Lägg till objekt</b> och anger e-postadressen. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Blind Copy Recipient]</td> 
+   <td> <p> För varje e-postadress som du vill skicka en kopia av det här e-postmeddelandet till utan att e-postadressen visas i e-postmeddelandet klickar du på <b>Lägg till objekt</b> och anger e-postadressen.</p> </td> 
+  </tr> 
+  <!--<tr data-mc-conditions=""> 
+   <td role="rowheader">[!UICONTROL From] </td> 
+   <td> <p>Enter or map the email address (and name, if needed) that appears in the [!UICONTROL From] field in the email. </p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code>.</p> <p>Note:  Normally, [!DNL Workfront Fusion] uses the email address that you entered when creating the connection as the sender address. If you enter any other email address, an error may occur when sending a message because your account may not have permission to send emails from a different address than your own. E.g. <code>test@mail.com</code> or "<code>John Bush" test@email.com</code>.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader"> <p>[!UICONTROL Sender]</p> </td> 
+   <td> <p>Enter or map the email address that appears in the [!UICONTROL Sender] field in the email.</p> <p>Tip:  If you are unsure whether to use this field or the From field, we recommend choosing the From field.</p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code></p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[!UICONTROL Reply-To]</td> 
+   <td> <p> If you want replies to this email sent to a different address than the "[!UICONTROL from]" address, enter the email address where you want replies to this email sent.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[!UICONTROL In-Reply-To]</td> 
+   <td> <p> If you are replying to a specific email, enter or map the ID of the email you are replying to.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[!UICONTROL References] </td> 
+   <td> <p>Enter the message IDs of all the replies in the thread.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader"> <p>[!UICONTROL Priority]</p> </td> 
+   <td> <p>Select the priority of the email:</p> 
+    <ul> 
+     <li>[!UICONTROL High]</li> 
+     <li>[!UICONTROL Normal]</li> 
+     <li>[!UICONTROL Low]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader"> <p>[!UICONTROL Headers]</p> </td> 
+   <td> <p>Add the headers:</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Key]</strong> </p> <p>Add the key. For example, Sender, Date, To, and so on.</p> </li> 
+     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Enter the value for the key.</p> </li> 
+    </ul> </td> 
+  </tr> -->
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete an Email]
+
+Den här åtgärdsmodulen tar bort ett e-postmeddelande eller ett utkast från den markerade mappen.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till [!UICONTROL Workfront Fusion] finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Anslut din e-post till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td>
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td>Markera mappen som innehåller e-postmeddelandet som du vill ta bort.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
+   <td> <p>Ange e-postadressen till UID-postmeddelandet som du vill ta bort.</p> <p>Du kan hämta e-postmeddelandets UID genom att använda modulen E-post &gt; Bevaka e-post eller [!UICONTROL Search Email].</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Expunge]</td> 
+   <td> <p>Aktivera det här alternativet om du vill ta bort alla meddelanden som har flaggats som [!UICONTROL Deleted] permanent i den öppna postlådan.</p> <p>Obs! I [!DNL Gmail] styrs det här beteendet av inställningen i avsnittet [!UICONTROL Settings] &gt;[!UICONTROL Forwarding POP/IMAP in IMAP access].</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get Emails]
+
+Den här modulen returnerar e-postmeddelanden som matchar de angivna villkoren.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till [!UICONTROL Workfront Fusion] finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Anslut din e-post till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td>
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder] </td> 
+   <td> <p>Markera mappen som innehåller de e-postmeddelanden som du vill hämta.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Mark message(s) as read when fetched] </td> 
+   <td> <p>Aktivera det här alternativet om du vill markera det olästa e-postmeddelandet som läst när du har hämtat informationen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Criteria]</p> </td> 
+   <td> <p>Välj villkoren för de e-postmeddelanden som du vill hämta:</p> 
+    <ul> 
+     <li>[!UICONTROL All Emails]</li> 
+     <li>[!UICONTROL Only Read Emails]</li> 
+     <li>[!UICONTROL Only Unread Emails]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Sender Email Address] </td> 
+   <td> <p>Ange eller mappa e-postadressen till den avsändare vars e-postmeddelanden du vill hämta.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[!UICONTROL Recipient Email]</td> 
+   <td> <p> Ange eller mappa e-postadressen till mottagaren vars e-postmeddelanden du vill hämta.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL From date] </td> 
+   <td> <p>Ange eller mappa datumet för att hämta e-postmeddelanden som bearbetas på eller efter det angivna datumet.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Before date]</td> 
+   <td> <p> Ange eller mappa datumet för att hämta e-postmeddelanden som bearbetats på eller före det angivna datumet.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Subject] </td> 
+   <td> <p>Ange eller mappa ämnet för det e-postmeddelande som du vill hämta.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Phrase] </td> 
+   <td> <p>Ange eller mappa nyckelord om du bara vill hämta e-postmeddelanden som innehåller nyckelorden.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Email ID (UID)]</td> 
+   <td> <p> Ange e-post-ID (UID) för e-postmeddelandet vars information du vill hämta.</p> <p>Du kan hämta UID för e-postmeddelandet med hjälp av [!UICONTROL  Watch Email]-modulen eller [!UICONTROL Search Email] för [!DNL Workfront Fusion].</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Maximum number of results]</td> 
+   <td> <p> Det högsta antalet e-postmeddelanden [!DNL Workfront Fusion] ska returneras under en körningscykel för scenario.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
+   <td> <p> Välj om du vill fortsätta att köra modulen även om inga resultat returneras.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Mark an Email as Read]
+
+Den här åtgärdsmodulen markerar ett e-postmeddelande eller ett utkast i en markerad mapp som läst genom att ange flaggan [!UICONTROL Read].
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till [!UICONTROL Workfront Fusion] finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Anslut din e-post till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td>
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td>Markera den mapp som innehåller det e-postmeddelande som du vill markera som läst.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
+   <td> <p>Ange e-postadressen till UID-postmeddelandet som du vill markera som läst.</p> <p>Du kan hämta e-postmeddelandets UID genom att använda modulen E-post &gt; Bevaka e-post eller [!UICONTROL Search Email].</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Mark an Email as Unread]
+
+Markerar ett e-postmeddelande eller ett utkast i en markerad mapp som oläst genom att ange flaggan Oläst.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till [!UICONTROL Workfront Fusion] finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Anslut din e-post till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td>
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td>Markera den mapp som innehåller det e-postmeddelande som du vill markera som oläst. Exempel: Primär.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
+   <td> <p>Ange e-postadressen till UID-postmeddelandet som du vill markera som oläst.</p> <p>Du kan hämta e-postmeddelandets UID genom att använda modulen E-post &gt; Bevaka e-post eller [!UICONTROL Search Email].</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Move an Email]
+
+Flyttar ett valt e-postmeddelande eller ett utkast till en markerad mapp.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till [!UICONTROL Workfront Fusion] finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Anslut din e-post till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td>
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source Folder]</td> 
+   <td>Markera mappen som innehåller e-postmeddelandet som du vill flytta. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Destination Folder]</td> 
+   <td> <p> Markera den mapp som du vill lägga till e-postmeddelandet i.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
+   <td> <p>Ange e-postadressen till UID-postmeddelandet som du vill flytta till målmappen.</p> <p>Du kan hämta e-postmeddelandets UID genom att använda modulen E-post &gt; Bevaka e-post eller [!UICONTROL Search Email].</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Send an Email]
 
@@ -204,24 +495,20 @@ Skickar ett nytt e-postmeddelande.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
-   <td> <p>Lägg till en bifogad fil:</p> 
+   <td> <p>För varje bifogad fil som du vill lägga till klickar du på <b>Lägg till objekt</b> och anger följande:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL File name]</strong> </p> <p>Ange filnamnet. Exempel: sample.doc.</p> </li> 
-     <li> <p><strong>[!UICONTROL Data]</strong> </p> <p>Ange sökvägen till mappen som du vill överföra den bifogade filen till.</p> </li> 
-     <li> <p><strong>[!UICONTROL Content-ID]</strong> </p> <p>Ange [!UICONTROL content ID] för att infoga den bifogade filen (bilden) i innehållet.</p> </li> 
+     <li> <p><strong>[!UICONTROL File name]</strong> </p> <p>Ange filnamnet, inklusive filtillägget. </p> </li> 
+     <li> <p><strong>[!UICONTROL Data]</strong> </p> <p>Ange sökvägen till den mapp där du vill överföra den bifogade filen.</p> </li> 
+     <li> <p><strong>[!UICONTROL Content-ID]</strong> </p> <p>Ange innehålls-ID:t som den bifogade filen (bilden) ska infogas i innehållet.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Copy Recipient] </td> 
-   <td> <p>Ange eller mappa en eller flera e-postadresser som du vill skicka en kopia av det här e-postmeddelandet till. </p> </td> 
+   <td> <p>För varje e-postadress som du vill skicka en kopia av det här e-postmeddelandet till klickar du på <b>Lägg till objekt</b> och anger e-postadressen. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Blind Copy Recipient]</td> 
-   <td> <p> Ange eller mappa en eller flera e-postadresser som du vill skicka en kopia av det här e-postmeddelandet till utan att e-postadressen visas i e-postmeddelandet.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>Ange eller mappa e-postadressen (och namnet om det behövs) som visas i fältet [!UICONTROL From] i e-postmeddelandet. </p> <p>Viktigt: Använd rätt syntax: <code>name@email.com</code> eller <code>"Name" name@email.com</code>.</p> <p>Obs! I [!DNL Workfront Fusion] används normalt den e-postadress som du angav när du skapade anslutningen som avsändaradress. Om du anger en annan e-postadress kan ett fel inträffa när du skickar ett meddelande, eftersom ditt konto kanske inte har behörighet att skicka e-post från en annan adress än din egen. Exempel: <code>test@mail.com</code> eller <code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p> För varje e-postadress som du vill skicka en kopia av det här e-postmeddelandet till utan att e-postadressen visas i e-postmeddelandet klickar du på <b>Lägg till objekt</b> och anger e-postadressen.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Sender]</p> </td> 
@@ -256,293 +543,9 @@ Skickar ett nytt e-postmeddelande.
      <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Ange värdet för nyckeln.</p> </li> 
     </ul> </td> 
   </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Create a Draft]
-
-Skapar och lägger till ett nytt utkast i en markerad mapp.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till [!UICONTROL Workfront Fusion] finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Anslut din e-post till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td>
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
-   <td>Markera den mapp där du vill skapa e-postutkastet.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL To] </td> 
-   <td> <p>Ange eller mappa den e-postadress som du vill skicka e-postmeddelandet till.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Subject] </td> 
-   <td> <p>Ange eller mappa ämnesraden för e-postmeddelandet.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader"> <p>[!UICONTROL Content Type]</p> </td> 
-   <td> <p>Välj innehållstyp för e-postmeddelandet:</p> 
-    <ul> 
-     <li>HTML</li> 
-     <li>[!UICONTROL Plain Text]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Content] </td> 
-   <td> <p>Ange eller mappa e-postinnehållet i HTML-format med hjälp av HTML-taggar eller i oformaterad text, beroende på vad du har valt i fältet [!UICONTROL Content Type].</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
-   <td> <p>Lägg till en bifogad fil:</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL File name]</strong> </p> <p>Ange filnamnet. Exempel: sample.doc.</p> </li> 
-     <li> <p><strong>[!UICONTROL Data]</strong> </p> <p>Ange sökvägen till mappen som du vill överföra den bifogade filen till.</p> </li> 
-     <li> <p><strong>[!UICONTROL Content-ID]</strong> </p> <p>Ange innehålls-ID:t som den bifogade filen (bilden) ska infogas i innehållet.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Copy Recipient] </td> 
-   <td> <p>Ange eller mappa en eller flera e-postadresser som du vill skicka en kopia av det här e-postmeddelandet till. </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Blind Copy Recipient]</td> 
-   <td> <p> Ange eller mappa en eller flera e-postadresser som du vill skicka en kopia av det här e-postmeddelandet till utan att e-postadressen visas i e-postmeddelandet.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
+<tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL From] </td> 
    <td> <p>Ange eller mappa e-postadressen (och namnet om det behövs) som visas i fältet [!UICONTROL From] i e-postmeddelandet. </p> <p>Viktigt: Använd rätt syntax: <code>name@email.com</code> eller <code>"Name" name@email.com</code>.</p> <p>Obs! I [!DNL Workfront Fusion] används normalt den e-postadress som du angav när du skapade anslutningen som avsändaradress. Om du anger en annan e-postadress kan ett fel inträffa när du skickar ett meddelande, eftersom ditt konto kanske inte har behörighet att skicka e-post från en annan adress än din egen. Exempel: <code>test@mail.com</code> eller <code>John Bush" test@email.com</code>.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader"> <p>[!UICONTROL Sender]</p> </td> 
-   <td> <p>Ange eller mappa e-postadressen som visas i fältet [!UICONTROL Sender] i e-postmeddelandet.</p> <p>Tips! Om du är osäker på om du ska använda det här fältet eller fältet Från rekommenderar vi att du väljer fältet Från.</p> <p>Viktigt: Använd rätt syntax: <code>name@email.com</code> eller <code>"Name" name@email.com</code></p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Reply-To]</td> 
-   <td> <p> Om du vill att svar på det här e-postmeddelandet ska skickas till en annan adress än adressen [!UICONTROL from] anger du den e-postadress dit du vill att svar på det här e-postmeddelandet ska skickas.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL In-Reply-To]</td> 
-   <td> <p> Om du svarar på ett visst e-postmeddelande anger eller mappar du ID:t för det e-postmeddelande du svarar på.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL References] </td> 
-   <td> <p>Ange meddelande-ID för alla svar i tråden.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader"> <p>[!UICONTROL Priority]</p> </td> 
-   <td> <p>Välj e-postens prioritet:</p> 
-    <ul> 
-     <li>[!UICONTROL High]</li> 
-     <li>[!UICONTROL Normal]</li> 
-     <li>[!UICONTROL Low]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader"> <p>[!UICONTROL Headers]</p> </td> 
-   <td> <p>Lägg till rubrikerna:</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Key]</strong> </p> <p>Lägg till nyckeln. Till exempel Avsändare, Datum, Till och så vidare.</p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Ange värdet för nyckeln.</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Mark an Email as Read]
-
-Markerar ett e-postmeddelande eller ett utkast i en markerad mapp som läst genom att ange flaggan [!UICONTROL Read].
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till [!UICONTROL Workfront Fusion] finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Anslut din e-post till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td>
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
-   <td>Markera den mapp i e-postmeddelandet som du vill markera som läst. Exempel: Primär.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>Ange e-postadressen till UID-postmeddelandet som du vill markera som läst.</p> <p>Du kan hämta UID för e-postmeddelandet genom att använda modulen [!UICONTROL Email] &gt;[!UICONTROL Watch Email] eller [!UICONTROL Search Email] .</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Mark an Email as Unread]
-
-Markerar ett e-postmeddelande eller ett utkast i en markerad mapp som oläst genom att ange flaggan Oläst.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till [!UICONTROL Workfront Fusion] finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Anslut din e-post till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td>
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
-   <td>Markera den mapp i e-postmeddelandet som du vill markera som oläst. Exempel: Primär.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>Ange e-postadressen till UID-postmeddelandet som du vill markera som oläst.</p> <p>Du kan hämta UID för e-postmeddelandet genom att använda modulen [!UICONTROL Email] &gt;[!UICONTROL Watch Email] eller [!UICONTROL Search Email] .</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Move an Email]
-
-Flyttar ett valt e-postmeddelande eller ett utkast till en markerad mapp.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till [!UICONTROL Workfront Fusion] finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Anslut din e-post till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td>
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source Folder]</td> 
-   <td>Markera den mapp som innehåller e-postmeddelandet som du vill flytta e-postmeddelandet från. Exempel: Primär.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Destination Folder]</td> 
-   <td> <p> Markera den mapp som du vill lägga till e-postmeddelandet i. Exempel: Arbete.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>Ange e-postadressen till UID-postmeddelandet som du vill flytta till målmappen.</p> <p>Du kan hämta UID för e-postmeddelandet genom att använda modulen [!UICONTROL Email] &gt;[!UICONTROL Watch Email] eller [!UICONTROL Search Email] .</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Copy an Email]
-
-Kopierar ett e-postmeddelande eller ett utkast till en markerad mapp.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till [!UICONTROL Workfront Fusion] finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Anslut din e-post till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td>
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source Folder]</td> 
-   <td>Välj den mapp som du vill kopiera e-postmeddelandet från. Exempel: Primär.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Destination Folder]</td> 
-   <td> <p> Markera den mapp som du vill kopiera e-postmeddelandet till. Exempel: Arbete.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>Ange e-postadressen till UID-postmeddelandet som du vill kopiera till målmappen.</p> <p>Du kan hämta UID för e-postmeddelandet genom att använda modulen [!UICONTROL Email] &gt;[!UICONTROL Watch Email] eller [!UICONTROL Search Email] .</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Delete an Email]
-
-Tar bort ett e-postmeddelande eller ett utkast från den markerade mappen.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till [!UICONTROL Workfront Fusion] finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Anslut din e-post till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td>
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
-   <td>Markera mappen för det e-postmeddelande som du vill ta bort. Exempel: Primär.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>Ange e-postadressen till UID-postmeddelandet som du vill ta bort.</p> <p>Du kan hämta UID för e-postmeddelandet genom att använda modulen [!UICONTROL Email] &gt;[!UICONTROL Watch Email] eller [!UICONTROL Search Email] .</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Expunge]</td> 
-   <td> <p>Aktivera det här alternativet om du vill tillåta modulen att permanent ta bort alla meddelanden som har flaggats som [!UICONTROL Deleted] i den öppna postlådan.</p> <p>Obs! I [!DNL Gmail] styrs det här beteendet av inställningen i avsnittet [!UICONTROL Settings] &gt;[!UICONTROL Forwarding POP/IMAP in IMAP access].</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get Emails]
-
-Returnerar e-postmeddelanden som matchar de angivna villkoren.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till [!UICONTROL Workfront Fusion] finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Anslut din e-post till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td>
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder] </td> 
-   <td> <p>Markera mappen som innehåller de e-postmeddelanden som du vill hämta.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Mark message(s) as read when fetched] </td> 
-   <td> <p>Aktivera det här alternativet om du vill markera det olästa e-postmeddelandet som läst när du har hämtat informationen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Criteria]</p> </td> 
-   <td> <p>Välj villkoren för de e-postmeddelanden som du vill hämta:</p> 
-    <ul> 
-     <li>[!UICONTROL All Emails]</li> 
-     <li>[!UICONTROL Only Read Emails]</li> 
-     <li>[!UICONTROL Only Unread Emails]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Sender Email Address] </td> 
-   <td> <p>Ange eller mappa e-postadressen till den avsändare vars e-postmeddelanden du vill hämta.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Recipient Email Address]</td> 
-   <td> <p> Ange eller mappa e-postadressen till mottagaren vars e-postmeddelanden du vill hämta.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL From date] </td> 
-   <td> <p>Ange eller mappa datumet för att hämta e-postmeddelanden som bearbetas på eller efter det angivna datumet.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Before date]</td> 
-   <td> <p> Ange eller mappa datumet för att hämta e-postmeddelanden som bearbetats på eller före det angivna datumet.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Subject] </td> 
-   <td> <p>Ange eller mappa ämnet för det e-postmeddelande som du vill hämta.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Phrase] </td> 
-   <td> <p>Ange eller mappa nyckelord om du bara vill hämta e-postmeddelanden som innehåller specifika fraser.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Email ID (UID)]</td> 
-   <td> <p> Ange e-post-ID (UID) för e-postmeddelandet vars information du vill hämta.</p> <p>Du kan hämta UID för e-postmeddelandet med hjälp av [!UICONTROL  Watch Email]-modulen eller [!UICONTROL Search Email] för [!DNL Workfront Fusion].</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of results]</td> 
-   <td> <p> Det högsta antalet e-postmeddelanden [!DNL Workfront Fusion] ska returneras under en körningscykel för scenario.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
-   <td> <p> Välj om du vill fortsätta att köra modulen även om inga resultat returneras.</p> </td> 
   </tr> 
  </tbody> 
 </table>
