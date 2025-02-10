@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 7b236869-bd83-4db5-a363-d6570f6e4aff
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7357044d19f93a91d22cede81e7316ff86733fdf
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
@@ -21,42 +21,46 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -97,6 +101,14 @@ Så här skapar du en anslutning för dina [!DNL ServiceNow]-moduler:
       <td>Ange ett namn för den nya [!DNL ServiceNow]-anslutningen</td> 
      </tr> 
      <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
+      <td>Ange om du ansluter till en produktionsmiljö eller icke-produktionsmiljö.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Password]</p> </td> 
+      <td>Ange om du ansluter till ett tjänstkonto eller ett personligt konto. </td> 
+     </tr> 
+     <tr> 
       <td role="rowheader"> <p>[!UICONTROL Username]</p> </td> 
       <td>Ange ditt [!DNL ServiceNow]-användarnamn.</td> 
      </tr> 
@@ -123,22 +135,13 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 >[!NOTE]
 >
->Om en anpassad post har valts i ett [!UICONTROL Record type]-fält kan det ta lite tid att läsa in anpassade fält.
+>* Om en anpassad post har valts i ett [!UICONTROL Record type]-fält kan det ta lite tid att läsa in anpassade fält.
 >
->Om det inte finns några egna poster är listrutan tom.
+>* Om det inte finns några egna poster är listrutan Posttyp tom.
 
-* [[!UICONTROL Watch records]](#watch-records)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Read a record]](#read-a-record)
-* [[!UICONTROL Deactivate a User]](#deactivate-a-user)
-* [[!UICONTROL Download an attachment]](#download-an-attachment)
-* [[!UICONTROL Upload an attachment]](#upload-an-attachment)
-* [[!UICONTROL Create a record]](#create-a-record)
-* [[!UICONTROL Update a record]](#update-a-record)
-* [[!UICONTROL Delete a record]](#delete-a-record)
-* [[!UICONTROL Search for records]](#search-for-records)
+### Utlösare
 
-### [!UICONTROL Watch records]
+#### [!UICONTROL Watch records]
 
 Den här utlösarmodulen aktiverar ett scenario när en post skapas eller uppdateras.
 
@@ -177,7 +180,43 @@ Den här utlösarmodulen aktiverar ett scenario när en post skapas eller uppdat
  </tbody> 
 </table>
 
-### [!UICONTROL Custom API Call]
+### Åtgärder
+
+* [[!UICONTROL Create a record]](#create-a-record)
+* [[!UICONTROL Custom API Call]](#custom-api-call)
+* [[!UICONTROL Deactivate a User]](#deactivate-a-user)
+* [[!UICONTROL Delete a record]](#delete-a-record)
+* [[!UICONTROL Download an attachment]](#download-an-attachment)
+* [[!UICONTROL Read a record]](#read-a-record)
+* [[!UICONTROL Upload an attachment]](#upload-an-attachment)
+* [[!UICONTROL Update a record]](#update-a-record)
+
+#### [!UICONTROL Create a record]
+
+Denna åtgärdsmodul skapar en ny [!DNL ServiceNow]-post.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ServiceNow-kontot till [!DNL Workfront Fusion] finns i <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL ServiceNow] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Table type]</td> 
+   <td>Välj om du vill skapa en post i en anpassad tabell eller en standardtabell.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td>Välj den typ av [!DNL ServiceNow]-post som du vill att modulen ska skapa. Du kan sedan fylla i de tillgängliga fälten för den här posttypen.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Custom API Call]
 
 Med den här åtgärdsmodulen kan du göra ett anpassat autentiserat anrop till API:t [!DNL ServiceNow]. På så sätt kan du skapa en dataflödesautomatisering som inte kan utföras av de andra [!DNL ServiceNow]-modulerna.
 
@@ -193,11 +232,11 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Relative URL]</td> 
-   <td> <p>Skriv adressen på webbservern som du vill att modulen ska interagera med.</p> <p>Du kan ange en relativ URL-adress, vilket betyder att du inte behöver inkludera protokollet (till exempel <code>http://</code>) i början. Detta tyder på för webbservern att interaktionen sker på servern.</p> <p>Exempel: <code>[!DNL /api/conversations].create</code></p> </td> 
+   <td> Ange en relativ sökväg till <code>https://&ltinstance_url&gt/api/</code>. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
+   <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -217,7 +256,70 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
-### [!UICONTROL Read a record]
+#### [!UICONTROL Deactivate a User]
+
+Den här åtgärdsmodulen inaktiverar en användare i [!DNL ServiceNow] genom att använda system-ID.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ServiceNow-kontot till [!DNL Workfront Fusion] finns i <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL ServiceNow] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL User System ID]</td> 
+   <td> Ange eller mappa det unika [!DNL ServiceNow]-ID:t för användaren som du vill att modulen ska inaktivera.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a record]
+
+Den här åtgärdsmodulen tar bort en incident eller en användare.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ServiceNow-kontot till [!DNL Workfront Fusion] finns i <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL ServiceNow] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td>Välj om du vill ta bort en incident eller en användare.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL System ID]</td> 
+   <td>Ange eller mappa det unika [!DNL ServiceNow]-ID:t för posten som du vill att modulen ska ta bort.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Download an attachment]
+
+Den här åtgärdsmodulen hämtar en bifogad fil i en [!DNL ServiceNow]-post.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ServiceNow-kontot till [!DNL Workfront Fusion] finns i <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL ServiceNow] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Attachment System ID]</td> 
+   <td> Ange eller mappa det unika [!DNL ServiceNow]-ID:t för den bifogade filen som du vill att modulen ska hämta.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Read a record]
 
 Den här åtgärdsmodulen läser en [!DNL ServiceNow]-post med system-ID.
 
@@ -256,101 +358,7 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
-### [!UICONTROL Deactivate a User]
-
-Den här åtgärdsmodulen inaktiverar en användare i [!DNL ServiceNow] genom att använda system-ID.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ServiceNow-kontot till [!DNL Workfront Fusion] finns i <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL ServiceNow] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL User System ID]</td> 
-   <td> Ange eller mappa det unika [!DNL ServiceNow]-ID:t för användaren som du vill att modulen ska inaktivera.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Download an attachment]
-
-Den här åtgärdsmodulen hämtar en bifogad fil i en [!DNL ServiceNow]-post.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ServiceNow-kontot till [!DNL Workfront Fusion] finns i <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL ServiceNow] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Attachment System ID]</td> 
-   <td> Ange eller mappa det unika [!DNL ServiceNow]-ID:t för den bifogade filen som du vill att modulen ska hämta.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Upload an attachment]
-
-Den här åtgärdsmodulen överför en bifogad fil till en [!DNL ServiceNow]-post.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ServiceNow-kontot till [!DNL Workfront Fusion] finns i <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL ServiceNow] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Table name]</td> 
-   <td>Ange eller mappa namnet på tabellen där du vill överföra den bifogade filen.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL System ID]</td> 
-   <td>Ange eller mappa det unika [!DNL ServiceNow]-ID:t för systemet där du vill överföra den bifogade filen.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
-   <td>Ange eller mappa ett namn för den bifogade filen</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File content]</td> 
-   <td>Ange eller mappa filen som du vill överföra till [!DNL ServiceNow].</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Create a record]
-
-Denna åtgärdsmodul skapar en ny [!DNL ServiceNow]-post.
-
-När du konfigurerar den här modulen visas följande fält.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ServiceNow-kontot till [!DNL Workfront Fusion] finns i <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL ServiceNow] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Table type]</td> 
-   <td>Välj om du vill skapa en post i en anpassad tabell eller en standardtabell.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td>Välj den typ av [!DNL ServiceNow]-post som du vill att modulen ska skapa. Du kan sedan fylla i de tillgängliga fälten för den här posttypen.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Update a record]
+#### [!UICONTROL Update a record]
 
 Denna åtgärdsmodul skapar en ny [!DNL ServiceNow]-post.
 
@@ -379,11 +387,9 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
-### [!UICONTROL Delete a record]
+#### [!UICONTROL Upload an attachment]
 
-Den här åtgärdsmodulen tar bort en incident eller en användare.
-
-När du konfigurerar den här modulen visas följande fält.
+Den här åtgärdsmodulen överför en bifogad fil till en [!DNL ServiceNow]-post.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -394,17 +400,23 @@ När du konfigurerar den här modulen visas följande fält.
    <td> <p>Instruktioner om hur du ansluter ServiceNow-kontot till [!DNL Workfront Fusion] finns i <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL ServiceNow] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td>Välj om du vill ta bort en incident eller en användare.</td> 
+   <td role="rowheader">[!UICONTROL Table name]</td> 
+   <td>Ange eller mappa namnet på tabellen där du vill överföra den bifogade filen.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL System ID]</td> 
-   <td>Ange eller mappa det unika [!DNL ServiceNow]-ID:t för posten som du vill att modulen ska ta bort.</td> 
+   <td>Ange eller mappa det unika [!DNL ServiceNow]-ID:t för objektet som du vill överföra den bifogade filen till.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Search for records]
+### Sökningar
+
+#### [!UICONTROL Search for records]
 
 Den här modulen söker efter poster med hjälp av villkor som du väljer.
 
@@ -444,7 +456,7 @@ Modulen returnerar alla standardfält som är associerade med posten, tillsamman
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Simple]</strong> </p> 
       <ul> 
-       <li> <p>[!UICONTROL Search Criteria]</p> <p>Ange villkoren som du vill att modulen ska söka efter. <!--For more information on setting up search filters, see <a href="." class="MCXref xref">Add a filter to a scenario in Adobe Workfront Fusion</a>.</p>--> </li> 
+       <li> <p>[!UICONTROL Search Criteria]</p> <p>Ange villkoren som du vill att modulen ska söka efter. </li> 
        <li> <p>[!UICONTROL Sort by]</p> <p>Ange vilket fält du vill att modulen ska sortera resultaten efter och om de ska sorteras stigande eller fallande.</p> </li> 
       </ul> </li> 
     </ul> <p> </p> </td> 

@@ -4,69 +4,69 @@ description: Denna [!DNL Adobe Workfront Fusion] åtgärdsmodul skickar en HTTPS
 author: Becky
 feature: Workfront Fusion
 exl-id: 362b80b5-42f4-4b82-b06c-39c7c5a1eb1a
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
 # HTTP > [!UICONTROL Make an API Key Authorization request]
 
->[!NOTE]
->
->[!DNL Adobe Workfront Fusion] kräver en [!DNL Adobe Workfront Fusion]-licens förutom en Adobe Workfront-licens.
-
 Den här [!DNL Adobe Workfront Fusion]-åtgärdsmodulen skickar en HTTPS-begäran till en angiven URL som kräver en API Key Auth-auktorisering och bearbetar svaret.
 
 >[!NOTE]
 >
->Om du ansluter till en Adobe-produkt som för närvarande inte har någon dedikerad anslutning rekommenderar vi att du använder Adobe Authenticator-modulen.
+>Om du ansluter till en Adobe-produkt som inte har någon dedikerad anslutning rekommenderar vi att du använder Adobe Authenticator-modulen.
 >
 >Mer information finns i [Adobe Authenticator-modulen](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md).
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
-   <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!UICONTROL Adobe Workfront Fusion] licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## [!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request] modulkonfiguration
++++
 
-När du konfigurerar modulen [!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request] visar [!DNL Adobe Workfront Fusion] fälten som listas nedan. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+## [!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request] modulkonfiguration
+
+När du konfigurerar modulen [!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request] visar [!DNL Adobe Workfront Fusion] fälten som listas nedan. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan i [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -88,7 +88,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx)] </td> 
-   <td> <p>Använd det här alternativet om du vill konfigurera felhantering.</p> <p>Mer information finns i <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Felhantering i Adobe Workfront Fusion</a>.</p> </td> 
+   <td> <p>Använd det här alternativet om du vill konfigurera felhantering.</p> <p>Mer information finns i <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Felhantering</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
@@ -138,7 +138,25 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Self-signed certificate]</td> 
-   <td> <p> Överför ditt certifikat om du vill använda TLS med ditt självsignerade certifikat.</p> </td> 
+   <td> <p>Så här lägger du till ett självsignerat certifikat:</p>
+          <ol>
+            <li value="1">
+              <p>Klicka på <b>[!UICONTROL Extract]</b>.</p>
+            </li>
+            <li value="2">
+              <p>Välj vilken typ av fil du extraherar.</p>
+            </li>
+            <li value="3">
+              <p>Markera filen som innehåller certifikatet eller certifikatet.</p>
+            </li>
+            <li value="4">
+              <p>Ange lösenordet för filen.</p>
+            </li>
+            <li value="5">
+              <p>Klicka på <b>[!UICONTROL Save]</b> för att extrahera filen och återgå till modulinställningarna.</p>
+            </li>
+          </ol>
+</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 

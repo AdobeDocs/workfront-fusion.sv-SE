@@ -6,7 +6,7 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: e3ec0cf05665559790e4ae96c875e181a1ee36ff
+source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 Dessa anslutningar gör att du kan ansluta till alla program och webbtjänster som har ett offentligt API.
 
-* [HTTP >[!UICONTROL Make a request]-modul](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [http > modulen [!UICONTROL Make a request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
 * [[!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request]-modul](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]-modulen](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
 * [[!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request]-modul](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
 * [[!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 * [[!UICONTROL HTTP] > Andra moduler](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
-* [SOAP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
+* [Modulen SOAP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
 * [FTP-moduler](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
 * [SFTP-moduler](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
 * [Använd ömsesidig TLS i HTTP-moduler i  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
@@ -44,16 +44,16 @@ Fusion erbjuder kontakter för många av Adobe produkter och tjänster.
 * [Adobe Creative Cloud Libraries-moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
 * [Adobe Experience Manager Assets moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
 * [Adobe Experience Manager Forms moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
-* [Adobe Firefly-moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
+* [Adobe Firefly moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
 * [Adobe Frame.io-moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
-* [Adobe I/O Events-moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
+* [Adobe I/O Events moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
 * [Adobe Journey Optimizer moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
 * [Adobe Lightroom moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
-* [Adobe Marketo-moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
+* [Adobe Marketo Modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
 * [Adobe PDF Services-moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
 * [Adobe Photoshop moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
 * [Adobe Target moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
-* [Moduler för användarhantering i Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
+* [Adobe-moduler för användarhantering](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
 * [Adobe Workfront moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
 * [Adobe Workfront Planning-moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
 * [Workfront Boards-moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
@@ -75,16 +75,16 @@ Fusion erbjuder kopplingar för många tredjepartsprogram.
 * [Kundmoduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/cvent-modules.md)
 * [Datadogmoduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/datadog-modules.md)
 * [DocuSign-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/docusign-modules.md)
-* [Dropbox-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dropbox-modules.md)
+* [Dropbox moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dropbox-modules.md)
 * [E-postmoduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/email-modules.md)
 * [Figma-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/figma-modules.md)
 * [Presentmoduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/github.md)
 * [GitLab-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/gitlab-modules.md)
 * [Gmail-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/gmail-modules.md)
 * [Google Calendar-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-calendar-modules.md)
-* [Google Docs-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-docs-modules.md)
+* [Google Docs moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-docs-modules.md)
 * [Google Drive-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-drive-modules.md)
-* [Google Forms](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-forms-modules.md)
+* [Google Forms moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-forms-modules.md)
 * [Google bladmoduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-sheets-modules.md)
 * [Google Presentationsmoduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-slides-modules.md)
 * [Google Team Drive-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-team-drive-modules.md)
@@ -109,7 +109,7 @@ Fusion erbjuder kopplingar för många tredjepartsprogram.
 * [Salesforce moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
 * [Hanterade SDL-översättningsmoduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
 * [ServiceNow-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
-* [Slack-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
+* [Slack moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
 * [Dela.io-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
 * [Trello-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
 * [Bredda moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)

@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: ddebec2d03d9d843c46182d92df6c8a871799999
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1560'
 ht-degree: 0%
 
 ---
@@ -15,50 +15,48 @@ ht-degree: 0%
 
 I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som använder [!DNL Microsoft Office 365 Calendar] samt ansluta det till flera tredjepartsprogram och -tjänster.
 
-Om du vill använda [!DNL Office 365 Calendar] med [!DNL Adobe Workfront Fusion] måste du ha ett [!DNL Office 365 Excel]-konto. Du kan skapa en på [www.office.com](https://www.office.com/).
-
-Instruktioner om hur du ansluter Office 365-kontot till [!DNL Workfront Fusion] finns i [Skapa en anslutning till Adobe [!DNL Workfront Fusion]  - Grundläggande instruktioner](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
-
-När du har gett ditt samtycke omdirigeras du tillbaka till administrationssidan för [!UICONTROL Workfront Fusion] där du kan fortsätta skapa ditt scenario.
-
 ## Åtkomstkrav
+
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
 
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -111,21 +109,16 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ### Händelse
 
-* [[!UICONTROL Watch Events]](#watch-events)
-* [[!UICONTROL Search Events]](#search-events)
-* [[!UICONTROL Get an Event]](#get-an-event)
 * [[!UICONTROL Create an Event]](#create-an-event)
-* [[!UICONTROL Update an Event]](#update-an-event)
 * [[!UICONTROL Delete an Event]](#delete-an-event)
+* [[!UICONTROL Get an Event]](#get-an-event)
+* [[!UICONTROL Search Events]](#search-events)
+* [[!UICONTROL Update an Event]](#update-an-event)
+* [[!UICONTROL Watch Events]](#watch-events)
 
-#### [!UICONTROL Watch Events]
+#### [!UICONTROL Create an Event]
 
-Den här utlösarmodulen hämtar information om en händelse när händelsen skapas, uppdateras, tas bort, startas eller avslutas i den valda kalendern.
-
->[!NOTE]
->
->Om du vill bevaka om en händelseserie har tagits bort väljer du [!UICONTROL By Updated Time] i fältet [!UICONTROL Watch events]. Den här modulen bevakar inte borttagna enstaka händelser eller borttagna händelseserier.
-
+Denna åtgärdsmodul skapar en ny händelse.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -133,32 +126,124 @@ Den här utlösarmodulen hämtar information om en händelse när händelsen ska
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Subject]</td> 
+   <td> <p>Ange eller mappa en titel för den skapade händelsen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Start date]</td> 
+   <td> Ange en enstaka tidpunkt när händelsen börjar i en kombinerad datum- och tidsbeteckning. Använd formatet <code>{date}T{time}</code>, till exempel <code>2017-08-29T04:00:00.0000000</code>. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL End date]</td> 
+   <td> Ange en enda tidpunkt när händelsen slutar i en kombinerad datum- och tidsbeteckning. Använd formatet <code>{date}T{time}</code>, till exempel <code>2017-08-29T04:00:00.0000000</code>. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Reminder on]</td> 
+   <td>Välj om du vill aktivera en påminnelse för den här händelsen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Reminder]</td> 
+   <td>Ange eller mappa antalet minuter innan händelsen börjar när påminnelsen ska utlösas.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Importance]</td> 
+   <td> <p>Välj hur viktig den här händelsen är.</p> 
+    <ul> 
+     <li>[!UICONTROL Low]</li> 
+     <li>[!UICONTROL Medium]</li> 
+     <li>[!UICONTROL High]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Sensitivity] </td> 
+   <td> <p>Välj känsligheten för den här händelsen.</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Normal]</strong> </li> 
+     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>Mottagaren ser ett [!UICONTROL Please treat this as Personal]-meddelande.</p> </li> 
+     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>Mottagaren ser ett [!UICONTROL Please treat this as Private]-meddelande. Den här händelsen vidarebefordras eller omdirigeras inte av mottagarens inkorgsregler.</p> </li> 
+     <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>Mottagaren ser ett [!UICONTROL Please treat this as Confidential]-meddelande. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body content type]</td> 
+   <td>Ange om brödtexten är oformaterad text eller HTML.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body content]</td> 
+   <td>Ange eller mappa texten i meddelandet som är associerat med händelsen. Det kan vara i HTML- eller textformat (som anges i fältet [!UICONTROL Body Content Type] ovan).</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Location]</td> 
+   <td> <p>Ange eller mappa informationen om händelsens plats.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Response requested]</td> 
+   <td>Välj <strong>[!UICONTROL Yes]</strong> om du vill att inbjudaren ska skicka ett svar på händelseinbjudan.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Show as]</td> 
+   <td> <p>Välj hur du vill att händelsen ska visas för personer som visar kalendern.</p> 
+    <ul> 
+     <li>[!UICONTROL Free]</li> 
+     <li>[!UICONTROL Tentative]</li> 
+     <li>[!UICONTROL Busy]</li> 
+     <li>[!UICONTROL Out of office]</li> 
+     <li>[!UICONTROL Working elsewhere]</li> 
+     <li>[!UICONTROL Unknown]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Attendees]</p> </td> 
+   <td> <p>För varje deltagare som du vill bjuda in klickar du på <b>Lägg till objekt</b> och anger följande:</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Ange eller mappa deltagarens namn.</p> </li> 
+     <li> <p><strong>[!UICONTROL Email]</strong> </p> <p>Ange eller mappa deltagarens e-postadress.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Categories]</td> 
+   <td>För varje kategori som du vill att händelsen ska visas som i kalendern klickar du på <b>Lägg till objekt</b> och anger eller mappar kategorin.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete an Event]
+
+Denna åtgärdsmodul tar bort en befintlig händelse.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Watch events]</td> 
-   <td> <p>Välj hur du vill se händelser.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL By Created Time]</strong> </p> <p>Håll utkik efter nya händelser.</p> </li> 
-     <li> <p><strong>[!UICONTROL By Updated Time]</strong> </p> <p>Håll utkik efter uppdaterade händelser.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Event ID]</td> 
+   <td> <p>Ange eller mappa ID:t för händelsen som du vill ta bort.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get an Event]
+
+Den här åtgärdsmodulen hämtar information om den angivna händelsen.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Välj den [!UICONTROL calendar group] som innehåller kalendern där du vill bevaka händelser.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar]</td> 
-   <td> <p>Välj den kalender som du vill titta på.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Filter]</td> 
-   <td>Ange filtervillkoren för att filtrera resultaten efter ämne, händelse-ID eller brödtext.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Ange det maximala antalet meddelanden som [!DNL Workfront Fusion] ska returnera under en körningscykel för scenario.</p> </td> 
+   <td role="rowheader">[!UICONTROL Event ID]</td> 
+   <td> <p>Ange eller mappa ID:t för händelsen som du vill hämta information om.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -172,7 +257,6 @@ Den här sökmodulen hämtar information om en händelse när händelsen skapas,
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
@@ -211,120 +295,6 @@ Den här sökmodulen hämtar information om en händelse när händelsen skapas,
  </tbody> 
 </table>
 
-#### [!UICONTROL Get an Event]
-
-Den här åtgärdsmodulen hämtar information om den angivna händelsen.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Event ID]</td> 
-   <td> <p>Ange eller mappa ID:t för händelsen som du vill hämta information om.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Create an Event]
-
-Denna åtgärdsmodul skapar en ny händelse.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Subject]</td> 
-   <td> <p>Ange eller mappa en titel för den skapade händelsen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Start date]</td> 
-   <td> Ange en enstaka tidpunkt när händelsen börjar i en kombinerad datum- och tidsbeteckning. Använd formatet <code>({date}T{time}</code>, till exempel <code>2017-08-29T04:00:00.0000000</code>. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL End date]</td> 
-   <td> Ange en enda tidpunkt när händelsen slutar i en kombinerad datum- och tidsbeteckning. Använd formatet <code>{date}T{time}</code>, till exempel <code>2017-08-29T04:00:00.0000000</code>. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Reminder on]</td> 
-   <td>Välj om du vill aktivera en påminnelse för den här händelsen.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Reminder]</td> 
-   <td>Ange eller mappa antalet minuter innan händelsen börjar när påminnelsen ska utlösas.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Importance]</td> 
-   <td> <p>Välj hur viktig den här händelsen är.</p> 
-    <ul> 
-     <li>[!UICONTROL Low]</li> 
-     <li>[!UICONTROL Medium]</li> 
-     <li>[!UICONTROL High]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Sensitivity] </td> 
-   <td> <p>Välj känsligheten för den här händelsen.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Normal]</strong> </li> 
-     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>Mottagaren ser ett [!UICONTROL Please treat this as Personal]-meddelande.</p> </li> 
-     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>Mottagaren ser ett [!UICONTROL Please treat this as Private]-meddelande. Den här händelsen vidarebefordras eller omdirigeras inte av mottagarens inkorgsregler.</p> </li> 
-     <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>Mottagaren ser ett [!UICONTROL Please treat this as Confidential]-meddelande. </p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Body content type]</td> 
-   <td>Ange om brödtexten ska vara oformaterad text eller HTML.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Body content]</td> 
-   <td>Ange eller mappa texten i meddelandet som är associerat med händelsen. Det kan vara i HTML eller textformat (som anges i fältet [!UICONTROL Body Content Type] ovan).</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Location]</td> 
-   <td> <p>Ange information om händelsens plats.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Response requested]</td> 
-   <td>Välj <strong>[!UICONTROL Yes]</strong> om du vill att inbjudaren ska skicka ett svar på händelseinbjudan.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Show as]</td> 
-   <td> <p>Välj hur du vill att händelsen ska visas för personer som visar kalendern.</p> 
-    <ul> 
-     <li>[!UICONTROL Free]</li> 
-     <li>[!UICONTROL Tentative]</li> 
-     <li>[!UICONTROL Busy]</li> 
-     <li>[!UICONTROL Out of office]</li> 
-     <li>[!UICONTROL Working elsewhere]</li> 
-     <li>[!UICONTROL Unknown]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Attendees]</p> </td> 
-   <td> <p>Lägg till deltagare för evenemanget.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Ange deltagarens namn.</p> </li> 
-     <li> <p><strong>[!UICONTROL Email]</strong> </p> <p>Ange deltagarens e-postadress.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Category]</td> 
-   <td>Ange eller mappa de kategorier som du vill att händelsen ska visas som i kalendern.</td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Update an Event]
 
 Den här åtgärdsmodulen uppdaterar en befintlig händelse.
@@ -335,7 +305,6 @@ Den här åtgärdsmodulen uppdaterar en befintlig händelse.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -344,7 +313,7 @@ Den här åtgärdsmodulen uppdaterar en befintlig händelse.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subject]</td> 
-   <td> <p>Ange eller mappa en titel för den skapade händelsen.</p> </td> 
+   <td> <p>Ange eller mappa en ny titel för händelsen.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start date]</td> 
@@ -387,7 +356,7 @@ Den här åtgärdsmodulen uppdaterar en befintlig händelse.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body content]</td> 
-   <td>Ange eller mappa texten i meddelandet som är associerat med händelsen. Det kan vara i HTML eller textformat (som anges i fältet [!UICONTROL Body Content Type] ovan).</td> 
+   <td>Ange eller mappa texten i meddelandet som är associerat med händelsen. Det kan vara i HTML- eller textformat (som anges i fältet [!UICONTROL Body Content Type] ovan).</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Location]</td> 
@@ -424,9 +393,14 @@ Den här åtgärdsmodulen uppdaterar en befintlig händelse.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an Event]
+#### [!UICONTROL Watch Events]
 
-Denna åtgärdsmodul tar bort en befintlig händelse.
+Den här utlösarmodulen hämtar information om en händelse när händelsen skapas, uppdateras, tas bort, startas eller avslutas i den valda kalendern.
+
+>[!NOTE]
+>
+>Om du vill bevaka om en händelseserie har tagits bort väljer du [!UICONTROL By Updated Time] i fältet [!UICONTROL Watch events]. Den här modulen bevakar inte borttagna enstaka händelser eller borttagna händelseserier.
+
 
 <table style="table-layout:auto"> 
  <col> 
@@ -434,107 +408,59 @@ Denna åtgärdsmodul tar bort en befintlig händelse.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Event ID]</td> 
-   <td> <p>Ange eller mappa ID:t för händelsen som du vill ta bort.</p> </td> 
+   <td role="rowheader">[!UICONTROL Watch events]</td> 
+   <td> <p>Välj hur du vill se händelser.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL By Created Time]</strong> </p> <p>Håll utkik efter nya händelser.</p> </li> 
+     <li> <p><strong>[!UICONTROL By Updated Time]</strong> </p> <p>Håll utkik efter uppdaterade händelser.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
+   <td>Välj den [!UICONTROL calendar group] som innehåller kalendern där du vill bevaka händelser.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar]</td> 
+   <td> <p>Välj den kalender som du vill titta på.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Filter]</td> 
+   <td>Ange filtervillkoren för att filtrera resultaten efter ämne, händelse-ID eller brödtext.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Ange det maximala antalet meddelanden som [!DNL Workfront Fusion] ska returnera under en körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Kalender
 
-* [[!UICONTROL List Calendars]](#list-calendars)
-* [[!UICONTROL Get a Calendar]](#get-a-calendar)
 * [[!UICONTROL Create a Calendar]](#create-a-calendar)
-* [[!UICONTROL Update a Calendar]](#update-a-calendar)
 * [[!UICONTROL Delete a Calendar]](#delete-a-calendar)
+* [[!UICONTROL Get a Calendar]](#get-a-calendar)
+* [[!UICONTROL List Calendars]](#list-calendars)
+* [[!UICONTROL Update a Calendar]](#update-a-calendar)
 
-#### [!UICONTROL List Calendars]
 
-Den här sökmodulen hämtar en lista över alla autentiserade användares kalendrar.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Markera [!UICONTROL calendar group] som innehåller de kalendrar som du vill visa.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td>Ange det maximala antalet kalendrar som [!DNL Workfront Fusion] ska returnera under en körningscykel för scenario.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get a Calendar]
-
-Den här åtgärdsmodulen hämtar information om en enskild kalender.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar ID]</td> 
-   <td> <p>Ange eller mappa ID:t för den kalender som du vill hämta information om.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
 
 #### [!UICONTROL Create a Calendar]
 
-Den här åtgärdsmodulen skapar en ny kalender i ditt Google-konto.
+Den här åtgärdsmodulen skapar en ny kalender i Office 365-kontot.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar name]</td> 
-   <td> <p>Ange ett namn för den nya kalendern.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Update a Calendar]
-
-Denna åtgärdsmodul redigerar en befintlig kalender.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar ID]</td> 
-   <td>Ange [!UICONTROL Calendar ID] för kalendern som du vill uppdatera. </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL New Calendar name]</td> 
    <td> <p>Ange ett namn för den nya kalendern.</p> </td> 
   </tr> 
  </tbody> 
@@ -550,12 +476,76 @@ Denna åtgärdsmodul tar bort en befintlig kalender.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar ID]</td> 
    <td>Ange [!UICONTROL Calendar]-ID:t för kalendern som du vill ta bort.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get a Calendar]
+
+Den här åtgärdsmodulen hämtar information om en enskild kalender.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar ID]</td> 
+   <td> <p>Ange eller mappa ID:t för den kalender som du vill hämta information om.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List Calendars]
+
+Den här sökmodulen hämtar en lista över alla autentiserade användares kalendrar.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
+   <td>Markera [!UICONTROL calendar group] som innehåller de kalendrar som du vill visa.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td>Ange det maximala antalet kalendrar som [!DNL Workfront Fusion] ska returnera under en körningscykel för scenario.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Update a Calendar]
+
+Denna åtgärdsmodul redigerar en befintlig kalender.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar ID]</td> 
+   <td>Ange [!UICONTROL Calendar ID] för kalendern som du vill uppdatera. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL New Calendar name]</td> 
+   <td> <p>Ange ett nytt namn för kalendern.</p> </td> 
   </tr> 
  </tbody> 
 </table>

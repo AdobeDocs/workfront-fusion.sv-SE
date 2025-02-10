@@ -4,7 +4,7 @@ description: För att kunna göra en  [!DNL Adobe Workfront Fusion] HTTP(S)-beg�
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: d9d3f21279ba89f544adc0ffa9345543907aa777
+source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
 workflow-type: tm+mt
 source-wordcount: '1980'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Mer information om OAuth 2.0-autentisering finns i [OAuth 2.0 Authorization Fram
 
 >[!NOTE]
 >
->Om du ansluter till en Adobe-produkt som för närvarande inte har någon dedikerad anslutning rekommenderar vi att du använder Adobe Authenticator-modulen.
+>Om du ansluter till en Adobe-produkt som inte har någon dedikerad anslutning rekommenderar vi att du använder Adobe Authenticator-modulen.
 >
 >Mer information finns i [Adobe Authenticator-modulen](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md).
 
@@ -80,7 +80,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 ## Skapa en anslutning för en [!DNL OAuth]-begäran
 
 * [Allmänna instruktioner för att skapa en anslutning i HTTP > Gör en OAuth 2.0-begärandemodul](#general-instructions-for-creating-a-connection-in-the-http--make-an-oauth-20-request-module)
-* [Instruktioner för hur du skapar en anslutning till Google i HTTP >[!UICONTROL Make] och OAuth 2.0-begärandemodulen](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
+* [Instruktioner för hur du skapar en anslutning till Google i http > [!UICONTROL Make] en OAuth 2.0-begärandemodul](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
 * [Instruktioner för att ansluta till Microsoft Graph API via HTTP > Gör en OAuth 2.0-begärandemodul](#instructions-for-connecting-to-microsoft-graph-api-via-the-http--make-an-oauth-20-request-module)
 
 ### Allmänna instruktioner för att skapa en anslutning i modulen [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]
@@ -333,7 +333,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
    <td> <p>HTTP-brödtexten är de databyte som skickas i ett HTTP-transaktionsmeddelande omedelbart efter rubrikerna om något ska användas.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Raw-brödtexttypen är vanligtvis lämplig för de flesta HTTP-innehållsbegäranden, även i situationer där utvecklardokumentationen inte anger vilka data som ska skickas.</p> <p>Ange en form av tolkning av data i fältet [!UICONTROL Content type].</p> <p>Trots att innehållstypen är vald, anges data i vilket format som helst som anges eller krävs av utvecklardokumentationen.</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Den här brödtypen är att POST data med <code>[!UICONTROL application/x-www-form-urlencoded]</code>.</p> <p>För <code>[!UICONTROL application/x-www-form-urlencoded]</code> är brödtexten i HTTP-meddelandet som skickas till servern i princip en frågesträng. Nycklarna och värdena kodas i nyckelvärdepar avgränsade med <code>&amp;</code> och med en <code>=</code> mellan nyckeln och värdet. </p> <p>För binära data <code>use [!UICONTROL multipart/form-data]</code> i stället.</p> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Den här brödtypen är till POST-data med <code>[!UICONTROL application/x-www-form-urlencoded]</code>.</p> <p>För <code>[!UICONTROL application/x-www-form-urlencoded]</code> är brödtexten i HTTP-meddelandet som skickas till servern i princip en frågesträng. Nycklarna och värdena kodas i nyckelvärdepar avgränsade med <code>&amp;</code> och med en <code>=</code> mellan nyckeln och värdet. </p> <p>För binära data <code>use [!UICONTROL multipart/form-data]</code> i stället.</p> 
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>Exempel: </b></span></span> 
        <p>Exempel på det resulterande formatet för HTTP-begäran:</p> 
