@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 024176956d5ca9c88112a67c6948d6297f53810e
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,10 @@ Bynder-kopplingen använder följande:
 
 ## Anslut [!DNL Bynder] till Workfront Fusion  {#connect-bynder-to-workfront-fusion}
 
+>[!NOTE]
+>
+>Bynder använder behörighetskoden/typen för att uppdatera token-tilldelning. Det här är den enda anslagstyp som Fusion Bynder-kopplingen använder.
+
 * [Skapa en anslutning till  [!DNL Bynder] från [!DNL Workfront Fusion]](#create-a-connection-to-bynder-from-workfront-fusion)
 * [Generera en [!UICONTROL Client ID] och [!UICONTROL Client Secret] i [!DNL Bynder]  (valfritt)](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
@@ -107,9 +111,10 @@ Instruktioner om hur du skapar ett program i [!DNL Bynder] finns i [OA 2.0-appar
 
 >[!NOTE]
 >
->När du skapar appen i [!DNL Bynder] anger du följande som `redirect uri`:
+>* När du skapar appen i [!DNL Bynder] anger du följande som `redirect uri`:
 >
->`https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>* Bynder använder behörighetskoden/typen för att uppdatera token-tilldelning. Det här är den enda anslagstyp som Fusion Bynder-kopplingen använder.
 
 ## [!DNL Bynder]-moduler och deras fält
 

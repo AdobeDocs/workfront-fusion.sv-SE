@@ -4,9 +4,9 @@ description: Ett  [!DNL Adobe Workfront Fusion] datalager, som liknar en databas
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ En videointroduktion till datalager i Workfront Fusion finns på:
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
 <table style="table-layout:auto">
@@ -32,60 +34,61 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
-   <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet], [!UICONTROL [!DNL Workfront Fusion] för Automatisering av arbete]</p>
+   <p>Workfront Fusion-licens krävs inte.</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
 Om du vill använda [!UICONTROL Data Store] moduler måste du först skapa ett datalager.
 
-<!--For information on creating data stores, see [Data Stores in [!UICONTROL Adobe Workfront Fusion]]()-->
+Mer information om hur du skapar datalager finns i [Skapa och hantera datalager](/help/workfront-fusion/create-scenarios/map-data/data-stores.md).
 
-## [!UICONTROL Data Store]-moduler och deras fält
+## [!UICONTROL Data store]-moduler och deras fält
 
 När du konfigurerar datalagermoduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare datalagerfält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+
+Du behöver inte skapa någon anslutning för att använda datalager.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-Alla [!UICONTROL Data Store]-moduler är åtgärdstypmoduler.
 
 * [Lägg till/ersätta en post](#addreplace-a-record)
-* [Uppdatera en post](#update-a-record)
-* [Hämta en post](#get-a-record)
 * [Kontrollera förekomsten av en post](#check-the-existence-of-a-record)
+* [Antal poster](#count-records)
 * [Ta bort en post](#delete-a-record)
 * [Ta bort alla poster](#delete-all-records)
+* [Hämta en post](#get-a-record)
 * [Sök i poster](#search-records)
-* [Antal poster](#count-records)
+* [Uppdatera en post](#update-a-record)
 
 ### [!UICONTROL Add/Replace a Record]
 
@@ -97,7 +100,7 @@ Modulen returnerar postens ID och eventuella associerade fält, tillsammans med 
 
 >[!NOTE]
 >
->Modulen genererar ett fel när du försöker lägga till den post som redan finns i datalagret med samma namn och alternativet [!UICONTROL Overwrite an existing record] är inaktiverat.
+>Modulen genererar ett fel när du försöker lägga till en post som redan finns i datalagret med samma namn, och alternativet [!UICONTROL Overwrite an existing record] är inaktiverat.
 
 När du konfigurerar den här modulen visas följande fält.
 
@@ -124,62 +127,6 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
-### [!UICONTROL Update a Record]
-
-Den här åtgärdsmodulen uppdaterar en post.
-
-Du anger datalagret och postens nyckel.
-
-Modulen returnerar postens ID och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-När du konfigurerar den här modulen visas följande fält.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Data store]</td> 
-   <td> <p> Välj eller lägg till datalagret där du vill skapa en post. </p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Key] </td> 
-   <td> <p>Ange den unika nyckeln för den post som du vill att modulen ska uppdatera.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Insert missing record] </td> 
-   <td> <p>Aktivera det här alternativet om du vill skapa en ny post om posten med den angivna nyckeln inte redan finns.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Record]</td> 
-   <td> <p> Ange önskade värden i postens fält som du vill uppdatera.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Get a Record]
-
-Denna åtgärdsmodul hämtar en post.
-
-Du anger datalagret och postens nyckel.
-
-Modulen returnerar postens ID och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Data store]</td> 
-   <td> <p> Välj det datalager som du vill hämta en post från</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Key] </td> 
-   <td> <p>Ange den unika nyckeln för den post som du vill hämta modulen.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 ### [!UICONTROL Check the Existence of a Record]
 
 Den här åtgärdsmodulen anger om en viss post finns.
@@ -197,6 +144,25 @@ Du anger datalagret och postens nyckel.
   <tr> 
    <td>[!UICONTROL Key] </td> 
    <td> <p>Ange den unika nyckeln för den post som du vill att modulen ska kontrollera om den finns.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### [!UICONTROL Count Records]
+
+Den här åtgärdsmodulen numrerar posterna i ett datalager.
+
+Du anger datalagret.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Data store] </td> 
+   <td> <p>Markera det datalager som innehåller de poster som du vill räkna.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -241,6 +207,29 @@ Du anger datalagret.
  </tbody> 
 </table>
 
+### [!UICONTROL Get a Record]
+
+Denna åtgärdsmodul hämtar en post.
+
+Du anger datalagret och postens nyckel.
+
+Modulen returnerar postens ID och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Data store]</td> 
+   <td> <p> Välj det datalager som du vill hämta en post från</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Key] </td> 
+   <td> <p>Ange den unika nyckeln för den post som du vill hämta modulen.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### [!UICONTROL Search Records]
 
 Den här sökmodulen söker efter poster i ett objekt i datalagret som matchar den sökfråga du anger.
@@ -276,21 +265,35 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
-### [!UICONTROL Count Records]
+### [!UICONTROL Update a Record]
 
-Den här åtgärdsmodulen numrerar posterna i ett datalager.
+Den här åtgärdsmodulen uppdaterar en post.
 
-Du anger datalagret.
+Du anger datalagret och postens nyckel.
+
+Modulen returnerar postens ID och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
 
 När du konfigurerar den här modulen visas följande fält.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
-   <td> <p>Markera det datalager som innehåller de poster som du vill räkna.</p> </td> 
+   <td>[!UICONTROL Data store]</td> 
+   <td> <p> Välj eller lägg till datalagret där du vill skapa en post. </p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Key] </td> 
+   <td> <p>Ange den unika nyckeln för den post som du vill att modulen ska uppdatera.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Insert missing record] </td> 
+   <td> <p>Aktivera det här alternativet om du vill skapa en ny post om posten med den angivna nyckeln inte redan finns.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Record]</td> 
+   <td> <p> Ange önskade värden i postens fält som du vill uppdatera.</p> </td> 
   </tr> 
  </tbody> 
 </table>

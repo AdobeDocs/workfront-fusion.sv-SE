@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion kräver en Adobe Workfront Fusion-licens fö
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
 workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 0%
