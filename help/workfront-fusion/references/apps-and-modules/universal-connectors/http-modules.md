@@ -1,37 +1,76 @@
 ---
-title: HTTP&gt; Andra moduler
+title: HTTP > Andra moduler
 description: HTTP-appen  [!DNL Adobe Workfront Fusion] innehåller olika moduler för kommunikation baserade på HTTP-protokollet (Hypertext Transfer Protocol). HTTP är grunden för datakommunikation för webben. Du kan använda modulerna för att hämta webbsidor och filer, anropa webhooks och API-slutpunkter och så vidare.
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
 # HTTP > Andra moduler
 
->[!NOTE]
->
->[!UICONTROL Adobe Workfront Fusion] kräver en [!UICONTROL Adobe Workfront Fusion]-licens utöver en [!UICONTROL Adobe Workfront]-licens.
-
 Appen [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] innehåller olika moduler för kommunikation baserat på HTTP-protokollet (Hypertext Transfer Protocol). HTTP är grunden för datakommunikation för webben. Du kan använda modulerna för att hämta webbsidor och filer, anropa webhooks och API-slutpunkter och så vidare.
 
 Vilket som är rätt val för modulen beror på vilken autentiserings-/auktoriseringsmekanism som resursen du vill ha tillgång till. Följande är exempel på moduler
 
-* Gör en begäran:universell modul är främst avsedd för resurser som inte använder någon typ av autentisering/auktorisering
-* Gör en grundläggande autentiseringsbegäran:för resurser som använder [!DNL HTTP] grundläggande autentisering (BA)
-* Gör en OAuth 2.0-begäran: för resurser som använder OAuth 2.0-auktoriseringsprotokoll
-* Gör en autentiseringsbegäran för klientcertifikat: för resurser som använder auktoriseringsprotokoll som kräver ett certifikat på klientsidan.
-* Gör en API-nyckelauktoriseringsbegäran: för resurser som använder API-nycklar för auktorisering.
+* **Gör en begäran**: Är främst avsedd för resurser som inte använder någon typ av autentisering eller auktorisering
+* **Gör en grundläggande autentiseringsbegäran**: För resurser som använder [!DNL HTTP] grundläggande autentisering (BA)
+* **Gör en OAuth 2.0-begäran**: För resurser som använder OAuth 2.0-auktoriseringsprotokollet
+* **Gör en autentiseringsbegäran för klientcertifikat**: För resurser som använder auktoriseringsprotokoll som kräver ett certifikat på klientsidan
+* **Gör en API-nyckelauktoriseringsbegäran**: För resurser som använder API-nycklar för auktorisering
 
 >[!NOTE]
 >
->Om du ansluter till en Adobe-produkt som för närvarande inte har någon dedikerad anslutning rekommenderar vi att du använder Adobe Authenticator-modulen.
+>Om du ansluter till en Adobe-produkt som inte har någon dedikerad anslutning rekommenderar vi att du använder Adobe Authenticator-modulen.
 >
 >Mer information finns i [Adobe Authenticator-modulen](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md).
+
+## Åtkomstkrav
+
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
+Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
+   <td>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
+   <p>eller</p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produkt</td> 
+   <td>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
+   <p>eller</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
+Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Begär moduler
 
@@ -57,8 +96,16 @@ Den här åtgärdsmodulen hämtar en fil från den angivna URL:en. När filen ha
  <col> 
  <tbody> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx )] </td> 
+   <td> <p>Använd det här alternativet om du vill konfigurera felhantering.</p> <p>Mer information finns i <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Felhantering i [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
    <td> <p>Ange eller mappa URL:en för filen som du vill hämta. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Share cookies with other HTTP modules] </td> 
+   <td> <p>Aktivera det här alternativet om du vill att cookies för den här webbplatsen ska vara tillgängliga för andra moduler. </p> </td> 
   </tr> 
  </tbody> 
 </table>

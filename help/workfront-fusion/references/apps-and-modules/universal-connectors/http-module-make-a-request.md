@@ -1,12 +1,12 @@
 ---
-title: HTTP&gt; Gör en begärandemodul
-description: Adobe Workfront Fusion HTTP&gt; Make a request module är en universell modul som gör att du kan konfigurera en HTTP-begäran och skicka den till en server. Det mottagna HTTP-svaret finns sedan i utdatapaketet.
+title: HTTP > Gör en begärandemodul
+description: Adobe Workfront Fusion HTTP > Make a request module är en universell modul som gör att du kan konfigurera en HTTP-begäran och skicka den till en server. Det mottagna HTTP-svaret finns sedan i utdatapaketet.
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Om du ansluter till en Adobe-produkt som för närvarande inte har någon dedikerad anslutning rekommenderar vi att du använder Adobe Authenticator-modulen.
+>Om du ansluter till en Adobe-produkt som inte har någon dedikerad anslutning rekommenderar vi att du använder Adobe Authenticator-modulen.
 >
 >Mer information finns i [Adobe Authenticator-modulen](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md).
 
@@ -104,7 +104,7 @@ När du konfigurerar modulen [!UICONTROL HTTP] > [!UICONTROL Make a request] vis
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL  Multipart/form-data] är en HTTP-multipart-begäran som används för att skicka filer och data. Det används ofta för att överföra filer till servern.</p> <p>Lägg till fält som ska skickas i begäran. Varje fält måste innehålla nyckelvärdepar.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Ange nyckeln och värdet som ska skickas i begärandetexten.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Ange nyckeln och ange den källfil som du vill skicka i begärandetexten.</p> <p>Mappa filen som du vill överföra från den tidigare modulen (till exempel [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] eller [!UICONTROL Google Drive] &gt; Hämta en fil) eller ange filnamnet och fildata manuellt.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Ange nyckeln och ange den källfil som du vill skicka i begärandetexten.</p> <p>Mappa filen som du vill överföra från den tidigare modulen (till exempel [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] eller [!UICONTROL Google Drive] &gt; Hämta en fil) eller ange filnamnet och fildata manuellt.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

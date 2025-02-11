@@ -1,12 +1,12 @@
 ---
-title: HTTP-&stämpel;gt; Gör en OAuth 2.0-begärandemodul
+title: HTTP > Gör en OAuth 2.0-begärandemodul
 description: För att kunna göra en  [!DNL Adobe Workfront Fusion] HTTP(S)-begäran till servrar som kräver en OAuth 2.0-auktorisering måste du först skapa en OAuth-anslutning. [!DNL Adobe Workfront Fusion] ser till att alla anrop som görs med den här anslutningen har rätt auktoriseringshuvuden och att associerade tokens uppdateras automatiskt när det behövs.
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1978'
 ht-degree: 0%
 
 ---
@@ -227,7 +227,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
 1. Fortsätt till [Konfigurera en OAuth 2.0-begärandemodul](#configure-the-make-an-oauth-20-request-module).
 
-### Instruktioner för att skapa en anslutning till [!DNL Google] i [!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request module]
+### Instruktioner för att skapa en anslutning till [!DNL Google] i [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request module]
 
 I följande exempel visas hur du använder [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0]-begärandemodulen för att ansluta till [!DNL Google].
 
@@ -342,7 +342,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] är en HTTP-multipart-begäran som används för att skicka filer och data. Det används ofta för att överföra filer till servern.</p> <p>Lägg till fält som ska skickas i begäran. Varje fält måste innehålla ett nyckelvärdepar.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Ange nyckeln och värdet som ska skickas i begärandetexten.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Ange nyckeln och ange den källfil som du vill skicka i begärandetexten.</p> <p>Mappa filen som du vill överföra från föregående modul (till exempel [!UICONTROL HTTP] &gt;[!UICONTROL Get a File]) eller ange filnamnet och fildata manuellt.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Ange nyckeln och ange den källfil som du vill skicka i begärandetexten.</p> <p>Mappa filen som du vill överföra från föregående modul (till exempel [!UICONTROL HTTP] &gt; [!UICONTROL Get a File]) eller ange filnamnet och fildata manuellt.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

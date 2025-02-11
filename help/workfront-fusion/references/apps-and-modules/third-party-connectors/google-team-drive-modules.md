@@ -4,7 +4,7 @@ description: Med modulerna  [!DNL Adobe Workfront Fusion Google Team Drive] kan 
 author: Becky
 feature: Workfront Fusion
 exl-id: 95dd9d23-1df9-40da-8fd0-646cc697bfc8
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
 workflow-type: tm+mt
 source-wordcount: '1059'
 ht-degree: 0%
@@ -162,7 +162,7 @@ Returnerar filinformation när en ny fil läggs till och/eller ändras i den ang
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Ange filen som du vill överföra till den delade enheten.</p> <p>Mappa filen som du vill överföra från föregående modul (t.ex. [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] eller [!UICONTROL Dropbox] &gt;[!UICONTROL Get a file)]) eller ange filnamnet och fildata manuellt.</p> </td> 
+   <td> <p>Ange filen som du vill överföra till den delade enheten.</p> <p>Mappa filen som du vill överföra från föregående modul (t.ex. [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] eller [!UICONTROL Dropbox] &gt;[!UICONTROL Get a file)]) eller ange filnamnet och fildata manuellt.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Title]</td> 
