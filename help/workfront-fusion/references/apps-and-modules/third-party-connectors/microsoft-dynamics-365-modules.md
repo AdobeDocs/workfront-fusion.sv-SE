@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: c377a24c2daeb25effffb28d9912d8c27ad0a08d
 workflow-type: tm+mt
-source-wordcount: '1548'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden s
 >[!NOTE]
 >
 >[!DNL Microsoft Dynamics 365]-anslutningen stöder inte [!DNL Dynamics Finance and Operations].
+>
+>Mer information om [!DNL Microsoft Dynamics 365 Finance and Operations]-anslutningen finns i [[!DNL Microsoft Dynamics 365 Finance and Operations] moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md).
 
 Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -25,42 +27,46 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -77,8 +83,48 @@ Du kan skapa en anslutning till ditt [!DNL Microsoft Dynamics 365]-konto direkt 
 >Om en användare till exempel har behörighet att läsa tabell som beviljats via Excel-anslutningen och sedan skapar en anslutning i Outlook-anslutningen för att läsa e-post, visar tillståndsskärmen både den behörighet som redan har beviljats för att läsa tabell och den behörighet som nyligen har krävts för att skriva e-post.
 
 1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL Connection] i någon [!DNL Microsoft Dynamics 365]-modul.
-1. Ange ett namn för anslutningen.
-1. I fältet **[!UICONTROL Resource]** anger du adressen till ditt [!DNL Dynamics 365]-konto, utan `https://`.
+
+
+1. Fyll i följande fält:
+
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td>
+            <p>Ange ett namn för anslutningen.</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Environment]</td>
+          <td>Ange om du ansluter till en produktionsmiljö eller icke-produktionsmiljö.</td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Type]</td>
+          <td>Välj om du vill ansluta till ett tjänstkonto eller ett personligt konto.</td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client ID]<p>(Valfritt)</p></td>
+          <td>Ange din [!DNL Microsoft Dynamics] [!UICONTROL Client ID].</td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client Secret]<p>(Valfritt)</p></td>
+          <td>Ange din [!DNL Microsoft Dynamics] [!UICONTROL Client Secret].
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Authentication URL]</td>
+          <td>Ange den URL som din instans av Workfront ska använda för att autentisera anslutningen. <p>Standardvärdet är <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Resource]</td>
+          <td>Ange adressen för ditt [!DNL Dynamics 365]-konto, utan <code>>https://</code>.</p>
+        </tr>
+      </tbody>
+    </table>
 1. Klicka på **[!UICONTROL Continue]** för att skapa anslutningen och gå tillbaka till modulen.
 
 >[!NOTE]
@@ -96,53 +142,16 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [[!UICONTROL Watch Records (Scheduled)]](#watch-records-scheduled)
+* [Utlösare](#triggers)
+* [Åtgärder](#actions)
+* [Sökningar](#searches)
+
+### Utlösare
+
 * [[!UICONTROL Watch Records (Real Time)]](#watch-records-real-time)
-* [[!UICONTROL Create Record]](#create-record)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Delete Record]](#delete-record)
-* [[!UICONTROL Read Records]](#read-records)
-* [[!UICONTROL Update Record]](#update-record)
-* [[!UICONTROL Search Records]](#search-records)
+* [[!UICONTROL Watch Records (Scheduled)]](#watch-records-scheduled)
 
-### [!UICONTROL Watch Records (Scheduled)]
-
-Denna schemalagda utlösarmodul kör ett scenario när en post i det angivna objektet skapas eller uppdateras efter den senaste schemalagda körningen i [!DNL Dynamics 365].
-
-Modulens utdata anger om posten som hittades är ny eller uppdaterad (om den både lades till och uppdaterades under tidsperioden markeras den som ny). Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-Detta sker regelbundet enligt ett schema som du anger.
-
-När du konfigurerar den här modulen visas följande fält.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Microsoft Dynamics 365] till [!DNL Workfront Fusion]</a> i den här artikeln. </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Include]</td> 
-   <td>Välj om du vill att modulen ska bevaka <strong>[!UICONTROL Only new records]</strong>, <strong>[!UICONTROL Updated records only]</strong> eller <strong>[!UICONTROL New records and all changes]</strong>.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
-   <td>Välj posttypen [!UICONTROL Microsoft Dynamics 365] som du vill att scenariot ska bevaka.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td> <p>Välj den information som du vill inkludera i utdatapaketet för den här modulen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Max Records]</td> 
-   <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Watch Records (Real Time)]
+#### [!UICONTROL Watch Records (Real Time)]
 
 Denna snabbutlösarmodul kör ett scenario när en post (objekt) som du anger skapas eller uppdateras i [!DNL Dynamics 365].
 
@@ -165,7 +174,53 @@ En webkrok krävs i den här modulen.
  </tbody> 
 </table>
 
-### [!UICONTROL Create Record]
+#### [!UICONTROL Watch Records (Scheduled)]
+
+Denna schemalagda utlösarmodul kör ett scenario när en post i det objekt som du anger skapas eller uppdateras efter den senaste schemalagda körningen av detta scenario.
+
+Modulens utdata anger om posten som hittades är ny eller uppdaterad. Om posten både lades till och uppdaterades under tidsperioden, returneras den som en ny post.
+
+Detta sker regelbundet enligt ett schema som du anger.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> "
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Microsoft Dynamics 365] till [!DNL Workfront Fusion]</a> i den här artikeln. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Include]</td> 
+   <td>Välj om du vill att modulen ska bevaka <strong>[!UICONTROL New Records Only]</strong>, <strong>[!UICONTROL Updated Records Only]</strong> eller <strong>[!UICONTROL New and Updated Records]</strong>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td>Välj posttypen [!UICONTROL Microsoft Dynamics 365] som du vill att scenariot ska bevaka.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td> <p>Välj den information som du vill inkludera i utdatapaketet för den här modulen. Fält är tillgängliga baserat på den valda entitetstypen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Max Records]</td> 
+   <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Åtgärder
+
+* [[!UICONTROL Create Record]](#create-record)
+* [[!UICONTROL Make an API Call]](#make-an-api-call)
+* [[!UICONTROL Delete Record]](#delete-record)
+* [[!UICONTROL Read Records]](#read-records)
+* [[!UICONTROL Update Record]](#update-record)
+
+
+#### [!UICONTROL Create Record]
 
 Den här åtgärdsmodulen skapar en entitet, till exempel en avtalad tid eller uppgift.
 
@@ -198,7 +253,36 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
-### [!UICONTROL Make an API Call]
+#### [!UICONTROL Delete Record]
+
+Den här åtgärdsmodulen tar bort en entitet.
+
+Du anger ID:t för entiteten.
+
+Modulen returnerar ID:t för entiteten och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Microsoft Dynamics 365] till [!DNL Workfront Fusion]</a> i den här artikeln. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td> <p>Välj den typ av enhet som du vill att modulen ska ta bort.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID]</td> 
+   <td> <p>Ange eller mappa det unika [!DNL Microsoft Dynamics 365]-ID:t för posten som du vill att modulen ska ta bort.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Make an API Call]
 
 Med den här åtgärdsmodulen kan du göra ett anpassat autentiserat anrop till API:t [!DNL Microsoft Dynamics 365]. På så sätt kan du skapa en dataflödesautomatisering som inte kan utföras av de andra [!DNL Microsoft Dynamics 365]-modulerna.
 
@@ -242,36 +326,7 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
-### [!UICONTROL Delete Record]
-
-Den här åtgärdsmodulen tar bort en entitet.
-
-Du anger ID:t för entiteten.
-
-Modulen returnerar ID:t för entiteten och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-När du konfigurerar den här modulen visas följande fält.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Microsoft Dynamics 365] till [!DNL Workfront Fusion]</a> i den här artikeln. </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
-   <td> <p>Välj den typ av enhet som du vill att modulen ska ta bort.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL ID]</td> 
-   <td> <p>Ange eller mappa det unika [!DNL Microsoft Dynamics 365]-ID:t för posten som du vill att modulen ska ta bort.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Read Records]
+#### [!UICONTROL Read Records]
 
 Den här åtgärdsmodulen läser data från en enskild enhet i [!DNL Microsoft Dynamics 365].
 
@@ -304,7 +359,7 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
-### [!UICONTROL Update Record]
+#### [!UICONTROL Update Record]
 
 Den här åtgärdsmodulen uppdaterar en entitet.
 
@@ -341,7 +396,9 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
-### [!UICONTROL Search Records]
+### Sökningar
+
+#### [!UICONTROL Search Records]
 
 Den här sökmodulen söker efter poster i ett objekt i [!DNL Microsoft Dynamics 365] som matchar den sökfråga du anger. Du kan mappa den här informationen i efterföljande moduler i scenariot.
 

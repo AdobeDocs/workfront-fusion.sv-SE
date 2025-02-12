@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Workfront Fusion Adobe Creative Cloud] biblioteksm
 author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -25,47 +25,46 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-      <td>
-        <p>[!UICONTROL Pro] eller högre</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-      <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td>
-      <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
+   <td>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
-   </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Produkt</td>
-      <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produkt</td> 
+   <td>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
-   </td>
-    </tr>
-  </tbody>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
 
-
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -135,11 +134,11 @@ Denna åtgärdsmodul arkiverar ett element från ett bibliotek.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >Markera det bibliotek som innehåller elementet som du vill arkivera.</td>
+      <td >Markera eller mappa biblioteket som innehåller elementet som du vill arkivera.</td>
     </tr>
     <tr>
-      <td class="TableStyle-TableStyle-List-options-in-steps-BodyB-Column1-LightGray" role="rowheader">[!UICONTROL Element ID]</td>
-      <td class="TableStyle-TableStyle-List-options-in-steps-BodyA-Column2-LightGray">Markera elementet som du vill arkivera.</td>
+      <td role="rowheader">[!UICONTROL Element ID]</td>
+      <td>Markera eller mappa elementet som du vill arkivera.</td>
     </tr>
   </tbody>
 </table>
@@ -158,7 +157,7 @@ Den här åtgärdsmodulen returnerar ett enskilt element från ett bibliotek.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >Markera det bibliotek som innehåller elementet som du vill hämta.</td>
+      <td>Markera eller mappa biblioteket som innehåller elementet som du vill hämta.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Element ID]</td>
@@ -204,7 +203,7 @@ Den här åtgärdsmodulen hämtar en lista med element i ett bibliotek.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >Välj det bibliotek som du vill lista element från.</td>
+      <td >Markera eller mappa biblioteket som du vill lista element från.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Order by]</td>
@@ -212,7 +211,7 @@ Den här åtgärdsmodulen hämtar en lista med element i ett bibliotek.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Type]</td>
-      <td >Ange en MIME-typ för att begränsa resultaten till element som identifieras med den angivna MIME-typen. Exempel: <code>string</code>.</td>
+      <td >Ange eller mappa en MIME-typ för att begränsa resultaten till element som identifieras med den angivna MIME-typen. Exempel: <code>string</code>.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Selector]</td>
@@ -240,57 +239,6 @@ Den här åtgärdsmodulen hämtar en lista med element i ett bibliotek.
     <tr>
       <td role="rowheader">[!UICONTROL Limit]</td>
       <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td>
-    </tr>
-  </tbody>
-</table>
-
-#### [!UICONTROL Upload an Element]
-
-Denna åtgärdsmodul överför en liten filresurs till ett befintligt bibliotek. Största filstorlek är 1 GB.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Välj en befintlig Creative Cloud Libraries-anslutning. Det går för närvarande inte att skapa en anslutning i Creative Cloud Libraries Connector. Befintliga anslutningar fungerar som förväntat.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >Välj det bibliotek som du vill lista element från.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Invocation Mode]</td>
-      <td>
-        <p>Välj det bearbetningsläge som den här förfrågningsprocessen ska anropas med.</p>
-        <ul>
-          <li>
-            <p><b>[!UICONTROL sync]</b>
-            </p>
-            <p>API-anropet behandlas synkront. Svaret levereras när bearbetningen är slutförd (såvida inte samtalstiderna är slut).</p>
-          </li>
-          <li>
-            <p><b>[!UICONTROL async]</b>
-            </p>
-            <p>Svaret på den asynkrona övervakaren returneras omedelbart, och bearbetningen av begäran sker asynkront. Anropet ansvarar för avsökningen av slutpunkten tills det är klart.</p>
-          </li>
-          <li>
-            <p><b>[!UICONTROL sync,async]</b> (Standard)</p>
-            <p>Ett försök görs att synkronisera begäran. När bearbetningen sträcker sig över mer än 5 000 ms returneras det asynkrona skärmsvaret. URL:en för övervakaren bör avfrågas tills begäran är slutförd.</p>
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Type File]</td>
-      <td >Ange eller mappa MIME-typen för den överförda filen.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Source File]</td>
-      <td>
-        <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p>
-      </td>
     </tr>
   </tbody>
 </table>
@@ -389,6 +337,9 @@ Den här utlösarmodulen startar ett scenario när ett befintligt bibliotek uppd
 
 ### Övriga
 
+* [Göra ett API-anrop](#make-an-api-call)
+* [Överför en resurs](#upload-an-asset)
+
 #### [!UICONTROL Make an API Call]
 
 Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Creative Cloud Libraries].
@@ -445,6 +396,66 @@ Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Creative Clo
       <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p>
     </td>
     </tr>
-
 </tbody>
 </table>
+
+
+#### [!UICONTROL Upload an Asset]
+
+Denna åtgärdsmodul överför en liten filresurs till ett befintligt bibliotek. Största filstorlek är 1 GB.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Välj en befintlig Creative Cloud Libraries-anslutning. Det går för närvarande inte att skapa en anslutning i Creative Cloud Libraries Connector. Befintliga anslutningar fungerar som förväntat.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Library ID]</td>
+      <td >Välj det bibliotek som du vill överföra en resurs till.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Invocation Mode]</td>
+      <td>
+        <p>Välj det bearbetningsläge som den här förfrågningsprocessen ska anropas med.</p>
+        <ul>
+          <li>
+            <p><b>[!UICONTROL sync]</b>
+            </p>
+            <p>API-anropet behandlas synkront. Svaret levereras när bearbetningen är slutförd (såvida inte samtalstiderna är slut).</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL async]</b>
+            </p>
+            <p>Svaret på den asynkrona övervakaren returneras omedelbart, och bearbetningen av begäran sker asynkront. Anropet ansvarar för avsökningen av slutpunkten tills det är klart.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL sync,async]</b> (Standard)</p>
+            <p>Ett försök görs att synkronisera begäran. När bearbetningen sträcker sig över mer än 5 000 ms returneras det asynkrona skärmsvaret. URL:en för övervakaren bör avfrågas tills begäran är slutförd.</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Element Type]</td>
+      <td >Välj den typ av element som du vill överföra</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL File Type]</td>
+      <td >Ange eller mappa MIME-typen för den överförda filen.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Source File]</td>
+      <td>
+        <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+

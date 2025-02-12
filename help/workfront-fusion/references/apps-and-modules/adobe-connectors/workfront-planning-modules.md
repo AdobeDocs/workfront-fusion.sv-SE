@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Workfront Planning] modulerna kan du starta ett [!
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 06ba97ec4245f9620f013711df9a77b76abb20be
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1395'
 ht-degree: 0%
 
 ---
@@ -17,42 +17,54 @@ Med modulerna [!DNL Adobe Workfront Planning] kan du utlösa ett scenario när h
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
-   </td>  
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
+
+## Förutsättningar
+
+Du måste ha följande för att få tillgång till Workfront Planning:
+
+* Ett nytt Workfront-paket och en ny licens. Workfront Planning är inte tillgängligt för tidigare Workfront-paket eller licenser.
+* Ett Workfront Planning-paket.
+* Din organisations instans av Workfront måste integreras med Adobe Unified Experience.
 
 ## Information om Adobe Workfront Planning API
 
@@ -110,7 +122,7 @@ Du kan skapa en anslutning till ditt [!DNL Workfront Planning]-konto direkt inif
           <td>Ange din [!DNL Adobe] [!UICONTROL Client Secret]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]<p>(Valfritt)</p></td>
+          <td role="rowheader">[!UICONTROL Authentication URL]</td>
           <td>Ange den URL som din instans av Workfront ska använda för att autentisera anslutningen. <p>Standardvärdet är <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
         </tr>
         <tr>
@@ -119,9 +131,22 @@ Du kan skapa en anslutning till ditt [!DNL Workfront Planning]-konto direkt inif
         </tr>
       </tbody>
     </table>
+
 1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
 
 ## [!DNL Adobe Workfront Planning]-moduler och deras fält
+
+När du konfigurerar Workfront-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare Workfront-fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+
+Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+
+![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+
+* [Utlösare](#triggers)
+* [Åtgärder](#actions)
+* [Sökningar](#searches)
+* [Okategoriserad](#uncategorized)
 
 ### Utlösare
 
@@ -199,7 +224,7 @@ Den här åtgärdsmodulen tar bort en enskild posttyp i Workfront Planning med d
       <td role="rowheader">
         <p>[!UICONTROL Record type ID]</p>
       </td>
-      <td>Ange eller mappa ID:t för fältet som du vill ta bort.</td> 
+      <td>Ange eller mappa ID:t för den posttyp som du vill ta bort.</td> 
       </tr>
   </tbody>
 </table>
@@ -253,14 +278,54 @@ Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Workfront Pl
   </tbody>
 </table>
 
-<!--
-### Searches
 
-#### Search records
+### Sökningar
 
-This action module retrieves a list of records based on criteria you specify.
+#### Sök poster
 
--->
+Den här åtgärdsmodulen hämtar en lista med poster baserat på villkor som du anger.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Workfront Planning] finns i <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Workfront Planning]</a> i den här artikeln.</td>
+    </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Ange eller mappa den Workspace som innehåller de poster som du vill söka efter.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Välj den posttyp som du vill söka efter.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record Fields]</p>
+      </td>
+      <td>Leta reda på fältet, markera operatorn och ange eller mappa värdet som du vill söka efter för varje fält som du vill använda i sökningen. Fältet är tillgängligt baserat på vald posttyp.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Condition for filters]</p>
+      </td>
+      <td>Välj villkor för dina filter:<ul><li><b>OCH</b><p>Modulen returnerar poster som uppfyller <b>alla</b> av de fältvärden som du markerade.</p></li><li><b>ELLER</b><p>Modulen returnerar poster som uppfyller <b>något</b> av de fältvärden som du har valt.</p></li></ul></td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Limit]</p>
+      </td>
+   <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
+      </tr>
+  </tbody>
+</table>
+
 
 ### Okategoriserad
 
@@ -287,7 +352,7 @@ Den här åtgärden skapar en enda post i Workfront Planning.
       <td role="rowheader">
         <p>Andra fält</p>
       </td>
-      <td>Dessa fält baseras på den posttyp som du har valt.</td> 
+      <td>Ange de värden som du vill att den nya posten ska ha. Dessa fält baseras på den posttyp som du har valt.</td> 
       </tr>
      <tr>
   </tbody>
@@ -313,31 +378,6 @@ Den här åtgärdsmodulen tar bort den angivna posten i Workfront Planning.
       </tr>
   </tbody>
 </table>
-
-<!--
-
-### Get all records
-
-This action module retrieves all records from an [!DNL Adobe Workfront Planning] account.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned records]</p>
-      </td>
-      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-      </tr>
-  </tbody>
-</table>
-
--->
 
 ### Hämta en post
 
@@ -378,11 +418,11 @@ Den här åtgärdsmodulen hämtar alla poster av den angivna typen.
       <td role="rowheader">[!UICONTROL Record type]</td>
       <td>Välj den typ av post som du vill hämta.</td>
     </tr>
-     <tr>
+     <!--<tr>
       <td role="rowheader">
         <p>[!UICONTROL Maximum number of returned records]</p>
       </td>
-      <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
+      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> -->
   </tbody>
 </table>
 
@@ -397,6 +437,10 @@ Den här åtgärdsmodulen hämtar en lista med posttyper i ett [!DNL Adobe Workf
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Workfront Planning] finns i <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Workfront Planning]</a> i den här artikeln.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td>Markera eller mappa arbetsytan som innehåller de posttyper som du vill hämta.</td>
     </tr>
   </tbody>
 </table>
@@ -423,7 +467,7 @@ Den här åtgärden uppdaterar en enda post i Workfront Planning.
       <td role="rowheader">
         <p>Andra fält</p>
       </td>
-      <td>Dessa fält baseras på den posttyp som du har valt.</td> 
+      <td>Ange de nya värden som du vill att posten ska ha. Dessa fält baseras på den posttyp som du har valt.</td> 
       </tr>
      <tr>
   </tbody>

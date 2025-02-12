@@ -5,9 +5,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---
@@ -22,42 +22,46 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
