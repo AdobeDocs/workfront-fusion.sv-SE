@@ -9,10 +9,10 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: 200907bb8d80f874227493b489ef1ea450198dc6
+source-git-commit: da0c82d66bcd90a9e676f54c93252218f9b1de99
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 0%
+source-wordcount: '847'
+ht-degree: 6%
 
 ---
 
@@ -21,6 +21,12 @@ ht-degree: 0%
 Adobe Workfront Fusion kopplar ihop appar och webbtjänster sömlöst så att du kan koncentrera dig på nya uppgifter istället för att upprepa samma uppgifter om och om igen.
 
 ## Fusion-versioner 2025
+
+### Februari 2025
+
+* [Versionsaktivitet för Workfront Fusion: 10 februari 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-10.md)
+
+### Januari 2025
 
 * [Versionsaktivitet för Workfront Fusion: 20 januari 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-20.md)
 * [Versionsaktivitet för Workfront Fusion: 13 januari 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-13.md)
