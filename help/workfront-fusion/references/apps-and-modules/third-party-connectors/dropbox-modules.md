@@ -1,12 +1,12 @@
 ---
-title: Dropbox-moduler
-description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera arbetsflöden som använder Dropbox, samt ansluta det till flera tredjepartsprogram och -tjänster. På så sätt kan du automatisera aktiviteter som övervakning, sökning, hämtning, listning, skapande och redigering av filer och mappar i Dropbox.
+title: Dropbox moduler
+description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera arbetsflöden som använder Dropbox och ansluta det till flera tredjepartsprogram och -tjänster. På så sätt kan du automatisera aktiviteter som övervakning, sökning, hämtning, listning, skapande och redigering av filer och mappar i din Dropbox.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 04f0678b67cf6bffdb791a9ab38be27a6417370c
 workflow-type: tm+mt
-source-wordcount: '2876'
+source-wordcount: '2870'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,8 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
 <table style="table-layout:auto">
@@ -28,35 +30,37 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -66,11 +70,11 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 >
 >Dropbox måste godkänna program med fler än 50 användare.
 >
->Mer information finns i Utvecklarhandbok för Dropbox.
+>Mer information finns i&quot;Produktionsgodkännande&quot; i utvecklarhandboken för Dropbox.
 
-## API-information för Dropbox
+## Dropbox API-information
 
-Kopplingen Dropbox använder följande:
+Dropbox Connector använder följande:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -129,7 +133,11 @@ Så här skapar du en anslutning för dina [!DNL Dropbox]-moduler:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Account Type]</td>
-        <td>Ange om du ansluter till ett Dropbox-konto eller ett företagskonto (Dropbox Business).</td>
+        <td>Ange om du ansluter till ett personligt Dropbox-konto eller ett företagskonto (Dropbox Business).</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Exclude dropbox-api-path-root header]</td>
+        <td>Aktivera det här alternativet om du vill exkludera dropbox-api-path-root header för Dropbox-appar med appmappåtkomst</td>
         </tr>
       </tbody>
     </table>
@@ -180,52 +188,11 @@ Den här modulen för utlösare returnerar filinformation när filen i en angive
 
 ### Moduler för att hämta [!DNL Dropbox] filer och mappar
 
-* [[!UICONTROL Search Files/Folders]](#search-filesfolders)
 * [[!UICONTROL Download a File]](#download-a-file)
 * [[!UICONTROL Get a Folder Metadata]](#get-a-folder-metadata)
 * [[!UICONTROL List All Files/Subfolders in a Folder]](#list-all-filessubfolders-in-a-folder)
 * [[!UICONTROL List File Revisions]](#list-file-revisions)
-
-#### [!UICONTROL Search Files/Folders]
-
-Den här sökmodulen söker efter poster i ett objekt i [!DNL Dropbox] som matchar den sökfråga du anger.
-
-Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Search] </td> 
-   <td> <p>Ange söktermen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder] </td> 
-   <td> <p>Markera mappen som du vill söka i. Den här modulen söker igenom hela [!DNL Dropbox] om du inte väljer någon mapp.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Filstatus</td> 
-   <td> <p> Välj filstatus för att begränsa sökningen till vald filstatus.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Filkategorier</td> 
-   <td> <p> Välj de filkategorier som du vill begränsa sökningen till de valda kategorierna.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Filtillägg</td> 
-   <td> <p> Välj de filtillägg som du vill söka efter.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Gräns </td> 
-   <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Search Files/Folders]](#search-filesfolders)
 
 #### [!UICONTROL Download a File]
 
@@ -345,7 +312,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td> <p>Filsökväg/fil</p> </td> 
-   <td> <p style="font-weight: bold;">Filsökväg</p> <p>Ange eller mappa målsökvägen till filen.</p> <p style="font-weight: bold;">Fil</p> <p>Välj filen på menyn.</p> </td> 
+   <td> <p><b>Filsökväg</b></p> <p>Ange eller mappa målsökvägen till filen.</p> <p><b>Fil</b></p> <p>Välj filen på menyn.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>Gräns</p> </td> 
@@ -354,28 +321,13 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
-### Moduler för att skapa och redigera [!DNL Dropbox] filer och mappar
+#### [!UICONTROL Search Files/Folders]
 
-* [[!UICONTROL Upload] en fil](#upload-a-file)
-* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [[!UICONTROL Create/Overwrite a Text File]](#createoverwrite-a-text-file)
-* [[!UICONTROL Create/Update a Share Link]](#createupdate-a-share-link)
-* [[!UICONTROL Restore a File]](#restore-a-file)
-* [[!UICONTROL Move a File/Folder]](#move-a-filefolder)
-* [[!UICONTROL Rename a File/Folder]](#rename-a-filefolder)
-* [[!UICONTROL Delete a File/Folder]](#delete-a-filefolder)
+Den här sökmodulen söker efter poster i ett objekt i [!DNL Dropbox] som matchar den sökfråga du anger.
 
-#### [!UICONTROL Upload a File]
+Du kan mappa den här informationen i efterföljande moduler i scenariot.
 
-Den här åtgärdsmodulen överför en fil till en mapp.
-
-Du kan ange information om till exempel filens plats, vilken fil du vill överföra och ett valfritt nytt namn för filen.
-
-Modulen returnerar filens ID och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-När du konfigurerar den här modulen visas följande fält.
-
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
@@ -384,19 +336,42 @@ När du konfigurerar den här modulen visas följande fält.
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder]</td> 
-   <td> <p> Markera mappen för den [!DNL Dropbox] som du vill överföra filen till.</p> </td> 
+   <td>[!UICONTROL Search] </td> 
+   <td> <p>Ange söktermen.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Ange eller mappa filen som du vill lägga till i mappen [!DNL Dropbox] ovan.</p> <p style="font-weight: bold;">[!UICONTROL File name]</p> <p>Ange eller mappa filnamnet, inklusive filtillägget.</p> <p style="font-weight: bold;">[!UICONTROL File data]</p> <p>Ange eller mappa fildata (från tidigare modul som [!UICONTROL Google Drive] &gt;[!UICONTROL Get a File)].</p> <p>Obs! Den överförda filens största storlek är 150 MB.</p> </td> 
+   <td>[!UICONTROL Folder] </td> 
+   <td> <p>Markera mappen som du vill söka i. Den här modulen söker igenom hela [!DNL Dropbox]kontot om du inte väljer någon mapp.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Overwrite an existing file]</td> 
-   <td> <p> Aktivera det här alternativet om du vill ersätta den befintliga filen med den nya filen. Om det här alternativet är inaktiverat byter den överförda filen namn.</p> </td> 
+   <td>Filstatus</td> 
+   <td> <p> Välj den filstatus som du vill ta med i sökningen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Filkategorier</td> 
+   <td> <p> Markera de filkategorier som du vill ta med i sökningen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Filtillägg</td> 
+   <td> <p>För varje filtillägg som du vill inkludera i sökningen klickar du på <b>Lägg till objekt</b> och anger eller mappar filtillägget.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Gräns </td> 
+   <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+### Moduler för att skapa och redigera [!DNL Dropbox] filer och mappar
+
+* [[!UICONTROL Create a Folder]](#create-a-folder)
+* [[!UICONTROL Create/Overwrite a Text File]](#createoverwrite-a-text-file)
+* [[!UICONTROL Create/Update a Share Link]](#createupdate-a-share-link)
+* [[!UICONTROL Delete a File/Folder]](#delete-a-filefolder)
+* [[!UICONTROL Move a File/Folder]](#move-a-filefolder)
+* [[!UICONTROL Rename a File/Folder]](#rename-a-filefolder)
+* [[!UICONTROL Restore a File]](#restore-a-file)
+* [[!UICONTROL Upload] en fil](#upload-a-file)
 
 #### [!UICONTROL Create a Folder]
 
@@ -422,7 +397,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Folder]</p> </td> 
-   <td> <p>Ange eller mappa sökvägen där du vill skapa en ny mapp.</p> <p>Obs!   <p>Om du använder ett [!DNL Dropbox Business]-konto (med grupputrymmen) måste du ta bort snedstrecket <code>/</code>, eller klicka inte på <strong>[!UICONTROL Click here] för att välja mappen </strong> för att skapa en gruppmapp i roten.</p> <p>Om snedstrecket inte tas bort returneras felet <code>[409] path/malformed_path/..</code>.</p> </p> </td> 
+   <td> <p>Ange eller mappa sökvägen där du vill skapa en ny mapp.</p> <p>Obs!   <p>Om du använder ett [!DNL Dropbox Business]-konto (med grupputrymmen) måste du ta bort snedstrecket <code>/</code> eller inte klicka <strong>Klicka här om du vill välja mappen</strong> och skapa en gruppmapp i roten.</p> <p>Om snedstrecket inte tas bort returneras felet <code>[409] path/malformed_path/..</code>.</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Auto rename]</td> 
@@ -437,8 +412,6 @@ Den här åtgärdsmodulen skapar en DOC-fil eller skriver över innehållet i en
 
 Du anger källfilen och mappen.
 
-Modulen returnerar ID:t för mappen och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
 När du konfigurerar den här modulen visas följande fält.
 
 <table style="table-layout:auto"> 
@@ -451,15 +424,11 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td>[!UICONTROL Select to]</td> 
-   <td> <p> Välj om du vill skapa eller skriva över en DOC-fil.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder] </td> 
-   <td> <p>Välj den målplats där du vill skapa en fil.</p> </td> 
+   <td> <p> Välj om du vill skapa eller skriva över en DOC-fil.</p><ul><li><b>Skapa</b></p>Välj den mapp där du vill skapa en fil.</li><li><b>Skriv över</b><p>Välj hur du vill välja vilken fil som ska skrivas över och mappa sedan filsökvägen eller markera filen. </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Ange eller mappa filen som du vill lägga till i mappen [!DNL Dropbox].</p> <p style="font-weight: bold;">Filnamn</p> <p>Ange filnamnet för den nya DOC-filen (utan filtillägg).</p> <p style="font-weight: bold;">Filinnehåll</p> <p>Ange textinnehållet i DOC-filen.</p> </td> 
+   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens innehåll. </p> <p>Om du skapar en fil väljer du <b>Tom</b>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -488,30 +457,31 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL File Path / File]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>Ange eller mappa målsökvägen till filen.</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>Välj filen på menyn.</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>Ange eller mappa sökvägen till målfilen.</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>Markera målfilen.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Requested Visibility]</p> </td> 
-   <td> <p>Ange om länken är offentlig, för team eller om lösenordet är begränsat.</p> <p>Obs! Alternativen [!UICONTROL Team only] och [!UICONTROL Access with password] är bara tillgängliga för användare med version [!DNL Dropbox Pro] eller senare.</p> </td> 
+   <td> <p>Ange om länken är offentlig, för team eller om lösenordet är begränsat.</p> <p><b>Obs!</b></p><p> [!UICONTROL Team only] är bara tillgängligt för Dropbox Business-konton. [!UICONTROL Access with password] är bara tillgängligt för [!DNL Dropbox Pro]- eller Dropbox Business-konton.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Link's Expiration Date]</td> 
-   <td> <p> Ange det datum och den tidpunkt då länken upphör att gälla och inte längre är tillgänglig. Om fältet lämnas tomt upphör länken inte att gälla. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</p> <p>Obs! Alternativen [!UICONTROL Team only] och [!UICONTROL Access with password] är bara tillgängliga för användare som har [!UICONTROL Dropbox Pro] eller senare versioner.</p> </td> 
+   <td> <p> Ange det datum och den tidpunkt då länken upphör att gälla och inte längre är tillgänglig. Om fältet lämnas tomt upphör länken inte att gälla. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Typtvång</a>.</p>  </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Link's Access Level]</p> </td> 
-   <td> <p>Ange behörighet för länkmottagaren.</p> <p><strong>[!UICONTROL Viewer]</strong> Användare som använder länken kan visa och kommentera innehållet.</p> <p><strong>[!UICONTROL Editor]</strong> Användare som använder länken kan redigera, visa och kommentera innehållet.</p> <p><strong>[!UICONTROL Max]</strong> Användare som använder länken får den maximala åtkomstnivå som du kan ange länken till.</p> </td> 
+   <td> <p>Ange behörighet för länkmottagaren.</p> <ul><li><strong>[!UICONTROL Viewer]</strong> <p>Användare som använder länken kan visa och kommentera innehållet.</p> </li><li><strong>[!UICONTROL Editor]</strong><p> Användare som använder länken kan redigera, visa och kommentera innehållet. Den här åtkomstnivån är endast tillgänglig för molnbaserade dokument.</p> </li><li><strong>[!UICONTROL Max]</strong> <p>Användare som använder länken får den maximala åtkomstnivå som du kan ange länken till.</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Restore a File]
 
-Den här åtgärdsmodulen återställer en tidigare version av en fil.
+#### [!UICONTROL Delete a File/Folder]
 
-Du anger filen och numret på den revision du vill ha.
+Den här åtgärdsmodulen tar bort en fil eller mapp.
 
-Modulen returnerar ID:t för versionen och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+Du anger filen eller mappen.
+
+Modulen returnerar postens ID och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
 
 När du konfigurerar den här modulen visas följande fält.
 
@@ -528,12 +498,8 @@ När du konfigurerar den här modulen visas följande fält.
    <td> <p> Välj om du vill mappa eller ange filsökvägen eller markera filen manuellt.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File Path] / [!UICONTROL File]</p> </td> 
-   <td> <p><strong>[!UICONTROL File Path]</strong> </p> <p>Ange eller mappa målsökvägen till filen.</p> <p><strong>[!UICONTROL File]</strong> </p> <p>Välj filen på menyn.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <p>[!UICONTROL Revision]</p> </td> 
-   <td> <p>Ange eller mappa revisionsnumret för den revision som du vill återställa.</p> </td> 
+   <td> <p>[!UICONTROL File or Folder Path] / [!UICONTROL File or Folder]</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>Ange eller mappa målsökvägen till filen eller mappen.</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>Markera filen eller mappen på menyn.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -557,12 +523,12 @@ När du konfigurerar den här modulen visas följande fält.
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Way of selecting files] </td> 
-   <td> <p>Välj om du vill mappa eller ange filsökvägen eller markera filen manuellt.</p> </td> 
+   <td>[!UICONTROL Way of selecting files / folders] </td> 
+   <td> <p>Välj om du vill mappa eller ange fil- eller mappsökvägen, eller markera filen eller mappen manuellt.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File/Folder Path] / [!UICONTROL File/Folder]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>Ange eller mappa målsökvägen till filen eller mappen.</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>Markera filen eller mappen på menyn.</p> </td> 
+   <td> <p>[!UICONTROL File / Folder Path] /</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>Ange eller mappa målsökvägen till filen eller mappen.</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>Ange om du flyttar en fil eller mapp, sedan filen eller mappen.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL To Folder]</p> </td> 
@@ -607,22 +573,23 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td> <p>Fil-/mappsökväg / Fil/Mapp</p> </td> 
-   <td> <p style="font-weight: bold;">Fil-/mappsökväg</p> <p>Ange eller mappa målsökvägen till filen eller mappen.</p> <p style="font-weight: bold;">Fil/mapp</p> <p>Markera filen eller mappen på menyn.</p> </td> 
+   <td> <p style="font-weight: bold;">Fil-/mappsökväg</p> <p>Ange eller mappa målsökvägen till filen eller mappen.</p> <p style="font-weight: bold;">Fil/mapp</p> <p>Ange om du flyttar en fil eller mapp, sedan filen eller mappen.</p> </td> 
   </tr> 
   <tr> 
    <td>Byt namn </td> 
-   <td> <p>Ange [!UICONTROL target name] för filen, inklusive filtillägget.</p> </td> 
+   <td> <p>Ange det nya namnet för filen, inklusive filtillägget.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a File/Folder]
 
-Den här åtgärdsmodulen tar bort en fil eller mapp.
+#### [!UICONTROL Restore a File]
 
-Du anger filen eller mappen.
+Den här åtgärdsmodulen återställer en tidigare version av en fil.
 
-Modulen returnerar postens ID och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+Du anger filen och numret på den revision du vill ha.
+
+Modulen returnerar ID:t för versionen och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
 
 När du konfigurerar den här modulen visas följande fält.
 
@@ -640,10 +607,48 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL File Path] / [!UICONTROL File]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>Ange eller mappa målsökvägen till filen.</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>Välj filen på menyn.</p> </td> 
+   <td> <p><strong>[!UICONTROL File Path]</strong> </p> <p>Ange eller mappa målsökvägen till filen.</p> <p><strong>[!UICONTROL File]</strong> </p> <p>Välj filen på menyn.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Revision]</p> </td> 
+   <td> <p>Ange eller mappa revisionsnumret för den revision som du vill återställa.</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+#### [!UICONTROL Upload a File]
+
+Den här åtgärdsmodulen överför en fil till en mapp.
+
+Du kan ange information om till exempel filens plats, vilken fil du vill överföra och ett valfritt nytt namn för filen.
+
+Modulen returnerar filens ID och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Folder]</td> 
+   <td> <p> Markera mappen för den [!DNL Dropbox] som du vill överföra filen till.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Source File]</p> </td> 
+   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> <p><b>Obs!</b></p><p> Den överförda filens största storlek är 150 MB.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Overwrite an existing file]</td> 
+   <td> <p> Aktivera det här alternativet om du vill ersätta den befintliga filen med den nya filen. Om det här alternativet är inaktiverat byter den överförda filen namn.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 
 ### Andra moduler
 
@@ -663,7 +668,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Ange en relativ sökväg till Ange en relativ sökväg till <code>https://api.dropboxapi.com</code>. Exempel: <code>/2/files/list_folder</code></p> <p>Obs! En lista över tillgängliga slutpunkter finns i <a href="https://www.dropbox.com/developers/documentation/http/documentation">Dropbox API v2-dokumentationen</a>.</p> </td> 
+   <td> <p>Ange en relativ sökväg till Ange en relativ sökväg till <code>https://api.dropboxapi.com</code>. Exempel: <code>/2/files/list_folder</code></p>  </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Method]</p> </td> 
@@ -687,29 +692,30 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
->[!INFO]
->
->**Exempel:** Följande API-anrop returnerar de första 10 filerna från mappen [!DNL /Text files] i ditt [!DNL Dropbox]-konto:
->
->URL: `/2/files/list_folder`
->
->Brödtext:
-> 
->`{`
->
->`"path": "/Text files",`
->
->`"limit": 10,`
->
->`"recursive": false,`
->
->`"include_deleted": false`
->
->`}`
->
->Det går att hitta matchningar av sökningen i modulens utdata under [!UICONTROL Bundle] > [!UICONTROL Body] > poster.
->
->I vårt exempel returnerades 10 biljetter:
+>[!BEGINSHADEBOX]
+
+**Exempel:**
+
+Följande API-anrop returnerar de första 10 filerna från mappen [!DNL /Text files] i ditt [!DNL Dropbox]-konto:
+
+URL: `/2/files/list_folder`
+
+Brödtext:
+
+```
+{
+"path": "/Text files",
+"limit": 10,
+"recursive": false,
+"include_deleted": false
+}
+```
+
+Det går att hitta matchningar av sökningen i modulens utdata under [!UICONTROL Bundle] > [!UICONTROL Body] > poster.
+
+I vårt exempel returnerades 10 biljetter.
+
+>[!ENDSHADEBOX]
 
 ## Vanliga problem
 
@@ -718,7 +724,7 @@ När du konfigurerar den här modulen visas följande fält.
 
 ### Det går inte att överföra eller uppdatera en fil
 
-Det finns flera situationer när det inte går att överföra eller uppdatera en fil:
+Följande kan bero på att det inte går att överföra eller uppdatera en fil:
 
 * Den överförda filen är för stor och överskrider den största tillåtna filstorleken för din [!DNL Dropbox]-plan, eller så har du använt hela lagringskvoten för ditt [!DNL Dropbox]-konto. Du måste ta bort befintliga filer från ditt [!DNL Dropbox]-konto eller uppgradera din plan.
 * Den tidigare markerade mappen, som filen överförs till, finns inte längre. Scenariot stoppas och du måste välja målmappen igen.
