@@ -4,9 +4,9 @@ description: Många [!DNL Adobe Workfront Fusion] anslutningar kräver ingen anp
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: ef1a96d9ef4c2c82eaf376c84188e3ed6ea7b2cf
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,8 @@ Så här skapar du en anslutning inuti en [!DNL Workfront Fusion]-modul:
 
 1. Klicka på **[!UICONTROL Add]** bredvid rutan [!UICONTROL Connection] för att öppna panelen **[!UICONTROL Create a connection]**.
 1. (Valfritt) Ändra standardvärdet **[!UICONTROL Connection name]**.
+1. I fältet Miljö väljer du om detta är en produktionsmiljö eller icke-produktionsmiljö. Den här informationen visas i området Anslutningar i Fusion.
+1. I fältet Typ väljer du om det här är en tjänst eller ett personligt konto. Den här informationen visas i området Anslutningar i Fusion.
 1. (Villkorligt) Om programmet kräver avancerade anslutningsinställningar, till exempel ett ID, en nyckel eller [!UICONTROL secret], anger du den informationen.
 
    Du kan behöva klicka på **[!UICONTROL Show advanced settings]** för att visa fälten där du kan ange den här typen av information.

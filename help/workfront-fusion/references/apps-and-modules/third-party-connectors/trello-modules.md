@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: a0a53d5c5af0956635f5026bbf8f8ee681946d86
 workflow-type: tm+mt
-source-wordcount: '4259'
+source-wordcount: '4320'
 ht-degree: 0%
 
 ---
@@ -21,42 +21,46 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -107,9 +111,9 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ### Varumärkena
 
-+++ **[!UICONTROL Watch Boards]**
++++ **[!UICONTROL Archive or Unarchive a Board]**
 
-Den här utlösarmodulen startar ett scenario när en ny anslagstavla läggs till.
+Den här åtgärdsmodulen stänger (arkiverar) eller återöppnar (arkiverar) en anslagstavla som du anger.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -120,8 +124,50 @@ Den här utlösarmodulen startar ett scenario när en ny anslagstavla läggs til
    <td> <p>Instruktioner om hur du ansluter ditt [!UICONTROL Trello]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Det högsta antalet ritytor [!DNL Workfront Fusion] returneras under en körningscykel.</p> </td> 
+   <td role="rowheader">[!UICONTROL Board ID]</td> 
+   <td> <p> Ange eller mappa ID:t för den anslagstavla som du vill stänga eller öppna igen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
+   <td> <p> Välj om du vill stänga (arkivera) eller öppna styrelsen igen (utan arkiv).</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
++++ **[!UICONTROL Assign a Member to a Board]**
+
+Den här åtgärdsmodulen tilldelar en medlem till en anslagstavla som du anger.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!UICONTROL Trello]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Board ID]</td> 
+   <td> <p> Välj den anslagstavla där du vill lägga till en medlem.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Email address]</td> 
+   <td> <p> Ange eller mappa e-postadressen till den medlem du vill lägga till i styrelsen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Member type]</p> </td> 
+   <td> <p>Välj den typ av medlem som du vill att den nya medlemmen ska vara.</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Admin]</strong>: En styrelseledamot kan utföra vilken styrelseledamot som helst.</li> 
+     <li><strong>[!UICONTROL Normal]</strong>: En normal medlem är helt enkelt styrelseledamot.</li> 
+     <li><strong>[!UICONTROL Observer]</strong>: En observatör är medlem med skrivskyddad tillgång till styrelsen. <br>Observatörer är bara tillgängliga för team med [!UICONTROL Trello Business Class].</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Full name]</td> 
+   <td> <p> Ange eller mappa det fullständiga namnet för den användare som du vill lägga till på anslagstavlan.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -150,18 +196,18 @@ Den här åtgärdsmodulen skapar en ny anslagstavla med de valda inställningarn
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>Ange eller mappa organisationens ID. Organisations-ID kan hämtas med hjälp av en annan modul, till exempel modulen Bevakade aktiviteter.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/id-of-org.png"> </p> </td> 
+   <td> <p>Ange eller mappa organisationens ID. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
    <td> <p>Styrelserna har olika regler för omröstning och kommentarer för varje behörighetsnivå. Om din styrelse till exempel är [!UICONTROL Private] och du anger röstregler och kommentarsregler som [!UICONTROL All] får du ett felmeddelande. </p> <p>Omröstning och kommentarer är begränsade till följande grupper för varje behörighetsnivå:</p> 
     <ul> 
      <li><strong>[!UICONTROL Private]</strong>: 
-      —&gt;Medlemmar, medlemmar och observatörer</li> 
+      Medlemmar, medlemmar och observatörer</li> 
      <li><strong>[!UICONTROL For organization]</strong>: 
-      —&gt;Medlemmar, medlemmar och observatörer, organisationsmedlemmar</li> 
+      Medlemmar, medlemmar och observatörer, organisationsmedlemmar</li> 
      <li><strong>[!UICONTROL Public]</strong>: 
-      —&gt;Medlemmar, medlemmar och observatörer, organisationsmedlemmar, alla</li> 
+      Medlemmar, medlemmar och observatörer, organisationsmedlemmar, alla</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -201,11 +247,15 @@ Den här åtgärdsmodulen skapar en ny anslagstavla med de valda inställningarn
    <td> <p>Välj bakgrundsfärgen eller den anpassade bakgrunden.</p> <p>Obs! Anpassade bakgrunder är bara tillgängliga för [!UICONTROL Trello Gold and Business Class] prenumeranter.</p> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Background ID]</td> 
+   <td> <p> Om du har valt att använda en anpassad bakgrund i fältet [!UICONTROL Background] anger eller mappar du ID:t för bakgrunden som du vill använda.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
    <td> <p>Välj mellan två sätt att föråldra kort. </p> 
     <ul> 
-     <li><strong>[!UICONTROL Regular]</strong>: Korten blir allt mer transparenta allt eftersom de blir äldre. </li> 
-     <li><strong>[!UICONTROL Pirate]</strong>Korten kommer att riva, gult och spricka som en gammal piratkarta när de blir gamla.</li> 
+     <li><strong>[!UICONTROL Pirate mode]</strong>Korten kommer att riva, gult och spricka som en gammal piratkarta när de blir gamla.</li> 
+     <li><strong>[!UICONTROL Regular mode ]</strong>: Korten blir allt mer transparenta allt eftersom de blir äldre. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -217,8 +267,10 @@ Den här åtgärdsmodulen skapar en ny anslagstavla med de valda inställningarn
 
 Den här åtgärdsmodulen redigerar inställningarna för en befintlig anslagstavla.
 
-<table style="table-layout:auto"> 
- <col> 
+>[!SUCCESS]
+>
+><table style="table-layout:auto">
+<col> 
  <col> 
  <tbody> 
   <tr> 
@@ -235,26 +287,26 @@ Den här åtgärdsmodulen redigerar inställningarna för en befintlig anslagsta
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL New description]</td> 
-   <td> <p> Ange eller mappa en ny kortbeskrivning om det behövs.</p> </td> 
+   <td> <p> Ange eller mappa en ny kortbeskrivning.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>Ange eller mappa det unika [!UICONTROL Trello]-ID:t för den anslagstavla som du vill att modulen ska redigera. Du kan hämta kort-ID:t med en annan modul, till exempel modulen [!DNL Watch Activities].</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/org-id.png"> </p> </td> 
+   <td> <p>Ange eller mappa det unika [!UICONTROL Trello]-ID:t för den anslagstavla som du vill att modulen ska redigera.  </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subscribe] </td> 
-   <td> <p>Välj ett alternativ för att ange om den agerande användaren prenumererar på styrelsen.</p> </td> 
+   <td> <p>Välj ett alternativ för att ange om användaren som äger anslutningen som används av den här modulen ska prenumerera på styrelsen.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
    <td> <p>Styrelserna har olika regler för omröstning och kommentarer för varje behörighetsnivå. Om din styrelse till exempel är [!UICONTROL Private] och du anger röstregler och kommentarsregler som [!UICONTROL All] får du ett felmeddelande. </p> <p>Omröstning och kommentarer är begränsade till följande grupper för varje behörighetsnivå:</p> 
     <ul> 
      <li><strong>[!UICONTROL Private]</strong>: 
-      —&gt;Medlemmar, medlemmar och observatörer</li> 
+      Medlemmar, medlemmar och observatörer</li> 
      <li><strong>[!UICONTROL For organization]</strong>: 
-      —&gt;Medlemmar, medlemmar och observatörer, organisationsmedlemmar</li> 
+      Medlemmar, medlemmar och observatörer, organisationsmedlemmar</li> 
      <li><strong>[!UICONTROL Public]</strong>: 
-      —&gt;Medlemmar, medlemmar och observatörer, organisationsmedlemmar, alla</li> 
+      Medlemmar, medlemmar och observatörer, organisationsmedlemmar, alla</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -289,8 +341,8 @@ Den här åtgärdsmodulen redigerar inställningarna för en befintlig anslagsta
    <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
    <td> <p>Välj mellan två sätt att föråldra kort. </p> 
     <ul> 
-     <li><strong>[!UICONTROL Regular]</strong>: Korten blir allt mer transparenta allt eftersom de blir äldre. </li> 
-     <li><strong>[!UICONTROL Pirate]</strong>Korten kommer att riva, gult och spricka som en gammal piratkarta när de blir gamla.</li> 
+     <li><strong>[!UICONTROL Pirate mode]</strong>Korten kommer att riva, gult och spricka som en gammal piratkarta när de blir gamla.</li> 
+     <li><strong>[!UICONTROL Regular mode]</strong>: Korten blir allt mer transparenta allt eftersom de blir äldre. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -307,6 +359,7 @@ Den här åtgärdsmodulen redigerar inställningarna för en befintlig anslagsta
   </tr> 
  </tbody> 
 </table>
+
 
 +++
 
@@ -364,69 +417,6 @@ Den här sökmodulen hämtar information om en anslagstavla som du anger.
 
 +++
 
-+++ **[!UICONTROL Archive or Unarchive a Board]**
-
-Den här åtgärdsmodulen stänger eller öppnar en anslagstavla som du anger igen.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!UICONTROL Trello]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Board ID]</td> 
-   <td> <p> Ange eller mappa ID:t för den anslagstavla som du vill stänga eller öppna igen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
-   <td> <p> Välj om du vill stänga (arkivera) eller öppna styrelsen igen (utan arkiv).</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
-+++ **[!UICONTROL Assign a Member to a Board]**
-
-Den här åtgärdsmodulen tilldelar en medlem till en anslagstavla som du anger.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!UICONTROL Trello]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Board ID]</td> 
-   <td> <p> Välj den anslagstavla där du vill lägga till en medlem.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Email address]</td> 
-   <td> <p> Ange eller mappa e-postadressen till den medlem du vill lägga till i styrelsen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Member type]</p> </td> 
-   <td> <p>Välj den typ av medlem som du vill lägga till i styrelsen.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Admin]</strong>: En styrelseledamot kan utföra vilken styrelseledamot som helst.</li> 
-     <li><strong>[!UICONTROL Normal]</strong>: En normal medlem är helt enkelt styrelseledamot.</li> 
-     <li><strong>[!UICONTROL Observer]</strong>: En observatör är medlem med skrivskyddad tillgång till styrelsen. <br>Observatörer är bara tillgängliga för team med [!UICONTROL Trello Business Class].</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Full name]</td> 
-   <td> <p> Ange det fullständiga namnet på den användare som du vill lägga till i anslagstavlan.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
 +++ **[!UICONTROL Unassign a Member from a Board]**
 
 Den här åtgärdsmodulen tar bort en medlem från en anslagstavla.
@@ -452,11 +442,9 @@ Den här åtgärdsmodulen tar bort en medlem från en anslagstavla.
 
 +++
 
-### Listor
++++ **[!UICONTROL Watch Boards]**
 
-+++ **[!UICONTROL Watch cards moved to a list]**
-
-Den här utlösarmodulen aktiveras när ett kort flyttas till en viss lista.
+Den här utlösarmodulen startar ett scenario när en ny anslagstavla läggs till.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -467,21 +455,15 @@ Den här utlösarmodulen aktiveras när ett kort flyttas till en viss lista.
    <td> <p>Instruktioner om hur du ansluter ditt [!UICONTROL Trello]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Board]</td> 
-   <td>Välj den anslagstavla som innehåller listan som du vill bevaka efter kort.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL List]</td> 
-   <td>Välj den lista som du vill bevaka efter kort.</td> 
-  </tr> 
-  <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Det maximala antalet kort [!DNL Workfront Fusion] returneras under en körningscykel.</p>  </td> 
+   <td> <p>Ange eller mappa det högsta antal ritytor som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 +++
+
+### Listor
 
 +++ **[!UICONTROL Create a List]**
 
@@ -509,7 +491,7 @@ Den här åtgärdsmodulen skapar en lista på en anslagstavla som du anger.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Copy list]</td> 
-   <td> <p> Välj hur du vill ange ID:t för listan som du vill kopiera.</p> 
+   <td> <p> Om du kopierar en lista väljer du hur du vill ange ID:t för den lista du vill kopiera.</p> 
     <ul> 
      <li> <p><strong>Ange manuellt</strong> </p> <p>Ange eller mappa ID:t för den lista du vill kopiera i fältet <strong>[!UICONTROL List ID]</strong>.<br></p> </li> 
      <li> <p><strong>Välj</strong> </p> <p>Markera den anslagstavla som innehåller listan som du vill kopiera och markera sedan listan.</p> </li> 
@@ -578,11 +560,9 @@ Den här åtgärdsmodulen hämtar information om en viss lista.
 
 +++
 
-### Kort
++++ **[!UICONTROL Watch cards moved to a list]**
 
-+++ **[!UICONTROL Watch cards]**
-
-Denna utlösarmodul aktiveras när ett nytt kort läggs till.
+Den här utlösarmodulen aktiveras när ett kort flyttas till en viss lista.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -593,17 +573,76 @@ Denna utlösarmodul aktiveras när ett nytt kort läggs till.
    <td> <p>Instruktioner om hur du ansluter ditt [!UICONTROL Trello]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Watched object]</td> 
-   <td> <p>Välj den plats som du vill bevaka efter kort.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL All cards]</strong> </li> 
-     <li> <p><strong>Kort på en särskild anslagstavla</strong> </p> <p>Välj den anslagstavla som du vill bevaka efter kort</p> </li> 
-     <li> <p><strong>[!UICONTROL Cards on specific list]</strong> </p> <p>Markera den anslagstavla som innehåller listan som du vill bevaka efter kort och markera sedan listan.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Board]</td> 
+   <td>Välj den anslagstavla som innehåller listan som du vill bevaka efter kort.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL List]</td> 
+   <td>Välj den lista som du vill bevaka efter kort.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Det maximala antalet kort [!DNL Workfront Fusion] returneras under en körningscykel.</p> </td> 
+   <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
+### Kort
+
++++ **[!UICONTROL Add an Attachment]**
+
+Den här åtgärdsmodulen lägger till en bifogad fil till det markerade kortet.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!UICONTROL Trello]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter card ID]</td> 
+   <td> <p> Välj hur du vill ange ID:t för kortet som du vill lägga till en bilaga till.</p> 
+    <ul> 
+     <li> <p><strong>Ange manuellt</strong> </p> <p>I fältet <strong>[!UICONTROL Card ID]</strong> anger eller mappar du ID:t för kortet som du vill lägga till en bifogad fil i.<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Välj den anslagstavla som innehåller kortet som du vill lägga till en bilaga till, markera sedan listan som innehåller kortet och markera sedan kortet.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Attachment type]</p> </td> 
+   <td> <p>Välj om du vill överföra filen direkt eller ange en URL till filen.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> </li> 
+     <li> <p><strong>[!UICONTROL URL]</strong> </p> <p>Ange URL-adressen till filen och ange ett namn för den bifogade filen.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
++++ **[!UICONTROL Archive or Unarchive a Card]**
+
+Den här åtgärdsmodulen arkiverar eller skickar tillbaka ett kort till styrelsen.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!UICONTROL Trello]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Card ID]</td> 
+   <td> <p> Ange eller mappa ID:t för kortet som du vill arkivera eller skicka tillbaka till styrelsen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
+   <td> <p> Välj om du vill stänga kortet (arkivet) eller skicka tillbaka det till styrelsen (ej arkiverat).</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -627,16 +666,16 @@ Den här åtgärdsmodulen skapar ett kort i en markerad lista.
    <td> <p> Välj hur du vill ange ID:t för listan där du vill lägga till ett kort.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Ange eller mappa ID:t för listan där du vill lägga till ett kort i fältet <strong>[!UICONTROL List ID]</strong>.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Markera den anslagstavla som innehåller listan som du vill kopiera och markera sedan listan.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Markera den anslagstavla som innehåller listan där du vill lägga till ett kort och markera sedan listan.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Labels] </td> 
-   <td> <p>Ange etikettens ID för varje etikett som du vill lägga till på kortet. ID kan till exempel hämtas med modulen [!UICONTROL Retrieve Labels].</p> </td> 
+   <td> <p>För varje etikett som du vill lägga till på kortet klickar du på <b>Lägg till objekt</b> och anger etikettens ID.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Members]</td> 
-   <td>Ange medlemmens ID för varje medlem som du vill lägga till på kortet. </td> 
+   <td>För varje medlem som du vill lägga till på kortet klickar du på <b>Lägg till objekt</b> och anger medlemmens ID. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
@@ -648,7 +687,7 @@ Den här åtgärdsmodulen skapar ett kort i en markerad lista.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
-   <td> <p>Välj om du vill lägga till kortet överst eller [!UICONTROL append] kortet längst ned i listan.</p> </td> 
+   <td> <p>Välj om du vill lägga till kortet överst eller lägga till kortet längst ned i listan.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due date]</td> 
@@ -656,7 +695,7 @@ Den här åtgärdsmodulen skapar ett kort i en markerad lista.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
-   <td> <p> Aktivera det här alternativet för att markera att kortet är klart på förfallodatumet.</p> </td> 
+   <td> <p> Aktivera det här alternativet om du vill markera kortet som fullständigt på förfallodatumet.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File URL]</td> 
@@ -664,18 +703,14 @@ Den här åtgärdsmodulen skapar ett kort i en markerad lista.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Source file]</p> </td> 
-   <td> <p>Ange eller mappa information för en fil som du vill lägga till som en bilaga till kortet.</p> 
-    <ul> 
-     <li>[!UICONTROL File name]: Ange eller mappa filnamnet, inklusive filtillägget.</li> 
-     <li> 
-     <p>Välj en fil från en tidigare modul eller mappa filens namn och data</p> 
+   <td> <p>Ange eller mappa information för en fil som du vill lägga till som en bilaga till kortet. Välj en fil från en tidigare modul eller mappa filens namn och data</p> 
      <p>Obs! Det finns en gräns på 10 MB för filöverföring per bifogad fil. [!UICONTROL Business Class]- och [!UICONTROL Trello Gold]-medlemmar har dock en filöverföringsgräns på 250 MB per bifogad fil.</p> 
      </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Copy card]</td> 
-   <td> <p> Välj hur du vill ange ID:t för kortet som du vill kopiera.</p> 
+   <td> <p> Om du skapar ett nytt kort som en kopia av ett befintligt kort väljer du hur du vill ange ID:t för kortet som du vill kopiera.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Ange eller mappa ID:t för kortet som du vill kopiera i fältet <strong>[!UICONTROL Card ID]</strong>.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Välj den bräda som innehåller kortet du vill kopiera, markera sedan listan som innehåller kortet och markera sedan kortet.</p> </li> 
@@ -720,7 +755,7 @@ Den här åtgärdsmodulen redigerar ett befintligt kort.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Labels] </td> 
-   <td> <p>Lägg till ID:n för etiketter som du vill lägga till på kortet. </p> </td> 
+   <td> <p>För varje etikett som du vill lägga till på kortet klickar du på <b>Lägg till objekt</b> och anger etikettens ID.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
@@ -732,11 +767,11 @@ Den här åtgärdsmodulen redigerar ett befintligt kort.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
-   <td> <p> Om det här alternativet är aktiverat markeras kortet som fullständigt på förfallodatumet.</p> </td> 
+   <td> <p> Aktivera det här alternativet om du vill markera kortet som fullständigt på förfallodatumet.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Members] </td> 
-   <td> <p>Lägg till eller mappa ID:t för medlemmar som du vill lägga till på kortet.</p> </td> 
+   <td> <p>För varje medlem som du vill lägga till på kortet klickar du på <b>Lägg till objekt</b> och anger eller mappar medlemmens ID.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Attachment cover ID]</p> </td> 
@@ -813,14 +848,14 @@ Den här åtgärdsmodulen returnerar kort som matchar sökfrågan.
      <li><code><strong>due:day</strong></code> <p>Returnerar kort som förfaller inom 24 timmar. Operatorn <code>due:</code> kan också användas med andra tidsramar, till exempel <code>due:week</code>, <code>due:month</code> eller <code>due:overdue</code>. Du kan också söka efter ett visst datumintervall. Om du till exempel lägger till <code>due:14</code> i sökningen inkluderas kort som förfaller inom de kommande 14 dagarna.</p> </li> 
      <li><code><strong>created:day</strong></code> <p>Returnerar kort som skapats de senaste 24 timmarna. Operatorn <code> created:</code> kan också användas med andra tidsramar som <code>created:week</code> eller <code>created:month</code>. Du kan också söka efter ett visst datumintervall. Om du till exempel lägger till <code>created:14</code> i sökningen inkluderas kort som skapats de senaste 14 dagarna.</p> </li> 
      <li><code><strong>edited:day</strong></code> <p>Returnerar kort som har redigerats de senaste 24 timmarna. Operatorn <code>edited:</code> kan också användas med andra tidsramar, till exempel <code>edited:week</code> eller <code>edited:month</code>. Du kan också söka efter ett visst datumintervall. Om du till exempel lägger till <code>edited:21</code> i sökningen inkluderas kort som har redigerats de senaste 21 dagarna.</p> </li> 
-     <li><code><strong>description:</strong>, <strong>checklist:</strong>, <strong>comment:</strong>, and <strong>name:</strong></code> <p>Returnerar kort som matchar texten i kortbeskrivningar, checklistor, kommentarer eller namn. Exempel:"FIX IT" returnerar kort med"FIX IT" i en kommentar.</p> </li> 
+     <li><code><strong>description:</strong>, <strong>checklist:</strong>, <strong>comment:</strong>, and <strong>name:</strong></code> <p>Returnerar kort som matchar texten i kortbeskrivningar, checklistor, kommentarer eller namn. <code>comment:"FIX IT"</code> returnerar till exempel kort med FIX IT i en kommentar.</p> </li> 
      <li><code><strong>is:open</strong> and <strong>is:archived</strong></code> <p>Returnerar kort som är öppna eller arkiverade. Om inget anges returnerar [!UICONTROL Trello] båda typerna.</p> </li> 
      <li><code><strong>is:starred</strong> </code> <p>Inkluderar endast kort på styrbord.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned cards]</td> 
-   <td> <p> Det maximala antalet kort [!DNL Workfront Fusion] returneras under en körningscykel. Värdet måste vara mindre än eller lika med 1 000.</p> </td> 
+   <td> <p> Ange eller mappa det maximala antalet kort som [!DNL Workfront Fusion] ska returnera under en körningscykel. Värdet måste vara mindre än eller lika med 1 000.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
@@ -828,16 +863,16 @@ Den här åtgärdsmodulen returnerar kort som matchar sökfrågan.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cards] </td> 
-   <td> <p>Lägg till kort som du vill söka efter.</p> </td> 
+   <td> <p>Om du vill söka efter specifika kort klickar du på <b>Lägg till objekt</b> och lägger till kortets ID.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 +++
 
-+++ **[!UICONTROL Archive or Unarchive a Card]**
++++ **[!UICONTROL Watch cards]**
 
-Den här åtgärdsmodulen arkiverar eller skickar tillbaka ett kort till styrelsen.
+Denna utlösarmodul aktiveras när ett nytt kort läggs till.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -848,45 +883,17 @@ Den här åtgärdsmodulen arkiverar eller skickar tillbaka ett kort till styrels
    <td> <p>Instruktioner om hur du ansluter ditt [!UICONTROL Trello]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Card ID]</td> 
-   <td> <p> Ange eller mappa ID:t för kortet som du vill arkivera eller skicka tillbaka till styrelsen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
-   <td> <p> Välj om du vill stänga kortet (arkivet) eller skicka tillbaka det till styrelsen (ej arkiverat).</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
-+++ **[!UICONTROL Add an Attachment]**
-
-Den här åtgärdsmodulen lägger till en bifogad fil till det markerade kortet.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!UICONTROL Trello]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Enter card ID]</td> 
-   <td> <p> Välj hur du vill ange ID:t för kortet som du vill hämta information om.</p> 
+   <td role="rowheader">[!UICONTROL Watched object]</td> 
+   <td> <p>Välj den plats som du vill bevaka efter kort.</p> 
     <ul> 
-     <li> <p><strong>Ange manuellt</strong> </p> <p>Ange eller mappa ID:t för kortet som du vill hämta information om i fältet <strong>[!UICONTROL Card ID]</strong>.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Välj den bräda som innehåller kortet som du vill hämta information om, markera sedan listan som innehåller kortet och välj sedan kortet.</p> </li> 
+     <li><strong>[!UICONTROL All cards]</strong> </li> 
+     <li> <p><strong>Kort på en särskild anslagstavla</strong> </p> <p>Välj den anslagstavla som du vill bevaka efter kort</p> </li> 
+     <li> <p><strong>[!UICONTROL Cards on specific list]</strong> </p> <p>Markera den anslagstavla som innehåller listan som du vill bevaka efter kort och markera sedan listan.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Attachment type]</p> </td> 
-   <td> <p>Välj om du vill överföra filen direkt eller ange en URL till filen.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> </li> 
-     <li> <p><strong>[!UICONTROL URL]</strong> </p> <p>Ange URL-adressen till filen och ange ett namn för den bifogade filen.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td> <p>Det maximala antalet kort [!DNL Workfront Fusion] returneras under en körningscykel.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -894,18 +901,6 @@ Den här åtgärdsmodulen lägger till en bifogad fil till det markerade kortet.
 +++
 
 ### Medlemmar
-
-+++ **[!UICONTROL Assign a Member to a Board]**
-
-Se &quot;[!UICONTROL Assign a Member to a Board]&quot; under [Vykort](#boards).
-
-+++
-
-+++ **[!UICONTROL Unassign a Member from a Board]**
-
-Se &quot;[!UICONTROL Unassign a Member from a Board]&quot; under [Vykort](#boards).
-
-+++
 
 +++ **[!UICONTROL Add a Member to a Card]**
 
@@ -929,6 +924,12 @@ Den här åtgärdsmodulen lägger till den angivna medlemmen på det angivna kor
   </tr> 
  </tbody> 
 </table>
+
++++
+
++++ **[!UICONTROL Assign a Member to a Board]**
+
+Se &quot;[!UICONTROL Assign a Member to a Board]&quot; under [Vykort](#boards).
 
 +++
 
@@ -958,6 +959,12 @@ Den här åtgärdsmodulen hämtar information om [!UICONTROL Trello] medlemmar.
   </tr> 
  </tbody> 
 </table>
+
++++
+
++++ **[!UICONTROL Unassign a Member from a Board]**
+
+Se &quot;[!UICONTROL Unassign a Member from a Board]&quot; under [Vykort](#boards).
 
 +++
 
@@ -1107,38 +1114,6 @@ Den här åtgärdsmodulen lägger till en etikett till ett markerat kort.
 
 ### Kommentar
 
-+++ **[!UICONTROL Watch Comments]**
-
-Hämtar kommentarsinformation när det finns en ny kommentar på en angiven plats.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!UICONTROL Trello]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Watched object]</td> 
-   <td> <p>Välj den plats där du vill hålla utkik efter kommentarer.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL All cards] överallt</strong> </li> 
-     <li> <p><strong>[!UICONTROL Board]</strong> </p> <p>Välj den anslagstavla som du vill bevaka för kommentarer</p> </li> 
-     <li> <p><strong>[!UICONTROL List]</strong> </p> <p>Markera den anslagstavla som innehåller listan som du vill bevaka för kommentarer och markera sedan listan.</p> </li> 
-     <li><strong>[!UICONTROL Card]</strong> </li> 
-     <li>Markera den anslagstavla som innehåller kortet som du vill titta på för kommentarer, markera sedan listan som innehåller kortet och markera kortet.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Det maximala antalet kommentarer som [!DNL Workfront Fusion] returnerar under en körningscykel.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
 +++ **[!UICONTROL Create a Comment in a Card]**
 
 Den här åtgärdsmodulen lägger till en kommentar på ett markerat kort.
@@ -1197,6 +1172,38 @@ Den här åtgärdsmodulen lägger till en kommentar på ett markerat kort.
   <tr> 
    <td role="rowheader">[!UICONTROL Before] </td> 
    <td> <p>Ange slutdatumet för den period då kommentaren skapades. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
++++ **[!UICONTROL Watch Comments]**
+
+Hämtar kommentarsinformation när det finns en ny kommentar på en angiven plats.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!UICONTROL Trello]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Watched object]</td> 
+   <td> <p>Välj den plats där du vill hålla utkik efter kommentarer.</p> 
+    <ul> 
+     <li><strong>[!UICONTROL All cards] överallt</strong> </li> 
+     <li> <p><strong>[!UICONTROL Board]</strong> </p> <p>Välj den anslagstavla som du vill bevaka för kommentarer</p> </li> 
+     <li> <p><strong>[!UICONTROL List]</strong> </p> <p>Markera den anslagstavla som innehåller listan som du vill bevaka för kommentarer och markera sedan listan.</p> </li> 
+     <li><strong>[!UICONTROL Card]</strong> </li> 
+     <li>Markera den anslagstavla som innehåller kortet som du vill titta på för kommentarer, markera sedan listan som innehåller kortet och markera kortet.</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td> <p>Det maximala antalet kommentarer som [!DNL Workfront Fusion] returnerar under en körningscykel.</p> </td> 
   </tr> 
  </tbody> 
 </table>
