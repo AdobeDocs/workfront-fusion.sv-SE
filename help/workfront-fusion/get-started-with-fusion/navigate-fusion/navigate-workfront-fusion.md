@@ -4,7 +4,7 @@ description: När du öppnar Fusion har du många alternativ för åtgärder. De
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 45775149d8e4e8c2c25b4ebf0b5392f56a04633c
+source-git-commit: 6817565ec2a6a06a26033bb51a080b619a0d211d
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 0%
@@ -32,3 +32,4 @@ I den här artikeln presenteras de här områdena och här finns länkar till me
 >[!NOTE]
 >
 >Alla områden under grupprubriken ägs av enskilda team. Om du vill visa sidan som tillhör ett annat team (till exempel ett annat teams sida för scenarier) klickar du på grupplistrutan uppe på sidan och väljer ett annat team.
+
