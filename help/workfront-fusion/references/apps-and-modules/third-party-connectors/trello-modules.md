@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: a0a53d5c5af0956635f5026bbf8f8ee681946d86
+source-git-commit: 46bb455ecc0820dc68468f9f810bd51074c224fa
 workflow-type: tm+mt
-source-wordcount: '4320'
+source-wordcount: '4370'
 ht-degree: 0%
 
 ---
@@ -872,7 +872,7 @@ Den här åtgärdsmodulen returnerar kort som matchar sökfrågan.
 
 +++ **[!UICONTROL Watch cards]**
 
-Denna utlösarmodul aktiveras när ett nytt kort läggs till.
+Den här utlösarmodulen startar ett scenario när ett nytt kort läggs till.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -893,7 +893,7 @@ Denna utlösarmodul aktiveras när ett nytt kort läggs till.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Det maximala antalet kort [!DNL Workfront Fusion] returneras under en körningscykel.</p> </td> 
+   <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -947,7 +947,7 @@ Den här åtgärdsmodulen hämtar information om [!UICONTROL Trello] medlemmar.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query] </td> 
-   <td> <p>Ange det fullständiga namnet eller användarnamnet för den användare som du vill hitta.</p> </td> 
+   <td> <p>Ange namnet eller användarnamnet för den användare som du vill hitta.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
@@ -955,7 +955,7 @@ Den här åtgärdsmodulen hämtar information om [!UICONTROL Trello] medlemmar.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned members]</td> 
-   <td> <p> Det maximala antalet medlemmar [!DNL Workfront Fusion] returneras under en körningscykel.</p> </td> 
+   <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -996,11 +996,11 @@ Den här åtgärdsmodulen skapar en checklista för det valda kortet.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
-   <td> <p>Välj om du vill lägga till checklistan överst eller [!UICONTROL append the] checklista längst ned på kortet.</p> </td> 
+   <td> <p>Välj om du vill lägga till checklistan högst upp eller lägga till checklistan längst ned på kortet.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter checklist ID]</p> </td> 
-   <td> <p>Ange eller mappa ID:t för en källchecklista som du vill kopiera till den nya.</p> </td> 
+   <td> <p>Om du skapar checklistan genom att kopiera en befintlig checklista anger eller mappar du ID:t för en källchecklista som du vill kopiera till den nya.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1021,7 +1021,7 @@ Den här åtgärdsmodulen lägger till ett objekt i en viss checklista.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter checklist ID]</td> 
-   <td> <p> Välj hur du vill ange ID:t för checklistan där du vill lägga till ett objekt.</p> 
+   <td> <p> Om du skapar en ny checklista genom att kopiera en befintlig checklista väljer du hur du vill ange ID:t för checklistan där du vill lägga till ett objekt.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>I fältet <strong>[!UICONTROL Checklist ID]</strong> anger eller mappar du ID:t för kortet där du vill lägga till en checklista.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Välj den bräda som innehåller kortet där du vill lägga till en checklista, markera sedan listan som innehåller kortet, markera kortet och markera sedan checklistan.</p> </li> 
@@ -1136,7 +1136,7 @@ Den här åtgärdsmodulen lägger till en kommentar på ett markerat kort.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment] </td> 
-   <td> <p>Ange kommentaren som du vill lägga till på det markerade kortet.</p> </td> 
+   <td> <p>Ange eller mappa kommentaren som du vill lägga till på det markerade kortet.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1180,7 +1180,7 @@ Den här åtgärdsmodulen lägger till en kommentar på ett markerat kort.
 
 +++ **[!UICONTROL Watch Comments]**
 
-Hämtar kommentarsinformation när det finns en ny kommentar på en angiven plats.
+Den här utlösarmodulen startar ett scenario när en kommentar läggs till.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1203,7 +1203,7 @@ Hämtar kommentarsinformation när det finns en ny kommentar på en angiven plat
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Det maximala antalet kommentarer som [!DNL Workfront Fusion] returnerar under en körningscykel.</p> </td> 
+   <td> <p>Ange eller mappa det maximala antal kommentarer som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1223,4 +1223,4 @@ Om du vill redigera ett kort eller skapa en ny kommentar måste du känna till k
 
 ### Söka efter ID:n för andra objekt i [!DNL Trello]
 
-ID:n för styrelse, lista och kommentarer kan bara hämtas med hjälp av utlösare. Dessa ID:n visas inte på webbplatsen [!DNL trello.com].
+ID:n för styrelse, lista och kommentarer kan bara hämtas med hjälp av utlösare. Dessa ID:n visas inte på webbplatsen [!DNL `trello.com`].
