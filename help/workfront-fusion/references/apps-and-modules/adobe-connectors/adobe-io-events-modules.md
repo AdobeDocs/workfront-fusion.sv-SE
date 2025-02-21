@@ -1,60 +1,72 @@
 ---
-title: Adobe I/O Events-moduler
-description: Med Adobe I/O Events-modulen kan du starta ett Adobe Workfront Fusion-scenario baserat på händelser i dina Adobe-program.
+title: Adobe I/O Events moduler
+description: Med Adobe I/O Events-modulerna kan du starta ett Adobe Workfront Fusion-scenario baserat på händelser i dina Adobe-program.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
 
-# Adobe I/O Events-moduler
+# Adobe I/O Events moduler
 
-Med Adobe I/O Events-modulen kan du starta ett Adobe Workfront Fusion-scenario baserat på händelser i Adobe-konton och -tjänster som inte har någon särskild Workfront Fusion-anslutning.
+Med Adobe I/O Events-modulerna kan du starta ett Adobe Workfront Fusion-scenario baserat på händelser i Adobe-konton och -tjänster som inte har någon dedikerad Workfront Fusion-anslutning.
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront-plan*</td> 
-   <td> <p>Pro eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-licens*</td> 
-   <td> <p>Planera, arbeta</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
-   <td> <p>Workfront Fusion for Work Automation and Integration </p>  </td> 
+   <td>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
+   <p>eller</p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
-   <td>Din organisation måste köpa både Adobe Workfront Fusion och Adobe Workfront för att kunna använda de funktioner som beskrivs i den här artikeln.</td> 
-  </tr> 
+   <td>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
+   <p>eller</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
  </tbody> 
 </table>
 
-&#42;Kontakta Workfront-administratören om du vill veta vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-&#42;&#42;Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
-Innan du kan använda Adobe I/O Events-kopplingen måste du se till att följande krav uppfylls:
+Innan du kan använda Adobe I/O Events-anslutningen måste du kontrollera att följande krav uppfylls:
 
 * Du måste ha ett aktivt Adobe-konto.
 
-## API-information för händelser i Adobe I/O
+## Adobe I/O Events API-information
 
-I Adobe I/O Events-kopplingen används följande:
+Adobe I/O Events Connector använder följande:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -71,9 +83,9 @@ I Adobe I/O Events-kopplingen används följande:
  </tbody> 
  </table>
 
-## Skapa en anslutning till Adobe I/O-händelser
+## Skapa en anslutning till Adobe I/O Events
 
-Så här skapar du en anslutning för dina Adobe I/O-händelsemoduler:
+Så här skapar du en anslutning för dina Adobe I/O Events-moduler:
 
 1. Klicka på Lägg till bredvid rutan Anslutning.
 
@@ -103,7 +115,7 @@ Så här skapar du en anslutning för dina Adobe I/O-händelsemoduler:
       </tr>
       <tr>
         <td role="rowheader">Klient-ID</td>
-        <td>Ange ditt klient-ID för Adobe. Detta hittar du i delen Information om autentiseringsuppgifter i Adobe Developer Console</td>
+        <td>Ange ditt Adobe klient-ID. Detta hittar du i delen Information om autentiseringsuppgifter i Adobe Developer Console</td>
       </tr>
       <tr>
         <td role="rowheader">Klienthemlighet</td>
@@ -309,7 +321,7 @@ Den här åtgärdsmodulen gör ett anpassat API-anrop till API:t [!DNL Adobe I/O
 
 #### Hämta provider- och händelse-ID:n
 
-Den här sökmodulen hämtar Adobe I/O-händelse-ID:n för den angivna providern och händelser.
+Den här sökmodulen hämtar Adobe I/O Events-ID:n för den angivna providern och händelser.
 
 <table>
      <col/>

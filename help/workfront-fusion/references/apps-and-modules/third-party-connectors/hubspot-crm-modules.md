@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Workfront Fusion] HubSpot CRM-modulerna kan du öv
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
 workflow-type: tm+mt
-source-wordcount: '5661'
+source-wordcount: '5530'
 ht-degree: 0%
 
 ---
@@ -17,42 +17,46 @@ Modulerna [!DNL Adobe Workfront Fusion] [!DNL HubSpot CRM] gör att du kan över
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -107,19 +111,17 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 * [Forms](#forms)
 * [Sociala medier (sändning)](#social-media-broadcast)
 * [Blogginlägg](#blog-posts)
-  <!--* [Workflows]-->
+  <!--* [Workflows]()-->
 * [Prenumerationer](#subscriptions)
-  <!--* [Associations](#associations)-->
+  <!--* [Associations]()-->
 * [Övriga](#other)
-
-+++**CRM-objekt**
 
 ### CRM-objekt
 
-* [Sök efter CRM-objekt](#search-for-crm-objects)
-* [Titta på CRM-objekt](#watch-crm-objects)
+<!--* [Search for CRM objects](#search-for-crm-objects)
+* [Watch CRM objects](#watch-crm-objects)-->
 
-#### [!UICONTROL Search for CRM Objects]
++++ **[!UICONTROL Search for CRM Objects]**
 
 Den här sökmodulen söker efter CRM-objekt efter anpassade egenskaper eller efter fråga. Om du vill söka efter produkter eller radobjekt använder du en speciell anslutning med ett nödvändigt anpassat omfång.
 
@@ -166,7 +168,9 @@ Den här sökmodulen söker efter CRM-objekt efter anpassade egenskaper eller ef
  </tbody> 
 </table>
 
-#### Titta på CRM-objekt
++++
+
++++ **Bevakade CRM-objekt**
 
 Den här utlösarmodulen startar ett scenario när ett CRM-objekt skapas eller uppdateras.
 
@@ -203,20 +207,18 @@ Den här utlösarmodulen startar ett scenario när ett CRM-objekt skapas eller u
 
 +++
 
-+++**Poster (avtal, kontakter och företag)**
-
 ### Register (avtal, kontakter och företag)
 
-* [Skapa en post](#create-a-record)
+<!--* [Create a Record](#create-a-record)
 * [[!UICONTROL Create a Record (Legacy)]](#create-a-record-legacy)
 * [[!UICONTROL Delete a Record]](#delete-a-record)
 * [[!UICONTROL Get a Record]](#get-a-record)
 * [[!UICONTROL Get a Record Property]](#get-a-record-property)
-* [Listposter](#list-records)
+* [List Records](#list-records)
 * [[!UICONTROL Update a Record]](#update-a-record)
-* [[!UICONTROL Watch Records]](#watch-records)
+* [[!UICONTROL Watch Records]](#watch-records)-->
 
-#### Skapa en post
++++ **Skapa en post**
 
 Den här åtgärdsmodulen skapar en kontakt, ett företag eller ett avtal.
 
@@ -239,7 +241,9 @@ Den här åtgärdsmodulen skapar en kontakt, ett företag eller ett avtal.
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Record (Legacy)]
++++
+
++++ **[!UICONTROL Create a Record (Legacy)]**
 
 Den här åtgärdsmodulen skapar kontakt, ett företag eller ett avtal.
 
@@ -262,7 +266,9 @@ Den här åtgärdsmodulen skapar kontakt, ett företag eller ett avtal.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Record]
++++
+
++++ **[!UICONTROL Delete a Record]**
 
 Den här åtgärdsmodulen tar bort en kontakt, ett företag eller ett avtal.
 
@@ -285,7 +291,9 @@ Den här åtgärdsmodulen tar bort en kontakt, ett företag eller ett avtal.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Record]
++++
+
++++ [!UICONTROL Get a Record]
 
 Den här åtgärdsmodulen hämtar information om en kontakt, ett företag eller ett avtal.
 
@@ -321,7 +329,9 @@ Den här åtgärdsmodulen hämtar information om en kontakt, ett företag eller 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Record Property]
++++
+
++++ **[!UICONTROL Get a Record Property]**
 
 Den här åtgärdsmodulen hämtar metadata för en viss postegenskap med dess (interna) namn.
 
@@ -348,7 +358,9 @@ Den här åtgärdsmodulen hämtar metadata för en viss postegenskap med dess (i
  </tbody> 
 </table>
 
-#### Listposter
++++
+
++++ **Listposter**
 
 Den här sökmodulen returnerar en lista med kontakter, företag eller avtal. Produktionen är begränsad till 5 000 kontakter, 12 500 företag eller 12 500 avtal.
 
@@ -371,12 +383,13 @@ Den här sökmodulen returnerar en lista med kontakter, företag eller avtal. Pr
     <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
-  </tr>
-
-</tbody> 
+  </tr> 
+ </tbody> 
 </table>
 
-#### [!UICONTROL Update a Record]
++++
+
++++ **[!UICONTROL Update a Record]**
 
 Den här åtgärdsmodulen uppdaterar en kontakt, ett företag eller ett avtal.
 
@@ -415,7 +428,9 @@ Den här åtgärdsmodulen uppdaterar en kontakt, ett företag eller ett avtal.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Records]
++++
+
++++ **[!UICONTROL Watch Records]**
 
 Den här utlösarmodulen startar ett scenario när en kontakt, ett företag eller ett avtal har ändrats eller skapats under de senaste 30 dagarna. Utdata är begränsade till 10 000 poster.
 
@@ -448,12 +463,10 @@ Den här utlösarmodulen startar ett scenario när en kontakt, ett företag elle
 
 +++
 
-+++**Kontakter**
-
 ### Kontakter
 
-* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
-* [Skapa/uppdatera en kontakt](#createupdate-a-contact)
+<!--* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
+* [Create/Update a contact](#createupdate-a-contact)
 * [[!UICONTROL Create/Update a Contact (Legacy)]](#createupdate-a-contact-legacy)
 * [[!UICONTROL Create/Update a Group of Contacts]](#createupdate-a-group-of-contacts)
 * [[!UICONTROL List Contacts]](#list-contacts)
@@ -461,9 +474,9 @@ Den här utlösarmodulen startar ett scenario när en kontakt, ett företag elle
 * [[!UICONTROL Merge contacts]](#merge-contacts)
 * [[!UICONTROL Remove a Contact from a List]](#remove-a-contact-from-a-list)
 * [[!UICONTROL Search for Contacts]](#search-for-contacts)
-* [Bevakade kontakter som lagts till i en lista](#watch-contacts-added-to-a-list)
+* [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
-#### [!UICONTROL Add Contacts to a List]
++++ **[!UICONTROL Add Contacts to a List]**
 
 Den här modulen lägger till kontaktposter som redan har skapats i systemet i en kontaktlista.
 
@@ -490,7 +503,9 @@ Den här modulen lägger till kontaktposter som redan har skapats i systemet i e
  </tbody> 
 </table>
 
-#### Skapa/uppdatera en kontakt
++++
+
++++ **Skapa/uppdatera en kontakt**
 
 Den här åtgärdsmodulen skapar en kontakt om den inte finns i en portal. Om kontakten finns i portalen uppdateras den med de angivna värdena.
 
@@ -509,7 +524,9 @@ Den här åtgärdsmodulen skapar en kontakt om den inte finns i en portal. Om ko
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Update a Contact (Legacy)]
++++
+
++++ **[!UICONTROL Create/Update a Contact (Legacy)]**
 
 Skapar en kontakt om den inte redan finns i en portal, eller uppdaterar den med de senaste egenskapsvärdena om den finns i en portal.
 
@@ -528,7 +545,9 @@ Skapar en kontakt om den inte redan finns i en portal, eller uppdaterar den med 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Update a Group of Contacts]
++++
+
++++ **[!UICONTROL Create/Update a Group of Contacts]**
 
 Skapar en grupp kontakter eller uppdaterar dem om de redan finns. Prestanda är bäst när gruppstorleken är begränsad till 100 kontakter eller färre. Ändringar som görs via den här slutpunkten bearbetas asynkront, så det kan ta flera minuter innan ändringar tillämpas på kontaktposter.
 
@@ -555,7 +574,9 @@ Skapar en grupp kontakter eller uppdaterar dem om de redan finns. Prestanda är 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Contacts]
++++
+
++++ **[!UICONTROL List Contacts]**
 
 Returnerar alla kontakter som har skapats i portalen. Utdata är begränsat till 5 000 kontakter. Om du vill visa tidigare eller nästa kontakter kan du använda parametern [!UICONTROL advanced] för att förskjuta listan.
 
@@ -582,7 +603,9 @@ Returnerar alla kontakter som har skapats i portalen. Utdata är begränsat till
  </tbody> 
 </table>
 
-#### [!UICONTROL List Contacts of a Company]
++++
+
++++ **[!UICONTROL List Contacts of a Company]**
 
 Hämtar en lista med kontakter i företaget. Utdata är begränsat till 5 000 kontakter. Om du vill visa tidigare eller nästa kontakter kan du använda parametern [!UICONTROL advanced] för att förskjuta listan.
 
@@ -609,7 +632,9 @@ Hämtar en lista med kontakter i företaget. Utdata är begränsat till 5 000 ko
  </tbody> 
 </table>
 
-#### [!UICONTROL Merge contacts]
++++
+
++++ **[!UICONTROL Merge contacts]**
 
 Den här åtgärdsmodulen sammanfogar kontakter
 
@@ -632,7 +657,9 @@ Den här åtgärdsmodulen sammanfogar kontakter
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove a Contact from a List]
++++
+
++++ **[!UICONTROL Remove a Contact from a List]**
 
 Tar bort en kontakt från en kontaktlista.
 
@@ -659,7 +686,9 @@ Tar bort en kontakt från en kontaktlista.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for Contacts]
++++
+
++++ **[!UICONTROL Search for Contacts]**
 
 Hämtar en lista med kontakter som använder sökfrågan.
 
@@ -682,7 +711,9 @@ Hämtar en lista med kontakter som använder sökfrågan.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch contacts added to a list]
++++
+
++++ **[!UICONTROL Watch contacts added to a list]**
 
 Den här utlösarmodulen startar ett scenario när en ny kontakt läggs till i en lista. Detta är endast tillgängligt för användare med ett betalt Marketing-konto.
 
@@ -711,14 +742,12 @@ Den här utlösarmodulen startar ett scenario när en ny kontakt läggs till i e
 
 +++
 
-+++**Erbjudanden**
-
 ### Erbjudanden
 
-* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
-* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)
+<!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
+* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
 
-#### [!UICONTROL Get a Deal's CRM Pipeline]
++++ **[!UICONTROL Get a Deal's CRM Pipeline]**
 
 Returnerar en specifik avtalspipeline.
 
@@ -741,7 +770,9 @@ Returnerar en specifik avtalspipeline.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Deal/Ticket Pipelines]
++++
+
++++ **[!UICONTROL List Deal/Ticket Pipelines]**
 
 Returnerar alla erbjudanden och biljettpipelines för en viss portal.
 
@@ -762,11 +793,9 @@ Returnerar alla erbjudanden och biljettpipelines för en viss portal.
 
 +++
 
-+++**Företag**
-
 ### Företag
 
-#### [!UICONTROL Search for Companies by domain]
++++ **[!UICONTROL Search for Companies by domain]**
 
 Hämtar en lista över företag baserat på en exakt matchning av egenskapen domain.
 
@@ -795,16 +824,14 @@ Hämtar en lista över företag baserat på en exakt matchning av egenskapen dom
 
 +++
 
-+++**Åtaganden**
-
 ### Åtaganden
 
-* [Koppla en koppling till ett CRM-objekt](#associate-an-engagement-with-a-crm-object)
-* [Skapa ett engagemang](#create-an-engagement)
-* [Ta bort ett åtagande](#delete-an-engagement)
-* [Bevakningsåtaganden](#watch-engagements)
+<!--* [Associate an Engagement with a CRM object](#associate-an-engagement-with-a-crm-object)
+* [Create an Engagement](#create-an-engagement)
+* [Delete an Engagement](#delete-an-engagement)
+* [Watch Engagements](#watch-engagements)-->
 
-#### Koppla en koppling till ett CRM-objekt
++++ **Koppla en koppling till ett CRM-objekt**
 
 Den här åtgärdsmodulen associerar ett ärende med en kontakt, ett företag eller ett avtal.
 
@@ -831,7 +858,9 @@ Den här åtgärdsmodulen associerar ett ärende med en kontakt, ett företag el
  </tbody> 
 </table>
 
-#### Skapa ett engagemang
++++
+
++++ **Skapa ett engagemang**
 
 Den här åtgärdsmodulen skapar ett engagemang (som en anteckning, uppgift eller aktivitet) med ett CRM-objekt i HubSpot. Åtaganden är all interaktion med en kontakt som ska loggas i CRM.
 
@@ -898,7 +927,7 @@ Den här åtgärdsmodulen skapar ett engagemang (som en anteckning, uppgift elle
  </tbody> 
 </table>
 
-##### E-postmetadata
+#### E-postmetadata
 
 <table style="table-layout:auto"> 
  <col> 
@@ -935,7 +964,7 @@ Den här åtgärdsmodulen skapar ett engagemang (som en anteckning, uppgift elle
   </tr> 
   <tr> 
    <td role="rowheader">HTML</td> 
-   <td>Om du vill skicka ett e-postmeddelande med HTML-format anger eller mappar du brödtexten i e-postmeddelandet, inklusive HTML-taggar.</td> 
+   <td>Om du vill skicka ett HTML-formaterat e-postmeddelande anger eller mappar du brödtexten i e-postmeddelandet, inklusive HTML-taggar.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Text</td> 
@@ -944,7 +973,7 @@ Den här åtgärdsmodulen skapar ett engagemang (som en anteckning, uppgift elle
  </tbody> 
 </table>
 
-##### Samtalsmetadata
+#### Samtalsmetadata
 
 <table style="table-layout:auto"> 
  <col> 
@@ -986,7 +1015,7 @@ Den här åtgärdsmodulen skapar ett engagemang (som en anteckning, uppgift elle
  </tbody> 
 </table>
 
-##### Mötesfält
+#### Mötesfält
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1012,7 +1041,7 @@ Den här åtgärdsmodulen skapar ett engagemang (som en anteckning, uppgift elle
  </tbody> 
 </table>
 
-##### Uppgiftsfält
+#### Uppgiftsfält
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1038,7 +1067,9 @@ Den här åtgärdsmodulen skapar ett engagemang (som en anteckning, uppgift elle
  </tbody> 
 </table>
 
-#### Ta bort ett åtagande
++++
+
++++ **Ta bort ett åtagande**
 
 Den här åtgärdsmodulen tar bort ett ärende med dess ID.
 
@@ -1057,7 +1088,9 @@ Den här åtgärdsmodulen tar bort ett ärende med dess ID.
  </tbody> 
 </table>
 
-#### Bevakningsåtaganden
++++
+
++++ **Bevakade aktiviteter**
 
 Den här utlösarmodulen startar ett scenario när ett nytt engagemang skapas i en portal. Den här modulen returnerar bara poster som har skapats under de senaste 30 dagarna eller de 10 000 senast skapade posterna.
 
@@ -1082,16 +1115,14 @@ Den här utlösarmodulen startar ett scenario när ett nytt engagemang skapas i 
 
 +++
 
-+++**Händelser och meddelanden**
-
 ### Händelser och meddelanden
 
-* [Skapa/uppdatera en tidslinjehändelse](#create--update-a-timeline-event)
-* [Tidslinjehändelsetyper för lista](#list-timeline-event-types)
-* [Se kalenderhändelser](#watch-calendar-events)
-* [Bevakningsmeddelanden](#watch-notifications)
+<!--* [Create / Update a Timeline Event](#create--update-a-timeline-event)
+* [List Timeline Event Types](#list-timeline-event-types)
+* [Watch Calendar Events](#watch-calendar-events)
+* [Watch Notifications](#watch-notifications)-->
 
-#### Skapa/uppdatera en tidslinjehändelse
++++ **Skapa/uppdatera en tidslinjehändelse**
 
 Den här åtgärdsmodulen skapar eller uppdaterar en tidslinjehändelse. Den här modulen kan bara användas med en utvecklaranslutning som innehåller din användaridentifierare, din HubSpot API-nyckel, klient-ID och Klienthemlighet.
 
@@ -1134,7 +1165,9 @@ Den här åtgärdsmodulen skapar eller uppdaterar en tidslinjehändelse. Den hä
  </tbody> 
 </table>
 
-#### Tidslinjehändelsetyper för lista
++++
+
++++ **Visa tidslinjehändelsetyper**
 
 Sökmodulen returnerar en lista med alla tidslinjehändelser för ett specifikt program. Den här modulen kan bara användas med en utvecklaranslutning som innehåller din användaridentifierare, din HubSpot API-nyckel, klient-ID och Klienthemlighet.
 
@@ -1153,7 +1186,9 @@ Sökmodulen returnerar en lista med alla tidslinjehändelser för ett specifikt 
  </tbody> 
 </table>
 
-#### Se kalenderhändelser
++++
+
++++ **Se kalenderhändelser**
 
 Den här utlösarmodulen startar ett scenario när en ny händelse läggs till i en kalender. Den innehåller upp till 500 uppgifter i intervallet mellan start- och slutdatumet. Den här modulen kan bara användas med en utvecklaranslutning som innehåller din användaridentifierare, din HubSpot API-nyckel, klient-ID och Klienthemlighet.
 
@@ -1184,7 +1219,9 @@ Den här utlösarmodulen startar ett scenario när en ny händelse läggs till i
  </tbody> 
 </table>
 
-#### Bevakningsmeddelanden
++++
+
++++ **Bevakade meddelanden**
 
 Den här utlösarmodulen startar ett scenario när ett nytt meddelande om ändringar skickas.  Den innehåller upp till 500 uppgifter i intervallet mellan start- och slutdatumet. Den här modulen kan bara användas med en utvecklaranslutning som innehåller din användaridentifierare, din HubSpot API-nyckel, klient-ID och Klienthemlighet. Du kan bara ha en webkrok-URL per utvecklarprogram i HubSpot.
 
@@ -1215,19 +1252,17 @@ Om du vill skapa en webkrok för den här modulen klickar du på **Lägg till** 
 
 +++
 
-+++**Filer**
-
 ### Filer
 
-* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [Ta bort en fil](#delete-a-file)
+<!--* [[!UICONTROL Create a Folder]](#create-a-folder)
+* [Delete a File](#delete-a-file)
 * [[!UICONTROL Delete a Folder]](#delete-a-folder)
-* [Listfiler](#list-files)
+* [List Files](#list-files)
 * [[!UICONTROL Move a File]](#move-a-file)
-* [Överföra en fil](#upload-a-file)
-* [Bevakade filer](#watch-files)
+* [Upload a file](#upload-a-file)
+* [Watch files](#watch-files)-->
 
-#### [!UICONTROL Create a Folder]
++++ **[!UICONTROL Create a Folder]**
 
 Den här modulen skapar en mapp.
 
@@ -1250,7 +1285,9 @@ Den här modulen skapar en mapp.
  </tbody> 
 </table>
 
-#### Ta bort en fil
++++
+
++++ **Ta bort en fil**
 
 Den här åtgärdsmodulen tar permanent bort en fil och alla relaterade data och miniatyrbilder från filhanteraren.
 
@@ -1269,7 +1306,9 @@ Den här åtgärdsmodulen tar permanent bort en fil och alla relaterade data och
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Folder]
++++
+
++++ **[!UICONTROL Delete a Folder]**
 
 Markerar en mapp som borttagen.
 
@@ -1288,7 +1327,9 @@ Markerar en mapp som borttagen.
  </tbody> 
 </table>
 
-#### Listfiler
++++
+
++++ **Visa filer**
 
 Sökmodulen returnerar en lista med filer som lagras i filhanteraren.
 
@@ -1315,7 +1356,9 @@ Sökmodulen returnerar en lista med filer som lagras i filhanteraren.
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File]
++++
+
++++ **[!UICONTROL Move a File]**
 
 Flyttar en fil till en annan mapp.
 
@@ -1342,7 +1385,9 @@ Flyttar en fil till en annan mapp.
  </tbody> 
 </table>
 
-#### Överföra en fil
++++
+
++++ **Överför en fil**
 
 Den här åtgärdsmodulen överför en fil till filhanteraren.
 
@@ -1373,7 +1418,9 @@ Den här åtgärdsmodulen överför en fil till filhanteraren.
  </tbody> 
 </table>
 
-### Bevakade filer
++++
+
++++ **Bevakade filer**
 
 Den här utlösarmodulen startar ett scenario när en ny fil sparas i filhanteraren.
 
@@ -1402,15 +1449,13 @@ Den här utlösarmodulen startar ett scenario när en ny fil sparas i filhantera
 
 +++
 
-+++**Uppgifter**
-
 ### Uppgifter
 
-* [Skapa en kalenderaktivitet](#create-a-calendar-task)
-* [Ta bort en kalenderaktivitet](#create-a-calendar-task)
-* [Se aktivitetshändelser](#watch-task-events)
+<!--* [Create a Calendar Task](#create-a-calendar-task)
+* [Delete a Calendar Task](#create-a-calendar-task)
+* [Watch Task Events](#watch-task-events)-->
 
-#### Skapa en kalenderaktivitet
++++ **Skapa en kalenderaktivitet**
 
 Den här åtgärdsmodulen skapar en ny uppgift för en kalender. Anslutningen som används i den här modulen måste använda autentiseringsuppgifterna för en användare med ett betalt Marketing-konto.
 
@@ -1453,7 +1498,9 @@ Den här åtgärdsmodulen skapar en ny uppgift för en kalender. Anslutningen so
  </tbody> 
 </table>
 
-#### Ta bort en kalenderaktivitet
++++
+
++++ **Ta bort en kalenderaktivitet**
 
 Den här åtgärdsmodulen tar bort en kalenderuppgift. Anslutningen som används i den här modulen måste använda autentiseringsuppgifterna för en användare med ett betalt Marketing-konto.
 
@@ -1472,7 +1519,9 @@ Den här åtgärdsmodulen tar bort en kalenderuppgift. Anslutningen som används
  </tbody> 
 </table>
 
-#### Se aktivitetshändelser
++++
+
++++ **Se aktivitetshändelser**
 
 Den här utlösarmodulen startar ett scenario när det finns en ny aktivitetshändelse i en kalender. Anslutningen som används i den här modulen måste använda autentiseringsuppgifterna för en användare med ett betalt Marketing-konto. Modulen returnerar upp till 500 händelser.
 
@@ -1501,14 +1550,12 @@ Den här utlösarmodulen startar ett scenario när det finns en ny aktivitetshä
 
 +++
 
-+++**Användare**
-
 ### Användare
 
-* [Skaffa en ägare](#get-an-owner)
-* [Listägare](#list-owners)
+<!--* [Get an Owner](#get-an-owner)
+* [List Owners](#list-owners)-->
 
-#### Skaffa en ägare
++++ **Hämta en ägare**
 
 Den här åtgärdsmodulen returnerar information om en ägare.
 
@@ -1527,7 +1574,9 @@ Den här åtgärdsmodulen returnerar information om en ägare.
  </tbody> 
 </table>
 
-#### Listägare
++++
+
++++ **Listägare**
 
 Den här sökmodulen returnerar en lista över alla ägare i ett HubSpot-konto.
 
@@ -1544,20 +1593,18 @@ Den här sökmodulen returnerar en lista över alla ägare i ett HubSpot-konto.
 
 +++
 
-+++**Biljetter**
-
 ### Biljetter
 
 <!--* [Create a Ticket]-->
-* [Ta bort en biljett](#delete-a-ticket)
-  <!--* [Create a Ticket]-->
-  <!--* [Create a Ticket]-->
-  <!--* [Create a Ticket]-->
-  <!--* [Create a Ticket]-->
+<!--* [Delete a Ticket](#delete-a-ticket)-->
+<!--* [Create a Ticket]-->
+<!--* [Create a Ticket]-->
+<!--* [Create a Ticket]-->
+<!--* [Create a Ticket]-->
 
 <!-- Create a Ticket Need to find a working connection-->
 
-#### [!UICONTROL Delete a Ticket]
++++ **[!UICONTROL Delete a Ticket]**
 
 Tar bort en befintlig biljett med dess ID.
 
@@ -1576,6 +1623,8 @@ Tar bort en befintlig biljett med dess ID.
  </tbody> 
 </table>
 
++++
+
 <!-- Get a Ticket  Need to find a working connection-->
 
 <!-- List Tickets  Need to find a working connection-->
@@ -1584,18 +1633,14 @@ Tar bort en befintlig biljett med dess ID.
 
 <!-- Watch Tickets Need to find a working connection-->
 
-+++
-
-+++**Forms**
-
 ### Forms
 
-* [Hämta en fil som har överförts via formuläret](#get-a-file-uploaded-via-form)
-* [Lista Forms](#list-forms)
-  <!--* [Submit Data to a Form]-->
-  <!--* [Watch Submissions for a Form]-->
+<!--* [Get a File Uploaded via Form](#get-a-file-uploaded-via-form)
+* [List Forms](#list-forms)-->
+<!--* [Submit Data to a Form]-->
+<!--* [Watch Submissions for a Form]-->
 
-#### Hämta en fil som har överförts via formuläret
++++ **Hämta en fil som har överförts via formuläret**
 
 Den här åtgärdsmodulen returnerar en fil som har överförts via ett formulär.
 
@@ -1614,7 +1659,9 @@ Den här åtgärdsmodulen returnerar en fil som har överförts via ett formulä
  </tbody> 
 </table>
 
-#### Lista Forms
++++
+
++++ **Lista Forms**
 
 Den här åtgärdsmodulen returnerar alla formulär som har skapats i det konto som är kopplat till anslutningen som används för den här modulen.
 
@@ -1633,25 +1680,23 @@ Den här åtgärdsmodulen returnerar alla formulär som har skapats i det konto 
  </tbody> 
 </table>
 
++++
+
 <!--#### Submit Data to a Form Need to find a working connection-->
 
 
 
 &lt;!—### Bevakade inlämningar för ett formulär - Behöver hitta en fungerande anslutning>—>
 
-+++
-
-+++**Sociala medier (sändning)**
-
 ### Sociala medier (sändning)
 
-* [Avbryta ett sändningsmeddelande](#cancel-a-broadcast-message)
-* [Skapa ett sändningsmeddelande](#create-a-broadcast-message)
-* [Se utskicksmeddelanden](#watch-broadcast-messages)
+<!--* [Cancel a Broadcast Message](#cancel-a-broadcast-message)
+* [Create a Broadcast Message](#create-a-broadcast-message)
+* [Watch Broadcast Messages](#watch-broadcast-messages)-->
 
-#### Avbryta ett sändningsmeddelande
++++ **Avbryt ett sändningsmeddelande**
 
-Den här åtgärdsmodulen avbryter en schemalagd sändning, t.ex. en tweet eller ett Facebook-inlägg.
+Den här åtgärdsmodulen avbryter en schemalagd sändning, till exempel ett tweet eller ett Facebook-inlägg.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1668,7 +1713,9 @@ Den här åtgärdsmodulen avbryter en schemalagd sändning, t.ex. en tweet eller
  </tbody> 
 </table>
 
-#### Skapa ett sändningsmeddelande
++++
+
++++ **Skapa ett sändningsmeddelande**
 
 Den här åtgärdsmodulen skapar och publicerar omedelbart ett meddelande på den angivna sociala mediekanalen.
 
@@ -1707,7 +1754,9 @@ Den här åtgärdsmodulen skapar och publicerar omedelbart ett meddelande på de
  </tbody> 
 </table>
 
-#### Se utskicksmeddelanden
++++
+
++++ **Se utsändningsmeddelanden**
 
 Den här utlösarmodulen startar ett scenario när ett meddelande skickas från HubSpot till den angivna kanalen för sociala medier.
 
@@ -1740,22 +1789,20 @@ Den här utlösarmodulen startar ett scenario när ett meddelande skickas från 
 
 +++
 
-+++**Blogginlägg**
-
 ### Blogginlägg
 
 <!--* [Create a Blog Post]-->
-* [Ta bort ett blogginlägg](#delete-a-blog-post)
-  <!--* [List Blog Posts]-->
-* [Publish/Unpublish a Blog Post](#publish--unpublish-a-blog-post)
-  <!--* [Watch Blog Posts]-->
+<!--* [Delete a Blog Post](#delete-a-blog-post)-->
+<!--* [List Blog Posts]-->
+&lt;!—* [Publicera/avpublicera ett blogginlägg](#publish--unpublish-a-blog-post)—>
+<!--* [Watch Blog Posts]-->
 
 <!--
 #### Create a Blog Post May need connection
 -->
 
 
-#### Ta bort ett blogginlägg
++++ **Ta bort ett blogginlägg**
 
 Den här åtgärdsmodulen tar bort ett blogginlägg.
 
@@ -1774,11 +1821,13 @@ Den här åtgärdsmodulen tar bort ett blogginlägg.
  </tbody> 
 </table>
 
++++
+
 <!--#### List Blog Posts May need connection
 
 This search module retrieves posts from a HubSpot blog.-->
 
-#### Publish / Avpublicera ett blogginlägg
++++ **Publicera/avpublicera ett blogginlägg**
 
 Den här åtgärdsmodulen schemalägger eller avbryter publiceringen av ett blogginlägg.
 
@@ -1801,9 +1850,9 @@ Den här åtgärdsmodulen schemalägger eller avbryter publiceringen av ett blog
  </tbody> 
 </table>
 
-<!--#### Watch Blog PostsMay need connection-->
-
 +++
+
+<!--#### Watch Blog PostsMay need connection-->
 
 <!--+++**Workflows**>
 
@@ -1818,14 +1867,12 @@ Den här åtgärdsmodulen schemalägger eller avbryter publiceringen av ett blog
 
 <!--+++-->
 
-+++**Prenumerationer**
-
 ### Prenumerationer
 
-* [Uppdatera e-postprenumeration](#update-email-subscription)
-* [Se tidslinjen för prenumerationer för en portal](#watch-subscriptions-timeline-for-a-portal)
+<!--* [Update Email Subscription](#update-email-subscription)
+* [Watch Subscriptions Timeline for a Portal](#watch-subscriptions-timeline-for-a-portal)-->
 
-#### Uppdatera e-postprenumeration
++++ **Uppdatera e-postprenumeration**
 
 Den här åtgärdsmodulen uppdaterar en e-postprenumeration i HubSpot.
 
@@ -1856,7 +1903,9 @@ Den här åtgärdsmodulen uppdaterar en e-postprenumeration i HubSpot.
  </tbody> 
 </table>
 
-#### Se tidslinjen för prenumerationer för en portal
++++
+
++++ **Se tidslinjen för prenumerationer för en portal**
 
 Den här utlösarmodulen startar ett scenario när en ny tidslinjeprenumeration för e-post läggs till i portalen.
 
@@ -1909,11 +1958,9 @@ This action module associates two CRM objects.-->
 
 <!--+++-->
 
-+++**Annan**
-
 ### Övriga
 
-#### [!UICONTROL Make an API Call]
++++ **[!UICONTROL Make an API Call]**
 
 Gör att du kan utföra ett anpassat API-anrop.
 
