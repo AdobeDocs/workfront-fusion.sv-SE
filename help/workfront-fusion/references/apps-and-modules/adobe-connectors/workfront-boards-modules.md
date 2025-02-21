@@ -4,9 +4,9 @@ description: Du kan använda Adobe Workfront Boards-kontakten för att automatis
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7895e65dd040f28e6028c24928abe2829b58d9db
 workflow-type: tm+mt
-source-wordcount: '2439'
+source-wordcount: '2659'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ Du kan använda modulen Adobe Workfront Boards för att läsa eller uppdatera po
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
 <table style="table-layout:auto">
@@ -32,29 +34,29 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td>
-  <td> <p>Alla</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens</td>
-   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: [!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet], [!UICONTROL [!DNL Workfront Fusion] för Automatisering av arbete]</p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -62,6 +64,7 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
++++
 
 ## Förutsättningar
 
@@ -148,51 +151,6 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 * [Taggar](#tags)
 * [Kommentar](#comments)
 * [Övriga](#other)
-
-<!--
-
-### Watch
-
-#### Watch events
-
-This trigger module starts a scenario when an event occurs on a board.
-
-1. Click **[!UICONTROL Add]** to the right of the **Webhook** box.
-
-1. Configure the webhook in the **[!UICONTROL Add a hook]** box that displays.
-
-   When you are configuring this module, the following fields display.
-
-   <table style="table-layout:auto"> 
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td>[!UICONTROL Webhook name]</td> 
-      <td>(Optional) Type a new name for the webhook</td> 
-     </tr> 
-     <tr> 
-      <td>[!UICONTROL Connection]</td> 
-      <td> <p>You can use an existing Workfront connection to connect to Workfront Boards, or you can use a specific Workfront Boards connection. </p><p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Create a connection to Workfront Boards</a> in this article.</p> </td> 
-     </tr> 
-     <tr> 
-      <td>[!UICONTROL Object type]</td> 
-      <td>Select the type of [!DNL Workfront] object that you want the module to watch.</td> 
-     </tr> 
-     <tr> 
-      <td> <p>[!UICONTROL Objects to watch]</p> </td> 
-      <td> Select whether you want to trigger a scenario when there is a new object, an updated object, a new or updated object, or a deleted object. </td> 
-     </tr> 
-     <tr data-mc-conditions=""> 
-      <td>Exclude events made by this connection</td> 
-      <td>Enable this option to exclude events created or updated using the same connector that this trigger module uses. This can prevent situations where a scenario might trigger itself, causing it to repeat in an endless loop.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-After the webhook is created, you can view the address of the endpoint that events are sent to.
-
--->
 
 ### Kort
 
@@ -282,7 +240,7 @@ Den här åtgärdsmodulen skapar ett nytt kort på ett Workfront-kort.
 
 #### Flytta ett kort
 
-Den här åtgärdsmodulen flyttar ett kort till en annan kolumn på samma kort.
+Den här åtgärdsmodulen flyttar ett kort till en annan kolumn på samma anslagstavla.
 
 <table style="table-layout:auto">
  <col> 
@@ -298,7 +256,7 @@ Den här åtgärdsmodulen flyttar ett kort till en annan kolumn på samma kort.
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
-   <td>Ange eller mappa ID:t för den bräda som innehåller kortet som du vill flytta.<p>Kortets ID finns i URL:en när du visar kortet i Workfront.</p></td> 
+   <td>Ange eller mappa ID:t för den bräda som innehåller kortet som du vill flytta.<p>Du kan hitta ID:t för anslagstavlan i URL:en när du tittar på anslagstavlan i Workfront.</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination column ID]</td> 
@@ -327,6 +285,10 @@ Den här åtgärdsmodulen hämtar information om ett specifikt kort.
    <td>[!UICONTROL Card ID]</td> 
    <td>Ange eller mappa ID:t för kortet som du vill läsa.<p>Kortets ID finns i URL:en när du visar kortet i Workfront.</p></td> 
   </tr> 
+  <tr> 
+   <td>[!UICONTROL Card ID]</td> 
+   <td>Ange eller mappa ID:t för den bräda som innehåller kortet som du vill läsa.<p>Du kan hitta ID:t för anslagstavlan i URL:en när du tittar på anslagstavlan i Workfront.</p></td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -348,15 +310,29 @@ Den här åtgärdsmodulen uppdaterar information för ett kort som du anger.
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
-   <td>Ange eller mappa ID:t för den anslagstavla som innehåller kortet som du vill uppdatera.<p>Kortets ID finns i URL:en när du visar kortet i Workfront.</p></td> 
+   <td>Ange eller mappa ID:t för den anslagstavla som innehåller kortet som du vill uppdatera.<p>Du kan hitta ID:t för anslagstavlan i URL:en när du tittar på anslagstavlan i Workfront.</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Name]</td> 
    <td>Ange eller mappa ett nytt namn för kortet.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Card ID]</td> 
+   <td>[!UICONTROL Description]</td> 
    <td>Ange eller mappa en ny beskrivning för kortet.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Estimation]</td> 
+   <td>Ange eller mappa en uppskattning av den tid som krävs för att slutföra kortet.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Due date]</td> 
+   <td>Ange eller mappa förfallodatumet för kortet.</p>
+   <p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Status]</td> 
+   <td>Välj en ny status för kortet.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -383,8 +359,8 @@ Den här åtgärdsmodulen skapar en styrelse i Workfront. Du kan ange vilken typ
    <td>Ange eller mappa ett namn för den nya ritytan.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Type]</td> 
-   <td>Välj den typ av anslagstavla du vill skapa.</td> 
+   <td>[!UICONTROL Template]</td> 
+   <td>Välj mallen för den typ av anslagstavla som du vill skapa.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -438,10 +414,6 @@ Den här åtgärdsmodulen skapar en ny kolumn på den angivna ritytan.
    <td>[!UICONTROL Column name]</td> 
    <td>Ange eller mappa ett nytt namn för kolumnen.</td> 
   </tr> 
-  <tr> 
-   <td>[!UICONTROL WIP Limit]</td> 
-   <td>Ange eller mappa en ny PIA-gräns för kolumnen.</td> 
-  </tr> 
  </tbody> 
 </table>
 
@@ -488,12 +460,16 @@ Den här åtgärdsmodulen uppdaterar namnet eller PIA-gränsen för den angivna 
    <td>[!UICONTROL Column Name]</td> 
    <td>Ange eller mappa namnet på den kolumn som du vill hämta.</td> 
   </tr> 
+  <tr> 
+   <td>[!UICONTROL WIP Limit]</td> 
+   <td>Ange eller mappa en ny PIA-gräns för kolumnen.</td> 
+  </tr> 
  </tbody> 
 </table>
 
 ### Taggar
 
-* [Lägga till en tagg på ett kort](#add-card-tag)
+* [Lägga till en tagg på ett kort](#add-a-tag-to-a-card)
 * [Skapa en tagg](#create-a-tag)
 
 #### Lägga till en tagg på ett kort
@@ -638,5 +614,45 @@ Den här åtgärdsmodulen gör ett anpassat anrop till Workfront Boards API.
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
+ </tbody> 
+</table>
+
+
+#### Göra ett anpassat GraphQL API-anrop
+
+Den här åtgärdsmodulen gör en anpassad GraphQL-begäran till Workfront Boards API.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+      <td> <p>Du kan använda en befintlig Workfront-anslutning för att ansluta till Workfront Boards eller använda en viss Workfront Boards-anslutning. </p><p>Instruktioner om hur du ansluter din [!DNL Workfront]-app till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Skapa en anslutning till Workfront Boards</a> i den här artikeln.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>Välj metod för anropet. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
+   <td> <p>Lägg till frågan för API-anropet i form av ett standard-JSON-objekt.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Operation name]</td> 
+   <td> <p>Ange ett namn för den här åtgärden. Detta kan göra det enklare att spåra och felsöka samtalet.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variables data source]</td> 
+   <td> <p>Välj om variablerna ska hämtas från ett formulär eller från en samling.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variables]</td> 
+   <td> <p>För varje variabel som du vill lägga till klickar du på <b>Lägg till objekt</b> och anger variabelns nyckel och värde.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
+   </tr> 
  </tbody> 
 </table>

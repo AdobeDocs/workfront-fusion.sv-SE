@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 024176956d5ca9c88112a67c6948d6297f53810e
+source-git-commit: 1861522827aa782877f612bf3f9dc522f6ca221e
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1534'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,8 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
 <table style="table-layout:auto">
@@ -28,35 +30,37 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -113,7 +117,9 @@ Instruktioner om hur du skapar ett program i [!DNL Bynder] finns i [OA 2.0-appar
 >
 >* När du skapar appen i [!DNL Bynder] anger du följande som `redirect uri`:
 >
->   `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * Amerikanskt kluster: `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * EU-kluster: `https://app-eu.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * Azure-kluster: `https://app-az.workfrontfusion.com/oauth/cb/workfront-bynder`
 >* Bynder använder behörighetskoden/typen för att uppdatera token-tilldelning. Det här är den enda anslagstyp som Fusion Bynder-kopplingen använder.
 
 ## [!DNL Bynder]-moduler och deras fält
@@ -130,15 +136,61 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ### Åtgärder
 
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Read asset metadata]](#read-asset-metadata)
-* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
-* [[!UICONTROL Add assets to a collection]](#add-assets-to-a-collection)
-* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
 * [[!UICONTROL Add a tag to assets]](#add-a-tag-to-assets)
-* [[!UICONTROL Remove a tag] från resurser](#remove-a-tag-from-assets)
+* [[!UICONTROL Add assets to a collection]](#add-assets-to-a-collection)
+* [[!UICONTROL Custom API Call]](#custom-api-call)
 * [[!UICONTROL Download asset]](#download-asset)
+* [[!UICONTROL Read asset metadata]](#read-asset-metadata)
+* [[!UICONTROL Remove a tag] från resurser](#remove-a-tag-from-assets)
+* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
+* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
 * [[!UICONTROL Upload asset]](#upload-asset)
+
+#### [!UICONTROL Add a tag to assets]
+
+Den här åtgärdsmodulen lägger till en tagg i en eller flera resurser
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Bynder]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Bynder] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tag ID]</td> 
+   <td> <p>Ange eller mappa ID:t för taggen som du vill lägga till i resurser.</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>För varje resurs som du vill tagga klickar du på <strong>[!UICONTROL Add item]</strong> och anger eller mappar sedan resurs-ID:t.</p> </td> 
+  </tr> 
+ </tbody> 
+ </table>
+
+#### [!UICONTROL Add assets to a collection]
+
+Den här åtgärdsmodulen lägger till en eller flera resurser i en samling.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Bynder]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Bynder] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collection ID]</td> 
+   <td> <p>Ange eller mappa ID:t för samlingen där du vill lägga till resurser.</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>För varje resurs som du vill lägga till i samlingen klickar du på <strong>[!UICONTROL Add item]</strong> och anger eller mappar sedan resurs-ID:t.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Custom API Call]
 
@@ -162,7 +214,7 @@ Modulen returnerar en statuskod tillsammans med rubrikerna och brödtexten för 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
+   <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -178,6 +230,29 @@ Modulen returnerar en statuskod tillsammans med rubrikerna och brödtexten för 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Download asset]
+
+Den här åtgärdsmodulen hämtar en enskild resurs.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Bynder]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Bynder] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td>Ange eller mappa ID:t för resursen som du vill hämta.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset version]</td> 
+   <td> <p>Ange eller mappa den version av resursen som du vill hämta. Om du vill hämta den senaste versionen av resursen lämnar du fältet tomt.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -201,6 +276,52 @@ Den här åtgärdsmodulen läser metadata för en resurs.
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
    <td> <p>Välj den information som du vill inkludera i utdatapaketet för den här modulen.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Remove a tag from assets]
+
+Den här åtgärdsmodulen tar bort en tagg från en eller flera resurser
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Bynder]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Bynder] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tag ID]</td> 
+   <td> <p>Ange eller mappa ID:t för taggen som du vill ta bort från resurserna.</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>För varje resurs som du vill ta bort en tagg från klickar du på <strong>[!UICONTROL Add item]</strong> och anger eller mappar sedan resurs-ID:t.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Remove assets from collection]
+
+Den här åtgärdsmodulen tar bort en eller flera resurser från en samling.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Bynder]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Bynder] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collection ID]</td> 
+   <td> <p>Ange eller mappa ID:t för samlingen där du vill ta bort resurser.</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>För varje resurs som du vill ta bort från samlingen klickar du på <strong>[!UICONTROL Add item]</strong> och anger eller mappar sedan resurs-ID:t.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -232,121 +353,6 @@ Den här åtgärdsmodulen uppdaterar metadata för en befintlig resurs.
  </tbody> 
 </table>
 
-#### [!UICONTROL Add assets to a collection]
-
-Den här åtgärdsmodulen lägger till en eller flera resurser i en samling.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Bynder]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Bynder] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collection ID]</td> 
-   <td> <p>Ange eller mappa ID:t för samlingen där du vill lägga till resurser.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>För varje resurs som du vill lägga till i samlingen klickar du på <strong>[!UICONTROL Add item]</strong> och anger eller mappar sedan resurs-ID:t.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Remove assets from collection]
-
-Den här åtgärdsmodulen tar bort en eller flera resurser från en samling.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Bynder]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Bynder] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collection ID]</td> 
-   <td> <p>Ange eller mappa ID:t för samlingen där du vill ta bort resurser.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>För varje resurs som du vill ta bort från samlingen klickar du på <strong>[!UICONTROL Add item]</strong> och anger eller mappar sedan resurs-ID:t.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add a tag to assets]
-
-Lägga till en tagg i en eller flera resurser
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Bynder]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Bynder] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Tag ID]</td> 
-   <td> <p>Ange eller mappa ID:t för taggen som du vill lägga till i resurser.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>För varje resurs som du vill tagga klickar du på <strong>[!UICONTROL Add item]</strong> och anger eller mappar sedan resurs-ID:t.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Remove a tag from assets]
-
-Ta bort en tagg från en eller flera resurser
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Bynder]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Bynder] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Tag ID]</td> 
-   <td> <p>Ange eller mappa ID:t för taggen som du vill ta bort från resurserna.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>För varje resurs som du vill ta bort en tagg från klickar du på <strong>[!UICONTROL Add item]</strong> och anger eller mappar sedan resurs-ID:t.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Download asset]
-
-Den här åtgärdsmodulen hämtar en enskild resurs.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Bynder]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Bynder] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
-   <td>Ange eller mappa ID:t för resursen som du vill hämta.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset version]</td> 
-   <td> <p>Ange eller mappa den version av resursen som du vill hämta. Om du vill hämta den senaste versionen av resursen lämnar du fältet tomt.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Upload asset]
 
 Den här åtgärdsmodulen överför en enskild resurs.
@@ -371,13 +377,17 @@ Den här åtgärdsmodulen överför en enskild resurs.
    <td role="rowheader">[!UICONTROL Source file]</td> 
    <td>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asynchronous file upload]</td> 
+   <td>Aktivera det här alternativet när du överför stora filer. Detta förhindrar att stora filer blockerar scenariokörning.</td> 
+  </tr> 
  </tbody> 
 </table>
 
 ### Sökningar
 
 * [[!UICONTROL List record]](#list-record)
-* [[!UICONTROL Search for assets]](#search-for-assets)
+* [[!UICONTROL Search Assets]](#search-assets)
 
 #### [!UICONTROL List record]
 
@@ -411,7 +421,7 @@ Sökmodulen hämtar alla objekt av en viss typ.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for assets]
+#### [!UICONTROL Search Assets]
 
 Den här sökmodulen söker efter resurser baserat på de villkor du anger.
 
@@ -424,12 +434,12 @@ Den här sökmodulen söker efter resurser baserat på de villkor du anger.
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Bynder]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Bynder] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Criteria]</td> 
+   <td role="rowheader">[!UICONTROL Search criteria]</td> 
    <td> <p>Ange sökvillkoren. </p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Field]</strong> </p> <p>Markera fältet som du vill använda i sökningen</p> </li> 
      <li> <p><strong>[!UICONTROL Logical Operator]</strong> </p> <p>Välj den operator som du vill använda i sökningen.</p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Ange eller mappa värdet som du vill söka efter i det markerade fältet. Värdetypen ska vara densamma som datatypen för det markerade fältet. </p> <p>Mer information om datatyper finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Objektdatatyper i [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Ange eller mappa värdet som du vill söka efter i det markerade fältet. Värdetypen ska vara densamma som datatypen för det markerade fältet. </p> <p>Mer information om datatyper finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Objektdatatyper</a>.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -469,21 +479,17 @@ Den här utlösarmodulen startar ett scenario när en resurs skapas eller uppdat
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Bynder]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Bynder] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
   </tr> 
-  <tr> <!--
-    <td role="rowheader">Event type</td>
-   --> <!--
-    <td>Select whether you want to start the scenario when a new asset is created or when an existing asset is updated.</td>
-   --> 
+  <tr> 
+    <td role="rowheader">Händelsetyp</td>
+    <td>Välj om du vill starta scenariot när en ny resurs skapas eller när en befintlig resurs uppdateras.</td>
   </tr> 
   <tr>
      <td role="rowheader">[!UICONTROL Collections]</td>
    <td> <p>Välj den samling som du vill bevaka för nya resurser. Om du vill bevaka alla samlingar lämnar du det här fältet tomt.</p> </td> 
   </tr> 
-  <tr> <!--
-    <td role="rowheader">Outputs</td>
-   --> <!--
-    <td>Select the fields that you want to include in the output.</td>
-   --> 
+  <tr> 
+    <td role="rowheader">Utdata</td>
+    <td>Markera de fält som du vill inkludera i utdata.</td>
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Limit]</td>
