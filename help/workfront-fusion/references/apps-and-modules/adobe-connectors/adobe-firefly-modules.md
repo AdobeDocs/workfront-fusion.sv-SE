@@ -1,12 +1,12 @@
 ---
-title: Adobe Firefly-moduler
+title: Adobe Firefly moduler
 description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera arbetsflöden som använder  [!DNL Adobe Firefly] samt ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 1219642306c03cb0aa6037493ce2f02ced80b99d
+source-git-commit: a3494479614a4930427842fa68e6b586edca0833
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '2248'
 ht-degree: 0%
 
 ---
@@ -68,9 +68,9 @@ Innan du kan använda [!DNL Adobe Firefly]-anslutningen måste du se till att f�
 
 * Du måste ha ett aktivt [!DNL Adobe Firefly]-konto.
 
-## API-information för Adobe Firefly
+## Adobe Firefly API-information
 
-Kopplingen Adobe Firefly använder följande:
+Adobe Firefly Connector använder följande:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -136,6 +136,8 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 Den här åtgärdsmodulen expanderar en bild, eventuellt med innehåll från en fråga som du anger.
 
+Den här modulen fungerar med Firefly API V3 Async. Den tidigare versionen av den här modulen har tagits bort och kommer att tas bort inom den närmaste framtiden.
+
 <table style="table-layout:auto"> 
  <col> 
  <col> 
@@ -153,29 +155,43 @@ Den här åtgärdsmodulen expanderar en bild, eventuellt med innehåll från en 
    <td>Ange ett tal mellan 1 och 4. Modulen genererar detta antal expanderade bildvariationer.</td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Source]</td> 
+   <td>Ange hur du ska tillhandahålla källfilen:<ul><li><p><b>Fil</b></p><p>Välj en källfil från en tidigare modul eller mappa källfilens referensbildfilnamn och referensbildfil.</p></li><li><p><b>Förutsedd URL</b></p><p>Ange eller mappa URL:en för källbilden.</p></li></ul></td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Expanded image format]</td> 
    <td>Välj det filformat som den expanderade bilden ska sparas som.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td>  <p>Välj en källfil från en tidigare modul eller mappa källfilens bildfilnamn och bildfil (data).</p> </td> 
+   <td role="rowheader">[!UICONTROL Expand by]</td> 
+   <td>  <p>Välj om du vill expandera bilden genom att använda bildplacering eller en mask.</p> 
+   <ul>
+   <li><b>Placement</b><p>Ange den vågräta och lodräta justeringen och den monterade bildens indrag från kanterna.</p></li>
+   <li><b>Mask</b><p>Markera maskens källfil och om masken ska inverteras.</p></li>
+   </ul>
+</td> 
 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Size]</td> 
-   <td>Välj den storlek som du vill att den expanderade bilden ska ha.</td> 
+   <td>Välj den höjd och bredd som du vill att den expanderade bilden ska ha.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Seed]</td> 
-   <td>För varje startvärde som du vill använda klickar du på <b>Lägg till objekt</b> och anger eller mappar ett heltal. Du kan använda samma startvärde i en annan expanderingsmodul om du vill generera en liknande bild med olika format. </td> 
+   <td role="rowheader">[!UICONTROL Seeds]</td> 
+   <td>För varje bild som modulen ska generera klickar du på <b>Lägg till objekt</b> och anger eller mappar ett heltal. Du kan använda samma startvärde i en annan expanderingsmodul om du vill generera en liknande bild med olika format. Antalet frön som du lägger till måste vara lika med fältet Antal variationer.</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Fylla en bild
+### Expandera en bild (inaktuell)
+
+Den här modulen har tagits bort och kommer att tas bort inom den närmaste framtiden. Använd modulen Expandera en bild i stället.
+
+### Fylla en bild
 
 Den här åtgärdsmodulen fyller det maskerade området i en bild, eventuellt med innehåll från en uppmaning som du anger.
 
+Den här modulen fungerar med Firefly API V3 Async. Den tidigare versionen av den här modulen har tagits bort och kommer att tas bort inom den närmaste framtiden.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -184,6 +200,14 @@ Den här åtgärdsmodulen fyller det maskerade området i en bild, eventuellt me
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Campaign] finns i <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Firefly]</a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+   <td>Ange hur du ska tillhandahålla bildkällfilen:<ul><li><p><b>Fil</b></p><p>Välj en källfil från en tidigare modul eller mappa källfilens referensbildfilnamn och referensbildfil.</p></li><li><p><b>Förutsedd URL</b></p><p>Ange eller mappa URL:en för källbilden.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Mask > Source]</td> 
+   <td>Ange hur du ska tillhandahålla maskens källfil:<ul><li><p><b>Fil</b></p><p>Välj en källfil från en tidigare modul eller mappa källfilens referensbildfilnamn och referensbildfil.</p></li><li><p><b>Förutsedd URL</b></p><p>Ange eller mappa URL:en för källbilden.</p></li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
@@ -197,30 +221,31 @@ Den här åtgärdsmodulen fyller det maskerade området i en bild, eventuellt me
    <td role="rowheader">[!UICONTROL Filled image format]</td> 
    <td>Välj det filformat som den ifyllda bilden ska sparas som.</td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Image]</td> 
-   <td>  <p> För varje bild som du vill fylla klickar du på <b>Lägg till en bild</b> och väljer sedan en källfil från en tidigare modul eller mappar källfilens bildfilnamn och bilddata.</p> </td> 
-</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Mask]</td> 
-   <td>  <p>  Klicka på <b>Lägg till en mask</b> för varje mask som du vill använda. Välj en källfil från en tidigare modul eller mappa källfilens maskfilnamn och maskdata. Maskfilen representerar den anpassade mask som ska fyllas med genererat innehåll.</p> </td> 
-</td> 
+   <td role="rowheader">[!UICONTROL Seeds]</td> 
+   <td>För varje bild som modulen ska generera klickar du på <b>Lägg till objekt</b> och anger eller mappar ett heltal. Du kan använda samma startvärde i en annan expanderingsmodul om du vill generera en liknande bild med olika format. Antalet frön som du lägger till måste vara lika med fältet Antal variationer.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Size]</td> 
    <td>Välj den storlek som du vill att den fyllda bilden ska ha.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Seeds]</td> 
-   <td>För varje bild som modulen ska generera klickar du på <b>Lägg till objekt<b> och anger eller mappar ett heltal. Du kan använda samma startvärde i en annan expanderingsmodul om du vill generera en liknande bild med olika format. Antalet frön som du lägger till måste vara lika med fältet Antal variationer.</td> 
+   <td role="rowheader">[!UICONTROL Locale]</td> 
+   <td>Om en språkinställning anges genererar modulen innehåll som är mer relevant för den angivna språkinställningen. <p>Språk måste anges i ISO 639-1-språkkoden och ISO 3166-1-regionen.</p><p> Exempel: <code>en-US</code></p></td> 
   </tr> 
  </tbody> 
 </table>
 
+### Fylla en bild (inaktuell)
+
+Den här modulen har tagits bort och kommer att tas bort inom den närmaste framtiden. Använd modulen Fyll en bild i stället.
+
 ## Generera en bild
 
 Den här åtgärdsmodulen genererar en bild som baseras på en fråga som du anger. Du kan också ange en valfri referensbild så matchar den genererade bilden stilen för referensbilden.
+
+Den här modulen fungerar med Firefly API V3 Async. Den tidigare versionen av den här modulen har tagits bort och kommer att tas bort inom den närmaste framtiden.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -232,7 +257,7 @@ Den här åtgärdsmodulen genererar en bild som baseras på en fråga som du ang
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
-   <td>Ange eller mappa en fråga för den bild du vill skapa. Mer detaljskärpa ger dig större kontroll över vad som visas i bilden.</td> 
+   <td>Ange eller mappa en fråga för den bild som du vill generera. Mer detaljskärpa ger dig större kontroll över vad som visas i bilden.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Number of variations]</td> 
@@ -240,16 +265,27 @@ Den här åtgärdsmodulen genererar en bild som baseras på en fråga som du ang
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Generated image format]</td> 
-   <td>Välj det filformat som den expanderade bilden ska sparas som. Om du väljer standardformat kommer filformatet att vara JPEG om ingen referensbild finns. Om en referensbild anges kommer den genererade bildens filformat att vara detsamma som referensbilden.</td> 
+   <td>Välj det filformat som den expanderade bilden ska sparas som. Om du väljer standard kommer filformatet att vara JPEG om ingen referensbild finns. Om en referensbild anges kommer den genererade bildens filformat att vara detsamma som referensbilden.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td>  <p>Välj en källfil från en tidigare modul eller mappa källfilens namn på referensbildfilen och referensbildfilen (data). Den genererade bilden skapas så att den matchar referensbildens format.</p> </td> 
-</td> 
+   <td role="rowheader">[!UICONTROL Structure > Image reference]</td> 
+    <td>Välj hur du ska ange källfilen för den nya bildens struktur:<ul><li><p><b>Fil</b></p><p>Välj en källfil från en tidigare modul eller mappa källfilens referensbildfilnamn och referensbildfil.</p></li><li><p><b>Förutsedd URL</b></p><p>Ange eller mappa URL:en för källbilden.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Presets]</td> 
-   <td>Om du vill använda ett förinställt format klickar du på Lägg till objekt och anger eller mappar det format som du vill använda.<p>En lista med förinställda format finns i <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Bildmodellformat</a> i utvecklardokumentationen för Adobe.</td> 
+   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+    <td>Ange ett tal mellan 0 och 100 för att kontrollera hur strikt Firefly följer källbildens struktur. Ett högre värde innebär att Firefly följer bilden mer strikt.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+    <td>Ange hur du ska ange källfilen för den nya bildens format:<ul><li><p><b>Fil</b></p><p>Välj en källfil från en tidigare modul eller mappa källfilens referensbildfilnamn och referensbildfil.</p></li><li><p><b>Förutsedd URL</b></p><p>Ange eller mappa URL:en för källbilden.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+    <td>Ange ett tal mellan 0 och 100 för att kontrollera hur strikt Firefly följer källbildens format. Ett högre värde innebär att Firefly följer bilden mer strikt.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Presets]</td> 
+   <td>Om du vill använda ett förinställt format klickar du på Lägg till objekt och anger eller mappar det format som du vill använda.<p>En lista med förinställda format finns i <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Bildmodellformat</a> i dokumentationen för Adobe-utvecklare.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Negative prompt]</td> 
@@ -261,17 +297,13 @@ Den här åtgärdsmodulen genererar en bild som baseras på en fråga som du ang
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Seed]</td> 
-   <td>Ange eller mappa ett heltal. Du kan använda samma startvärde i en annan expanderingsmodul om du vill generera en liknande bild med olika format. </td> 
+   <td>För varje bild som modulen ska generera klickar du på <b>Lägg till objekt</b> och anger eller mappar ett heltal. Du kan använda samma startvärde i en annan expanderingsmodul om du vill generera en liknande bild med olika format. Antalet frön som du lägger till måste vara lika med fältet Antal variationer.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Size]</td> 
    <td>Välj den storlek som du vill att den genererade bilden ska ha.</td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Strength]</td> 
-   <td>Ange eller mappa ett heltal som representerar intensiteten som den genererade bilden ska matcha stilen för den förinställda stilen eller referensbilden med. </td> 
-  </tr> 
-  <tr> 
+   <tr> 
    <td role="rowheader">[!UICONTROL Visual intensity]</td> 
    <td>Ange eller mappa ett heltal som representerar den övergripande intensiteten för fotots befintliga visuella egenskaper. </td> 
   </tr> 
@@ -279,16 +311,117 @@ Den här åtgärdsmodulen genererar en bild som baseras på en fråga som du ang
    <td role="rowheader">[!UICONTROL Locale]</td> 
    <td>Om en språkinställning anges genererar modulen innehåll som är mer relevant för den angivna språkinställningen. <p>Språk måste anges i ISO 639-1-språkkoden och ISO 3166-1-regionen.</p><p> Exempel: <code>en-US</code></p></td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tileable]</td> 
+   <td>Aktivera det här alternativet om du vill generera en bild som kan upprepas oändligt i alla riktningar.</td> 
+  </tr> 
  </tbody> 
 </table>
 
+### Generera en bild (inaktuell)
+
+Den här modulen har tagits bort och kommer att tas bort inom den närmaste framtiden. Använd modulen Generera en bild i stället.
+
+### Generera en oseparerad objektfil
+
+Den här åtgärdsmodulen kombinerar bilder som skapats av Firefly för att skapa en sammansatt bild.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Campaign] finns i <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Firefly]</a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td>Ange eller mappa en fråga för den bild som du vill generera. Mer detaljskärpa ger dig större kontroll över vad som visas i bilden.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td>Ange ett tal mellan 1 och 4. Modulen genererar detta antal bildvariationer.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Content classs]</td> 
+   <td>Välj om du vill att den genererade bilden ska vara mer som ett foto eller som en teckning.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+    <td>Välj hur du ska ange källfilen för den nya bildens struktur:<ul><li><p><b>Fil</b></p><p>Välj en källfil från en tidigare modul eller mappa källfilens referensbildfilnamn och referensbildfil.</p></li><li><p><b>Förutsedd URL</b></p><p>Ange eller mappa URL:en för källbilden.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Generated image format]</td> 
+   <td>Välj det filformat som den expanderade bilden ska sparas som. Om du väljer standard kommer filformatet att vara JPEG om ingen referensbild finns. Om en referensbild anges kommer den genererade bildens filformat att vara detsamma som referensbilden.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+    <td>Ange hur du ska ange källfilen för den nya bildens format:<ul><li><p><b>Fil</b></p><p>Välj en källfil från en tidigare modul eller mappa källfilens referensbildfilnamn och referensbildfil.</p></li><li><p><b>Förutsedd URL</b></p><p>Ange eller mappa URL:en för källbilden.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+    <td>Ange ett tal mellan 0 och 100 för att kontrollera hur strikt Firefly följer källbildens format. Ett högre värde innebär att Firefly följer bilden mer strikt.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Presets]</td> 
+   <td>Om du vill använda ett förinställt format klickar du på Lägg till objekt och anger eller mappar det format som du vill använda.<p>En lista med förinställda format finns i <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Bildmodellformat</a> i dokumentationen för Adobe-utvecklare.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size]</td> 
+   <td>Välj den storlek som du vill att den genererade sammansatta bilden ska ha. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Generera liknande bilder
+
+Den här åtgärdsmodulen genererar bilder som liknar den källbild du anger.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Campaign] finns i <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Firefly]</a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td>Ange ett tal mellan 1 och 4. Modulen genererar detta antal bildvariationer.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Generated image format]</td> 
+   <td>Välj det filformat som den expanderade bilden ska sparas som. Om du väljer standard kommer filformatet att vara JPEG om ingen referensbild finns. Om en referensbild anges kommer den genererade bildens filformat att vara detsamma som referensbilden.</td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+    <td>Välj hur du ska ange källfilen för den nya bildens struktur:<ul><li><p><b>Fil</b></p><p>Välj en källfil från en tidigare modul eller mappa källfilens referensbildfilnamn och referensbildfil.</p></li><li><p><b>Förutsedd URL</b></p><p>Ange eller mappa URL:en för källbilden.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+    <td>Ange hur du ska ange källfilen för den nya bildens format:<ul><li><p><b>Fil</b></p><p>Välj en källfil från en tidigare modul eller mappa källfilens referensbildfilnamn och referensbildfil.</p></li><li><p><b>Förutsedd URL</b></p><p>Ange eller mappa URL:en för källbilden.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size]</td> 
+   <td>Välj den storlek som du vill att den genererade sammansatta bilden ska ha. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Seeds]</td> 
+   <td>För varje bild som modulen ska generera klickar du på <b>Lägg till objekt</b> och anger eller mappar ett heltal. Du kan använda samma startvärde i en annan expanderingsmodul om du vill generera en liknande bild med olika format. Antalet frön som du lägger till måste vara lika med fältet Antal variationer.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tileable]</td> 
+   <td>Aktivera det här alternativet om du vill generera en bild som kan upprepas oändligt i alla riktningar.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 
 ### Göra ett anpassat API-anrop
 
 Den här åtgärdsmodulen gör ett anpassat anrop till Firefly API.
 
-Mer information om tillgängliga API:er finns i [Adobe Firefly API](https://developer.adobe.com/firefly-services/docs/firefly-api/) i Adobe Developer-dokumentationen.
+Specifika tillgängliga API:er finns i [Adobe Firefly API](https://developer.adobe.com/firefly-services/docs/firefly-api/) i Adobe Developer-dokumentationen.
 
 <table style="table-layout:auto"> 
   <col/>
