@@ -3,19 +3,19 @@ content-type: reference
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
-title: Moduler för användarhantering i Adobe
+title: Adobe-moduler för användarhantering
 description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera arbetsflöden som hanterar användare i ditt Adobe-konto.
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: 640fec2de63ad59ba89fae5373f85b8147d8dac0
+source-git-commit: 234a6a537718328e92eec13672a73bc43add17c1
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 0%
 
 ---
 
-# Moduler för användarhantering i Adobe
+# Adobe-moduler för användarhantering
 
 I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som hanterar användare i ditt Adobe-konto.
 
@@ -66,7 +66,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 +++
 
-## Skapa en anslutning till användarhantering i Adobe
+## Skapa en anslutning till Adobe användarhantering
 
 Så här skapar du en anslutning för dina [!DNL Adobe User Management]-moduler:
 
@@ -104,7 +104,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe User Management]-moduler:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
-        <td>Ange dina [!DNL Adobe] IMS-autentiseringsuppgifter. Unik identifierare för en organisation. Detta är en sträng i formatet A495E53@AdobeOrg där prefixet före @ är ett hexadecimalt tal. Du kan hitta det här värdet som en del av URL-sökvägen för organisationen i Admin Console eller i adobe.io-konsolen för användarhanteringsintegrationen.</td>
+        <td>Ange dina [!DNL Adobe] IMS-autentiseringsuppgifter. Unik identifierare för en organisation. Detta är en sträng i formatet A495E53@AdobeOrg där prefixet före @ är ett hexadecimalt tal. Du kan hitta det här värdet som en del av URL-sökvägen för organisationen i Admin Console eller i adobe.io-konsolen för användarhanteringsintegreringen.</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Additional scopes]</td>
@@ -117,9 +117,9 @@ Så här skapar du en anslutning för dina [!DNL Adobe User Management]-moduler:
 
 
 
-## Moduler för användarhantering i Adobe och deras fält
+## Modulerna för användarhantering i Adobe och deras fält
 
-När du konfigurerar modulerna för användarhantering i Adobe visas de fält som listas nedan i Workfront Fusion. Dessutom kan ytterligare fält för användarhantering i Adobe visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar Adobe-moduler för användarhantering visas de fält som listas nedan i Workfront Fusion. Dessutom kan ytterligare fält för användarhantering i Adobe visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -148,7 +148,7 @@ Den här sökmodulen hämtar en lista över alla användargrupper och produktpro
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning</td> 
-   <td>Instruktioner om hur du skapar en anslutning till användarhantering i Adobe finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till användarhantering i Adobe</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till Adobe användarhantering finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till Adobe användarhantering</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Maximalt antal returnerade resultat</td> 
@@ -167,7 +167,7 @@ Den här sökmodulen hämtar information om en enskild användare i organisation
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning</td> 
-   <td>Instruktioner om hur du skapar en anslutning till användarhantering i Adobe finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till användarhantering i Adobe</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till Adobe användarhantering finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till Adobe användarhantering</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">E-postadress</td> 
@@ -186,7 +186,7 @@ Den här sökmodulen hämtar en lista över alla användare i den angivna använ
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning</td> 
-   <td>Instruktioner om hur du skapar en anslutning till användarhantering i Adobe finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till användarhantering i Adobe</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till Adobe användarhantering finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till Adobe användarhantering</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Gruppnamn</td> 
@@ -222,7 +222,7 @@ Sökmodulen returnerar alla användare i organisationen som är kopplade till an
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning</td> 
-   <td>Instruktioner om hur du skapar en anslutning till användarhantering i Adobe finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till användarhantering i Adobe</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till Adobe användarhantering finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till Adobe användarhantering</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Maximalt antal returnerade resultat</td> 
@@ -248,7 +248,7 @@ Den här åtgärdsmodulen lägger till en användare som medlem i den angivna gr
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning</td> 
-   <td>Instruktioner om hur du skapar en anslutning till användarhantering i Adobe finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till användarhantering i Adobe</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till Adobe användarhantering finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till Adobe användarhantering</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Användare</td> 
@@ -264,7 +264,7 @@ Den här åtgärdsmodulen lägger till en användare som medlem i den angivna gr
   </tr> 
   <tr> 
    <td role="rowheader">Använd Adobe ID</td> 
-   <td>Välj true om du vill vara säker på att användar-ID tolkas som att det refererar till en befintlig Adobe ID även om det finns ett Enterprise-objekt eller ett Federated ID med samma namn.</td> 
+   <td>Välj true om du vill vara säker på att användar-ID tolkas som att det refererar till en befintlig Adobe ID även om det finns en Enterprise eller Federated ID med samma namn.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -279,15 +279,15 @@ Den här åtgärdsmodulen skapar en ny användare i organisationen.
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning</td> 
-   <td>Instruktioner om hur du skapar en anslutning till användarhantering i Adobe finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till användarhantering i Adobe</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till Adobe användarhantering finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till Adobe användarhantering</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID-typ</td> 
-   <td>Ange om du vill skapa en användare med en Adobe ID, ett Enterprise ID eller ett Federated ID. </td> 
+   <td>Ange om du vill skapa en användare med en Adobe ID, en Enterprise ID eller en Federated ID. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Inloggning</td> 
-   <td>Om du skapar en användare med ett Federated ID väljer du inloggningstyp.</td> 
+   <td>Om du skapar en användare med Federated ID väljer du inloggningstyp.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">E-post</td> 
@@ -295,11 +295,11 @@ Den här åtgärdsmodulen skapar en ny användare i organisationen.
   </tr> 
   <tr> 
    <td role="rowheader">Domän</td> 
-   <td>Om du skapar en användare med ett Federated ID med en domänbaserad inloggning anger eller mappar du domänen.</td> 
+   <td>Om du skapar en användare med en Federated ID med en domänbaserad inloggning anger eller mappar du domänen.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Användare</td> 
-   <td>Om du skapar en användare med ett Federated ID med en domänbaserad inloggning anger eller mappar du användaren som den nya användaren kommer att representera.</td> 
+   <td>Om du skapar en användare med en Federated ID med en domänbaserad inloggning anger eller mappar du användaren som den nya användaren kommer att representera.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Förnamn</td> 
@@ -319,7 +319,7 @@ Den här åtgärdsmodulen skapar en ny användare i organisationen.
   </tr> 
   <tr> 
    <td role="rowheader">Använd Adobe ID</td> 
-   <td>Om true tolkas användar-ID:t som att det refererar till en befintlig Adobe ID, även om det finns ett Enterprise-objekt eller ett Federated ID med samma namn.</td> 
+   <td>Om true tolkas användar-ID:t som att det refererar till en befintlig Adobe ID, även om det finns en Enterprise eller Federated ID med samma namn.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -334,7 +334,7 @@ Den här åtgärdsmodulen tar bort medlemskapet för en användare från de angi
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning</td> 
-   <td>Instruktioner om hur du skapar en anslutning till användarhantering i Adobe finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till användarhantering i Adobe</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till Adobe användarhantering finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till Adobe användarhantering</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Användare</td> 
@@ -350,7 +350,7 @@ Den här åtgärdsmodulen tar bort medlemskapet för en användare från de angi
   </tr> 
   <tr> 
    <td role="rowheader">Använd Adobe ID</td> 
-   <td>Välj true om du vill vara säker på att användar-ID tolkas som att det refererar till en befintlig Adobe ID även om det finns ett Enterprise-objekt eller ett Federated ID med samma namn.</td> 
+   <td>Välj true om du vill vara säker på att användar-ID tolkas som att det refererar till en befintlig Adobe ID även om det finns en Enterprise eller Federated ID med samma namn.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -367,7 +367,7 @@ Denna åtgärdsmodul uppdaterar en befintlig användare.
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning</td> 
-   <td>Instruktioner om hur du skapar en anslutning till användarhantering i Adobe finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till användarhantering i Adobe</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till Adobe användarhantering finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till Adobe användarhantering</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Användare</td> 
@@ -375,7 +375,7 @@ Denna åtgärdsmodul uppdaterar en befintlig användare.
   </tr> 
   <tr> 
    <td role="rowheader">Domän</td> 
-   <td>Om du uppdaterar en användare med ett Federated ID som inte är en e-postadress, anger eller mappar du den domän som användaren tillhör för att identifiera användaren.</td> 
+   <td>Om du uppdaterar en användare med en Federated ID som inte är en e-postadress, anger eller mappar du den domän som användaren tillhör för att identifiera användaren.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">E-post</td> 
@@ -410,7 +410,7 @@ Den här åtgärdsmodulen lägger till användare och produktprofiler i en anvä
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning</td> 
-   <td>Instruktioner om hur du skapar en anslutning till användarhantering i Adobe finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till användarhantering i Adobe</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till Adobe användarhantering finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till Adobe användarhantering</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Gruppnamn</td> 
@@ -437,7 +437,7 @@ Den här åtgärdsmodulen skapar en ny användargrupp. Om det redan finns en gru
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning</td> 
-   <td>Instruktioner om hur du skapar en anslutning till användarhantering i Adobe finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till användarhantering i Adobe</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till Adobe användarhantering finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till Adobe användarhantering</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Gruppnamn</td> 
@@ -464,7 +464,7 @@ Den här åtgärdsmodulen tar bort en befintlig användargrupp.
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning</td> 
-   <td>Instruktioner om hur du skapar en anslutning till användarhantering i Adobe finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till användarhantering i Adobe</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till Adobe användarhantering finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till Adobe användarhantering</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Gruppnamn</td> 
@@ -483,7 +483,7 @@ Den här åtgärdsmodulen tar bort användare eller profiler från en användarg
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning</td> 
-   <td>Instruktioner om hur du skapar en anslutning till användarhantering i Adobe finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till användarhantering i Adobe</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till Adobe användarhantering finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till Adobe användarhantering</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Gruppnamn</td> 
@@ -499,7 +499,7 @@ Den här åtgärdsmodulen tar bort användare eller profiler från en användarg
   </tr> 
   <tr> 
    <td role="rowheader">Använd Adobe ID</td> 
-   <td>Om true tolkas användar-ID:t som att det refererar till en befintlig Adobe ID även om det finns ett Enterprise-objekt eller ett Federated ID med samma namn.</td> 
+   <td>Om true tolkas användar-ID:t som att det refererar till en befintlig Adobe ID även om det finns en Enterprise eller Federated ID med samma namn.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -514,7 +514,7 @@ Den här åtgärdsmodulen uppdaterar en befintlig användargrupp.
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning</td> 
-   <td>Instruktioner om hur du skapar en anslutning till användarhantering i Adobe finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till användarhantering i Adobe</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till Adobe användarhantering finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till Adobe användarhantering</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Ursprungligt gruppnamn</td> 
@@ -528,13 +528,15 @@ Den här åtgärdsmodulen uppdaterar en befintlig användargrupp.
    <td role="rowheader">Ursprungligt gruppnamn</td> 
    <td>Ange eller mappa den uppdaterade beskrivningen av gruppen.</td> 
   </tr> 
- </tbody>
+ </tbody> 
+ </table>
 
 ### Övriga
 
-Den här åtgärdsmodulen gör ett anpassat anrop till API:t för användarhantering i Adobe.
 
 #### Göra ett anpassat API-anrop
+
+Den här åtgärdsmodulen gör ett anpassat anrop till Adobe API för användarhantering.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -542,7 +544,7 @@ Den här åtgärdsmodulen gör ett anpassat anrop till API:t för användarhante
   <tbody>
     <tr>
       <td role="rowheader">Anslutning</td>
-      <td>Instruktioner om hur du skapar en anslutning till användarhantering i Adobe finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till användarhantering i Adobe</a> i den här artikeln.</td> 
+      <td>Instruktioner om hur du skapar en anslutning till Adobe användarhantering finns i <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Skapa en anslutning till Adobe användarhantering</a> i den här artikeln.</td> 
     </tr>
     <tr>
       <td role="rowheader">

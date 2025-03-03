@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
+source-git-commit: 234a6a537718328e92eec13672a73bc43add17c1
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,7 @@ Fusion erbjuder kontakter för många av Adobe produkter och tjänster.
 * [Adobe Marketo Modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
 * [Adobe PDF Services-moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
 * [Adobe Photoshop moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
+* [Adobe lagringsmoduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
 * [Adobe Target moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
 * [Adobe-moduler för användarhantering](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
 * [Adobe Workfront moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
