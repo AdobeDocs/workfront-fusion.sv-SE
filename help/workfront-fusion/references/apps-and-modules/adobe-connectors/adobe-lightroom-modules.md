@@ -4,9 +4,9 @@ description: Med Adobe Lightroom-modulerna kan du starta ett Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -190,10 +190,10 @@ Den här åtgärdsmodulen hämtar ett version-ID för Lightroom-servern som visa
 
 * [Skapa en originalfil för en resurs](#create-an-asset-external-xmp-develop-setting-file)
 * [Skapa en resurs](#create-an-asset)
-* [Skapa en extern fil XMP framkallningsinställningar](#create-an-asset-external-xmp-develop-setting-file)
+* [Skapa en extern XMP-framkallningsinställningsfil](#create-an-asset-external-xmp-develop-setting-file)
 * [Generera återgivningar för en originalfil](#generate-renditions-for-an-original-file)
 * [Hämta en katalogresurs](#get-a-catalog-asset)
-* [Hämta den senaste inställningen för extern XMP](#get-the-latest-asset-external-xmp-develop-setting-file)
+* [Hämta den senaste resursinställningen för extern XMP-utveckling](#get-the-latest-asset-external-xmp-develop-setting-file)
 * [Hämta den senaste resursåtergivningen](#get-the-latest-asset-rendition)
 * [Hämta resurser](#retrieve-assets)
 
@@ -295,9 +295,9 @@ Den här åtgärdsmodulen skapar en ny resurs med initiala metadata och importin
   </tbody>
 </table>
 
-#### Skapa en extern fil XMP framkallningsinställningar
+#### Skapa en extern XMP-framkallningsinställningsfil
 
-Den här åtgärdsmodulen stöder två arbetsflöden. Det första arbetsflödet är att överföra den externa XMP för resursens framkallningsinställningar. Det andra arbetsflödet är att skapa en extern XMP med framkallningsinställningar genom att kopiera från en annan resurs externa xmp-framkallningsinställningsfil.
+Den här åtgärdsmodulen stöder två arbetsflöden. Det första arbetsflödet är att överföra den externa XMP-filen med framkallningsinställningar för resursen. Det andra arbetsflödet är att skapa en extern XMP-framkallningsinställningsfil genom att kopiera från en annan resurs externa xmp-framkallningsinställningsfil.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -407,9 +407,9 @@ Denna åtgärdsmodul hämtar information om en enskild resurs i en katalog. Kata
 </table>
 
 
-#### Hämta den senaste inställningsfilen för externa XMP
+#### Hämta den senaste resursinställningsfilen för extern XMP-utveckling
 
-Den här åtgärdsmodulen hämtar den senaste inställningsfilen för externa XMP.
+Den här åtgärdsmodulen hämtar den senaste resursens externa XMP-inställningsfil.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -500,7 +500,7 @@ Den här åtgärdsmodulen hämtar resurser som ägs av användaren vars autentis
     <tr>
       <td role="rowheader">[!UICONTROL Maximum number of returned assets]</td>
       <td>
-        <p>Ange det maximala antalet resurser som [!DNL Workfront Fusion] ska returnera under en körningscykel. Talet måste vara mindre än eller lika med 100.</p>
+        <p>Ange det högsta antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p>
       </td>
     </tr>
     <tr>
