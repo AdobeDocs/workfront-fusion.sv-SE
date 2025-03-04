@@ -4,10 +4,10 @@ description: Med  [!DNL Adobe Experience Manager Forms] connector for [!DNL Adob
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e0d7a655-1353-4d24-83d4-7da73d859a63
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 1%
+source-wordcount: '575'
+ht-degree: 0%
 
 ---
 
@@ -27,24 +27,24 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <tbody> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+  <td> <p>[!UICONTROL Pro] eller senare</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td> <p>[!UICONTROL-plan], [!UICONTROL-arbete]</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
    <td>
    <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automation och integrering av arbetet] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Aktuellt produktkrav: Om du har [!UICONTROL Select]- eller [!UICONTROL Prime] [!DNL Adobe Workfront]-planen måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
    <p>eller</p>
    <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
    </td> 
@@ -79,7 +79,7 @@ Adobe Experience Manager Assets Connector använder följande:
 
 Så här skapar du en anslutning för dina [!DNL Adobe Experience Manager Forms]-moduler:
 
-1. Klicka på **[!UICONTROL Add]** bredvid rutan Anslutning.
+1. Klicka på **[!UICONTROL Lägg till]** bredvid rutan Anslutning i en modul.
 
 1. Fyll i följande fält:
 
@@ -90,7 +90,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe Experience Manager Forms]
     </col>
     <tbody>
       <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">[!UICONTROL-anslutningsnamn]</td>
         <td>
           <p>Ange ett namn för anslutningen.</p>
         </td>
@@ -102,29 +102,29 @@ Så här skapar du en anslutning för dina [!DNL Adobe Experience Manager Forms]
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
+        <td role="rowheader">[!UICONTROL-typ]</td>
         <td>
           <p>Ange om det här kontot är ett tjänstkonto eller ett personligt konto.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Instance URL without a trailing slash]</td>
+        <td role="rowheader">[!UICONTROL Instance URL utan avslutande snedstreck]</td>
         <td>
           <p>Ange den URL som du använder för att komma åt kontot, utan det sista snedstrecket.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL IMS endpoint]</td>
+        <td role="rowheader">[!UICONTROL IMS-slutpunkt]</td>
         <td>
           <p><code>https://ims-na1.adobelogin.com</code></p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td role="rowheader">[!UICONTROL-klient-ID]</td>
         <td>Ange ditt klient-ID för [!DNL Adobe]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td role="rowheader">[!UICONTROL-klienthemlighet]</td>
         <td>Ange din [!DNL Adobe]-klienthemlighet. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].
       </tr>
       <tr>
@@ -136,11 +136,11 @@ Så här skapar du en anslutning för dina [!DNL Adobe Experience Manager Forms]
         <td>Ange ditt tekniska konto-ID för [!DNL Adobe]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Meta Scopes]</td>
+        <td role="rowheader">[!UICONTROL-metaomfång]</td>
         <td>Ange lämpliga metaomfång       </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Private key]</td>
+        <td role="rowheader">[!UICONTROL privat nyckel]</td>
         <td>
           <p>Ange den privata nyckel som skapades när dina autentiseringsuppgifter skapades i [!DNL Adobe Developer Console]. </p>
           <p>Så här extraherar du din privata nyckel eller ditt certifikat:</p>
@@ -166,7 +166,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe Experience Manager Forms]
     </tbody>
     </table>
 
-1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
+1. Klicka på **[!UICONTROL Fortsätt]** för att spara anslutningen och återgå till modulen.
 
 ## Adobe Experience Manager Forms-modulen och dess fält
 
@@ -187,11 +187,11 @@ Med denna direktutlösare (webkrok) kan du starta ett scenario när en Skicka-å
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Webhook name]</td> 
+   <td role="rowheader">[!UICONTROL-webbkroknamn]</td> 
    <td> <p>Ange ett namn för webkroken</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-anslutning]</td> 
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Adobe Experience Manager]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md#create-a-connection-to-adobe-experience-manager-forms" class="MCXref xref">Skapa en anslutning till [!DNL Adobe Experience Manager Forms]</a></p> </td> 
   </tr>
 

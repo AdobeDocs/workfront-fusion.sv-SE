@@ -4,9 +4,9 @@ description: Med Adobe Lightroom-modulerna kan du starta ett Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2376'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,13 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
       <td>
-        <p>[!UICONTROL Pro] eller högre</p>
+        <p>[!UICONTROL Pro] eller senare</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
       <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
+        <p>[!UICONTROL-plan], [!UICONTROL-arbete]</p>
       </td>
     </tr>
     <tr>
@@ -89,7 +89,7 @@ Adobe Lightroom Connector använder följande:
 
 Så här skapar du en anslutning för dina [!DNL Adobe Lightroom]-moduler:
 
-1. Klicka på **[!UICONTROL Add]** bredvid rutan Anslutning.
+1. Klicka på **[!UICONTROL Lägg till]** bredvid rutan Anslutning i en modul.
 
 1. Fyll i följande fält:
 
@@ -100,7 +100,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe Lightroom]-moduler:
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">[!UICONTROL-anslutningsnamn]</td>
         <td>
           <p>Ange ett namn för anslutningen.</p>
         </td>
@@ -110,21 +110,21 @@ Så här skapar du en anslutning för dina [!DNL Adobe Lightroom]-moduler:
         <td>Ange om du ansluter till en produktionsmiljö eller icke-produktionsmiljö.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
+        <td role="rowheader">[!UICONTROL-typ]</td>
         <td>Ange om du ansluter till ett tjänstkonto eller ett personligt konto.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Ange din [!UICONTROL Adobe] [!UICONTROL Client ID]. Detta finns i avsnittet [!UICONTROL Credentials]-information i [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL-klient-ID]</td>
+        <td>Ange ditt [!UICONTROL Adobe] [!UICONTROL klient-ID]. Detta finns i avsnittet med information om [!UICONTROL-autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Ange din [!DNL Adobe] [!UICONTROL Client Secret]. Detta finns i avsnittet [!UICONTROL Credentials]-information i [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL-klienthemlighet]</td>
+        <td>Ange din [!DNL Adobe] [!UICONTROL-klienthemlighet]. Detta finns i avsnittet med information om [!UICONTROL-autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
         </tr>
       </tbody>
     </table>
 
-1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
+1. Klicka på **[!UICONTROL Fortsätt]** för att spara anslutningen och återgå till modulen.
 
 
 
@@ -155,11 +155,11 @@ Den här åtgärdsmodulen hämtar ett version-ID för Lightroom-servern som visa
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Credentials]</td>
+      <td role="rowheader">[!UICONTROL-autentiseringsuppgifter]</td>
       <td>
         <p>Om du vill ange specifika autentiseringsuppgifter för att säkerställa att en viss server körs klickar du på Lägg till objekt och anger autentiseringsuppgifterna.</p><p>Autentiseringsrubriker läggs till automatiskt.</p>
       </td>
@@ -174,11 +174,11 @@ Den här åtgärdsmodulen hämtar ett version-ID för Lightroom-servern som visa
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Credentials]</td>
+      <td role="rowheader">[!UICONTROL-autentiseringsuppgifter]</td>
       <td>
         <p>Om du vill ange specifika inloggningsuppgifter för att säkerställa att du har åtkomst till rätt användarkonto klickar du på Lägg till objekt och anger inloggningsuppgifterna.</p><p>Autentiseringsrubriker läggs till automatiskt.</p>
       </td>
@@ -207,35 +207,35 @@ Den här åtgärdsmodulen skapar och överför en originalfil för en resurs.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL-katalog-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för katalogen som innehåller resursen.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL-resurs-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för resursen som du vill skapa och överföra en fil för.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Length of content in bytes]</td>
+      <td role="rowheader">[!UICONTROL Längd på innehåll i byte]</td>
       <td>
         <p>Ange eller mappa innehållets längd i byte.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Byte range]</td>
+      <td role="rowheader">[!UICONTROL-byteintervall]</td>
       <td>
         <p>Ange eller mappa byteintervallet för begäran, inklusive första och sista byte och enhetslängd enligt RFC 2616. Ska endast inkluderas när data är för stora för att överföras i ett enda anrop.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Content type]</td>
+      <td role="rowheader">[!UICONTROL-innehållstyp]</td>
       <td>
         <p>Välj innehållstyp för den nya filen.</p>
       </td>
@@ -253,29 +253,29 @@ Den här åtgärdsmodulen skapar en ny resurs med initiala metadata och importin
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL-katalog-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för katalogen där resursen ska skapas.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL-resurs-ID]</td>
       <td>
         <p>Ange eller mappa den nya resursens ID.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset type]</td>
+      <td role="rowheader">[!UICONTROL-resurstyp]</td>
       <td>
         <p>Välj om resursen är en bild eller en video.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime user created]</td>
+      <td role="rowheader">[!UICONTROL DateTime-användare har skapats]</td>
       <td>
         <p>Ange eller mappa ett datum med formatet <code>YYYY-MM-DDT00:00:00-00:00</code>.</p>
       </td>
@@ -287,7 +287,7 @@ Den här åtgärdsmodulen skapar en ny resurs med initiala metadata och importin
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Date captured]</td>
+      <td role="rowheader">[!UICONTROL Date capture]</td>
       <td>
         <p>Ange eller mappa ett datum med formatet <code>YYYY-MM-DDT00:00:00-00:00</code>.</p>
       </td>
@@ -304,29 +304,29 @@ Den här åtgärdsmodulen stöder två arbetsflöden. Det första arbetsflödet 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Length of content in bytes]</td>
+      <td role="rowheader">[!UICONTROL Längd på innehåll i byte]</td>
       <td>
         <p>Ange eller mappa innehållets längd i byte.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Upload new or copy XMP/develop file]</td>
+      <td role="rowheader">[!UICONTROL Ladda upp ny eller kopiera XMP/framkallningsfil]</td>
       <td>
         <p>Välj om du vill överföra en ny fil eller kopiera en fil från en befintlig resurs.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL-katalog-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för katalogen som innehåller resursen.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL-resurs-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för resursen som du vill överföra eller kopiera en fil till.</p>
       </td>
@@ -349,29 +349,29 @@ Den här åtgärdsmodulen genererar återgivningar asynkront för en originalfil
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Rendition Type(s) (semi-colon separated)]</td>
+      <td role="rowheader">[!UICONTROL-återgivningstyp(er) (semikolonavgränsad)]</td>
       <td>
         <p>Ange återgivningstypen för den återgivning som du vill skapa. Om du anger mer än en typ avgränsar du dem med ett semikolon (;). <p>Möjliga typer:</p><ul><li><code>fullsize</code></li><li><code>2560</code></li></ul></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Length of content in bytes]</td>
+      <td role="rowheader">[!UICONTROL Längd på innehåll i byte]</td>
       <td>
         <p>Ange eller mappa innehållets längd i byte.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL-katalog-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för katalogen som innehåller resursen.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL-resurs-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för resursen som du vill skapa en återgivning av en fil för.</p>
       </td>
@@ -388,17 +388,17 @@ Denna åtgärdsmodul hämtar information om en enskild resurs i en katalog. Kata
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL-katalog-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för katalogen som innehåller resursen.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL-resurs-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för resursen som du vill hämta information för.</p>
       </td>
@@ -416,17 +416,17 @@ Den här åtgärdsmodulen hämtar den senaste resursens externa XMP-inställning
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL-katalog-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för katalogen som innehåller resursen.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL-resurs-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för resursen som är associerad med XMP framkallningsinställningsfil.</p>
       </td>
@@ -443,23 +443,23 @@ Den här åtgärdsmodulen hämtar den senaste resursåtergivningen av den angivn
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL-katalog-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för katalogen som innehåller resursen.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL-resurs-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för resursen som är associerad med XMP framkallningsinställningsfil.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Rendition type]</td>
+      <td role="rowheader">[!UICONTROL-återgivningstyp]</td>
       <td>
         <p>Välj vilken typ av återgivning du vill hämta.</p>
       </td>
@@ -476,41 +476,41 @@ Den här åtgärdsmodulen hämtar resurser som ägs av användaren vars autentis
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL-katalog-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för katalogen som innehåller resursen.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Starting timestamp]</td>
+      <td role="rowheader">[!UICONTROL Startar tidsstämpel]</td>
       <td>
         <p>Ange eller mappa en tidsstämpel. Modulen returnerar poster som har uppdaterats efter den här tidsstämpeln.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Return assets captured before]</td>
+      <td role="rowheader">[!UICONTROL Returnera resurser som hämtats före]</td>
       <td>
         <p>Ange ett datum med formatet <code>YYYY-MM-DDT00:00:00</code>. Modulen returnerar resultat som hämtats före detta datum.</p><p> Det här fältet kan inte användas med fältet <code>Return assets captured after</code>.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned assets]</td>
+      <td role="rowheader">[!UICONTROL Maximalt antal returnerade resurser]</td>
       <td>
         <p>Ange det högsta antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL SHA256 Hash value of original file]</td>
+      <td role="rowheader">[!UICONTROL SHA256 Hash-värde för originalfilen]</td>
       <td>
         <p></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Hide assets that are inside stacks?"]</td>
+      <td role="rowheader">[!UICONTROL Dölja resurser som finns i högar?"]</td>
       <td>
         <p></p>
       </td>
@@ -522,7 +522,7 @@ Den här åtgärdsmodulen hämtar resurser som ägs av användaren vars autentis
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset IDs]</td>
+      <td role="rowheader">[!UICONTROL-resurs-ID:n]</td>
       <td>
         <p>Ange eller mappa upp till 100 resurs-ID:n, avgränsade med kommatecken.</p>
       </td>
@@ -533,19 +533,19 @@ Den här åtgärdsmodulen hämtar resurser som ägs av användaren vars autentis
         <p>Välj om du vill exkludera fullständiga eller ofullständiga resurser. Om du vill inkludera alla resurser lämnar du det här fältet tomt.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Group values]</td>
+      <td role="rowheader">[!UICONTROL-gruppvärden]</td>
       <td>
         <p></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Name values]</td>
+      <td role="rowheader">[!UICONTROL-namnvärden]</td>
       <td>
         <p></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Favorite status]</td>
+      <td role="rowheader">[!UICONTROL-favoritstatus]</td>
       <td>
         <p></p>
       </td>
@@ -573,17 +573,17 @@ Den här åtgärdsmodulen lägger till en eller flera resurser i det angivna alb
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL-katalog-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för den katalog som innehåller det album du vill lägga till resurser i.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td role="rowheader">[!UICONTROL-album-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för det album du vill lägga till resurser i.</p>
       </td>
@@ -594,27 +594,27 @@ Den här åtgärdsmodulen lägger till en eller flera resurser i det angivna alb
         <p>För varje resurs som du vill lägga till i albumet klickar du på <b>Lägg till objekt</b> och anger följande fält.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL-resurs-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för resursen som du vill lägga till i albumet</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Is this asset an album cover?]</td>
+      <td role="rowheader">[!UICONTROL Är den här resursen ett albumomslag?]</td>
       <td>
         <p>Välj om du vill att resursen ska visas som den bild som representerar albumet.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Order]</td>
+      <td role="rowheader">[!UICONTROL-ordning]</td>
       <td>
         <p></p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Metadata]</td>
+      <td role="rowheader">[!UICONTROL-metadata]</td>
       <td>
         <p>Ange eller mappa alla metadata som du vill inkludera med resursen. Detta måste vara en enda textsträng med en maxlängd på 1-24 tecken.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Remote ID]</td>
+      <td role="rowheader">[!UICONTROL fjärr-ID]</td>
       <td>
         <p>Ange en identifierare för resursen.</p>
       </td>
@@ -631,33 +631,33 @@ Den här åtgärdsmodulen skapar ett nytt album i Lightroom.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL-katalog-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för katalogen där du vill skapa ett album.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td role="rowheader">[!UICONTROL-album-ID]</td>
       <td>
         <p>Ange eller mappa ett ID för det nya albumet.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Subtype]</td>
+      <td role="rowheader">[!UICONTROL-undertyp]</td>
       <td>
         <p>Välj undertyp för albumet.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL API key]</td>
+      <td role="rowheader">[!UICONTROL API-nyckel]</td>
       <td>
         <p>Ange API-nyckeln för den tjänst som skapar albumet.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime user created]</td>
+      <td role="rowheader">[!UICONTROL DateTime-användare har skapats]</td>
       <td>
         <p>Ange eller mappa ett datum med formatet <code>YYYY-MM-DDT00:00:00-00:00Z</code>.</p>
       </td>
@@ -669,7 +669,7 @@ Den här åtgärdsmodulen skapar ett nytt album i Lightroom.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album name]</td>
+      <td role="rowheader">[!UICONTROL-albumnamn]</td>
       <td>
         <p>Ange eller mappa ett namn för det nya albumet.</p>
       </td>
@@ -679,36 +679,36 @@ Den här åtgärdsmodulen skapar ett nytt album i Lightroom.
         <p>Ange eller mappa ID:t för en resurs som ska användas som omslag till det här albumet.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Remote ID]</td>
+      <td role="rowheader">[!UICONTROL fjärr-ID]</td>
       <td>
         <p>Ange en identifierare för resursen.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Created date]</td>
+      <td role="rowheader">[!UICONTROL skapad den]</td>
       <td>
         <p>Ange eller mappa ett datum med formatet <code>YYYY-MM-DDT00:00:00-00:00Z</code>.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Updated date]</td>
+      <td role="rowheader">[!UICONTROL uppdaterat den]</td>
       <td>
         <p>Ange eller mappa ett datum med formatet <code>YYYY-MM-DDT00:00:00-00:00Z</code>.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Is the album deleted?]</td>
+      <td role="rowheader">[!UICONTROL Är albumet borttaget?]</td>
       <td>
         <p>Aktivera det här alternativet om externt tillhörande innehåll har tagits bort.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL URL of location to edit affiliated content]</td>
+      <td role="rowheader">[!UICONTROL URL för platsen för att redigera närliggande innehåll]</td>
       <td>
         <p>Om det finns en URL där användare kan redigera innehåll i det här albumet anger du URL:en här.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL URL of location to view affiliated content]</td>
+      <td role="rowheader">[!UICONTROL URL för platsen för att visa anslutet innehåll]</td>
       <td>
         <p>Om det finns en URL där användarna kan visa innehållet i det här albumet anger du URL:en här.</p>
       </td>
@@ -727,23 +727,23 @@ Det borttagna albumet måste ha skapats av samma klientprogram som nu tar bort d
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL-katalog-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för katalogen som innehåller det album du vill ta bort.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td role="rowheader">[!UICONTROL-album-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för det album du vill ta bort.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Delete child albums?]</td>
+      <td role="rowheader">[!UICONTROL Ta bort underordnade album?]</td>
       <td>
         <p>Välj om du vill ta bort underordnade album för det borttagna albumet.</p>
       </td>
@@ -760,17 +760,17 @@ Den här åtgärdsmodulen hämtar angivet album
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL-katalog-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för katalogen som innehåller det album som du vill hämta.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td role="rowheader">[!UICONTROL-album-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för det album du vill hämta.</p>
       </td>
@@ -793,29 +793,29 @@ Den här åtgärdsmodulen hämtar en lista med album i den angivna katalogen.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL-katalog-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för katalogen som innehåller album som du vill hämta.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Subtypes]</td>
+      <td role="rowheader">[!UICONTROL-undertyper]</td>
       <td>
         <p>Ange eller mappa ID:t för det album du vill hämta.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Name of album to precede current results]</td>
+      <td role="rowheader">[!UICONTROL-namn på album som ska föregå aktuella resultat]</td>
       <td>
         <p>Om du sidnumrerar dina resultat anger eller mappar du namnet på det sista albumet på föregående sida.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned albums]</td>
+      <td role="rowheader">[!UICONTROL Maximalt antal returnerade album]</td>
       <td>
         <p>Ange det maximala antalet resurser som [!DNL Workfront Fusion] ska returnera under en körningscykel. Standardvärdet för det här fältet är 100. Den här modulen kan returnera fler album än den här gränsen om flera album vid gränsen har samma <code>name_after</code>-värde.</p>
       </td>
@@ -834,17 +834,17 @@ Det uppdaterade albumet måste ha skapats av samma klientprogram som nu uppdater
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL-katalog-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för katalogen som innehåller det album som du vill uppdatera.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td role="rowheader">[!UICONTROL-album-ID]</td>
       <td>
         <p>Ange eller mappa ID:t för det album du vill uppdatera.</p>
       </td>
