@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: d4187aff574ceaf4d27112fc2ce8880421e77d0d
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1912'
 ht-degree: 0%
 
 ---
@@ -148,7 +148,7 @@ Om du vill auktorisera en anslutning mellan [!DNL Workfront Fusion] och [!DNL Ji
 
 #### Generera offentliga och privata nycklar för din [!DNL Jira]-anslutning
 
-Om du vill hämta en privat nyckel för din [!DNL Workfront Fusion Jira]-anslutning måste du generera offentliga och privata nycklar.
+Om du vill hämta en privat nyckel för din [!DNL Workfront Fusion Jira]-anslutning måste du generera offentliga och privata nycklar. Detta görs via datorns terminal. Du kan hitta terminalen genom att söka efter terminaler på startmenyn eller i datorns sökfält (inte sökfältet i webbläsaren).
 
 1. Kör följande `openssl`-kommandon i terminalen.
 
