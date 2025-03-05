@@ -4,7 +4,7 @@ description: Med  [!DNL Adobe Acrobat Sign] modulerna kan du starta ett [!DNL Ad
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
 source-wordcount: '5503'
 ht-degree: 0%
@@ -82,7 +82,7 @@ Nya användare av [!DNL Adobe Sign] bör vara noga med att uppdatera avtal. Avta
 
 [!DNL Adobe Sign] avtal behöver ett fält att arbeta med. Det finns vissa alternativ för att göra detta, men det enklaste och vanligaste är att överföra ett tillfälligt dokument och sedan mappa dokumentet till ditt avtal.
 
-![Adobe Sign rekommendationer](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
+![Adobe Sign-rekommendationer](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
 
 ## [!DNL Adobe Acrobat Sign]-moduler och deras fält
 
@@ -124,7 +124,7 @@ Den här utlösarmodulen startar ett scenario när ett avtal skapas eller uppdat
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Find text]</td> 
-   <td> <p>Ange termer som du vill söka efter. Modulen returnerar poster som innehåller dessa termer som fältvärden.</p> <p>Mer information om hur du söker efter fält i [!DNL Adobe Acrobat Sign] finns i"Hur textsökning fungerar" i <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign Search - Så fungerar det</a>.</p> </td> 
+   <td> <p>Ange termer som du vill söka efter. Modulen returnerar poster som innehåller dessa termer som fältvärden.</p> <p>Mer information om hur du söker efter fält i [!DNL Adobe Acrobat Sign] finns i"Hur textsökning fungerar" i <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign-sökning - hur den fungerar</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned agreements]</td> 
@@ -428,7 +428,7 @@ Den här åtgärdsmodulen skapar ett avtal, skickar det för signering och retur
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL CCs]</td> 
-   <td> <p>Du kan skicka det här avtalet till berörda parter som inte behöver signera, till exempel intressenter. De får ett e-postmeddelande i början av signeringsprocessen och ett annat när den slutliga signaturen tas emot. De får också en kopia av avtalet PDF. </p> <p>Klicka <b>[!UICONTROL Add item]</b> för varje person som du vill CC för det här avtalet och fyll i följande fält:</p> 
+   <td> <p>Du kan skicka det här avtalet till berörda parter som inte behöver signera, till exempel intressenter. De får ett e-postmeddelande i början av signeringsprocessen och ett annat när den slutliga signaturen tas emot. De får också en kopia av avtalet från PDF. </p> <p>Klicka <b>[!UICONTROL Add item]</b> för varje person som du vill CC för det här avtalet och fyll i följande fält:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Email]</b> </p> <p>Ange eller mappa den e-postadress som du vill ska ingå i avtalet.</p> </li> 
      <li> <p><b>[!UICONTROL Label]</b> </p> <p>Ange eller mappa en etikett för den här e-postadressen enligt arbetsflödesbeskrivningen</p> </li> 
@@ -477,7 +477,7 @@ Den här åtgärdsmodulen skapar ett avtal, skickar det för signering och retur
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Security option]</td> 
-   <td> <p>Ange eller mappa det sekundära lösenordet som ska användas för att skydda dokumentet i PDF. </p> <p>Viktigt! [!DNL Adobe Sign] delar aldrig det här lösenordet, så du måste skicka det separat till alla relevanta parter.</p> </td> 
+   <td> <p>Ange eller mappa det sekundära lösenordet som ska användas för att skydda PDF-dokumentet. </p> <p>Viktigt! [!DNL Adobe Sign] delar aldrig det här lösenordet, så du måste skicka det separat till alla relevanta parter.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Vaulting info]</td> 
@@ -692,7 +692,7 @@ Den här åtgärdsmodulen visar alla poster av den valda typen som kontot har å
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned records]</td> 
-   <td> <p>Ange eller mappa det maximala antalet poster som du vill att modulen ska [åtgärd] under varje körningscykel för scenario.</p> <p>Obs! Det här fältet kombineras med fältet [!UICONTROL Cursor] eller [!UICONTROL Start Index] för sidnumrering. Om [!UICONTROL Maximum number of returned events] till exempel är 100 och [!UICONTROL Start index] är 101, returnerar modulen posterna 101-200, eller den andra resultatsidan.</p> </td> 
+   <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> <p>Obs! Det här fältet kombineras med fältet [!UICONTROL Cursor] eller [!UICONTROL Start Index] för sidnumrering. Om [!UICONTROL Maximum number of returned events] till exempel är 100 och [!UICONTROL Start index] är 101, returnerar modulen posterna 101-200, eller den andra resultatsidan.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Parent domain URLs]</td> 
@@ -1045,7 +1045,7 @@ Den här sökmodulen söker efter avtal baserat på de villkor du anger.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned results]</td> 
-   <td> <p>Ange eller mappa det maximala antalet poster som du vill att modulen ska [åtgärd] under varje körningscykel för scenario.</p> </td> 
+   <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>

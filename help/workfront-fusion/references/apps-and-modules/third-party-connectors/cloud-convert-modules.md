@@ -4,9 +4,9 @@ description: CloudConvert-moduler
 author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2497'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 #### [!UICONTROL Capture a Website]
 
-Den här åtgärdsmodulen hämtar en angiven webbplats och sparar den i PDF, JPG eller PNG-format.
+Den här åtgärdsmodulen hämtar en angiven webbplats och sparar den i PDF-, JPG- eller PNG-format.
 
 Du anger webbplatsens URL och annan information, till exempel var du vill att informationen ska lagras.
 
@@ -248,7 +248,7 @@ Gör att du kan lägga till en eller flera filer i arkivet ZIP, RAR, 7Z, TAR, TA
 
 #### [!UICONTROL Merge Files]
 
-Sammanfogar minst två filer till en PDF. Om indatafilerna inte är PDF konverteras de automatiskt till PDF.
+Sammanfogar minst två filer till en PDF. Om indatafilerna inte är PDF-filer konverteras de automatiskt till PDF.
 
 <table style="table-layout:auto">
  <col> 
@@ -291,7 +291,7 @@ Sammanfogar minst två filer till en PDF. Om indatafilerna inte är PDF konverte
 
 #### [!UICONTROL Optimize a File]
 
-Den här åtgärdsmodulen optimerar och komprimerar en fil i formatet PDF, PNG eller JPG.
+Den här åtgärdsmodulen optimerar och komprimerar en fil i PDF-, PNG- eller JPG-format.
 
 Du anger filen och parametrarna för optimering och lagring.
 
@@ -351,7 +351,7 @@ När du konfigurerar den här modulen visas följande fält.
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Scanned images]</strong>: Optimering för skannade bilder</p> 
       <ul> 
-       <li> <p>Profil optimerad för PDF som huvudsakligen består av rasterbilder</p> </li> 
+       <li> <p>Profil optimerad för PDF-filer som huvudsakligen består av rasterbilder</p> </li> 
        <li> <p>Komprimera bilderna utan att försämra den visuella kvaliteten avsevärt</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL maximal size reduction]</strong>: Optimering för maximal storleksminskning</p> 
@@ -712,7 +712,7 @@ Gör att du kan utföra ett anpassat API-anrop.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [Fusion App]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a></p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt CloudConvert-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 

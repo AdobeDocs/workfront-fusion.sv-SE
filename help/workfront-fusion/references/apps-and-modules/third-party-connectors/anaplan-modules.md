@@ -3,9 +3,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,8 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
 <table style="table-layout:auto">
@@ -27,35 +29,37 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -151,7 +155,7 @@ Den här utlösarmodulen startar ett scenario när en post av den valda typen sk
   </tr> 
   <tr> 
    <td role="rowheader">Gräns</td> 
-   <td> <p>Ange eller mappa det maximala antalet poster som du vill att modulen ska [åtgärd] under varje körningscykel för scenario.</p> </td> 
+   <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -392,12 +396,12 @@ Den här åtgärdsmodulen uppdaterar en enskild post i [!UICONTROL Anaplan].
        <li> <p style="font-weight: bold;">[!UICONTROL Dimension ID]</p> <p>Markera eller mappa dimensionen som finns på radartikeln.</p> 
        <p><b>Obs! </b> 
        <ul>
-       <li> Dimension-tangenten (värde) måste vara antingen <code>dimensionName</code> (nästa) eller <code>dimensionId</code> (ID).</li>
+       <li> Dimension-nyckeln (värde) måste vara antingen <code>dimensionName</code> (nästa) eller <code>dimensionId</code> (ID).</li>
        <li>Objektnyckeln (värdet) måste vara <code>itemName</code> (text), <code>itemCode</code> (text) eller <code>itemId</code> (ID).</li>
-       <li>Dimension- och artikelnycklar måste vara av samma typ (text eller ID).
+       <li>Dimension och artikelnycklar måste vara av samma typ (text eller ID).
        </ul>
         </p> 
-        <p>Sök efter Dimensioner i [!DNL Anaplan Anapedia] om du vill ha information om dimensioner.</p> </li> 
+        <p>Sök efter dimensioner i [!DNL Anaplan Anapedia] om du vill ha information om dimensioner.</p> </li> 
        <li> <p><b>[!UICONTROL Value]</b> </p> <p>Ange eller mappa cellens nya värde.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL Model current fiscal year]</b> </p> <p>Ange Workspace-ID och modell-ID för den modell som du vill uppdatera räkenskapsåret för, och ange eller mappa sedan modellens nya år.</p> </li> 

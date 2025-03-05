@@ -1,10 +1,10 @@
 ---
-title: Power BI-moduler
+title: Power BI moduler
 description: Adobe Workfront Fusion kräver en Adobe Workfront Fusion-licens förutom en Adobe Workfront-licens.
 author: Becky
 feature: Workfront Fusion
 exl-id: 73eb70e1-3f3d-419d-9cde-3ec3cda224f8
-source-git-commit: 9e560995ff9f58a76bbecc521f7d2eef9d47fa48
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 0%
@@ -63,9 +63,9 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 +++
 
-## Microsoft Power BI API-information
+## API-information för Microsoft Power BI
 
-Microsoft Power BI-kontakten använder följande:
+Microsoft Power BI-anslutningen använder följande:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -737,7 +737,7 @@ Sökmodulen hämtar en lista med datauppsättningar.
     <tr>
       <td role="rowheader">[!UICONTROL Limit]</td>
       <td>
-        <p>Ange eller mappa det maximala antalet poster som du vill att modulen ska [åtgärd] under varje körningscykel för scenario.</p>
+        <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p>
       </td>
     </tr>
   </tbody>
