@@ -3,9 +3,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
+source-git-commit: defc5aa9b2e3ffa5c698c5a19dd8d9d8768d72c2
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Anaplan-anslutningen använder följande:
   </tr> 
   <tr> 
    <td role="rowheader">API-tagg</td> 
-   <td>v1.11.5/td&gt; 
+   <td>v1.11.5</td> 
  </tbody> 
 </table>
 
@@ -96,7 +96,49 @@ Anaplan-anslutningen använder följande:
 Så här skapar du en anslutning för dina [!DNL Anaplan]-moduler:
 
 1. Klicka på **[!UICONTROL Add]** bredvid rutan [!UICONTROL Connection].
-1. Välj anslutningstyp.
+1. Fyll i följande fält:
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Ange ett namn för den nya anslutningen.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>
+          <p>Välj om du ansluter till en produktionsmiljö eller icke-produktionsmiljö.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>
+          <p>Ange om du ansluter till ett tjänstkonto eller ett personligt konto.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL email]</td>
+        <td>
+          <p>Ange e-postadressen för det här Anaplan-kontot</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Password]</td>
+        <td>Ange lösenordet för det här Anaplan-kontot.</td>
+      </tr>
+     </tbody>
+    </table>
+
+1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
+
+<!--1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
+1. Select the connection type.
 
    <table style="table-layout:auto">
     <col> 
@@ -104,16 +146,16 @@ Så här skapar du en anslutning för dina [!DNL Anaplan]-moduler:
     <tbody> 
      <tr> 
       <td role="rowheader">[!DNL Anaplan] [!UICONTROL Basic]</td> 
-      <td> <p>En [!DNL Anaplan] [!UICONTROL Basic]-anslutning kräver bara en e-postadress och ett lösenord för att skapa anslutningen. </p> <p>Ange ett namn för anslutningen och ange sedan din e-postadress och lösenordet för ditt [!DNL Anaplan]-konto.</p> </td> 
+      <td> <p>An [!DNL Anaplan] [!UICONTROL Basic] connection requires only an email address and password to create the connection. </p> <p>Enter a name for the connection, then enter your email address and the password of your [!DNL Anaplan] account.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!DNL Anaplan] [!UICONTROL CA Certificate]</td> 
-      <td> <p>En [!DNL Anaplan] [!UICONTROL CA Certificate]-anslutning kräver en [!UICONTROL Certificate Key], [!UICONTROL Encoded Data] och [!UICONTROL Encoded Signed Data]. Du kan generera dessa i ditt [!DNL Anaplan]-konto. Instruktioner finns i dokumentationen för [!DNL Anaplan].</p> <p>Ange ett namn för anslutningen och ange sedan [!UICONTROL Certificate Key], [!UICONTROL Encoded Data] och [!UICONTROL Encoded Signed Data] som du skapade i ditt [!DNL Anaplan]-konto.</p> </td> 
+      <td> <p>An [!DNL Anaplan] [!UICONTROL CA Certificate] connection requires a [!UICONTROL Certificate Key], [!UICONTROL Encoded Data], and [!UICONTROL Encoded Signed Data]. You can generate these in your [!DNL Anaplan] account. For instructions, see the [!DNL Anaplan] documentation.</p> <p>Enter a name for the connection, then enter the [!UICONTROL Certificate Key], [!UICONTROL Encoded Data], and [!UICONTROL Encoded Signed Data] that you generated in your [!DNL Anaplan] account.</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
-1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.-->
 
 ## [!DNL Anaplan]-moduler och deras fält
 
@@ -163,6 +205,9 @@ Den här utlösarmodulen startar ett scenario när en post av den valda typen sk
 ### Åtgärder
 
 * [[!UICONTROL Create a list item]](#create-a-list-item)
+* [Ta bort en post](#delete-a-record)
+* [Exportera data](#export-data)
+* [Importera data](#import-data)
 * [[!UICONTROL Make a custom API Call]](#make-a-custom-api-call)
 * [[!UICONTROL Read a record]](#read-a-record)
 * [[!UICONTROL Run an action]](#run-an-action)
@@ -208,8 +253,98 @@ Den här åtgärdsmodulen lägger till ett nytt objekt i en lista i Anaplan.
     </tr>
     <tr>
         <td>[!UICONTROL Subsets]</td>
-        <td>Om listan som du vill lägga till objekt i innehåller anpassade delmängder markerar du de delmängder som du vill lägga till objektet i och väljer sedan <b>[!UICONTROL Yes]</b> för att lägga till det nya objektet i delmängden.</td>
+        <td>Om listan som du vill lägga till objekt i innehåller anpassade delmängder markerar du de delmängder som du vill lägga till objektet i.</td>
     </tr>
+</table>
+
+#### [!UICONTROL Delete a record]
+
+Den här åtgärdsmodulen tar bort en befintlig post.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Anaplan] finns i <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Anaplan] till [!DNL Workfront Fusion]</a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td>Markera eller mappa det ID för Anaplan Workspace som innehåller det objekt du vill ta bort.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model ID]</td> 
+   <td>Ange eller mappa ID:t för den modell som innehåller objektet som du vill ta bort.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Posttyp</td> 
+   <td> <p>Markera den typ av objekt som ska tas bort.</p> 
+    <ul> 
+     <li> <p><b>Åtgärd</b> </p> <p>Markera eller mappa åtgärden som ska tas bort.</p> </li> 
+     <li> <p><b>Listobjekt</b> </p> <p>Markera listan som du vill ta bort ett objekt från och ange eller mappa sedan ID:t eller koden för objektet som du vill ta bort</p>  </li> 
+     <li> <p><b>[!UICONTROL File]</b> </p> <p>Markera eller mappa filen som ska tas bort.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+
+#### [!UICONTROL Export data]
+
+Den här åtgärdsmodulen hämtar data från Anaplan med hjälp av exportdefinitioner.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Anaplan] finns i <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Anaplan] till [!DNL Workfront Fusion]</a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td>Markera eller mappa det ID för Anaplan Workspace som innehåller de data som du vill exportera.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model ID]</td> 
+   <td>Ange eller mappa ID:t för den modell som innehåller de data som du vill exportera.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Exportera definition-ID</td> 
+   <td> <p>Ange eller mappa ID:t för den Anaplan-exportdefinition som du vill använda.</p> 
+   </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Importera data
+
+Den här åtgärdsmodulen importerar data till Anaplan.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Anaplan] finns i <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Anaplan] till [!DNL Workfront Fusion]</a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td>Markera eller mappa ID:t för Anaplan Workspace där du vill importera data.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model ID]</td> 
+   <td>Ange eller mappa ID:t för modellen där du vill importera data.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Exportera definition-ID</td> 
+   <td> <p>Ange eller mappa ID:t för den Anaplan-importdefinition som du vill använda.</p> 
+   </td> 
+  </tr> 
+ </tbody> 
 </table>
 
 #### [!UICONTROL Make a custom API Call]
@@ -250,38 +385,6 @@ Med den här modulen kan du utföra ett anpassat API-anrop till API:t [!DNL Anap
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a record]
-
-Den här åtgärdsmodulen tar bort en befintlig post.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Instruktioner om hur du skapar en anslutning till [!DNL Anaplan] finns i <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Anaplan] till [!DNL Workfront Fusion]</a> i den här artikeln.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
-   <td>Markera eller mappa det ID för Anaplan Workspace som innehåller det objekt du vill ta bort.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Model ID]</td> 
-   <td>Ange eller mappa ID:t för den modell som innehåller objektet som du vill ta bort.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Ta bort</td> 
-   <td> <p>Markera den typ av objekt som ska tas bort.</p> 
-    <ul> 
-     <li> <p><b>Åtgärd</b> </p> <p>Markera eller mappa åtgärden som ska tas bort.</p> </li> 
-     <li> <p><b>Listobjekt</b> </p> <p>Markera listan som du vill ta bort ett objekt från och ange eller mappa sedan ID:t eller koden för objektet som du vill ta bort</p>  </li> 
-     <li> <p><b>[!UICONTROL File]</b> </p> <p>Markera eller mappa filen som ska tas bort.</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Read a record]
 
 Den här åtgärdsmodulen läser en enda post.
@@ -303,6 +406,7 @@ Den här åtgärdsmodulen läser en enda post.
      <li> <p><b>Modellversion</b> </p> <p>Markera eller mappa ID:t för den modell som du vill läsa.</p> </li> 
      <li> <p><b>Användare</b> </p> <p>Ange om du vill returnera data om ägaren till kontot som används eller om en annan användare. Om du väljer en annan användare markerar du namnet på användaren.</p> </li> 
      <li> <p><b>Workspace</b> </p> <p>Markera eller mappa ID:t för den Workspace som du vill läsa.</p> </li> 
+     <li> <p><b>Visa</b> </p> <p>Markera eller mappa ID:t för den modell som innehåller vyn som du vill läsa.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -410,9 +514,9 @@ Den här åtgärdsmodulen uppdaterar en enskild post i [!UICONTROL Anaplan].
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL Upload file for action]
 
-Den här åtgärdsmodulen överför en fil till Anaplan. Filen måste ha överförts till Anaplan. Du kan använda den här modulen för att överföra den till ytterligare platser i Anaplan.
+Den här åtgärdsmodulen överför en befintlig fil i Anaplan till ytterligare platser i Anaplan.
 <table style="table-layout:auto">
 <col>
 <col>

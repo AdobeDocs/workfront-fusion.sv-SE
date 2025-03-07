@@ -4,7 +4,7 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 975c67b557e4576ee1f81df6db3049b0739d919e
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 0%
@@ -132,10 +132,11 @@ Du kan skapa en anslutning till ditt [!DNL Marketo]-konto direkt inifrån en [!D
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Ange din Marketo Client-hemlighet. Instruktioner om hur du hittar dessa finns i [Autentisering](https://developers.marketo.com/rest-api/authentication/) i [!DNL Marketo]-dokumentationen.</td>
+        <td>Ange din Marketo-klienthemlighet. Instruktioner om hur du hittar dessa finns i [Autentisering](https://developers.marketo.com/rest-api/authentication/) i [!DNL Marketo]-dokumentationen.</td>
       </tr>
      </tbody>
     </table>
+
 1. Klicka på **[!UICONTROL Continue]** för att skapa anslutningen och gå tillbaka till modulen.
 
 ## [!DNL Marketo] moduler och deras fält
