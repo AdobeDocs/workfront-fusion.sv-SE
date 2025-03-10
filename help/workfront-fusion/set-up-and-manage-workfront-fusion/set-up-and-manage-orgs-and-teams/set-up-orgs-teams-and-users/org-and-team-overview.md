@@ -4,9 +4,9 @@ description: Adobe Workfront Fusions funktioner för organisation och team gör 
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: d76f199b766d6f18e371f2ce1107a96529afbfd1
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ Med funktionerna för organisation och team i [!DNL Adobe Workfront Fusion] kan 
 En organisation är Adobe Workfront Fusions största bolag. Din Fusion-organisation kan till exempel representera Fusion-kontot för hela företaget.
 
 Team är mindre grupper inom organisationen och delar Fusion-resurser som scenarier, anslutningar och mallar.
+
+Instruktioner om hur du skapar ett team finns i [Skapa ett team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md).
 
 ## Organisationer
 
