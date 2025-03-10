@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
-source-git-commit: 632128bdcb6f8b8361f5a28e4a5fb527eb274d54
+source-git-commit: 337a6918dc20f2e7523438dea752393a1b3f50ee
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: '3293'
 ht-degree: 0%
 
 ---
@@ -207,8 +207,6 @@ Den här åtgärdsmodulen kopierar en fil till en ny mapp
  </tbody> 
 </table>
 
-<!-- Start audit here-->
-
 #### [!UICONTROL Create a Folder]
 
 Den här åtgärdsmodulen skapar en ny mapp på den angivna enheten.
@@ -255,7 +253,7 @@ Den här åtgärdsmodulen skapar en ny mapp på den angivna enheten.
 
 #### [!UICONTROL Delete a File/Folder]
 
-Den här åtgärdsmodulen tar bort den markerade filen.
+Den här åtgärdsmodulen tar bort den markerade filen eller mappen.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -730,7 +728,7 @@ Denna modul utför ett anpassat API-anrop.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
+   <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
