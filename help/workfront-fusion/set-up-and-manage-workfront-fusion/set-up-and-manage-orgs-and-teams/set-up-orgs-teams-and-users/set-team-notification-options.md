@@ -4,16 +4,18 @@ description: Alternativen för e-postmeddelanden anges på teamnivå.
 author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
-source-git-commit: 410676b7def1e36de12fee9d6df79feba566d741
+source-git-commit: 0689cfee7cf546a6c1f5f72c79a1e7be9df85a8c
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
 # Ange alternativ för teammeddelanden
 
-När du är i Workfront Fusion får du meddelanden via meddelandeområdet i Adobe. Du kan välja vilka meddelanden ett team får. Meddelanden anges på teamnivån.
+I din organisation använder Adobe Unified Shell får du meddelanden via Adobe Notifications.
+
+Om din organisation inte har migrerats till Adobe Unified Shell kan du välja vilka meddelanden ett team får. Meddelanden anges på teamnivån.
 
 ## Åtkomstkrav
 
@@ -68,6 +70,8 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 +++
 
 ## Ange meddelandealternativ
+
+Om din organisation inte är ansluten till Adobe Unified Shell kan du ange meddelandeinställningar direkt i Fusion.
 
 Alternativen för e-postmeddelanden anges på teamnivå.
 
