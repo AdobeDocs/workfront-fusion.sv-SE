@@ -1,23 +1,23 @@
 ---
 title: Modulen Adobe Authenticator
-description: Med Adobe Authenticator-modulen kan du ansluta till alla Adobe-produkter med ett API via en enda anslutning.
+description: Med Adobe Authenticator-modulen kan du ansluta till alla Adobe-produkter med ett API, via en enda anslutning.
 author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7652acb6654f4b1b0edc57d110478b309655a124
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
 
 # Adobe Authenticator moduler
 
-Med Adobe Authenticator-modulen kan du ansluta till alla Adobe API:er via en enda anslutning. Det gör det enklare att ansluta till Adobe-produkter som ännu inte har någon dedikerad Fusion-anslutning.
+Med Adobe Authenticator-modulen kan du ansluta till alla Adobe-API:er via en enda anslutning. Det gör det enklare att ansluta till Adobe-produkter som ännu inte har någon dedikerad Fusion-anslutning.
 
 Fördelen med HTTP-modulerna är att du kan skapa en anslutning, som i en dedikerad app.
 
-En lista över tillgängliga Adobe-API:er finns i [Adobe API:er](https://developer.adobe.com/apis). Du kanske bara kan använda de API:er som du har tilldelats.
+En lista över tillgängliga Adobe API:er finns i [Adobe API:er](https://developer.adobe.com/apis). Du kanske bara kan använda de API:er som du har tilldelats.
 
 ## Åtkomstkrav
 
@@ -67,7 +67,7 @@ En lista över tillgängliga Adobe-API:er finns i [Adobe API:er](https://develop
      eller
    * Lägg till API i ett befintligt projekt.
 
-  Mer information om hur du skapar eller lägger till ett API i ett projekt på Adobe Developer Console finns i [Skapa ett projekt](https://developer.adobe.com/dep/guides/dev-console/create-project/) i dokumentationen för Adobe.
+  Mer information om hur du skapar eller lägger till ett API i ett projekt på Adobe Developer Console finns i [Skapa ett projekt](https://developer.adobe.com/dep/guides/dev-console/create-project/) i Adobe-dokumentationen.
 
 ## Adobe Authenticator API-information
 
@@ -195,7 +195,7 @@ Så här skapar du en anslutning:
 
 ### Göra ett anpassat API-anrop
 
-Med den här åtgärdsmodulen kan du anropa valfritt Adobe-API. Det stöder stora filer i stället för brödtext.
+Med den här åtgärdsmodulen kan du anropa alla Adobe API:er. Det stöder stora filer i stället för brödtext.
 
 Denna modul gjordes tillgänglig den 14 november 2024. Alla Adobe Authenticator > Gör ett anpassat API-anrop som har konfigurerats före detta datum hanterar inte stora filer och betraktas nu som en anpassad API-anropsmodul (äldre).
 
@@ -246,24 +246,36 @@ Denna modul gjordes tillgänglig den 14 november 2024. Alla Adobe Authenticator 
       <td role="rowheader">[!UICONTROL Body Type]</td>
    <td> Välj innehållstyp för denna API-begäran:
    <ul>
-   <li>application/x-www-form-urlencoded</li>
    <li>Raw</li>
+   <li>application/x-www-form-urlencoded</li>
    <li>multipart/form-data</li>
    </ul>
       </td>
+      </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Request content]  </td>
+      <td>
+        <p>Ange innehållet i begäran. Det här alternativet är tillgängligt om du har valt innehållstypen <code>Raw</code></p>
+      </td>
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Fields]  </td>
       <td>
-        <p>För varje fil som du vill lägga till i APU-begäran klickar du på <b>Lägg till objekt</b> och anger texten i filen (för rådata), eller anger nyckeln <code>uploadedFile</code> och mappar filens data.</p>
+        <p>För varje fil som du vill lägga till i API-begäran klickar du på <b>Lägg till objekt</b> och anger texten i filen (för rådata), eller anger nyckeln <code>uploadedFile</code> och mappar filens data. Det här alternativet är tillgängligt om du har valt brödtypen <code>application</code> eller <code>multipart</code> .</p>
       </td>
     </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Output Type]  </td>
+      <td>
+        <p>Välj den typ av data som du vill att modulen ska visa. Om du inte väljer någon typ väljs en typ automatiskt i modulen.</p>
+      </td>
     </tr>
   </tbody>
 </table>
 
 ### Göra ett anpassat API-anrop (äldre)
 
-Med den här åtgärdsmodulen kan du anropa valfritt Adobe-API.
+Med den här åtgärdsmodulen kan du anropa alla Adobe API:er.
 
 <table>
   <col/>
