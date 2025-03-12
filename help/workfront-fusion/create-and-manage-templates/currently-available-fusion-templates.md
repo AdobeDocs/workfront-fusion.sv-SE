@@ -4,9 +4,9 @@ description: Följande offentliga mallar är för närvarande tillgängliga i Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 47f1e2b6a812f4ac44e2daf08cb1937f1ef02981
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,15 @@ Mallarna automatiserar Workfront processer och arbetsflöden.
 
 ### [!BADGE Nytt!]{type=Informative}
 
+<!--New March 12, 2025-->
+
+Ta bort arkiverade kort från en angiven kolumn på en särskild anslagstavla vid behov.
+
+### Workfront Boards > Create a standard Checklist based on Boards Column
+
 Den här Fusion-mallen skapar en standardchecklista för alla kort som anger en viss kolumn på en viss anslagstavla i tid.
 
-### [!BADGE Nytt!]{type=Informative}
-
-<!--new Aug 1. 2024-->
+### Workfront > Workfront Boards - Create a board of a custom configuration
 
 Detta scenario utlöses av att ett nytt projekt skapas. I det här scenariot kan du skapa en anslagstavla som heter efter projektet, byta namn på eller skapa kolumner utifrån dina behov, skapa anpassade taggar och koppla ett intag-kolumnfilter till det ursprungliga projektet.  Tusentals ytterligare ändringar kan göras, men från och med här kan du se möjligheterna att skapa en startpunkt för er organisations standardiseringsarbete.
 
@@ -97,6 +101,12 @@ Granska dina projektmallar en gång i månaden med hjälp av din egen policy med
 
 Mallarna automatiserar arbetsflöden som kombinerar Workfront med Workfront Proof.
 
+### [!BADGE Nytt!]{type=Informative}
+
+<!--New March 12, 2025-->
+
+Den här mallen söker efter projekt som uppdaterar till statusvärden som motsvarar avvisade, slutförda eller döda. Sedan ändras användare med väntande korrekturrundor till skrivskyddade. Slutligen låses korrektur och en uppdatering skickas till dokumenten.
+
 ### Workfront Proof > Workfront - Project Update on Proof Decision
 
 När ett beslut fattas om ett korrektur som läggs till direkt i ett projekt, samlar denna automatisering in information om bevisbeslutet, t.ex. vem som har fattat beslutet, och speglar sedan denna utveckling i motsvarande Workfront-projekt som en uppdatering.
@@ -129,13 +139,13 @@ Mallarna stöder integrering mellan Workfront och Marketo.
 >
 > Du måste ha en licens för Workfront Fusion for Work Automation och Integration för att kunna använda mallarna i det här avsnittet.
 
-### Godkänn e-postutkastet från Marketo Engage med Workfront arbetsflöden för godkännande
+### Godkänn Marketo Engage e-postutkast med Workfront arbetsflöden för godkännande
 
 Detta ingår i integreringen mellan Workfront och Marketo Engage för granskning och godkännande. Den här mallen identifierar om ett e-postkorrektur i Workfront har godkänts och uppdaterar sedan motsvarande e-postmeddelande i Marketo Engage som godkänt.
 
-### Ta emot förfrågningar från marknadsföringskampanjer i Workfront och automatisera framtagningen av kampanjer i Marketo Engage
+### Använd förfrågningar från marknadsföringskampanjer i Workfront och automatisera framtagningen av kampanjer i Marketo Engage
 
-Detta scenario är ett programmatiskt sätt att skapa e-post- och webbinarikampanjer i Marketo Engage utifrån en begäran som gjorts i Workfront. Genom att använda automatisering för att skapa, organisera och konfigurera kampanjer kan teamen förbättra effektiviteten.
+Det här scenariot är ett programmatiskt sätt att skapa e-post- och webbinarikampanjer i Marketo Engage utifrån en begäran som gjorts i Workfront. Genom att använda automatisering för att skapa, organisera och konfigurera kampanjer kan teamen förbättra effektiviteten.
 
 ### Granska ett e-postkorrektur av ditt e-postutkast från Marketo Engage i Workfront
 
