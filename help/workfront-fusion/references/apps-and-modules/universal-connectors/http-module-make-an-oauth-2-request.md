@@ -4,14 +4,14 @@ description: För att kunna göra en  [!DNL Adobe Workfront Fusion] HTTP(S)-beg�
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2256'
+source-wordcount: '1981'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL HTTP] > [!UICONTROL Gör en OAuth 2.0-begäran]-modul
+# [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]-modulen
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
    <p>eller</p>
    <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
@@ -80,12 +80,12 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 ## Skapa en anslutning för en [!DNL OAuth]-begäran
 
 * [Allmänna instruktioner för att skapa en anslutning i HTTP > Gör en OAuth 2.0-begärandemodul](#general-instructions-for-creating-a-connection-in-the-http--make-an-oauth-20-request-module)
-* [Instruktioner för hur du skapar en anslutning till Google i http > [!UICONTROL Make] an OAuth 2.0 request module](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
+* [Instruktioner för hur du skapar en anslutning till Google i http > [!UICONTROL Make] en OAuth 2.0-begärandemodul](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
 * [Instruktioner för att ansluta till Microsoft Graph API via HTTP > Gör en OAuth 2.0-begärandemodul](#instructions-for-connecting-to-microsoft-graph-api-via-the-http--make-an-oauth-20-request-module)
 
-### Allmänna instruktioner för att skapa en anslutning i modulen [!UICONTROL HTTP] > [!UICONTROL Gör en OAuth 2.0-begäran]
+### Allmänna instruktioner för att skapa en anslutning i modulen [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]
 
-1. Skapa en OAuth-klient i tjänsten [!DNL target] som du vill att [!DNL Adobe Workfront Fusion] ska kommunicera med. Det här alternativet finns troligen i avsnittet [!UICONTROL Utvecklare] i den angivna tjänsten.
+1. Skapa en OAuth-klient i tjänsten [!DNL target] som du vill att [!DNL Adobe Workfront Fusion] ska kommunicera med. Det här alternativet finns troligen i avsnittet [!UICONTROL Developer] i den angivna tjänsten.
 
    1. När du skapar en klient anger du rätt URL i fältet `[!UICONTROL Redirect URL]` eller `[!UICONTROL Callback URL]`:
 
@@ -103,7 +103,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 1. (Villkorligt) Om måltjänsten använder omfattningar (åtkomsträttigheter) kontrollerar du hur tjänsten skiljer enskilda omfattningar åt och ser till att du anger avgränsaren i de avancerade inställningarna i enlighet med detta. Om avgränsaren inte är rätt inställd kan [!DNL Workfront Fusion] inte skapa anslutningen och du får ett ogiltigt omfångsfel.
 1. När du har slutfört stegen ovan kan du börja skapa OAuth-anslutningen i [!DNL Workfront Fusion]. Lägg till HTTP > Gör en OAuth 2-begärandemodul i ditt scenario.
-1. Klicka på **[!UICONTROL Lägg till]** i anslutningsfältet i modulen.
+1. Klicka på **[!UICONTROL Add]** i anslutningsfältet i modulen.
 
 1. Fyll i följande fält för att skapa en anslutning:
 
@@ -112,7 +112,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-anslutningsnamn] </td> 
+      <td role="rowheader">[!UICONTROL Connection name] </td> 
       <td> <p>Ange namnet på anslutningen.</p> </td> 
      </tr> 
       <tr> 
@@ -120,15 +120,15 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
       <td> <p>Ange om du använder en produktionsmiljö eller icke-produktionsmiljö.</p> </td> 
      </tr> 
       <tr> 
-      <td role="rowheader">[!UICONTROL-typ] </td> 
+      <td role="rowheader">[!UICONTROL Type] </td> 
       <td> <p>Ange om du använder ett tjänstkonto eller ett personligt konto.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL-flödestyp]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Flow type]</p> </td> 
       <td> <p>Välj flödet för att hämta tokens.</p> 
        <ul> 
-        <li><strong>[!UICONTROL-auktoriseringskod]</strong>: Ange <code>[!UICONTROL Authorize URI]</code> och <code>[!UICONTROL Token URI]</code> från tjänstens API-dokumentation.</li> 
-        <li><strong>[!UICONTROL implicit]</strong>: Ange <code>[!UICONTROL Authorize URI]</code> från tjänstens API-dokumentation.</li> 
+        <li><strong>[!UICONTROL Authorization Code]</strong>: Ange <code>[!UICONTROL Authorize URI]</code> och <code>[!UICONTROL Token URI]</code> från tjänstens API-dokumentation.</li> 
+        <li><strong>[!UICONTROL Implicit]</strong>: Ange <code>[!UICONTROL Authorize URI]</code> från tjänstens API-dokumentation.</li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -140,15 +140,15 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
       <td> <p>Välj vilka scope som ska avgränsas av ovan. Den här informationen finns i den angivna tjänstens API-dokumentation (developer).</p> <p>Varning! Om avgränsaren inte är rätt inställd kan [!DNL Workfront Fusion] inte skapa anslutningen och du får ett ogiltigt omfångsfel.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-klient-ID] </td> 
+      <td role="rowheader">[!UICONTROL Client ID] </td> 
       <td> <p>Ange klient-ID. Du fick klient-ID när du skapade en OAuth-klient i den tjänst som du vill ansluta.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-klienthemlighet]</td> 
+      <td role="rowheader">[!UICONTROL Client Secret]</td> 
       <td> <p> Ange klienthemlighet. Du fick klienthemligheten när du skapade en OAuth-klient i tjänsten som du vill ansluta.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL-auktoriseringsparametrar]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Authorize parameters]</p> </td> 
       <td> <p>Lägg till de parametrar som du vill inkludera i auktoriseringsanropet. Följande standardparametrar inkluderas alltid automatiskt och behöver inte läggas till.</p> <p>Standardparametrar:</p> 
        <ul> 
         <li> <p><strong>[!UICONTROL response_type]</strong> </p> <p> <code>code </code>för [!UICONTROL Authorization Code flow] och <code>token </code>för [!UICONTROL Implicit flow]</p> </li> 
@@ -171,7 +171,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
        </ul> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Access-tokenparametrar]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Access token parameters]</p> </td> 
       <td> <p>Lägg till de parametrar som du vill ta med i tokenanropet. Följande standardparametrar inkluderas alltid automatiskt och behöver inte läggas till.</p> <p>Standardparametrar:</p> 
        <ul> 
         <li><strong>[!UICONTROL grant_type]</strong>: <code>authorization_code</code></li> 
@@ -196,25 +196,25 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
        </ul> <p>Obs!  <p>OAuth 2.0-standarden stöder minst två metoder för klientautentisering under det här steget (<code>[!UICONTROL client_secret_basic]</code> och <code>[!UICONTROL client_secret_post]</code>). [!DNL Workfront Fusion] skickar automatiskt angivet klient-ID och hemlighet via metoden <code>[!UICONTROL client_secret_post]</code>. Därför inkluderas dessa parametrar automatiskt som en del av tokenbegärandetexten. </p> <p>Mer information om OAuth 2.0-autentisering finns i <a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 Authorization Framework</a>.</p> </p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Uppdatera tokenparametrar]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Refresh token parameters]</p> </td> 
       <td> <p>Lägg till de parametrar som du vill ta med i tokenanropet. Följande standardparametrar inkluderas alltid automatiskt och behöver inte läggas till.</p> <p>Standardparametrar:</p> 
        <ul> 
         <li> <p><strong>[!UICONTROL grant_type]</strong>: <code>refresh_token</code></p> </li> 
         <li> <p><strong>[!UICONTROL refresh_token]</strong>: Den senaste uppdateringstoken som erhölls av tjänsten som du ansluter till</p> </li> 
         <li> <p><strong>[!UICONTROL client_id]</strong>: Det klient-ID som du fick när du skapade kontot inkluderas automatiskt i begärandetexten</p> </li> 
-        <li> <p><strong>[!UICONTROL client_secrets]</strong>: Klienthemligheten som du fick när du skapade kontot inkluderas automatiskt i begärandetexten</p> </li> 
+        <li> <p><strong>[!UICONTROL client_secret]</strong>: Den klienthemlighet du fick när du skapade kontot inkluderas automatiskt i begärandetexten</p> </li> 
        </ul> <p>Obs!  <p>OAuth 2.0-standarden stöder minst två metoder för klientautentisering under det här steget (<code>[!UICONTROL client_secret_basic]</code> och <code>[!UICONTROL client_secret_post]</code>). [!DNL Workfront Fusion] skickar automatiskt angivet klient-ID och hemlighet via metoden <code>[!UICONTROL client_secret_post]</code>. Därför inkluderas dessa parametrar automatiskt som en del av tokenbegärandetexten. </p> <p>Mer information om OAuth 2.0-autentisering finns i <a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 Authorization Framework</a>.</p> </p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Custom Headers]</p> </td> 
-      <td> <p>Ange eventuella ytterligare nycklar och värden som ska inkluderas i huvudet för [!UICONTROL Token] och R[!UICONTROL Update Token]-stegen.</p> <p>Obs!  <p>OAuth 2.0-standarden stöder minst två metoder för klientautentisering under det här steget (<code>[!UICONTROL client_secret_basic]</code> och <code>[!UICONTROL client_secret_post]</code>). [!DNL Workfront Fusion] stöder inte automatiskt metoden <code>[!UICONTROL client_secret_basic]</code>. Om tjänsten som du ansluter till förväntar sig att klient-ID och klienthemlighet ska kombineras till en enda sträng och sedan base64 kodas i auktoriseringshuvudet, ska du lägga till det huvud- och nyckelvärdet här.</p> <p> Mer information om OAuth 2.0-autentisering finns i <a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 Authorization Framework</a>.</p> </p> </td> 
+      <td> <p>Ange eventuella ytterligare nycklar och värden som ska inkluderas i huvudet i [!UICONTROL Token]- och R[!UICONTROL efresh Token]-stegen.</p> <p>Obs!  <p>OAuth 2.0-standarden stöder minst två metoder för klientautentisering under det här steget (<code>[!UICONTROL client_secret_basic]</code> och <code>[!UICONTROL client_secret_post]</code>). [!DNL Workfront Fusion] stöder inte automatiskt metoden <code>[!UICONTROL client_secret_basic]</code>. Om tjänsten som du ansluter till förväntar sig att klient-ID och klienthemlighet ska kombineras till en enda sträng och sedan base64 kodas i auktoriseringshuvudet, ska du lägga till det huvud- och nyckelvärdet här.</p> <p> Mer information om OAuth 2.0-autentisering finns i <a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 Authorization Framework</a>.</p> </p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL-tokenplacering]</p> </td> 
-      <td> <p>Välj om du vill skicka token i [!UICONTROL-huvudet], [!UICONTROL-frågesträngen] eller i båda vid anslutning till den angivna URL:en.</p> <p>Token skickas oftast i begärandehuvudet.</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Token placement]</p> </td> 
+      <td> <p>Välj om du vill skicka token i [!UICONTROL header], [!UICONTROL query string] eller i båda vid anslutning till angiven URL.</p> <p>Token skickas oftast i begärandehuvudet.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Header-tokennamn] </td> 
+      <td role="rowheader">[!UICONTROL Header token name] </td> 
       <td> <p>Ange namnet på auktoriseringstoken i huvudet. Standard: <code>[!UICONTROL Bearer]</code>.</p> </td> 
      </tr> 
      <tr> 
@@ -224,16 +224,16 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
     </tbody> 
    </table>
 
-1. Klicka på **[!UICONTROL Fortsätt]** för att spara anslutningen och återgå till modulen.
+1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
 1. Fortsätt till [Konfigurera en OAuth 2.0-begärandemodul](#configure-the-make-an-oauth-20-request-module).
 
-### Instruktioner för hur du skapar en anslutning till [!DNL Google] i [!UICONTROL HTTP] > [!UICONTROL Skapa en OAuth 2.0-begärandemodul]
+### Instruktioner för att skapa en anslutning till [!DNL Google] i [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request module]
 
-I följande exempel visas hur du använder [!UICONTROL HTTP] > [!UICONTROL Skapa en OAuth 2.0]-begärandemodul för att ansluta till [!DNL Google].
+I följande exempel visas hur du använder [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0]-begärandemodulen för att ansluta till [!DNL Google].
 
 1. Kontrollera att du har skapat ett projekt, konfigurerat OAuth-inställningar och genererat dina autentiseringsuppgifter enligt beskrivningen i artikeln[Anslut [!DNL Adobe Workfront Fusion] till [!DNL Google Services] med en anpassad OAuth-klient](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
-1. Öppna [!UICONTROL HTTP] > [!UICONTROL Gör en OAuth 2.0-begäran]-modul.
-1. Klicka på **[!UICONTROL Lägg till]** bredvid rutan Anslutning i en modul.
+1. Öppna modulen [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request].
+1. Klicka på **[!UICONTROL Add]** bredvid rutan Anslutning i någon av modulerna.
 1. Ange följande värden:
 
    <table style="table-layout:auto">  
@@ -241,7 +241,7 @@ I följande exempel visas hur du använder [!UICONTROL HTTP] > [!UICONTROL Skapa
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-anslutningsnamn] </td> 
+      <td role="rowheader">[!UICONTROL Connection name] </td> 
       <td> <p>Ange ett namn för anslutningen.</p> </td> 
      </tr> 
       <tr> 
@@ -249,19 +249,19 @@ I följande exempel visas hur du använder [!UICONTROL HTTP] > [!UICONTROL Skapa
       <td> <p>Ange om du använder en produktionsmiljö eller icke-produktionsmiljö.</p> </td> 
      </tr> 
       <tr> 
-      <td role="rowheader">[!UICONTROL-typ] </td> 
+      <td role="rowheader">[!UICONTROL Type] </td> 
       <td> <p>Ange om du använder ett tjänstkonto eller ett personligt konto.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL-flödestyp]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Flow type]</p> </td> 
       <td> <p>[!UICONTROL Authorization Code]</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-auktoriserings-URI]</td> 
+      <td role="rowheader">[!UICONTROL Authorize URI]</td> 
       <td><code>https://accounts.google.com/o/oauth2/v2/auth</code> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-token-URI]</td> 
+      <td role="rowheader">[!UICONTROL Token URI]</td> 
       <td><code>https://www.googleapis.com/oauth2/v4/token</code> </td> 
      </tr> 
      <tr> 
@@ -273,28 +273,28 @@ I följande exempel visas hur du använder [!UICONTROL HTTP] > [!UICONTROL Skapa
       <td> <p>[!UICONTROL SPACE]</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-klient-ID] </td> 
+      <td role="rowheader">[!UICONTROL Client ID] </td> 
       <td> <p>Ange ditt klient-ID för [!DNL Google]. </p> <p>Information om hur du skapar ett klient-ID finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create-oauth-credentials" class="MCXref xref">Skapa OAuth-autentiseringsuppgifter</a> i artikeln [!DNL Connect Adobe Workfront Fusion] till [!DNL Google Services] med en anpassad OAuth-klient</a>.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-klienthemlighet]</td> 
+      <td role="rowheader">[!UICONTROL Client Secret]</td> 
       <td> <p>Ange din [!DNL Google]-klienthemlighet. </p> <p>Information om hur du skapar en klienthemlighet finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create-oauth-credentials" class="MCXref xref">Skapa OAuth-autentiseringsuppgifter</a> i artikeln [!DNL Connect Adobe Workfront Fusion] till [!DNL Google] Services med en anpassad OAuth-klient</a>.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL-auktoriseringsparametrar]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Authorize parameters]</p> </td> 
       <td> <p>Lägg till <code>[!UICONTROL access_type]</code> - <code>[!UICONTROL offline] </code> nyckelvärdepar.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/google-authentication-http.png"> </p> <p>Obs! Om du får autentiseringsproblem, till exempel när du uppdaterar token, kan du försöka med att lägga till nyckelvärdepar för <code>[!UICONTROL prompt] </code>- <code>[!UICONTROL consent] </code>.</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
-1. Klicka på **[!UICONTROL Fortsätt]** om du vill spara anslutningsinställningarna.
+1. Klicka på **[!UICONTROL Continue]** om du vill spara anslutningsinställningarna.
 1. Fortsätt till [Konfigurera en OAuth 2.0-begärandemodul](#configure-the-make-an-oauth-20-request-module).
 
 ## Konfigurera modulen Gör en OAuth 2.0-begäran
 
 När du har upprättat en OAuth 2.0-anslutning fortsätter du att konfigurera modulen efter behov. Alla auktoriseringstoken inkluderas automatiskt i denna begäran och i alla andra begäranden som använder samma anslutning.
 
-När du konfigurerar modulen [!UICONTROL HTTP] > [!UICONTROL Gör en OAuth 2.0-begäran], visar [!DNL Workfront Fusion] fälten som listas nedan. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar modulen [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] visar [!DNL Workfront Fusion] fälten som listas nedan. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan i [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -305,19 +305,19 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
  <col> 
  <tbody> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Mer information om hur du konfigurerar en anslutning finns i <a href="#create-a-connection-for-an-oauth-request" class="MCXref xref">Skapa en anslutning för en OAuth-begäran</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Utvärdera alla lägen som fel (utom för 2xx och 3xx)] </td> 
+   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx)] </td> 
    <td> <p>Använd det här alternativet om du vill konfigurera felhantering.</p> <p>Mer information finns i <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Felhantering</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-URL] </td> 
+   <td role="rowheader">[!UICONTROL URL] </td> 
    <td> <p>Ange den URL som du vill skicka en begäran till, t.ex. en API-slutpunkt, webbplats osv.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-metod]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
    <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metoder för HTTP-begäran</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -325,15 +325,15 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
    <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt. Exempel: <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-frågesträng]</td> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
    <td> <p> Ange önskade nyckelvärdepar för frågan.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Body type]</p> </td> 
    <td> <p>HTTP-brödtexten är de databyte som skickas i ett HTTP-transaktionsmeddelande omedelbart efter rubrikerna om något ska användas.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Raw-brödtexttypen är vanligtvis lämplig för de flesta HTTP-innehållsbegäranden, även i situationer där utvecklardokumentationen inte anger vilka data som ska skickas.</p> <p>Ange en form av tolkning av data i fältet [!UICONTROL-innehållstyp].</p> <p>Trots att innehållstypen är vald, anges data i vilket format som helst som anges eller krävs av utvecklardokumentationen.</p> </li> 
-     <li> <p><strong>[!UICONTROL-program/x-www-form-urlencoded]</strong> </p> <p>Den här brödtypen är till POST-data med <code>[!UICONTROL application/x-www-form-urlencoded]</code>.</p> <p>För <code>[!UICONTROL application/x-www-form-urlencoded]</code> är brödtexten i HTTP-meddelandet som skickas till servern i princip en frågesträng. Nycklarna och värdena kodas i nyckelvärdepar avgränsade med <code>&amp;</code> och med en <code>=</code> mellan nyckeln och värdet. </p> <p>För binära data <code>use [!UICONTROL multipart/form-data]</code> i stället.</p> 
+     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Raw-brödtexttypen är vanligtvis lämplig för de flesta HTTP-innehållsbegäranden, även i situationer där utvecklardokumentationen inte anger vilka data som ska skickas.</p> <p>Ange en form av tolkning av data i fältet [!UICONTROL Content type].</p> <p>Trots att innehållstypen är vald, anges data i vilket format som helst som anges eller krävs av utvecklardokumentationen.</p> </li> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Den här brödtypen är till POST-data med <code>[!UICONTROL application/x-www-form-urlencoded]</code>.</p> <p>För <code>[!UICONTROL application/x-www-form-urlencoded]</code> är brödtexten i HTTP-meddelandet som skickas till servern i princip en frågesträng. Nycklarna och värdena kodas i nyckelvärdepar avgränsade med <code>&amp;</code> och med en <code>=</code> mellan nyckeln och värdet. </p> <p>För binära data <code>use [!UICONTROL multipart/form-data]</code> i stället.</p> 
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>Exempel: </b></span></span> 
        <p>Exempel på det resulterande formatet för HTTP-begäran:</p> 
@@ -341,21 +341,21 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
       </div> </li> 
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] är en HTTP-multipart-begäran som används för att skicka filer och data. Det används ofta för att överföra filer till servern.</p> <p>Lägg till fält som ska skickas i begäran. Varje fält måste innehålla ett nyckelvärdepar.</p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL-text]</strong> </p> <p>Ange nyckeln och värdet som ska skickas i begärandetexten.</p> </li> 
-       <li> <p><strong>[!UICONTROL-fil]</strong> </p> <p>Ange nyckeln och ange den källfil som du vill skicka i begärandetexten.</p> <p>Mappa filen som du vill överföra från den tidigare modulen (till exempel [!UICONTROL HTTP] &gt; [!UICONTROL Hämta en fil]) eller ange filnamnet och fildata manuellt.</p> </li> 
+       <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Ange nyckeln och värdet som ska skickas i begärandetexten.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Ange nyckeln och ange den källfil som du vill skicka i begärandetexten.</p> <p>Mappa filen som du vill överföra från föregående modul (till exempel [!UICONTROL HTTP] &gt; [!UICONTROL Get a File]) eller ange filnamnet och fildata manuellt.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Tolka svar]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Parse response]</p> </td> 
    <td> <p>Aktivera det här alternativet om du vill analysera svar automatiskt och konvertera JSON- och XML-svar så att du inte behöver använda [!UICONTROL JSON] &gt; [!UICONTROL Parse JSON] eller [!UICONTROL XML] &gt; [!UICONTROL Parse XML]-moduler.</p> <p>Innan du kan använda tolkat JSON- eller XML-innehåll kör du modulen en gång manuellt, så att modulen kan identifiera svarsinnehållet och mappa det i efterföljande moduler.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-timeout] </td> 
+   <td role="rowheader">[!UICONTROL Timeout] </td> 
    <td> <p>Ange timeout för begäran i sekunder (1-300). Standardvärdet är 40 sekunder.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Dela cookies med andra HTTP-moduler]</td> 
+   <td role="rowheader">[!UICONTROL Share cookies with other HTTP modules]</td> 
    <td> <p> Aktivera det här alternativet om du vill dela cookies från servern med alla HTTP-moduler i ditt scenario.</p> </td> 
   </tr> 
   <tr> 
@@ -363,27 +363,27 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
    <td> <p>Om du vill använda ett självsignerat certifikat eller en privat nyckel för TLS klickar du på <b>Extrahera</b> och anger filen och lösenordet för certifikatet eller den privata nyckeln.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Avvisa anslutningar som använder overifierade (självsignerade) certifikat] </td> 
+   <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 
    <td> <p>Aktivera det här alternativet om du vill avvisa anslutningar som använder overifierade TLS-certifikat.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Följ omdirigering]</td> 
+   <td role="rowheader">[!UICONTROL Follow redirect]</td> 
    <td> <p> Aktivera det här alternativet om du vill följa URL-omdirigeringarna med 3xx-svar.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Följ alla omdirigeringar] </td> 
+   <td role="rowheader">[!UICONTROL Follow all redirects] </td> 
    <td> <p>Aktivera det här alternativet om du vill följa URL-omdirigeringarna med alla svarskoder.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Inaktivera serialisering av flera frågesträngnycklar som matriser]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Disable serialization of multiple same query string keys as arrays]</p> </td> 
    <td> <p>Som standard hanterar [!DNL Workfront Fusion] flera värden för samma URL-frågesträngsparameternyckel som matriser. <code>www.test.com?foo=bar&amp;foo=baz</code> konverteras till exempel till <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>. Aktivera det här alternativet om du vill inaktivera funktionen. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-begäran komprimerat innehåll]</td> 
+   <td role="rowheader">[!UICONTROL Request compressed content]</td> 
    <td> <p> Aktivera det här alternativet om du vill begära en komprimerad version av webbplatsen.</p> <p>Detta lägger till en <code>[!UICONTROL Accept-Encoding]</code>-rubrik för att begära komprimerat innehåll.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Använd ömsesidig TLS]</td> 
+   <td role="rowheader">[!UICONTROL Use Mutual TLS]</td> 
    <td> <p>Aktivera det här alternativet om du vill använda ömsesidig TLS i HTTP-begäran.</p> <p>Mer information om ömsesidigt TLS finns i <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Använd ömsesidigt TLS i HTTP-moduler i [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
  </tbody> 

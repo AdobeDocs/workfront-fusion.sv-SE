@@ -4,7 +4,7 @@ description: Med  [!DNL Adobe Workfront Fusion Google Forms] -modulerna kan du �
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: ca8cee58b6586dbcd1a7ff7bffb0131b59dbb897
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
    <p>eller</p>
    <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 

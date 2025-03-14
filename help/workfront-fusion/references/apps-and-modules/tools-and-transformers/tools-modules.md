@@ -4,7 +4,7 @@ description: Avsnittet  [!DNL Adobe Workfront Fusion Tools] innehåller flera an
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '2000'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Workfront Fusion-licens krävs inte.</p>
+   <p>Workfront Fusion-licens krävs inte</p>
    </td> 
   </tr> 
   <tr> 

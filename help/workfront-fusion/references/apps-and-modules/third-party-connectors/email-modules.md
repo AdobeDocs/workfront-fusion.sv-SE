@@ -4,7 +4,7 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du ansluta ditt e-
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: add63edf94cc430113bf2cfd0c389cca04aa92f8
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '2023'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
    <p>eller</p>
    <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
@@ -491,7 +491,7 @@ Skickar ett nytt e-postmeddelande.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Content] </td> 
-   <td> <p>Ange eller mappa e-postinnehållet i HTML-format med hjälp av HTML-taggar eller i oformaterad text, beroende på vad du har valt i fältet [!UICONTROL Content Type].</p> </td> 
+   <td> <p>Ange eller mappa e-postinnehållet i HTML-format med hjälp av HTML-taggar eller i oformaterad text, beroende på vad du väljer i fältet [!UICONTROL Content Type].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 

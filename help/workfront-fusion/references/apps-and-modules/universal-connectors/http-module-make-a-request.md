@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion HTTP > Make a request module är en universe
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Workfront Fusion-licens krävs inte.</p>
+   <p>Workfront Fusion-licens krävs inte</p>
    </td> 
   </tr> 
   <tr> 

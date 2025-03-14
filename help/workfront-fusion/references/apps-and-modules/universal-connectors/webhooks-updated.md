@@ -4,7 +4,7 @@ description: En webkrok är ett HTTP-anrop som aktiveras av en händelse. Du kan
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '1331'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
    <p>eller</p>
    <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
@@ -280,7 +280,7 @@ Modulens konfiguration innehåller två fält: [!UICONTROL Status] och [!UICONTR
 
 Tidsgränsen för att skicka ett svar är 40 sekunder. Om svaret inte är tillgängligt inom den perioden returnerar Workfront Fusion statusen&quot;200 Accepted&quot;.
 
-### Exempel på svar från HTML
+### Exempel på HTML-svar
 
 >[!INFO]
 >
@@ -298,7 +298,7 @@ Tidsgränsen för att skicka ett svar är 40 sekunder. Om svaret inte är tillg�
 &gt;  </tr> 
 &gt;  <tr> 
 &gt;   <td role="rowheader">[!UICONTROL Body] </td> 
-&gt;   <td> <p>HTML</p> </td> 
+&gt;   <td> <p>HTML code</p> </td> 
 &gt;  </tr> 
 &gt;  <tr> 
 &gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
@@ -313,7 +313,7 @@ Tidsgränsen för att skicka ett svar är 40 sekunder. Om svaret inte är tillg�
 >
 >![Anpassade rubriker](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
->Detta ger ett svar från HTML som visas i en webbläsare:
+>Detta ger ett HTML-svar som visas i en webbläsare:
 >
 >![HEML-svar](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
 

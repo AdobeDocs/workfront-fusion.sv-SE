@@ -4,7 +4,7 @@ description: AI Assistant i Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: 22f24c0e-4eb3-4ef7-b012-374ee5e8a844
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # AI Assistant i Workfront Fusion
 
-AI Assistant hittar information i Workfront-dokumentationen och du behöver inte besöka Adobe Experience League för att få den hjälp du behöver.
+AI Assistant kan hitta information i Workfront-dokumentationen och du behöver inte besöka Adobe Experience League för att få den hjälp du behöver.
 
 ## Åtkomstkrav
 
@@ -36,7 +36,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
    <p>eller</p>
    <p>Äldre: Alla </p>
    </td> 
@@ -70,7 +70,7 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 
 Adobe måste ha ett signerat Adobe Gen AI-avtal till hands.
 
-Mer information om hur du signerar avtalet finns i [Signera Adobe Gen AI-avtalet](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) i artikeln AI Assistant-översikt i Workfront-dokumentationen.
+Mer information om hur du signerar avtalet finns i [Signera Adobe Gen AI-avtalet](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) i artikens AI Assistant-översikt i Workfront-dokumentationen.
 
 ## Hämta information från AI Assistant
 

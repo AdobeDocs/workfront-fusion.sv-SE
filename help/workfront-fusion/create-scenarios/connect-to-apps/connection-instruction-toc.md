@@ -4,7 +4,7 @@ description: En anslutning måste uppfylla de krav som anges i API:t för det pr
 author: Becky
 feature: Workfront Fusion
 exl-id: 281403a6-6f88-4976-8a10-1d0848ef9b35
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
    <p>eller</p>
    <p>Äldre: Alla </p>
    </td> 
@@ -64,11 +64,11 @@ I de flesta fall kan du använda modulen för att skapa en anslutning med liten 
 
 Instruktioner om hur du skapar en anslutning utan att göra några speciella justeringar finns i [Skapa en anslutning - grundläggande instruktioner](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
-## Ansluta till ett program eller en tjänst från Adobe
+## Ansluta till en app eller tjänst från Adobe
 
 Om du vill ansluta till en app eller tjänst från Adobe kan du behöva information från Adobe Admin Console, till exempel ditt Org ID eller ditt tekniska konto-ID.
 
-Du kan också använda Adobe Authenticator-modulen för att ansluta till alla Adobe API:er via en enda anslutning. Det gör det enklare att ansluta till Adobe-produkter som ännu inte har någon dedikerad Fusion-anslutning.
+Du kan också använda Adobe Authenticator-modulen för att ansluta till ett Adobe-API med en enda anslutning. Det gör det enklare att ansluta till Adobe-produkter som ännu inte har någon dedikerad Fusion-anslutning.
 
 Mer information finns i [artikeln för anslutningen](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-adobe-products).
 

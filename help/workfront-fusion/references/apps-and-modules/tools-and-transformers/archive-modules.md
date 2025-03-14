@@ -4,7 +4,7 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du ansluta ett ark
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 640aae1f4b7563545d7f9aa3f801671aa3d45fca
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -25,12 +25,13 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [[!UICONTROL Extract an archive]](#extract-an-archive)
-* [[!UICONTROL Create an archive]](#create-an-archive)
-* [[!UICONTROL Inflate]](#inflate)
-* [[!UICONTROL Deflate]](#deflate)
+* [Åtgärder](#actions)
+* [Aggregatorer](#aggregators)
+* [Transformers](#transformers)
 
-## [!UICONTROL Extract an archive]
+## Åtgärder
+
+### [!UICONTROL Extract an archive]
 
 Denna åtgärdsmodul extraherar en fil som du identifierar från ett arkiv.
 
@@ -42,20 +43,24 @@ Modulen returnerar filens ID och eventuella associerade fält, tillsammans med e
  <tbody> 
   <tr> 
    <td>[!UICONTROL Source file]</td> 
-   <td> <p> Markera den fil som du vill extrahera. Den här filen kan mappas från en tidigare modul (till exempel modulen [!DNL Workfront] &gt;[!UICONTROL Download a document]).</p>  </td> 
+   <td> <p>  <p>Välj en källfil från en tidigare modul eller mappa källdata.</p></p>  </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**Exempel:** Hämta ZIP-filen från den definierade [!DNL Dropbox]-mappen (till exempel Arkiv), extrahera den med modulen [!UICONTROL Archive] och skicka extraherade filer till den önskade e-postadressen som bilagor med modulen [!UICONTROL Email] eller [!DNL Gmail].
->
->![Exempel på Dropbox](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
+>[!BEGINSHADEBOX]
 
-## [!UICONTROL Create an archive]
+**Exempel:** Hämta ZIP-filen från den definierade [!DNL Dropbox]-mappen (till exempel Arkiv), extrahera den med modulen [!UICONTROL Archive] och skicka extraherade filer till den önskade e-postadressen som bilagor med modulen [!UICONTROL Email] eller [!DNL Gmail].
 
-Den här aggregeringsmodulen lägger till önskade filer i ett [!UICONTROL ZIP]- eller [!UICONTROL TAR]-arkiv.
+![Exempel på Dropbox](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
+
+>[!ENDSHADEBOX]
+
+## Aggregatorer
+
+### [!UICONTROL Create an archive]
+
+Den här aggregeringsmodulen lägger till önskade filer i ett [!UICONTROL ZIP]-, GZIP- eller [!UICONTROL TAR]-arkiv.
 
 När du konfigurerar den här modulen visas följande fält.
 
@@ -69,7 +74,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td>[!UICONTROL Type] </td> 
-   <td> <p>Välj om du vill lägga till filer i ett [!UICONTROL ZIP]-arkiv eller ett [!UICONTROL TAR]-arkiv.</p> </td> 
+   <td> <p>Välj om du vill lägga till filer i ett [!UICONTROL ZIP]-, GZIP- eller [!UICONTROL TAR]-arkiv.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Comment]</td> 
@@ -94,28 +99,20 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
->[!INFO]
->
->**Exempel:** Titta på inkommande e-post med modulen [!DNL Gmail] >[!UICONTROL Watch emails]. Om ett e-postmeddelande tas emot itereras dess bilagor in i enskilda paket, arkiveras sedan i filen [!DNL ZIP] och sparas i den angivna Dropbox-mappen.
->
->![Exempel på Gmail](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
+>[!BEGINSHADEBOX]
 
-## [!UICONTROL Inflate]
+**Exempel:** Titta på inkommande e-post med modulen [!DNL Gmail] >[!UICONTROL Watch emails]. Om ett e-postmeddelande tas emot itereras dess bilagor in i enskilda paket, arkiveras sedan i filen [!DNL ZIP] och sparas i den definierade Dropbox-mappen.
 
-Den här transformatormodulen dekomprimerar binära data med en inflationsalgoritm.
+![Exempel på Gmail](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Data] </td> 
-   <td> <p>Ange eller mappa de data som du vill expandera med funktionen inflate.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+>[!ENDSHADEBOX]
 
-## [!UICONTROL Deflate]
+## Transformers
+
+* [[!UICONTROL Deflate]](#deflate)
+* [[!UICONTROL Inflate]](#inflate)
+
+### [!UICONTROL Deflate]
 
 Den här transformatormodulen komprimerar binära data med en deflationsalgoritm.
 
@@ -126,6 +123,21 @@ Den här transformatormodulen komprimerar binära data med en deflationsalgoritm
   <tr> 
    <td>[!UICONTROL Data] </td> 
    <td> <p>Ange eller mappa de data som du vill komprimera med hjälp av deflate-funktionen.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### [!UICONTROL Inflate]
+
+Den här transformatormodulen dekomprimerar binära data med en inflationsalgoritm.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Data] </td> 
+   <td> <p>Ange eller mappa de data som du vill expandera med funktionen inflate.</p> </td> 
   </tr> 
  </tbody> 
 </table>

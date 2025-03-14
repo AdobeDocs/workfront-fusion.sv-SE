@@ -4,7 +4,7 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '2668'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
    <p>eller</p>
    <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
@@ -151,7 +151,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ### Utlösare
 
-* [Se PDF i korthet](#watch-for-pdf-summary)
+* [Se PDF Summary](#watch-for-pdf-summary)
 * [[!UICONTROL Watch Proof Activity]](#watch-proof-activity)
 * [Titta på korrektur](#watch-proofs)
 
@@ -161,7 +161,7 @@ Den här snabbutlösarmodulen kör ett scenario när någon skapar en PDF-samman
 
 En webkrok krävs i den här modulen.
 
-Modulen returnerar alla standardfält som är associerade med korrekturet, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Den skapar också en ny händelseprenumeration för PDF-sammanfattningar och matar ut innehållet från attributet `pdf_url` som skickas i nyttolasten. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+Modulen returnerar alla standardfält som är associerade med korrekturet, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Den skapar också en ny händelseprenumeration för PDF-sammanfattningar och genererar innehållet från attributet `pdf_url` som skickas i nyttolasten. Du kan mappa den här informationen i efterföljande moduler i scenariot.
 
 När du konfigurerar den här modulen visas följande fält.
 
@@ -184,7 +184,7 @@ När du konfigurerar den här modulen visas följande fält.
 
 Den här utlösarmodulen kör ett scenario när en angiven aktivitet inträffar på ett korrekturbevis.
 
-Modulen returnerar alla standardfält som är associerade med korrekturet, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Den skapar också en ny händelseprenumeration för PDF-sammanfattningar och matar ut innehållet från attributet `pdf_url` som skickas i nyttolasten. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+Modulen returnerar alla standardfält som är associerade med korrekturet, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Den skapar också en ny händelseprenumeration för PDF-sammanfattningar och genererar innehållet från attributet `pdf_url` som skickas i nyttolasten. Du kan mappa den här informationen i efterföljande moduler i scenariot.
 
 När du konfigurerar den här modulen visas följande fält.
 
@@ -318,7 +318,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Disable PDF Summary]</td> 
-   <td>Ange om du vill inaktivera möjligheten att hämta korrekturkommentarer till en PDF-fil.</td> 
+   <td>Välj om du vill inaktivera möjligheten att ladda ned korrekturkommentarer till en PDF-fil.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Disable Subscription Email]</td> 
@@ -382,7 +382,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL SWF]</td> 
-   <td>Ange typen av SWF-korrektur.</td> 
+   <td>Ange typ av SWF-bevis.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Show] [objekt]</td> 
@@ -505,11 +505,11 @@ När du konfigurerar den här modulen visas följande fält.
 
 #### [!UICONTROL Request PDF Summary]
 
-Den här åtgärdsmodulen begär sammanfattningen PDF för ett visst korrektur i [!DNL Workfront Proof].
+Den här åtgärdsmodulen begär PDF-sammanfattningen för ett visst korrektur i [!DNL Workfront Proof].
 
 Du anger korrekturens ID.
 
-Modulen returnerar sammanfattningsinformation för PDF. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+Modulen returnerar PDF-sammanfattningsinformation. Du kan mappa den här informationen i efterföljande moduler i scenariot.
 
 Du måste ha behörighet att komma åt posten i [!DNL Workfront Proof] för att kunna hämta informationen.
 
@@ -525,7 +525,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Ange det unika [!DNL Workfront Proof]-ID:t för det korrektur som du vill begära en sammanfattning för PDF.</p> </td> 
+   <td> <p>Ange det unika [!DNL Workfront Proof]-ID:t för det korrektur som du vill begära en PDF-sammanfattning för.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Callback URL]</td> 

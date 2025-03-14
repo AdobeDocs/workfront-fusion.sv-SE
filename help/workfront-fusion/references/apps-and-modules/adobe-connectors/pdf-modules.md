@@ -5,7 +5,7 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: 757580687ff5d1617f83432952d9870bd697925e
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '3623'
 ht-degree: 0%
@@ -14,20 +14,20 @@ ht-degree: 0%
 
 # [!DNL Adobe PDF Services]
 
-Med [!DNL Adobe Workfront Fusion] [!DNL Adobe PDF Services] kan du extrahera data från en PDF-fil eller generera en ny PDF-fil från data som du anger. Dessutom kan du konvertera en mängd olika filtyper till PDF eller PDF till andra filtyper. Med PDF Services kan du även kombinera, komprimera och läsa metadata för en PDF-fil samt styra lösenordsskyddet för filen.
+Med [!DNL Adobe Workfront Fusion] [!DNL Adobe PDF Services] kan du extrahera data från en PDF-fil eller generera en ny PDF-fil från data du anger. Dessutom kan du konvertera en mängd olika filtyper till PDF-filer eller PDF-filer till andra filtyper. Med PDF Services kan du också kombinera, komprimera och läsa metadata för en PDF-fil samt styra lösenordsskyddet för filen.
 
 Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
 
-Mer information om API:t som används för PDF Services finns i [Adobe-API:t för dokumentgenerering](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html).
+Mer information om API:t som används för PDF Services finns i [Adobe API för dokumentgenerering](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html).
 
 ## Säkerhetsaspekter vid användning av [!DNL Adobe PDF Services]
 
 [!DNL Adobe PDF Services] kan läsa, konvertera eller ändra dina filer, men varken [!DNL Adobe] eller [!DNL Workfront Fusion] lagrar dina filer eller data. Detta innebär att
 
 * Du behåller kontrollen över dina filer, inklusive deras säkerhet
-* Du behöver inte ha något [!UICONTROL Adobe]-lagringskonto eller molnlagringskonto för att kunna använda PDF-tjänsterna.
+* Du behöver inte ha något [!UICONTROL Adobe]-lagringskonto eller molnlagringskonto för att kunna använda PDF Services.
 
 ## Åtkomstkrav
 
@@ -50,7 +50,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
    <p>eller</p>
    <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
@@ -76,7 +76,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 Om du vill skapa en OAuth Server-till-Server-anslutning måste du lägga till Adobe PDF Services-API:t i Adobe Developers Console. När du lägger till API:t väljer du alternativet OAuth Server-till-server.
 
-Instruktioner finns i [Lägg till API i projekt med OAuth](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/) i utvecklardokumentationen för Adobe.
+Instruktioner finns i [Lägg till API i projekt med OAuth](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/) i dokumentationen för Adobe-utvecklare.
 
 ## API-information för Adobe PDF Services
 
@@ -125,19 +125,19 @@ Så här skapar du en anslutning för dina [!DNL Adobe PDF Services]-moduler:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>Ange din [!DNL Adobe] [!UICONTROL Client ID]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du hittar autentiseringsuppgifter finns i <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Referenser</a> i utvecklardokumentationen för Adobe.</p></td>
+          <td>Ange din [!DNL Adobe] [!UICONTROL Client ID]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du hittar autentiseringsuppgifter finns i <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Referenser</a> i dokumentationen för Adobe-utvecklare.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>Ange din [!DNL Adobe] [!UICONTROL Client Secret]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du hittar autentiseringsuppgifter finns i <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Referenser</a> i utvecklardokumentationen för Adobe.</p>
+          <td>Ange din [!DNL Adobe] [!UICONTROL Client Secret]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du hittar autentiseringsuppgifter finns i <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Referenser</a> i dokumentationen för Adobe-utvecklare.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Technical account ID] (endast JWT)</td>
-          <td>Ange din [!DNL Adobe] [!UICONTROL Technical account ID]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du hittar autentiseringsuppgifter finns i <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Referenser</a> i utvecklardokumentationen för Adobe.</p>
+          <td>Ange din [!DNL Adobe] [!UICONTROL Technical account ID]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du hittar autentiseringsuppgifter finns i <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Referenser</a> i dokumentationen för Adobe-utvecklare.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Organization ID] (endast JWT)</td>
-          <td>Ange din [!DNL Adobe] [!UICONTROL Organization ID]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du hittar autentiseringsuppgifter finns i <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Referenser</a> i utvecklardokumentationen för Adobe.</p>
+          <td>Ange din [!DNL Adobe] [!UICONTROL Organization ID]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du hittar autentiseringsuppgifter finns i <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Referenser</a> i dokumentationen för Adobe-utvecklare.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Meta scopes] (endast JWT)</td>
@@ -203,7 +203,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ### [!UICONTROL Combine PDF files]
 
-Den här åtgärdsmodulen tar flera PDF-filer och kombinerar dem i en enda PDF-fil. Den här modulen kan till exempel kombinera alla dokument i ett [!UICONTROL Workfront]-projekt till ett enda PDF när projektet har slutförts.
+Den här åtgärdsmodulen tar flera PDF-filer och kombinerar dem i en enda PDF-fil. Den här modulen kan till exempel kombinera alla dokument i ett [!UICONTROL Workfront]-projekt till en enda PDF när projektet har slutförts.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -215,7 +215,7 @@ Den här åtgärdsmodulen tar flera PDF-filer och kombinerar dem i en enda PDF-f
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Documents]</td> 
-   <td> <p>Du kan använda en aggregeringsmodul för att samla dokument som ska kombineras till ett PDF, eller så kan du lägga till dokumenten manuellt. </p> <p>Vi rekommenderar att du använder en [!UICONTROL Array Aggregator]-modul för att sammanställa utdata från en tidigare modul. Genom att använda en aggregator behöver du inte känna till namn, plats eller antal filer som ska kombineras. Att använda en aggregator är därför mycket flexiblare och mer skalbart än att manuellt ange de dokument som ska kombineras.</p> <p>Om du vill använda filmodulen [!UICONTROL Combine PDF] med en aggregator måste du aktivera mappning i fältet [!UICONTROL Documents]. </p> <p>I det här exemplet identifierar modulen [!UICONTROL Read Related Records] dokument som är kopplade till ett projekt och modulen [!UICONTROL Download Documents] hämtar vart och ett av dem. Alla PDF samlas i en array, som skickas till [!UICONTROL Combine PDF]-filmodulen.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/combine-example-350x104.png" style="width: 350;height: 104;"> </p> <p>Du kan också ange dokument manuellt.</p> <p>För varje dokument som ska inkluderas i den kombinerade PDF:</p> 
+   <td> <p>Du kan använda en aggregeringsmodul för att samla dokument som ska kombineras till en PDF, eller så kan du lägga till dokumenten manuellt. </p> <p>Vi rekommenderar att du använder en [!UICONTROL Array Aggregator]-modul för att sammanställa utdata från en tidigare modul. Genom att använda en aggregator behöver du inte känna till namn, plats eller antal filer som ska kombineras. Att använda en aggregator är därför mycket flexiblare och mer skalbart än att manuellt ange de dokument som ska kombineras.</p> <p>Om du vill använda filmodulen [!UICONTROL Combine PDF] med en aggregator måste du aktivera mappning i fältet [!UICONTROL Documents]. </p> <p>I det här exemplet identifierar modulen [!UICONTROL Read Related Records] dokument som är kopplade till ett projekt och modulen [!UICONTROL Download Documents] hämtar vart och ett av dem. Alla PDF-filer samlas i en array, som skickas till [!UICONTROL Combine PDF]-filmodulen.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/combine-example-350x104.png" style="width: 350;height: 104;"> </p> <p>Du kan också ange dokument manuellt.</p> <p>För varje dokument som ska inkluderas i den kombinerade PDF:</p> 
     <ol> 
      <li value="1"> <p>Klicka på [!UICONTROL Add a Document]</p> </li> 
      <li value="2"> <p>I fältet [!UICONTROL Source file] markerar du modulen som matar ut dokumentet som du vill inkludera, eller mappar källfilens namn och data. </p> </li> 
@@ -328,7 +328,7 @@ Det här verktyget konverterar ett dokument till en PDF-fil. Källfilen måste h
 
 ### [!UICONTROL Convert HTML to PDF file]
 
-Det här verktyget konverterar en HTML-fil till en PDF-fil.
+Med det här verktyget kan du konvertera en HTML-fil till en PDF-fil.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -342,14 +342,14 @@ Det här verktyget konverterar en HTML-fil till en PDF-fil.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> <p>Viktigt: Source-filen måste ha formatet HTML eller ZIP. </p> </td> 
+   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> <p>Viktigt: Source-filen måste vara i HTML- eller ZIP-format. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL JSON]</td> 
    <td> <p>Om HTML refererar till JavaScript-variabler kan du ta med dessa variabler här. </p> <p>För varje variabel klickar du på <strong>[!UICONTROL Add item]</strong> och tar med variabelns nyckel och värde.</p> <p>Obs!   
      <ul> 
-      <li> <p>När du skapar ett PDF från en ZIP-fil måste källmaterialet innehålla ett skriptelement som: <code> &lt;script src='./json.js' type='text/javascript'&gt;&lt;/script&gt;</code> </p> </li> 
-      <li> <p>När du skapar ett PDF från en URL, injiceras innehållet i det här JSON-objektet i den virtuella webbläsaren innan sidan återges. </p> </li> 
+      <li> <p>När du skapar en PDF från en ZIP-fil måste källmaterialet innehålla ett skriptelement som: <code> &lt;script src='./json.js' type='text/javascript'&gt;&lt;/script&gt;</code> </p> </li> 
+      <li> <p>När du skapar en PDF från en URL, injiceras innehållet i det här JSON-objektet i den virtuella webbläsaren innan sidan återges. </p> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -373,7 +373,7 @@ Det här verktyget konverterar en HTML-fil till en PDF-fil.
 
 ### [!UICONTROL Convert image to PDF file]
 
-Med det här verktyget kan du konvertera en bild till en PDF-fil.
+Det här verktyget konverterar en bild till en PDF-fil.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -394,7 +394,7 @@ Med det här verktyget kan du konvertera en bild till en PDF-fil.
 
 ### [!UICONTROL Convert PDF to document]
 
-Det här verktyget konverterar en PDF-fil till ett dokument. Du kan välja något av följande format för utdatafilen.
+Med det här verktyget kan du konvertera en PDF-fil till ett dokument. Du kan välja något av följande format för utdatafilen.
 
 * DOC
 * DOCX
@@ -473,7 +473,7 @@ Det här verktyget konverterar en PDF-fil till ett dokument. Du kan välja någo
 
 ### [!UICONTROL Convert PDF to image]
 
-Med det här verktyget konverterar du PDF till en bild i PNG- eller JPEG-format. Den skrivs sedan ut som en lista eller kombineras till en ZIP-fil.
+Det här verktyget konverterar en PDF-bild till en bild i PNG- eller JPEG-format, som sedan skrivs ut som en lista eller kombineras till en ZIP-fil.
 
 Om du skriver ut som en ZIP-fil konverteras PDF till en bild per sida och varje bild avslutas med sidnumret. Bildfilerna kombineras sedan till en ZIP-fil.
 
@@ -546,7 +546,7 @@ Med den här åtgärdsmodulen kan du extrahera data från en PDF-fil. Modulen ma
 
 ### [!UICONTROL Generate document]
 
-Modulen [!UICONTROL Generate document] är ett kraftfullt sätt att skapa ett PDF som innehåller data som du väljer. Du kan formatera den med hjälp av en [!DNL Microsoft Word]-mall eller genom att ange data i JSON-format.
+Modulen [!UICONTROL Generate document] är ett kraftfullt sätt att skapa en PDF som innehåller data som du väljer. Du kan formatera den med hjälp av en [!DNL Microsoft Word]-mall eller genom att ange data i JSON-format.
 
 Mer information om funktionen [!UICONTROL [!DNL Adobe PDF Services] Generate document] finns i [Översikt över dokumentgenerering](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html) i [!DNL Adobe Document Services]-dokumentationen.
 
@@ -560,7 +560,7 @@ Mer information om funktionen [!UICONTROL [!DNL Adobe PDF Services] Generate doc
 >
 >Mer information om Microsoft Word-mallar finns i [Microsoft Word-mallmoduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md).
 >
->Du behöver inte använda mallmoduler för Microsoft Word för att använda en Microsoft Word-mall med dokumentmodulen Generera för PDF Services.
+>Du behöver inte använda Microsoft Word-mallmoduler för att använda en Microsoft Word-mall med PDF Services Generate-dokumentmodulen.
 
 
 Om du vill använda modulen [!UICONTROL Generate document] med en [!UICONTROL Microsoft Word]-mall måste du först skapa mallen. Sök efter&quot;Skapa en mall&quot; i dokumentationen för [!DNL Microsoft Office] om du vill ha anvisningar.
@@ -577,7 +577,7 @@ Fyll i fälten i modulen [!UICONTROL Generate document] enligt följande:
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source File]</td> 
-   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> <p>Den här källfilen är [!DNL Microsoft Word]-mallen som modulen använder för att generera det nya PDF.</p> <p>Vi rekommenderar att du skapar ett projekt i [!DNL Workfront] för de [!DNL Microsoft Word] -mallar som du använder i [!DNL Workfront Fusion]. Du kan sedan använda modulen [!DNL Workfront] &gt; [!UICONTROL Download document] för att hämta rätt mall till ditt scenario.</p> </td> 
+   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> <p>Den här källfilen är mallen [!DNL Microsoft Word] som används i modulen för att skapa nya PDF.</p> <p>Vi rekommenderar att du skapar ett projekt i [!DNL Workfront] för de [!DNL Microsoft Word] -mallar som du använder i [!DNL Workfront Fusion]. Du kan sedan använda modulen [!DNL Workfront] &gt; [!UICONTROL Download document] för att hämta rätt mall till ditt scenario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output Format]</td> 
@@ -632,7 +632,7 @@ Om du vill använda modulen [!UICONTROL Generate document] med JSON fyller du i 
 
 ### [!UICONTROL Linearize a PDF file]
 
-Med det här verktyget linjäriserar du ett PDF-dokument och skapar ett webboptimerat PDF-dokument. Ett linjärt PDF-dokument kan visas sida vid sida utan att hela dokumentet behöver hämtas.
+Det här verktyget linjäriserar ett PDF-dokument och skapar ett webboptimerat PDF-dokument. Ett linjärt PDF-dokument kan visas sida för sida utan att hela dokumentet behöver hämtas.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -653,7 +653,7 @@ Med det här verktyget linjäriserar du ett PDF-dokument och skapar ett webbopti
 
 ## Göra ett anpassat API-anrop
 
-Den här åtgärdsmodulen är en anpassad HTTP-begäran till API:t för PDF Services.
+Den här åtgärdsmodulen är en anpassad HTTP-begäran till PDF Services API.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -710,7 +710,7 @@ Det här verktyget utför optisk teckenigenkänning (OCR) på en fil och skapar 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Language]</td> 
-   <td>Välj språk för det här dokumentet.<p>Mer information om språkalternativ finns i <a href="#convert-document-to-pdf-file" class="MCXref xref" >Konvertera dokument till PDF </a> i den här artikeln. </td> 
+   <td>Välj språk för det här dokumentet.<p>Mer information om språkalternativ finns i <a href="#convert-document-to-pdf-file" class="MCXref xref" >Konvertera dokument till PDF-fil</a> i den här artikeln. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL OCR type]</td> 
@@ -725,7 +725,7 @@ Det här verktyget utför optisk teckenigenkänning (OCR) på en fil och skapar 
 
 ### [!UICONTROL Page manipulation]
 
-I den här modulen kan du välja mellan att rotera eller ta bort sidor i ett PDF-dokument. Du kan till exempel ändra stående till liggande eller ta bort vissa sidor från dokumentet PDF.
+I den här modulen kan du välja mellan att rotera eller ta bort sidor i ett PDF-dokument. Du kan till exempel ändra stående till liggande eller ta bort vissa sidor från PDF-dokumentet.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -769,7 +769,7 @@ I den här modulen kan du välja mellan att rotera eller ta bort sidor i ett PDF
 
 ### [!UICONTROL PDF accessibility auto-tag]
 
-Den här åtgärdsmodulen skapar ett PDF som är taggat för att skapa hjälpmedelsfall. Den skapar också en valfri Microsoft Excel-rapport med felmeddelanden och förslag på korrigeringar.
+Den här åtgärdsmodulen skapar en PDF som är taggad för hjälpmedelsanvändning. Den skapar också en valfri Microsoft Excel-rapport med felmeddelanden och förslag på korrigeringar.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -801,7 +801,7 @@ Den här åtgärdsmodulen skapar ett PDF som är taggat för att skapa hjälpmed
 Det här verktyget extraherar grundläggande information om dokumentet, till exempel:
 
 * Antal sidor
-* PDF version
+* PDF
 * Om filen är krypterad
 * Om filen är linjär
 * Om filen innehåller inbäddade filer
@@ -843,7 +843,7 @@ Det här verktyget skyddar ett PDF-dokument med ett användar- eller ägarlösen
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Password Protection Type]</td> 
-   <td> <p>Aktivera det här alternativet om du vill använda lösenord för att kryptera det inmatade PDF-dokumentet. Om du aktiverar det här alternativet måste du ange och ange ett värde för ett eller båda av följande: </p> 
+   <td> <p>Aktivera det här alternativet om du vill använda lösenord för att kryptera PDF-indatadokumentet. Om du aktiverar det här alternativet måste du ange och ange ett värde för ett eller båda av följande: </p> 
     <ul> 
      <li> <p>[!UICONTROL User Password]</p> </li> 
      <li> <p>[!UICONTROL Owner Password] </p> </li> 

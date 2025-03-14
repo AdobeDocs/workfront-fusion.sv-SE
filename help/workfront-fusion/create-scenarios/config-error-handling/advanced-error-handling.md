@@ -4,7 +4,7 @@ description: Du kan lägga till avancerade felhanteringstekniker i felhanterings
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
    <p>eller</p>
    <p>Äldre: Alla </p>
    </td> 
@@ -101,7 +101,7 @@ Det fullständiga scenariot fungerar så här:
 1. Felhanterarvägen (genomskinliga bubblor) innehåller en router som filtrerar felen
 Den första vägen är för en angiven typ av fel med namnet `DataError`.
 
-   1. Om en `DataError` inträffar och felinformationen skickas genom filtret visar Dropbox >Visa alla filer/undermappar i en mappmodul alla mappar i Dropbox.
+   1. Om en `DataError` inträffar och felinformationen skickas genom filtret visar Dropbox >Lista alla filer/undermappar i en mappmodul alla mappar i Dropbox.
    1. Det efterföljande filtret matchar mappnamnen.
    1. Direktivet **Återuppta** anger mapp-ID och mappsökväg för den befintliga mappen, och scenariokörningen återupptas från Dropbox > Skapa en mappmodul. I stället för att skapa en ny mapp använder Fusion värdena från direktivet Återuppta för att gå till nästa modul och överföra filen till den befintliga mappen.
 
@@ -141,7 +141,7 @@ En kapslad felhanterarväg med filter:
 
 I det här scenariot kapslas den andra felhanterarvägen under den första felhanterarvägen.
 
-Om ett fel uppstår i modulen Dropbox > Skapa en mapp, flyttas körningen till den första vägen. Om filtret `DataError Takes Place` skickas körs nästa modul, följt av direktivet Återuppta om ett fel inte inträffar i Dropbox > Visa alla filer/undermappar i en mappmodul.
+Om ett fel uppstår i Dropbox > Skapa en mappmodul, flyttas körningen till den första vägen. Om filtret `DataError Takes Place` skickas körs nästa modul, följt av direktivet Återuppta om ett fel inte inträffar i Dropbox > Visa alla filer/undermappar i en mappmodul.
 
 Om ett fel inträffar i Dropbox > Visa alla filer/undermappar i en mappmodul, flyttas körningen till Felhanterarflöde 2 och avslutas med direktivet [!UICONTROL Ignore]. Modulen [!UICONTROL Resume directive] körs inte i det här fallet.
 
