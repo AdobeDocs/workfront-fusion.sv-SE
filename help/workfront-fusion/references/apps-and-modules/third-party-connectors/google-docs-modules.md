@@ -4,9 +4,9 @@ description: Med Adobe Workfront Fusion [!DNL Google Docs] -modulerna kan du öv
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: eac874d588e026cab3a01017d32e291d5c8b7b74
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '3258'
+source-wordcount: '3298'
 ht-degree: 0%
 
 ---
@@ -498,8 +498,12 @@ Den här åtgärdsmodulen ersätter text i ett dokument.
     </ul> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p>Mappa eller markera dokumentet där du vill ersätta text.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Replace a Text]</p> </td> 
-   <td> <p>Lägg till varje text som du vill ersätta.</p> 
+   <td> <p>För varje textdel som du vill ersätta klickar du på <b>Lägg till objekt</b> och anger följande:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Old text to be replaced]</strong> </p> <p>Ange den text som du vill ersätta.</p> </li> 
      <li> <p><strong>[!UICONTROL New text to be inserted]</strong> </p> <p>Ange den nya texten.</p> </li> 
@@ -538,8 +542,12 @@ Den här åtgärdsmodulen ersätter en befintlig bild. Den ursprungliga bildens 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Image URL]</p> </td> 
-   <td> <p>Ange eller mappa URL-adressen för den nya bilden som ska ersätta den befintliga bilden.</p> <p>Bilderna visas i den ordning som de visas i dokumentet. <code>Body: Image No. 1</code> är till exempel den första bilden i dokumentet.</p> </td> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p>Mappa eller markera dokumentet där du vill ersätta en bild.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Images replacement]</p> </td> 
+   <td> För varje bild som du vill ersätta klickar du på <b>Lägg till objekt</b> och anger det befintliga bild-ID:t. Ange eller mappa sedan URL:en för den nya bilden som ska ersätta den befintliga bilden. <p>Bilderna visas i den ordning som de visas i dokumentet. <code>Body: Image No. 1</code> är till exempel den första bilden i dokumentet.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -579,8 +587,48 @@ Den här utlösarmodulen returnerar dokumentinformation när ett nytt dokument s
 
 ### Övriga
 
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
 * [[!UICONTROL Make All Links in a Document Clickable]](#make-all-links-in-a-document-clickable)
+* [[!UICONTROL Make an API Call]](#make-an-api-call)
+
+#### [!UICONTROL Make All Links in a Document Clickable]
+
+Den här åtgärdsmodulen hittar alla länkar i dokumentet och gör dem klickbara.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Make All Links in a Document]</p> </td> 
+   <td> 
+    <ul> 
+     <li><strong>[!UICONTROL By Mapping]</strong> <br>Välj det här alternativet om du vill mappa dokumentmallen.</li> 
+     <li><strong>[!UICONTROL By Dropdown]</strong> <br> Välj det här alternativet om du vill välja dokumentet i listrutan.</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
+   <td> <p>Välj den typ av enhet där dokumentet som du vill göra länkar klickbara i finns. Det här alternativet är tillgängligt om du har markerat [!UICONTROL By Dropdown] i föregående fält.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Markera den mapp där dokumentet som du vill göra länkarna klickbara i finns.</p> </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Markera den mapp där dokumentet som du vill göra länkarna klickbara i finns.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] delad enhet]</strong> (endast tillgänglig för [!DNL Google Workspace] användare)</p> <p>Välj om du vill [!UICONTROL Use Domain Admin Access]. Om du väljer [!UICONTROL Yes] utfärdas begäran som en domänadministratör och alla delade enheter där den som gjorde begäran är administratör returneras.</p> <p>Markera den delade enhet där dokumentet som du vill göra länkarna klickbara i finns och markera sedan dokumentet.</p> <p>Obs! Om du har valt alternativet [!DNL Google Docs] i det här fältet och inte är en [!DNL Google Workspace]-användare, returneras felet <code>[400] Invalid Value</code>.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Shared Drive]</td> 
+   <td> <p>Markera den enhet som innehåller dokumentet som du vill uppdatera länkarna i och markera sedan ett dokument. Det här alternativet är tillgängligt om du har markerat [!DNL My Drive] i [!UICONTROL Choose a Drive field].</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p> Markera eller mappa dokumentet som du vill uppdatera länkarna i.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Make an API Call]
 
@@ -620,6 +668,8 @@ Med den här åtgärdsmodulen kan du utföra ett anpassat API-anrop.
  </tbody> 
 </table>
 
+>[!BEGINSHADEBOX]
+
 **Exempel:** Följande API-anrop hämtar information om det angivna dokumentet i din Google Docs:
 
 **URL:**
@@ -636,42 +686,4 @@ Information om det hämtade dokumentet finns i modulens utdata under [!UICONTROL
 
 ![API-anropsutdata](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 
-#### [!UICONTROL Make All Links in a Document Clickable]
-
-Den här åtgärdsmodulen hittar alla länkar i dokumentet och gör dem klickbara.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Make All Links in a Document]</p> </td> 
-   <td> 
-    <ul> 
-     <li><strong>[!UICONTROL By Mapping]</strong> <br>Välj det här alternativet om du vill mappa dokumentmallen.</li> 
-     <li><strong>[!UICONTROL By Dropdown]</strong> <br> Välj det här alternativet om du vill välja dokumentet i listrutan.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>Välj den typ av enhet där dokumentet som du vill göra länkar klickbara i finns. Det här alternativet är tillgängligt om du har markerat [!UICONTROL By Dropdown] i föregående fält.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Markera den mapp där dokumentet som du vill göra länkarna klickbara i finns och markera sedan dokumentet.</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Markera den mapp där dokumentet som du vill göra länkarna klickbara i finns och markera sedan dokumentet.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] delad enhet]</strong> (endast tillgänglig för [!DNL Google Workspace] användare)</p> <p>Välj om du vill [!UICONTROL Use Domain Admin Access]. Om du väljer [!UICONTROL Yes] utfärdas begäran som en domänadministratör och alla delade enheter där den som gjorde begäran är administratör returneras.</p> <p>Markera den delade enhet där dokumentet som du vill göra länkarna klickbara i finns och markera sedan dokumentet.</p> <p>Obs! Om du har valt alternativet [!DNL Google Docs] i det här fältet och inte är en [!DNL Google Workspace]-användare, returneras felet <code>[400] Invalid Value</code>.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Shared Drive]</td> 
-   <td> <p>Markera den enhet som innehåller dokumentet som du vill uppdatera länkarna i och markera sedan ett dokument. Det här alternativet är tillgängligt om du har markerat [!DNL My Drive] i [!UICONTROL Choose a Drive field].</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Document ID]</td> 
-   <td> <p> Markera eller mappa dokumentet som du vill uppdatera länkarna i.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+>[!ENDSHADEBOX]

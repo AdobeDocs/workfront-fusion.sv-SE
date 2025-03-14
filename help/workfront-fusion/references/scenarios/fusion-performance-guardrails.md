@@ -4,9 +4,9 @@ description: Automatisering av arbete kräver snabb bearbetning, så [!DNL Adobe
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '862'
 ht-degree: 0%
 
 ---
@@ -76,3 +76,17 @@ Mer information finns i [Arbeta med stora filer](/help/workfront-fusion/referenc
 ## Försök igen
 
 * Om ett scenario misslyckas i följd 10 gånger inom en tvåminutersperiod när du använder modulen Bryt och anger direktivet Försök igen inaktiveras scenariot automatiskt.
+
+## Rekursion
+
+Rekursion inträffar när ett scenario utlöser en ny körning av sig själv, som utlöser en ny körning och så vidare i en oändlig slinga.
+
+Ett scenario aktiveras till exempel när en uppgift skapas och det scenariot skapar en uppgift. Den nyligen skapade aktiviteten utlöser scenariot igen, vilket skapar en annan uppgift. Varje gång en uppgift skapas utlöses scenariot och varje gång scenariot körs skapas en uppgift.
+
+Rekursion kan orsaka prestandaproblem både för den organisation som äger det rekursiva scenariot och för andra organisationer.
+
+Tänk på följande när det gäller rekursion:
+
+* **När ett scenario orsakar rekursion inaktiveras det av Fusion Engineering-teamet för att förhindra ytterligare prestandaproblem.**
+* Eftersom rekursion är ett resultat av scenariodesign måste du utforma dina scenarier på ett sätt som säkerställer att det inte innehåller åtgärder som utlöser scenariot.
+
