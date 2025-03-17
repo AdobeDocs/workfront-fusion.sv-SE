@@ -4,9 +4,9 @@ description: Automatisering av arbete kräver snabb bearbetning, så [!DNL Adobe
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
+source-git-commit: 1253470a23a2a9124824d5ab1ff2b5013d773517
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -81,12 +81,12 @@ Mer information finns i [Arbeta med stora filer](/help/workfront-fusion/referenc
 
 Rekursion inträffar när ett scenario utlöser en ny körning av sig själv, som utlöser en ny körning och så vidare i en oändlig slinga.
 
-Ett scenario aktiveras till exempel när en uppgift skapas och det scenariot skapar en uppgift. Den nyligen skapade aktiviteten utlöser scenariot igen, vilket skapar en annan uppgift. Varje gång en uppgift skapas utlöses scenariot och varje gång scenariot körs skapas en uppgift.
+Ett scenario aktiveras till exempel när en uppgift skapas och det scenariot skapar två uppgifter. De nya uppgifterna utlöser båda scenariot igen, vilket skapar fyra nya uppgifter. Varje gång en uppgift skapas utlöses scenariot och varje gång scenariot körs dubbleras antalet uppgifter. Antalet uppgifter ökar exponentiellt.
 
 Rekursion kan orsaka prestandaproblem både för den organisation som äger det rekursiva scenariot och för andra organisationer.
 
 Tänk på följande när det gäller rekursion:
 
 * **När ett scenario orsakar rekursion inaktiveras det av Fusion Engineering-teamet för att förhindra ytterligare prestandaproblem.**
-* Eftersom rekursion är ett resultat av scenariodesign måste du utforma dina scenarier på ett sätt som säkerställer att det inte innehåller åtgärder som utlöser scenariot.
+* Eftersom rekursion är ett resultat av scenariodesign måste du utforma dina scenarier på ett sätt som säkerställer att scenariot inte innehåller åtgärder som utlöser scenariot.
 
