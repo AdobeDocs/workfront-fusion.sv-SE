@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 87b15e32338b798983adbf0016709752ee862567
 workflow-type: tm+mt
-source-wordcount: '2716'
+source-wordcount: '2660'
 ht-degree: 0%
 
 ---
@@ -185,15 +185,15 @@ Denna utlösarmodul startar ett scenario när ett fält uppdateras i [!DNL Sales
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-salesforce">Skapa en anslutning till Salesforce</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
-   <td> <p>Välj den typ av post som innehåller fältet som du vill att modulen ska bevaka. Du måste välja en posttyp som har [!UICONTROL Field History] aktiverat i [!DNL Salesforce]-konfigurationen. Mer information finns i <a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">Spåra fälthistorik</a> i [!DNL Salesforce]-dokumentationen. </p> </td> 
+   <td> <p>Välj den typ av post som innehåller fältet som du vill att modulen ska bevaka. Du måste välja en posttyp som har [!UICONTROL Field History] aktiverat i [!DNL Salesforce]-konfigurationen. Mer information finns i <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">Spåra fälthistorik</a> i [!DNL Salesforce]-dokumentationen. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
-   <td> <p>Markera de fält som du vill att modulen ska bevaka för ändringar.</p> </td> 
+   <td> <p>Markera de fält som du vill att modulen ska bevaka för ändringar. Vilka fält som är tillgängliga beror på den valda posttypen.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 
@@ -214,7 +214,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-salesforce">Skapa en anslutning till Salesforce</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Type] </td> 
@@ -239,29 +239,36 @@ När du konfigurerar den här modulen visas följande fält.
 
 Den här utlösarmodulen kör ett scenario när någon skickar ett meddelande. Modulen returnerar alla standardfält som är associerade med posten eller posterna, tillsammans med anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
 
-Den här modulen kräver extra inställningar:
+Den här modulen kräver extra inställningar. Det måste finnas ett konfigurerat flöde för utgående meddelanden.
 
-1. Gå till konfigurationssidan för [!DNL Salesforce].
+* Instruktioner om flöden i Salesforce finns i [Automatisera uppgifter med flöden](https://help.salesforce.com/s/articleView?id=platform.flow.htm) i Salesforce-dokumentationen.
+* Information om hur du konfigurerar ett utgående meddelande i Salesforce finns i [Skicka ett utgående meddelande från ditt postutlösta flöde](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm) i Salesforce-dokumentationen
 
-   Om du vill komma åt konfigurationssidan letar du upp och klickar på knappen [!UICONTROL Setup] i det övre högra hörnet av [!DNL Salesforce]-kontot. Gå till fältet [!UICONTROL Quick Find / Search] till vänster på konfigurationssidan för [!DNL Salesforce]. Sök efter [!UICONTROL Workflow Rules].
+<!--
 
-1. Klicka på **[!UICONTROL Workflow Rules]**.
-1. På sidan [!UICONTROL Workflow Rules] som visas klickar du på **[!UICONTROL New Rule]** och väljer den objekttyp som regeln ska gälla för (till exempel [!UICONTROL Opportunity] om du övervakar uppdateringar av säljprojektsposter).
-1. Klicka på **[!UICONTROL Next]**.
-1. Ange ett regelnamn, utvärderingskriterier och regelvillkor och klicka sedan på **[!UICONTROL Save]** och **[!UICONTROL Next]**.
+1. Go to the [!DNL Salesforce] setup page.
 
-1. Klicka på **[!UICONTROL Done]**.
-1. Klicka på **[!UICONTROL Edit]** från den nyligen skapade arbetsflödesregeln.
-1. I listrutan **[!UICONTROL Add Workflow Action]** väljer du **[!UICONTROL New Outbound Message]**.
+   To access the setup page, locate and click the button labeled "[!UICONTROL Setup]" in the upper-right hand corner of the [!DNL Salesforce] account. From the [!DNL Salesforce] setup page, locate the "[!UICONTROL Quick Find / Search]" bar on the left hand side. Search for "[!UICONTROL Workflow Rules]." 
 
-1. Ange namn, beskrivning, slutpunkts-URL och fält som du vill inkludera i det nya utgående meddelandet och klicka sedan på **[!UICONTROL Save]**.
+1. Click **[!UICONTROL Workflow Rules]**. 
+1. On the the [!UICONTROL Workflow Rules] page that appears, click **[!UICONTROL New Rule]** and select the object type the rule will apply to (such as "[!UICONTROL Opportunity]" if you are monitoring updates to Opportunity records).
+1. Click **[!UICONTROL Next]**.
+1. Set a rule name, evaluation criteria, and rule criteria, then click **[!UICONTROL Save]** and **[!UICONTROL Next]**.
 
-   Fältet **[!UICONTROL Endpoint URL]** innehåller URL:en som anges för [!DNL Salesforce] [!UICONTROL Outbound Message] i [!DNL Workfront Fusion].
+1. Click **[!UICONTROL Done]**.
+1. From the newly created Workflow rule, click **[!UICONTROL Edit]**..
+1. From the **[!UICONTROL Add Workflow Action]** drop-down list, select **[!UICONTROL New Outbound Message]**.
 
-1. Konfigurera ett scenario som börjar med händelsen [!UICONTROL Outbound Message].
+1. Specify name, description, Endpoint URL, and fields you want to include in the new outbound message, then click **[!UICONTROL Save]**.
 
-1. Klicka på ikonen **&lt;/>** längst ned till höger och kopiera den angivna URL:en.
-1. Gå tillbaka till sidan **[!UICONTROL Workflow Rules]**, leta reda på den nya regeln och klicka sedan på **[!UICONTROL Activate]**.
+   The **[!UICONTROL Endpoint URL]** field contains the URL provided on the [!DNL Salesforce] [!UICONTROL Outbound Message] in [!DNL Workfront Fusion].
+
+1. Configure a scenario beginning with the [!UICONTROL Outbound Message] event. 
+
+1. Click the **</>** icon in the bottom right and copy the provided URL.
+1. Return to the **[!UICONTROL Workflow Rules]** page, locate the newly created rule, then click **[!UICONTROL Activate]**.
+
+-->
 
 När du konfigurerar den här modulen visas följande fält.
 
@@ -310,7 +317,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-salesforce">Skapa en anslutning till Salesforce</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Record Type] </p> </td> 
@@ -344,15 +351,15 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-salesforce">Skapa en anslutning till Salesforce</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Ange en relativ sökväg till <code> &lt;Instance URL&gt;/services/data/v46.0/</code>.</p> <p>En lista över tillgängliga slutpunkter finns i <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Salesforce REST API Developer Guide</a>.</p> </td> 
+   <td> <p>Ange en relativ sökväg till <code> &lt;Instance URL&gt;/services/data/v62.0/</code>.</p> <p>En lista över tillgängliga slutpunkter finns i <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Salesforce REST API Developer Guide</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   td&gt; <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
+   <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -372,6 +379,28 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
+>[!BEGINSHADEBOX]
+
+**Exempel:** Följande API-anrop returnerar listan över alla användare i ditt [!DNL Salesforce]-konto:
+
+* **URL**: `query`
+
+* **Metod**: [!UICONTROL GET]
+
+* **Frågesträng**:
+
+* **Nyckel**: `q`
+
+* **Värde**: `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
+
+Det går att hitta matchningar av sökningen i modulens utdata under **[!UICONTROL Bundle]> [!UICONTROL Body] >[!UICONTROL records]**.
+
+I vårt exempel returnerades sex användare:
+
+![Matchar för sökningen](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+
+>[!ENDSHADEBOX]
+
 #### [!UICONTROL Delete a Record]
 
 Den här åtgärdsmodulen tar bort en befintlig post i ett objekt.
@@ -388,7 +417,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-salesforce">Skapa en anslutning till Salesforce</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
@@ -417,7 +446,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr>
     <td>[!UICONTROL Connection]</td>
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-salesforce">Skapa en anslutning till Salesforce</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Type of Download]</td>
@@ -451,7 +480,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr>
     <td>[!UICONTROL Connection]</td>
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-salesforce">Skapa en anslutning till Salesforce</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Record Type]</td>
@@ -459,7 +488,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr>
     <td>[!UICONTROL Record Fields]</td>
-    <td>Markera de fält som du vill att modulen ska läsa. Du måste markera minst ett fält.</td>
+    <td>Markera de fält som du vill att modulen ska läsa. Du måste markera minst ett fält. Vilka fält som är tillgängliga beror på posttypen.</td>
   </tr> 
   <tr>
     <td>[!UICONTROL ID]</td>
@@ -467,26 +496,6 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
  </tbody> 
 </table>
-
->[!INFO]
->
->**Exempel:** Följande API-anrop returnerar listan över alla användare i ditt [!DNL Salesforce]-konto:
->
->* **URL**: `query`
->
->* **Metod**: [!UICONTROL GET]
->
->* **Frågesträng**:
->
->* **Nyckel**: `q`
->
->* **Värde**: `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
->
->Det går att hitta matchningar av sökningen i modulens utdata under **[!UICONTROL Bundle]> [!UICONTROL Body] >[!UICONTROL records]**.
->
->I vårt exempel returnerades sex användare:
->
->![Matchar för sökningen](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
 
 
 #### [!UICONTROL Update a Record]
@@ -505,7 +514,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-salesforce">Skapa en anslutning till Salesforce</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID]</td> 
@@ -537,7 +546,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-salesforce">Skapa en anslutning till Salesforce</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Type of Upload]</td> 
@@ -549,7 +558,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder]</td> 
-   <td>Markera den mapp som innehåller den fil som du vill att modulen ska överföra. </td> 
+   <td>Välj den mapp där du vill överföra ett dokument. </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Source File]</td> 
@@ -561,8 +570,6 @@ När du konfigurerar den här modulen visas följande fält.
 #### Överför fil
 
 Den här åtgärdsmodulen överför en fil till Salesforce.
-
-
 
 <table style="table-layout:auto"> 
  <col> 
@@ -591,47 +598,14 @@ Den här åtgärdsmodulen överför en fil till Salesforce.
   <tr> 
    <td role="rowheader">[!UICONTROL Visibility]</td> 
    <td>Om du använder dokumentlänkning anger eller mappar du dokumentets synlighet.<ul><li><b>AllaAnvändare</b><p>Tillgängligt för alla användare med behörigheter</p></li><li><b>InternalUsers</b><p>Tillgängligt för interna användare med behörigheter.</p></li><li><b>SharedUsers</b><p>Tillgängligt för användare som kan se den feed som filen skickas till.</p></li></ul></td> 
-  </tr>
-
-### Sökningar
-
-#### [!UICONTROL Search with Query]
-
-Den här sökmodulen söker efter poster i ett objekt i [!DNL Salesforce] som matchar den sökfråga du anger. Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-När du konfigurerar den här modulen visas följande fält.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Search Type]</td> 
-   <td> <p>Välj den typ av sökning som du vill att modulen ska utföra:</p> 
-    <ul> 
-     <li> <p>[!UICONTROL Simple]</p> </li> 
-     <li> <p>[!UICONTROL Using SOSL (Salesforce Object Search Language)]</p> </li> 
-     <li> <p>[!UICONTROL Using SOQL (Salesforce Object Query Language)]</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> <p>[!UICONTROL Type] </p> </td> 
-   <td> <p>Om du valde den enkla söktypen väljer du den typ av [!DNL Salesforce]-post som du vill att modulen ska söka efter.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Query] / [!UICONTROL SOSL Query] / [!UICONTROL SOQL Query]</td> 
-   <td> <p>Ange frågan som du vill söka efter.</p> <p>Mer information om SOSL finns i <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce Object Search Language (SOSL)</a> i [!DNL Salesforce] -dokumentationen.</p> <p>Mer information om SOQL finns i <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language (SOQL)</a> i [!DNL Salesforce] -dokumentationen.</p> <p>Obs! Observera att värdet för parametern <code>RETURNING </code>påverkar modulens utdata. Om du använder <code>LIMIT</code> ignorerar [!DNL Fusion] inställningarna i fältet [!UICONTROL Maximal count of records]. Om du inte anger någon gräns infogas värdet [!UICONTROL LIMIT = Maximal count of records].</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Maximal count of records]</td> 
-   <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+### Sökningar
+
+* [Sök](#search)
+* [Sök med fråga](#search-with-query)
 
 #### [!UICONTROL Search]
 
@@ -655,7 +629,7 @@ Den här åtgärdsmodulen hämtar alla poster som uppfyller ett visst villkor.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td>Markera de fält som du vill inkludera i modulens utdata.</td> 
+   <td>Markera de fält som du vill inkludera i modulens utdata. Fälten är tillgängliga baserat på posttyp.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Result set]</td> 
@@ -664,6 +638,44 @@ Den här åtgärdsmodulen hämtar alla poster som uppfyller ett visst villkor.
   <tr> 
    <td role="rowheader">[!UICONTROL Maximal]</td> 
    <td>Ange eller mappa det maximala antal poster som du vill att modulen ska hämta under varje körningscykel för scenario.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Search with Query]
+
+Den här sökmodulen söker efter poster i ett objekt i [!DNL Salesforce] som matchar den sökfråga du anger. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-salesforce">Skapa en anslutning till Salesforce</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Search Type]</td> 
+   <td> <p>Välj den typ av sökning som du vill att modulen ska utföra:</p> 
+    <ul> 
+     <li> <p>[!UICONTROL Simple]</p> </li> 
+     <li> <p>[!UICONTROL Using SOSL (Salesforce Object Search Language)]</p> </li> 
+     <li> <p>[!UICONTROL Using SOQL (Salesforce Object Query Language)]</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Type] </p> </td> 
+   <td> <p>Om du valde den enkla söktypen väljer du den typ av [!DNL Salesforce]-post som du vill att modulen ska söka efter.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Query] / [!UICONTROL SOSL Query] / [!UICONTROL SOQL Query]</td> 
+   <td> <p>Ange frågan som du vill söka efter.</p> <p>Mer information om SOSL finns i <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce Object Search Language (SOSL)</a> i [!DNL Salesforce] -dokumentationen.</p> <p>Mer information om SOQL finns i <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language (SOQL)</a> i [!DNL Salesforce] -dokumentationen.</p> <p>Obs! Observera att värdet för parametern <code>RETURNING </code>påverkar modulens utdata. Om du använder <code>LIMIT</code> ignorerar [!DNL Fusion] inställningarna i fältet [!UICONTROL Maximal count of records]. Om du inte anger någon gräns infogas värdet [!UICONTROL LIMIT = Maximal count of records].</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximal count of records]</td> 
+   <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
