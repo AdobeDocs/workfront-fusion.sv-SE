@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Workfront Fusion AWS] S3-modulerna kan du utföra 
 author: Becky
 feature: Workfront Fusion
 exl-id: 6b2d9dd5-0b33-4297-aea0-aba26072b26a
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: d98d49cdca997caa2d1601d0163ae3f50e21ed66
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ Med S3-modulerna [!DNL Adobe Workfront Fusion AWS] kan du utföra åtgärder på
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
 <table style="table-layout:auto">
@@ -24,35 +26,37 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -111,10 +115,12 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 * [[!UICONTROL Create Bucket]](#create-bucket)
 * [[!UICONTROL Get File]](#get-file)
-* [[!UICONTROL Upload File]](#upload-file)
 * [[!UICONTROL Make an API Call]](#make-an-api-call)
+* [[!UICONTROL Upload File]](#upload-file)
 
 #### [!UICONTROL Create Bucket]
+
+Den här åtgärdsmodulen skapar en hink i AWS.
 
 <table style="table-layout:auto">
  <col> 
@@ -130,14 +136,14 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>Välj regional slutpunkt. Mer information finns i avsnittet om <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">regionala slutpunkter</a> i AWS-dokumentationen.</p> </td> 
+   <td> <p>Välj regional slutpunkt. Mer information finns i <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">regionala slutpunkter</a> i AWS-dokumentationen.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### [!UICONTROL Get File]
 
-Hämtar en fil från en hink.
+Den här åtgärdsmodulen hämtar en fil från en bucket.
 
 <table style="table-layout:auto">
  <col> 
@@ -149,7 +155,7 @@ Hämtar en fil från en hink.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>Välj regional slutpunkt. Mer information finns i avsnittet om <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">regionala slutpunkter</a> i [!DNL AWS]-dokumentationen.</p> </td> 
+   <td> <p>Välj regional slutpunkt. Mer information finns i <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">regionala slutpunkter</a> i [!DNL AWS]-dokumentationen.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bucket] </td> 
@@ -162,36 +168,9 @@ Hämtar en fil från en hink.
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload File]
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL AWS]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL AWS] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>Välj regional slutpunkt. Mer information finns i avsnittet om <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">regionala slutpunkter</a> i [!DNL AWS]-dokumentationen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Folder] (valfritt) </p> </td> 
-   <td> <p>Ange målmappen som du vill överföra en fil till.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Headers] (valfritt)</p> </td> 
-   <td> <p> Infoga begäranderubriker. Tillgängliga rubriker finns i <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html">[!DNL AWS S3]-dokumentationen - [!UICONTROL PUT] object </a>.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Make an API Call]
+
+Den här åtgärdsmodulen gör ett anpassat anrop till AWS S3 API.
 
 Mer information om API:t [!DNL Amazon S3] finns i [[!DNL Amazon S3] [!UICONTROL REST] API-introduktion ](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html).
 
@@ -205,11 +184,11 @@ Mer information om API:t [!DNL Amazon S3] finns i [[!DNL Amazon S3] [!UICONTROL 
   </tr> 
   <tr> 
    <td>[!UICONTROL Region] </td> 
-   <td> <p>Välj regional slutpunkt. Mer information finns i avsnittet om <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">regionala slutpunkter</a> i [!DNL AWS]-dokumentationen.</p> </td> 
+   <td> <p>Välj regional slutpunkt. Mer information finns i <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">regionala slutpunkter</a> i [!DNL AWS]-dokumentationen.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL URL]</td> 
-   <td> <p>URL Ange en värd-URL. Sökvägen måste vara relativ till <code> https://s3.&lt;selected-region>.amazonaws.com/</code>.</p> </td> 
+   <td> <p>Ange en värd-URL. Sökvägen måste vara relativ till <code> https://s3.&lt;selected-region>.amazonaws.com/</code>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Method]</td> 
@@ -217,7 +196,7 @@ Mer information om API:t [!DNL Amazon S3] finns i [[!DNL Amazon S3] [!UICONTROL 
   </tr> 
   <tr> 
    <td>[!UICONTROL Headers]</td> 
-   <td> <p>Lägg till en begäranderubrik. Du kan använda följande vanliga begärandehuvuden. Mer information om begäranderubriker finns i <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html">[!DNL AWS S3] API-dokumentation </a>.</p> <p>[!DNL Workfront Fusion] lägger till auktoriseringshuvuden automatiskt.</p> 
+   <td> <p>Lägg till en begäranderubrik. För varje rubrik som du vill lägga till klickar du på <b>Lägg till objekt</b> och anger rubriken. Du kan använda följande vanliga begärandehuvuden. Mer information om begäranderubriker finns i <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html">[!DNL AWS S3] API-dokumentation </a>.</p> <p>[!DNL Workfront Fusion] lägger till auktoriseringshuvuden automatiskt.</p> 
     <table style="table-layout:auto">
      <col> 
      <col> 
@@ -238,7 +217,7 @@ Mer information om API:t [!DNL Amazon S3] finns i [[!DNL Amazon S3] [!UICONTROL 
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL Content-MD5]</p> </td> 
-       <td> <p>Base64-kodade 128-bitars MD5-meddelandet (utan meddelandehuvuden) enligt RFC 1864. Den här rubriken kan användas som en meddelandeintegritetskontroll för att verifiera att data är samma data som ursprungligen skickades. Även om det är valfritt rekommenderar vi att du använder funktionen [!UICONTROL Content-MD5] som en helhetskontroll. Mer information om [!UICONTROL REST]-begärandeautentisering finns i <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html?r=1821">[!UICONTROL REST] Autentisering </a> i <i>[!DNL Amazon] Utvecklarhandbok för enkel lagringstjänst </i>.</p> </td> 
+       <td> <p>Base64-kodade 128-bitars MD5-meddelandet (utan meddelandehuvuden) enligt RFC 1864. Den här rubriken kan användas som en meddelandeintegritetskontroll för att verifiera att data är samma data som ursprungligen skickades. Även om det är valfritt rekommenderar vi att du använder funktionen [!UICONTROL Content-MD5] som en helhetskontroll. Mer information om [!UICONTROL REST]-begärandeautentisering finns i <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html?r=1821">Signera och autentisera REST-begäranden</a> i AWS-dokumentationen.</p> </td> 
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL Date]</p> </td> 
@@ -250,11 +229,11 @@ Mer information om API:t [!DNL Amazon S3] finns i [[!DNL Amazon S3] [!UICONTROL 
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL Host]</p> </td> 
-       <td> <p>För sökvägsbegäranden är värdet <code>s3.amazonaws.com</code>. För begäranden i virtuell stil är värdet <code>BucketName.s3.amazonaws.com</code>. Mer information finns i <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html">Virtuell värdtjänst</a> i <i>[!DNL Amazon] Utvecklarhandbok för enkel lagringstjänst</i>.</p> <p>Den här rubriken krävs för HTTP 1.1 (de flesta verktygslådor lägger till den här rubriken automatiskt); valfri för HTTP/1.0-begäranden.</p> </td> 
+       <td> <p>För sökvägsbegäranden är värdet <code>s3.amazonaws.com</code>. För begäranden i virtuell stil är värdet <code>BucketName.s3.amazonaws.com</code>. Mer information finns i <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html">Virtuell värdtjänst</a> i AWS-dokumentationen.</p> <p>Den här rubriken krävs för HTTP 1.1 (de flesta verktygslådor lägger till den här rubriken automatiskt); valfri för HTTP/1.0-begäranden.</p> </td> 
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL x-amz-content-sha256]</p> </td> 
-       <td> <p>När du använder signaturversion 4 för att autentisera begäran ger det här huvudet en hash av nyttolasten för begäran. När du överför ett objekt i segment ska du ange värdet <code>STREAMING-AWS4-HMAC-SHA256-PAYLOAD</code> för att ange att signaturen endast omfattar rubriker och att det inte finns någon nyttolast. Mer information finns i <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-streaming.html">Underskriftskalkylationer för auktoriseringshuvudet: Överför nyttolast i flera segment (chunked Upload) ([!DNL AWS] Signature version 4)</a>.</p> </td> 
+       <td> <p>När du använder signaturversion 4 för att autentisera begäran ger det här huvudet en hash av nyttolasten för begäran. När du överför ett objekt i segment ska du ange värdet <code>STREAMING-AWS4-HMAC-SHA256-PAYLOAD</code> för att ange att signaturen endast omfattar rubriker och att det inte finns någon nyttolast. Mer information finns i <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-streaming.html">Signaturberäkningar för auktoriseringshuvudet</a> i AWS-dokumentationen.</p> </td> 
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL x-amz-date]</p> </td> 
@@ -285,6 +264,37 @@ Mer information om API:t [!DNL Amazon S3] finns i [[!DNL Amazon S3] [!UICONTROL 
  </tbody> 
 </table>
 
+#### [!UICONTROL Upload File]
+
+Den här åtgärdsmodulen överför en fil till en AWS S3-bucket.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL AWS]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL AWS] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Region] </td> 
+   <td> <p>Välj regional slutpunkt. Mer information finns i <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">regionala slutpunkter</a> i [!DNL AWS]-dokumentationen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Folder] </p> </td> 
+   <td> <p>Ange målmappen som du vill överföra en fil till.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Headers] (valfritt)</p> </td> 
+   <td> <p> För varje rubrik som du vill lägga till klickar du på <b>Lägg till objekt</b> och anger rubrikens nyckel och värde.</p><p> Information om tillgängliga rubriker finns i <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html">PutObject</a> i AWS-dokumentationen.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Sökningar
 
 * [[!UICONTROL List Files]](#list-files)
@@ -304,15 +314,15 @@ Returnerar en lista med filer från en angiven plats.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>Välj regional slutpunkt. Mer information finns i avsnittet om <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">regionala slutpunkter</a> i [!DNL AWS]-dokumentationen.</p> </td> 
+   <td> <p>Välj regional slutpunkt. Mer information finns i <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">regionala slutpunkter</a> i [!DNL AWS]-dokumentationen.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bucket] </td> 
    <td> <p>Markera den [!DNL Amazon S3]-bucket som du vill söka efter filer.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Prefix] (valfritt)</p> </td> 
-   <td> <p> Sökväg till en mapp där filer ska slås upp, t.ex. <code>workfrontfusion/work.</code></p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Prefix]</p> </td> 
+   <td> <p> Ange en sökväg till en mapp där du vill söka efter filer, till exempel <code>workfrontfusion/work.</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -331,7 +341,7 @@ Returnerar en lista med mappar från en angiven plats.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>Välj regional slutpunkt. Mer information finns i avsnittet om <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">regionala slutpunkter</a> i AWS-dokumentationen.</p> </td> 
+   <td> <p>Välj regional slutpunkt. Mer information finns i <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">regionala slutpunkter</a> i [!DNL AWS]-dokumentationen.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bucket] </td> 
@@ -339,7 +349,7 @@ Returnerar en lista med mappar från en angiven plats.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Prefix] (valfritt)</p> </td> 
-   <td> <p> Sökväg till en mapp där du kan söka efter mappar, t.ex. <code>workfrontfusion/work.</code></p> </td> 
+   <td> <p> Sökväg till en mapp som du vill söka efter mappar i, till exempel <code>workfrontfusion/work.</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
