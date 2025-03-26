@@ -4,9 +4,9 @@ description: Du kan använda Adobe Workfront Fusion Adobe Workfront-kontakten f�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: dab5aacd091cec2644f3e8ddac2549dac7b927b8
 workflow-type: tm+mt
-source-wordcount: '6213'
+source-wordcount: '6593'
 ht-degree: 0%
 
 ---
@@ -849,6 +849,79 @@ När du konfigurerar den här modulen visas följande fält.
 </table>
 
 Se en lista över de Workfront-objekttyper som du kan använda den här modulen för i [Workfront-objekttyper som är tillgängliga för varje Workfront-modul](#workfront-object-types-available-for-each-workfront-module).
+
++++
+
++++ **Uppdatera nyttolastversion för händelser**
+
+Workfront har nyligen släppt en ny version av sin abonnemangstjänst. Den nya versionen är inte en ändring av Workfront API, utan snarare en ändring av prenumerationsfunktionen för evenemang. Den här åtgärdsmodulen uppdaterar den händelsenyttolastversion som används för det här scenariot.
+
+Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter din Workfront-app till Workfront Fusion finns i <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Ansluta Workfront till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Version]</td> 
+   <td> Välj den version av händelseprenumerationen som du vill använda för denna nyttolast. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
++++
+
++++ **Uppdatera en post (med kopplade anpassade formulär)**
+
+
+Den här åtgärdsmodulen uppdaterar ett objekt, t.ex. ett projekt, en uppgift eller ett problem. I modulen kan du välja vilka av objektets fält som är tillgängliga i modulen.
+
+Du anger postens ID.
+
+Modulen returnerar objektets ID och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto">
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter din Workfront-app till Workfront Fusion finns i <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Ansluta Workfront till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL ID]</td> 
+   <td> <p>Ange det unika Workfront-ID:t för den post som du vill att modulen ska uppdatera.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!DNL Record Type]</td> 
+   <td> <p>Markera den typ av Workfront-post som du vill att modulen ska uppdatera.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!DNL Select fields to map]</td> 
+   <td>Markera de fält som du vill ska vara tillgängliga för datainmatning. På så sätt kan du använda de här fälten utan att behöva bläddra igenom de fält du inte behöver. Du kan sedan ange eller mappa data till dessa fält.</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!DNL Attach Custom Form]</td> 
+   <td>Välj de anpassade formulär som du vill bifoga till den nya posten. När du har valt formuläret anger du data för fälten i det formuläret.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+Se en lista över de Workfront-objekttyper som du kan använda den här modulen för i [Workfront-objekttyper som är tillgängliga för varje Workfront-modul](#workfront-object-types-available-for-each-workfront-module).
+
+>[!NOTE]
+>
+> När du anger text för ett anpassat fält eller ett [!UICONTROL Note]-objekt (kommentar eller svar) kan du använda HTML-taggar i fältet [!UICONTROL Note Text] för att skapa RTF, till exempel fet eller kursiv text.
+
 
 +++
 
