@@ -4,9 +4,9 @@ description: Med Adobe Photoshop-modulerna kan du starta ett Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: ad5701c5484da802dea8668c9c4aad58a6dba3eb
 workflow-type: tm+mt
-source-wordcount: '4334'
+source-wordcount: '3734'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
       <td>
-        <p>[!UICONTROL Pro] eller senare</p>
+        <p>[!UICONTROL Pro] eller högre</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
       <td>
-        <p>[!UICONTROL-plan], [!UICONTROL-arbete]</p>
+        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
       </td>
     </tr>
     <tr>
@@ -68,6 +68,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 Innan du kan använda [!DNL Adobe Photoshop]-anslutningen måste du se till att följande krav uppfylls:
 
 * Du måste ha ett aktivt [!DNL Adobe Photoshop]-konto.
+* Du måste ha ett klient-ID och en klienthemlighet. Du kan hämta dessa från Adobe Developer Console.
 
 ## Adobe Photoshop API-information
 
@@ -92,7 +93,7 @@ Adobe Photoshop Connector använder följande:
 
 Så här skapar du en anslutning för dina [!DNL Adobe Photoshop]-moduler:
 
-1. Klicka på **[!UICONTROL Lägg till]** bredvid rutan Anslutning i en modul.
+1. Klicka på **[!UICONTROL Add]** bredvid rutan Anslutning i någon av modulerna.
 
 1. Fyll i följande fält:
 
@@ -103,29 +104,29 @@ Så här skapar du en anslutning för dina [!DNL Adobe Photoshop]-moduler:
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL-anslutningsnamn]</td>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
         <td>
           <p>Ange ett namn för anslutningen.</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL-klient-ID]</td>
-        <td>Ange ditt [!UICONTROL Adobe] [!UICONTROL klient-ID]. Detta finns i avsnittet med information om [!UICONTROL-autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Ange din [!UICONTROL Adobe] [!UICONTROL Client ID]. Detta finns i avsnittet [!UICONTROL Credentials]-information i [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL-klienthemlighet]</td>
-        <td>Ange din [!DNL Adobe] [!UICONTROL-klienthemlighet]. Detta finns i avsnittet med information om [!UICONTROL-autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Ange din [!DNL Adobe] [!UICONTROL Client Secret]. Detta finns i avsnittet [!UICONTROL Credentials]-information i [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Technical account ID]</td>
-        <td>Ange ditt [!DNL Adobe] [!UICONTROL Technical account ID]. Detta finns i avsnittet med information om [!UICONTROL-autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
+        <td>Ange din [!DNL Adobe] [!UICONTROL Technical account ID]. Detta finns i avsnittet [!UICONTROL Credentials]-information i [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL-organisations-ID]</td>
-        <td>Ange ditt [!DNL Adobe] [!UICONTROL-organisations-ID]. Detta finns i avsnittet med information om [!UICONTROL-autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL Organization ID]</td>
+        <td>Ange din [!DNL Adobe] [!UICONTROL Organization ID]. Detta finns i avsnittet [!UICONTROL Credentials]-information i [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL privat nyckel]</td>
+        <td role="rowheader">[!UICONTROL Private key]</td>
         <td>
           <p>Ange den privata nyckel som skapades när dina autentiseringsuppgifter skapades i [!DNL Adobe Developer Console]. </p>
           <p>Så här extraherar du din privata nyckel eller ditt certifikat:</p>
@@ -151,7 +152,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe Photoshop]-moduler:
       </tbody>
     </table>
 
-1. Klicka på **[!UICONTROL Fortsätt]** för att spara anslutningen och återgå till modulen.
+1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
 
 ## [!DNL Adobe Photoshop]-moduler och deras fält
 
@@ -187,120 +188,120 @@ I den här åtgärdsmodulen används en rad dokument- och lagernivåredigeringar
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Photoshop] finns i <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Photoshop]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-lagring (indata)]</td>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
       <td>
         <p>Välj den filtjänst där filen som du vill redigera lagras.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats (indata)]</p>
+        <p>[!UICONTROL (Input) File location]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen till filen som du vill redigera. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Alternativ &gt; Dokument &gt; Bildstorlek) Höjd]</p>
+        <p>[!UICONTROL (Options > Document > Image size) Height]</p>
       </td>
       <td> Ange eller mappa bildens höjd i pixlar. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Alternativ &gt; Dokument &gt; Bildstorlek) Bredd</p>
+        <p>[!UICONTROL (Options > Document > Image size) Width]</p>
       </td>
       <td> Ange eller mappa bildens bredd i pixlar. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Alternativ &gt; Dokument &gt; Arbetsytans storlek) överkant]</p>
+        <p>[!UICONTROL (Options > Document > Canvas size) Top]</p>
       </td>
    <td> Ange eller mappa, i pixlar, y-koordinaten för dokumentets övre vänstra hörn. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Alternativ &gt; Dokument &gt; Arbetsytans storlek) nederkant]</p>
+        <p>[!UICONTROL (Options > Document > Canvas size) Bottom]</p>
       </td>
    <td> Ange eller mappa, i pixlar, y-koordinaten för dokumentets nedre högra hörn. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Alternativ &gt; Dokument &gt; Arbetsytans storlek) vänster]</p>
+        <p>[!UICONTROL (Options > Document > Canvas size) Left]</p>
       </td>
    <td> Ange eller mappa, i pixlar, x-koordinaten för dokumentets övre vänstra hörn. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Alternativ &gt; Dokument &gt; Arbetsytans storlek) höger]</p>
+        <p>[!UICONTROL (Options > Document > Canvas size) Right]</p>
       </td>
    <td> Ange eller mappa, i pixlar, x-koordinaten för dokumentets nedre högra hörn. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Alternativ &gt; Dokument) - trimning]</p>
+        <p>[!UICONTROL (Options > Document) Trim]</p>
       </td>
    <td> Välj Genomskinliga pixlar om du vill basera beskärningen på genomskinliga pixlar i bilden. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Alternativ) Standardteckensnitt]</p>
+        <p>[!UICONTROL (Options) Default font]</p>
       </td>
    <td> Ange det fullständiga postscript-namnet för det teckensnitt som ska användas som dokumentets globala standard. Det här teckensnittet används för alla textlager som saknar teckensnitt och inget annat teckensnitt har angetts specifikt för det lagret. Om det här teckensnittet saknas börjar det alternativ som anges i Hantera saknade teckensnitt gälla. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (alternativ) teckensnitt]</p>
+        <p>[!UICONTROL (Options) Fonts]</p>
       </td>
    <td> För varje teckensnitt som dokumentet behöver klickar du på Lägg till objekt och anger teckensnittets lagringsplats och filplats. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Alternativ) Hantera saknade teckensnitt]</p>
+        <p>[!UICONTROL (Options) Manage missing fonts]</p>
       </td>
    <td> Välj den åtgärd som ska utföras om det finns ett eller flera saknade teckensnitt i dokumentet. <ul><li><code>fail</code>: Jobbet kommer inte att lyckas och statusen kommer att ställas in på misslyckades, med information om felet som finns i statusavsnittet.</li><li><code>useDefault</code>: Jobbet kommer dock att lyckas, men som standard kommer alla saknade teckensnitt att ersättas med ArialMT.</li></ul></td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-lager (alternativ)]</p>
+        <p>[!UICONTROL (Options) Layers]</p>
       </td>
    <td> För varje lager som du vill lägga till klickar du på Lägg till objekt och fyller i lagerinformationen. <p>Mer information om lageralternativ finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_applyPsdEdits/">Tillämpa PSD-redigeringar</a> i Adobe Photoshop-dokumentationen.  </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-utdata]</td>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
         <p>För varje konverterad fil som du vill skapa klickar du på Lägg till objekt och anger lagringsplats, plats och typ enligt tabellen.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (utdata)-lagring]</td>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
       <td>
         <p>Välj den filtjänst där du vill att den nya filen ska lagras.</p><p>Om du väljer Fusion internal storage blir filen tillgänglig för senare moduler, men filen blir inte tillgänglig utanför scenariot.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats (utdata)]</p>
+        <p>[!UICONTROL (Output) File location]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen till den plats där den nya filen ska lagras. Detta är bara nödvändigt om du inte har valt Fusion intern lagring för utdatalagringen.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (utdatatyp)]</p>
+        <p>[!UICONTROL (Output) Type]</p>
       </td>
    <td>Välj den filtyp som du vill konvertera filen till. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (utdata) - överskrivning]</td>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
       <td>
         <p>Välj om den nyligen redigerade filen ska skriva över alla utdatafiler som redan finns. Detta gäller endast filer i Adobe-lagringsutrymme.</p>
       </td>
     </tr>
         <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Maximalt antal returnerade resultat]</p>
+        <p>[!UICONTROL Maximum number of returned results]</p>
       </td>
    <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
     </tr>
@@ -318,48 +319,48 @@ Den här åtgärdsmodulen korrigerar automatiskt den angivna bilden.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Photoshop] finns i <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Photoshop]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-lagring (indata)]</td>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
       <td>
         <p>Välj den filtjänst där filen som du vill färgkorrigera lagras.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats (indata)]</p>
+        <p>[!UICONTROL (Input) File location]</p>
       </td>
    <td> Ange eller mappa URL-adressen eller sökvägen till filen som du vill färgkorrigera. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (utdata)-lagring]</td>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
       <td>
         <p>Välj den filtjänst där du vill att den nya filen ska lagras.</p><p>Om du väljer Fusion internal storage blir filen tillgänglig för senare moduler, men filen blir inte tillgänglig utanför scenariot.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats (utdata)]</p>
+        <p>[!UICONTROL (Output) File location]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen till den plats där den nya filen ska lagras. Detta är bara nödvändigt om du inte har valt Fusion intern lagring för utdatalagringen.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (utdatatyp)]</p>
+        <p>[!UICONTROL (Output) Type]</p>
       </td>
    <td>Välj den filtyp som du vill konvertera filen till. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (utdata) - överskrivning]</td>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
       <td>
         <p>Välj om den nyligen redigerade filen ska skriva över alla utdatafiler som redan finns. Detta gäller endast filer i Adobe-lagringsutrymme.</p>
       </td>
     </tr>
         <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Maximalt antal returnerade resultat]</p>
+        <p>[!UICONTROL Maximum number of returned results]</p>
       </td>
    <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
     </tr>
@@ -376,54 +377,54 @@ Den här åtgärdsmodulen konverterar en fil till JPEG, PNG, PSD eller TIFF.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Photoshop] finns i <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Photoshop]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-lagring (indata)]</td>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
       <td>
         <p>Välj den filtjänst där den fil som du vill ta bort bakgrunden från lagras.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats (indata)]</p>
+        <p>[!UICONTROL (Input) File location]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen till filen som du vill ta bort bakgrunden från. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-utdata]</td>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
         <p>För varje konverterad fil som du vill skapa klickar du på Lägg till objekt och anger lagringsplats, plats och typ enligt tabellen.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (utdata)-lagring]</td>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
       <td>
         <p>Välj den filtjänst där du vill att den nya filen ska lagras.</p><p>Om du väljer Fusion internal storage blir filen tillgänglig för senare moduler, men filen blir inte tillgänglig utanför scenariot.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats (utdata)]</p>
+        <p>[!UICONTROL (Output) File location]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen till den plats där den nya filen ska lagras. Detta är bara nödvändigt om du inte har valt Fusion intern lagring för utdatalagringen. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (utdatatyp)]</p>
+        <p>[!UICONTROL (Output) Type]</p>
       </td>
    <td>Välj den filtyp som du vill konvertera filen till. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (utdata) - överskrivning]</td>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
       <td>
         <p>Välj om den nyligen redigerade filen ska skriva över alla utdatafiler som redan finns. Detta gäller endast filer i Adobe-lagringsutrymme.</p>
       </td>
     </tr>
         <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Maximalt antal returnerade resultat]</p>
+        <p>[!UICONTROL Maximum number of returned results]</p>
       </td>
    <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
     </tr>
@@ -441,30 +442,30 @@ Den här åtgärdsmodulen returnerar en PNG-fil med ett mönster runt motivet.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Photoshop] finns i <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Photoshop]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-lagring (indata)]</td>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
       <td>
         <p>Välj den filtjänst där filen som du vill skapa en mask från lagras.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats (indata)]</p>
+        <p>[!UICONTROL (Input) File location]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen till filen som du vill skapa en mask från. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (utdata)-lagring]</td>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
       <td>
         <p>Välj den filtjänst där du vill att maskfilen ska lagras.</p><p>Om du väljer Fusion internal storage blir filen tillgänglig för senare moduler, men filen blir inte tillgänglig utanför scenariot.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats (utdata)]</p>
+        <p>[!UICONTROL (Output) File location]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen där maskfilen ska lagras. Detta är bara nödvändigt om du inte har valt Fusion intern lagring för utdatalagringen.</td> 
     </tr>
@@ -476,19 +477,19 @@ Den här åtgärdsmodulen returnerar en PNG-fil med ett mönster runt motivet.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-färgrymd]</p>
+        <p>[!UICONTROL Color space]</p>
       </td>
    <td>Välj om utdatabilden ska ha RGB- eller RGBA-färg. </td> 
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-maskformat]</p>
+        <p>[!UICONTROL Mask format]</p>
       </td>
    <td>Välj om masken ska vara mjuk (luddig) eller binär. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-optimering]</p>
+        <p>[!UICONTROL Optimize]</p>
       </td>
    <td>Välj Prestanda om du vill optimera hastigheten eller Gruppera om du vill tillåta väntetid. </td> 
     </tr>
@@ -500,13 +501,13 @@ Den här åtgärdsmodulen returnerar en PNG-fil med ett mönster runt motivet.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-version]</p>
+        <p>[!UICONTROL Version]</p>
       </td>
    <td>Standard är 4.0</td> 
     </tr> 
         <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Maximalt antal returnerade resultat]</p>
+        <p>[!UICONTROL Maximum number of returned results]</p>
       </td>
    <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
     </tr>
@@ -528,7 +529,7 @@ Den här åtgärdsmodulen redigerar textlager i en Photoshop-fil.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Photoshop] finns i <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Photoshop]</a> i den här artikeln.</td>
     </tr>
     <tr>
@@ -544,19 +545,19 @@ Den här åtgärdsmodulen redigerar textlager i en Photoshop-fil.
    <td> Ange eller mappa URL:en eller sökvägen till filen som du vill redigera. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Hantera saknade teckensnitt]</td>
+      <td role="rowheader">[!UICONTROL Manage missing fonts]</td>
       <td>
         <p>Välj den åtgärd som ska utföras om det finns ett eller flera saknade teckensnitt i dokumentet. Om teckensnittet inte anges används standardteckensnittet.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-standardteckensnitt]  </td>
+      <td role="rowheader">[!UICONTROL Default font]  </td>
       <td>
         <p>Ange det fullständiga postscript-namnet för det teckensnitt som ska användas som dokumentets globala standard. Det här teckensnittet används för alla textlager som saknar teckensnitt och inget annat teckensnitt har angetts specifikt för det lagret. Om det här teckensnittet saknas börjar det alternativ som anges i Hantera saknade teckensnitt gälla.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-lager]</td>
+      <td role="rowheader">[!UICONTROL Layers]</td>
    <td> <p>Mer information om lageralternativ finns i <a href="https://developer.adobe.com/photoshop/photoshop-api-docs/api/#tag/Photoshop/operation/text">Redigera textlager</a> i Adobe Photoshop-dokumentationen.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Output file storage]</td>
@@ -572,7 +573,7 @@ Den här åtgärdsmodulen redigerar textlager i en Photoshop-fil.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-utdatafiltyp]</p>
+        <p>[!UICONTROL Output file type]</p>
       </td>
    <td> Välj filtyp för den redigerade filen. </td> 
     </tr>
@@ -584,7 +585,7 @@ Den här åtgärdsmodulen redigerar textlager i en Photoshop-fil.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-komprimering]</p>
+        <p>[!UICONTROL Compression]</p>
       </td>
    <td> Välj komprimeringsnivå för utdatafilen. </td> 
     </tr>
@@ -602,18 +603,18 @@ Den här åtgärdsmodulen kör Photoshop-åtgärder med JSON-kommandon.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Photoshop] finns i <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Photoshop]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-lagring (indata)]</td>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
       <td>
         <p>Välj den filtjänst där filen som du vill redigera lagras.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats (indata)]</p>
+        <p>[!UICONTROL (Input) File location]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen till filen som du vill redigera. </td> 
     </tr>
@@ -624,19 +625,19 @@ Den här åtgärdsmodulen kör Photoshop-åtgärder med JSON-kommandon.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-teckensnitt / Mönster / Penslar / Ytterligare bilder]</td>
+      <td role="rowheader">[!UICONTROL Fonts / Patterns / Brushes / Additional images]</td>
       <td>
         <p>För varje teckensnitt, mönster, pensel eller ytterligare bild som du vill använda i den här åtgärden klickar du på Lägg till objekt och anger objektets lagringsplats och filplats.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-teckensnitt / mönster / penselfilens URL]</p>
+        <p>[!UICONTROL Font / Pattern / Brush file URL]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen till filen som du vill använda. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL visar fillagring]</td>
+      <td role="rowheader">[!UICONTROL Outputs file storage]</td>
       <td>
         <p>Välj den filtjänst där du vill att den redigerade filen ska lagras.</p><p>Om du väljer Fusion internal storage blir filen tillgänglig för senare moduler, men filen blir inte tillgänglig utanför scenariot.</p>
       </td>
@@ -649,7 +650,7 @@ Den här åtgärdsmodulen kör Photoshop-åtgärder med JSON-kommandon.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-utdatafiltyp]</p>
+        <p>[!UICONTROL Output file type]</p>
       </td>
    <td> Välj filtyp för den redigerade filen. </td> 
     </tr>
@@ -661,43 +662,43 @@ Den här åtgärdsmodulen kör Photoshop-åtgärder med JSON-kommandon.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-komprimering]</p>
+        <p>[!UICONTROL Compression]</p>
       </td>
    <td> Välj komprimeringsnivå för utdatafilen. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-utdata]</td>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
         <p>För varje konverterad fil som du vill skapa klickar du på Lägg till objekt och anger lagringsplats, plats och typ enligt tabellen.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (utdata)-lagring]</td>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
       <td>
         <p>Välj den filtjänst där du vill att den nya filen ska lagras.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats (utdata)]</p>
+        <p>[!UICONTROL (Output) File location]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen till den plats där den nya filen ska lagras. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (utdatatyp)]</p>
+        <p>[!UICONTROL (Output) Type]</p>
       </td>
    <td>Välj den filtyp som du vill konvertera filen till. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (utdata) - överskrivning]</td>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
       <td>
         <p>Välj om den nyligen redigerade filen ska skriva över alla utdatafiler som redan finns. Detta gäller endast filer i Adobe-lagringsutrymme.</p>
       </td>
     </tr>
         <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Maximalt antal returnerade resultat]</p>
+        <p>[!UICONTROL Maximum number of returned results]</p>
       </td>
    <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
     </tr>
@@ -713,7 +714,7 @@ Den här åtgärdsmodulen kör djuposkärpa på den markerade filen.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Photoshop] finns i <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Photoshop]</a> i den här artikeln.</td>
     </tr>
     <tr>
@@ -742,12 +743,12 @@ Den här åtgärdsmodulen kör djuposkärpa på den markerade filen.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-utdatafiltyp]</p>
+        <p>[!UICONTROL Output file type]</p>
       </td>
    <td> Välj filtyp för den redigerade filen. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL, andra fält]</td>
+      <td role="rowheader">[!UICONTROL Other fields]</td>
       <td>
         <p>Mer information om andra alternativ för djuposkärpa finns i <a href="https://developer.adobe.com/photoshop/photoshop-api-docs/api/#tag/Photoshop/operation/depthBlur">Kör djuposkärpa </a> i dokumentationen för Adobe Photoshop API.</p>
       </td>
@@ -760,7 +761,7 @@ Den här åtgärdsmodulen kör djuposkärpa på den markerade filen.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-komprimering]</p>
+        <p>[!UICONTROL Compression]</p>
       </td>
    <td> Välj komprimeringsnivå för utdatafilen. </td> 
     </tr>
@@ -776,7 +777,7 @@ Den här åtgärdsmodulen kör en Photoshop-åtgärd på den markerade bilden.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Photoshop] finns i <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Photoshop]</a> i den här artikeln.</td>
     </tr>
     <tr>
@@ -805,19 +806,19 @@ Den här åtgärdsmodulen kör en Photoshop-åtgärd på den markerade bilden.
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-åtgärd, namn]</p>
+        <p>[!UICONTROL Action name]</p>
       </td>
    <td> Om du bara vill köra en viss åtgärd kan du ange vilken åtgärd som ska spelas upp från ActionSet. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-teckensnitt / mönster / pensellagring]</td>
+      <td role="rowheader">[!UICONTROL Font / Pattern / Brush storage]</td>
       <td>
         <p>Välj den filtjänst där filen som du vill använda lagras.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-teckensnitt / mönster / penselfilens URL]</p>
+        <p>[!UICONTROL Font / Pattern / Brush file URL]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen till filen som du vill använda. </td> 
     </tr>
@@ -835,7 +836,7 @@ Den här åtgärdsmodulen kör en Photoshop-åtgärd på den markerade bilden.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-utdatafiltyp]</p>
+        <p>[!UICONTROL Output file type]</p>
       </td>
    <td> Välj filtyp för den redigerade filen. </td> 
     </tr>
@@ -847,7 +848,7 @@ Den här åtgärdsmodulen kör en Photoshop-åtgärd på den markerade bilden.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-komprimering]</p>
+        <p>[!UICONTROL Compression]</p>
       </td>
    <td> Välj komprimeringsnivå för utdatafilen. </td> 
     </tr>
@@ -863,7 +864,7 @@ Den här åtgärdsmodulen kör produktbeskärning på den valda bilden.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Photoshop] finns i <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Photoshop]</a> i den här artikeln.</td>
     </tr>
     <tr>
@@ -880,19 +881,19 @@ Den här åtgärdsmodulen kör produktbeskärning på den valda bilden.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-enhet]</p>
+        <p>[!UICONTROL Unit]</p>
       </td>
    <td> Välj om du vill beskriva justeringen av höjd och bredd i pixlar eller i procent. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-bredd]</p>
+        <p>[!UICONTROL Width]</p>
       </td>
    <td> Ange eller mappa den mängd breddutfyllnad som du vill lägga till. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-höjd]</p>
+        <p>[!UICONTROL Height]</p>
       </td>
    <td> Ange eller mappa den höjd som du vill lägga till. </td> 
     </tr>
@@ -910,7 +911,7 @@ Den här åtgärdsmodulen kör produktbeskärning på den valda bilden.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-utdatafiltyp]</p>
+        <p>[!UICONTROL Output file type]</p>
       </td>
    <td> Välj filtyp för den redigerade filen. </td> 
     </tr>
@@ -922,7 +923,7 @@ Den här åtgärdsmodulen kör produktbeskärning på den valda bilden.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-komprimering]</p>
+        <p>[!UICONTROL Compression]</p>
       </td>
    <td> Välj komprimeringsnivå för utdatafilen. </td> 
     </tr>
@@ -938,7 +939,7 @@ Denna åtgärdsmodul hämtar lagerinformation från den angivna PSD-filen.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Photoshop] finns i <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Photoshop]</a> i den här artikeln.</td>
     </tr>
     <tr>
@@ -955,7 +956,7 @@ Denna åtgärdsmodul hämtar lagerinformation från den angivna PSD-filen.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-miniatyrbilder]</p>
+        <p>[!UICONTROL Thumbnails]</p>
       </td>
    <td> </td> 
     </tr>
@@ -971,18 +972,18 @@ Den här åtgärdsmodulen gör ett anpassat anrop till Photoshop API.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Photoshop] finns i <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Photoshop]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-URL]</td>
+      <td role="rowheader">[!UICONTROL URL]</td>
       <td>
         <p>Ange en relativ sökväg till <code>https://image.adobe.io/pie/psdService</code>. Exempel: <code>/photoshopActions</code></p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-metod]</p>
+        <p>[!UICONTROL Method]</p>
       </td>
    <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
     </tr>
@@ -995,7 +996,7 @@ Den här åtgärdsmodulen gör ett anpassat anrop till Photoshop API.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-frågesträng]  </td>
+      <td role="rowheader">[!UICONTROL Query String]  </td>
       <td>
         <p>Ange frågesträngen för begäran.</p>
       </td>
@@ -1018,30 +1019,30 @@ Den här åtgärdsmodulen identifierar huvudmotivet i bilden och tar bort bakgru
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Photoshop] finns i <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Photoshop]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-lagring (indata)]</td>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
       <td>
         <p>Välj den filtjänst där den fil som du vill ta bort bakgrunden från lagras.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats (indata)]</p>
+        <p>[!UICONTROL (Input) File location]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen till filen som du vill ta bort bakgrunden från. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (utdata)-lagring]</td>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
       <td>
         <p>Välj den filtjänst där du vill att den nya filen ska lagras.</p><p>Om du väljer Fusion internal storage blir filen tillgänglig för senare moduler, men filen blir inte tillgänglig utanför scenariot.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats (utdata)]</p>
+        <p>[!UICONTROL (Output) File location]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen till den plats där den nya filen ska lagras.  Detta är bara nödvändigt om du inte har valt Fusion intern lagring för utdatalagringen.</td> 
     </tr>
@@ -1053,19 +1054,19 @@ Den här åtgärdsmodulen identifierar huvudmotivet i bilden och tar bort bakgru
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-färgrymd]</p>
+        <p>[!UICONTROL Color space]</p>
       </td>
    <td>Välj om utdatabilden ska ha RGB- eller RGBA-färg. </td> 
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-maskformat]</p>
+        <p>[!UICONTROL Mask format]</p>
       </td>
    <td>Ange om kanterna på bilden ska vara mjuka (luddiga) eller binära. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-optimering]</p>
+        <p>[!UICONTROL Optimize]</p>
       </td>
    <td>Välj Prestanda om du vill optimera hastigheten eller Gruppera om du vill tillåta väntetid. </td> 
     </tr>
@@ -1077,13 +1078,13 @@ Den här åtgärdsmodulen identifierar huvudmotivet i bilden och tar bort bakgru
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-version]</p>
+        <p>[!UICONTROL Version]</p>
       </td>
    <td>Standard är 4.0</td> 
     </tr> 
         <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Maximalt antal returnerade resultat]</p>
+        <p>[!UICONTROL Maximum number of returned results]</p>
       </td>
    <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
     </tr>
@@ -1101,60 +1102,60 @@ Den här åtgärdsmodulen ersätter ett smart objekt i ett PSD-lager och skapar 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Photoshop] finns i <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Photoshop]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-lagring (indata)]</td>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
       <td>
         <p>Välj den filtjänst där det smarta objektet lagras.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats (indata)]</p>
+        <p>[!UICONTROL (Input) File location]</p>
       </td>
    <td> Ange eller mappa det smarta objektets URL eller sökväg. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-lager]</p>
+        <p>[!UICONTROL Layers]</p>
       </td>
    <td>För varje lager som du vill lägga till i det smarta objektet klickar du på Lägg till och anger objektets namn eller ID, filtjänsten där det smarta objektet lagras och lagrets URL eller bana.<p>Beskrivningar av förinställningarna i det här området finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Ersätta ett smart objekt</a> i Photoshop API-dokumentationen </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-utdata]</td>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
         <p>För varje ny återgivning som du vill att modulen ska skapa klickar du på Lägg till objekt och fyller i följande fält. Du kan ha högst 25 utdatafiler.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (utdata)-lagring]</td>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
       <td>
         <p>Välj den filtjänst där du vill att den nya filen ska lagras.</p><p>Om du väljer Fusion internal storage blir filen tillgänglig för senare moduler, men filen blir inte tillgänglig utanför scenariot.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats (utdata)]</p>
+        <p>[!UICONTROL (Output) File location]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen till den plats där den nya filen ska lagras.  Detta är bara nödvändigt om du inte har valt Fusion intern lagring för utdatalagringen.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (utdata), bredd]</p>
+        <p>[!UICONTROL (Output) Width]</p>
       </td>
    <td> Utdatafilens bredd i pixlar. De ursprungliga proportionerna bevaras i modulen. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (utdata) - överskrivning]</td>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
       <td>
         <p>Välj om den nyligen redigerade filen ska skriva över alla utdatafiler som redan finns. Detta gäller endast filer i Adobe-lagringsutrymme.</p>
       </td>
     </tr>
         <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Maximalt antal returnerade resultat]</p>
+        <p>[!UICONTROL Maximum number of returned results]</p>
       </td>
    <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
     </tr>
@@ -1172,36 +1173,36 @@ Den här åtgärden ändrar storlek på en bild med samma proportioner.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Photoshop] finns i <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Photoshop]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-lagring]</td>
+      <td role="rowheader">[!UICONTROL Storage]</td>
       <td>
         <p>Välj den filtjänst där filen som du vill ändra storlek på lagras.</p><p>Om du väljer Fusion internal storage blir filen tillgänglig för senare moduler, men filen blir inte tillgänglig utanför scenariot.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats]</p>
+        <p>[!UICONTROL File location]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen till filen som du vill ändra storlek på.  Detta är bara nödvändigt om du inte har valt Fusion intern lagring för utdatalagringen.</td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-utdata]</td>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
         <p>För varje konverterad fil som du vill skapa klickar du på Lägg till objekt och anger lagringsutrymme, plats och andra alternativ som visas i den här tabellen.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-typ]</p>
+        <p>[!UICONTROL Type]</p>
       </td>
    <td>Välj den filtyp som du vill konvertera filen till. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-bredd]</p>
+        <p>[!UICONTROL Width]</p>
       </td>
    <td>Ange ett tal som representerar bredden på den storleksändrade bilden i pixlar. Proportionerna bevaras.</td> 
     </tr>
@@ -1219,7 +1220,7 @@ Den här åtgärden ändrar storlek på en bild med samma proportioner.
     </tr>
         <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Trimma till arbetsyta]</p>
+        <p>[!UICONTROL Trim to canvas]</p>
       </td>
    <td>Välj Ja om du vill trimma återgivningarna till arbetsytans storlek eller Nej om du vill göra återgivningslagrets storlek.</td> 
     </tr>
@@ -1235,89 +1236,89 @@ Den här åtgärdsmodulen lägger till en vattenstämpel till den markerade bild
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Photoshop] finns i <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Photoshop]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-lagring (bas/ingång)]</td>
+      <td role="rowheader">[!UICONTROL (Base / Input) Storage]</td>
       <td>
         <p>Välj den filtjänst där filen som du vill lägga till en vattenstämpel finns.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (bas/indata), plats]</p>
+        <p>[!UICONTROL (Base / Input) File location]</p>
       </td>
    <td> Ange eller mappa URL-adressen eller sökvägen till filen som du vill lägga till en vattenstämpel i. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-lagring (vattenstämpel/indata)]</td>
+      <td role="rowheader">[!UICONTROL (Watermark / Input) Storage]</td>
       <td>
         <p>Välj den filtjänst där vattenstämpeln som du vill lägga till finns.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-lagring (vattenstämpel/indata)]</td>
+      <td role="rowheader">[!UICONTROL (Watermark / Input) Storage]</td>
       <td>
         <p>Välj den filtjänst där vattenstämpeln som du vill lägga till finns.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (vattenstämpel/gränser), höjd]</p>
+        <p>[!UICONTROL (Watermark / Bounds) Height]</p>
       </td>
    <td>Ange eller mappa vattenstämpelns önskade höjd i pixlar.</td> 
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (vattenstämpel/gränser) - bredd]</p>
+        <p>[!UICONTROL (Watermark / Bounds) Width]</p>
       </td>
    <td> Ange eller mappa önskad bredd för vattenstämpeln i pixlar. </td> 
     </tr>  
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (vattenstämpel/gränser) vänster]</p>
+        <p>[!UICONTROL (Watermark / Bounds) Left]</p>
       </td>
    <td> Ange eller mappa det avstånd i pixlar från bildens vänstra sida som vattenstämpeln ska vara.</td> 
     </tr>  
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (vattenstämpel/gränser) överkant]</p>
+        <p>[!UICONTROL (Watermark / Bounds) Top]</p>
       </td>
    <td> Ange eller mappa det avstånd i pixlar från bildens överkant som vattenstämpeln ska vara.</td> 
     </tr>  
     <tr>
-      <td role="rowheader">[!UICONTROL (utdata)-lagring]</td>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
       <td>
         <p>Välj den filtjänst där du vill att filen med vattenstämpel ska lagras.</p><p>Om du väljer Fusion internal storage blir filen tillgänglig för senare moduler, men filen blir inte tillgänglig utanför scenariot.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-filplats (utdata)]</p>
+        <p>[!UICONTROL (Output) File location]</p>
       </td>
    <td> Ange eller mappa URL:en eller sökvägen där filen med vattenstämpel ska lagras. Detta är bara nödvändigt om du inte har valt Fusion intern lagring för utdatalagringen.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (utdatatyp)]</p>
+        <p>[!UICONTROL (Output) Type]</p>
       </td>
    <td>Välj den filtyp som du vill konvertera filen till. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (utdata), bredd]</p>
+        <p>[!UICONTROL (Output) Width]</p>
       </td>
    <td> Utdatafilens bredd i pixlar. De ursprungliga proportionerna bevaras i modulen. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (utdata) - överskrivning]</td>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
       <td>
         <p>Välj om den nyligen redigerade filen ska skriva över alla utdatafiler som redan finns. Detta gäller endast filer i Adobe-lagringsutrymme.</p>
       </td>
     </tr>
         <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Maximalt antal returnerade resultat]</p>
+        <p>[!UICONTROL Maximum number of returned results]</p>
       </td>
    <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
     </tr>
