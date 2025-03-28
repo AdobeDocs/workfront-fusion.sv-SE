@@ -4,9 +4,9 @@ description: Med Adobe Photoshop-modulerna kan du starta ett Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: ad5701c5484da802dea8668c9c4aad58a6dba3eb
+source-git-commit: db1d6f5bf29063b069681395c6ff6d3554c67dc3
 workflow-type: tm+mt
-source-wordcount: '3734'
+source-wordcount: '3741'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,8 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 Innan du kan använda [!DNL Adobe Photoshop]-anslutningen måste du se till att följande krav uppfylls:
 
 * Du måste ha ett aktivt [!DNL Adobe Photoshop]-konto.
-* Du måste ha ett klient-ID och en klienthemlighet. Du kan hämta dessa från Adobe Developer Console.
+* Du måste ha en Firefly Services-licens.
+* Du måste ha ett klient-ID och en klienthemlighet. Du kan köpa dessa från Adobe Developer Console.
 
 ## Adobe Photoshop API-information
 
