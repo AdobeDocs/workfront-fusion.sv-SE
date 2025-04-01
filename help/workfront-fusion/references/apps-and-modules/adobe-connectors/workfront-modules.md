@@ -4,9 +4,9 @@ description: Du kan använda Adobe Workfront Fusion Adobe Workfront-kontakten f�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: dab5aacd091cec2644f3e8ddac2549dac7b927b8
+source-git-commit: 76272b2e9f084f670075d9b975ffa26c0be07fe5
 workflow-type: tm+mt
-source-wordcount: '6593'
+source-wordcount: '7264'
 ht-degree: 0%
 
 ---
@@ -375,7 +375,7 @@ Den här åtgärdsmodulen gör någon av följande konverteringar:
 
 +++
 
-+++ **[!UICONTROL Create a record (attaching custom forms)]**
++++ **[!UICONTROL Create a record]**
 
 I den här åtgärdsmodulen skapas ett objekt, t.ex. ett projekt, en uppgift eller ett problem i Workfront, och du kan lägga till ett anpassat formulär i det nya objektet. I modulen kan du välja vilka av objektets fält som är tillgängliga i modulen.
 
@@ -422,7 +422,12 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 
 +++
 
-+++ **[!UICONTROL Create Record]**
++++ **[!UICONTROL Create Record (Legacy)]**
+
+>[!IMPORTANT]
+>
+>Den här modulen har ersatts med modulen Skapa en post. Vi rekommenderar att du använder den modulen i nya scenarier.
+>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
 
 Den här åtgärdsmodulen skapar ett objekt, till exempel ett projekt, en uppgift eller ett problem i Workfront. I modulen kan du välja vilka av objektets fält som är tillgängliga i modulen.
 
@@ -820,8 +825,65 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
+    <td> <p>Instruktioner om hur du ansluter din Workfront-app till Workfront Fusion finns i <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Ansluta Workfront till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Record Type]</td>
 
-<td> <p>Instruktioner om hur du ansluter din Workfront-app till Workfront Fusion finns i <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Ansluta Workfront till Workfront Fusion</a> i den här artikeln.</p> </td> 
+<td>Välj den Workfront-objekttyp som du vill att modulen ska läsa.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Outputs]</td>
+
+<td> <p>Välj den information som du vill inkludera i utdatapaketet för den här modulen.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Output Custom Form]</td>
+     <td> <p>Välj de anpassade formulär som du vill inkludera i utdatapaketet för den här modulen och välj sedan de specifika fält från de anpassade formulär som du vill inkludera i utdata.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL References]</td>
+   <td>Markera de referensfält som du vill ta med i utdata.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Collections]</td>
+   <td>Markera de referensfält som du vill ta med i utdata.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL ID]</td>
+   <td> <p>Ange det unika Workfront-ID:t för den post som du vill att modulen ska läsa.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+Se en lista över de Workfront-objekttyper som du kan använda den här modulen för i [Workfront-objekttyper som är tillgängliga för varje Workfront-modul](#workfront-object-types-available-for-each-workfront-module).
+
++++
+
++++ **[!UICONTROL Read a Record (Legacy)]**
+
+>[!IMPORTANT]
+>
+>Den här modulen har ersatts med modulen Läs en post. Vi rekommenderar att du använder den modulen i nya scenarier.
+>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
+
+Den här åtgärdsmodulen hämtar data från en enda post.
+
+Du anger postens ID. Du kan också ange vilka relaterade poster som du vill att modulen ska läsa.
+
+Om posten som modulen läser till exempel är ett projekt kan du ange att du vill att projektets uppgifter ska läsas.
+
+Modulen returnerar en array med data från de utdatafält som du har angett.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td>[!UICONTROL Connection]</td>
+    <td> <p>Instruktioner om hur du ansluter din Workfront-app till Workfront Fusion finns i <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Ansluta Workfront till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Record Type]</td>
@@ -876,7 +938,12 @@ Mer information om den nya händelseprenumerationsversionen finns i [Versionshan
 
 +++
 
-+++ **Uppdatera en post (med kopplade anpassade formulär)**
++++ **Uppdatera en post**
+
+>[!IMPORTANT]
+>
+>Den här modulen har ersatts med modulen Uppdatera en post. Vi rekommenderar att du använder den modulen i nya scenarier.
+>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
 
 
 Den här åtgärdsmodulen uppdaterar ett objekt, t.ex. ett projekt, en uppgift eller ett problem. I modulen kan du välja vilka av objektets fält som är tillgängliga i modulen.
@@ -925,7 +992,7 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 
 +++
 
-+++ **[!UICONTROL Update Record]**
++++ **[!UICONTROL Update Record (Legacy)]**
 
 Den här åtgärdsmodulen uppdaterar ett objekt, t.ex. ett projekt, en uppgift eller ett problem. I modulen kan du välja vilka av objektets fält som är tillgängliga i modulen.
 
@@ -1095,9 +1162,69 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
++++ **[!UICONTROL Search records]**
+
+Den här sökmodulen söker efter poster i ett objekt i Workfront som matchar den sökfråga du anger.
+
+Du kan mappa den här informationen i efterföljande moduler i scenariot.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter din Workfront-app till Workfront Fusion finns i <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Ansluta Workfront till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Record Type]</td> 
+   <td> <p>Välj den typ av Workfront-post som du vill att modulen ska söka efter.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Custom forms list]</td> 
+   <td> <p>Välj minst ett anpassat formulär. Fält från dessa anpassade formulär är tillgängliga för sökfrågan.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Result Set]</td> 
+   <td>Välj ett alternativ för att ange om du vill att modulen ska få det första resultatet som matchar dina sökvillkor eller alla resultat som matchar det.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximal]</td> 
+   <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Search criteria fields]</td> 
+   <td> <p>Markera de fält som du vill använda som sökvillkor. Dessa fält är sedan tillgängliga i listrutan Sökvillkor.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Search criteria]</td> 
+   <td> <p>Ange fältet som du vill söka efter, operatorn som du vill använda i frågan och värdet som du söker efter i fältet.</p> <p>Obs! Använd inte <code>username </code> i sökvillkoren. Om <code>username </code> inkluderas i en API-fråga till Workfront loggas användaren in i Workfront och sökningen kommer inte att lyckas.</p> <p>Obs! <code>In</code> och <code>NotIn</code>fungerar med arrayer. Indata ska vara i matrisformat.</p></td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL Outputs]</td> 
+   <td> <p>Markera de fält som du vill inkludera i utdata för den här modulen.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL References]</td> 
+   <td>Markera de referensfält som du vill ta med i sökningen.</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL Collections]</td> 
+   <td>Markera de samlingar som du vill lägga till i sökningen.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 +++
 
-+++ **[!UICONTROL Search]**
++++ **[!UICONTROL Search (Legacy)]**
+
+>[!IMPORTANT]
+>
+>Den här modulen har ersatts med modulen Sök efter poster. Vi rekommenderar att du använder den modulen i nya scenarier.
+>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
 
 Den här sökmodulen söker efter poster i ett objekt i Workfront som matchar den sökfråga du anger.
 
