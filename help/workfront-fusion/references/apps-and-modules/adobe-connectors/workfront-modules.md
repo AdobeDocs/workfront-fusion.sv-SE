@@ -4,7 +4,7 @@ description: Du kan använda Adobe Workfront Fusion Adobe Workfront-kontakten f�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 76272b2e9f084f670075d9b975ffa26c0be07fe5
+source-git-commit: 5ba6e0ba687eb290c7d8882c6a615de8b3692617
 workflow-type: tm+mt
 source-wordcount: '7264'
 ht-degree: 0%
@@ -940,11 +940,6 @@ Mer information om den nya händelseprenumerationsversionen finns i [Versionshan
 
 +++ **Uppdatera en post**
 
->[!IMPORTANT]
->
->Den här modulen har ersatts med modulen Uppdatera en post. Vi rekommenderar att du använder den modulen i nya scenarier.
->Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
-
 
 Den här åtgärdsmodulen uppdaterar ett objekt, t.ex. ett projekt, en uppgift eller ett problem. I modulen kan du välja vilka av objektets fält som är tillgängliga i modulen.
 
@@ -993,6 +988,11 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 +++
 
 +++ **[!UICONTROL Update Record (Legacy)]**
+
+>[!IMPORTANT]
+>
+>Den här modulen har ersatts med modulen Uppdatera en post. Vi rekommenderar att du använder den modulen i nya scenarier.
+>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
 
 Den här åtgärdsmodulen uppdaterar ett objekt, t.ex. ett projekt, en uppgift eller ett problem. I modulen kan du välja vilka av objektets fält som är tillgängliga i modulen.
 
