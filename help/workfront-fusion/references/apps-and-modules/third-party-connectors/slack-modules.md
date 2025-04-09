@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: c9c68a4c-f592-42d1-b15f-a525b9aa3944
-source-git-commit: e52af924094722b0d212098ae2af5eded12a5309
+source-git-commit: eb0518ba0d1a0c758cb547e362c722f4be3674c7
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1654'
 ht-degree: 0%
 
 ---
@@ -186,8 +186,6 @@ Den här åtgärdsmodulen skapar ett nytt meddelande.
  </tbody> 
 </table>
 
-<!--Becky start here-->
-
 
 #### [!UICONTROL Delete a Message]
 
@@ -207,7 +205,11 @@ Den här åtgärdsmodulen tar bort ett angivet meddelande.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID]</td> 
-   <td> <p> Ange eller mappa tidsstämpeln för meddelandet som du vill ta bort.</p> <p>Obs! Tidsstämpeln kan hämtas med en annan modul, till exempel den bevakade privata kanalmodulen.</p> </td> 
+   <td> <p> Ange eller mappa tidsstämpeln för meddelandet som du vill ta bort.</p> <p>Obs! Tidsstämpeln kan hämtas med en annan modul, till exempel modulen Bevaka privata kanalmeddelanden.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL As user]</td> 
+   <td> <p> Aktivera det här alternativet om du vill ta bort meddelandet som användaren med de autentiseringsuppgifter som används i anslutningen.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -230,7 +232,7 @@ Den här åtgärdsmodulen hämtar information om ett meddelande från en markera
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Message ID (Time stamp)]</p> </td> 
-   <td> <p> Ange eller mappa meddelandets tidsstämpel för meddelandet som du vill hämta information om.</p> <p>Obs! Tidsstämpeln kan hämtas med en annan modul, till exempel modulen [!UICONTROL Watch Public Channel].</p> </td> 
+   <td> <p> Ange eller mappa meddelandets tidsstämpel för meddelandet som du vill hämta information om.</p> <p>Obs! Tidsstämpeln kan hämtas med en annan modul, till exempel modulen [!UICONTROL Watch Private Channel Messages].</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -253,7 +255,7 @@ Den här åtgärdsmodulen returnerar ett meddelande med ett angivet ID från en 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID (Time stamp)]</td> 
-   <td> <p> Ange eller mappa meddelandets tidsstämpel för meddelandet som du vill hämta information om.</p> <p>Obs! Tidsstämpeln kan hämtas med en annan modul, till exempel modulen [!UICONTROL Watch Public Channel].</p> </td> 
+   <td> <p> Ange eller mappa meddelandets tidsstämpel för meddelandet som du vill hämta information om.</p> <p>Obs! Tidsstämpeln kan hämtas med en annan modul, till exempel modulen [!UICONTROL Watch Public Channel Messages].</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -270,21 +272,33 @@ Med den här åtgärdsmodulen kan du redigera ett befintligt meddelande.
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Slack]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
-  <tr> 
+<!--  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
-   <td> <p>Välj hur du vill markera meddelandet som du vill skicka.</p> 
+   <td> <p>Choose how you want to select the message you want to .</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Ange eller mappa kanal-ID:t eller kanalen som innehåller meddelandet i fältet <strong>[!UICONTROL Channel ID or name]</strong> och ange sedan meddelandet <strong>[!UICONTROL Time Stamp (Message ID)]</strong>. .</p> <p>Obs! Channel-ID kan hämtas med modulen [!UICONTROL List Channels].</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Välj kanaltyp, markera kanalen och markera sedan meddelandet.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>In the <strong>[!UICONTROL Channel ID or name]</strong> field, enter or map the Channel ID or of the channel that contains the message, then enter the <strong>[!UICONTROL Time Stamp (Message ID)]</strong> of the message.</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the type of channel, then select the channel, then select the message.</p> </li> 
     </ul> </td> 
+  </tr> -->
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Channel ID]</p> </td> 
+   <td> <p>Ange eller mappa ID:t för kanalen som innehåller meddelandet som du vill uppdatera.</p> <p>Obs! Channel-ID kan hämtas med modulen [!UICONTROL List Channels].</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Message ID (Time stamp)]</p> </td> 
+   <td> <p> Ange eller mappa meddelandets tidsstämpel för meddelandet som du vill hämta information om.</p> <p>Obs! Tidsstämpeln kan hämtas med en annan modul, till exempel modulen [!UICONTROL Watch Public Channel Messages].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Text]</p> </td> 
    <td> <p>Ange det nya textinnehållet i meddelandet som du vill uppdatera.</p> <p>Mer information finns i <a href="https://api.slack.com/docs/formatting">Formatera text för appytor</a> i [!DNL Slack]-dokumentationen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Blocks]</td> 
-   <td>Block är återanvändbara komponenter som du kan använda för att anpassa och ordna dina meddelanden. Mer information om block finns i <a href="https://api.slack.com/block-kit">Blockkit</a> i [!DNL Slack]-dokumentationen.</td> 
+   <td role="rowheader">[!UICONTROL As user]</td> 
+   <td>Aktivera det här alternativet om du vill uppdatera meddelandet som den användare som äger inloggningsuppgifterna som används i anslutningen för den här modulen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Attachments]</td> 
+   <td>För varje objekt som du vill bifoga till meddelandet klickar du på <b>Lägg till objekt</b> och fyller i informationen för objektet.</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Link names]</p> </td> 
@@ -409,14 +423,14 @@ Sökmodulen returnerar en lista med användare i den valda kanalen.
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Slack]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Channel type]</td> 
-   <td>Välj den typ av kanal som innehåller listan med medlemmar som du vill visa.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private Channel]</td> 
-   <td>Markera kanalen som du vill visa medlemmar i.</td> 
-  </tr> 
+<tr> 
+   <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
+   <td> <p>Välj hur du vill markera meddelandet som du vill skicka.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>I fältet <strong>[!UICONTROL Channel ID or name]</strong> anger eller mappar du det kanal-ID eller den kanal som du vill visa användarna från.</p> <p>Obs! Channel-ID kan hämtas med modulen [!UICONTROL List Channels].</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Välj kanaltyp och sedan kanal.</p> </li> 
+    </ul> </td> 
+  </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
    <td> <p>Ange det maximala antalet medlemmar som [!DNL Workfront Fusion] returnerar under en körningscykel.</p> </td> 
@@ -465,6 +479,10 @@ Med den här åtgärdsmodulen kan du göra ett anpassat autentiserat anrop till 
   <tr> 
    <td role="rowheader">[!UICONTROL Base URL]</td> 
    <td>Välj den bas-URL som du vill använda för API-anropet.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Send access token]</td> 
+   <td>Välj om du vill skicka åtkomsttoken som en rubrik eller som en frågeparameter.</td> 
   </tr> 
  </tbody> 
 </table>
