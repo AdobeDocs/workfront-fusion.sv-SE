@@ -1,12 +1,12 @@
 ---
-title: Visa och lösa ofullständiga körningar
-description: Mappen [!UICONTROL Incomplete executions] lagrar scenariekörningar som inte slutfördes korrekt på grund av ett fel. Varje lagrad ofullständig körning kan lösas antingen manuellt eller automatiskt.
+title: Visa ett scenario körningshistorik
+description: Du kan visa information om händelser eller körningar i ett scenario eller söka efter specifika data i alla körningar i scenariot.
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

@@ -5,9 +5,9 @@ description: I den här artikeln beskrivs hur ett scenario körs och hur data fl
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 # Körningsflöde för scenarier
 
 I den här artikeln beskrivs hur ett scenario körs och hur data flödar genom det samt hur du visar data som bearbetas av varje modul.
+
+Information om hur data flödar genom ett aktivt scenario finns i [Visa dataflöde i ett pågående scenario](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
 ## Körningsflöde för scenarier
 
