@@ -4,14 +4,21 @@ description: Följande allmänna funktioner är tillgängliga på panelen för m
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 295004ab7536b85124bc366d6832c08365338d08
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
 
 # Allmänna funktioner
+
+## Variabel
+
+Det finns två allmänna variabler som du kan använda för att identifiera information om en körning:
+
+* `executionID`: ID för den här scenariokörningen
+* `triggerTimestamp`: Den tidpunkt då den här körningen utlöstes
 
 ## [!UICONTROL get (object or array; path)]
 
