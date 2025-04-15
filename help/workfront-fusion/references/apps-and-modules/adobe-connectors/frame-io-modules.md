@@ -1,12 +1,12 @@
 ---
-title: Frame.io-moduler
+title: Frame.io-moduler (äldre)
 description: Kontot  [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] .
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 31487c8b5b6efad1e6d7817dfe7dda67eea88e43
+source-git-commit: 31266e79d736cdb055bb0ad36a75ac61ce426ec2
 workflow-type: tm+mt
-source-wordcount: '2204'
+source-wordcount: '2205'
 ht-degree: 0%
 
 ---
