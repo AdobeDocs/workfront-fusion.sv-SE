@@ -4,16 +4,31 @@ description: Kontot  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 31487c8b5b6efad1e6d7817dfe7dda67eea88e43
 workflow-type: tm+mt
-source-wordcount: '2128'
+source-wordcount: '2204'
 ht-degree: 0%
 
 ---
 
-# [!DNL Frame.io] moduler
+# [!DNL Frame.io] äldre moduler
+
+>[!IMPORTANT]
+>
+>I den här artikeln beskrivs den äldre versionen av Frame.io-kopplingen. Den här kopplingen används för att ansluta till Frame.io version 3.
+>
+>Instruktioner om den nya (beta) versionen av Frame.io-kopplingen finns i [Frame.io Beta-koppling](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
 
 Med modulerna [!DNL Adobe Workfront Fusion] [!DNL Frame.io] kan du övervaka, skapa, uppdatera, hämta eller ta bort resurser och kommentarer i ditt [!DNL Frame.io]-konto.
+
+Workfront har två Frame.io-anslutningar, baserat på den version av Frame.io som du ansluter till.
+
+| Koppling | Frame.io-version |
+|---|---|
+| Frame.io (Beta) | V4 |
+| Frame.io (äldre) | V3 |
+
+Instruktioner om den nya (beta) versionen av Frame.io-kopplingen finns i [Frame.io Beta-koppling](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
 
 En videointroduktion till Frame.io-anslutningen finns i:
 
@@ -626,7 +641,7 @@ Den här åtgärdsmodulen redigerar en befintlig kommentar.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 
-   <td> <p>Markera projektet \ som innehåller resursen som du vill uppdatera en kommentar för.</p> </td> 
+   <td> <p>Välj det projekt som innehåller resursen som du vill uppdatera en kommentar för.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder ID] </td> 
