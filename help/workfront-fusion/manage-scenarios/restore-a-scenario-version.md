@@ -4,14 +4,16 @@ description: Du kan återställa en tidigare version av ett scenario. På så s�
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
 
-# Återställa en scenarioversion
+# Visa och hantera scenarioversioner
+
+Du kan visa, återställa eller byta namn på tidigare versioner av ett scenario.
 
 ## Åtkomstkrav
 
@@ -65,16 +67,20 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 +++
 
-## Återställa en scenarioversion
+<!--procedure - open, optional add comment, optional restore version-->
 
-1. Öppna ditt scenario.
+## Visa och hantera versionshistorik för ett scenario
+
+1. Klicka på **[!UICONTROL Scenarios]** ![Scenarioikonen](assets/scenarios-icon.png) i den vänstra panelen och klicka sedan på scenariot för att öppna det.
 1. Klicka på ikonen [!UICONTROL More] ![Mer ](assets/more-icon.png) längst ned på skärmen och klicka sedan på **[!UICONTROL Previous Versions]**.
 
-1. Klicka på **[!UICONTROL Pick the version]** och klicka sedan på den version som du vill återställa.
-1. Klicka på **[!UICONTROL OK]**.
+   En lista över tidigare versioner visas.
+1. (Valfritt) Om du vill byta namn på versionen klickar du på menyn Mer ![Mer](assets/more-icon-vertical.png) på raden för den versionen, väljer **Redigera** och anger ett namn i fältet. Klicka på **Spara** för att spara det nya namnet.
 
-   Den valda scenarioversionen återställs.
+   Vi rekommenderar att du ger ett namn som beskriver ändringarna som gjorts för den här versionen.
+1. (Valfritt) Om du vill återställa versionen klickar du på Återställ ![Mer-menyn](assets/more-icon-vertical.png) på raden för den versionen
 
->[!NOTE]
->
->Den återställda versionen av scenariot sparas inte automatiskt. Om du vill spara den återställda versionen av scenariot måste du spara den manuellt.
+
+   >[!NOTE]
+   >
+   >Den återställda versionen av scenariot sparas inte automatiskt. Om du vill spara den återställda versionen av scenariot måste du spara den manuellt.
