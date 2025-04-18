@@ -4,7 +4,7 @@ description: Du kan använda Adobe Workfront Fusion Adobe Workfront-kontakten f�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 5ba6e0ba687eb290c7d8882c6a615de8b3692617
+source-git-commit: 7287e0460318cf5328e703af7ecc948b1ce62257
 workflow-type: tm+mt
 source-wordcount: '7264'
 ht-degree: 0%
@@ -1162,7 +1162,9 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
-+++ **[!UICONTROL Search records]**
++++
+
++++ **[!UICONTROL Search]**
 
 Den här sökmodulen söker efter poster i ett objekt i Workfront som matchar den sökfråga du anger.
 
