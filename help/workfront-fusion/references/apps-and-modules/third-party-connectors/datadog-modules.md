@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
+source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -108,24 +108,28 @@ Du kan skapa en anslutning till ditt [!DNL Datadog]-konto direkt inifrån en [!U
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Connection Type]</td> 
-      <td> <p> Välj alternativet [!UICONTROL [!DNL Datadog] Application] om du vill ha fullständig åtkomst till API:t för [!DNL Datadog].</p> </td> 
-     </tr> 
-     <tr> 
       <td role="rowheader">[!UICONTROL Connection Name]</td> 
       <td> <p> Ange ett namn för anslutningen.</p> </td> 
      </tr> 
+        <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>Ange om den här anslutningen är avsedd för en produktionsmiljö eller icke-produktionsmiljö.</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>Ange om du ansluter till ett tjänstkonto eller ett personligt konto.</td>
+        </tr>
      <tr> 
       <td role="rowheader">[!UICONTROL Domain] </td> 
       <td> <p>Välj den domän du vill ansluta till (USA eller EU).</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL API Key]</td> 
-      <td> <p> Ange din [!DNL Datadog] API-nyckel. </p> <p>Instruktioner om hur du hämtar API-nyckeln finns i <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Hämta API-nyckeln och programnyckeln</a> i den här artikeln.</p> </td> 
+      <td role="rowheader">[!UICONTROL API Key Location] </td> 
+      <td> <p>Välj om API-nyckeln ska inkluderas i huvudet eller i frågesträngen.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Application Key]</td> 
-      <td> <p> Ange programnyckeln för [!DNL Datadog]. </p> <p>Instruktioner om hur du hämtar programnyckeln finns i <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Hämta API-nyckeln och programnyckeln</a> i den här artikeln.</p> </td> 
+      <td role="rowheader">[!UICONTROL API Key]</td> 
+      <td> <p> Ange din [!DNL Datadog] API-nyckel. </p> <p>Instruktioner om hur du hämtar API-nyckeln finns i <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Hämta API-nyckeln och programnyckeln</a> i den här artikeln.</p> </td> 
      </tr> 
     </tbody> 
    </table>
@@ -217,18 +221,28 @@ Gränsen för komprimerade nyttolaster är 3,2 megabyte (3200000) och 62 megabyt
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 
-   <td> Välj den typ av mätvärden som du vill använda. </td> 
+   <td> Välj den typ av mätvärden som du vill använda. 
+   <ul>
+   <li>Mätare</li>
+   <li>Hastighet</li>
+   <li>Antal</li>
+   </ul>
+   </td> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Interval]</td> 
+   <td> Om måttets typ är hastighet eller antal definierar du motsvarande intervall.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Series]</td> 
-   <td> <p>Lägg till tidsserie som du vill skicka till [!DNL Datadog].</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Metric]</strong> </p> <p>Ange namnet på tidsserierna.</p> </li> 
-     <li> <p><strong>[!UICONTROL Type]</strong> </p> <p>Välj typ av mätvärde.</p> </li> 
-     <li> <p><strong>[!UICONTROL Interval]</strong> </p> <p> Om måttets typ är hastighet eller antal definierar du motsvarande intervall.</p> </li> 
-     <li> <p><strong>[!UICONTROL Points]</strong> </p> <p>Lägg till punkter som hör till ett mätvärde.</p> <p>Detta är en JSON-array med punkter. Varje punkt har följande format: <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>Obs!  <p>Tidsstämpeln måste vara i sekunder.</p> <p>Tidsstämpeln måste vara aktuell. Aktuell definieras som inte mer än 10 minuter i framtiden eller mer än 1 timme i det förflutna.</p> <p> Det numeriska värdeformatet ska vara ett flyttal.</p> </p> <p>Det här fältet måste innehålla minst 1 objekt.</p> </li> 
-     <li> <p><strong>[!UICONTROL Host]</strong> </p> <p>Ange namnet på värden som genererade måttet.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Points]</td> 
+   <td><p>Lägg till punkter som hör till ett mätvärde.</p> <p>Detta är en JSON-array med punkter. Varje punkt har följande format: <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>Obs!  <p>Tidsstämpeln måste vara i sekunder.</p> <p>Tidsstämpeln måste vara aktuell. Aktuell definieras som inte mer än 10 minuter i framtiden eller mer än 1 timme i det förflutna.</p> <p> Det numeriska värdeformatet ska vara ett flyttal.</p> </p> <p>Det här fältet måste innehålla minst 1 objekt.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Host]</td> 
+   <td>Ange namnet på värden som genererade måttet. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tags]</td> 
+   <td> För varje tagg som du vill lägga till i måttet klickar du på <b>Lägg till objekt</b> och anger taggens värde.</td> 
   </tr> 
  </tbody> 
 </table>
