@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
-source-git-commit: 0581601a254a9492f4166d78eb0f11868d390f24
+source-git-commit: e14f49dbb7b57a7247a62a27205df1b6da11a259
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1534'
 ht-degree: 0%
 
 ---
@@ -19,42 +19,46 @@ Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scen
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -62,14 +66,14 @@ Du måste ha ett [!DNL Gmail]-konto för att kunna använda [!DNL Gmail]-moduler
 
 ## Anslut [!DNL Gmail] till [!DNL Workfront Fusion] {#connect-gmail-to-workfront-fusion}
 
-* [Anslut [!DNL Gmail] till [!DNL Workfront Fusion] med [!DNL Google Workspace]](#connect-gmail-to-workfront-fusion-usingg-suite)
+* [Anslut [!DNL Gmail] till [!DNL Workfront Fusion] med [!DNL Google Workspace]](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
 * [Anslut [!DNL Gmail] till [!DNL Workfront Fusion] med [!DNL gmail.com] eller [!DNL googlemail].com](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### Anslut [!DNL Gmail] till [!DNL Workfront Fusion] med [!DNL  Google Workspace] {#connect-gmail-to-workfront-fusion-using-g-suite}
+### Anslut [!DNL Gmail] till [!DNL Workfront Fusion] med [!DNL  Google Workspace]
 
 Instruktioner om hur du ansluter ditt [!DNL Google Workspace]-konto till [!UICONTROL Workfront Fusion] finns i [Skapa en anslutning - grundläggande instruktioner](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
-### Anslut [!DNL Gmail] till [!DNL Workfront Fusion] med [!DNL gmail.com] eller [!DNL googlemail].com {#connect-gmail-to-workfront-fusion-using-gmail-com-or-googlemail-com}
+### Anslut [!DNL Gmail] till [!DNL Workfront Fusion] med [!DNL gmail.com] eller [!DNL googlemail].com
 
 Om du är [!DNL @gmail.com] eller [!DNL @googlemail.com] användare måste du skapa en OAuth-klient på [ [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) för att få en [!UICONTROL Client ID] och [!UICONTROL Client Secret].
 
@@ -114,7 +118,7 @@ När du konfigurerar den här modulen visas följande fält.
    <td> <p>Välj den filtertyp som du vill använda för att bevaka e-postmeddelanden</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Simple filter]</strong> </p> <p>Fyll i fälten [!UICONTROL Criteria], [!UICONTROL Sender Email Address], [!UICONTROL Subject] och [!UICONTROL Search Phrase]</p> </li> 
-     <li> <p> <strong>[!UICONTROL Gmail filter]</strong> </p> <p>I fältet [!UICONTROL Query] anger du frågan som du vill använda för att filtrera e-postmeddelanden.</p> <p>Mer information om [!DNL Gmail]-filter finns i <a href="https://support.google.com/mail/answer/7190">Sökoperatorer</a> i [!DNL Gmail]-dokumentationen.</p> </li> 
+     <li> <p> <strong>[!UICONTROL Gmail filter]</strong> </p> <p>I fältet [!UICONTROL Query] anger du frågan som du vill använda för att filtrera e-postmeddelanden.</p> <p>Mer information om [!DNL Gmail]-filter finns i <a href="https://support.google.com/mail/answer/7190">Förfina sökningar</a> i [!DNL Gmail]-dokumentationen.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -146,24 +150,27 @@ När du konfigurerar den här modulen visas följande fält.
 
 ### Åtgärder
 
-* [[!UICONTROL Send an email]](#send-an-email)
+<!--* [Add labels](#add-labels)-->
+* [[!UICONTROL Copy an email]](#copy-an-email)
 * [[!UICONTROL Create a draft]](#create-a-draft)
+* [[!UICONTROL Delete an email]](#delete-an-email)
+  <!--* [Delete labels](#delete-labels)-->
 * [[!UICONTROL Mark an email as read]](#mark-an-email-as-read)
 * [[!UICONTROL Mark an email as unread]](#mark-an-email-as-unread)
 * [[!UICONTROL Move an email]](#move-an-email)
-* [[!UICONTROL Copy an email]](#copy-an-email)
-* [[!UICONTROL Delete an email]](#delete-an-email)
 * [[!UICONTROL Modify email labels]](#modify-email-labels)
+* [[!UICONTROL Send an email]](#send-an-email)
+  <!--* [Set labels](#set-labels)-->
 
-#### [!UICONTROL Send an email]
+<!--#### Add labels-->
 
-Den här åtgärdsmodulen skickar ett nytt e-postmeddelande.
+#### [!UICONTROL Copy an email]
 
-Du anger e-postmeddelandets mottagare.
+Den här åtgärdsmodulen kopierar ett e-postutkast eller ett e-postutkast till en mapp som du anger.
+
+Du anger mapp, målmapp och ID för e-postmeddelandet.
 
 Modulen returnerar ID:t för e-postmeddelandet och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-När du konfigurerar den här modulen visas följande fält.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -171,35 +178,19 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Gmail]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Gmail] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Gmail]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Gmail] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL From]</td> 
-   <td> <p>Ange eller mappa en e-postadress till avsändaren.</p> <p>Obs! Om du anger en felaktig e-postadress kan ett fel uppstå när du skickar ett meddelande, eftersom ditt konto kanske inte har behörighet att skicka e-post från en annan adress än din egen.</p> </td> 
+   <td>[!UICONTROL Folder] </td> 
+   <td> <p>Markera källmappen [!DNL Gmail] som innehåller e-postmeddelandet som du vill kopiera.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL To] </td> 
-   <td> <p>Klicka på <strong>[!UICONTROL Add]</strong> och ange eller mappa sedan e-postadressen för varje mottagare.</p> </td> 
+   <td>[!UICONTROL Destination folder]</td> 
+   <td> <p>Markera målmappen [!DNL Gmail] som du vill kopiera e-postmeddelandet till.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Subject] </td> 
-   <td> <p>Ange eller mappa e-postmeddelandets ämne.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Content] </td> 
-   <td> <p>Ange eller mappa e-postinnehållet (meddelandetexten). HTML-taggar tillåts.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Attachments] </td> 
-   <td> <p>Klicka på <strong>[!UICONTROL Add]</strong> om du vill lägga till en bifogad fil. Du kan mappa en fil från de tidigare modulerna.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Copy recipients]</td> 
-   <td> <p> Klicka på <strong>[!UICONTROL Add]</strong> och ange eller mappa sedan e-postadressen för varje kopiemottagare.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Blind copy recipients]</td> 
-   <td> <p> Klicka på <strong>[!UICONTROL Add]</strong> och ange eller mappa sedan e-postadressen för varje mottagare av en blind kopia.</p> </td> 
+   <td>[!UICONTROL Email ID (UID)]</td> 
+   <td> <p>Ange eller mappa e-post-ID:t för e-postmeddelandet som du vill kopiera.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -236,7 +227,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td>[!UICONTROL Content] </td> 
-   <td> <p>Ange eller mappa e-postinnehållet (meddelandetexten). HTML-taggar tillåts.</p> </td> 
+   <td> <p>Ange eller mappa e-postinnehållet (meddelandetexten). HTML-taggar är tillåtna.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Attachments] </td> 
@@ -252,6 +243,37 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
  </tbody> 
 </table>
+
+#### [!UICONTROL Delete an email]
+
+Den här åtgärdsmodulen tar bort ett e-postmeddelande eller ett e-postutkast från en mapp som du anger.
+
+Modulen returnerar ID:t för e-postmeddelandet och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Gmail]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Gmail] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL [!DNL Gmail] Meddelande-ID]</p> </td> 
+   <td> <p>Ange eller mappa e-post-ID:t för e-postmeddelandet som du vill ta bort.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Permanently] </td> 
+   <td> <p>Aktivera det här alternativet om du vill tillåta modulen att ta bort e-postmeddelandet permanent i stället för att flytta det till papperskorgen.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<!--#### Delete labels-->
+
+
 
 #### [!UICONTROL Mark an email as read]
 
@@ -307,95 +329,6 @@ Modulen returnerar ID:t för e-postmeddelandet och eventuella associerade fält,
  </tbody> 
 </table>
 
-#### [!UICONTROL Move an email]
-
-Den här åtgärdsmodulen flyttar ett e-postmeddelande eller ett e-postutkast till en mapp som du anger.
-
-Du anger mapp, målmapp och ID för e-postmeddelandet.
-
-Modulen returnerar ID:t för e-postmeddelandet och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Gmail]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Gmail] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder] </td> 
-   <td> <p>Markera källmappen [!DNL Gmail] som innehåller e-postmeddelandet som du vill flytta.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Destination folder]</td> 
-   <td> <p> Markera målmappen [!DNL Gmail] som du vill flytta e-postmeddelandet till.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Email ID (UID)]</td> 
-   <td> <p> Ange eller mappa e-post-ID:t för e-postmeddelandet som du vill flytta.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Copy an email]
-
-Den här åtgärdsmodulen kopierar ett e-postutkast eller ett e-postutkast till en mapp som du anger.
-
-Du anger mapp, målmapp och ID för e-postmeddelandet.
-
-Modulen returnerar ID:t för e-postmeddelandet och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Gmail]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Gmail] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder] </td> 
-   <td> <p>Markera källmappen [!DNL Gmail] som innehåller e-postmeddelandet som du vill kopiera.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Destination folder]</td> 
-   <td> <p>Markera målmappen [!DNL Gmail] som du vill kopiera e-postmeddelandet till.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Email ID (UID)]</td> 
-   <td> <p>Ange eller mappa e-post-ID:t för e-postmeddelandet som du vill kopiera.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Delete an email]
-
-Den här åtgärdsmodulen tar bort ett e-postmeddelande eller ett e-postutkast från en mapp som du anger.
-
-Modulen returnerar ID:t för e-postmeddelandet och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
-
-När du konfigurerar den här modulen visas följande fält.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Gmail]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Gmail] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <p>[!UICONTROL [!DNL Gmail] Meddelande-ID]</p> </td> 
-   <td> <p>Ange eller mappa e-post-ID:t för e-postmeddelandet som du vill ta bort.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Permanently] </td> 
-   <td> <p>Aktivera det här alternativet om du vill tillåta modulen att ta bort e-postmeddelandet permanent i stället för att flytta det till papperskorgen.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Modify email labels]
 
 Den här åtgärdsmodulen ändrar etiketten för ett e-postmeddelande som du anger.
@@ -430,6 +363,88 @@ När du konfigurerar den här modulen visas följande fält.
 >[!NOTE]
 >
 >Fälten [!UICONTROL Label to add] och [!UICONTROL Label to remove] läser bara in etiketter som skapats av användaren.
+
+#### [!UICONTROL Move an email]
+
+Den här åtgärdsmodulen flyttar ett e-postmeddelande eller ett e-postutkast till en mapp som du anger.
+
+Du anger mapp, målmapp och ID för e-postmeddelandet.
+
+Modulen returnerar ID:t för e-postmeddelandet och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Gmail]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Gmail] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Folder] </td> 
+   <td> <p>Markera källmappen [!DNL Gmail] som innehåller e-postmeddelandet som du vill flytta.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Destination folder]</td> 
+   <td> <p> Markera målmappen [!DNL Gmail] som du vill flytta e-postmeddelandet till.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Email ID (UID)]</td> 
+   <td> <p> Ange eller mappa e-post-ID:t för e-postmeddelandet som du vill flytta.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Send an email]
+
+Den här åtgärdsmodulen skickar ett nytt e-postmeddelande.
+
+Du anger e-postmeddelandets mottagare.
+
+Modulen returnerar ID:t för e-postmeddelandet och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+
+När du konfigurerar den här modulen visas följande fält.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Gmail]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Gmail] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL From]</td> 
+   <td> <p>Ange eller mappa en e-postadress till avsändaren.</p> <p>Obs! Om du anger en felaktig e-postadress kan ett fel uppstå när du skickar ett meddelande, eftersom ditt konto kanske inte har behörighet att skicka e-post från en annan adress än din egen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL To] </td> 
+   <td> <p>Klicka på <strong>[!UICONTROL Add]</strong> och ange eller mappa sedan e-postadressen för varje mottagare.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Subject] </td> 
+   <td> <p>Ange eller mappa e-postmeddelandets ämne.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Content] </td> 
+   <td> <p>Ange eller mappa e-postinnehållet (meddelandetexten). HTML-taggar är tillåtna.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Attachments] </td> 
+   <td> <p>Klicka på <strong>[!UICONTROL Add]</strong> om du vill lägga till en bifogad fil. Du kan mappa en fil från de tidigare modulerna.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Copy recipients]</td> 
+   <td> <p> Klicka på <strong>[!UICONTROL Add]</strong> och ange eller mappa sedan e-postadressen för varje kopiemottagare.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Blind copy recipients]</td> 
+   <td> <p> Klicka på <strong>[!UICONTROL Add]</strong> och ange eller mappa sedan e-postadressen för varje mottagare av en blind kopia.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<!--#### Set labels-->
 
 ### Iteratorer
 
