@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du använda Markdo
 author: Becky
 feature: Workfront Fusion
 exl-id: f1134bbf-c244-4f52-8744-f97453b2ce8a
-source-git-commit: 1e95c93213c48aea9297a82669fb2012dbb27601
+source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -21,42 +21,63 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
+   <td>
+   <p>Workfront Fusion-licens krävs inte</p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produkt</td> 
+   <td>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
+   <p>eller</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
+Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
+
+## [!UICONTROL HTML to Markdown]
+
+Den här modulen konverterar HTML-kod till Markdown.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">[!UICONTROL Markdown]</td> 
+   <td> <p>Ange den HTML-kod som du vill konvertera till Markdown.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
-   <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
-   <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
-   </td> 
+   <td role="rowheader">[!DNL GitHub Flavored Markdown] </td> 
+   <td> <p>Aktivera det här alternativet för att konvertera HTML till [!DNL GitHub Flavored Markdown].</p> <p>Mer information finns i markeringsdatabladet i dokumentationen för [!DNL GitHub].</p> </td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">Produkt</td> 
-   <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
-   <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
-   </td> 
-  </tr>
  </tbody> 
 </table>
-
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
-
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## [!UICONTROL Markdown to HTML]
 
@@ -78,26 +99,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sanitize]</td> 
-   <td>Välj ett alternativ som anger om du vill ta bort HTML-taggar från texten eller Esc-HTML.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-## [!UICONTROL HTML to Markdown]
-
-Den här modulen konverterar HTML-kod till Markdown.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Markdown]</td> 
-   <td> <p>Ange den HTML-kod som du vill konvertera till Markdown.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!DNL GitHub Flavored Markdown] </td> 
-   <td> <p>Aktivera det här alternativet för att konvertera HTML till [!DNL GitHub Flavored Markdown].</p> <p>Mer information finns i markeringsdatabladet i dokumentationen för [!DNL GitHub].</p> </td> 
+   <td>Välj ett alternativ som anger om du vill ta bort HTML-taggar från texten eller undvika HTML.</td> 
   </tr> 
  </tbody> 
 </table>
