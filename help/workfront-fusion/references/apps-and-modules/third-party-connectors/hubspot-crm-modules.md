@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Workfront Fusion] HubSpot CRM-modulerna kan du öv
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 0e4986d0d66b98213efabd487e6701f8385161e3
 workflow-type: tm+mt
-source-wordcount: '5530'
+source-wordcount: '6324'
 ht-degree: 0%
 
 ---
@@ -118,9 +118,6 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ### CRM-objekt
 
-<!--* [Search for CRM objects](#search-for-crm-objects)
-* [Watch CRM objects](#watch-crm-objects)-->
-
 +++ **[!UICONTROL Search for CRM Objects]**
 
 Den här sökmodulen söker efter CRM-objekt efter anpassade egenskaper eller efter fråga. Om du vill söka efter produkter eller radobjekt använder du en speciell anslutning med ett nödvändigt anpassat omfång.
@@ -208,15 +205,6 @@ Den här utlösarmodulen startar ett scenario när ett CRM-objekt skapas eller u
 +++
 
 ### Register (avtal, kontakter och företag)
-
-<!--* [Create a Record](#create-a-record)
-* [[!UICONTROL Create a Record (Legacy)]](#create-a-record-legacy)
-* [[!UICONTROL Delete a Record]](#delete-a-record)
-* [[!UICONTROL Get a Record]](#get-a-record)
-* [[!UICONTROL Get a Record Property]](#get-a-record-property)
-* [List Records](#list-records)
-* [[!UICONTROL Update a Record]](#update-a-record)
-* [[!UICONTROL Watch Records]](#watch-records)-->
 
 +++ **Skapa en post**
 
@@ -464,17 +452,6 @@ Den här utlösarmodulen startar ett scenario när en kontakt, ett företag elle
 +++
 
 ### Kontakter
-
-<!--* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
-* [Create/Update a contact](#createupdate-a-contact)
-* [[!UICONTROL Create/Update a Contact (Legacy)]](#createupdate-a-contact-legacy)
-* [[!UICONTROL Create/Update a Group of Contacts]](#createupdate-a-group-of-contacts)
-* [[!UICONTROL List Contacts]](#list-contacts)
-* [[!UICONTROL List Contacts of a Company]](#list-contacts-of-a-company)
-* [[!UICONTROL Merge contacts]](#merge-contacts)
-* [[!UICONTROL Remove a Contact from a List]](#remove-a-contact-from-a-list)
-* [[!UICONTROL Search for Contacts]](#search-for-contacts)
-* [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
 +++ **[!UICONTROL Add Contacts to a List]**
 
@@ -744,9 +721,6 @@ Den här utlösarmodulen startar ett scenario när en ny kontakt läggs till i e
 
 ### Erbjudanden
 
-<!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
-* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
-
 +++ **[!UICONTROL Get a Deal's CRM Pipeline]**
 
 Returnerar en specifik avtalspipeline.
@@ -825,11 +799,6 @@ Hämtar en lista över företag baserat på en exakt matchning av egenskapen dom
 +++
 
 ### Åtaganden
-
-<!--* [Associate an Engagement with a CRM object](#associate-an-engagement-with-a-crm-object)
-* [Create an Engagement](#create-an-engagement)
-* [Delete an Engagement](#delete-an-engagement)
-* [Watch Engagements](#watch-engagements)-->
 
 +++ **Koppla en koppling till ett CRM-objekt**
 
@@ -1117,11 +1086,6 @@ Den här utlösarmodulen startar ett scenario när ett nytt engagemang skapas i 
 
 ### Händelser och meddelanden
 
-<!--* [Create / Update a Timeline Event](#create--update-a-timeline-event)
-* [List Timeline Event Types](#list-timeline-event-types)
-* [Watch Calendar Events](#watch-calendar-events)
-* [Watch Notifications](#watch-notifications)-->
-
 +++ **Skapa/uppdatera en tidslinjehändelse**
 
 Den här åtgärdsmodulen skapar eller uppdaterar en tidslinjehändelse. Den här modulen kan bara användas med en utvecklaranslutning som innehåller din användaridentifierare, din HubSpot API-nyckel, klient-ID och Klienthemlighet.
@@ -1253,14 +1217,6 @@ Om du vill skapa en webkrok för den här modulen klickar du på **Lägg till** 
 +++
 
 ### Filer
-
-<!--* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [Delete a File](#delete-a-file)
-* [[!UICONTROL Delete a Folder]](#delete-a-folder)
-* [List Files](#list-files)
-* [[!UICONTROL Move a File]](#move-a-file)
-* [Upload a file](#upload-a-file)
-* [Watch files](#watch-files)-->
 
 +++ **[!UICONTROL Create a Folder]**
 
@@ -1451,10 +1407,6 @@ Den här utlösarmodulen startar ett scenario när en ny fil sparas i filhantera
 
 ### Uppgifter
 
-<!--* [Create a Calendar Task](#create-a-calendar-task)
-* [Delete a Calendar Task](#create-a-calendar-task)
-* [Watch Task Events](#watch-task-events)-->
-
 +++ **Skapa en kalenderaktivitet**
 
 Den här åtgärdsmodulen skapar en ny uppgift för en kalender. Anslutningen som används i den här modulen måste använda autentiseringsuppgifterna för en användare med ett betalt Marketing-konto.
@@ -1552,9 +1504,6 @@ Den här utlösarmodulen startar ett scenario när det finns en ny aktivitetshä
 
 ### Användare
 
-<!--* [Get an Owner](#get-an-owner)
-* [List Owners](#list-owners)-->
-
 +++ **Hämta en ägare**
 
 Den här åtgärdsmodulen returnerar information om en ägare.
@@ -1595,13 +1544,6 @@ Den här sökmodulen returnerar en lista över alla ägare i ett HubSpot-konto.
 
 ### Biljetter
 
-<!--* [Create a Ticket]-->
-<!--* [Delete a Ticket](#delete-a-ticket)-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-
 <!-- Create a Ticket Need to find a working connection-->
 
 +++ **[!UICONTROL Delete a Ticket]**
@@ -1634,11 +1576,6 @@ Tar bort en befintlig biljett med dess ID.
 <!-- Watch Tickets Need to find a working connection-->
 
 ### Forms
-
-<!--* [Get a File Uploaded via Form](#get-a-file-uploaded-via-form)
-* [List Forms](#list-forms)-->
-<!--* [Submit Data to a Form]-->
-<!--* [Watch Submissions for a Form]-->
 
 +++ **Hämta en fil som har överförts via formuläret**
 
@@ -1689,10 +1626,6 @@ Den här åtgärdsmodulen returnerar alla formulär som har skapats i det konto 
 &lt;!—### Bevakade inlämningar för ett formulär - Behöver hitta en fungerande anslutning>—>
 
 ### Sociala medier (sändning)
-
-<!--* [Cancel a Broadcast Message](#cancel-a-broadcast-message)
-* [Create a Broadcast Message](#create-a-broadcast-message)
-* [Watch Broadcast Messages](#watch-broadcast-messages)-->
 
 +++ **Avbryt ett sändningsmeddelande**
 
@@ -1791,16 +1724,90 @@ Den här utlösarmodulen startar ett scenario när ett meddelande skickas från 
 
 ### Blogginlägg
 
-<!--* [Create a Blog Post]-->
-<!--* [Delete a Blog Post](#delete-a-blog-post)-->
-<!--* [List Blog Posts]-->
-&lt;!—* [Publicera/avpublicera ett blogginlägg](#publish--unpublish-a-blog-post)—>
-<!--* [Watch Blog Posts]-->
++++ **Skapa ett blogginlägg**
 
-<!--
-#### Create a Blog Post May need connection
--->
+Denna åtgärdsmodul skapar ett nytt blogginlägg.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL HubSpot CRM]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Namn</td> 
+   <td>Ange eller mappa inläggsrubriken (inläggets interna namn).</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Bokför brödtext</td> 
+   <td>Ange eller mappa huvuddelen av inlägget i HTML-format.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Bokför sammanfattning</td> 
+   <td>Ange eller mappa en sammanfattning av inlägget. Sammanfattningen visas på huvudlistsidan.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Författar-ID för blogg</td> 
+   <td>Ange eller mappa ID:t för den författare som är associerad med inlägget.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Innehållsgrupp-ID</td> 
+   <td>Ange eller mappa ID:t för den blogg som det här inlägget tillhör.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Sidfot - HTML</td> 
+   <td>Ange eller mappa HTML för inbäddningskoder eller javascript som ska placeras före sidans tagg.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Head HTML</td> 
+   <td>Ange eller mappa HTML för inbäddningskoder eller javascript som ska placeras överst.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Kampanj-ID</td> 
+   <td>Ange eller mappa ID:t för kampanjen som det här inlägget är associerat med.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Aktuell bild</td> 
+   <td>Ange eller mappa URL:en för bilden som det här inlägget ska använda som aktuell bild.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nyckelord</td> 
+   <td>För varje nyckelord som du vill lägga till i det här inlägget klickar du på <b>Lägg till objekt</b> och anger nyckelords-GUID.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Meta Description</td> 
+   <td>Ange eller mappa texten för taggen <code>meta</code> på sidan.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Publiceringsdatum</td> 
+   <td>Ange eller mappa datumet då blogginlägget ska publiceras. <p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Namn</td> 
+   <td>Aktivera det här alternativet om du vill publicera blogginlägget direkt när det skapas. Om inställningen är Ja ignoreras fältet Publiceringsdatum.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Instruktionsmarginal</td> 
+   <td>Ange eller mappa instruktionsmarginalen för inlägget. Instruktionsmarginalen läggs till i slutet av domänen och utgör URL:en för blogginlägget.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Ämne-ID</td> 
+   <td>För varje ämne som du vill lägga till i inlägget klickar du på <b>Lägg till objekt</b> och anger ämne-ID:t.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Använd aktuell bild</td> 
+   <td>Aktivera det här alternativet om du vill använda den aktuella bilden för blogginlägget.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Widgetar</td> 
+   <td>Ange eller mappa en datastruktur som innehåller datumet för alla moduler för det här blogginlägget. Detta avser blogginläggets moduler, inte Fusion-moduler.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **Ta bort ett blogginlägg**
 
@@ -1823,9 +1830,70 @@ Den här åtgärdsmodulen tar bort ett blogginlägg.
 
 +++
 
-<!--#### List Blog Posts May need connection
++++ **Visa blogginlägg**
 
-This search module retrieves posts from a HubSpot blog.-->
+Den här sökmodulen hämtar inlägg från en HubSpot-blogg.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL HubSpot CRM]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Gräns</td> 
+   <td>Ange eller mappa det maximala antalet blogginlägg som ska returneras i en körningscykel.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Arkiverad</td> 
+   <td>Aktivera det här alternativet om du vill inkludera arkiverade inlägg i dina resultat.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Författar-ID för blogg</td> 
+   <td>Ange eller mappa ID:t för en författare för att returnera inlägg som är kopplade till den författaren.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Kampanj-ID</td> 
+   <td>Ange eller mappa ID:t för en kampanj för att returnera inlägg som är associerade med kampanjen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Innehållsgrupp-ID</td> 
+   <td>Ange eller mappa ID:t för en blogg för att returnera inlägg som är kopplade till den bloggen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Namn</td> 
+   <td>Ange ett postnamn om du bara vill returnera inlägg med det namnet.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtrera efter skapad</td> 
+   <td>Välj Filter om du vill returnera inlägg med det skapade tidsvärdet.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtrera efter uppdaterad</td> 
+   <td>Välj Filter om du vill returnera inlägg med det uppdaterade tidsvärdet.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtrera efter borttaget</td> 
+   <td>Välj Filter om du vill returnera inlägg med det borttagna tidsvärdet.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Instruktionsmarginal</td> 
+   <td>Ange eller mappa en instruktionsmarginal för att returnera inlägg som matchar instruktionsmarginalen. Instruktionsmarginalen läggs till i slutet av domänen och utgör URL:en för blogginlägget.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Läge</td> 
+   <td>Välj ett läge (Utkast, Publicerat eller Schemalagt) om du bara vill inkludera resultat i det läget.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Beställ efter publiceringsdatum</td> 
+   <td>Välj om du vill sortera resultaten stigande eller fallande efter publiceringsdatum.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **Publicera/avpublicera ett blogginlägg**
 
@@ -1852,7 +1920,70 @@ Den här åtgärdsmodulen schemalägger eller avbryter publiceringen av ett blog
 
 +++
 
-<!--#### Watch Blog PostsMay need connection-->
++++ **Blogginlägg**
+
+Den här utlösarmodulen startar ett scenario när ett blogginlägg som matchar de villkor du anger skapas, uppdateras eller tas bort.
+
+
+
+Den här sökmodulen hämtar inlägg från en HubSpot-blogg.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL HubSpot CRM]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Gräns</td> 
+   <td>Ange eller mappa det maximala antalet blogginlägg som ska returneras i en körningscykel.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Arkiverad</td> 
+   <td>Aktivera det här alternativet om du vill inkludera arkiverade inlägg i dina resultat.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Författar-ID för blogg</td> 
+   <td>Ange eller mappa ID:t för en författare för att returnera inlägg som är kopplade till den författaren.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Kampanj-ID</td> 
+   <td>Ange eller mappa ID:t för en kampanj för att returnera inlägg som är associerade med kampanjen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Innehållsgrupp-ID</td> 
+   <td>Ange eller mappa ID:t för en blogg för att returnera inlägg som är kopplade till den bloggen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Namn</td> 
+   <td>Ange ett postnamn om du bara vill returnera inlägg med det namnet.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtrera efter skapad</td> 
+   <td>Välj Filter om du vill returnera inlägg med det skapade tidsvärdet.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtrera efter uppdaterad</td> 
+   <td>Välj Filter om du vill returnera inlägg med det uppdaterade tidsvärdet.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtrera efter borttaget</td> 
+   <td>Välj Filter om du vill returnera inlägg med det borttagna tidsvärdet.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Instruktionsmarginal</td> 
+   <td>Ange eller mappa en instruktionsmarginal för att returnera inlägg som matchar instruktionsmarginalen. Instruktionsmarginalen läggs till i slutet av domänen och utgör URL:en för blogginlägget.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Läge</td> 
+   <td>Välj ett läge (Utkast, Publicerat eller Schemalagt) om du bara vill inkludera resultat i det läget.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 <!--+++**Workflows**>
 
@@ -1868,9 +1999,6 @@ Den här åtgärdsmodulen schemalägger eller avbryter publiceringen av ett blog
 <!--+++-->
 
 ### Prenumerationer
-
-<!--* [Update Email Subscription](#update-email-subscription)
-* [Watch Subscriptions Timeline for a Portal](#watch-subscriptions-timeline-for-a-portal)-->
 
 +++ **Uppdatera e-postprenumeration**
 
