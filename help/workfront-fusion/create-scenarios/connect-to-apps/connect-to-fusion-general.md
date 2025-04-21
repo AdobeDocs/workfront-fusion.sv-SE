@@ -4,9 +4,9 @@ description: Många [!DNL Adobe Workfront Fusion] anslutningar kräver ingen anp
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 6aec65919e79a9e9d950a11de53bfbb1051ca20b
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -68,12 +68,14 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 
 ## Skapa en anslutning
 
+Om du vill skapa en anslutning till ett visst program måste du finnas i en modul för det programmet. Om du till exempel vill skapa en anslutning till Workfront måste du vara i en Workfront-modul.
+
 Så här skapar du en anslutning inuti en [!DNL Workfront Fusion]-modul:
 
-1. Klicka på **[!UICONTROL Add]** bredvid rutan [!UICONTROL Connection] för att öppna panelen **[!UICONTROL Create a connection]**.
+1. Klicka på **[!UICONTROL Add]** bredvid rutan [!UICONTROL Connection] i en modul för det angivna programmet för att öppna panelen **[!UICONTROL Create a connection]**.
 1. (Valfritt) Ändra standardvärdet **[!UICONTROL Connection name]**.
-1. I fältet Miljö väljer du om detta är en produktionsmiljö eller icke-produktionsmiljö. Den här informationen visas i området Anslutningar i Fusion.
-1. I fältet Typ väljer du om det här är en tjänst eller ett personligt konto. Den här informationen visas i området Anslutningar i Fusion.
+1. I fältet Miljö väljer du om detta är en produktionsmiljö eller icke-produktionsmiljö.
+1. I fältet Typ väljer du om det här är en tjänst eller ett personligt konto.
 1. (Villkorligt) Om programmet kräver avancerade anslutningsinställningar, till exempel ett ID, en nyckel eller [!UICONTROL secret], anger du den informationen.
 
    Du kan behöva klicka på **[!UICONTROL Show advanced settings]** för att visa fälten där du kan ange den här typen av information.
@@ -84,6 +86,7 @@ Så här skapar du en anslutning inuti en [!DNL Workfront Fusion]-modul:
 
    >[!NOTE]
    >
-   >Vissa Microsoft-program använder samma anslutning, som är kopplad till individuella användarbehörigheter. När du skapar en anslutning visas därför alla behörigheter som tidigare har beviljats användarens anslutning, förutom de nya behörigheter som krävs för det aktuella programmet.
+   >* Fälten Miljö och Typ är bara till för information och ändrar inte funktionaliteten för anslutningen. Denna information visas i området Anslutningar i Fusion, där du kan avgöra vilken anslutning som ska användas för ett visst användningsfall i organisationen.
+   >* Vissa Microsoft-program använder samma anslutning, som är kopplad till individuella användarbehörigheter. När du skapar en anslutning visas därför alla behörigheter som tidigare har beviljats användarens anslutning, förutom de nya behörigheter som krävs för det aktuella programmet.
    >
-   >Om en användare till exempel har behörighet att läsa tabell som beviljats via Excel-anslutningen och sedan skapar en anslutning i Outlook-anslutningen för att läsa e-post, visar tillståndsskärmen både den behörighet som redan har beviljats för att läsa tabell och den behörighet som nyligen har krävts för att skriva e-post.
+   >   Om en användare till exempel har behörighet att läsa tabell som beviljats via Excel-anslutningen och sedan skapar en anslutning i Outlook-anslutningen för att läsa e-post, visar tillståndsskärmen både den behörighet som redan har beviljats för att läsa tabell och den behörighet som nyligen har krävts för att skriva e-post.
