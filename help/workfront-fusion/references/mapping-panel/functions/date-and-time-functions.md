@@ -4,7 +4,7 @@ description: Följande datum- och tidsfunktioner är tillgängliga i panelen fö
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 0%
@@ -149,7 +149,7 @@ Om du behöver ange ett tal utanför intervallet rekommenderar vi att du använd
 
   Returnerar 2015-10-07T11:36:10.138Z
 
-* `setSecond(2015-10-07T11:36:39.138Z; 6)`
+* `setSecond(2015-10-07T11:36:39.138Z; 61)`
 
   Returnerar 2015-10-07T11:37:01.138Z
 
