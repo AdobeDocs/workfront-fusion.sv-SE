@@ -5,10 +5,10 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 11376e58-a44b-4766-85dc-e2421b0112de
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: b5387e4ba84d67d6ea2472282c212e396ba93d4f
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 1%
+source-wordcount: '1380'
+ht-degree: 0%
 
 ---
 
@@ -22,42 +22,46 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 ## Åtkomstkrav
 
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -82,11 +86,12 @@ För Widen-anslutningen används följande:
  </tbody> 
  </table>
 
-## Anslut [!DNL Widen] till [!DNL Workfront Fusion] {#connect-widen-to-workfront-fusion}
+## Anslut [!DNL Widen] till [!DNL Workfront Fusion]  {#connect-widen-to-workfront-fusion}
 
 Du kan skapa en anslutning till ditt [!DNL Widen]-konto direkt inifrån en [!DNL Widen]-modul.
 
 1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL Connection] i någon [!DNL Widen]-modul.
+1. Välj den miljö och typ av konto som du ansluter till. Detta är endast till för information och visas i området Anslutningar i Fusion.
 1. Välj den [!DNL Widen]-domän som du vill ansluta till.
 1. Ange token för ditt [!DNL Widen]-konto. Instruktioner om hur du hittar denna token finns i [[!DNL Widen] API FAQs](https://community.widen.com/collective/s/article/API-FAQs).
 1. Klicka på **[!UICONTROL Continue]** för att skapa anslutningen och gå tillbaka till modulen.
@@ -138,13 +143,42 @@ Den här utlösarmodulen startar ett scenario när en resurs skapas eller uppdat
 
 ### Åtgärdsmoduler
 
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Read asset info]](#read-asset-info)
 * [[!UICONTROL Add assets to collections]](#add-assets-to-collections)
+* [[!UICONTROL Custom API Call]](#custom-api-call)
+* [[!UICONTROL Download File]](#download-file)
+* [[!UICONTROL Read asset info]](#read-asset-info)
 * [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
 * [[!UICONTROL Update asset metadata]](#update-asset-metadata)
-* [[!UICONTROL Download File]](#download-file)
-* [[!UICONTROL Upload] en fil](#upload-a-file)
+* [[!UICONTROL Upload a file]](#upload-a-file)
+
+#### [!UICONTROL Add assets to collections]
+
+Den här åtgärdsmodulen lägger till en eller flera resurser i samlingar.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Widen] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collections ID]</td> 
+   <td>För varje samling som du vill lägga till resurserna i klickar du på <strong>[samlings-ID]</strong> och anger eller mappar [!UICONTROL Collection ID].</li> 
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Assets ID]</td> 
+   <td> För varje resurs som du vill lägga till i en samling klickar du på <strong>[!UICONTROL Assets ID]</strong> och anger eller mappar resurs-ID:t.</p> </li> 
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Ange eller mappa det maximala antalet resurser som du vill att modulen ska arbeta med under varje körningscykel för scenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Custom API Call]
 
@@ -190,6 +224,25 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
+#### [!UICONTROL Download File]
+
+Den här åtgärdsmodulen hämtar en resurs från ditt [!DNL Widen]-konto.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Widen] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td> <p>Ange eller mappa ID:t för resursen som du vill hämta.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### [!UICONTROL Read asset info]
 
 Den här åtgärdsmodulen hämtar en enskild resurs med dess unika ID.
@@ -217,43 +270,6 @@ Den här åtgärdsmodulen hämtar en enskild resurs med dess unika ID.
  </tbody> 
 </table>
 
-#### [!UICONTROL Add assets to collections]
-
-Den här åtgärdsmodulen lägger till en eller flera resurser i samlingar.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Widen] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collections ID]</td> 
-   <td> <p>För varje samling som du vill lägga till resurserna i:</p> 
-    <ol> 
-     <li value="1"> <p> Klicka på <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Ange eller mappa [!UICONTROL Collection ID].</p> </li> 
-     <li value="3"> <p>Klicka på <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Assets ID]</td> 
-   <td> <p>För varje resurs som du vill lägga till i en samling:</p> 
-    <ol> 
-     <li value="1"> <p> Klicka på <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Ange eller mappa resurs-ID:t.</p> </li> 
-     <li value="3"> <p>Klicka på <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Ange eller mappa det maximala antalet resurser som du vill att modulen ska arbeta med under varje körningscykel för scenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Remove assets from collection]
 
 Den här åtgärdsmodulen tar bort en eller flera resurser från samlingar.
@@ -267,22 +283,15 @@ Den här åtgärdsmodulen tar bort en eller flera resurser från samlingar.
   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Widen] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Collections ID]</td> 
-   <td> <p>För varje samling som du vill ta bort resurserna från:</p> 
-    <ol> 
-     <li value="1"> <p> Klicka på <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Ange eller mappa samlings-ID.</p> </li> 
-     <li value="3"> <p>Klicka på <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
+   <td>För varje samling som du vill ta bort resurser från klickar du på <strong>[samlings-ID]</strong> och anger eller mappar [!UICONTROL Collection ID].</li> 
+   </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ASSETS ID</td> 
-   <td> <p>För varje resurs som du vill ta bort från en samling:</p> 
-    <ol> 
-     <li value="1"> <p> Klicka på <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Ange eller mappa resurs-ID:t.</p> </li> 
-     <li value="3"> <p>Klicka på <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
+   <td role="rowheader">[!UICONTROL Assets ID]</td> 
+   <td> För varje resurs som du vill ta bort från en samling klickar du på <strong>[!UICONTROL Assets ID]</strong> och anger eller mappar resurs-ID:t.</p> </li> 
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -318,25 +327,6 @@ Den här åtgärdsmodulen uppdaterar metadatafälten för en resurs.
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Ange eller mappa det maximala antalet resurser som du vill att modulen ska arbeta med under varje körningscykel för scenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Download File]
-
-Den här åtgärdsmodulen hämtar en resurs från ditt [!DNL Widen]-konto.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Widen] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
-   <td> <p>Ange eller mappa ID:t för resursen som du vill hämta.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -458,7 +448,7 @@ Den här sökmodulen hämtar en lista med resurser som matchar de specifika sök
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search document text]</td> 
-   <td>Aktivera det här alternativet om du vill inkludera dokumenttext i sökningen, eller false om du bara vill inkludera resurser där titeln matchar sökvillkoren.</td> 
+   <td>Aktivera det här alternativet om du vill ta med dokumenttext i sökningen eller ange till false om du bara vill ta med resurser där titeln matchar sökvillkoren.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
