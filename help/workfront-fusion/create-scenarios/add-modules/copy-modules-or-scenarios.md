@@ -4,9 +4,9 @@ description: Du kan kopiera moduler, grupper av moduler eller hela scenarier i A
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '865'
 ht-degree: 0%
 
 ---
@@ -126,6 +126,10 @@ En scenarioplan representerar hela scenariot. Om du bara vill kopiera vissa modu
 1. Klicka på **[!UICONTROL Export Blueprint]**.
 
    En JSON-fil skapas och hämtas till datorn. Du kan hitta filen i mappen [!DNL Downloads].
+
+>[!NOTE]
+>
+>Information om hur du exporterar en plan för en tidigare version av ett scenario finns i [Visa och hantera scenarioversioner](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
 
 ### Importera en plan
 

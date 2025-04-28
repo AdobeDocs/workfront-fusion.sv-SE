@@ -4,9 +4,9 @@ description: I den här artikeln beskrivs den grundläggande processen att lägg
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,6 @@ Mer information om utlösarmoduler finns i [Utlösarmoduler](/help/workfront-fus
 ## Lägg till en annan modul i ett scenario
 
 1. Om du inte är i scenarioredigeraren för det scenario där du vill lägga till en modul klickar du på fliken **[!UICONTROL Scenarios]** i den vänstra panelen.
-1. Välj det scenario där du vill exportera en plan.
 1. Klicka någonstans i scenariot för att öppna Scenarioredigeraren.
 1. Om du vill lägga till en modul i en annan modul håller du pekaren över det högra handtaget i modulen som du vill lägga till en modul efter och klickar sedan på **Lägg till en annan modul** när den visas.
 
@@ -99,7 +98,6 @@ Mer information om utlösarmoduler finns i [Utlösarmoduler](/help/workfront-fus
 ## Infoga en modul mellan befintliga moduler i ett scenario
 
 1. Om du inte är i scenarioredigeraren för det scenario där du vill lägga till en modul klickar du på fliken **[!UICONTROL Scenarios]** i den vänstra panelen.
-1. Välj det scenario där du vill exportera en plan.
 1. Klicka någonstans i scenariot för att öppna Scenarioredigeraren.
 1. Klicka på den prickade banan mellan modulerna där du vill infoga en modul.
 1. Välj **Lägg till en modul** på den meny som visas.

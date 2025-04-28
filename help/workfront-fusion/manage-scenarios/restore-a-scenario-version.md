@@ -4,9 +4,9 @@ description: Du kan återställa en tidigare version av ett scenario. På så s�
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,8 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 1. (Valfritt) Om du vill byta namn på versionen klickar du på menyn Mer ![Mer](assets/more-icon-vertical.png) på raden för den versionen, väljer **Redigera** och anger ett namn i fältet. Klicka på **Spara** för att spara det nya namnet.
 
    Vi rekommenderar att du ger ett namn som beskriver ändringarna som gjorts för den här versionen.
-1. (Valfritt) Om du vill återställa versionen klickar du på Återställ ![Mer-menyn](assets/more-icon-vertical.png) på raden för den versionen
+1. (Valfritt) Om du vill hämta en plan för en tidigare version klickar du på menyn Mer ![Mer](assets/more-icon-vertical.png) på raden för den versionen och väljer sedan **Hämta**.
+1. (Valfritt) Om du vill återställa versionen klickar du på **Återställ** på raden för den versionen
 
 
    >[!NOTE]
