@@ -1,19 +1,19 @@
 ---
-title: Återställa en scenarioversion
-description: Du kan återställa en tidigare version av ett scenario. På så sätt kan du göra ändringar i ett scenario och sedan enkelt återställa dessa ändringar om du föredrar den tidigare funktionen.
+title: Visa och hantera scenarioversioner
+description: Du kan visa, återställa, byta namn på eller hämta utkast för tidigare versioner av ett scenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 2270b386bbf62cfc3b82bd4f9c293b36d3b7a35a
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
 # Visa och hantera scenarioversioner
 
-Du kan visa, återställa eller byta namn på tidigare versioner av ett scenario.
+Du kan visa, återställa, byta namn på eller hämta utkast för tidigare versioner av ett scenario.
 
 ## Åtkomstkrav
 
