@@ -4,9 +4,9 @@ description: Du kan använda Adobe Workfront Fusion Adobe Workfront-kontakten f�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 7287e0460318cf5328e703af7ecc948b1ce62257
+source-git-commit: 6fa7ab493112351d9480b21b23b3b6b7b14f2230
 workflow-type: tm+mt
-source-wordcount: '7264'
+source-wordcount: '7292'
 ht-degree: 0%
 
 ---
@@ -973,7 +973,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Attach Custom Form]</td> 
-   <td>Välj de anpassade formulär som du vill bifoga till den nya posten. När du har valt formuläret anger du data för fälten i det formuläret.</td> 
+   <td>Välj de anpassade formulär som du vill ange fältvärden för på den nya posten. När du har valt formuläret anger du data för fälten i det formuläret.<p> Om du vill ange fältvärden för ett formulär som du bifogar i den här modulen, inkluderar du det anpassade formulär-ID:t i fälten som ska mappas.</td> 
   </tr> 
  </tbody> 
 </table>
