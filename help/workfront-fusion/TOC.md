@@ -2,9 +2,9 @@
 user-guide-title: Dokumentation om Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Använd dokument, självstudiekurser och andra resurser för att lära dig hur du implementerar och använder Adobe Workfront Fusion effektivt i din organisation.
-source-git-commit: a23517da30b4e51ef55bcc13241a03cd1d6153a0
+source-git-commit: 6ebfd07e24f77bd8c162d53554ddf1fcaefafeb8
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1714'
 ht-degree: 1%
 
 ---
@@ -13,9 +13,10 @@ ht-degree: 1%
 # Dokumentation om Adobe Workfront Fusion {#using}
 
 * [Adobe Workfront Fusion Documentation](home.md)
-* Aktivitet för Fusion-release {#fusion-release-activity}
+* Aktivitet vid lansering av Fusion {#fusion-release-activity}
    * [Versionsaktivitet för Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion-versioner - 2025 {#fusion-releases-2025}
+      * [Versionsaktivitet för Workfront Fusion: 21 april 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-21.md)
       * [Versionsaktivitet för Workfront Fusion: 14 april 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-14.md)
       * [Versionsaktivitet för Workfront Fusion: 31 mars 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-31.md)
       * [Versionsaktivitet för Workfront Fusion: 10 mars 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-10.md)
@@ -130,7 +131,7 @@ ht-degree: 1%
       * [Modulöversikt](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
       * [Mappningsöversikt](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
       * [Funktionsöversikt](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
-   * Navigera till Workfront Fusion {#navigate-workfront-fusion}
+   * Navigera i Workfront Fusion {#navigate-workfront-fusion}
       * [Navigera i Workfront Fusion: artikelindex](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
       * [Navigera i Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
       * [Översikt över scenarioredigeraren](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
@@ -139,7 +140,7 @@ ht-degree: 1%
       * [Ändra profilinställningar](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/change-profile-settings.md)
 * Konfigurera och hantera Workfront Fusion {#set-up-and-manage-fusion}
    * [Konfigurera och hantera Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
-   * Översikt över licensiering och åtgärder {#licensing-and-operations-overviews}
+   * Översikt över licenser och åtgärder {#licensing-and-operations-overviews}
       * [Översikt över licenser och åtgärder](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
       * [Operationer](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
@@ -182,14 +183,14 @@ ht-degree: 1%
       * [Lägg till en routermodul och konfigurera flöden](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)
       * [Lägga till ett filter i ett scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)
       * [Välj var en utlösarmodul ska starta](/help/workfront-fusion/create-scenarios/add-modules/choose-where-trigger-module-starts.md)
-   * Mappa data {#map-data}
+   * Kartdata {#map-data}
       * [Kartdata](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
       * [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
       * [Mappa objekt med funktioner](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
       * [Mappa arrayer och arrayelement](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
       * [Mappa en fil mellan moduler](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
       * [Datalager](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)
-   * Anslut till program {#connect-to-applications}
+   * Ansluta till program {#connect-to-applications}
       * [Ansluta till program](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
       * [Skapa anslutningar](/help/workfront-fusion/create-scenarios/connect-to-apps/connection-instruction-toc.md)
       * [Skapa en anslutning - grundläggande instruktioner](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
@@ -283,9 +284,9 @@ ht-degree: 1%
    * Anslutningar {#connections}
       * [Anslutningsreferens: artikelindex](/help/workfront-fusion/references/connections/connection-reference-toc.md)
       * [Anslutningsmetadata](/help/workfront-fusion/references/connections/connection-metadata.md)
-   * Appar och deras moduler {#apps-and-their-modules}
+   * Program och deras moduler {#apps-and-their-modules}
       * [Program och deras moduler](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
-      * Universella anslutningar {#universal-connectors}
+      * Universella kopplingar {#universal-connectors}
          * [HTTP > modulen [!UICONTROL Make a request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
          * [[!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request]-modulen](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
          * [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]-modulen](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
@@ -372,7 +373,7 @@ ht-degree: 1%
          * [Trello-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
          * [Bredda moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
          * [Workday moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
-      * Verktyg och omformare {#tools-and-transformers}
+      * Verktyg och transformatorer {#tools-and-transformers}
          * [Arkivera moduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
          * [CSV-moduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
          * [Datalagermoduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)
