@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
-source-git-commit: f02c4df01c7fad6bb9cdf4911512eef97e71c82b
+source-git-commit: 0ed33cbed2b8ed4ab2c89c86b7e8f37b2683ec75
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '1378'
 ht-degree: 0%
 
 ---
@@ -98,15 +98,17 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 * [Utlösare](#triggers)
 * [Åtgärder](#actions)
+* [Sökningar](#searches)
 
 ### Utlösare
 
-* [[!UICONTROL New event]](#new-event)
-* [[!UICONTROL Watch files]](#watch-files)
+* [[!UICONTROL New File Event]](#new-file-event)
+* [Ny mapphändelse](#new-folder-event)
+* [[!UICONTROL Watch Files]](#watch-files)
 
-#### [!UICONTROL New event]
+#### [!UICONTROL New File Event]
 
-Denna snabbutlösarmodul startar ett scenario när en fil läggs till, flyttas, kopieras, tas bort, låses eller låses upp.
+Denna snabbutlösarmodul startar ett scenario när en vald åtgärd inträffar för en fil.
 
 <table style="table-layout:auto">
  <col> 
@@ -114,16 +116,27 @@ Denna snabbutlösarmodul startar ett scenario när en fil läggs till, flyttas, 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>Välj den webkrok som du vill använda för att bevaka utgående meddelanden. Om du vill lägga till en webkrok klickar du på <strong>[!UICONTROL Add]</strong> och anger webkrokens namn och anslutning.</p> <p> Instruktioner om hur du ansluter ditt [!UICONTROL Box]-konto till [!UICONTROL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Ansluta till en tjänst - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Maximum number of returned events]</p> </td> 
-   <td> <p>Ange det högsta antal händelser som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
+   <td> <p>Välj den webkrok som du vill använda för att se utgående meddelanden, eller lägg till en webkrok. </p><p>Om du vill lägga till en webkrok klickar du på <strong>[!UICONTROL Add]</strong> och anger webkrokens namn och anslutning, filen som du vill titta på och de utlösare som du vill titta på.</p> <p> Instruktioner om hur du ansluter ditt [!UICONTROL Box]-konto till [!UICONTROL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Ansluta till en tjänst - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch files]
+#### Ny mapphändelse
+
+Den här snabbutlösarmodulen startar ett scenario när markeringsåtgärden inträffar i mappen.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook]</td> 
+   <td> <p>Välj den webkrok som du vill använda för att se utgående meddelanden, eller lägg till en webkrok. </p><p>Om du vill lägga till en webkrok klickar du på <strong>[!UICONTROL Add]</strong> och anger webkrokens namn och anslutning, mappen som du vill titta på och utlösarna som du vill titta på.</p> <p> Instruktioner om hur du ansluter ditt [!UICONTROL Box]-konto till [!UICONTROL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Ansluta till en tjänst - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Watch Files]
 
 Den här utlösarmodulen startar ett scenario när en ny fil läggs till eller en befintlig fil uppdateras i en mapp som bevakas.
 
@@ -135,7 +148,7 @@ Den här utlösarmodulen startar ett scenario när en ny fil läggs till eller e
    <td role="rowheader">Anslutning</td> 
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Box]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
   <tr> 
-   <td role="rowheader">Mapp</td> 
+   <td role="rowheader">Bevaka i mapp</td> 
    <td> <p>Markera den mapp som du vill bevaka. Ett scenario kan bevaka en enda mapp.</p> 
    </td> 
   </tr> 
@@ -156,14 +169,19 @@ Den här utlösarmodulen startar ett scenario när en ny fil läggs till eller e
 
 ### Åtgärder
 
-* [[!UICONTROL Delete a file]](#delete-a-file)
+<!--* [[!UICONTROL Delete a file]](#delete-a-file)
 * [[!UICONTROL Get a file]](#get-a-file)
 * [[!UICONTROL Update a file]](#update-a-file)
-* [[!UICONTROL Upload] en fil](#upload-a-file)
+* [[!UICONTROL Upload] a file](#upload-a-file)-->
+* [Skapa en mapp](#create-a-folder)
+* [Hämta en mapp](#get-a-folder)
+* [Hämta mappmetadata](#get-folder-metadata)
+* [Göra ett API-anrop](#make-an-api-call)
+* [Uppdatera mappmetadata](#update-folder-metadata)
 
-#### [!UICONTROL Delete a file]
+<!--#### [!UICONTROL Delete a file] 
 
-Den här åtgärdsmodulen tar bort en fil.
+This action module deletes a file.
 
 <table style="table-layout:auto">
  <col> 
@@ -171,23 +189,23 @@ Den här åtgärdsmodulen tar bort en fil.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Box]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>Ange eller mappa det unika ID:t för filen som du vill att modulen ska ta bort.</td> 
+   <td>Enter or map the unique ID of the file that you want the module to delete.</td> 
   </tr> 
  </tbody> 
 </table>
 
 #### [!UICONTROL Get a file]
 
-Den här åtgärdsmodulen hämtar en fil.
+This action module downloads a file.
 
-Du anger filens ID.
+You specify the ID of the file.
 
 >[!NOTE]
 >
->Den här modulen är användbar när du vill skicka filer till efterföljande moduler.
+>This module is useful for providing files to subsequent modules.
 
 <table style="table-layout:auto">
  <col> 
@@ -195,19 +213,19 @@ Du anger filens ID.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Box]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>Ange eller mappa det unika ID:t för filen som du vill att modulen ska hämta.</td> 
+   <td>Enter or map the unique ID of the file that you want the module to retrieve.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a file]
+#### [!UICONTROL Update a file] 
 
-Den här åtgärdsmodulen uppdaterar en fil.
+This action module updates a file.
 
-Du anger filens ID.
+You specify the ID of the file.
 
 <table style="table-layout:auto">
  <col> 
@@ -215,23 +233,84 @@ Du anger filens ID.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Box]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>Ange eller mappa det unika ID:t för filen som du vill att modulen ska uppdatera.</td> 
+   <td>Enter or map the unique ID of the file that you want the module to update.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> </td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL Upload a file] 
 
-Den här åtgärdsmodulen överför en fil.
+This action module uploads a file.
 
-Du anger filen. Du kan också ange ett nytt filnamn för filen.
+You specify the file. You can also provide a new filename for the file.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Select the folder where you want to upload the file.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+>[!NOTE]
+>
+>If this module is not successful, consider the following:
+>
+>* The size of the file might exceed the maximum file size limit for your [!DNL Box] plan, or you may have used all of your [!DNL Box] account's storage quota. To get more storage space, delete existing files from [!DNL Box] or upgrade your [!DNL Box] account.
+>* [!DNL Box] does not upload more than one files with the same name to a single folder. If the destination folder contains a file with the same name as the file being uploaded, the scenario run terminates with an error. To avoid this, rename the file. If you want to update the file, use the **[!UICONTROL Update a file]** module.-->
+
+#### Skapa en mapp
+
+Den här åtgärdsmodulen skapar en ny tom mapp i den angivna överordnade mappen.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Box]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Name]</td> 
+   <td> <p>Ange eller mappa ett namn för den nya mappen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Parent Folder]</td> 
+   <td> <p>Välj den mapp där du vill skapa den nya mappen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder Upload Email Access]</td> 
+   <td> <p>När den här parametern har angetts kan användare skicka e-postfiler till den e-postadress som har skapats automatiskt för den här mappen. Medarbetarnas alternativ tillåter endast registrerade e-postmeddelanden för medarbetare.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Synchronization State]</td> 
+   <td> <p>Anger om en mapp ska synkroniseras till en användares enhet eller inte. Detta används av Box Sync (upphör) och används inte av Box Drive.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Hämta en mapp
+
+Den här åtgärdsmodulen hämtar information om en mapp, inklusive de första 100 posterna i mappen.
 
 <table style="table-layout:auto">
  <col> 
@@ -243,18 +322,177 @@ Du anger filen. Du kan också ange ett nytt filnamn för filen.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
-   <td> <p>Välj den mapp där du vill överföra filen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> </td> 
+   <td> <p>Markera mappen som du vill hämta information för.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!NOTE]
->
->Om den här modulen inte lyckas bör du tänka på följande:
->
->* Storleken på filen kan överstiga den maximala filstorleken för din [!DNL Box]-plan, eller så har du använt hela lagringskvoten för ditt [!DNL Box]-konto. Om du vill ha mer lagringsutrymme tar du bort befintliga filer från [!DNL Box] eller uppgraderar ditt [!DNL Box]-konto.
->* [!DNL Box] överför inte mer än en fil med samma namn till en enda mapp. Om målmappen innehåller en fil med samma namn som den fil som överförs avslutas scenariot med ett fel. Du kan undvika detta genom att byta namn på filen. Använd modulen **[!UICONTROL Update a file]** om du vill uppdatera filen.
+#### Hämta mappmetadata
+
+Den här åtgärdsmodulen hämtar mappmetadata efter mapp-ID.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Box]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Scope]</td> 
+   <td> <p>Välj det omfång som du vill använda för denna metadatahämtning.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Markera mappen som du vill hämta metadata för.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Göra ett API-anrop
+
+Den här åtgärdsmodulen gör ett anpassat anrop till Box API.
+
+
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Bynder]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Bynder] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL</td> 
+   <td>Ange en relativ sökväg till <code>https://api.box.com</code>. <p>Exempel: <code>/2.0/users/me</code></p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p> <p>Exempel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion lägger till auktoriseringsrubrikerna åt dig.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>Lägg till frågan för API-anropet i form av ett standard-JSON-objekt.</p> <p>Exempel: <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Lägg till brödinnehållet för API-anropet i form av ett standard-JSON-objekt.</p> <p>Obs!  <p>När du använder villkorssatser som <code>if</code> i JSON placerar du citattecknen utanför villkorssatsen.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Uppdatera mappmetadata
+
+Den här åtgärdsmodulen skapar eller uppdaterar metadata för en mapp.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Box]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Scope]</td> 
+   <td> <p>Välj det omfång som du vill använda för den här metadatauppdateringen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Markera mappen som du vill uppdatera metadata för.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+### Sökningar
+
+#### Sök efter innehåll
+
+Den här sökmodulen söker efter objekt som är tillgängliga för användaren eller för hela företaget.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Box]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
+   <td> <p>Ange eller mappa strängen som du vill söka efter. Frågan matchas mot objektnamn, beskrivningar, textinnehåll i filer och olika andra fält i de olika objekttyperna.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Scope]</td> 
+   <td> <p>Välj om du söker efter innehåll som är associerat med den användare vars inloggningsuppgifter används för anslutningen som används i den här modulen eller om du söker efter innehåll som är associerat med hela företaget.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Type]</td> 
+   <td> <p>Välj om du söker efter filer, mappar eller webblänkar.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Sort]</td> 
+   <td> <p>Välj om du vill sortera efter relevans eller efter ändringsdatum.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Trash Content]</td> 
+   <td> <p>Välj om du vill söka efter innehåll som inte har blivit genomstruket eller innehåll som inte är genomstruket.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Parent Folder IDs]</td> 
+   <td> <p>Om du vill söka i en specifik mapp klickar du på <b>Lägg till objekt</b> för varje mapp som du vill söka i och anger ID:t för mappen. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Created From]</td> 
+   <td> <p>Om du vill söka efter resurser som skapats i ett visst datumintervall anger du det tidigaste datumet i intervallet.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Created to]</td> 
+   <td> <p>Om du vill söka efter resurser som skapats i ett visst datumintervall anger du det senaste datumet i intervallet.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Updated From]</td> 
+   <td> <p>Om du vill söka efter resurser som har uppdaterats i ett visst datumintervall anger du det tidigaste datumet i intervallet.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Updated to]</td> 
+   <td> <p>Om du vill söka efter resurser som har uppdaterats i ett visst datumintervall anger du det senaste datumet i intervallet.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td> <p>För varje attribut som du vill returnera i modulens svar klickar du på <b>Lägg till objekt</b> och anger fältet.</p><p>Detta kan användas för att begära fält som normalt inte returneras i ett standardsvar. Observera att om du anger den här parametern kommer ingen av standardfälten att returneras i svaret om de inte uttryckligen anges. </p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL File Extensions]</td> 
+   <td> <p>Om du vill begränsa sökningen till specifika filtillägg anger du en kommaavgränsad lista med filtillägg.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size From]</td> 
+   <td> <p>Om du vill söka efter resurser i ett visst storleksintervall anger du den lilla änden av intervallet i byte.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size To]</td> 
+   <td> <p>Om du vill söka efter resurser i ett visst storleksintervall anger du intervallets stora slut i byte.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Owner User ID]</td> 
+   <td> <p>Om du vill söka efter resurser som ägs av specifika användare anger du en kommaavgränsad lista med ägar-ID:n.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Ange eller mappa det maximala antal resultat som du vill att modulen ska returnera i varje körningscykel.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
