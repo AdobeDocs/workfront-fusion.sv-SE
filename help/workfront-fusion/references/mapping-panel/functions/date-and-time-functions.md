@@ -139,7 +139,7 @@ Den här funktionen returnerar ett nytt datum med de sekunder som anges i parame
 
 Ange ett tal mellan 0 och 59. Om talet ligger utanför det intervallet returnerar funktionen en sekund från föregående minut (för ett negativt tal) eller efterföljande minut (för ett positivt tal).
 
-Om du behöver ange ett tal utanför intervallet rekommenderar vi att du använder [!UICONTROL  addSeconds], enligt beskrivningen ovan i avsnittet [addSeconds (date; number)](#addseconds-date-number).
+Om du behöver ange ett tal utanför intervallet rekommenderar vi att du använder [!UICONTROL &#x200B; addSeconds], enligt beskrivningen ovan i avsnittet [addSeconds (date; number)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 

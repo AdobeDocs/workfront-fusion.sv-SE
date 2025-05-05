@@ -31,7 +31,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL-plan], [!UICONTROL-arbete]</p> </td> 
+   <td> <p>[!UICONTROL -plan], [!UICONTROL -arbete]</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
@@ -90,7 +90,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe Experience Manager Forms]
     </col>
     <tbody>
       <tr>
-        <td role="rowheader">[!UICONTROL-anslutningsnamn]</td>
+        <td role="rowheader">[!UICONTROL -anslutningsnamn]</td>
         <td>
           <p>Ange ett namn för anslutningen.</p>
         </td>
@@ -102,7 +102,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe Experience Manager Forms]
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-typ]</td>
+        <td role="rowheader">[!UICONTROL -typ]</td>
         <td>
           <p>Ange om det här kontot är ett tjänstkonto eller ett personligt konto.</p>
         </td>
@@ -120,11 +120,11 @@ Så här skapar du en anslutning för dina [!DNL Adobe Experience Manager Forms]
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-klient-ID]</td>
+        <td role="rowheader">[!UICONTROL -klient-ID]</td>
         <td>Ange ditt klient-ID för [!DNL Adobe]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-klienthemlighet]</td>
+        <td role="rowheader">[!UICONTROL -klienthemlighet]</td>
         <td>Ange din [!DNL Adobe]-klienthemlighet. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].
       </tr>
       <tr>
@@ -136,7 +136,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe Experience Manager Forms]
         <td>Ange ditt tekniska konto-ID för [!DNL Adobe]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-metaomfång]</td>
+        <td role="rowheader">[!UICONTROL -metaomfång]</td>
         <td>Ange lämpliga metaomfång       </td>
       </tr>
       <tr>
@@ -187,11 +187,11 @@ Med denna direktutlösare (webkrok) kan du starta ett scenario när en Skicka-å
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-webbkroknamn]</td> 
+   <td role="rowheader">[!UICONTROL -webbkroknamn]</td> 
    <td> <p>Ange ett namn för webkroken</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Adobe Experience Manager]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md#create-a-connection-to-adobe-experience-manager-forms" class="MCXref xref">Skapa en anslutning till [!DNL Adobe Experience Manager Forms]</a></p> </td> 
   </tr>
 

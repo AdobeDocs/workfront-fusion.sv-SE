@@ -37,7 +37,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
       <td>
-        <p>[!UICONTROL-plan], [!UICONTROL-arbete]</p>
+        <p>[!UICONTROL -plan], [!UICONTROL -arbete]</p>
       </td>
     </tr>
     <tr>
@@ -108,13 +108,13 @@ Så här skapar du en anslutning för dina [!DNL Adobe Target]-moduler:
     </col>
     <tbody>
       <tr>
-        <td role="rowheader">[!UICONTROL-anslutningsnamn]</td>
+        <td role="rowheader">[!UICONTROL -anslutningsnamn]</td>
         <td>
           <p>Ange ett namn för anslutningen.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-anslutningstyp]</td>
+        <td role="rowheader">[!UICONTROL -anslutningstyp]</td>
         <td>Ange om du skapar en anslutning till ett tjänstkonto eller en anslutning från Adobe Target Server till server.<p><b>VIKTIGT</b>: Anslutningar som skapats efter 3 juni 2024 kräver en Adobe Target Server-till-server-anslutning. Befintliga anslutningar till tjänstkonton fortsätter att fungera till januari 2025. Du måste ersätta dina tjänstkontoanslutningar med Adobe Target Server-till-server-anslutningar senast i januari 2024.
         </td>
       </tr>
@@ -124,16 +124,16 @@ Så här skapar du en anslutning för dina [!DNL Adobe Target]-moduler:
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-typ]</td>
+        <td role="rowheader">[!UICONTROL -typ]</td>
         <td>Ange om du ansluter till ett tjänstkonto eller ett personligt konto.
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-klient-ID]</td>
+        <td role="rowheader">[!UICONTROL -klient-ID]</td>
         <td>Ange ditt klient-ID för [!DNL Adobe]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-klienthemlighet]</td>
+        <td role="rowheader">[!UICONTROL -klienthemlighet]</td>
         <td>Ange din [!DNL Adobe]-klienthemlighet. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].
       </tr>
       <tr>
@@ -141,18 +141,18 @@ Så här skapar du en anslutning för dina [!DNL Adobe Target]-moduler:
         <td>Ange ditt tekniska konto-ID för [!DNL Adobe]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-organisations-ID]</td>
+        <td role="rowheader">[!UICONTROL -organisations-ID]</td>
         <td>Ange ditt organisations-ID för [!DNL Adobe]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-klient]</td>
+        <td role="rowheader">[!UICONTROL -klient]</td>
         <td>
           <p> Logga in på [!DNL Adobe Experience Cloud], öppna [!DNL Target] och klicka på [!DNL Target]-kortet för att hitta din klient. Använd det klient-ID som anges i URL-underdomänen.</p>
           <p>Om din URL när du är inloggad på [!DNL Adobe Target] till exempel är <code>&lt;https://mycompany.experiencecloud.adobe.com/...></code> är ditt klient-ID"mincompany".</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-metaomfång]</td>
+        <td role="rowheader">[!UICONTROL -metaomfång]</td>
         <td>Ange <code>ent_marketing_sdk</code>       </td>
       </tr>
       <tr>
@@ -219,11 +219,11 @@ Denna åtgärdsmodul skapar en AB- eller XT-aktivitet, ett erbjudande eller en m
 <col/>
 <tbody>
   <tr>
-    <td role="rowheader">[!UICONTROL-anslutning]</td>
+    <td role="rowheader">[!UICONTROL -anslutning]</td>
     <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Target] finns i <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Target]</a> i den här artikeln.</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL-posttyp]</td>
+    <td role="rowheader">[!UICONTROL -posttyp]</td>
     <td>
       <p>Välj den typ av post som du vill skapa.</p>
       <ul>
@@ -238,14 +238,14 @@ Denna åtgärdsmodul skapar en AB- eller XT-aktivitet, ett erbjudande eller en m
           <p>Fortsätt till <a href="#offer-fields" class="MCXref xref" >Erbjudandefält</a>.</p>
         </li>
         <li>
-          <b>[!UICONTROL-erbjudandeinnehåll]</b>
+          <b>[!UICONTROL -erbjudandeinnehåll]</b>
           <p>Fortsätt till <a href="#offer-fields" class="MCXref xref" >Erbjudandefält</a>.</p>
         </li>
         <li>
         <b>Miljö</b><p>Mer information om fält finns i <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Environments/operation/createEnvironment">Skapa miljö</a> i Adobe Target API-dokumentationen.</p>
         </li>
         <li>
-          <b>[!UICONTROL-publik]</b>
+          <b>[!UICONTROL -publik]</b>
           <p>Mer information om fält finns i <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Audiences/operation/createAudience_1_1">Skapa målgrupp</a> i Adobe Target API-dokumentationen.</p>
         </li>
         <li>
@@ -261,7 +261,7 @@ Denna åtgärdsmodul skapar en AB- eller XT-aktivitet, ett erbjudande eller en m
           <p>Mer information om fält finns i <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_2">Skapa AP-aktivitet</a> i Adobe Target API-dokumentationen.</p>
         </li>
         <li>
-          <b>[!UICONTROL-svarstoken]</b>
+          <b>[!UICONTROL -svarstoken]</b>
           <p>Mer information om fält finns i <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Response-tokens/operation/createResponseToken">Skapa svarstoken</a> i Adobe Target API-dokumentationen.</p>
         </li>
       </ul>
@@ -480,26 +480,26 @@ Denna åtgärdsmodul skapar en AB- eller XT-aktivitet, ett erbjudande eller en m
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-namn]</td>
+      <td role="rowheader">[!UICONTROL -namn]</td>
       <td>Ange eller mappa ett namn för aktiviteten. Namnet får innehålla högst 250 tecken.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-alternativ]</td>
+      <td role="rowheader">[!UICONTROL -alternativ]</td>
       <td>
         <p>För varje alternativ som du vill lägga till i aktiviteten klickar du på <b>[!UICONTROL Lägg till objekt]</b> och fyller i följande fält:</p>
         <ul>
           <li>
-            <p><b>[!Lokalt ID för UICONTROL-alternativ]</b>
+            <p><b>[!UICONTROL Lokalt ID för-alternativ]</b>
             </p>
             <p>Ange eller mappa en sträng som ska användas för att spåra alternativet mellan API-begäranden.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL-namn]</b>
+            <p><b>[!UICONTROL -namn]</b>
             </p>
             <p>Ange eller mappa ett namn för alternativet. Namnet får innehålla högst 250 tecken.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL-erbjudande-ID]</b>
+            <p><b>[!UICONTROL -erbjudande-ID]</b>
             </p>
           </li>
           <li>
@@ -509,21 +509,21 @@ Denna åtgärdsmodul skapar en AB- eller XT-aktivitet, ett erbjudande eller en m
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-platser]</td>
+      <td role="rowheader">[!UICONTROL -platser]</td>
       <td>
         <p>För varje Mbox som du vill lägga till i aktiviteten klickar du på <b>[!UICONTROL Lägg till objekt]</b> och fyller i följande fält:</p>
         <ul>
           <li>
-            <p>[!UICONTROL-publikens ID:n]</p>
+            <p>[!UICONTROL -publikens ID:n]</p>
             <p>För varje målgrupp som du vill lägga till i rutan klickar du på <b>[!UICONTROL Lägg till objekt]</b> och väljer publikens ID.</p>
           </li>
           <li>
-            <p><b>[!Lokalt ID för UICONTROL-plats]</b>
+            <p><b>[!UICONTROL Lokalt ID för-plats]</b>
             </p>
             <p>Ange eller mappa en sträng som ska användas för att spåra platsen mellan API-begäranden.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL-namn]</b>
+            <p><b>[!UICONTROL -namn]</b>
             </p>
             <p>Ange eller mappa ett namn för platsen. Namnet får innehålla högst 250 tecken.</p>
           </li>
@@ -542,7 +542,7 @@ Denna åtgärdsmodul skapar en AB- eller XT-aktivitet, ett erbjudande eller en m
             <p>Ange eller mappa upplevelsens ID</p>
           </li>
           <li>
-            <p><b>[!UICONTROL-namn]</b>
+            <p><b>[!UICONTROL -namn]</b>
             </p>
             <p>Ange eller mappa namnet på upplevelsen
 
@@ -556,7 +556,7 @@ Denna åtgärdsmodul skapar en AB- eller XT-aktivitet, ett erbjudande eller en m
 </p>
           </li>
           <li>
-            <p><b>[!UICONTROL-besökarprocent]</b>
+            <p><b>[!UICONTROL -besökarprocent]</b>
             </p>
             <p>Ange eller mappa den procentandel besökare som tilldelats upplevelsen</p>
           </li>
@@ -564,7 +564,7 @@ Denna åtgärdsmodul skapar en AB- eller XT-aktivitet, ett erbjudande eller en m
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-mått]</td>
+      <td role="rowheader">[!UICONTROL -mått]</td>
       <td> </td>
     </tr>
     <tr>
@@ -580,7 +580,7 @@ Denna åtgärdsmodul skapar en AB- eller XT-aktivitet, ett erbjudande eller en m
       <td>Ange eller mappa datum och tid för att avsluta aktiviteten i formatet <code>YYYY-MM-DD hh:mm:ss.z</code>.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-läge]</td>
+      <td role="rowheader">[!UICONTROL -läge]</td>
       <td>
         <p>Ange eller mappa aktivitetens tillstånd.</p>
         <ul>
@@ -603,7 +603,7 @@ Denna åtgärdsmodul skapar en AB- eller XT-aktivitet, ett erbjudande eller en m
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-prioritet]</td>
+      <td role="rowheader">[!UICONTROL -prioritet]</td>
       <td>Ange ett tal som definierar aktivitetens prioritet. Högre tal har högre prioritet. Värdet måste vara mellan 0 och 999. Standardvärdet är 5.</td>
     </tr>
     <tr>
@@ -618,7 +618,7 @@ Denna åtgärdsmodul skapar en AB- eller XT-aktivitet, ett erbjudande eller en m
       <td>Ange eller mappa arbetsytan som aktiviteten är kopplad till</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-egenskaps-ID] </td>
+      <td role="rowheader">[!UICONTROL -egenskaps-ID] </td>
       <td>För varje egenskap som du vill lägga till i aktiviteten klickar du på <b>[!UICONTROL Lägg till objekt]</b> och markerar eller mappar egenskapens ID.</td>
     </tr>
     <tr>
@@ -632,12 +632,12 @@ Denna åtgärdsmodul skapar en AB- eller XT-aktivitet, ett erbjudande eller en m
             <p>Ange eller mappa en sträng som ska användas för att spåra rapportens målgrupp över API-begäranden.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL-publikens ID]</b>
+            <p><b>[!UICONTROL -publikens ID]</b>
             </p>
             <p>Ange eller mappa segmentet som ska användas vid rapportering</p>
           </li>
           <li>
-            <p><b>[!Lokalt ID för UICONTROL-mått]</b>
+            <p><b>[!UICONTROL Lokalt ID för-mått]</b>
             </p>
             <p>Ange eller mappa en sträng som ska användas för att spåra mätvärden över API-begäranden.</p>
           </li>
@@ -654,11 +654,11 @@ Denna åtgärdsmodul skapar en AB- eller XT-aktivitet, ett erbjudande eller en m
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-namn]</td>
+      <td role="rowheader">[!UICONTROL -namn]</td>
       <td>Ange eller mappa ett namn för aktiviteten. Namnet får innehålla högst 250 tecken.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-innehåll]</td>
+      <td role="rowheader">[!UICONTROL -innehåll]</td>
       <td>
         <p>Ange eller mappa innehållet i erbjudandet som ska visas för användaren.</p>
       </td>
@@ -759,7 +759,7 @@ Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Target].
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL -anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Target] finns i <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Target]</a> i den här artikeln.</td>
     </tr>
     <tr>
@@ -768,7 +768,7 @@ Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Target].
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-sökväg]</p>
+        <p>[!UICONTROL -sökväg]</p>
       </td>
       <td>
         <p>Ange en relativ sökväg till {baseURL}/</p>
@@ -776,7 +776,7 @@ Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Target].
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-metod]</p>
+        <p>[!UICONTROL -metod]</p>
       </td>
    <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
     </tr>
@@ -789,7 +789,7 @@ Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Target].
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-frågesträng]  </td>
+      <td role="rowheader">[!UICONTROL -frågesträng]  </td>
       <td>
         <p>Ange frågesträngen för begäran.</p>
       </td>
@@ -812,15 +812,15 @@ Den här åtgärdsmodulen tar bort en enstaka AB-aktivitet, XT-aktivitet, erbjud
 <col/>
 <tbody>
   <tr>
-    <td role="rowheader">[!UICONTROL-anslutning]</td>
+    <td role="rowheader">[!UICONTROL -anslutning]</td>
     <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Target] finns i <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Target]</a> i den här artikeln.</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL-posttyp]</td>
+    <td role="rowheader">[!UICONTROL -posttyp]</td>
     <td>Välj den typ av post som du vill ta bort.</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL-post-ID]</td>
+    <td role="rowheader">[!UICONTROL -post-ID]</td>
     <td>Ange eller mappa ID:t för den post som du vill ta bort.</td>
   </tr>
 </tbody>
@@ -835,15 +835,15 @@ Den här åtgärdsmodulen hämtar data för en aktivitet, ett erbjudande, en må
 <col/>
 <tbody>
   <tr>
-    <td role="rowheader">[!UICONTROL-anslutning]</td>
+    <td role="rowheader">[!UICONTROL -anslutning]</td>
     <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Target] finns i <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Target]</a> i den här artikeln.</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL-posttyp]</td>
+    <td role="rowheader">[!UICONTROL -posttyp]</td>
     <td>Välj den typ av post som du vill läsa.</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL-post-ID]</td>
+    <td role="rowheader">[!UICONTROL -post-ID]</td>
     <td>Ange eller mappa ID:t för den post som du vill läsa.</td>
   </tr>
 </tbody>
@@ -858,17 +858,17 @@ Den här åtgärdsmodulen uppdaterar en post i Target.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL -anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Target] finns i <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Target]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-posttyp]</td>
+      <td role="rowheader">[!UICONTROL -posttyp]</td>
       <td>
         <p>Välj den typ av post som du vill uppdatera.</p>
        </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-fältnamn]</td>
+      <td role="rowheader">[!UICONTROL -fältnamn]</td>
       <td>Markera de fält som du vill uppdatera. Fälten visas nedan.
           <p>Mer information om fält finns i <a href="https://developer.adobe.com/target/administer/admin-api/">Adobe Target API-dokumentationen</a>.</p>
       </td>
@@ -892,11 +892,11 @@ Den här sökmodulen hämtar en lista med poster av den valda typen.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL -anslutning]</td>
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Target] finns i <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Target]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-posttyp]</td>
+      <td role="rowheader">[!UICONTROL -posttyp]</td>
       <td>Välj den typ av post som du vill uppdatera.</td>
     </tr>
     <tr>
@@ -929,11 +929,11 @@ Den här sökmodulen söker efter aktiviteter, erbjudanden eller målgrupper bas
 <col/>
 <tbody>
   <tr>
-    <td role="rowheader">[!UICONTROL-anslutning]</td>
+    <td role="rowheader">[!UICONTROL -anslutning]</td>
     <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Target] finns i <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Target]</a> i den här artikeln.</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL-posttyp]</td>
+    <td role="rowheader">[!UICONTROL -posttyp]</td>
     <td>Välj den typ av post som du vill uppdatera.</td>
   </tr>
   <tr>
@@ -941,20 +941,20 @@ Den här sökmodulen söker efter aktiviteter, erbjudanden eller målgrupper bas
     <td>För varje fält som du vill sortera efter klickar du på <b>[!UICONTROL Lägg till objekt]</b> och markerar fältet och om de returnerade resultaten ska vara stigande eller fallande.</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL-sökvillkor]</td>
+    <td role="rowheader">[!UICONTROL -sökvillkor]</td>
     <td>För varje regel som du vill ställa in markerar du fältet, operatorn och värdet. Klicka på <b>[!UICONTROL Lägg till OCH regel]</b> för att skapa ytterligare regler.</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL-förskjutning]</td>
+    <td role="rowheader">[!UICONTROL -förskjutning]</td>
     <td>
       <p>Ange numret på det första svar som du vill att modulen ska returnera. Det första returnerade svaret har förskjutningen <code>0</code>. Använd det här fältet tillsammans med fältet [!UICONTROL Maximum number of returned results] för att paginera svaren.</p>
       <p>Om du till exempel vill se den tredje sidan med svar anger du resultatet för [!UICONTROL Offset] till 20 och [!UICONTROL Maximum number of returned] till 10 när varje sida har tio svar.</p>
     </td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL-gräns]</td>
+    <td role="rowheader">[!UICONTROL -gräns]</td>
     <td>
-      <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario. Använd det här fältet i kombination med fältet [!UICONTROL-förskjutning] för att numrera svaren.</p>
+      <p>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario. Använd det här fältet i kombination med fältet [!UICONTROL -förskjutning] för att numrera svaren.</p>
       <p>Om du till exempel vill se den tredje sidan med svar anger du resultatet för [!UICONTROL Offset] till 20 och [!UICONTROL Maximum number of returned] till 10 när varje sida har tio svar.</p>
     </td>
   </tr>

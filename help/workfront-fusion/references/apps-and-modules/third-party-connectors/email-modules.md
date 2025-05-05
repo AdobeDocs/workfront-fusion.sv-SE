@@ -371,7 +371,7 @@ Den här modulen returnerar e-postmeddelanden som matchar de angivna villkoren.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Email ID (UID)]</td> 
-   <td> <p> Ange e-post-ID (UID) för e-postmeddelandet vars information du vill hämta.</p> <p>Du kan hämta UID för e-postmeddelandet med hjälp av [!UICONTROL  Watch Email]-modulen eller [!UICONTROL Search Email] för [!DNL Workfront Fusion].</p> </td> 
+   <td> <p> Ange e-post-ID (UID) för e-postmeddelandet vars information du vill hämta.</p> <p>Du kan hämta UID för e-postmeddelandet med hjälp av [!UICONTROL &#x200B; Watch Email]-modulen eller [!UICONTROL Search Email] för [!DNL Workfront Fusion].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of results]</td> 

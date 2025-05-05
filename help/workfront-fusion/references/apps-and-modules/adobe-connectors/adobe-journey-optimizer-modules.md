@@ -39,7 +39,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
       <td>
-        <p>[!UICONTROL-plan], [!UICONTROL-arbete]</p>
+        <p>[!UICONTROL -plan], [!UICONTROL -arbete]</p>
       </td>
     </tr>
     <tr>
@@ -108,7 +108,7 @@ Du kan skapa en anslutning i alla Adobe Journey Optimizer-moduler.
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL-anslutningsnamn]</td>
+        <td role="rowheader">[!UICONTROL -anslutningsnamn]</td>
         <td>
           <p>Ange ett namn för anslutningen.</p>
         </td>
@@ -118,23 +118,23 @@ Du kan skapa en anslutning i alla Adobe Journey Optimizer-moduler.
         <td>Ange om du ansluter till en produktionsmiljö eller icke-produktionsmiljö.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL-typ]</td>
+        <td role="rowheader">[!UICONTROL -typ]</td>
         <td>Ange om du ansluter till ett tjänstkonto eller ett personligt konto.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL-klient-ID]</td>
-        <td>Ange ditt [!UICONTROL Adobe] [!UICONTROL klient-ID]. Detta finns i avsnittet med information om [!UICONTROL-autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL -klient-ID]</td>
+        <td>Ange ditt [!UICONTROL Adobe] [!UICONTROL klient-ID]. Detta finns i avsnittet med information om [!UICONTROL -autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL-klienthemlighet]</td>
-        <td>Ange din [!DNL Adobe] [!UICONTROL-klienthemlighet]. Detta finns i avsnittet med information om [!UICONTROL-autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL -klienthemlighet]</td>
+        <td>Ange din [!DNL Adobe] [!UICONTROL -klienthemlighet]. Detta finns i avsnittet med information om [!UICONTROL -autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL-organisations-ID]</td>
-        <td>Ange ditt [!DNL Adobe] [!UICONTROL-organisations-ID]. Detta finns i avsnittet med information om [!UICONTROL-autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL -organisations-ID]</td>
+        <td>Ange ditt [!DNL Adobe] [!UICONTROL -organisations-ID]. Detta finns i avsnittet med information om [!UICONTROL -autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL-sandlådans namn]</td>
+        <td role="rowheader">[!UICONTROL -sandlådans namn]</td>
         <td>Ange namnet på den sandlåda som anslutningen ska använda.</td>
         </tr>
       </tbody>
@@ -183,7 +183,7 @@ Den här åtgärdsmodulen skapar en slutpunkt för begränsning eller en slutpun
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -199,7 +199,7 @@ Den här åtgärdsmodulen skapar en slutpunkt för begränsning eller en slutpun
  <col> 
  <col> 
  <tbody> <tr> 
-   <td role="rowheader">[!UICONTROL-URL]</td> 
+   <td role="rowheader">[!UICONTROL -URL]</td> 
    <td>Ange eller mappa URL:en för den slutpunkt som du vill konfigurera.</td> 
   </tr> 
   <tr> 
@@ -207,11 +207,11 @@ Den här åtgärdsmodulen skapar en slutpunkt för begränsning eller en slutpun
    <td>Ange eller mappa organisationens Adobe IMS ID.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-metoder]</td> 
+   <td role="rowheader">[!UICONTROL -metoder]</td> 
    <td>Välj de metoder som ska användas i den här konfigurationen.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-tjänst]</td> 
+   <td role="rowheader">[!UICONTROL -tjänst]</td> 
    <td>Ange om du använder en åtgärd eller en datakälla för den här konfigurationen.</td> 
   </tr> 
   <tr> 
@@ -223,7 +223,7 @@ Den här åtgärdsmodulen skapar en slutpunkt för begränsning eller en slutpun
    <td>Ange eller mappa det maximala antalet anrop som ska utföras under den period som anges i fältet Tidsperiod.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-tidsperiod (millisekunder)]</td> 
+   <td role="rowheader">[!UICONTROL -tidsperiod (millisekunder)]</td> 
    <td>Ange eller mappa antalet millisekunder som relaterar till fältet Maximalt antal anrop.</td> 
   </tr> 
  </tbody> 
@@ -235,7 +235,7 @@ Den här åtgärdsmodulen skapar en slutpunkt för begränsning eller en slutpun
  <col> 
  <col> 
  <tbody> <tr> 
-   <td role="rowheader">[!UICONTROL-namn]</td> 
+   <td role="rowheader">[!UICONTROL -namn]</td> 
    <td>Ange eller mappa ett namn för den här konfigurationen.</td> 
 <tr> 
    <td role="rowheader">[!UICONTROL Description]</td> 
@@ -247,7 +247,7 @@ Den här åtgärdsmodulen skapar en slutpunkt för begränsning eller en slutpun
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-metoder]</td> 
+   <td role="rowheader">[!UICONTROL -metoder]</td> 
    <td>Välj de metoder som ska användas i den här konfigurationen.</td> 
   </tr> 
   <tr> 
@@ -274,7 +274,7 @@ Den här åtgärdsmodulen distribuerar den angivna konfigurationen för begräns
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -297,7 +297,7 @@ Den här åtgärdsmodulen uppdaterar den angivna konfigurationen för begränsni
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -316,7 +316,7 @@ Den här åtgärdsmodulen avdistribuerar en begränsning eller begränsning av k
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -339,7 +339,7 @@ Den här åtgärdsmodulen verifierar om det går att distribuera en begränsning
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -364,7 +364,7 @@ Om konfigurationen har distribuerats måste den avdistribueras innan den kan tas
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -387,7 +387,7 @@ Den här åtgärdsmodulen returnerar konfigurationen för begränsning eller beg
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -425,11 +425,11 @@ Den här åtgärdsmodulen skapar ett paket med flera artefakter.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-namn]</td> 
+   <td role="rowheader">[!UICONTROL -namn]</td> 
    <td>Ange eller mappa ett namn för paketet.</td> 
   </tr> 
   <tr> 
@@ -441,11 +441,11 @@ Den här åtgärdsmodulen skapar ett paket med flera artefakter.
    <td>Ange eller mappa den tidsstämpel som definierar paketets förfallodatum. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-pakettyp]</td> 
+   <td role="rowheader">[!UICONTROL -pakettyp]</td> 
    <td>Välj den typ av paket som du vill skapa.<ul><li><p><b>Fullständig</b></p>Paketet innehåller alla artefakter</p></li><li><p><b>Delvis</b></p><p>Paketet innehåller bara artefakter som du lägger till. </p></li><ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-artefakter]</td> 
+   <td role="rowheader">[!UICONTROL -artefakter]</td> 
    <td>Om du skapar ett partiellt paket klickar du på <b>Lägg till artefakt</b> för varje artefakt som du vill lägga till och anger artefaktens ID, typ och titel. </td> 
   </tr> 
   <tr> 
@@ -464,7 +464,7 @@ Den här åtgärdsmodulen lägger till eller tar bort artefakter från ett paket
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -483,11 +483,11 @@ Den här åtgärdsmodulen tar bort ett paket med flera felaktigheter.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-paket-ID]</td> 
+   <td role="rowheader">[!UICONTROL -paket-ID]</td> 
    <td>Ange eller mappa ID:t för det paket som du vill ta bort.</td> 
   </tr> 
  </tbody> 
@@ -502,11 +502,11 @@ Den här åtgärdsmodulen hämtar information om det angivna paketet.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-paket-ID]</td> 
+   <td role="rowheader">[!UICONTROL -paket-ID]</td> 
    <td>Ange eller mappa ID:t för det paket som du vill returnera information för.</td> 
   </tr> 
  </tbody> 
@@ -523,15 +523,15 @@ Du måste publicera ett paket innan du kan importera det.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-paket-ID]</td> 
+   <td role="rowheader">[!UICONTROL -paket-ID]</td> 
    <td>Ange eller mappa ID:t för det paket du vill importera.</td> 
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL-målsandlåda]</td> 
+   <td role="rowheader">[!UICONTROL -målsandlåda]</td> 
    <td>Ange eller mappa namnet på den sandlåda där du vill importera paketet.</td> 
   </tr> 
  </tbody> 
@@ -546,11 +546,11 @@ Du måste publicera ett paket innan du kan importera det.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-paket-ID]</td> 
+   <td role="rowheader">[!UICONTROL -paket-ID]</td> 
    <td>Ange eller mappa ID:t för det paket som du vill publicera.</td> 
   </tr> 
  </tbody> 
@@ -565,15 +565,15 @@ Den här åtgärdsmodulen skickar en import för ett paket när du har granskat 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-paket-ID]</td> 
+   <td role="rowheader">[!UICONTROL -paket-ID]</td> 
    <td>Ange eller mappa ID:t för det paket som du vill publicera.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-namn]</td> 
+   <td role="rowheader">[!UICONTROL -namn]</td> 
    <td>Ange eller mappa ett namn för importjobbet.</td> 
   </tr> 
   <tr> 
@@ -820,7 +820,7 @@ Den här åtgärdsmodulen skapar en ny innehållsmall eller ett nytt innehållsf
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -836,19 +836,19 @@ Den här åtgärdsmodulen skapar en ny innehållsmall eller ett nytt innehållsf
  <col> 
  <col> 
  <tbody> <tr> 
-   <td role="rowheader">[!UICONTROL-namn]</td> 
+   <td role="rowheader">[!UICONTROL -namn]</td> 
    <td>Ange eller mappa ett namn för innehållsmallen.</td> 
 <tr> 
    <td role="rowheader">[!UICONTROL Description]</td> 
    <td>Ange eller mappa en beskrivning för innehållsmallen.</td> 
   </tr> 
 <tr> 
-   <td role="rowheader">[!UICONTROL-typ]</td> 
+   <td role="rowheader">[!UICONTROL -typ]</td> 
    <td>Välj den typ av mall som du vill skapa.</td> 
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-kanaler]</td> 
+   <td role="rowheader">[!UICONTROL -kanaler]</td> 
    <td>Markera de kanaler som ingår i den här mallen.</td> 
   </tr> 
   <tr> 
@@ -856,7 +856,7 @@ Den här åtgärdsmodulen skapar en ny innehållsmall eller ett nytt innehållsf
    <td>Välj mallens källa.</td>  
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-metadata]</td> 
+   <td role="rowheader">[!UICONTROL -metadata]</td> 
    <td>Om du vill ta med anpassade egenskaper i den nya mallen väljer du Lägg till metadata och anger eller mappar metadatans nyckel och värde. Upprepa för varje anpassat fält som du vill inkludera.</td> 
   </tr> 
   <tr> 
@@ -876,19 +876,19 @@ Den här åtgärdsmodulen skapar en ny innehållsmall eller ett nytt innehållsf
  <col> 
  <col> 
  <tbody> <tr> 
-   <td role="rowheader">[!UICONTROL-namn]</td> 
+   <td role="rowheader">[!UICONTROL -namn]</td> 
    <td>Ange eller mappa ett namn för det här innehållsfragmentet.</td> 
 <tr> 
    <td role="rowheader">[!UICONTROL Description]</td> 
    <td>Ange eller mappa en beskrivning för det här innehållsfragmentet.</td> 
   </tr> 
 <tr> 
-   <td role="rowheader">[!UICONTROL-typ]</td> 
+   <td role="rowheader">[!UICONTROL -typ]</td> 
    <td>Välj den typ av mall som du vill skapa.</td> 
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-kanaler]</td> 
+   <td role="rowheader">[!UICONTROL -kanaler]</td> 
    <td>Markera de kanaler som ingår i den här mallen.</td> 
   </tr> 
   <tr> 
@@ -896,11 +896,11 @@ Den här åtgärdsmodulen skapar en ny innehållsmall eller ett nytt innehållsf
    <td>Välj källan för det här fragmentet.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-metadata]</td> 
+   <td role="rowheader">[!UICONTROL -metadata]</td> 
    <td>Om du vill ta med anpassade egenskaper i den nya mallen väljer du Lägg till metadata och anger eller mappar metadatans nyckel och värde. Upprepa för varje anpassat fält som du vill inkludera.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-innehåll]</td> 
+   <td role="rowheader">[!UICONTROL -innehåll]</td> 
    <td>Ange eller mappa fragmentets innehåll.</td> 
   </tr> 
   <tr> 
@@ -919,7 +919,7 @@ Den här åtgärdsmodulen uppdaterar en innehållsmall eller ett fragment.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -938,7 +938,7 @@ Den här åtgärdsmodulen tar bort en innehållsmall eller ett innehållsfragmen
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -946,7 +946,7 @@ Den här åtgärdsmodulen tar bort en innehållsmall eller ett innehållsfragmen
    <td>Välj om du vill ta bort en innehållsmall eller ett innehållsfragment.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-mall/fragment-ID]</td> 
+   <td role="rowheader">[!UICONTROL -mall/fragment-ID]</td> 
    <td>Ange eller mappa ID:t för mallen eller fragmentet som du vill ta bort.</td> 
   </tr> 
  </tbody> 
@@ -961,7 +961,7 @@ Den här åtgärdsmodulen uppdaterar en post med PATCH med JSON-pekarformat
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -969,11 +969,11 @@ Den här åtgärdsmodulen uppdaterar en post med PATCH med JSON-pekarformat
    <td>Välj om du vill korrigera en innehållsmall eller ett innehållsfragment.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-mall/fragment-ID]</td> 
+   <td role="rowheader">[!UICONTROL -mall/fragment-ID]</td> 
    <td>Ange eller mappa ID:t för mallen eller fragmentet som du vill korrigera.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-nyttolastdata]</td> 
+   <td role="rowheader">[!UICONTROL -nyttolastdata]</td> 
    <td>Så här lägger du till en post i nyttolasten för den här korrigeringen: <ol><li>Klicka på <b>Lägg till en post</b>.</li><li>Välj åtgärden: Lägg till, Ta bort eller Ersätt.</li><li>I fältet Sökväg väljer du om du vill laga namnet eller beskrivningen.</li><li> I fältet Från anger eller mappar du en sträng som innehåller ett JSON-pekarvärde.</li><li>I fältet Värde anger du värdet som ska användas i åtgärden.</li></ol></td> 
   </tr> 
  </tbody> 
@@ -988,7 +988,7 @@ Den här åtgärdsmodulen returnerar innehållsmallen eller innehållsfragmentet
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -996,7 +996,7 @@ Den här åtgärdsmodulen returnerar innehållsmallen eller innehållsfragmentet
    <td>Välj om du hämtar en innehållsmall eller ett innehållsfragment.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-mall/fragment-ID]</td> 
+   <td role="rowheader">[!UICONTROL -mall/fragment-ID]</td> 
    <td>Ange eller mappa ID:t för mallen eller fragmentet som du vill hämta.</td> 
   </tr> 
  </tbody> 
@@ -1020,11 +1020,11 @@ Den här åtgärdsmodulen utlöser ett enhetsmeddelande till de mottagare som du
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-begäran-ID]</td> 
+   <td role="rowheader">[!UICONTROL -begäran-ID]</td> 
    <td>Ange eller mappa ID:t för den förfrågan som är kopplad till det här meddelandet.</td> 
   </tr> 
   <tr> 
@@ -1032,7 +1032,7 @@ Den här åtgärdsmodulen utlöser ett enhetsmeddelande till de mottagare som du
    <td>Ange eller mappa ID:t för kampanjen som är associerad med det här meddelandet.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-mottagare]</td> 
+   <td role="rowheader">[!UICONTROL -mottagare]</td> 
    <td>För varje mottagare som du vill ska få det här meddelandet klickar du på <b>Lägg till mottagare</b> och anger följande:
    <ul>
    <li><p><b>Typ</b></p>Välj <code>aep</code>.</li>
@@ -1057,11 +1057,11 @@ Den här åtgärdsmodulen utlöser körningen av ett målgruppsbaserat meddeland
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-begäran-ID]</td> 
+   <td role="rowheader">[!UICONTROL -begäran-ID]</td> 
    <td>Ange eller mappa ID:t för den förfrågan som är kopplad till det här meddelandet.</td> 
   </tr> 
   <tr> 
@@ -1084,7 +1084,7 @@ Den här åtgärdsmodulen kontrollerar statusen för ett målgruppsbaserat batch
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -1128,15 +1128,15 @@ Den här åtgärdsmodulen kontrollerar beroenden för paketartefakter. På så s
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-paket-ID]</td> 
+   <td role="rowheader">[!UICONTROL -paket-ID]</td> 
    <td>Ange eller mappa ID:t för det paket som du vill kontrollera behörigheter för.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-målsandlåda]</td> 
+   <td role="rowheader">[!UICONTROL -målsandlåda]</td> 
    <td>Ange eller mappa namnet på sandlådan som du vill importera paketet till.</td> 
   </tr> 
  </tbody> 
@@ -1151,11 +1151,11 @@ Den här åtgärdsmodulen kontrollerar om ett importjobb lyckades eller misslyck
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-jobb-ID]</td> 
+   <td role="rowheader">[!UICONTROL -jobb-ID]</td> 
    <td>Ange eller mappa ID:t för jobbet som du vill hämta data för.</td> 
   </tr> 
  </tbody> 
@@ -1178,19 +1178,19 @@ Den här sökmodulen visar alla beroende objekt för objekt i det angivna pakete
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-paketobjekt]</td> 
+   <td role="rowheader">[!UICONTROL -paketobjekt]</td> 
    <td>För varje objekt i paketet som du vill returnera beroende objekt för klickar du på <b>Lägg till objekt</b> och anger objektets namn och typ.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-paket-ID]</td> 
+   <td role="rowheader">[!UICONTROL -paket-ID]</td> 
    <td>Ange eller mappa ID:t för det paket som du vill visa beroende objekt för.</td> 
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL-målsandlåda]</td> 
+   <td role="rowheader">[!UICONTROL -målsandlåda]</td> 
    <td>Ange eller mappa namnet på den sandlåda som innehåller det paket som du vill visa beroende objekt för.</td> 
   </tr> 
  </tbody> 
@@ -1205,7 +1205,7 @@ Den här åtgärdsmodulen visar alla konfigurationer för begränsning eller beg
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -1224,7 +1224,7 @@ I den här sökmodulen visas aktuella export- och importjobb. Du kan använda fr
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -1240,7 +1240,7 @@ I den här sökmodulen visas aktuella export- och importjobb. Du kan använda fr
       <td>Välj om du vill beställa resultat efter skapat datum eller ändrat datum.</td>
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL-frågeparameter]</td> 
+   <td role="rowheader">[!UICONTROL -frågeparameter]</td> 
    <td>För varje frågeparameter som du vill filtrera efter klickar du på <b>Lägg till frågeparameter</b>, markerar fältet och operatorn och anger fältvärdet för filtret.</td> 
   </tr> 
  </tbody> 
@@ -1257,7 +1257,7 @@ Den här sökmodulen visar alla paket i din organisation. Du kan använda fråge
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -1273,7 +1273,7 @@ Den här sökmodulen visar alla paket i din organisation. Du kan använda fråge
       <td>Välj om du vill beställa resultat efter skapat datum eller ändrat datum.</td>
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL-frågeparameter]</td> 
+   <td role="rowheader">[!UICONTROL -frågeparameter]</td> 
    <td>För varje frågeparameter som du vill filtrera efter klickar du på <b>Lägg till frågeparameter</b>, markerar fältet och operatorn och anger fältvärdet för filtret.</td> 
   </tr> 
  </tbody> 
@@ -1288,7 +1288,7 @@ I den här sökmodulen visas alla konfigurationer för begränsning och begräns
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-anslutning]</td> 
+   <td role="rowheader">[!UICONTROL -anslutning]</td> 
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
@@ -1308,7 +1308,7 @@ I den här sökmodulen visas alla konfigurationer för begränsning och begräns
    <td>Ange eller mappa parameternamnet som du vill sortera listan efter. Lägg till <code>-</code> eller <code>+</code> för att sortera fallande eller stigande. Om inget tecken anges sorteras listan fallande.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-filter efter egenskap]</td> 
+   <td role="rowheader">[!UICONTROL -filter efter egenskap]</td> 
    <td>För varje egenskapsfilter som du vill lägga till klickar du på <b>Lägg till objekt</b> och anger egenskapens nyckel och värde. Poster som innehåller det angivna värdet för egenskapen tas med i listan.</td> 
   </tr> 
  </tbody> 
@@ -1327,18 +1327,18 @@ Den här åtgärdsmodulen gör ett anpassat API-anrop till Adobe Journey Optimiz
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-anslutning]</td>
+      <td role="rowheader">[!UICONTROL -anslutning]</td>
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Journey Optimizer] finns i <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Journey Optimizer]</a> i den här artikeln.</td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-URL]</td>
+      <td role="rowheader">[!UICONTROL -URL]</td>
       <td>
         <p>Ange en sökväg som är relativ till bas-URL:en.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-metod]</p>
+        <p>[!UICONTROL -metod]</p>
       </td>
    <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
     </tr>
@@ -1351,7 +1351,7 @@ Den här åtgärdsmodulen gör ett anpassat API-anrop till Adobe Journey Optimiz
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-frågesträng]  </td>
+      <td role="rowheader">[!UICONTROL -frågesträng]  </td>
       <td>
         <p>Ange frågesträngen för begäran.</p>
       </td>

@@ -39,7 +39,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL-plan], [!UICONTROL-arbete]</p> </td> 
+   <td> <p>[!UICONTROL -plan], [!UICONTROL -arbete]</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
@@ -81,7 +81,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe User Management]-moduler:
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL-anslutningsnamn]</td>
+        <td role="rowheader">[!UICONTROL -anslutningsnamn]</td>
         <td>
           <p>Ange ett namn för anslutningen.</p>
         </td>
@@ -91,16 +91,16 @@ Så här skapar du en anslutning för dina [!DNL Adobe User Management]-moduler:
         <td>Ange om du ansluter till en produktionsmiljö eller icke-produktionsmiljö.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL-typ]</td>
+        <td role="rowheader">[!UICONTROL -typ]</td>
         <td>Ange om du ansluter till ett tjänstkonto eller ett personligt konto.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL-klient-ID]</td>
-        <td>Ange ditt [!UICONTROL Adobe] [!UICONTROL klient-ID]. Detta finns i avsnittet med information om [!UICONTROL-autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL -klient-ID]</td>
+        <td>Ange ditt [!UICONTROL Adobe] [!UICONTROL klient-ID]. Detta finns i avsnittet med information om [!UICONTROL -autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL-klienthemlighet]</td>
-        <td>Ange din [!DNL Adobe] [!UICONTROL-klienthemlighet]. Detta finns i avsnittet med information om [!UICONTROL-autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL -klienthemlighet]</td>
+        <td>Ange din [!DNL Adobe] [!UICONTROL -klienthemlighet]. Detta finns i avsnittet med information om [!UICONTROL -autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS-organisations-ID]</td>

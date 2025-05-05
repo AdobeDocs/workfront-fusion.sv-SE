@@ -115,7 +115,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 * [[!UICONTROL Upload an Element]](#upload-an-element)
 
-* [!UICONTROL [Se nytt element i bibliotek]](#watch-new-element-in-library)
+* [[!UICONTROL [Se nytt element i bibliotek]]](#watch-new-element-in-library)
 
 * [[!UICONTROL Watch Updated Elements]](#watch-updated-elements)
 
