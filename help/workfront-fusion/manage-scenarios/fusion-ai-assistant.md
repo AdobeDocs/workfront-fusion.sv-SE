@@ -70,7 +70,7 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 
 Adobe måste ha ett signerat Adobe Gen AI-avtal till hands.
 
-Mer information om hur du signerar avtalet finns i [Signera Adobe Gen AI-avtalet](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) i artikens AI Assistant-översikt i Workfront-dokumentationen.
+Mer information om hur du signerar avtalet finns i [Signera Adobe Gen AI-avtalet](https://experienceleague.adobe.com/sv/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) i artikens AI Assistant-översikt i Workfront-dokumentationen.
 
 ## Hämta information från AI Assistant
 

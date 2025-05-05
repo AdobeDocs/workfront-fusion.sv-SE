@@ -22,7 +22,7 @@ Utvecklingsverktyget [!DNL Adobe Workfront Fusion] hjälper dig att förstå och
 En videointroduktion och genomgång av verktyget Fusion Devtool finns på
 
 * [Fusion Development Tool](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Gå igenom utvecklingsverktyget](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
+* [Gå igenom utvecklingsverktyget](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=sv-SE)
 
 ## Åtkomstkrav
 

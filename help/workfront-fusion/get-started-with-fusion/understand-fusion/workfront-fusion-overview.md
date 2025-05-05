@@ -31,7 +31,7 @@ Workfront Fusion innehåller även funktioner som stöder scenarier som mallar f
 
 När du börjar arbeta med Workfront Fusion kan du få hjälp med följande resurser:
 
-* Utbildningsresurser för Workfront Fusion finns i [Workfront Fusion Training Overview](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
+* Utbildningsresurser för Workfront Fusion finns i [Workfront Fusion Training Overview](https://experienceleague.adobe.com/sv/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
 
 
 * Mer information om scenarier finns i [Översikt över scenarier](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).
