@@ -4,9 +4,9 @@ description: Med modulerna  [!DNL Adobe Workfront Fusion SFTP] kan du övervaka 
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 26c599a9887ad931763b787813153bb7791ce5d1
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1894'
 ht-degree: 0%
 
 ---
@@ -449,6 +449,10 @@ Med den här modulen kan du överföra en fil till SFTP-servern.
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
    <td> <p>Ange önskade behörigheter för filen eller mappen. Använd chmod-parametrar. Till exempel <code>777</code> eller <code>-rwxrwxrwx</code>.</p> <p>Dessa behörigheter måste matcha mönstret <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Mer information om chmod finns i <a href="https://ss64.com/bash/chmod.html">chmod-dokumentationen</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Buffer size (B)]</p> </td> 
+   <td> <p>Ange storleken (i byte) för varje segment när filen överförs. Detta är användbart för stora filer eller när serverminnets begränsningar kräver mindre överföringar. Om det här värdet inte anges skrivs filen i en enda åtgärd.</p> </td> 
   </tr> 
  </tbody> 
 </table>
