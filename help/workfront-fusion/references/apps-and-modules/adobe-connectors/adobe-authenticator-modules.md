@@ -4,9 +4,9 @@ description: Med Adobe Authenticator-modulen kan du ansluta till alla Adobe-prod
 author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
-source-git-commit: 7652acb6654f4b1b0edc57d110478b309655a124
+source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1109'
 ht-degree: 0%
 
 ---
@@ -21,40 +21,46 @@ En lista över tillgängliga Adobe API:er finns i [Adobe API:er](https://develop
 
 ## Åtkomstkrav
 
-<table>
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] package</td>
-      <td>
-        <p>Nytt: Alla</p><p>eller</p><p>Aktuell: [!UICONTROL Pro] eller högre</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] licens</td>
-      <td>
-        <p>Nytt: Standard</p><p>eller</p><p>Aktuell: [!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] licens</td>
-      <td>
-   <p>Aktuellt krav på Fusion-licens: Inget [!DNL Workfront Fusion]-licenskrav.</p>
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
+Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
+   <td>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
    <p>eller</p>
-   <p>Krav för äldre Fusion-licens: [!UICONTROL [!DNL Workfront Fusion] för Automation och integrering av arbetet] </p>
-   </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Produkt</td>
-      <td>
-   <p>Ny Workfront-plan: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produkt</td> 
+   <td>
+   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Aktuell Workfront-plan: Din organisation måste köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
-   </td>
-    </tr>
-  </tbody>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
+
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
+Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Förutsättningar
 
@@ -110,7 +116,7 @@ Så här skapar du en anslutning:
       <tr>
         <td role="rowheader">[!UICONTROL Connection type]</td>
         <td>
-          <p>Välj om du vill skapa en OAuth Server-till-Server-anslutning eller en JWT-anslutning (Service Account).</p>
+          <p>Välj om du vill skapa en OAuth Server-till-Server-anslutning eller en JWT-anslutning (Service Account). Vi rekommenderar att du skapar OAuth-anslutningar.</p>
         </td>
       </tr>
       <tr>
@@ -133,7 +139,7 @@ Så här skapar du en anslutning:
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Technical account ID]</td>
-        <td>Ange ditt tekniska konto-ID för [!DNL Adobe]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].
+        <td>Om du har valt en JWT-anslutning anger du ditt tekniska konto-ID för [!DNL Adobe]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Organization ID]</td>
@@ -174,14 +180,6 @@ Så här skapar du en anslutning:
       <tr>
         <td role="rowheader">[!UICONTROL Authentication URL]</td>
         <td>Lämna det här tomt om du vill använda Adobe IMS-standardautentiserings-URL:en för <code>https://ims-na1.adobelogin.com</code>. Om du inte använder Adobe IMS för autentisering anger du den URL som ska användas för autentisering.</td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
-        <td>Ange om du ansluter till en produktionsmiljö eller icke-produktionsmiljö.</td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
-        <td>Ange om du ansluter till ett tjänstkonto eller ett personligt konto.</td>
       </tr>
     </tbody>
     </table>
@@ -253,18 +251,6 @@ Denna modul gjordes tillgänglig den 14 november 2024. Alla Adobe Authenticator 
       </td>
       </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Request content]  </td>
-      <td>
-        <p>Ange innehållet i begäran. Det här alternativet är tillgängligt om du har valt innehållstypen <code>Raw</code></p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Fields]  </td>
-      <td>
-        <p>För varje fil som du vill lägga till i API-begäran klickar du på <b>Lägg till objekt</b> och anger texten i filen (för rådata), eller anger nyckeln <code>uploadedFile</code> och mappar filens data. Det här alternativet är tillgängligt om du har valt brödtypen <code>application</code> eller <code>multipart</code> .</p>
-      </td>
-    </tr>
-    <tr>
       <td role="rowheader">[!UICONTROL Output Type]  </td>
       <td>
         <p>Välj den typ av data som du vill att modulen ska visa. Om du inte väljer någon typ väljs en typ automatiskt i modulen.</p>
@@ -326,11 +312,5 @@ Med den här åtgärdsmodulen kan du anropa alla Adobe API:er.
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> 
      </div> </p> </td>     </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL Limit]  </td>
-      <td>
-        <p>Ange det maximala antal resultat som du vill att modulen ska returnera i en körningscykel.</p>
-      </td>
-    </tr>
   </tbody>
 </table>

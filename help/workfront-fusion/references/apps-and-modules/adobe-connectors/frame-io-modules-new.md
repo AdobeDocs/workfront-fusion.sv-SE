@@ -1,10 +1,10 @@
 ---
-title: Frame.io (Beta) moduler
-description: Kontot [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] .
+title: Frame.io-moduler (Beta)
+description: Kontot  [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] .
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: d81785ec60dfd74583a54a75ab1bfc1a253d8faf
+source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
 workflow-type: tm+mt
 source-wordcount: '1870'
 ht-degree: 0%
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->I den här artikeln beskrivs den nya (beta) versionen av Frame.io-anslutningsappen. Den här anslutningsappen används för att ansluta till Frame.io version 4.
+>I den här artikeln beskrivs den nya (beta) versionen av Frame.io-kopplingen. Den här kopplingen används för att ansluta till Frame.io version 4.
 >
 >Instruktioner om den äldre versionen av Frame.io-kopplingen finns i [Frame.io Legacy-koppling](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
 
-Med modulerna [!DNL Adobe Workfront Fusion] [!DNL Frame.io] kan du övervaka, skapa, uppdatera, hämta eller ta bort tillgångar och kommentarer i ditt [!DNL Frame.io] konto.
+Med modulerna [!DNL Adobe Workfront Fusion] [!DNL Frame.io] kan du övervaka, skapa, uppdatera, hämta eller ta bort resurser och kommentarer i ditt [!DNL Frame.io]-konto.
 
-Workfront erbjuder två Frame.io kopplingar, baserat på vilken version av Frame.io du ansluter till.
+Workfront har två Frame.io-anslutningar, baserat på den version av Frame.io som du ansluter till.
 
-| Kontakt | Frame.io version |
+| Koppling | Frame.io-version |
 |---|---|
 | Frame.io (Beta) | V4 |
 | Frame.io (äldre) | V3 |
@@ -35,9 +35,9 @@ En videointroduktion till Frame.io-anslutningen finns i:
 
 * [Frame.io](https://video.tv.adobe.com/v/3427032/){target=_blank}
 
-## Krav för åtkomst
+## Åtkomstkrav
 
-+++ Expandera för att visa åtkomstkraven för funktionerna i den här artikeln.
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
 
 Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
 
@@ -92,7 +92,7 @@ För Frame.io-kopplingen används följande:
  <tbody> 
   <tr> 
    <td role="rowheader">Bas-URL</td> 
-   <td> https://api.frame.io/v2</td> 
+   <td> https://api.frame.io/v4</td> 
   </tr> 
   <tr> 
    <td role="rowheader">API-version</td> 
@@ -107,9 +107,9 @@ För Frame.io-kopplingen används följande:
 
 ## Anslut [!DNL Frame.io] till [!UICONTROL Adobe Workfront Fusion]
 
-Anslutningsprocessen skiljer sig åt beroende på om du använder den äldre Frame.io-anslutningsappen eller Beta Frame.io-anslutningsappen.
+Anslutningsprocessen skiljer sig åt beroende på om du använder den äldre anslutningen Frame.io eller Beta Frame.io.
 
-1. I valfri Frame.io Beta-modul klickar du på **[!UICONTROL Add]** bredvid rutan Anslutning.
+1. Klicka **[!UICONTROL Add]** bredvid anslutningsrutan i någon av modulerna Frame.io Beta.
 
 1. Fyll i följande fält:
 
@@ -122,37 +122,37 @@ Anslutningsprocessen skiljer sig åt beroende på om du använder den äldre Fra
         <tr>
           <td role="rowheader">[!UICONTROL Connection type]</td>
           <td>
-            <p>Välj om du vill skapa en anslutning för IMD-användarautentisering eller en anslutning mellan IMS-servrar och server.</p>
+            <p>Välj om du vill skapa en anslutning för IMD-användarautentisering eller en IMS-server till server-anslutning.</p>
           </td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Connection name]</td>
           <td>
-            <p>Ange ett namn för den här anslutningen.</p>
+            <p>Ange ett namn för anslutningen.</p>
           </td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>Ange din [!DNL Adobe] [!UICONTROL Client ID]. Detta finns i avsnittet i [!UICONTROL Credentials details] [!DNL Adobe Developer Console].<p>Instruktioner om hur du hittar inloggningsuppgifter finns <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >i Inloggningsuppgifter</a> i Adobe utvecklardokumentation.</p></td>
+          <td>Ange din [!DNL Adobe] [!UICONTROL Client ID]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du hittar autentiseringsuppgifter finns i <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Referenser</a> i dokumentationen för Adobe-utvecklare.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>Ange din [!DNL Adobe] [!UICONTROL Client Secret]. Detta finns i avsnittet i [!UICONTROL Credentials details] [!DNL Adobe Developer Console].<p>Instruktioner om hur du hittar inloggningsuppgifter finns <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >i Inloggningsuppgifter</a> i Adobe utvecklardokumentation.</p>
+          <td>Ange din [!DNL Adobe] [!UICONTROL Client Secret]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du hittar autentiseringsuppgifter finns i <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Referenser</a> i dokumentationen för Adobe-utvecklare.</p>
         </tr>
        </tbody>
     </table>
-1. Klicka **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
+1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
 
-## [!DNL Frame.io] Moduler och deras fält
+## [!DNL Frame.io]-moduler och deras fält
 
-När du konfigurerar [!DNL Frame.io] moduler [!DNL Workfront Fusion] visas de fält som anges nedan. Tillsammans med dessa kan ytterligare [!DNL Frame.io] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En titel i fetstil i en modul anger ett obligatoriskt fält.
+När du konfigurerar [!DNL Frame.io] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL Frame.io] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
-Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ställa in variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Tillgångar](#assets)
-* [Kommentarer](#comments)
+* [Assets](#assets)
+* [Kommentar](#comments)
 * [Mappar](#folders)
 * [Projekt](#projects)
 * [Aktier](#shares)
@@ -177,11 +177,11 @@ Den här åtgärdsmodulen skapar en ny resurs.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io]finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Anslut [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Välj kontot eller mappa ID:t för det konto som innehåller det projekt som du vill skapa en tillgång för.</p> </td> 
+   <td> <p>Markera kontot eller mappa ID:t för kontot som innehåller projektet som du vill skapa en resurs för.</p> </td> 
   </tr> 
  <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
@@ -311,11 +311,11 @@ Den här åtgärdsmodulen lägger till en ny kommentar eller ett nytt svar till 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
-   <td> <p>Välj kontot eller mappa ID:t för arbetsytan som innehåller den tillgång som du vill lägga till en kommentar till.</p> </td> 
+   <td> <p>Markera kontot eller mappa ID:t för arbetsytan som innehåller resursen som du vill lägga till en kommentar i.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 
-   <td> <p>Markera projektet eller mappa ID:t för det projekt som innehåller den tillgång som du vill lägga till en kommentar till.</p> </td> 
+   <td> <p>Markera projektet eller mappa ID:t för projektet som innehåller resursen som du vill lägga till en kommentar i.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Path] </td> 
@@ -346,11 +346,11 @@ Den här åtgärdsmodulen tar bort en befintlig kommentar.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io]finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Anslut [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Välj kontot eller mappa ID:t för det konto som innehåller en kommentar som du vill ta bort.</p> </td> 
+   <td> <p>Markera kontot eller mappa ID:t för kontot som innehåller kommentarer som du vill ta bort.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment ID] </td> 
@@ -361,7 +361,7 @@ Den här åtgärdsmodulen tar bort en befintlig kommentar.
 
 #### [!UICONTROL Get a comment]
 
-Den här åtgärdsmodulen hämtar information om den angivna kommentaren.
+Denna åtgärdsmodul hämtar information om den angivna kommentaren.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -369,22 +369,22 @@ Den här åtgärdsmodulen hämtar information om den angivna kommentaren.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io]finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Anslut [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Välj kontot eller mappa ID:t för det konto som innehåller en kommentar som du vill hämta information om.</p> </td> 
+   <td> <p>Markera kontot eller mappa ID:t för kontot som innehåller kommentarer som du vill hämta information om.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment ID] </td> 
-   <td> <p>Välj den kommentar som du vill hämta information om.</p> </td> 
+   <td> <p>Markera kommentaren som du vill hämta information om.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### [!UICONTROL List comments]
 
-Den här sökmodulen hämtar alla kommentarer för den angivna tillgången.
+Sökmodulen hämtar alla kommentarer för den angivna resursen.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -392,27 +392,27 @@ Den här sökmodulen hämtar alla kommentarer för den angivna tillgången.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io]finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Anslut [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Välj eller mappa det konto som innehåller den tillgång som du vill hämta kommentarer från.</p> </td> 
+   <td> <p>Markera eller mappa det konto som innehåller resursen som du vill hämta kommentarer från.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
-   <td> <p>Välj eller mappa arbetsytan som innehåller den tillgång som du vill hämta kommentarer från.</p> </td> 
+   <td> <p>Markera eller mappa arbetsytan som innehåller resursen som du vill hämta kommentarer från.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 
-   <td> <p>Välj det projekt som innehåller den resurs som du vill hämta kommentarer från.</p> </td> 
+   <td> <p>Välj det projekt som innehåller resursen som du vill hämta kommentarer från.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Path] </td> 
-   <td> <p>Välj den sökväg som leder till den tillgång som du vill lista kommentarer från.</p> </td> 
+   <td> <p>Välj den sökväg som leder till resursen som du vill visa kommentarer från.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned comments] </td> 
-   <td> <p>Ange eller mappa det maximala antalet kommentarer som du vill att modulen ska returnera under varje scenariokörningscykel.</p> </td> 
+   <td> <p>Ange eller mappa det maximala antal kommentarer som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -427,11 +427,11 @@ Den här åtgärdsmodulen redigerar en befintlig kommentar.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io]finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Anslut [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Välj eller mappa det konto som innehåller det projekt som innehåller den tillgång som du vill uppdatera en kommentar om.</p> </td> 
+   <td> <p>Markera eller mappa kontot som innehåller projektet som innehåller resursen som du vill uppdatera en kommentar för.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment ID] </td> 
@@ -447,7 +447,7 @@ Den här åtgärdsmodulen redigerar en befintlig kommentar.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Page] </td> 
-   <td> <p>Om resursen är en PDF-fil anger eller mappar du sidan som kommentaren är kopplad till.</p> </td> 
+   <td> <p>Om resursen är en PDF-fil anger eller mappar du den sida som kommentaren är kopplad till.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -480,7 +480,7 @@ Den här åtgärdsmodulen skapar en ny mapp i Frame.io.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Path] </td> 
-   <td> <p>Välj sökvägen där du vill skapa en mapp.</p> </td> 
+   <td> <p>Välj den sökväg där du vill skapa en mapp.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Namn </td> 
@@ -543,8 +543,8 @@ Denna sökmodul hämtar alla projekt för det angivna teamet.
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned projects] </td> 
-   <td> <p>Ange eller mappa det maximala antalet projekt
-   Du vill att modulen ska returneras under varje scenariokörningscykel.</p> </td> 
+   <td> <p>Ange eller mappa maximalt antal projekt
+   du vill att modulen ska returneras under varje körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -576,7 +576,7 @@ Den här åtgärdsmodulen lägger till en resurs i en delningslänk i Frame.io.
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Asset ID] </td> 
-   <td> <p>Ange eller mappa ID för den resurs som du vill lägga till i delningslänken.</p> </td> 
+   <td> <p>Ange eller mappa-ID för resursen som du vill lägga till i delningslänken.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -606,20 +606,20 @@ Den här åtgärdsmodulen skapar en ny delningslänk i Frame.io.
    <td> <p>Markera eller mappa projektet där du vill skapa en delningslänk.</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">Tillträde </td> 
-   <td> <p>Välj om den här länken har offentlig eller begränsad åtkomst.</p> </td> 
+   <td role="rowheader">Åtkomst </td> 
+   <td> <p>Ange om den här länken har offentlig eller begränsad åtkomst.</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">Tillgångar </td> 
-   <td> <p>För varje tillgång som du vill lägga till i delningslänken klickar du på <b>Lägg till objekt</b> och anger tillgångens id.</p> </td> 
+   <td role="rowheader">Assets </td> 
+   <td> <p>För varje resurs som du vill lägga till i resurslänken klickar du på <b>Lägg till objekt</b> och anger resursens ID.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Beskrivning </td> 
-   <td> <p>Ange eller mappa en beskrivning av delningslänken.</p> </td> 
+   <td> <p>Ange eller mappa en beskrivning för delningslänken.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Namn </td> 
-   <td> <p>Ange eller mappa förfallodatumet för delningslänken.</p> </td> 
+   <td> <p>Ange eller mappa utgångsdatumet för länken.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Namn </td> 
@@ -636,7 +636,7 @@ Den här åtgärdsmodulen skapar en ny delningslänk i Frame.io.
 
 #### Skapa en arbetsyta
 
-Den här åtgärdsmodulen skapar en ny arbetsyta i Frame.io
+Den här åtgärdsmodulen skapar en ny arbetsyta i bildruta.io
 
 <table style="table-layout:auto"> 
  <col> 
@@ -644,7 +644,7 @@ Den här åtgärdsmodulen skapar en ny arbetsyta i Frame.io
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io]finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Anslut [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
@@ -657,9 +657,9 @@ Den här åtgärdsmodulen skapar en ny arbetsyta i Frame.io
  </tbody> 
 </table>
 
-#### Lista arbetsytor
+#### Listarbetsytor
 
-I den här modulen visas alla arbetsytor i ett konto.
+Den här modulen visar alla arbetsytor i ett konto.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -667,11 +667,11 @@ I den här modulen visas alla arbetsytor i ett konto.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io]finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Anslut [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Välj eller mappa det konto som innehåller den tillgång som du vill hämta arbetsytor från.</p> </td> 
+   <td> <p>Markera eller mappa det konto som innehåller resursen som du vill hämta arbetsytor från.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned workspaces] </td> 
@@ -697,23 +697,23 @@ Med den här modulen kan du utföra ett anpassat API-anrop.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Ange en relativ sökväg till <code>https://api.frame.io</code>. Exempel: <code> /v4/me</code></p> <p>Notera: En lista över tillgängliga slutpunkter finns i API-referensen [!DNL Frame.io] .</p> </td> 
+   <td> <p>Ange en relativ sökväg till <code>https://api.frame.io</code>. Exempel: <code> /v4/me</code></p> <p>Obs! En lista över tillgängliga slutpunkter finns i API-referensen för [!DNL Frame.io].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>Välj den metod för HTTP-begäran som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metoder</a> för HTTP-begäran.</p> </td> 
+   <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metoder för HTTP-begäran</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Lägg till rubrikerna för begäran i form av ett JSON-standardobjekt.</p> <p>Exempel: <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] Lägger till auktoriseringshuvuden automatiskt.</p> </td> 
+   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p> <p>Exempel: <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] lägger till auktoriseringshuvuden automatiskt.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query string] </td> 
-   <td> <p>Ange frågesträngen för begäran. För varje parameter som du vill inkludera i frågesträngen klickar du på <b>[!UICONTROL Add item]</b> och anger fältets namn och önskat värde.</p> </td> 
+   <td> <p>Ange frågesträngen för begäran. För varje parameter som du vill ta med i frågesträngen klickar du på <b>[!UICONTROL Add item]</b> och anger fältets namn och önskat värde.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Lägg till brödtextinnehållet för API-anropet i form av ett JSON-standardobjekt.</p> <p>Not:  <p>När du använder villkorssatser, till exempel <code>if</code> i din JSON, placerar du citattecknen utanför villkorssatsen.</p> 
+   <td> <p>Lägg till brödinnehållet för API-anropet i form av ett standard-JSON-objekt.</p> <p>Obs!  <p>När du använder villkorssatser som <code>if</code> i JSON placerar du citattecknen utanför villkorssatsen.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

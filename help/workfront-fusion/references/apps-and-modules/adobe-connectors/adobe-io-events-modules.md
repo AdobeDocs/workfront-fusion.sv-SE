@@ -4,9 +4,9 @@ description: Med Adobe I/O Events-modulerna kan du starta ett Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -104,6 +104,12 @@ Så här skapar du en anslutning för dina Adobe I/O Events-moduler:
         </td>
       </tr>
       <tr>
+        <td role="rowheader">Miljö</td>
+        <td>
+          <p>Välj om du vill ansluta till produktionsmiljön eller icke-produktionsmiljön.</p>
+        </td>
+      </tr>
+      <tr>
         <td role="rowheader">Typ</td>
         <td>
           <p>Välj om du vill ansluta till ett tjänstkonto eller ett personligt konto.</p>
@@ -160,6 +166,8 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 * [Sökningar](#searches)
 
 ### Utlösare
+
+<!--Becky start here-->
 
 #### Skapa en händelseregistrering
 
