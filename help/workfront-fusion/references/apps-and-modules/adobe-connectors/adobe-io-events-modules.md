@@ -4,9 +4,9 @@ description: Med Adobe I/O Events-modulerna kan du starta ett Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
+source-git-commit: ef55cc62a0e0de70662440bc38d3eabbfe5e3c13
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -221,9 +221,12 @@ Så här skapar du en webkrok:
 
 ### Åtgärder
 
-#### Hämta alla händelser från en journal
+* [Hämta provider- och händelse-ID:n](#get-provider-and-event-ids)
+* [Göra ett anpassat API-anrop](#make-a-custom-api-call)
 
-Den här sökmodulen hämtar alla händelser för registrering från en journal.
+#### Hämta provider- och händelse-ID:n
+
+Den här sökmodulen hämtar Adobe I/O Events-ID:n för den angivna providern och händelser.
 
 <table>
      <col/>
@@ -235,44 +238,23 @@ Den här sökmodulen hämtar alla händelser för registrering från en journal.
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Registration ID]
+           [!UICONTROL Event provider]
          </td>
          <td>
-           Välj den registrering som du vill hämta händelser för.
+           Välj den leverantör som du vill hämta ID:t för.
         </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Maximum number of returned records]
+           [!UICONTROL Event type]
          </td>
          <td>
-              Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario. 
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL Return events that occur after]
-         </td>
-         <td>
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL Seek]
-         </td>
-         <td>
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL Latest]
-         </td>
-         <td>
-         Aktivera det här alternativet om du vill returnera den senaste händelsen.
+              Välj de händelser som du vill ange ID:n för. Händelser är tillgängliga baserat på händelseprovidern. 
          </td>
        </tr>
      </tbody>
    </table>
+
 
 #### Göra ett anpassat API-anrop
 
@@ -327,9 +309,9 @@ Den här åtgärdsmodulen gör ett anpassat API-anrop till API:t [!DNL Adobe I/O
 
 ### Sökningar
 
-#### Hämta provider- och händelse-ID:n
+#### Hämta alla händelser från en journal
 
-Den här sökmodulen hämtar Adobe I/O Events-ID:n för den angivna providern och händelser.
+Den här sökmodulen hämtar alla händelser för registrering från en journal.
 
 <table>
      <col/>
@@ -341,38 +323,59 @@ Den här sökmodulen hämtar Adobe I/O Events-ID:n för den angivna providern oc
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event provider]
+           [!UICONTROL Registration ID]
          </td>
          <td>
-           Välj den leverantör som du vill hämta ID:t för.
+           Välj den registrering som du vill hämta händelser för.
         </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event type]
+           [!UICONTROL Maximum number of returned events]
          </td>
          <td>
-              Välj de händelser som du vill ange ID:n för. Händelser är tillgängliga baserat på händelseprovidern. 
+              Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario. 
+         </td>
+       </tr>
+       <tr>
+         <td role="rowheader">
+           [!UICONTROL Return events that occur after]
+         </td>
+         <td>Ange eller mappa ett datum. Modulen returnerar händelser som inträffat efter detta datum.
+         </td>
+       </tr>
+<!--       <tr>
+         <td role="rowheader">
+           [!UICONTROL Seek]
+         </td>
+         <td>
+         </td>
+       </tr>-->
+       <tr>
+         <td role="rowheader">
+           [!UICONTROL Latest]
+         </td>
+         <td>
+         Aktivera det här alternativet om du vill returnera den senaste händelsen.
          </td>
        </tr>
      </tbody>
    </table>
+&lt;!—
 
-<!--
+Se händelser
 
-Watch Events
-
-This trigger module starts a scenario when an event occurs in the chosen Adobe product or service.
+Den här utlösarmodulen startar ett scenario när en händelse inträffar i den valda Adobe-produkten eller -tjänsten.
 
 <table style="table-layout:auto"> 
    <col> 
    <col> 
    <tbody> 
    <tr> 
-   <td role="rowheader">Webhook</td> 
-   <td><p>Select the webhook that you want to use for this trigger, or add a new webhook. </p><p>To add a new webhook, <ol><li>Click <b>Add</b> next to the webhook field.</li><li>Enter the following: <ul><li>A name for the webhook</li><li>The connection that you want to use for this webhook</li><li>The source of the events you want to watch</li></ul></li><li>Click <b>Save</b> to save the webhook and return to the module. </td> 
+   <td role="rowheader">Webkrok</td> 
+   <td><p>Välj den webkrok som du vill använda för den här utlösaren eller lägg till en ny webkrok. </p><p>Om du vill lägga till en ny webbkrok <ol><li>Klicka på <b>Lägg till</b> bredvid webkrokfältet.</li><li>Ange följande: <ul><li>Ett namn för webkroken</li><li>Anslutningen som du vill använda för den här webkroken</li><li>Källan till de händelser som du vill titta på</li></ul></li><li>Klicka på <b>Spara</b> för att spara webkroken och återgå till modulen. </td> 
    </tr> 
    </tbody> 
 </table>
 
--->
+—>
