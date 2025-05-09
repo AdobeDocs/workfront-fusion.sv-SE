@@ -5,9 +5,9 @@ description: Du kan konfigurera specifika inställningar för scenarier på pane
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: a7411649c0d65956552f40a7710315536755dc65
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1252'
 ht-degree: 0%
 
 ---
@@ -177,7 +177,7 @@ Om 100 begäranden skickas till [!DNL Workfront], och fältet Max antal cykler �
 
 Maximalt antal cykler i modulen Workfront > Bevakade poster är `10`.
 
-Om 100 filer läggs till i mappen Dropbox och alternativet Max antal cykler är inställt på 10, bearbetas 10 filer under den första cykeln, de nästa 10 filerna i den andra cykeln, de kommande 10 filerna i den tredje cykeln och så vidare, tills alla filer har bearbetats.
+Om 100 filer läggs till i Dropbox-mappen och alternativet Max antal cykler är inställt på 10, bearbetas 10 filer under den första cykeln, nästa 10 filer i den andra cykeln, nästa 10 filer i den tredje cykeln och så vidare, tills alla filer har bearbetats.
 
 Alla filer bearbetas inom 1 scenariokörning.
 
@@ -198,3 +198,14 @@ Mer information om fel finns i [Feltyper](/help/workfront-fusion/references/erro
 >[!NOTE]
 >
 >Om ett scenario börjar med en direktutlösare ignoreras inställningen och scenariot inaktiveras omedelbart när det första felet har inträffat.
+
+### Arbetarpool
+
+>[!NOTE]
+>
+>Den här inställningen är bara synlig om följande två villkor uppfylls:
+>
+>* Du är organisationsadministratör eller ägare
+>* Mer än en arbetarpool är kopplad till din organisation.
+
+Den här inställningen tilldelar scenariot till en specifik arbetarpool som är kopplad till din organisation, så att du kan tilldela resurser till högprioriterade scenarier.
