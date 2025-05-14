@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
-source-git-commit: 96270cbe7a8ef0b66cde7e8d008ed0360244911c
+source-git-commit: 58bda8289db60ce915613337880297e5c8ec7097
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1591'
 ht-degree: 0%
 
 ---
@@ -89,65 +89,39 @@ Azure DevOps-kopplingen använder följande:
 
 1. Lägg till en [!DNL Azure DevOps]-modul i ditt scenario.
 1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL Connection].
-1. Välj **[!DNL Azure DevOps]** i fältet [!UICONTROL Connection Type].
+1. I fältet [!UICONTROL Connection Type] väljer du den typ av anslutning som du vill använda.
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >Anslutningstypen [!UICONTROL [!DNL Azure DevOps] (Request All Scopes)] kommer att bli inaktuell inom den närmaste framtiden. Därför rekommenderar vi inte att du använder den.
+   >Med [!UICONTROL [!DNL Azure DevOps] (EntraApp)] kan du begära alla scope för anslutningen.
 
 1. Fyll i följande fält:
 
    <table style="table-layout:auto">
-        <tr>
+      <tr>
             <td>[!UICONTROL Connection name]</td>
             <td>Ange ett namn för anslutningen som du skapar.</td>
-        </tr>
+      </tr>
       <tr>
             <td>[!UICONTROL Organization]</td>
             <td>Ange namnet på den organisation som du skapade ditt [!DNL Azure DevOps]-program under.</td>
-        </tr>
-    </table>
+      </tr>
+      <tr>
+            <td>[!UICONTROL App ID]</td>
+            <td>Ange ID:t för det DevOps-program som du ansluter till.</td>
+      </tr>
+      <tr>
+            <td>[!UICONTROL Client Secret]</td>
+            <td>Ange klienthemligheten för de DevOps-program som du ansluter till.</td>
+      </tr>
+      <tr>
+            <td>[!UICONTROL Request All Scopes]</td>
+            <td>Om du använder anslutningstypen [!DNL Azure DevOps] (EntraApp) aktiverar du det här alternativet för att begära alla scope för anslutningen.</td>
+      </tr>
+   </table>
 
 1. Om du vill ange ett program-ID eller klienthemlighet för Azure DevOps klickar du på <b>Visa avancerade inställningar</b> och anger dem i fälten som öppnas.
 1. Klicka på **[!UICONTROL Continue]** för att slutföra konfigurationen av anslutningen och fortsätta skapa ditt scenario.
-
-<!--## Connect [!DNL Azure DevOps] to [!DNL Workfront Fusion] {#connect-azure-devops-to-workfront-fusion}
-
-1. Add an [!DNL Azure DevOps] module to your scenario.
-1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] field.
-1. In the [!UICONTROL Connection Type] field, select the type of connection that you want to use.
-
-   >[!NOTE]
-   >
-   >The [!UICONTROL [!DNL Azure DevOps] (EntraApp)] allows you to request all scopes for the connection.
-
-1. Fill out the following fields:
-
-   <table style="table-layout:auto">
-        <tr>
-            <td>[!UICONTROL Connection name]</td>
-            <td>Enter a name for the connection that you are creating.</td>
-        </tr>
-      <tr>
-            <td>[!UICONTROL Organization]</td>
-            <td>Enter the name of the organization under which you created your [!DNL Azure DevOps] application.</td>
-        </tr>
-        <tr>
-            <td>[!UICONTROL App ID]</td>
-            <td>Enter the ID of the DevOps application that you are connecting to.</td>
-        </tr>
-      <tr>
-            <td>[!UICONTROL Client Secret]</td>
-            <td>Enter the client secret for the DevOps applications that you are connecting to.</td>
-        </tr>
-      <tr>
-            <td>[!UICONTROL Request All Scopes]</td>
-            <td>If you are using the [!DNL Azure DevOps] (EntraApp) connection type, enable this option to request all scopes for the connection.</td>
-        </tr>
-  </table>
-
-1. To enter an Azure DevOps App ID or Client Secret, click <b>Show advanced settings</b> and enter them in the fields that open.
-1. Click **[!UICONTROL Continue]** to finish setting up the connection and continue creating your scenario.-->
 
 ## [!UICONTROL Azure DevOps]-moduler och deras fält
 
