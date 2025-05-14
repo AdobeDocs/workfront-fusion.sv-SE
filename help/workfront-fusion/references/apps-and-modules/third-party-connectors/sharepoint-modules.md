@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 2bd3a9ba84182307af9349163db284514dd12aca
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2761'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,7 @@ SharePoint Connector använder följande:
 
 * [Anslut Microsoft SharePoint Online till [!DNL Workfront Fusion] med ett [!DNL Microsoft] konto](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Anslut Microsoft SharePoint Online till [!DNL Workfront Fusion] med avancerade inställningar](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
+* [Anslut Microsoft SharePoint Online till [!DNL Workfront Fusion] med certifikatauktorisering](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
 ### Anslut Microsoft SharePoint Online till [!DNL Workfront Fusion] med ett [!DNL Microsoft]-konto
 
@@ -100,19 +101,111 @@ Du kan skapa en anslutning till Microsoft SharePoint Online med ditt [!DNL Micro
 
 ### Anslut Microsoft SharePoint Online till [!DNL Workfront Fusion] med avancerade inställningar
 
-Om du vill ansluta Microsoft SharePoint Online till [!DNL Workfront Fusion] utan ett [!DNL Microsoft]-konto behöver du ett klient-ID, klienthemlighet och klient-ID.
+Om du vill ta med autentiseringsuppgifter i anslutningen aktiverar du alternativet Visa avancerade inställningar. För den här typen av anslutning behöver du ett klient-ID, klienthemlighet och klient-ID.
 
-1. Klicka på **[!UICONTROL Add]** uppe i rutan **Microsoft SharePoint Online** för att öppna rutan **[!UICONTROL Create a connection]**.
-
-1. (Valfritt) Ändra standardvärdet **[!UICONTROL Connection name]**.
+1. Klicka på **[!UICONTROL Add]** nära anslutningsfältet i någon av SharePoint-modulerna för att öppna rutan **[!UICONTROL Create a connection]**.
 1. Klicka på **[!UICONTROL Show advanced settings]**.
-1. Ange Microsoft SharePoint Online **[!UICONTROL Client ID]** och **[!UICONTROL Client Secret]**.
+1. Fyll i följande fält:
 
-1. Klicka på **[!UICONTROL Continue]**.
-1. I inloggningsfönstret som visas anger du dina inloggningsuppgifter för att logga in på appen om du inte redan har gjort det.
-1. (Villkorligt) Om en **[!UICONTROL Allow]**-knapp visas klickar du på knappen för att ansluta appen till [!DNL Workfront Fusion].
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection type]</p> </td> 
+      <td>Om du vill använda klientautentiseringsuppgifter väljer du <b>Microsoft 365-e-post</b>.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
+      <td>Ange ett namn för anslutningen.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Client ID]</p> </td> 
+      <td>Ange klient-ID:t för den SharePoint-app du ansluter till. </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Client secret]</p> </td> 
+      <td>Ange klienthemligheten för den SharePoint-app du ansluter till.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Tenant ID]</p> </td> 
+      <td>Ange klientorganisations-ID för den SharePoint-app du ansluter till.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Instance]</p> </td> 
+      <td> <p>Ange adressen för ditt [!DNL ServiceNow]-konto utan <code>https://</code> (vanligtvis <code>&lt;company>.service-now.com</code>).</p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
 
-## Microsoft SharePoint Online-moduler och deras fält
+1. Klicka på **Fortsätt** för att spara anslutningen och återgå till modulen.
+
+### Anslut Microsoft SharePoint Online till [!DNL Workfront Fusion] med certifikatauktorisering
+
+Du kan använda certifikatauktorisering för att ansluta till SharePoint.
+
+>[!IMPORTANT]
+>
+>Om du vill använda certifikatauktorisering måste du först skapa en app i Microsoft Entra och överföra certifikatet dit.
+>
+>Instruktioner finns i [Konfigurera certifikatutfärdare för certifikatbaserad autentisering i Microsoft Entra](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-configure-certificate-authorities) i Microsoft-dokumentationen.
+
+1. Klicka på **[!UICONTROL Add]** nära anslutningsfältet i någon av SharePoint-modulerna för att öppna rutan **[!UICONTROL Create a connection]**.
+1. Klicka på **[!UICONTROL Show advanced settings]**.
+1. Fyll i följande fält:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection type]</p> </td> 
+      <td>Om du vill använda certifikatauktorisering väljer du <b>Microsoft SharePoint Online (certifikatautentisering)</b>.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
+      <td>Ange ett namn för anslutningen.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Client ID]</p> </td> 
+      <td>Ange klient-ID:t för den SharePoint-app du ansluter till. </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Thumbprint]</p> </td> 
+      <td>Ange tumavtrycket för den SharePoint-app du ansluter till.</td> 
+     </tr> 
+      <tr>
+        <td role="rowheader">[!UICONTROL Private key]</td>
+        <td>
+          <p>Ange det certifikat eller den privata nyckel som skapades när dina autentiseringsuppgifter skapades i Microsoft. </p>
+          <p>Så här extraherar du din privata nyckel eller ditt certifikat:</p>
+          <ol>
+            <li>
+              <p>Klicka på <b>[!UICONTROL Extract]</b>.</p>
+            </li>
+            <li>
+            <p>Ange om du extraherar ett certifikat eller en privat nyckel.</li>
+            <li>
+              <p>Välj vilken typ av fil du extraherar.</p>
+            </li>
+            <li>
+              <p>Markera filen som innehåller den privata nyckeln eller certifikatet.</p>
+            </li>
+            <li>
+              <p>Ange lösenordet för filen.</p>
+            </li>
+            <li>
+              <p>Klicka på <b>[!UICONTROL Save]</b> för att extrahera filen och återgå till anslutningsinställningarna.</p>
+            </li>
+          </ol>
+        </td>
+      </tr>
+    </tbody> 
+   </table>
+
+1. Klicka på **Fortsätt** för att spara anslutningen och återgå till modulen.
+
+## Microsoft SharePoint-moduler och deras fält
 
 När du konfigurerar Microsoft SharePoint Online-moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare fält i Microsoft SharePoint Online visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
