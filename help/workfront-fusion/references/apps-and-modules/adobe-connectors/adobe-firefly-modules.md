@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 6219cd4406c2ccf22b1e94e5d264722e640fe3e4
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2279'
 ht-degree: 0%
 
 ---
@@ -241,7 +241,7 @@ Den här modulen fungerar med Firefly API V3 Async. Den tidigare versionen av de
 
 Den här modulen har tagits bort och kommer att tas bort inom den närmaste framtiden. Använd modulen Fyll en bild i stället.
 
-## Generera en bild
+### Generera en bild
 
 Den här åtgärdsmodulen genererar en bild som baseras på en fråga som du anger. Du kan också ange en valfri referensbild så matchar den genererade bilden stilen för referensbilden.
 
@@ -258,6 +258,10 @@ Den här modulen fungerar med Firefly API V3 Async. Den tidigare versionen av de
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
    <td>Ange eller mappa en fråga för den bild som du vill generera. Mer detaljskärpa ger dig större kontroll över vad som visas i bilden.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model version]</td> 
+   <td>Välj den Firefly-modellversion som du vill använda för att generera bilden.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Number of variations]</td> 
@@ -388,6 +392,10 @@ Den här åtgärdsmodulen genererar bilder som liknar den källbild du anger.
   <tr> 
    <td role="rowheader">[!UICONTROL Number of variations]</td> 
    <td>Ange ett tal mellan 1 och 4. Modulen genererar detta antal bildvariationer.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model version]</td> 
+   <td>Välj den Firefly-modellversion som du vill använda för att generera bilderna.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Generated image format]</td> 
