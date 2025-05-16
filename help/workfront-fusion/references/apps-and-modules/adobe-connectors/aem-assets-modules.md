@@ -4,7 +4,7 @@ description: Med  [!DNL Adobe Experience Manager Assets] connector for [!DNL Ado
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
 source-wordcount: '1488'
 ht-degree: 0%
@@ -67,10 +67,10 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 * Du måste ha ett [!DNL Adobe Experience Manager Assets]-konto för att kunna använda dessa moduler.
 * Du måste konfigurera [!UICONTROL Server-to-server]-flödet i [!DNL Adobe Developer console].
 
-  Instruktioner om hur du konfigurerar flödet [!UICONTROL Server-to-server] i [!DNL Adobe Developer console] finns i [Generera åtkomsttoken för API:er på serversidan](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=sv-SE#the-server-to-server-flow).
+  Instruktioner om hur du konfigurerar flödet [!UICONTROL Server-to-server] i [!DNL Adobe Developer console] finns i [Generera åtkomsttoken för API:er på serversidan](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 * Ditt Adobe Experience Manager-konto måste ha skrivbehörighet.
 
-  Instruktioner om hur du lägger till skrivbehörigheter till ditt Adobe Experience Manager tekniska konto finns i [Tjänstens autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) i Adobe Experience Manager-dokumentationen.
+  Instruktioner om hur du lägger till skrivbehörigheter till ditt Adobe Experience Manager tekniska konto finns i [Tjänstens autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) i Adobe Experience Manager-dokumentationen.
 
 ## Adobe Experience Manager Assets API-information
 
@@ -99,7 +99,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe Experience Manager Assets
 
      Den här konfigurationen kräver information från [!DNL Adobe Admin Console].
 
-   * **[!DNL AEM Assets Basic] ([!DNL Adobe Managed Services])**
+   * **[!DNL AEM Assets Basic]([!DNL Adobe Managed Services])**
 
      Den här konfigurationen kräver ett användarnamn och lösenord.
 
@@ -118,11 +118,11 @@ Så här skapar du en anslutning för dina [!DNL Adobe Experience Manager Assets
 >
 >* Informationen för dessa fält genereras som en del av konfigurationen av [!UICONTROL Server-to-server]-flödet på [!DNL Adobe Developer Console]. Dessa värden finns i JSON-tjänstens inloggningsinformation som genereras som en del av den konfigurationen.
 >
->   Instruktioner om hur du konfigurerar [!UICONTROL Server-to-server]-flödet på [!UICONTROL Adobe Developer Console] finns i [Generera åtkomsttoken för API:er på serversidan](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=sv-SE#the-server-to-server-flow).
+>   Instruktioner om hur du konfigurerar [!UICONTROL Server-to-server]-flödet på [!UICONTROL Adobe Developer Console] finns i [Generera åtkomsttoken för API:er på serversidan](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 >
 >* Ditt Adobe Experience Manager-konto måste ha skrivbehörighet.
 >
->   Instruktioner om hur du lägger till skrivbehörigheter till ditt Adobe Experience Manager tekniska konto finns i [Tjänstens autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) i Adobe Experience Manager-dokumentationen.
+>   Instruktioner om hur du lägger till skrivbehörigheter till ditt Adobe Experience Manager tekniska konto finns i [Tjänstens autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) i Adobe Experience Manager-dokumentationen.
 
 
 <table style="table-layout:auto"> 
@@ -132,7 +132,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe Experience Manager Assets
               <tr>
                   <td role="rowheader">[!UICONTROL Connection name]</td>
                   <td>
-                      <p>Ange ett namn för anslutningen</p>
+                      <p>Ange ett namn för anslutningen.</p>
                   </td>
               </tr>
               <tr>
@@ -188,7 +188,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe Experience Manager Assets
             <tr>
                 <td role="rowheader">[!UICONTROL Connection name]</td>
                 <td>
-                    <p>Ange ett namn för anslutningen</p>
+                    <p>Ange ett namn för anslutningen.</p>
                 </td>
             </tr>
             <tr>

@@ -4,7 +4,7 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 7b236869-bd83-4db5-a363-d6570f6e4aff
-source-git-commit: 55418d9a25d44e107236898bb236e9daf9fe5bd1
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 0%
@@ -98,7 +98,7 @@ Så här skapar du en anslutning för dina [!DNL ServiceNow]-moduler:
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td>Ange ett namn för den nya [!DNL ServiceNow]-anslutningen</td> 
+      <td>Ange ett namn för den nya [!DNL ServiceNow]-anslutningen.</td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 

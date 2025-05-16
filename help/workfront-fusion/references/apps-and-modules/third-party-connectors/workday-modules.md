@@ -5,7 +5,7 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 0%
@@ -104,7 +104,7 @@ Workday Connector använder följande:
                 <td role="rowheader">
                     <p role="rowheader">[!UICONTROL Connection name]</p>
                 </td>
-                <td>Ange ett namn för anslutningen</td>
+                <td>Ange ett namn för anslutningen.</td>
             </tr>
             <tr>
                 <td  role="rowheader">[!UICONTROL Workday host]</td>

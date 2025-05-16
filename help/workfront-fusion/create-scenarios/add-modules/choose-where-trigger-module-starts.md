@@ -4,9 +4,9 @@ description: Vissa utlösarmoduler låter dig välja det första paket från vil
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -101,22 +101,3 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
      </tr>
      </tbody>
    </table>
-
-
-
-   <table style="table-layout:auto">
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td>Ange ett namn för den nya [!DNL DocuSign]-anslutningen</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">[!UICONTROL Account type]</td> 
-      <td>Välj om du vill ansluta till kontot är ett produktionskonto eller ett demokonto.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-
