@@ -99,7 +99,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe Experience Manager Assets
 
      Den här konfigurationen kräver information från [!DNL Adobe Admin Console].
 
-   * **[!DNL AEM Assets Basic]([!DNL Adobe Managed Services])**
+   * **[!DNL AEM Assets Basic] ([!DNL Adobe Managed Services])**
 
      Den här konfigurationen kräver ett användarnamn och lösenord.
 
