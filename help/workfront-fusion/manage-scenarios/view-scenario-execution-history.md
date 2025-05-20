@@ -4,9 +4,9 @@ description: Du kan visa information om händelser eller körningar i ett scenar
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: cc7c05614390e20d4051635c605e12dfa65493a1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -105,6 +105,8 @@ Fliken [!UICONTROL History] visar fler detaljer än vad som är tillgängligt p�
    >Scenhistoriken visar ett **Bearbetningsemblem** bredvid scenarier som nyligen har körts, medan körningsinformationen skrivs till lagringen. Bearbetningen sker omedelbart efter att scenariot har körts. och bör inte vara längre än några minuter. Detaljer om scenariokörningen kanske inte visas när körningen bearbetas.
 
 1. Om du vill visa information om en viss scenariokörning klickar du på **Detaljer** längst till höger. Länken [!UICONTROL details] är bara synlig om körningen har tillgängliga detaljer.
+
+   Mer information om hur du visar information om körning av scenarier finns i [Visa en specifik körning av scenarier](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md).
 1. Om du vill visa händelser växlar du **Visa händelser** på.
 
 
