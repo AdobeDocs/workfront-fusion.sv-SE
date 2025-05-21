@@ -4,9 +4,9 @@ description: Med Adobe Lightroom-modulerna kan du starta ett Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 5d1424fe88efb56e565077bf36211795c9bc96ed
+source-git-commit: 4d31a447d0d8d91ef4f86d8fd0bc63663b0f5ad0
 workflow-type: tm+mt
-source-wordcount: '2214'
+source-wordcount: '2394'
 ht-degree: 0%
 
 ---
@@ -246,8 +246,6 @@ Denna åtgärdsmodul hämtar metadata från en katalog i Adobe Lightroom. En kat
 
 Den här åtgärdsmodulen skapar och överför en originalfil för en resurs.
 
-<!--BECKY START HERE-->
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -293,7 +291,6 @@ Den här åtgärdsmodulen skapar och överför en originalfil för en resurs.
 
 Den här åtgärdsmodulen skapar en ny resurs med initiala metadata och importinformation.
 
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -335,6 +332,30 @@ Den här åtgärdsmodulen skapar en ny resurs med initiala metadata och importin
     <tr>
       <td role="rowheader">[!UICONTROL Date captured]</td>
       <td>
+        <p>Ange eller mappa hämtningsdatumet för resursen med formatet <code>YYYY-MM-DDT00:00:00-00:00</code>. Detta anges av servern om det hämtade datumet är <code>0000-00-00T00:00:00</code>. </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL File name]</td>
+      <td>
+        <p>Ange eller mappa filnamnet för resursen som du importerar till Lightroom.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Name of Device Imported On]</td>
+      <td>
+        <p>Ange eller mappa namnet på den enhet som importerar resursen.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Account ID of User Who Imported]</td>
+      <td>
+        <p>Ange eller mappa ID:t för användaren som importerar resursen.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Import Timestamp]</td>
+      <td>
         <p>Ange eller mappa ett datum med formatet <code>YYYY-MM-DDT00:00:00-00:00</code>.</p>
       </td>
     </tr>
@@ -343,7 +364,7 @@ Den här åtgärdsmodulen skapar en ny resurs med initiala metadata och importin
 
 #### Skapa en extern XMP-framkallningsinställningsfil
 
-Den här åtgärdsmodulen stöder två arbetsflöden. Det första arbetsflödet är att överföra den externa XMP-filen med framkallningsinställningar för resursen. Det andra arbetsflödet är att skapa en extern XMP-framkallningsinställningsfil genom att kopiera från en annan resurs externa xmp-framkallningsinställningsfil.
+Den här åtgärdsmodulen stöder två arbetsflöden: ladda upp den externa XMP-framkallningsinställningsfilen för resursen eller skapa en extern XMP-framkallningsinställningsfil genom att kopiera från en annan resurs externa xmp-framkallningsinställningsfil.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -354,7 +375,7 @@ Den här åtgärdsmodulen stöder två arbetsflöden. Det första arbetsflödet 
       <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Length of content in bytes]</td>
+      <td role="rowheader">[!UICONTROL Content Length in Bytes]</td>
       <td>
         <p>Ange eller mappa innehållets längd i byte.</p>
       </td>
@@ -368,7 +389,7 @@ Den här åtgärdsmodulen stöder två arbetsflöden. Det första arbetsflödet 
     <tr>
       <td role="rowheader">[!UICONTROL Catalog ID]</td>
       <td>
-        <p>Ange eller mappa ID:t för katalogen som innehåller resursen.</p>
+        <p>Ange eller mappa ID:t för katalogen där du vill skapa resursen.</p>
       </td>
     </tr>
     <tr>
@@ -413,7 +434,7 @@ Den här åtgärdsmodulen genererar återgivningar asynkront för en originalfil
     <tr>
       <td role="rowheader">[!UICONTROL Catalog ID]</td>
       <td>
-        <p>Ange eller mappa ID:t för katalogen som innehåller resursen.</p>
+        <p>Ange eller mappa ID:t för katalogen där du vill generera återgivningarna.</p>
       </td>
     </tr>
     <tr>
@@ -468,7 +489,7 @@ Den här åtgärdsmodulen hämtar den senaste resursens externa XMP-inställning
     <tr>
       <td role="rowheader">[!UICONTROL Catalog ID]</td>
       <td>
-        <p>Ange eller mappa ID:t för katalogen som innehåller resursen.</p>
+        <p>Ange eller mappa ID:t för den katalog som innehåller resursen som är associerad med XMP framkallningsinställningsfil.</p>
       </td>
     </tr>
     <tr>
@@ -495,13 +516,13 @@ Den här åtgärdsmodulen hämtar den senaste resursåtergivningen av den angivn
     <tr>
       <td role="rowheader">[!UICONTROL Catalog ID]</td>
       <td>
-        <p>Ange eller mappa ID:t för katalogen som innehåller resursen.</p>
+        <p>Ange eller mappa ID:t för katalogen som innehåller resursen som du vill hämta en återgivning för.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Asset ID]</td>
       <td>
-        <p>Ange eller mappa ID:t för resursen som är associerad med XMP framkallningsinställningsfil.</p>
+        <p>Ange eller mappa ID:t för resursen som du vill hämta en återgivning för.</p>
       </td>
     </tr>
     <tr>
@@ -538,9 +559,15 @@ Den här åtgärdsmodulen hämtar resurser som ägs av användaren vars autentis
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Return assets captured before]</td>
+      <td role="rowheader">[!UICONTROL Return assets captured before given time]</td>
       <td>
-        <p>Ange ett datum med formatet <code>YYYY-MM-DDT00:00:00</code>. Modulen returnerar resultat som hämtats före detta datum.</p><p> Det här fältet kan inte användas med fältet <code>Return assets captured after</code>.</p>
+        <p>Ange ett datum med formatet <code>YYYY-MM-DDT00:00:00</code>. Modulen returnerar resultat som hämtats före detta datum.</p><p> Det här fältet kan inte användas med fältet <code>Return assets captured after given time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Return assets captured after given time]</td>
+      <td>
+        <p>Ange ett datum med formatet <code>YYYY-MM-DDT00:00:00</code>. Modulen returnerar resultat som hämtats före detta datum.</p><p> Det här fältet kan inte användas med fältet <code>Return assets captured before given time</code>.</p>
       </td>
     </tr>
     <tr>
@@ -552,19 +579,19 @@ Den här åtgärdsmodulen hämtar resurser som ägs av användaren vars autentis
     <tr>
       <td role="rowheader">[!UICONTROL SHA256 Hash value of original file]</td>
       <td>
-        <p></p>
+        <p>Ange eller mappa den ursprungliga filens hash-värde. Assets med matchande hash returneras.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Hide assets that are inside stacks?"]</td>
       <td>
-        <p></p>
+        <p>Välj Ja om du vill dölja resurser i högar (resurser i högar returneras inte). Välj Nej om du vill ta med resurser i högar i resultatet.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Asset subtype values]</td>
       <td>
-        <p></p>
+        <p>Ange eller mappa en semikolonavgränsad lista med undertypsvärden som ska returneras.</p>
       </td>
     </tr>
     <tr>
@@ -581,24 +608,26 @@ Den här åtgärdsmodulen hämtar resurser som ägs av användaren vars autentis
     <tr>
       <td role="rowheader">[!UICONTROL Group values]</td>
       <td>
-        <p></p>
+        <p>Ange eller mappa en semikolonavgränsad lista med gruppvärden.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Name values]</td>
       <td>
-        <p></p>
+        <p>Ange eller mappa en semikolonavgränsad lista med namnvärden.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Favorite status]</td>
       <td>
-        <p></p>
+        <p>Ange eller mappa den favoritstatus som du vill returnera resultat för.</p>
       </td>
     </tr>
     </tr>
   </tbody>
 </table>
+
+<!--BECKY START HERE-->
 
 ### Album
 
