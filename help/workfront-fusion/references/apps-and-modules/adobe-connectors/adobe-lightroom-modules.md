@@ -4,9 +4,9 @@ description: Med Adobe Lightroom-modulerna kan du starta ett Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 4d31a447d0d8d91ef4f86d8fd0bc63663b0f5ad0
+source-git-commit: 420665071db63954bce14b2011c5ecdb97403fd1
 workflow-type: tm+mt
-source-wordcount: '2394'
+source-wordcount: '2725'
 ht-degree: 0%
 
 ---
@@ -627,8 +627,6 @@ Den här åtgärdsmodulen hämtar resurser som ägs av användaren vars autentis
   </tbody>
 </table>
 
-<!--BECKY START HERE-->
-
 ### Album
 
 * [Lägga till resurser i ett album](#add-assets-to-an-album)
@@ -681,10 +679,10 @@ Den här åtgärdsmodulen lägger till en eller flera resurser i det angivna alb
     <tr>
       <td role="rowheader">[!UICONTROL Order]</td>
       <td>
-        <p></p>
+        <p>Ange ordningen för resursen.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Metadata]</td>
+      <td role="rowheader">[!UICONTROL Service Payload]</td>
       <td>
         <p>Ange eller mappa alla metadata som du vill inkludera med resursen. Detta måste vara en enda textsträng med en maxlängd på 1-24 tecken.</p>
       </td>
@@ -727,32 +725,46 @@ Den här åtgärdsmodulen skapar ett nytt album i Lightroom.
         <p>Välj undertyp för albumet.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL API key]</td>
+      <td role="rowheader">[!UICONTROL Service ID]</td>
       <td>
         <p>Ange API-nyckeln för den tjänst som skapar albumet.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime user created]</td>
+      <td role="rowheader">[!UICONTROL Date User Created]</td>
       <td>
         <p>Ange eller mappa ett datum med formatet <code>YYYY-MM-DDT00:00:00-00:00Z</code>.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime user updated]</td>
+      <td role="rowheader">[!UICONTROL Date User Updated]</td>
       <td>
         <p>Ange eller mappa ett datum med formatet <code>YYYY-MM-DDT00:00:00-00:00Z</code>.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album name]</td>
+      <td role="rowheader">[!UICONTROL Album Name]</td>
       <td>
         <p>Ange eller mappa ett namn för det nya albumet.</p>
       </td>
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Cover ID]</td>
       <td>
         <p>Ange eller mappa ID:t för en resurs som ska användas som omslag till det här albumet.</p>
       </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Parent ID]</td>
+      <td>
+        <p>Ange eller mappa ID:t för det överordnade albumet för det här albumet.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Service Payload]</td>
+      <td>
+        <p>Ange eller mappa albummetadata som en sträng.</p>
+      </td>
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Remote ID]</td>
       <td>
@@ -828,7 +840,7 @@ Det borttagna albumet måste ha skapats av samma klientprogram som nu tar bort d
 
 ### Hämta ett album
 
-Den här åtgärdsmodulen hämtar angivet album
+Den här åtgärdsmodulen hämtar det angivna albumet.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -857,7 +869,100 @@ Den här åtgärdsmodulen hämtar angivet album
 
 Den här åtgärdsmodulen hämtar en lista med resurser i det angivna albumet.
 
-
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Lightroom] finns i <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Lightroom]</a> i den här artikeln.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td>
+        <p>Ange eller mappa ID:t för katalogen som innehåller albumet.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td>
+        <p>Ange eller mappa ID:t för det album du vill visa resurser för.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Capture Assets Before Time]</td>
+      <td>
+        <p>Ange ett datum med formatet <code>YYYY-MM-DDT00:00:00</code>. Modulen returnerar resultat som hämtats före detta datum.</p><p> Det här fältet kan inte användas med fältet <code>Return assets captured after given time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Capture Assets After Time]</td>
+      <td>
+        <p>Ange ett datum med formatet <code>YYYY-MM-DDT00:00:00</code>. Modulen returnerar resultat som hämtats före detta datum.</p><p> Det här fältet kan inte användas med fältet <code>Return assets captured before given time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ending Asset Order Value]</td>
+      <td>
+        <p>Ange eller mappa ordervärdet för den utgående resursen.</p><p> Det här fältet kan bara användas med fältet <code>Capture Assets After Time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Starting Asset Order Value]</td>
+      <td>
+        <p>Ange eller mappa ordervärdet för startresursen.</p><p> Det här fältet kan bara användas med fältet <code>Capture Assets BEfore Time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Number of Assets to Return (1-500)]</td>
+      <td>
+        <p>Ange det högsta antal poster som du vill att modulen ska returnera under varje körningscykel för scenario. Talet måste vara mellan 1 och 500.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Hide assets that are inside stacks?"]</td>
+      <td>
+        <p>Välj Ja om du vill dölja resurser i högar (resurser i högar returneras inte). Välj Nej om du vill ta med resurser i högar i resultatet.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Subtype Values (semi-colon separated)]</td>
+      <td>
+        <p>Ange eller mappa en semikolonavgränsad lista med undertypsvärden som ska returneras.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Flag Values (semi-colon separated)]</td>
+      <td>
+        <p>Ange eller mappa en semikolonavgränsad lista med flaggvärden som ska returneras.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Additional Data Fields to Include (semi-colon separated)]</td>
+      <td>
+        <p>Om resursen ingår inkluderas alla fält, i annat fall returneras bara id- och self href-länken.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Types of assets to exclude]</td>
+      <td>
+        <p>Välj om du vill exkludera fullständiga eller ofullständiga resurser. Om du vill inkludera alla resurser lämnar du det här fältet tomt.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Asset IDs]</td>
+      <td>
+        <p>Ange eller mappa upp till 100 resurs-ID:n, avgränsade med kommatecken.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Filter out album assets based on presentation filters]</td>
+      <td>
+        <p>När det här fältet är inställt på "true" filtreras alla albumresurser ut baserat på presentationsfiltren som är inställda på albumet. Med den här parametern filtreras avvisade resurser alltid bort oavsett inställningarna i presentationsfiltren. Presentationsfilter används inte när något annat värde än true har angetts för album_filters. Standardbeteendet är att visa alla resurser. Den här parametern kan inte användas tillsammans med flaggparametern. </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### Hämta album
 
@@ -880,7 +985,7 @@ Den här åtgärdsmodulen hämtar en lista med album i den angivna katalogen.
     <tr>
       <td role="rowheader">[!UICONTROL Subtypes]</td>
       <td>
-        <p>Ange eller mappa ID:t för det album du vill hämta.</p>
+        <p>Ange eller mappa en semikolonavgränsad lista med undertypsvärden som ska returneras.</p>
       </td>
     </tr>
     <tr>
@@ -890,7 +995,7 @@ Den här åtgärdsmodulen hämtar en lista med album i den angivna katalogen.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned albums]</td>
+      <td role="rowheader">[!UICONTROL Number of Albums to Return]</td>
       <td>
         <p>Ange det maximala antalet resurser som [!DNL Workfront Fusion] ska returnera under en körningscykel. Standardvärdet för det här fältet är 100. Den här modulen kan returnera fler album än den här gränsen om flera album vid gränsen har samma <code>name_after</code>-värde.</p>
       </td>
