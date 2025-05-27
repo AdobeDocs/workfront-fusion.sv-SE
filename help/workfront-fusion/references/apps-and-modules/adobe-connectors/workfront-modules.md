@@ -206,7 +206,7 @@ Modulen returnerar alla standardfält som är associerade med posten, tillsamman
 
 När webbkroken har skapats kan du visa adressen till slutpunkten som händelser skickas till.
 
-Mer information finns i avsnittet [Exempel på händelsenyttolaster](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) i artikeln Event Subscription API (Händelseprenumerations-API) i Workfront-dokumentationen.
+Mer information finns i avsnittet [Exempel på händelsenyttolaster](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) i artikeln Event Subscription API (Händelseprenumerations-API) i Workfront-dokumentationen.
 
 Se en lista över de Workfront-objekttyper som du kan använda den här modulen för i [Workfront-objekttyper som är tillgängliga för varje Workfront-modul](#workfront-object-types-available-for-each-workfront-module).
 
@@ -644,7 +644,7 @@ När du konfigurerar den här modulen visas följande fält.
       </ul> <p>För alla andra posttyper väljer du <b>[!UICONTROL Other objects and endpoints]</b> och letar upp posttypen på de alfabetiskt sorterade sidorna.</p> </li> 
      <li value="2"> <p>På sidan med rätt posttyp söker du efter åtgärden (Ctrl-F eller Cmd-F).</p> </li> 
      <li value="3"> <p>Visa beskrivningar för tillgängliga fält under den valda åtgärden.</p> </li> 
-    </ol> <p>Obs!  <p>När du skapar ett korrektur med Workfront [!UICONTROL Misc Action]-modulen är det bästa sättet att skapa ett korrektur utan några avancerade alternativ och sedan uppdatera korrekturet med SOAP-API:t i [!DNL Workfront Proof] .</p><p>Mer information om hur du skapar ett korrektur med Workfront API (som används i den här modulen) finns i <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Lägga till avancerade korrekturalternativ när du skapar ett korrektur via Adobe Workfront API</a></p> </p> </td> 
+    </ol> <p>Obs!  <p>När du skapar ett korrektur med Workfront [!UICONTROL Misc Action]-modulen är det bästa sättet att skapa ett korrektur utan några avancerade alternativ och sedan uppdatera korrekturet med SOAP-API:t i [!DNL Workfront Proof] .</p><p>Mer information om hur du skapar ett korrektur med Workfront API (som används i den här modulen) finns i <a href="https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Lägga till avancerade korrekturalternativ när du skapar ett korrektur via Adobe Workfront API</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -918,7 +918,7 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 
 Workfront har nyligen släppt en ny version av sin abonnemangstjänst. Den nya versionen är inte en ändring av Workfront API, utan snarare en ändring av prenumerationsfunktionen för evenemang. Den här åtgärdsmodulen uppdaterar den händelsenyttolastversion som används för det här scenariot.
 
-Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
+Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
 
 Mer information om hur du bevarar dina Workfront Fusion-scenarier under händelseprenumerationsuppgraderingen, inklusive en webbinariainspelning, finns i [Bevara dina Fusion-scenarier under händelseprenumerationsuppgraderingen v2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
@@ -2238,7 +2238,7 @@ Vi rekommenderar att du kontrollerar att det här fungerar som du tänkt dig.
 >
 >* Workfront har nyligen släppt en ny version av sin abonnemangstjänst. Den nya versionen är inte en ändring av Workfront API, utan snarare en ändring av prenumerationsfunktionen för evenemang. Den här åtgärdsmodulen uppdaterar den händelsenyttolastversion som används för det här scenariot.
 >
->   Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
+>   Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
 >
 >   Mer information om hur du bevarar dina Workfront Fusion-scenarier under händelseprenumerationsuppgraderingen, inklusive en webbinariainspelning, finns i [Bevara dina Fusion-scenarier under Evenemangsprenumerationer (V2-uppgradering)(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
@@ -2290,7 +2290,7 @@ Följande operatorer är tillgängliga i Workfront > filtret Bevakningshändelse
 >
 >Om 100 utgåvor skapas per dag, men bara två av dem tilldelas till Ana, körs scenariot 100 gånger. 98 av körningarna stoppades vid filtret, men utlösarmodulen använder fortfarande data och utför åtgärder i alla körningar.
 
-Mer information om Workfront-händelseprenumerationer finns i [Vanliga frågor och svar - Händelseprenumerationer](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
+Mer information om Workfront-händelseprenumerationer finns i [Vanliga frågor och svar - Händelseprenumerationer](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
 
 Mer information om webbhooks finns i [Direktutlösare (webbhooks) i Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
