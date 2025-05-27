@@ -347,7 +347,7 @@ Den här åtgärdsmodulen gör någon av följande konverteringar:
    <td>Markera det objekt som du vill konvertera det till. Detta är den typ som objektet har efter konverteringen.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL <Object> ID]</td> 
+   <td>[!UICONTROL &lt;Object> ID]</td> 
    <td> <p>Ange objektets ID. </p> <p>Obs! När du anger ID:t för ett objekt kan du börja skriva namnet på objektet och sedan markera det i listan. Modulen anger sedan rätt ID i fältet.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
