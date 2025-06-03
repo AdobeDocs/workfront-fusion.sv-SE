@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Workfront Planning] modulerna kan du starta ett [!
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 51bb87572f16f6194f6c37bbe52ea7f27050c303
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
@@ -472,3 +472,20 @@ Den här åtgärden uppdaterar en enda post i Workfront Planning.
      <tr>
   </tbody>
 </table>
+
+
+## Använd JSONata för läsbar `record-types`-nedbrytning
+
+I följande JSONata-uttryck skapas ett läsbart resultat av planeringsfrågan som ger dig uppdelningen av posttyper. Detta gör att posttypens namn, fältnamn och fältalternativens namn (där det är tillämpligt) kan läsas av ett namn och behåller resten av strukturen intakt.
+
+```
+(
+    $s0 := ({"data":$ ~> | fields | {"options":(options){name:$}} |});
+    $s1 := ({"data":$s0.data ~> | **.fields | {"options_name":(options.*){displayName:$}} | });
+    $s2 := $s1 ~> | data | {"fields":(fields){displayName:$}} |; 
+    $s2.data{displayName:$}
+)
+```
+
+Mer information om hur du använder JSONata-moduler finns i [JSONata-moduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md).
+
