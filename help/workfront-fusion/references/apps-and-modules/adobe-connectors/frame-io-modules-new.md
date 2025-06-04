@@ -4,9 +4,9 @@ description: Kontot  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: bf3e35a287c3beb2310a7b8d2c21c65aebfb9076
+source-git-commit: cc1ce10fccf159a0c17a3bba978d88c0d1013cbf
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '2604'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,155 @@ För Frame.io-kopplingen används följande:
 
 ## Anslut [!DNL Frame.io] till [!UICONTROL Adobe Workfront Fusion]
 
-Anslutningsprocessen skiljer sig åt beroende på om du använder den äldre anslutningen Frame.io eller Beta Frame.io.
+Du kan ansluta automatiskt med inloggningsuppgifter, manuellt skapa en anslutning för inloggningsuppgifter eller skapa en server-till-server-anslutning.
+
+* [Anslut automatiskt med inloggningsuppgifter](#connect-automatically-with-user-credentials#)
+* [Skapa en anslutning för användarautentiseringsuppgifter manuellt](#create-a-user-credentials-connection-manually)
+* [Skapa en server-till-server-anslutning](#create-a-server-to-server-connection)
+
+### Anslut automatiskt med inloggningsuppgifter
+
+Den här metoden skapar en anslutning automatiskt om du är inloggad på Frame.io, eller ansluter dig till inloggningssidan Frame.io så att du kan logga in.
+
+1. Klicka **[!UICONTROL Add]** bredvid anslutningsrutan i någon av modulerna Frame.io Beta.
+1. Ange ett namn för anslutningen.
+1. Klicka på **Fortsätt**.
+1. Om du uppmanas att logga in på ditt Frame.io-konto gör du det.
+1. Om du är en del av mer än en Frame.io-organisation väljer du den organisation som du vill använda för den här anslutningen.
+
+Anslutningen skapas.
+
+### Skapa en anslutning för användarautentiseringsuppgifter manuellt
+
+Du kan skapa en anslutning för användarautentiseringsuppgifter genom att logga in i Frame.io eller genom att ange ett klient-ID eller klienthemlighet.
+
+Om du vill skapa en server-till-server-anslutning måste du först konfigurera ett program i Adobe Developer Console.
+
+* [Skapa inloggningsuppgifter i Adobe Developer Console](#create-user-credentials-in-the-adobe-developer-console)
+* [Konfigurera en anslutning för användarautentisering](#configure-a-user-authentication-connection)
+
+#### Skapa inloggningsuppgifter i Adobe Developer Console
+
+Om du inte redan har inloggningsuppgifter för server-till-server i ett Adobe Developer Console-projekt kan du skapa dem.
+
+1. Öppna [Adobe Developer Console](https://developer.adobe.com/).
+1. Välj ett befintligt projekt i Adobe Developer Console som ska användas för anslutningen
+
+   eller
+
+   Skapa ett nytt projekt i Adobe Developer Console. Instruktioner finns i [Skapa ett tomt projekt](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty).
+
+1. Klicka på **Lägg till API** på sidan Projektöversikt eller på sidan Kom igång med ditt nya projekt.
+1. Leta reda på och klicka på **API:t Frame.io** på sidan som öppnas.
+1. Välj **Användarverifiering** på sidan Välj autentiseringstyp och klicka på **Nästa**.
+1. Välj **OAuth-webbapp** på sidan Lägg till inloggningsuppgifter för användarautentisering och klicka på **Nästa**.
+1. Ange följande på inloggningssidan för Konfigurera OAuth-webbprogrammet:   <table style="table-layout:auto">
+   <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+          <td role="rowheader">[!UICONTROL Default redirect URI]</td>
+          <td>
+            <p><code>https://oauth.app.workfrontfusion.com/oauth/cb/frame-io2</code></p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Redirect URI pattern]</td>
+          <td>
+            <p><code>https://oauth\.app\.workfrontfusion\.com/oauth/cb/frame-io2</code></p>
+          </td>
+        </tr>
+       </tbody>
+    </table>
+1. Klicka på **Nästa**.
+1. Klicka på **Spara konfigurerat API**.
+1. På produktsidan klickar du på kortet för de inloggningsuppgifter som du nyss skapade.
+
+   Här hittar du ditt klient-ID och din klienthemlighet.
+
+>[!NOTE]
+>
+> Vi rekommenderar att du lämnar det här fönstret öppet när du börjar konfigurera anslutningen i Adobe Workfront Fusion. Du kan kopiera klient-ID:t och hämta och kopiera klienthemlighet från den här sidan för att klistra in i anslutningsfälten.
+
+
+#### Konfigurera en anslutning för användarautentisering
+
+1. Klicka **[!UICONTROL Add]** bredvid anslutningsrutan i någon av modulerna Frame.io Beta.
+1. Klicka på **Visa avancerade inställningar** i rutan Skapa en anslutning.
+
+1. Fyll i följande fält:
+
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+          <td role="rowheader">[!UICONTROL Connection type]</td>
+          <td>
+            <p>Välj <b>IMS-användarautentisering</b>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td>
+            <p>Ange ett namn för anslutningen.</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client ID]</td>
+          <td>Ange din [!DNL Adobe] [!UICONTROL Client ID]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du skapar inloggningsuppgifter finns i <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Skapa inloggningsuppgifter i Adobe Developer Console</a> i den här artikeln.</p></td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client Secret]</td>
+          <td>Ange din [!DNL Adobe] [!UICONTROL Client Secret]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du skapar inloggningsuppgifter finns i <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Skapa inloggningsuppgifter i Adobe Developer Console</a> i den här artikeln.</p>
+        </tr>
+       </tbody>
+    </table>
+1. Om du uppmanas att logga in på ditt Frame.io-konto gör du det.
+1. Om du är en del av mer än en Frame.io-organisation väljer du den organisation som du vill använda för den här anslutningen.
+
+Anslutningen skapas.
+
+
+### Skapa en server-till-server-anslutning
+
+Om du vill skapa en server-till-server-anslutning måste du först konfigurera ett program i Adobe Developer Console.
+
+* [Skapa serverreferenser i Adobe Developer Console](#create-server-to-server-credentials-in-the-adobe-developer-console)
+* [Konfigurera en server-till-server-anslutning](#configure-a-server-to-server-connection)
+
+#### Skapa serverreferenser i Adobe Developer Console
+
+Om du inte redan har inloggningsuppgifter för server-till-server i ett Adobe Developer Console-projekt kan du skapa dem.
+
+1. Öppna [Adobe Developer Console](https://developer.adobe.com/).
+1. Välj ett befintligt projekt i Adobe Developer Console som ska användas för anslutningen
+
+   eller
+
+   Skapa ett nytt projekt i Adobe Developer Console. Instruktioner finns i [Skapa ett tomt projekt](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty).
+
+1. Klicka på **Lägg till API** på sidan Projektöversikt eller på sidan Kom igång med ditt nya projekt.
+1. Leta reda på och klicka på **API:t Frame.io** på sidan som öppnas.
+1. På sidan Välj autentiseringstyp väljer du **Server-till-server-autentisering** och klickar på **Nästa**.
+1. Ange ett namn för autentiseringsuppgifterna. På så sätt kan du identifiera inloggningsuppgifterna senare i API-autentiseringsuppgifterna i Adobe Admin Console.
+1. Klicka på **Nästa**.
+1. På sidan Välj produktprofiler väljer du den produktprofil som innehåller det Frame.io-konto som du vill ansluta till.
+1. Klicka på **Spara konfigurerat API**.
+1. På produktsidan klickar du på kortet för de inloggningsuppgifter som du nyss skapade.
+
+   Här hittar du ditt klient-ID och din klienthemlighet.
+
+>[!NOTE]
+>
+> Vi rekommenderar att du lämnar det här fönstret öppet när du börjar konfigurera anslutningen i Adobe Workfront Fusion. Du kan kopiera klient-ID:t och hämta och kopiera klienthemlighet från den här sidan för att klistra in i anslutningsfälten.
+
+
+#### Konfigurera en server-till-server-anslutning
 
 1. Klicka **[!UICONTROL Add]** bredvid anslutningsrutan i någon av modulerna Frame.io Beta.
 
@@ -122,7 +270,7 @@ Anslutningsprocessen skiljer sig åt beroende på om du använder den äldre ans
         <tr>
           <td role="rowheader">[!UICONTROL Connection type]</td>
           <td>
-            <p>Välj om du vill skapa en anslutning för IMD-användarautentisering eller en IMS-server till server-anslutning.</p>
+            <p>Välj <b>IMS-server till server</b>.</p>
           </td>
         </tr>
         <tr>
@@ -133,15 +281,18 @@ Anslutningsprocessen skiljer sig åt beroende på om du använder den äldre ans
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>Ange din [!DNL Adobe] [!UICONTROL Client ID]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du hittar autentiseringsuppgifter finns i <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Referenser</a> i dokumentationen för Adobe-utvecklare.</p></td>
+          <td>Ange din [!DNL Adobe] [!UICONTROL Client ID]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du skapar autentiseringsuppgifter finns i <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Skapa server-till-server-autentiseringsuppgifter i Adobe Developer Console</a> i den här artikeln.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>Ange din [!DNL Adobe] [!UICONTROL Client Secret]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du hittar autentiseringsuppgifter finns i <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Referenser</a> i dokumentationen för Adobe-utvecklare.</p>
+          <td>Ange din [!DNL Adobe] [!UICONTROL Client Secret]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].<p>Instruktioner om hur du skapar autentiseringsuppgifter finns i <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Skapa server-till-server-autentiseringsuppgifter i Adobe Developer Console</a> i den här artikeln.</p>
         </tr>
        </tbody>
     </table>
 1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
+
+
+
 
 ## [!DNL Frame.io]-moduler och deras fält
 
