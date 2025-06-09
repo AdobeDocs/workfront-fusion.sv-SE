@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion JSONata-kontakten innehåller en modul som b
 author: Becky
 feature: Workfront Fusion
 exl-id: 8c117ecb-3c05-47d4-a629-18dbc546e2a2
-source-git-commit: 2ba6ca5f5a82aea4979ff8f273bdeef1a8d22a06
+source-git-commit: da3bf98f8254228598372fed8c06d6318718721f
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 +++
 
-## JSONata-modulen och dess fält
+## JSONata-moduler och deras fält
 
 ### Utvärdera
 
@@ -105,3 +105,31 @@ Målet är att returnera en array med namn från följande JSON-objekt:
 Modulen returnerar en array med namn som hämtats från JSON-objektet.
 
 >[!ENDSHADEBOX]
+
+
+
+### JSONata MCP
+
+Den här åtgärdsmodulen genererar JSONata-uttryck genom att analysera de angivna in- och utdatamodellerna. Du anger scheman som används av MCP (Model Context Protocol) för att generera uttrycket som omformar indata till utdata.
+
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Markera anslutningen som du använder för att ansluta till den stora språkmodellen (LLM) som du vill använda för den här modulen.</p> <p>För närvarande stöds bara den Antropiska API-nyckeln.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Input schema]</td> 
+   <td> <p>Ange eller mappa det indatarema som ska användas för det här uttrycket.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output schema]</td> 
+   <td> <p>Ange eller mappa det utdatarema som ska användas för det här uttrycket.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
