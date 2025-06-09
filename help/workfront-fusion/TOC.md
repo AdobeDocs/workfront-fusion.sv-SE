@@ -2,9 +2,9 @@
 user-guide-title: Dokumentation om Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Använd dokument, självstudiekurser och andra resurser för att lära dig hur du implementerar och använder Adobe Workfront Fusion effektivt i din organisation.
-source-git-commit: ad00d7c404701ad526befae9b61c3480f4fb82b6
+source-git-commit: d03c4a68a69ea5302f6898418c3da9edaa404bad
 workflow-type: tm+mt
-source-wordcount: '1756'
+source-wordcount: '1761'
 ht-degree: 1%
 
 ---
@@ -393,6 +393,7 @@ ht-degree: 1%
          * [Markeringsmoduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
          * [Matematisk modul](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
          * [MIME-moduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
+         * [Modul för MCP (Model Context Protocol)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
          * [Texttolkningsmoduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
          * [Verktygsmoduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
          * [XML-moduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)
