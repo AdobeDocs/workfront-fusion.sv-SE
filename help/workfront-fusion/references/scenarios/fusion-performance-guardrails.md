@@ -4,9 +4,9 @@ description: Automatisering av arbete kräver snabb bearbetning, så [!DNL Adobe
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 1253470a23a2a9124824d5ab1ff2b5013d773517
+source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ Automatisering av arbete kräver snabb bearbetning, så [!DNL Adobe Workfront Fu
 ## Scenarier
 
 * Standardtidsgränsen för scenariokörning är **40 minuter**. När körningen når den här tidsgränsen avbryter [!DNL Workfront Fusion] körningen av scenariot efter nästa cykel eller åtgärd, beroende på scenariot. Detta medför att scenariot avbryts kort efter att gränsen på 40 minuter har nåtts
+
+  Kedningsscenarier räknas inte med i tidsgränsen för scenariokörning. Ett överordnat scenario tar inte lång tid i väntan på att ett underordnat scenario ska köras.
 * Den största tillåtna storleken för en scenarioplan är **5 MB**, men vi rekommenderar att du behåller scenariostorleken under **3 MB**.
 
   Programmoduler som skapar eller uppdaterar data med ett stort antal fält kan orsaka mycket stora utkast.

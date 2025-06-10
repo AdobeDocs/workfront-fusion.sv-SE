@@ -2,9 +2,9 @@
 user-guide-title: Dokumentation om Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Använd dokument, självstudiekurser och andra resurser för att lära dig hur du implementerar och använder Adobe Workfront Fusion effektivt i din organisation.
-source-git-commit: d03c4a68a69ea5302f6898418c3da9edaa404bad
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1767'
 ht-degree: 1%
 
 ---
@@ -173,6 +173,7 @@ ht-degree: 1%
    * [Skapa scenarier](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
    * Planera ett scenario {#plan-a-scenario}
       * [Planera ett scenario: artikelindex](/help/workfront-fusion/create-scenarios/plan-a-scenario/plan-a-scenario-toc.md)
+      * [Kedja flera scenarier tillsammans](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)
       * [Vanliga frågor om scenarioplanering](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
       * [Videoöversikt](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
       * [Arbetsflöde för att skapa ett scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)
@@ -381,6 +382,7 @@ ht-degree: 1%
          * [Workday moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
       * Verktyg och transformatorer {#tools-and-transformers}
          * [Arkivera moduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
+         * [Kedjemoduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)
          * [CSV-moduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
          * [Datalagermoduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)
          * [Moduler för Draft.js](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/draft-js-modules.md)

@@ -4,9 +4,9 @@ description: Med routermodulen kan du dela in ditt flöde i flera flöden och be
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c1c11c6766678263b36488909c3799299a1c510a
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,8 @@ Du måste lägga till en routermodul innan du konfigurerar vägar.
    Vägarna ordnas i den ordning de utförs. Den översta vägen körs först.
 
 1. (Valfritt) Om du vill ändra flödesordningen högerklickar du på routermodulen och väljer **Ordningsvägar** Dra och släpp rutterna i den ordning som du vill att de ska köras i. Rutorna markeras med den första modulen som följer routern (den första modulen i rutten).
+
+   ![Beställningsflöde](assets/order-routes.png)
 
 1. Fortsätt till [Lägg till ett filter i ett flöde](#add-a-filter-to-a-route).
 

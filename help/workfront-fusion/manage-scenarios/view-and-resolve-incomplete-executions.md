@@ -4,9 +4,9 @@ description: Mappen [!UICONTROL Incomplete executions] lagrar scenariekörningar
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ad304117fb6e9d1320b8e50d71a162609dc6e6f4
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -101,6 +101,11 @@ När en ny ofullständig körning sparas kan du lösa den på följande sätt:
 1. Öppna det påverkade scenariot.
 1. Klicka på fliken **[!UICONTROL Incomplete Executions]**.
 1. Leta reda på den ofullständiga körning som du vill lösa och klicka på **[!UICONTROL Details]**.
+1. Öppna modulens logg där alla åtgärder i modulen visas.
+1. Leta reda på den misslyckade åtgärden och klicka på **[!UICONTROL Resolve]**:
+
+   ![Knappen Lös](assets/resolve-btn-350x188.png)
+
 
 
 ## Lös ofullständiga körningar från fliken Historik
@@ -136,6 +141,20 @@ Om ett fel inträffar på den första modulen i scenariot avbryts körningen ome
 
 Om ett fel inträffar i någon annan modul och det inte finns någon kopplad felhanterarväg händer något av följande:
 
-* Om feltypen är `ConnectionError`, `RateLimitError`, `OutOfSpaceError` eller `ModuleTimeoutError` lagras en ofullständig körningspost med automatiskt återförsök.
-* Om feltypen är `DataError`, `InvalidConfigurationError`, `InvalidAccessTokenError`, `UnexpectedError`, `MaxFileSizeExceededError` eller `MaxResultsExceededError` lagras en ofullständig körningspost utan autoåterförsök.
+* En ofullständig körningspost med automatiskt återförsök lagras för följande feltyper:
+
+   * `ConnectionError`
+   * `RateLimitError`
+   * `OutOfSpaceError`
+   * `ModuleTimeoutError`
+
+* En ofullständig körningspost utan automatiskt försök lagras för följande feltyper:
+
+   * `DataError`
+   * `InvalidConfigurationError`
+   * `InvalidAccessTokenError`
+   * `UnexpectedError`
+   * `MaxFileSizeExceededError`
+   * `MaxResultsExceededError`
+
 * Om feltypen är något annat än ovanstående misslyckas körningen.
