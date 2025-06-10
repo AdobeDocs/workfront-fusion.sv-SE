@@ -4,9 +4,9 @@ description: Följande offentliga mallar är för närvarande tillgängliga i Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: 47f1e2b6a812f4ac44e2daf08cb1937f1ef02981
+source-git-commit: 5849b8b539ef7ae9da6dbf2a3c515c3aee57fcdc
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1481'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,17 @@ Om du vill visa tillgängliga mallar klickar du på ikonen **Mallar** ![Mallar](
 
 Mallarna automatiserar Workfront processer och arbetsflöden.
 
-### [!BADGE Nytt!]{type=Informative}
+### [!BADGE Nytt! ]{type=Informative} Workfront - Justera automatiskt projekttidslinjen när aktiviteter har slutförts tidigt
+
+<!--New June 10, 2025-->
+
+Den här mallen är utformad för att stödja organisationer som använder en mer flexibel strategi där du kan planera allt eftersom det är möjligt, i stället för en strikt PMI-baserad metod för projektledning.
+
+Om ditt team kämpar för att behålla tempot på grund av att projekttidslinjerna inte justeras dynamiskt är den här lösningen till för dig. När uppgifter slutförs i förväg är det ofta klokt att snabba upp den övergripande tidslinjen, men att uppdatera datum manuellt kan vara tidsödande.
+
+Den här Fusion-mallen automatiserar den processen. När en uppgift har slutförts tidigt schemaläggs alla beroende (efterföljande) aktiviteter automatiskt om till att starta tidigare, vilket gör att teamet kan gå snabbare och arbeta smidigt.
+
+### [!BADGE Nytt! ]{type=Informative} Workfront-kort - Ta bort arkiverade kort från den angivna kolumnen (på begäran)
 
 <!--New March 12, 2025-->
 
@@ -101,7 +111,7 @@ Granska dina projektmallar en gång i månaden med hjälp av din egen policy med
 
 Mallarna automatiserar arbetsflöden som kombinerar Workfront med Workfront Proof.
 
-### [!BADGE Nytt!]{type=Informative}
+### [!BADGE Nytt! ]{type=Informative} Workfront > Workfront Proof - Ändra användarrollen för korrektur till skrivskyddad och lås korrektur när projektet avslutas
 
 <!--New March 12, 2025-->
 
@@ -168,7 +178,7 @@ Med den här mallen kan du se om en SharePoint-mapp har ändrats.
 
 Dessa mallar stöder integreringen mellan Workfront och Anaplan och förväntar sig en specifik konfiguration i båda Anaplan i Workfront. Mer information om de här mallarna och deras konfigurationer finns i artiklarna för de enskilda mallarna.
 
-Mer information om integreringen av Workfront-Anaplan finns i [Adobe Workfront med Anaplan](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) i dokumentationen för Workfront.
+Mer information om integreringen av Workfront-Anaplan finns i [Adobe Workfront med Anaplan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) i dokumentationen för Workfront.
 
 >[!NOTE]
 >
@@ -176,19 +186,19 @@ Mer information om integreringen av Workfront-Anaplan finns i [Adobe Workfront m
 
 ### Arbetsflöden för utgiftsoptimering
 
-* [Skicka [!DNL Adobe Workfront] projektuppdateringar till ett [!DNL Anaplan] listobjekt](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [Skicka [!DNL Adobe Workfront] utgifter till ett [!DNL Anaplan] listobjekt](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [Skicka [!DNL Adobe Workfront] uppdateringar av faktisk tid för ett [!DNL Anaplan] listobjekt](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [Skicka [!DNL Adobe Workfront] projektuppdateringar till ett [!DNL Anaplan] listobjekt](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [Skicka [!DNL Adobe Workfront] utgifter till ett [!DNL Anaplan] listobjekt](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [Skicka [!DNL Adobe Workfront] uppdateringar av faktisk tid för ett [!DNL Anaplan] listobjekt](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### Arbetsflöden för länkning av budgetbegäranden
 
-* [Skapa ett [!DNL Anaplan] listobjekt från en [!DNL Adobe Workfront] budgetförfrågan](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Använd en [!DNL Anaplan] budgetallokering för ett [!DNL Adobe Workfront] projekt](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Skapa ett [!DNL Anaplan] listobjekt från en [!DNL Adobe Workfront] budgetförfrågan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Använd en [!DNL Anaplan] budgetallokering för ett [!DNL Adobe Workfront] projekt](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### Arbetsflöden för att länka kampanjförfrågningar
 
-* [Skapa ett [!DNL Anaplan] listobjekt från en [!DNL Adobe Workfront] kampanjbegäran](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Använd en [!DNL Anaplan] budgetallokering för en [!DNL Adobe Workfront] kampanjbegäran eller ett kampanjprojekt](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Skapa ett [!DNL Anaplan] listobjekt från en [!DNL Adobe Workfront] kampanjbegäran](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Använd en [!DNL Anaplan] budgetallokering för en [!DNL Adobe Workfront] kampanjbegäran eller ett kampanjprojekt](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 
 <!--[!BADGE New!]{type=Informative} -->
