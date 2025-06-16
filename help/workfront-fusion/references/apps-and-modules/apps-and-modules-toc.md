@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
+source-git-commit: 12315eca71d8febf7f3e5bb055d94cd5ccb9361e
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,6 @@ Med dessa moduler kan du utföra åtgärder på dina data, men du behöver inte 
 * [Markeringsmoduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
 * [Matematisk modul](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
 * [MIME-moduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
-* [Modul för MCP (Model Context Protocol)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
 * [Texttolkningsmoduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
 * [Verktygsmoduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
 * [XML-moduler](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)
