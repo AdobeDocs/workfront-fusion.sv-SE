@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 2bd3a9ba84182307af9349163db284514dd12aca
+source-git-commit: b6997c2b160307489322fb6ede445336ef8bd85e
 workflow-type: tm+mt
-source-wordcount: '2761'
+source-wordcount: '2753'
 ht-degree: 0%
 
 ---
@@ -130,10 +130,6 @@ Om du vill ta med autentiseringsuppgifter i anslutningen aktiverar du alternativ
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Tenant ID]</p> </td> 
       <td>Ange klientorganisations-ID för den SharePoint-app du ansluter till.</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Instance]</p> </td> 
-      <td> <p>Ange adressen för ditt [!DNL ServiceNow]-konto utan <code>https://</code> (vanligtvis <code>&lt;company>.service-now.com</code>).</p> </td> 
      </tr> 
     </tbody> 
    </table>
