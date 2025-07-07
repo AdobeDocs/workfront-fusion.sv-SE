@@ -4,9 +4,9 @@ description: Automatisering av arbete kräver snabb bearbetning, så [!DNL Adobe
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
+source-git-commit: bebb30132a2cce66037f243563d61939625ea59d
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -92,3 +92,7 @@ Tänk på följande när det gäller rekursion:
 * **När ett scenario orsakar rekursion inaktiveras det av Fusion Engineering-teamet för att förhindra ytterligare prestandaproblem.**
 * Eftersom rekursion är ett resultat av scenariodesign måste du utforma dina scenarier på ett sätt som säkerställer att scenariot inte innehåller åtgärder som utlöser scenariot.
 
+## TLS
+
+* Fusion har för närvarande stöd för TLS version 1.2 som standard.
+* Organisationer kan begära att TLS version 1.3 aktiveras för deras Fusion-instans.
