@@ -4,9 +4,9 @@ description: Automatisering av arbete kräver snabb bearbetning, så [!DNL Adobe
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 784516c1282f318a46b32c803064d869cc116790
+source-git-commit: 74324fd5f2f68dfbbd0dfe1286c202c246f29d43
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
@@ -96,6 +96,7 @@ Tänk på följande när det gäller rekursion:
 
 * Fusion har för närvarande stöd för TLS version 1.2 som standard.
 * Fusion kan använda TLS 1.3 för utgående HTTPS-begäranden om TLS 1.3 är aktiverat för måltjänsten.
+* Fusion har stöd för både TLS 1.2 och TLS 1.3 för inkommande HTTPS-begäranden till Webhooks.
 * Organisationer kan begära att TLS version 1.3 aktiveras för deras Fusion-instans.
 
 >[!NOTE]
