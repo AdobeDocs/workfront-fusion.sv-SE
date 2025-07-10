@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Workfront Fusion] HubSpot CRM-modulerna kan du öv
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 0e4986d0d66b98213efabd487e6701f8385161e3
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '6324'
+source-wordcount: '6321'
 ht-degree: 0%
 
 ---
@@ -1433,7 +1433,7 @@ Den här åtgärdsmodulen skapar en ny uppgift för en kalender. Anslutningen so
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Event Date]</td> 
-   <td>Ange eller mappa datumet för den här uppgiften.<p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Ange eller mappa datumet för den här uppgiften.<p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Category]</td> 
@@ -1682,7 +1682,7 @@ Den här åtgärdsmodulen skapar och publicerar omedelbart ett meddelande på de
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Trigger at]</td> 
-   <td>Ange eller mappa det datum och den tid som du vill att sändningen ska skickas. Om detta lämnas tomt skickas sändningen omedelbart.<p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Ange eller mappa det datum och den tid som du vill att sändningen ska skickas. Om detta lämnas tomt skickas sändningen omedelbart.<p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -1782,7 +1782,7 @@ Denna åtgärdsmodul skapar ett nytt blogginlägg.
   </tr> 
   <tr> 
    <td role="rowheader">Publiceringsdatum</td> 
-   <td>Ange eller mappa datumet då blogginlägget ska publiceras. <p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Ange eller mappa datumet då blogginlägget ska publiceras. <p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">Namn</td> 

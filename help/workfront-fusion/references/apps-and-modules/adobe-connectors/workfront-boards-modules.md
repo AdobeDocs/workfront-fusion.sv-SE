@@ -4,9 +4,9 @@ description: Du kan använda Adobe Workfront Boards-kontakten för att automatis
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '2659'
+source-wordcount: '2658'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Adobe Workfront Boards-anslutningen använder följande:
 
 Så här skapar du en anslutning till Workfront Boards:
 
-1. Klicka på **[!UICONTROL Add]** bredvid anslutningsrutan i någon [!DNL Adobe Workfront Boards]-modul.
+1. Klicka på [!DNL Adobe Workfront Boards] bredvid anslutningsrutan i någon **[!UICONTROL Add]**-modul.
 
 1. Fyll i följande fält:
 
@@ -327,7 +327,7 @@ Den här åtgärdsmodulen uppdaterar information för ett kort som du anger.
   <tr> 
    <td>[!UICONTROL Due date]</td> 
    <td>Ange eller mappa förfallodatumet för kortet.</p>
-   <p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</p>
+   <p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</p>
    </td> 
   </tr> 
   <tr> 

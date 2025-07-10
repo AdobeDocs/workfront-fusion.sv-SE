@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '4370'
+source-wordcount: '4366'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 ## Förutsättningar
 
-Du måste ha ett [!UICONTROL Trello]-konto för att kunna använda [!DNL Trello]-moduler.
+Du måste ha ett [!DNL Trello]-konto för att kunna använda [!UICONTROL Trello]-moduler.
 
 ## API-information för Trello
 
@@ -255,7 +255,7 @@ Den här åtgärdsmodulen skapar en ny anslagstavla med de valda inställningarn
    <td> <p>Välj mellan två sätt att föråldra kort. </p> 
     <ul> 
      <li><strong>[!UICONTROL Pirate mode]</strong>Korten kommer att riva, gult och spricka som en gammal piratkarta när de blir gamla.</li> 
-     <li><strong>[!UICONTROL Regular mode &#x200B;]</strong>: Korten blir allt mer transparenta allt eftersom de blir äldre. </li> 
+     <li><strong>[!UICONTROL Regular mode ]</strong>: Korten blir allt mer transparenta allt eftersom de blir äldre. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -270,95 +270,95 @@ Den här åtgärdsmodulen redigerar inställningarna för en befintlig anslagsta
 >[!SUCCESS]
 >
 ><table style="table-layout:auto">
-><col> 
-> <col> 
-> <tbody> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Connection] </td> 
->   <td> <p>Instruktioner om hur du ansluter ditt [!UICONTROL Trello]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
->   <td> <p>Ange eller mappa det unika [!UICONTROL Trello]-ID:t för den anslagstavla som du vill att modulen ska skapa. Du kan hämta anslagstavlans ID med hjälp av en annan modul, som till exempel bevakningsmodulen</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL New name]</td> 
->   <td> <p> Ange eller mappa ett nytt namn för ritytan.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL New description]</td> 
->   <td> <p> Ange eller mappa en ny kortbeskrivning.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
->   <td> <p>Ange eller mappa det unika [!UICONTROL Trello]-ID:t för den anslagstavla som du vill att modulen ska redigera.  </p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Subscribe] </td> 
->   <td> <p>Välj ett alternativ för att ange om användaren som äger anslutningen som används av den här modulen ska prenumerera på styrelsen.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
->   <td> <p>Styrelserna har olika regler för omröstning och kommentarer för varje behörighetsnivå. Om din styrelse till exempel är [!UICONTROL Private] och du anger röstregler och kommentarsregler som [!UICONTROL All] får du ett felmeddelande. </p> <p>Omröstning och kommentarer är begränsade till följande grupper för varje behörighetsnivå:</p> 
->    <ul> 
->     <li><strong>[!UICONTROL Private]</strong>: 
->      Medlemmar, medlemmar och observatörer</li> 
->     <li><strong>[!UICONTROL For organization]</strong>: 
->      Medlemmar, medlemmar och observatörer, organisationsmedlemmar</li> 
->     <li><strong>[!UICONTROL Public]</strong>: 
->      Medlemmar, medlemmar och observatörer, organisationsmedlemmar, alla</li> 
->    </ul> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
->   <td> <p>Välj ett alternativ för att ange vem som får rösta i den här styrelsen. Se fältet [!UICONTROL Permission level] för röstbegränsningar på behörighetsnivåer.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
->   <td> <p>Välj ett alternativ för att ange vem som kan kommentera kort för den här anslagstavlan. Gå till fältet [!UICONTROL Permission level] för att kommentera begränsningar för behörighetsnivåer.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Invitations] </td> 
->   <td> <p>Välj vem som kan bjuda in personer till den här styrelsen.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Self-join]</td> 
->   <td> <p> Välj om teammedlemmarna ska kunna gå med i styrelsen själva eller om de ska bli inbjudna.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Card covers]</td> 
->   <td> <p> Välj om kortomslag ska visas på den här anslagstavlan.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Background] </td> 
->   <td> <p>Välj bakgrundsfärgen eller den anpassade bakgrunden.</p> <p>Obs! Anpassade bakgrunder är bara tillgängliga för [!UICONTROL Trello Gold and Business Class] prenumeranter.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Background ID]</td> 
->   <td> <p> Om du har valt att använda en anpassad bakgrund i fältet [!UICONTROL Background] anger eller mappar du ID:t för bakgrunden som du vill använda.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
->   <td> <p>Välj mellan två sätt att föråldra kort. </p> 
->    <ul> 
->     <li><strong>[!UICONTROL Pirate mode]</strong>Korten kommer att riva, gult och spricka som en gammal piratkarta när de blir gamla.</li> 
->     <li><strong>[!UICONTROL Regular mode]</strong>: Korten blir allt mer transparenta allt eftersom de blir äldre. </li> 
->    </ul> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Calendar feed enabled]</td> 
->   <td> <p> Ange om kalenderfeeden är aktiverad eller inte.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL &lt;Color> label name]</td> 
->   <td> <p> Tilldela ett namn till den önskade färgetiketten.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Archive] </td> 
->   <td> <p>Välj ett alternativ som anger om du vill arkivera (stänga) styrelsen. </p> </td> 
->  </tr> 
-> </tbody> 
-></table>
+<col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!UICONTROL Trello]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
+   <td> <p>Ange eller mappa det unika [!UICONTROL Trello]-ID:t för den anslagstavla som du vill att modulen ska skapa. Du kan hämta anslagstavlans ID med hjälp av en annan modul, som till exempel bevakningsmodulen</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL New name]</td> 
+   <td> <p> Ange eller mappa ett nytt namn för ritytan.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL New description]</td> 
+   <td> <p> Ange eller mappa en ny kortbeskrivning.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
+   <td> <p>Ange eller mappa det unika [!UICONTROL Trello]-ID:t för den anslagstavla som du vill att modulen ska redigera.  </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Subscribe] </td> 
+   <td> <p>Välj ett alternativ för att ange om användaren som äger anslutningen som används av den här modulen ska prenumerera på styrelsen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
+   <td> <p>Styrelserna har olika regler för omröstning och kommentarer för varje behörighetsnivå. Om din styrelse till exempel är [!UICONTROL Private] och du anger röstregler och kommentarsregler som [!UICONTROL All] får du ett felmeddelande. </p> <p>Omröstning och kommentarer är begränsade till följande grupper för varje behörighetsnivå:</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Private]</strong>: 
+      Medlemmar, medlemmar och observatörer</li> 
+     <li><strong>[!UICONTROL For organization]</strong>: 
+      Medlemmar, medlemmar och observatörer, organisationsmedlemmar</li> 
+     <li><strong>[!UICONTROL Public]</strong>: 
+      Medlemmar, medlemmar och observatörer, organisationsmedlemmar, alla</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
+   <td> <p>Välj ett alternativ för att ange vem som får rösta i den här styrelsen. Se fältet [!UICONTROL Permission level] för röstbegränsningar på behörighetsnivåer.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
+   <td> <p>Välj ett alternativ för att ange vem som kan kommentera kort för den här anslagstavlan. Gå till fältet [!UICONTROL Permission level] för att kommentera begränsningar för behörighetsnivåer.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Invitations] </td> 
+   <td> <p>Välj vem som kan bjuda in personer till den här styrelsen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Self-join]</td> 
+   <td> <p> Välj om teammedlemmarna ska kunna gå med i styrelsen själva eller om de ska bli inbjudna.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Card covers]</td> 
+   <td> <p> Välj om kortomslag ska visas på den här anslagstavlan.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Background] </td> 
+   <td> <p>Välj bakgrundsfärgen eller den anpassade bakgrunden.</p> <p>Obs! Anpassade bakgrunder är bara tillgängliga för [!UICONTROL Trello Gold and Business Class] prenumeranter.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Background ID]</td> 
+   <td> <p> Om du har valt att använda en anpassad bakgrund i fältet [!UICONTROL Background] anger eller mappar du ID:t för bakgrunden som du vill använda.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
+   <td> <p>Välj mellan två sätt att föråldra kort. </p> 
+    <ul> 
+     <li><strong>[!UICONTROL Pirate mode]</strong>Korten kommer att riva, gult och spricka som en gammal piratkarta när de blir gamla.</li> 
+     <li><strong>[!UICONTROL Regular mode]</strong>: Korten blir allt mer transparenta allt eftersom de blir äldre. </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar feed enabled]</td> 
+   <td> <p> Ange om kalenderfeeden är aktiverad eller inte.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL <Color> label name]</td> 
+   <td> <p> Tilldela ett namn till den önskade färgetiketten.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archive] </td> 
+   <td> <p>Välj ett alternativ som anger om du vill arkivera (stänga) styrelsen. </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 
 +++
@@ -691,7 +691,7 @@ Den här åtgärdsmodulen skapar ett kort i en markerad lista.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due date]</td> 
-   <td> <p> Ange kortets förfallodatum. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p> Ange kortets förfallodatum. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
@@ -763,7 +763,7 @@ Den här åtgärdsmodulen redigerar ett befintligt kort.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due date]</td> 
-   <td> <p> Ange kortets förfallodatum. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p> Ange kortets förfallodatum. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
@@ -1167,11 +1167,11 @@ Den här åtgärdsmodulen lägger till en kommentar på ett markerat kort.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Since] </td> 
-   <td> <p>Ange startdatum för den period då kommentaren skapades. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Ange startdatum för den period då kommentaren skapades. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Before] </td> 
-   <td> <p>Ange slutdatumet för den period då kommentaren skapades. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Ange slutdatumet för den period då kommentaren skapades. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

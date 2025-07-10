@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Acrobat Sign] modulerna kan du starta ett [!DNL Ad
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '5503'
+source-wordcount: '5501'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Den här utlösarmodulen startar ett scenario när ett avtal skapas eller uppdat
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Find text]</td> 
-   <td> <p>Ange termer som du vill söka efter. Modulen returnerar poster som innehåller dessa termer som fältvärden.</p> <p>Mer information om hur du söker efter fält i [!DNL Adobe Acrobat Sign] finns i"Hur textsökning fungerar" i <a href="https://helpx.adobe.com/se/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign-sökning - hur den fungerar</a>.</p> </td> 
+   <td> <p>Ange termer som du vill söka efter. Modulen returnerar poster som innehåller dessa termer som fältvärden.</p> <p>Mer information om hur du söker efter fält i [!DNL Adobe Acrobat Sign] finns i"Hur textsökning fungerar" i <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign-sökning - hur den fungerar</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned agreements]</td> 
@@ -264,7 +264,7 @@ Den här åtgärdsmodulen skapar en ny post av den valda typen.
      <li> <p><b>[!UICONTROL Sharing mode]</b> </p> <p>Ange vem som ska ha åtkomst till biblioteksdokumentet.</p> </li> 
      <li> <p><b>[!UICONTROL Library document state]</b> </p> <p>Välj om dokumentet är i redigeringsläge eller aktivt.</p> </li> 
      <li> <p><b>[!UICONTROL Library template type]</b> </p> <p>För varje biblioteksmalltyp som du vill använda klickar du på <b>[!UICONTROL Add item]</b> och väljer malltypen.</p> </li> 
-     <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>Ange det senaste datumet då en händelse inträffade i biblioteksdokumentet.</p> <p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
+     <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>Ange det senaste datumet då en händelse inträffade i biblioteksdokumentet.</p> <p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</p> </li> 
      <li> <p><b>[!UICONTROL Library document status]</b> </p> <p>Välj biblioteksdokumentets status.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -595,7 +595,7 @@ Den här åtgärdsmodulen skapar poster som är länkade till en modul som du v�
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>Ange e-postadressen till den person som tar emot det nya webbformuläret</p> </li> 
          <li> <p><b>[!UICONTROL Comment]</b> </p> <p>Ange en kommentar som beskriver hur API-anroparen etablerade undertecknarens identitet. Den här informationen visas i granskningsspåret [!DNL Adobe Acrobat Sign].</p> </li> 
-         <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>Ange ett förfallodatum för personaliseringen av det här webbformuläret. </p> <p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
+         <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>Ange ett förfallodatum för personaliseringen av det här webbformuläret. </p> <p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Typtvång</a>.</p> </li> 
          <li> <p><b>[!UICONTROL Reusable]</b> </p> <p>Välj <b>[!UICONTROL Yes]</b> om du vill att den avsedda signeraren ska kunna signera formuläret mer än en gång.</p> </li> 
         </ul> </li> 
       </ul> </li> 
@@ -973,7 +973,7 @@ Den här sökmodulen söker efter avtal baserat på de villkor du anger.
     <ul> 
      <li> <p><b>[!UICONTROL Find text]</b> </p> <p>Ange den text som du vill söka efter i avtalsmetadata. Varje ord behandlas som ett separat textobjekt. </p> </li> 
      <li> <p><b>[!UICONTROL Find text in]</b> </p> <p>Markera metadatafälten som du vill söka efter text i. Om du inte markerar något söks alla metadata igenom.</p> </li> 
-    </ul> <p>Modulen returnerar alla avtal som innehåller någon av den angivna texten i något av de markerade fälten. Exempel: om du anger "vårkampanj" och väljer alternativen Titel och Anteckning returneras alla avtal med orden "vår" eller "Campaign" i antingen Titel eller Anteckning.</p> <p>Mer information om hur du söker efter fält i [!DNL Adobe Acrobat Sign] finns i"Hur textsökning fungerar" i <a href="https://helpx.adobe.com/se/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Sök - Så fungerar det </a>.</p> </td> 
+    </ul> <p>Modulen returnerar alla avtal som innehåller någon av den angivna texten i något av de markerade fälten. Exempel: om du anger "vårkampanj" och väljer alternativen Titel och Anteckning returneras alla avtal med orden "vår" eller "Campaign" i antingen Titel eller Anteckning.</p> <p>Mer information om hur du söker efter fält i [!DNL Adobe Acrobat Sign] finns i"Hur textsökning fungerar" i <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Sök - Så fungerar det </a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Created date]</td> 

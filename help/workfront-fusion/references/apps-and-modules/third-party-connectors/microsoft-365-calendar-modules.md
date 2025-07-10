@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1558'
 ht-degree: 0%
 
 ---
@@ -317,11 +317,11 @@ Den här åtgärdsmodulen uppdaterar en befintlig händelse.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start date]</td> 
-   <td> Ange en enstaka tidpunkt när händelsen börjar i en kombinerad datum- och tidsbeteckning. Använd formatet <code>{date}T{time}</code>, till exempel <code>2017-08-29T04:00:00.0000000</code>. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</td> 
+   <td> Ange en enstaka tidpunkt när händelsen börjar i en kombinerad datum- och tidsbeteckning. Använd formatet <code>{date}T{time}</code>, till exempel <code>2017-08-29T04:00:00.0000000</code>. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL End date]</td> 
-   <td> Ange en enda tidpunkt när händelsen slutar i en kombinerad datum- och tidsbeteckning. Använd formatet <code>({date}T{time}</code>, till exempel <code>2017-08-29T04:00:00.0000000</code>. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</td> 
+   <td> Ange en enda tidpunkt när händelsen slutar i en kombinerad datum- och tidsbeteckning. Använd formatet <code>({date}T{time}</code>, till exempel <code>2017-08-29T04:00:00.0000000</code>. En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reminder on]</td> 

@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: d9e6c26c-8770-40bc-a83a-8c05f86e4a3f
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -421,7 +421,7 @@ I den här modulen visas alla kommentarer om det angivna problemet.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Since]</td> 
-   <td>Modulen returnerar kommentarer som skapats efter detta datum. En lista över datumformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång i [!DNL Adobe Workfront Fusion]</a>.</td> 
+   <td>Modulen returnerar kommentarer som skapats efter detta datum. En lista över datumformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned comments]</td> 
@@ -512,7 +512,7 @@ Den här modulen söker efter problem som matchar sökvillkoren.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sort direction]</td> 
-   <td> <p>Välj stigande eller fallande. </p> <p>Om du väljer <strong>[!UICONTROL descending]</strong> för datum returneras det senaste datumet först. </p> <p>Om du väljer <strong>[!UICONTROL descending]</strong> för [!UICONTROL number of comments] returneras problemet med det högsta antalet kommentarer först.</p> </td> 
+   <td> <p>Välj stigande eller fallande. </p> <p>Om du väljer <strong>[!UICONTROL descending]</strong> för datum returneras det senaste datumet först. </p> <p>Om du väljer [!UICONTROL number of comments] för <strong>[!UICONTROL descending]</strong> returneras problemet med det högsta antalet kommentarer först.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 

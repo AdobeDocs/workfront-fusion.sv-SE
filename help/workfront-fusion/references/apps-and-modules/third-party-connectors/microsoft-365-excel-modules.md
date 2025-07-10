@@ -4,7 +4,7 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: d967cb62018fde6a76639a8f25ee5ca23f80cd8b
 workflow-type: tm+mt
 source-wordcount: '2260'
 ht-degree: 0%
@@ -140,7 +140,8 @@ Den här åtgärdsmodulen hämtar innehållet i den angivna Excel-arbetsboken.
      <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>I fältet [!UICONTROL Workbook] väljer du arbetsboken som du vill att modulen ska hämta, inklusive sökvägen om den inte finns i rotmappen.</p> </li> 
     </ul> </td> 
   </tr> 
- </tbody>
+ </tbody> 
+</table>
 
 #### [!UICONTROL Search Workbooks]
 
