@@ -4,9 +4,9 @@ description: Mappen [!UICONTROL Incomplete executions] lagrar scenariekörningar
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: ad304117fb6e9d1320b8e50d71a162609dc6e6f4
+source-git-commit: f2ddf62d660c4709f1e7e59c4302cde5b062725f
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -87,9 +87,11 @@ Mer information finns i [Fel som leder till ofullständiga körningar](#errors-r
 
 >[!NOTE]
 >
->Den aktuella storleksgränsen för mappen för olösta ofullständiga körningar per organisation är 500 MB. Om din organisation överskrider denna gräns kan följande fel uppstå:
+>Den aktuella storleksgränsen för mappen för olösta ofullständiga körningar per scenario är 10 MB. Om ditt scenario överskrider denna gräns kan följande fel uppstå:
 >
->`"There is NOT ENOUGH SPACE to add a bundle to the IEQ. The reason is: Too many incomplete executions."`
+>`DLQ limit per scenario has been exceeded`
+>
+>Teamen är begränsade till totalt 500 MB för alla olösta ofullständiga körningar.
 >
 >Mer information finns i [Aktivera dataförlust](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss) i artikeln Konfigurera scenarioinställningar.
 

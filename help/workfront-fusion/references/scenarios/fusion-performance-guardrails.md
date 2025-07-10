@@ -4,9 +4,9 @@ description: Automatisering av arbete kräver snabb bearbetning, så [!DNL Adobe
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 74324fd5f2f68dfbbd0dfe1286c202c246f29d43
+source-git-commit: f2ddf62d660c4709f1e7e59c4302cde5b062725f
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,8 @@ Mer information finns i [Arbeta med stora filer](/help/workfront-fusion/referenc
 
 ## Ofullständiga körningar
 
-* Ofullständiga körningar är begränsade till en total storlek på **500 MB**. Om gränsen på 500 MB nås kommer inga fler ofullständiga körningar att lagras.
+* Ofullständiga körningar begränsas till en total storlek på *10 MB** per scenario. Om gränsen på 10 MB nås kommer inga fler ofullständiga körningar att lagras för det scenariot.
+* Ofullständiga körningar är begränsade till en total storlek på **500 MB** per team. Om gränsen på 500 MB nås kommer inga fler ofullständiga körningar att lagras för det teamet.
 
 ## Försök igen
 
