@@ -4,9 +4,9 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: b6997c2b160307489322fb6ede445336ef8bd85e
+source-git-commit: 5af0b7ab4646502418f188854fdec43bcacc7549
 workflow-type: tm+mt
-source-wordcount: '2753'
+source-wordcount: '3224'
 ht-degree: 0%
 
 ---
@@ -221,6 +221,8 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 * [Skapa en fil](#create-a-file)
 * [Skapa en mapp](#create-a-folder)
 * [Hämta en fil](#get-a-file)
+* [Hämta en mapp](#get-a-folder)
+* [Uppdatera en mapp eller fil](#update-a-folder-or-a-file)
 * [Bevaka mappobjekt](#watch-folder-items)
 
 #### Skapa en fil
@@ -299,6 +301,56 @@ Den här åtgärdsmodulen hämtar den angivna SharePoint-filen.
 </tbody> 
 </table>
 
+#### Hämta en mapp
+
+Den här modulen hämtade information om den angivna mappen
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Microsoft SharePoint Online-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Ansluta Microsoft SharePoint Online till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter Site, Drive, and File                IDs]</td> 
+   <td> <p>Välj hur du vill identifiera platsen för filen som du vill hämta.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Ange eller mappa <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> och <strong>[!UICONTROL Folder path]</strong> för mappen som du vill hämta.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Välj plats för mappen. </p> </li> 
+    </ul> </td> 
+  </tr> 
+</tbody> 
+</table>
+
+#### Uppdatera en mapp eller fil
+
+Den här åtgärdsmodulen uppdaterar metadata för en mapp eller fil
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Microsoft SharePoint Online-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Ansluta Microsoft SharePoint Online till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter Site, Drive, and File                IDs]</td> 
+   <td> <p>Välj hur du vill identifiera platsen för filen som du vill hämta.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Ange eller mappa <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> och <strong>[!UICONTROL Folder or item ID]</strong> för mappen eller filen som du vill hämta.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Välj plats för mappen. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  </tr> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td>För varje metadatafält som du vill uppdatera klickar du på <b>Lägg till objekt</b> och anger fältets sökväg och värde.</td> 
+  <tr>
+</tbody> 
+</table>
+
 #### Bevaka mappobjekt
 
 Den här utlösarmodulen startar ett scenario när ett objekt uppdateras i en mapp som du väljer.
@@ -332,9 +384,10 @@ Den här utlösarmodulen startar ett scenario när ett objekt uppdateras i en ma
 * [[!UICONTROL Create an item]](#create-an-item)
 * [[!UICONTROL Delete an item]](#delete-an-item)
 * [[!UICONTROL Get an Item]](#get-an-item)
+* [Hämta information](#get-details)
 * [[!UICONTROL List Items]](#list-items)
-* [[!UICONTROL Move Item]](#move-an-item)
-* [[!UICONTROL Update an item]](#update-an-item)
+* [[!UICONTROL Move an Item]](#move-an-item)
+* [[!UICONTROL Update an Item]](#update-an-item)
 * [[!UICONTROL Watch Items] (schemalagd)](#watch-items-scheduled)
 
 
@@ -440,6 +493,25 @@ Den här åtgärdsmodulen returnerar data för ett angivet objekt.
     </ul> </td> 
   </tr> 
  </tbody> 
+</table>
+
+#### Hämta information
+
+Den här modulen hämtar objektinformation från den angivna URL:en.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Microsoft SharePoint Online-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Ansluta Microsoft SharePoint Online till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Webb-URL</td> 
+   <td> Ange eller mappa URL:en för objektet som du vill hämta information för. </td> 
+  </tr> 
+</tbody> 
 </table>
 
 #### [!UICONTROL List Items]
@@ -687,6 +759,11 @@ Den här utlösarmodulen startar ett scenario när en lista skapas eller ändras
 >
 >API:er i `beta`-versionen i [!DNL Microsoft Graph] kan komma att ändras. Det går inte att använda dessa API:er i produktionsprogram.
 
+* [Hämta en sida](#get-a-page)
+* [Listsidor](#list-pages)
+* [Publicera en sida](#publish-a-page)
+* [Bevakade sidor](#watch-pages)
+
 #### [!UICONTROL Get a Page]
 
 Denna åtgärdsmodul returnerar data för en angiven sida.
@@ -706,6 +783,83 @@ Denna åtgärdsmodul returnerar data för en angiven sida.
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Ange eller mappa <strong>[!UICONTROL Site ID]</strong> och <strong>[!UICONTROL Page ID]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Markera den webbplats som innehåller den sida som du vill hämta och markera sedan sidan.</p> </li> 
     </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Listsidor
+
+Den här modulen hämtar en lista över alla sidor.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Microsoft SharePoint Online-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Ansluta Microsoft SharePoint Online till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL List Pages]</td> 
+   <td> <p>Välj hur du vill identifiera sidorna som du vill visa.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Ange eller mappa <strong>[!UICONTROL Site ID]</strong> för den plats som innehåller de sidor som du vill visa.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Markera platsen som innehåller de sidor som du vill visa.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Ange eller mappa det maximala antal sidor som modulen ska returnera under varje körningscykel för scenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Publicera en sida
+
+Den här åtgärdsmodulen publicerar den senaste versionen av den markerade sidan.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Microsoft SharePoint Online-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Ansluta Microsoft SharePoint Online till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Publish a page]</td> 
+   <td> <p>Välj hur du vill identifiera sidan som du vill publicera.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Ange eller mappa <strong>[!UICONTROL Site ID]</strong> och <strong>[!UICONTROL Page ID]</strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Markera den webbplats som innehåller den sida som du vill publicera och markera sedan sidan.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Bevakade sidor
+
+Den här utlösarmodulen startar ett scenario när en sida ändras på den angivna webbplatsen.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Microsoft SharePoint Online-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Ansluta Microsoft SharePoint Online till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter Site ID]</td> 
+   <td> <p>Välj hur du vill identifiera sidorna som du vill visa.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Ange eller mappa <strong>[!UICONTROL Site ID]</strong> för webbplatsen som innehåller de sidor som du vill bevaka.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Markera den plats som innehåller de sidor som du vill titta på.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Ange eller mappa det maximala antal sidor som modulen ska returnera under varje körningscykel för scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
