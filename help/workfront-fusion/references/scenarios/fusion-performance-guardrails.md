@@ -4,9 +4,9 @@ description: Automatisering av arbete kräver snabb bearbetning, så [!DNL Adobe
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: cf9e7def3ce406b693d22ff31f82571dd5eddd31
+source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,8 @@ Automatisering av arbete kräver snabb bearbetning, så [!DNL Adobe Workfront Fu
 
 * Fusions totala bearbetningskapacitet för filer är **1 GB**. Gränsen baseras på en total minneskostnad. Alla operationer bidrar till den kostnaden. Om en fil på 400 MB laddas ned och överförs blir den totala kostnaden för filkapaciteten 800 MB.
 * Organisationer som har Workfront Ultimate-plan har tillgång till mer än 1 GB filbearbetning. Fusion-plattformen har stöd för enskilda filer upp till 15 GB för en enda åtgärd (t.ex. överföringsfil), men det finns andra faktorer som påverkar dataöverföringen. Storleksgränsen för en åtgärd beror på hur web service Fusion ansluts till. Dataöverföring är den totala bearbetningen för en enskild körning. Detta innebär att flera åtgärder i en enda körning bidrar till den totala dataöverföringen. Fusion bearbetar filer tills körningsgränsen på 40 minuter är nådd.
+* Om en fil laddas ned med en modul som stöder stora filer och sedan skickas till en modul som inte stöder stora filer, bearbetas inte filen korrekt i den modulen. Stora filer måste hanteras exklusivt med moduler som stöds i hela arbetsflödet.
+* Moduler som inte stöder stora filer kan bearbeta filer som är högst **200 MB**.
 
 Mer information finns i [Arbeta med stora filer](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 

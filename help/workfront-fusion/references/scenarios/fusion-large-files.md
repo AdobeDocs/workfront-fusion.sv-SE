@@ -4,9 +4,9 @@ description: Stöd för stora filer finns för närvarande för Workfront- och H
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 0e69dfa23fc12cb20c3fed772d72ef348536ea24
+source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,11 @@ Om du vill hantera större filer måste du uppdatera dina scenarier.
 ## Kopplingar som stöder stora filer
 
 För närvarande har följande kopplingar stöd för stora filer.
+
+>[!NOTE]
+>
+>* Om en fil laddas ned med en modul som stöder stora filer och sedan skickas till en modul som inte stöder stora filer, bearbetas inte filen korrekt i den modulen. Stora filer måste hanteras exklusivt med moduler som stöds i hela arbetsflödet.
+>* Moduler som inte stöder stora filer kan bearbeta filer som är upp till 200 MB stora.
 
 * Workfront
    * Överför dokument
