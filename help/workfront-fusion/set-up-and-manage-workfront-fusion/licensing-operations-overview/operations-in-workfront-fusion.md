@@ -4,9 +4,9 @@ description: En åtgärd i Adobe Workfront Fusion är en uppgift som utförs av 
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3470f7a9658ac4e6214c27f94f5b41821f2f8665
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,13 @@ En åtgärd i Adobe Workfront Fusion är en uppgift som utförs av en modul. Fö
 Din organisation kan ha en månatlig driftgräns. Detta baseras på den [!DNL Workfront]-plan som din organisation har köpt. Planen [!UICONTROL Ultimate] [!DNL Workfront] erbjuder ett obegränsat antal åtgärder.
 
 Om din organisation har en månadsgräns meddelas du när din organisation har nått gränsen. Om din organisation överskrider gränsen kontaktar [!DNL Workfront] din organisation för att säkerställa att din plan uppfyller dina behov.
+
+Workfront Fusion skickar ett meddelande när din organisation når följande procentandelar av organisationens månadsgräns:
+
+* 50 %
+* 75 %
+* 90 %
+* 100 %
 
 ## Visa antalet åtgärder som har utförts under de senaste 30 dagarna
 
