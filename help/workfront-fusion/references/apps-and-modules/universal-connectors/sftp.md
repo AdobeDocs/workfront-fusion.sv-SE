@@ -4,9 +4,9 @@ description: Med modulerna  [!DNL Adobe Workfront Fusion SFTP] kan du övervaka 
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: 26c599a9887ad931763b787813153bb7791ce5d1
+source-git-commit: 0e187fb3c31375c4dc12d0f9a8438bcb6f9ea7e8
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1916'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,46 @@ Om du vill ansluta ditt SFTP-konto till [!DNL Workfront Fusion] måste du skapa 
 </table>
 
 När du har angett anslutningsinformationen klickar du på **[!UICONTROL Continue]** för att upprätta en anslutning.
+
+### Anslutningsalternativ som stöds
+
+SFTP-anslutningen stöder följande när en anslutning skapas:
+
+#### Nyckelutbytesalgoritmer (KEX)
+
+* `ecdh-sha2-nistp256`
+* `ecdh-sha2-nistp384`
+* `ecdh-sha2-nistp521`
+* `diffie-hellman-group-exchange-sha256`
+* `diffie-hellman-group14-sha256`
+* `diffie-hellman-group16-sha512`
+* `diffie-hellman-group18-sha512`
+* `diffie-hellman-group14-sha1`
+
+#### Ciphers
+
+* `aes256-gcm@openssh.com`
+* `aes256-gcm`
+* `aes128-gcm@openssh.com`
+* `aes128-gcm`
+* `aes256-ctr`
+* `aes192-ctr`
+* `aes128-ctr`
+* `aes256-cbc`
+* `aes192-cbc`
+* `aes128-cbc`
+* `blowfish-cbc`
+
+#### Värdnyckelformat för server
+
+* `ssh-ed25519`
+* `ecdsa-sha2-nistp256`
+* `ecdsa-sha2-nistp384`
+* `ecdsa-sha2-nistp521`
+* `ssh-rsa`
+* `ssh-dss`
+* `rsa-sha2-256`
+* `rsa-sha2-512`
 
 ## [!UICONTROL SFTP]-moduler och deras fält
 
