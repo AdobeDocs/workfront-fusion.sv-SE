@@ -4,7 +4,7 @@ description: Med modulerna  [!DNL Adobe Workfront Fusion SFTP] kan du övervaka 
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: 0e187fb3c31375c4dc12d0f9a8438bcb6f9ea7e8
+source-git-commit: 358101ee7e4168913976b86fa712ed9aeb979093
 workflow-type: tm+mt
 source-wordcount: '1916'
 ht-degree: 0%
@@ -148,8 +148,10 @@ SFTP-anslutningen stöder följande när en anslutning skapas:
 * `ecdsa-sha2-nistp521`
 * `ssh-rsa`
 * `ssh-dss`
+<!--
 * `rsa-sha2-256`
 * `rsa-sha2-512`
+-->
 
 ## [!UICONTROL SFTP]-moduler och deras fält
 
