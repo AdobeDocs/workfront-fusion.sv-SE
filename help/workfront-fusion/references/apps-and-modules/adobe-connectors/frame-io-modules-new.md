@@ -4,18 +4,18 @@ description: Kontot  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: cc1ce10fccf159a0c17a3bba978d88c0d1013cbf
+source-git-commit: 7eaed8b6afd5de0d36c94605c9708d74b6ec8aa6
 workflow-type: tm+mt
-source-wordcount: '2604'
+source-wordcount: '3094'
 ht-degree: 0%
 
 ---
 
-# [!DNL Frame.io] Beta-moduler (V4)
+# [!DNL Frame.io] V4-moduler
 
 >[!IMPORTANT]
 >
->I den här artikeln beskrivs den nya (beta) versionen av Frame.io-kopplingen. Den här kopplingen används för att ansluta till Frame.io version 4.
+>I den här artikeln beskrivs den nya versionen av Frame.io-kopplingen. Den här kopplingen används för att ansluta till Frame.io version 4.
 >
 >Instruktioner om den äldre versionen av Frame.io-kopplingen finns i [Frame.io Legacy-koppling](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
 
@@ -25,7 +25,7 @@ Workfront har två Frame.io-anslutningar, baserat på den version av Frame.io so
 
 | Koppling | Frame.io-version |
 |---|---|
-| Frame.io (Beta) | V4 |
+| Frame.io | V4 |
 | Frame.io (äldre) | V3 |
 
 Instruktioner om den äldre versionen av Frame.io-kopplingen finns i [Frame.io Legacy-koppling](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
@@ -316,7 +316,8 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 * [[!UICONTROL Delete an asset]](#delete-an-asset)
 * [[!UICONTROL Get an asset]](#get-an-asset)
 * [[!UICONTROL List assets]](#list-assets)
-* [[!UICONTROL Update an asset]](#update-an-asset)
+* [Bevakad resurs borttagen](#watch-asset-deleted)
+* [Titta på ny resurs](#watch-new-asset)
 
 #### [!UICONTROL Create an asset] <!--different for v4-->
 
@@ -436,6 +437,60 @@ Den här sökmodulen hämtar alla resurser i det angivna projektets mapp.
  </tbody> 
 </table>
 
+#### Bevakad resurs borttagen
+
+Denna utlösarmodul startar ett scenario när en resurs tas bort.
+
+Välj den webkrok som du vill använda för den här modulen eller klicka på Lägg till bredvid Webkrok-fältet och ange följande information:
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>Ange ett namn för den nya webbkroken.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Markera kontot eller mappa ID:t för kontot som du vill bevaka för borttagna resurser.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Titta på ny resurs
+
+Den här utlösarmodulen startar ett scenario när en ny resurs skapas.
+
+Välj den webkrok som du vill använda för den här modulen eller klicka på Lägg till bredvid Webkrok-fältet och ange följande information:
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>Ange ett namn för den nya webbkroken.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Markera kontot eller mappa ID:t för kontot som du vill bevaka för nya resurser.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Kommentar
 
 * [[!UICONTROL Create a Comment]](#create-a-comment)
@@ -443,6 +498,8 @@ Den här sökmodulen hämtar alla resurser i det angivna projektets mapp.
 * [[!UICONTROL Get a Comment]](#get-a-comment)
 * [[!UICONTROL List Comments]](#list-comments)
 * [[!UICONTROL Update a Comment]](#update-a-comment)
+* [Bevakad kommentar uppdaterad](#watch-comment-updated)
+* [Se ny kommentar](#watch-new-comment)
 
 #### [!UICONTROL Create a comment]
 
@@ -603,6 +660,60 @@ Den här åtgärdsmodulen redigerar en befintlig kommentar.
  </tbody> 
 </table>
 
+#### Bevakad kommentar uppdaterad
+
+Den här utlösarmodulen startar ett scenario när en kommentar uppdateras.
+
+Välj den webkrok som du vill använda för den här modulen eller klicka på Lägg till bredvid Webkrok-fältet och ange följande information:
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>Ange ett namn för den nya webbkroken.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Markera kontot eller mappa ID:t för kontot som du vill bevaka för uppdaterade kommentarer.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Se ny kommentar
+
+Den här utlösarmodulen startar ett scenario när en kommentar skapas.
+
+Välj den webkrok som du vill använda för den här modulen eller klicka på Lägg till bredvid Webkrok-fältet och ange följande information:
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>Ange ett namn för den nya webbkroken.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Markera kontot eller mappa ID:t för kontot som du vill bevaka för nya kommentarer.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Mappar
 
 #### Skapa en mapp
@@ -643,6 +754,7 @@ Den här åtgärdsmodulen skapar en ny mapp i Frame.io.
 ### Projekt
 
 * [Skapa ett projekt](#create-a-project)
+* [Bjud in användare till Frame.io Project](#invite-users-to-frameio-project)
 * [Visa projekt](#list-projects)
 
 #### Skapa ett projekt
@@ -668,6 +780,38 @@ Denna åtgärdsmodul skapar ett nytt projekt i Frame.io.
    <tr> 
    <td role="rowheader">Namn </td> 
    <td> <p>Ange eller mappa ett namn för det nya projektet.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Bjud in användare till Frame.io Project
+
+Den här åtgärdsmodulen bjuder in användare till det angivna Frame.io-projektet.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Markera eller mappa kontot som innehåller projektet som du vill bjuda in en användare till.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Markera eller mappa arbetsytan som innehåller det projekt som du vill bjuda in en användare till.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Projekt-ID </td> 
+   <td> <p>Markera eller mappa projektet som du vill bjuda in en användare till.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Användar-ID </td> 
+   <td> <p>Markera eller mappa användaren som du vill bjuda in till projektet.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -834,6 +978,10 @@ Den här modulen visar alla arbetsytor i ett konto.
 
 ### Övriga
 
+* [Göra ett anpassat API-anrop](#make-a-custom-api-call)
+* [Se metadatavärdet uppdaterat](#watch-metadata-value-updated)
+
+
 #### [!UICONTROL Make a custom API call]
 
 Med den här modulen kan du utföra ett anpassat API-anrop.
@@ -868,6 +1016,33 @@ Med den här modulen kan du utföra ett anpassat API-anrop.
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Se metadatavärdet uppdaterat
+
+Den här utlösarmodulen startar ett scenario när en kommentar uppdateras.
+
+Välj den webkrok som du vill använda för den här modulen eller klicka på Lägg till bredvid Webkrok-fältet och ange följande information:
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>Ange ett namn för den nya webbkroken.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Markera kontot eller mappa ID:t för kontot som du vill bevaka för uppdaterade metadatavärden.</p> </td> 
   </tr> 
  </tbody> 
 </table>
