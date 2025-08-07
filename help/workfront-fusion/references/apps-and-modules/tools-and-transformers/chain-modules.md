@@ -5,9 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 454e06527fe1a624f36be3b7f3682ff49a61d42d
+exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
+source-git-commit: efab436edce8a5253b147c77b87a005f6efc63d0
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -105,6 +106,7 @@ Konfigurera modulen Anropa ett underordnat scenario
    De fält som är konfigurerade i utlösarmodulen för det underordnade scenariot visas i modulen Anropa ett underordnat scenario.
 
 1. Ange eller mappa den information som ska skickas till det underordnade scenariot till modulen Anropa ett underordnat scenario.
+1. (Villkorligt) Om du vill att det överordnade scenariot ska fortsätta att köras utan att vänta på ett svar från det underordnade scenariot aktiverar du alternativet **Avsluta och glöm**.
 1. Klicka på **OK** för att spara modulen.
 
 >[!NOTE]
@@ -128,4 +130,3 @@ Så här konfigurerar du modulen Lägg till svarare:
    Instruktioner om hur du skapar en datastruktur finns i [Datastrukturer](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 
 1. Klicka på **OK** för att spara modulen.
-
