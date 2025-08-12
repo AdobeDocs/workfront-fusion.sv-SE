@@ -5,7 +5,7 @@ description: Du kan konfigurera specifika inställningar för scenarier på pane
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: a7411649c0d65956552f40a7710315536755dc65
+source-git-commit: 273a07a28563a0eb3a3446937964e8dcef8a68d3
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
@@ -191,7 +191,7 @@ Mer information om den här sidan finns i [Scenarioinformation](/help/workfront-
 
 ### Antal efterföljande fel
 
-Definierar det maximala antalet på varandra följande körningsförsök innan körningen av ett scenario inaktiveras (exklusive `DataError`, `DuplicateDataError` och `ConnectionError`).
+Definierar det maximala antalet efterföljande körningsförsök innan körningen av ett scenario inaktiveras (exklusive `DataError`, `DuplicateDataError`, `ModuleTimeoutError` och `ConnectionError`).
 
 Mer information om fel finns i [Feltyper](/help/workfront-fusion/references/errors/error-processing.md).
 
