@@ -3,9 +3,10 @@ title: Visa en specifik scenariekörning
 description: Du kan visa information om en viss scenariokörning, inklusive filtrering och sökning efter scenariohändelser.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 5915476de34a883560d207d101a14e5b24abf3da
+exl-id: 34dd9836-9a1b-4ce2-b24e-ae769888a52a
+source-git-commit: 62b09469c1d85fd2bd1f154cde339cc4a10fc34a
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -85,3 +86,17 @@ Du kan visa en körning från scenariohistoriken.
 1. Klicka på filtret för att visa de paket som passerat genom ett filter. Siffran nära filtret representerar antalet paket som passerat filtret.
 1. Om du vill söka efter en specifik modul eller händelse på körningspanelen anger du söktermen i rutan **Sökningshändelser**. Resultaten visas när du skriver.
 1. Om du vill begränsa sökresultaten på körningspanelen efter status som Slutfört eller Varning klickar du på listrutan **Statusfilter** och väljer status.
+
+
+
+
+>[!NOTE]
+>
+>Om du vill skapa en länk till en viss modul lägger du till `?moduleId=<module-id>` i URL:en när du visar följande sidor:
+>
+>* Scenarioredigeringssida (URL:en slutar på `/edit`)
+>* En specifik scenariokörning (URL:en slutar på `/logs/<log-id>`)
+>
+>`<module-id>` refererar till numret bredvid moduletiketten när du visar scenariot.
+>
+>Detta kan vara användbart vid felsökning eller kopiering av modulkonfiguration.

@@ -4,9 +4,9 @@ description: I den här artikeln beskrivs den grundläggande processen att lägg
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 62b09469c1d85fd2bd1f154cde339cc4a10fc34a
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -108,3 +108,14 @@ Listan med kopplingar öppnas och visar alla kopplingar som redan används i sce
 1. Konfigurera modulen.
 
    Instruktioner om hur du konfigurerar specifika moduler finns i artikeln för de valda programmen, som listas i [Fusion-program och deras modulreferenser: artikelindex](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+
+>[!NOTE]
+>
+>Om du vill skapa en länk till en viss modul lägger du till `?moduleId=<module-id>` i URL:en när du visar följande sidor:
+>
+>* Scenarioredigeringssida (URL:en slutar på `/edit`)
+>* En specifik scenariokörning (URL:en slutar på `/logs/<log-id>`)
+>
+>`<module-id>` refererar till numret bredvid moduletiketten när du visar scenariot.
+>
+>Detta kan vara användbart vid felsökning eller kopiering av modulkonfiguration.
