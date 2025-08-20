@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 7f5339de5164a6eb43dae311335cacbc5c10ff96
+source-git-commit: f169b9d918d42bbecd885aeec1505bd41088907b
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,8 @@ Fusion erbjuder kopplingar för många tredjepartsprogram.
 * [Google Presentationsmoduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-slides-modules.md)
 * [Google Team Drive-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-team-drive-modules.md)
 * [CRM-moduler för Hubspot](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/hubspot-crm-modules.md)
-* [Jira Software-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
+* [Jira-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md)
+* [Jira Software modules (Legacy)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
 * [MariaDB-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/mariadb-modules.md)
 * [Microsoft 365 Calendar-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-calendar-modules.md)
 * [E-postmoduler för Microsoft 356](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-email-modules.md)

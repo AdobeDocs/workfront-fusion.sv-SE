@@ -4,14 +4,18 @@ description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
+source-git-commit: 8181cf8c2b2c4e6523cb16df0f91120e775e654b
 workflow-type: tm+mt
-source-wordcount: '1912'
+source-wordcount: '1942'
 ht-degree: 0%
 
 ---
 
 # [!DNL Jira Software] moduler
+
+>[!NOTE]
+>
+>De här instruktionerna gäller de äldre Jira Cloud- och Jira Server-anslutningarna. Instruktioner om den nya versionen av Jira-anslutningen, som bara heter Jira, finns i [Jira-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md).
 
 I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som använder [!DNL Jira Software] samt ansluta det till flera tredjepartsprogram och -tjänster.
 
@@ -127,7 +131,7 @@ Om du vill ansluta [!DNL Jira Software] till [!DNL Workfront Fusion] måste du s
 
 #### Konfigurera API-token [!DNL Jira] i [!DNL Workfront Fusion]
 
-1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL connection] i någon [!DNL Jira Cloud]-modul i [!DNL Workfront Fusion].
+1. Klicka på [!DNL Jira Cloud] bredvid fältet [!DNL Workfront Fusion] i någon **[!UICONTROL Add]**-modul i [!UICONTROL connection].
 1. Ange följande information:
 
    * **Miljö**
@@ -242,7 +246,7 @@ Om du vill hämta en privat nyckel för din [!DNL Workfront Fusion Jira]-anslutn
 >
 >Använd appen [!DNL Jira Server] för att ansluta till [!DNL Jira Server] eller [!DNL Jira Data Center].
 
-1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL connection] i någon [!DNL Jira Server]-modul i [!DNL Workfront Fusion].
+1. Klicka på [!DNL Jira Server] bredvid fältet [!DNL Workfront Fusion] i någon **[!UICONTROL Add]**-modul i [!UICONTROL connection].
 1. Fyll i följande fält i panelen [!UICONTROL Create a connection]:
 
    <table style="table-layout:auto"> 
