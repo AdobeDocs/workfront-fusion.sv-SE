@@ -3,9 +3,10 @@ title: Jira-moduler
 description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder Jira Software, samt ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: d16c1d9f257d44b72cfb93caa2a814fd62b0b733
+exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
+source-git-commit: 9865101fe57c2668ecb5ad743b3d6963833feb4a
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1607'
 ht-degree: 0%
 
 ---
@@ -73,15 +74,50 @@ För att kunna använda Jira-moduler måste du ha ett Jira-konto.
 
 ## Anslut Jira till Workfront Fusion
 
-Du kan skapa en anslutning till ditt Jira-konto direkt inifrån en Jira-modul.
+### Skapa nödvändiga autentiseringsuppgifter
 
->[!IMPORTANT]
->
->* Om du vill skapa en grundläggande anslutning till Jira Data Center behöver du en Jira Personal Access-token.
->* Om du vill skapa en grundläggande anslutning till Jira Cloud behöver du en Jira API-token
->* Om du vill skapa en OAuth 2-anslutning till Jira Cloud eller Jira Data Center behöver du ett Jira Client-ID och en klienthemlighet.
->
->Instruktioner om hur du skapar något av dessa finns i Jiras dokumentation.
+Om du vill skapa anslutningar till Jira behöver du följande:
+
+| Anslutningstyp | Kontotyp | Autentiseringsuppgifter krävs |
+|---|---|---|
+| OAuth 2 | Alla | Klient-ID och klienthemlighet |
+| Grundläggande | Jira Cloud | Jira API-token |
+| Grundläggande | Jira Data Center | Jira Personal Access Token (PAT) |
+
+Instruktioner om hur du skapar något av dessa finns i Jiras dokumentation.
+
+När du skapar dessa autentiseringsuppgifter behöver du följande information:
+
+* För OAuth 2:
+
+  | Fusion datacenter | Omdirigeringsadress |
+  |---|---|
+  | USA | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
+  | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2` |
+  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2` |
+
+
+
+* För personliga åtkomsttoken (PAT):
+
+  | Fusion datacenter | Omdirigeringsadress |
+  |---|---|
+  | USA | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira` |
+
+  >[!IMPORTANT]
+  >
+  >Om du vill använda en PAT-fil måste du aktivera följande i filerna `jira/bin/WEB-INF/classes` i filen `jira-config.properties`:
+  >
+  >* `jira.rest.auth.allow.basic = true`
+  >* `jira.rest.csrf.disabled = true`
+  >
+  >Om filen inte finns måste du skapa den.
+
+### Skapa anslutningen till Jira i Workfront Fusion
+
+Så här skapar du en anslutning i Workfront Fusion:
 
 1. Klicka på **Lägg till** bredvid anslutningsfältet i en Jira-modul.
 1. Konfigurera följande fält:
