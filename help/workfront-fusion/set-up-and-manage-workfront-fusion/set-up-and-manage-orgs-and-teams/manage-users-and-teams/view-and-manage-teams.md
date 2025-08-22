@@ -1,23 +1,30 @@
 ---
-title: Visa eller redigera användarinformation
-description: Hantera [!DNL Adobe Workfront Fusion] användare i din organisation
+title: Visa och hantera team
+description: Du kan visa en lista över organisationens team och redigera teamnamnen.
 author: Becky
 feature: Workfront Fusion
-exl-id: 0eeed98c-0c87-4e34-9efe-027f3f03af1b
 source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
 
-# Visa eller redigera användarinformation
+# Visa och hantera team
 
-[!DNL Adobe Workfront Fusion]-administratörer kan hantera användarinformation inuti [!DNL Workfront Fusion].
+Team är grupper av användare som delar åtkomst till särskilda resurser. Resurserna kan omfatta:
 
->[!NOTE]
->
->Om din organisation håller på att övergå till Adobe Admin Console kan du inte hantera användare i Workfront (lägga till eller ta bort användare). Du kan utföra dessa åtgärder i Adobe Admin Console när migreringen är klar.
+* Scenarier
+* Anslutningar
+* Webhooks
+* Tangenter
+* Datalager
+* Datastrukturer
+* Inställningar för e-postmeddelanden
+
+Du kan visa en lista över organisationens team och redigera namnen på teamen.
+
+Mer information om hur du lägger till användare i team finns i [Lägga till en användare i ett team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
 
 ## Åtkomstkrav
 
@@ -71,11 +78,17 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 +++
 
-## Visa eller redigera användarinformation
+## Visa och hantera team från Teams-området
 
-[!DNL Adobe Workfront Fusion]-administratörer kan visa och uppdatera användarinformation.
+1. Klicka på **Organisationsöversikt** i skärmens övre vänstra hörn i den vänstra navigeringen.
+1. Välj fliken **Team**.
 
-1. När du är inloggad som [!DNL Workfront Fusion]-administratör väljer du **[!UICONTROL All users]** i den vänstra navigeringen.
-1. Klicka på **[!UICONTROL Details]** på raden för den användare som du vill visa.
-1. (Valfritt) Om du vill uppdatera användarens information klickar du på **[!UICONTROL Options]** i skärmens övre högra hörn och väljer sedan **[!UICONTROL Change Details]**.
-1. Redigera informationen och klicka sedan på **Spara**.
+   Teamlistan öppnas.
+
+1. (Valfritt) Om du vill sortera grupplistan efter en kolumn klickar du på ikonen **Sortera** ![Sorteringsikonen](assets/sort-icon.png) för den kolumnen.
+1. (Valfritt) Om du vill dölja eller visa kolumner klickar du på ikonen **Kolumner** ![Kolumner](assets/columns-icon.png) i det övre högra hörnet av listan och aktiverar eller inaktiverar kolumner.
+1. (Valfritt) Om du vill filtrera listan börjar du skriva i sökfältet. Listan innehåller filter som endast innehåller team som innehåller söktermen.
+1. (Valfritt) Om du vill byta namn på ett team klickar du på **Redigera** på raden för det teamet, anger det nya teamnamnet och klickar på **Spara**.
+
+
+

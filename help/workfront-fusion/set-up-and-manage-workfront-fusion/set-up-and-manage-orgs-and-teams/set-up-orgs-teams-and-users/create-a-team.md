@@ -4,9 +4,9 @@ description: Team är mindre grupper inom organisationen och delar Fusion-resurs
 author: Becky
 feature: Workfront Fusion
 exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: ecfba475bdf25cb5d9200246f7d86bfe20700f1c
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -86,3 +86,13 @@ Så här skapar du ett team:
 1. Klicka på **[!UICONTROL Add a new team]**.
    ![Skapa ett team](assets/create-new-team-button.png)
 1. Ange ett namn för det nya teamet och klicka på **Lägg till**.
+
+## Redigera ett team
+
+Du kan redigera namnet på ett team.
+
+1. Klicka på **[!UICONTROL Org overview]** i den vänstra navigeringspanelen
+1. Välj fliken **[!UICONTROL Teams]**.
+1. Leta reda på teamet som du vill redigera namnet för och klicka sedan på **Redigera** på raden för det teamet.
+1. Ange ett nytt namn för teamet och klicka sedan på **Spara**.
+
