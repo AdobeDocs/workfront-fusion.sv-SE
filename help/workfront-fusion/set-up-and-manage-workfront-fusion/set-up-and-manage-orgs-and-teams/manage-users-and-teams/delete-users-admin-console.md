@@ -70,7 +70,7 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 
 Du kan ta bort en användare från Workfront Fusion och samtidigt lämna övriga Adobe-produktbehörigheter intakta.
 
-Instruktioner finns i&quot;Ta bort användare och användargrupper från en produkt&quot; i artikeln [Hantera produkter på Admin Console](https://helpx.adobe.com/enterprise/using/manage-products.html).
+Instruktioner finns i&quot;Ta bort användare och användargrupper från en produkt&quot; i artikeln [Hantera produkter på Admin Console](https://helpx.adobe.com/se/enterprise/using/manage-products.html).
 
 ## Inaktivera en användare i alla produkter i [!DNL Adobe Admin Console]
 
@@ -83,7 +83,7 @@ En användare inaktiveras från [!DNL Adobe Admin Console] när något av följa
 * Användaren tas bort från en produktprofil och tilldelas inte till någon annan produktprofil.
 * Användaren tas bort eller inaktiveras i organisationen som innehåller Workfront Fusion.
 
-  Instruktioner finns i avsnittet Ta bort användare i [Hantera användare individuellt](https://helpx.adobe.com/enterprise/using/manage-users-individually.html).
+  Instruktioner finns i avsnittet Ta bort användare i [Hantera användare individuellt](https://helpx.adobe.com/se/enterprise/using/manage-users-individually.html).
 
 I Workfront Fusion påverkar inaktiveringen användaren på något av följande sätt:
 

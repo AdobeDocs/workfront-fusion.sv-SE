@@ -75,7 +75,7 @@ Din organisation måste uppfylla följande krav för att kunna använda den här
 * Din organisation måste ha deltagit i Workfront AI Assistant Beta.
 * Adobe måste ha ett signerat Adobe Gen AI-avtal till din organisation.
 
-  Mer information om hur du signerar avtalet finns i [Signera Adobe Gen AI-avtalet](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) i artikens AI Assistant-översikt i Workfront-dokumentationen.
+  Mer information om hur du signerar avtalet finns i [Signera Adobe Gen AI-avtalet](https://experienceleague.adobe.com/sv/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) i artikens AI Assistant-översikt i Workfront-dokumentationen.
 
 ## AI-modulprogram som stöds för närvarande
 
