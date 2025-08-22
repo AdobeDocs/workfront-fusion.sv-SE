@@ -23,7 +23,7 @@ Om du vill visa tillgängliga mallar klickar du på ikonen **Mallar** ![Mallar](
 
 Mallarna automatiserar Workfront processer och arbetsflöden.
 
-### [!BADGE Nytt! ]{type=Informative} Workfront - Justera automatiskt projekttidslinjen när aktiviteter har slutförts tidigt
+### [!BADGE Nytt! &#x200B;]{type=Informative} Workfront - Justera automatiskt projekttidslinjen när aktiviteter har slutförts tidigt
 
 <!--New June 10, 2025-->
 
@@ -33,13 +33,13 @@ Om ditt team kämpar för att behålla tempot på grund av att projekttidslinjer
 
 Den här Fusion-mallen automatiserar den processen. När en uppgift har slutförts tidigt schemaläggs alla beroende (efterföljande) aktiviteter automatiskt om till att starta tidigare, vilket gör att teamet kan gå snabbare och arbeta smidigt.
 
-### [!BADGE Nytt! ]{type=Informative} HTTP>CSV>WF - Skapa en lista med händelsedelare per domän och nivå och exportera till CSV
+### [!BADGE Nytt! &#x200B;]{type=Informative} HTTP>CSV>WF - Skapa en lista med händelsedelare per domän och nivå och exportera till CSV
 
 Ladda ned prenumerationsinformation för event, skapa en CSV-fil och ladda upp filen till Workfront.
 
 <!--New August 8, 2025-->
 
-### [!BADGE Nytt! ]{type=Informative} Workfront-kort - Ta bort arkiverade kort från den angivna kolumnen (på begäran)
+### [!BADGE Nytt! &#x200B;]{type=Informative} Workfront-kort - Ta bort arkiverade kort från den angivna kolumnen (på begäran)
 
 <!--New March 12, 2025-->
 
@@ -117,7 +117,7 @@ Granska dina projektmallar en gång i månaden med hjälp av din egen policy med
 
 Mallarna automatiserar arbetsflöden som kombinerar Workfront med Workfront Proof.
 
-### [!BADGE Nytt! ]{type=Informative} Workfront > Workfront Proof - Ändra användarrollen för korrektur till skrivskyddad och lås korrektur när projektet avslutas
+### [!BADGE Nytt! &#x200B;]{type=Informative} Workfront > Workfront Proof - Ändra användarrollen för korrektur till skrivskyddad och lås korrektur när projektet avslutas
 
 <!--New March 12, 2025-->
 

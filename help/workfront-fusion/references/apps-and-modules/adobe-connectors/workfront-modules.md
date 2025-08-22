@@ -347,7 +347,7 @@ Den här åtgärdsmodulen gör någon av följande konverteringar:
    <td>Markera det objekt som du vill konvertera det till. Detta är den typ som objektet har efter konverteringen.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL <Object> ID]</td> 
+   <td>[!UICONTROL &lt;Object> ID]</td> 
    <td> <p>Ange objektets ID. </p> <p>Obs! När du anger ID:t för ett objekt kan du börja skriva namnet på objektet och sedan markera det i listan. Modulen anger sedan rätt ID i fältet.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -448,7 +448,7 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 >[!IMPORTANT]
 >
 >Den här modulen har ersatts med modulen Skapa en post. Vi rekommenderar att du använder den modulen i nya scenarier.
->>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
+>&#x200B;>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
 
 Den här åtgärdsmodulen skapar ett objekt, till exempel ett projekt, en uppgift eller ett problem i Workfront. I modulen kan du välja vilka av objektets fält som är tillgängliga i modulen.
 
@@ -886,7 +886,7 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 >[!IMPORTANT]
 >
 >Den här modulen har ersatts med modulen Läs en post. Vi rekommenderar att du använder den modulen i nya scenarier.
->>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
+>&#x200B;>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
 
 Den här åtgärdsmodulen hämtar data från en enda post.
 
@@ -1015,7 +1015,7 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 >[!IMPORTANT]
 >
 >Den här modulen har ersatts med modulen Uppdatera en post. Vi rekommenderar att du använder den modulen i nya scenarier.
->>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
+>&#x200B;>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
 
 Den här åtgärdsmodulen uppdaterar ett objekt, t.ex. ett projekt, en uppgift eller ett problem. I modulen kan du välja vilka av objektets fält som är tillgängliga i modulen.
 
@@ -1249,7 +1249,7 @@ När du konfigurerar den här modulen visas följande fält.
 >[!IMPORTANT]
 >
 >Den här modulen har ersatts med modulen Sök efter poster. Vi rekommenderar att du använder den modulen i nya scenarier.
->>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
+>&#x200B;>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
 
 Den här sökmodulen söker efter poster i ett objekt i Workfront som matchar den sökfråga du anger.
 

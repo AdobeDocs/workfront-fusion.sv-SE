@@ -165,7 +165,7 @@ Mer information finns i [Antal efterföljande fel](/help/workfront-fusion/create
 >[!NOTE]
 >
 >Om ett scenario börjar med en direktutlösare och påträffar det här felet, ignoreras inställningen [!UICONTROL Max number of consecutive errors] och scenariot inaktiveras omedelbart.
->>Mer information finns i [Direktutlösare](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) i översikten över artikelmodulerna.
+>&#x200B;>Mer information finns i [Direktutlösare](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) i översikten över artikelmodulerna.
 
 ## Inkonsekvens-fel
 
