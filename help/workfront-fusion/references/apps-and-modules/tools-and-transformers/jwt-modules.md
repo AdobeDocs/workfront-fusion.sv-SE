@@ -1,19 +1,19 @@
 ---
 title: JWT-moduler
-description: Appen  [!DNL Adobe Workfront Fusion] [!UICONTROL JWT] innehåller en modul som skapar JWT-tokens baserat på den angivna algoritmen.
+description: Appen Adobe Workfront Fusion [!UICONTROL JWT] innehåller en modul som skapar JWT-tokens baserat på den angivna algoritmen.
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
 
 # modulen [!UICONTROL JWT]
 
-Appen [!DNL Adobe Workfront Fusion] [!UICONTROL JWT] innehåller en modul som skapar JWT-tokens baserat på den angivna algoritmen.
+Appen Adobe Workfront Fusion [!UICONTROL JWT] innehåller en modul som skapar JWT-tokens baserat på den angivna algoritmen.
 
 ## Åtkomstkrav
 
@@ -52,7 +52,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

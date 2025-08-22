@@ -1,25 +1,25 @@
 ---
 title: Arkivera moduler
-description: I ett [!DNL Adobe Workfront Fusion] scenario kan du ansluta ett arkiv, till exempel en zippad fil, till flera tredjepartsprogram och -tjänster. Du kan till exempel konfigurera ett scenario som
+description: I ett Adobe Workfront Fusion-scenario kan du ansluta ett arkiv, t.ex. en zippad fil, till flera tredjepartsprogram och -tjänster. Du kan till exempel konfigurera ett scenario som
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 640aae1f4b7563545d7f9aa3f801671aa3d45fca
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Archive] moduler
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du använda ett arkiv, t.ex. en zippad fil, i ditt scenario, så att du kan använda det i dina automatiseringar eller integreringar.
+I ett Adobe Workfront Fusion-scenario kan du använda ett arkiv, t.ex. en zippad fil, så att du kan använda den i dina automatiseringar eller integreringar.
 
 Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## [!UICONTROL Archive]-moduler och deras fält
 
-När du konfigurerar [!UICONTROL Archive] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!UICONTROL Archive] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!UICONTROL Archive]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!UICONTROL Archive] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

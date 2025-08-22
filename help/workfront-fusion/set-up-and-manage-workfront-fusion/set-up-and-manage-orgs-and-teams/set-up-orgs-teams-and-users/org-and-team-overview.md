@@ -4,16 +4,16 @@ description: Adobe Workfront Fusions funktioner för organisation och team gör 
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: d76f199b766d6f18e371f2ce1107a96529afbfd1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
 
-# Översikt över [!DNL Adobe Workfront Fusion] organisationer och team
+# Adobe Workfront Fusion - Översikt över organisationer och team
 
-Med funktionerna för organisation och team i [!DNL Adobe Workfront Fusion] kan företag styra åtkomsten till scenarier och andra funktioner i Fusion.
+Adobe Workfront Fusions funktioner för organisation och team gör det möjligt för företag att styra åtkomsten till scenarier och andra funktioner i Fusion.
 
 En organisation är Adobe Workfront Fusions största bolag. Din Fusion-organisation kan till exempel representera Fusion-kontot för hela företaget.
 
@@ -23,7 +23,7 @@ Instruktioner om hur du skapar ett team finns i [Skapa ett team](/help/workfront
 
 ## Organisationer
 
-[!DNL Workfront Fusion] användare tillhör en organisation.
+Workfront Fusion-användare tillhör en organisation.
 
 Användarna måste läggas till i en organisation innan de kan läggas till i ett team.
 
@@ -33,7 +33,7 @@ En användare har en av följande roller i en organisation:
 
 * **[!UICONTROL Owner]**: Ägaren har alla behörigheter som är tillgängliga i organisationen.
 * **[!UICONTROL Admin]**: Administratörer kan skapa och hantera team och användare för organisationen och godkänna mallar.
-* **[!UICONTROL Member]**: Medlemmar kan använda [!DNL Workfront Fusion] men kan inte göra organisatoriska ändringar.
+* **[!UICONTROL Member]**: Medlemmar kan använda Workfront Fusion men kan inte göra organisatoriska ändringar.
 * **[!UICONTROL Accountant]**: Kontoansvariga kan se licensinformation på kontrollpanelen för organisationen, men kan inte utföra några åtgärder.
 * **[!UICONTROL App Developer]**: Funktionerna för den här rollen är inte tillgängliga just nu och kommer att göras tillgängliga inom den närmaste framtiden. Vi rekommenderar för närvarande inte att du tilldelar användare till den här rollen.
 
@@ -53,7 +53,7 @@ Team är grupper av användare som delar åtkomst till särskilda resurser. Resu
 
 >[!NOTE]
 >
->Eftersom team delar resurser kan det vara praktiskt att bara ha en medlem. Användare i utbildning kan till exempel skapa anslutningar till sina enskilda [!DNL Workfront]-konton. Alla teammedlemmar kan också ansluta till det enskilda [!DNL Workfront]-kontot. I det här fallet rekommenderar vi att användaren är den enda medlemmen i ett utbildningsteam.
+>Eftersom team delar resurser kan det vara praktiskt att bara ha en medlem. Till exempel kan användare i utbildning skapa kopplingar till sina enskilda Workfront-konton. Alla teammedlemmar kan också ansluta till det enskilda Workfront-kontot. I det här fallet rekommenderar vi att användaren är den enda medlemmen i ett utbildningsteam.
 
 Organisationer kan ha så många team de behöver, och användarna kan tillhöra ett eller flera team.
 

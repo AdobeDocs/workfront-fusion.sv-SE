@@ -4,9 +4,9 @@ description: En aggregeringsmodul är en typ av modul som utformats för att sam
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -26,17 +26,17 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+    <td role="rowheader">Adobe Workfront package</td> 
    <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens</td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
    <td> Nytt: Standard<p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] licens</td> 
    <td>
-   <p>Aktuell: Inga [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
    <p>Äldre: Alla </p>
    </td> 
@@ -44,18 +44,18 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Workfront]: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] ingår.</li></ul>
+   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] Workfront-plan: Din organisation måste köpa Adobe Workfront Fusion.</li><li>[!UICONTROL Ultimate] Workfront: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Kontakta Workfront-administratören om du vill veta vilken plan, licenstyp eller åtkomst du har.
 
-Mer information om Adobe Workfront Fusion-licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -82,7 +82,7 @@ I följande bild visas en typisk inställning för modulen [!UICONTROL Aggregato
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Target structure type]</p><p>(Gäller endast för modulen [!UICONTROL Array aggregator].)</p> </td> 
-   <td> <p> Målstrukturen där data sammanställs. Med standardalternativet, [!UICONTROL Custom], kan du välja objekt som ska aggregeras i <code>Array </code>objektet för utdatapaketet i [!UICONTROL Array aggregator]:</p> <p> <img src="assets/output-bundle-array-item.png"> </p> <p>När du har anslutit fler moduler efter modulen [!UICONTROL Array aggregator] och återgår till aggregeringsmodulens inställningar innehåller listrutan för strukturtypen [!UICONTROL Target] alla följande moduler och deras fält som är av typen "Array of Collections". <p>I det här exemplet visas fältet [!UICONTROL Attachments] i modulen [!DNL Slack] &gt;[!UICONTROL Create a Message] i fältet Array-aggregator &gt; Typ av målstruktur. </p> <p> <img src="assets/array-aggregator-slack.png"> </p> </td> 
+   <td> <p> Målstrukturen där data sammanställs. Med standardalternativet, [!UICONTROL Custom], kan du välja objekt som ska aggregeras i [!UICONTROL Array aggregator]objektet för utdatapaketet i <code>Array </code>:</p> <p> <img src="assets/output-bundle-array-item.png"> </p> <p>När du har anslutit fler moduler efter modulen [!UICONTROL Array aggregator] och återgår till aggregeringsmodulens inställningar innehåller listrutan för strukturtypen [!UICONTROL Target] alla följande moduler och deras fält som är av typen "Array of Collections". <p>I det här exemplet visas fältet [!UICONTROL Attachments] i modulen [!DNL Slack] &gt;[!UICONTROL Create a Message] i fältet Array-aggregator &gt; Typ av målstruktur. </p> <p> <img src="assets/array-aggregator-slack.png"> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Aggregated fields]</td> 

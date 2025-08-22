@@ -4,18 +4,18 @@ description: Modulerna  [!DNL Adobe Workfront Fusion Google Drive] gör att du k
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1672'
 ht-degree: 0%
 
 ---
 
 # [!DNL Google Drive] moduler
 
-Med modulerna [!DNL Adobe Workfront Fusion] [!DNL Google Drive] kan du övervaka, söka, skapa, uppdatera, ta bort och hantera filer, mappar eller delade enheter i [!DNL Google Drive].
+Med Adobe Workfront Fusion [!DNL Google Drive]-modulerna kan du övervaka, söka, skapa, uppdatera, ta bort och hantera filer, mappar och delade enheter i [!DNL Google Drive].
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du ansluta ditt [!DNL Google Drive]-konto till flera tredjepartsprogram och -tjänster.
+I ett Adobe Workfront Fusion-scenario kan du ansluta ditt [!DNL Google Drive]-konto till flera tredjepartsprogram och -tjänster.
 
 Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -60,7 +60,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -89,17 +89,17 @@ Google Drive-anslutningen använder följande:
 
 
 
-## Ansluter [!DNL Google Drive] till [!DNL Workfront Fusion]
+## Ansluter [!DNL Google Drive] till Workfront Fusion
 
 Om du använder [!DNL @gmail.com] eller [!DNL @googlemail.com] måste du skapa en OAuth-klient på [!DNL Google Cloud Platform] för att få tillgång till din [!UICONTROL Client ID] och [!UICONTROL Client Secret].
 
-Stegvisa instruktioner om hur du skapar OAuth-klienten (och hämtar [!UICONTROL Client ID] och [!UICONTROL Client Secret]) finns i [Anslut [!DNL Adobe Workfront Fusion] till [!DNL Google Services] med en anpassad OAuth-klient](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
+Stegvisa instruktioner om hur du skapar OAuth-klienten (och hämtar [!UICONTROL Client ID] och [!UICONTROL Client Secret]) finns i [Ansluta Adobe Workfront Fusion till [!DNL Google Services] med en anpassad OAuth-klient](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
 Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till [!UICONTROL Workfront Fusion] finns i [Skapa en anslutning till [!UICONTROL Adobe Workfront Fusion] - grundläggande instruktioner](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 ## [!DNL Google Drive]-moduler och deras fält
 
-När du konfigurerar [!DNL Google Drive] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL Google Drive] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL Google Drive]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL Google Drive] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -127,7 +127,7 @@ Den här utlösarmodulen startar ett scenario när en fil i [!DNL Google Drive] 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till [!DNL Workfront Fusion] finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Ansluter [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till Workfront Fusion finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL What files to watch]</td> 
@@ -162,7 +162,7 @@ Den här utlösarmodulen startar ett scenario när en fil i [!DNL Google Drive] 
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of downloaded files]</td> 
-   <td>Ange det maximala antalet resultat som [!DNL Workfront Fusion] ska hämta under en cykel (antalet upprepningar per scenariokörning).</td> 
+   <td>Ange det högsta antal resultat som Workfront Fusion ska hämta under en cykel (antalet upprepningar per scenario-körning).</td> 
   </tr> 
  </tbody> 
 </table>
@@ -177,7 +177,7 @@ Den här utlösarmodulen startar ett scenario när en kommentar läggs till elle
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till [!DNL Workfront Fusion] finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Ansluter [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till Workfront Fusion finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File]</td> 
@@ -189,7 +189,7 @@ Den här utlösarmodulen startar ett scenario när en kommentar läggs till elle
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned comments]</td> 
-   <td>Ange det maximala antalet kommentarer som [!DNL Workfront Fusion] ska returnera under en cykel (antalet upprepningar per scenario-körning).</td> 
+   <td>Ange det maximala antalet kommentarer som Workfront Fusion ska returnera under en cykel (antalet upprepningar per scenario-körning).</td> 
   </tr> 
  </tbody> 
 </table>
@@ -204,7 +204,7 @@ Den här utlösarmodulen startar ett scenario när en fil läggs till eller änd
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection] </td>
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till [!DNL Workfront Fusion] finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Ansluter [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till Workfront Fusion finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Select the folder to be watched]</td>
@@ -243,7 +243,7 @@ Den här utlösarmodulen startar ett scenario när en fil läggs till eller änd
   </tr> 
   <tr> 
     <td>[!UICONTROL Maximum number of downloaded files]</td>
-    <td>Ange det maximala antalet resultat som [!DNL Workfront Fusion] ska hämta under en cykel (antalet upprepningar per scenariokörning).</td>
+    <td>Ange det högsta antal resultat som Workfront Fusion ska hämta under en cykel (antalet upprepningar per scenario-körning).</td>
   </tr> 
  </tbody> 
 </table>
@@ -258,7 +258,7 @@ Startar när en ny fil delas med dig eller när en befintlig delad fil uppdatera
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till [!DNL Workfront Fusion] finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Ansluter [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till Workfront Fusion finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Select the folder to be watched]</td> 
@@ -297,7 +297,7 @@ Startar när en ny fil delas med dig eller när en befintlig delad fil uppdatera
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of downloaded files]</td> 
-   <td>Ange det maximala antalet resultat som [!DNL Workfront Fusion] ska hämta under en cykel (antalet upprepningar per scenariokörning).</td> 
+   <td>Ange det högsta antal resultat som Workfront Fusion ska hämta under en cykel (antalet upprepningar per scenario-körning).</td> 
   </tr> 
  </tbody> 
 </table>
@@ -324,7 +324,7 @@ Den här åtgärdsmodulen kopierar en fil till den nya platsen.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till [!DNL Workfront Fusion] finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Ansluter [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till Workfront Fusion finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
@@ -359,7 +359,7 @@ Den här åtgärdsmodulen skapar en mapp på den angivna platsen.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till [!DNL Workfront Fusion] finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Ansluter [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till Workfront Fusion finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
@@ -394,7 +394,7 @@ Den här åtgärdsmodulen tar permanent bort en fil eller mapp.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till [!DNL Workfront Fusion] finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Ansluter [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till Workfront Fusion finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
@@ -413,7 +413,7 @@ Den här åtgärdsmodulen hämtar filen med det angivna ID:t.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till [!DNL Workfront Fusion] finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Ansluter [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till Workfront Fusion finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Convert [!DNL Google Documents] filer att formatera]</td> 
@@ -448,7 +448,7 @@ Den här åtgärdsmodulen hämtar delningslänken för en fil i Google Drive.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till [!DNL Workfront Fusion] finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Ansluter [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till Workfront Fusion finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
@@ -467,7 +467,7 @@ Den här åtgärdsmodulen flyttar en fil eller mapp till papperskorgen.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till [!DNL Workfront Fusion] finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Ansluter [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till Workfront Fusion finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
@@ -486,7 +486,7 @@ Den här sökmodulen söker efter filer eller mappar baserat på sökvillkor.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till [!DNL Workfront Fusion] finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Ansluter [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till Workfront Fusion finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
@@ -526,7 +526,7 @@ Den här sökmodulen söker efter filer eller mappar baserat på sökvillkor.
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned results]</td> 
-   <td>Ange det maximala antalet filer eller mappar som [!DNL Workfront Fusion] returnerar under en körningscykel.</td> 
+   <td>Ange det högsta antalet filer eller mappar som Workfront Fusion ska returnera under en körningscykel.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
@@ -545,7 +545,7 @@ Den här åtgärdsmodulen uppdaterar metadata eller innehåll i en fil.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till [!DNL Workfront Fusion] finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Ansluter [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till Workfront Fusion finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
@@ -592,7 +592,7 @@ Den här åtgärdsmodulen uppdaterar metadata eller innehåll i en fil.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till [!DNL Workfront Fusion] finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Ansluter [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Drive]-konto till Workfront Fusion finns i <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Google Drive] till [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!DNL Destination]</td> 

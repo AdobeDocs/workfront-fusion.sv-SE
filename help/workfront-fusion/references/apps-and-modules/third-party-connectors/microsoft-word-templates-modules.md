@@ -4,16 +4,16 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
 
 # [!DNL Microsoft Word Template] moduler
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som använder [!DNL Microsoft Word Templates] samt ansluta det till flera tredjepartsprogram och -tjänster.
+I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder [!DNL Microsoft Word Templates] samt ansluta det till flera tredjepartsprogram och -tjänster.
 
 Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -58,17 +58,17 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Förutsättningar
 
-Om du vill använda [!DNL Miscrosoft Word Templates] med [!DNL Adobe Workfront Fusion] måste du ha ett [!DNL Office 365]-konto. Du kan skapa en på `www.office.com`.
+Om du vill använda [!DNL Miscrosoft Word Templates] med Adobe Workfront Fusion måste du ha ett [!DNL Office 365]-konto. Du kan skapa en på `www.office.com`.
 
 
 
-## Ansluter tjänsten [!DNL Office] till [!DNL Workfront Fusion]
+## Ansluta tjänsten [!DNL Office] till Workfront Fusion
 
 Instruktioner om hur du ansluter ditt [!DNL Office]-konto till [!UICONTROL Workfront Fusion] finns i [Skapa en anslutning till [!UICONTROL Adobe Workfront Fusion] - grundläggande instruktioner](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 

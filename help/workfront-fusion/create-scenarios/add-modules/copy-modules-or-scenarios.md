@@ -4,9 +4,9 @@ description: Du kan kopiera moduler, grupper av moduler eller hela scenarier i A
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '893'
 ht-degree: 0%
 
 ---
@@ -26,17 +26,17 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront package</td> 
    <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens</td> 
-   <td> <p>Nytt: [!UICONTROL Standard]</p><p>eller</p><p>Aktuell: [!UICONTROL Work] eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: [!UICONTROL Work] eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuell: Inga [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
    <p>Äldre: Alla </p>
    </td> 
@@ -44,9 +44,9 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Workfront]: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] ingår.</li></ul>
+   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] Workfront-plan: Din organisation måste köpa Adobe Workfront Fusion.</li><li>[!UICONTROL Ultimate] Workfront: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -54,7 +54,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -148,7 +148,7 @@ En scenarioplan representerar hela scenariot. Om du bara vill kopiera vissa modu
 
 ## Kopiera och återanvända scenarier med hjälp av mallar
 
-Du kan skapa mallar som utgångspunkt för dina [!DNL Workfront Fusion]-scenarier. När du skapar ett scenario från en mall kan du ändra scenariot utan att ändra mallen. Fältvärden sparas inte i mallar.
+Du kan skapa mallar som utgångspunkt för dina Workfront Fusion-scenarier. När du skapar ett scenario från en mall kan du ändra scenariot utan att ändra mallen. Fältvärden sparas inte i mallar.
 
 Mer information om hur du skapar ett scenario med hjälp av en mall finns i [Skapa scenarier med mallar](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md).
 

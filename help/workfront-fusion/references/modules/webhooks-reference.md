@@ -4,9 +4,9 @@ description: Många tjänster tillhandahåller webbhookar för att leverera snab
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ När du konfigurerar en direktutlösare uppmanas du att välja när den körs.
 
 ![Schemainställning](assets/schedule-setting.png)
 
-Välj `Immediately` om du vill köra scenariot omedelbart när [!DNL Workfront Fusion] tar emot nya händelser från tjänsten. Dessa händelser skickas omedelbart till en kö och bearbetas sedan i scenariot en i taget i samma ordning som data tas emot.
+Välj `Immediately` om du vill köra scenariot omedelbart när Workfront Fusion tar emot nya händelser från tjänsten. Dessa händelser skickas omedelbart till en kö och bearbetas sedan i scenariot en i taget i samma ordning som data tas emot.
 
 När scenariot körs räknas det totala antalet väntande händelser som väntar i kön, och scenariot utför så många cykler som det finns väntande händelser, och en händelse bearbetas per cykel.
 
@@ -81,7 +81,7 @@ En webkrok som inte har tilldelats något scenario på mer än 120 timmar tas bo
 
 ### Webkrok-nyttolaster
 
-[!DNL Workfront Fusion] lagrar webkrocknyttolaster i 30 dagar. Om du får åtkomst till en webkrok-nyttolast mer än 30 dagar efter att den skapades uppstår felet [!UICONTROL `Failed to read file from storage.`]
+Workfront Fusion lagrar webkrocknyttolaster i 30 dagar. Om du får åtkomst till en webkrok-nyttolast mer än 30 dagar efter att den skapades uppstår felet [!UICONTROL `Failed to read file from storage.`]
 
 ### Felhantering
 
@@ -111,6 +111,6 @@ Inaktiverade webhooks tas bort och avregistreras automatiskt om de inte är ansl
 
 Du kan skapa egna webbböcker. Mer information finns i [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 
-## Resurs
+## Resurser
 
 Mer information om cykler finns i [Scenariokörning, cykler och faser](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).

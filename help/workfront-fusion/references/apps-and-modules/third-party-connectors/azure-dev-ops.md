@@ -1,19 +1,19 @@
 ---
 title: Azure DevOps-moduler
-description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera arbetsflöden som använder  [!DNL Azure DevOps] samt ansluta det till flera tredjepartsprogram och -tjänster.
+description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder  [!DNL Azure DevOps] och ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
-source-git-commit: 58bda8289db60ce915613337880297e5c8ec7097
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1627'
 ht-degree: 0%
 
 ---
 
 # [!DNL Azure DevOps] moduler
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som använder [!DNL Azure DevOps] samt ansluta det till flera tredjepartsprogram och -tjänster.
+I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder [!DNL Azure DevOps] samt ansluta det till flera tredjepartsprogram och -tjänster.
 
 Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -58,7 +58,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -85,7 +85,7 @@ Azure DevOps-kopplingen använder följande:
  </tbody> 
 </table>
 
-## Anslut [!DNL Azure DevOps] till [!DNL Workfront Fusion] {#connect-azure-devops-to-workfront-fusion}
+## Anslut [!DNL Azure DevOps] till Workfront Fusion {#connect-azure-devops-to-workfront-fusion}
 
 1. Lägg till en [!DNL Azure DevOps]-modul i ditt scenario.
 1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL Connection].
@@ -125,7 +125,7 @@ Azure DevOps-kopplingen använder följande:
 
 ## [!UICONTROL Azure DevOps]-moduler och deras fält
 
-När du konfigurerar [!DNL Azure DevOps] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL Azure DevOps] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL Azure DevOps]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL Azure DevOps] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -178,7 +178,7 @@ Modulen matar ut objekt-ID:t för det nya arbetsobjektet eller URL:en och status
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till Workfront Fusion finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
@@ -215,7 +215,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till Workfront Fusion finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Base URL]</td> 
@@ -227,7 +227,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL API Version]</td> 
-   <td>Markera eller mappa den version av [!DNL Azure DevOps]-API:t som du vill ansluta till för det här API-anropet. Om ingen version är markerad ansluter [!DNL Workfront Fusion] till [!DNL Azure DevOps] API version 5.1.</td> 
+   <td>Markera eller mappa den version av [!DNL Azure DevOps]-API:t som du vill ansluta till för det här API-anropet. Om ingen version har valts ansluter Workfront Fusion till [!DNL Azure DevOps] API version 5.1.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
@@ -263,7 +263,7 @@ Modulen returnerar filinnehållet i den bifogade filen.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till Workfront Fusion finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Attachment URL]</td> 
@@ -282,7 +282,7 @@ Den här åtgärdsmodulen länkar två arbetsobjekt och definierar relationen me
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till Workfront Fusion finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Work item ID]</td> 
@@ -319,7 +319,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till Workfront Fusion finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
@@ -352,7 +352,7 @@ Modulen returnerar ID:t för det uppdaterade arbetsobjektet.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till Workfront Fusion finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project]</td> 
@@ -385,7 +385,7 @@ Modulen returnerar den bifogade filens ID och en hämtnings-URL för den bifogad
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till Workfront Fusion finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project] </td> 
@@ -422,7 +422,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Azure DevOps]-konto till Workfront Fusion finns i <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Azure DevOps] till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project]</td> 
@@ -438,7 +438,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td>Ange eller mappa det maximala antalet arbetsobjekt som [!DNL Workfront Fusion] returnerar under en körningscykel.</td> 
+   <td>Ange eller mappa det högsta antalet arbetsuppgifter som Workfront Fusion returnerar under en körningscykel.</td> 
   </tr> 
  </tbody> 
 </table>

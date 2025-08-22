@@ -4,9 +4,9 @@ description: En webkrok är ett HTTP-anrop som aktiveras av en händelse. Du kan
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -58,17 +58,17 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## Använd en webkrok i [!DNL Workfront Fusion]
+## Använda en webkrok i Workfront Fusion
 
 >[!NOTE]
 >
 >Om du vill anropa en webkrok från en annan leverantör (en utgående webkrok) använder du en av HTTP-modulerna. Mer information finns i [HTTP-moduler](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-Så här använder du en webkrok för att ansluta en app till [!DNL Workfront Fusion]:
+Så här använder du en webkrok för att ansluta en app till Workfront Fusion:
 
 1. Lägg till **[!UICONTROL Webhooks]** >**[!UICONTROL Custom Webhook]**-modulen för snabbutlösare i ditt scenario.
 
@@ -85,7 +85,7 @@ När du har skapat en webbkrok visas en unik URL. Det här är adressen som webb
 
 ### Konfigurera webbhakens datastruktur {#configure-the-webhook-s-data-structure}
 
-Om du vill känna igen datastrukturen för den inkommande nyttolasten, tolkar [!DNL Workfront Fusion] exempeldata som du skickar till den visade adressen. Du kan ange exempeldata genom att göra en ändring i tjänsten eller appen som får tjänsten eller appen att anropa webbkroken. Du kan till exempel ta bort en fil.
+För att identifiera datastrukturen för inkommande nyttolast tolkar Workfront Fusion exempeldata som du skickar till den visade adressen. Du kan ange exempeldata genom att göra en ändring i tjänsten eller appen som får tjänsten eller appen att anropa webbkroken. Du kan till exempel ta bort en fil.
 
 Du kan också skicka exempeldata via modulen [!UICONTROL HTTP] > [!UICONTROL Make a request]:
 
@@ -148,11 +148,11 @@ Om en webkrok tar emot data och det inte finns något aktivt scenario som förv�
 
 ## Inkommande dataformat som stöds
 
-[!DNL Workfront Fusion] stöder 3 inkommande dataformat: [!UICONTROL Query String], [!UICONTROL Form Data] och [!UICONTROL JSON].
+Workfront Fusion stöder tre inkommande dataformat: [!UICONTROL Query String], [!UICONTROL Form Data] och [!UICONTROL JSON].
 
-[!DNL Workfront Fusion] validerar alla inkommande data mot den valda datastrukturen. Beroende på inställningarna för scenariot lagras data antingen i kön för bearbetning eller bearbetas omedelbart.
+Workfront Fusion validerar alla inkommande data mot den valda datastrukturen. Beroende på inställningarna för scenariot lagras data antingen i kön för bearbetning eller bearbetas omedelbart.
 
-Om någon del av data inte godkänns vid valideringen returnerar [!DNL Workfront Fusion] en HTTP-statuskod på 400 och anger, i HTTP-svarets brödtext, varför inkommande data misslyckades vid valideringskontrollerna. Om valideringen av inkommande data lyckas returnerar Workfront Fusion statusen [!UICONTROL 200 Accepted].
+Om någon del av informationen inte godkänns vid valideringen returnerar Workfront Fusion en HTTP-statuskod på 400 och anger, i HTTP-svarets brödtext, varför inkommande data inte klarade valideringskontrollerna. Om valideringen av inkommande data lyckas returnerar Workfront Fusion statusen [!UICONTROL 200 Accepted].
 
 * [[!UICONTROL Query String]](#query-string)
 * [[!UICONTROL Form Data]](#form-data)
@@ -289,27 +289,27 @@ Tidsgränsen för att skicka ett svar är 40 sekunder. Om svaret inte är tillg�
 >Konfigurera modulen [!UICONTROL Webhook Response] enligt följande:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>2xx lyckad HTTP-statuskod, t.ex. 200</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
->&gt;   <td> <p>HTML code</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>Nyckel</strong>: Innehållstyp</li> 
->&gt;     <li><strong>Värde</strong>: text/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>2xx lyckad HTTP-statuskod, t.ex. 200</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+&gt;   <td> <p>HTML code</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>Nyckel</strong>: Innehållstyp</li> 
+&gt;     <li><strong>Värde</strong>: text/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Anpassade rubriker](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -324,23 +324,23 @@ Tidsgränsen för att skicka ett svar är 40 sekunder. Om svaret inte är tillg�
 >**Exempel:** Konfigurera modulen [!UICONTROL Webhook Response] enligt följande:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>3 x omdirigerings-HTTP-statuskod, t.ex. 303</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL Key]</strong>: Plats</li> 
->&gt;     <li><strong>[!UICONTROL Value]</strong>: Den URL som du vill omdirigera till.</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>3 x omdirigerings-HTTP-statuskod, t.ex. 303</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[!UICONTROL Key]</strong>: Plats</li> 
+&gt;     <li><strong>[!UICONTROL Value]</strong>: Den URL som du vill omdirigera till.</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Webkrok-svar](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 

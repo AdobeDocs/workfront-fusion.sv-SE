@@ -1,19 +1,19 @@
 ---
 title: Gardrutor för fusionsprestanda
-description: Automatisering av arbete kräver snabb bearbetning, så [!DNL Adobe Workfront Fusion]  är utformad för höga prestanda. Eftersom långvariga scenarier kan göra arbetet långsammare har vi utformat  [!DNL Workfront Fusion] med prestandabevarande säkerhetsdetaljer som begränsar körningstid, datastorlek och andra scenarioparametrar. [!DNL Workfront Fusion] Designers bör vara medvetna om dessa skyddsräcken och införliva dem i sin designpraxis.
+description: Automatisering kräver snabb bearbetning, så Adobe Workfront Fusion har utformats för höga prestanda. Eftersom långvariga scenarier kan göra arbetet långsammare har vi utformat Workfront Fusion med säkerhetsfunktioner som begränsar körningstid, datastorlek och andra scenarioparametrar. Workfront Fusion-designers bör känna till dessa skyddsräcken och införliva dem i sin designpraxis.
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: e036784fbf241c6d528f2020b7c368249e4f2133
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
 
 # Skyddsräcken för Fusion-prestanda
 
-Automatisering av arbete kräver snabb bearbetning, så [!DNL Adobe Workfront Fusion] är utformad för höga prestanda. Eftersom långvariga scenarier kan göra arbetet långsammare har vi utformat [!DNL Workfront Fusion] med prestandabevarande säkerhetsdetaljer som begränsar körningstid, datastorlek och andra scenarioparametrar. [!DNL Workfront Fusion]-designers bör vara medvetna om dessa skyddsräcken och införliva dem i sin designpraxis.
+Automatisering kräver snabb bearbetning, så Adobe Workfront Fusion har utformats för höga prestanda. Eftersom långvariga scenarier kan göra arbetet långsammare har vi utformat Workfront Fusion med säkerhetsfunktioner som begränsar körningstid, datastorlek och andra scenarioparametrar. Workfront Fusion-designers bör känna till dessa skyddsräcken och införliva dem i sin designpraxis.
 
 ## Webbläsare
 
@@ -21,19 +21,19 @@ Automatisering av arbete kräver snabb bearbetning, så [!DNL Adobe Workfront Fu
 
 ## Scenarier
 
-* Standardtidsgränsen för scenariokörning är **40 minuter**. När körningen når den här tidsgränsen avbryter [!DNL Workfront Fusion] körningen av scenariot efter nästa cykel eller åtgärd, beroende på scenariot. Detta medför att scenariot avbryts kort efter att gränsen på 40 minuter har nåtts
+* Standardtidsgränsen för scenariokörning är **40 minuter**. När körningen når denna tidsgräns avbryter Workfront Fusion scenariokörningen efter nästa cykel eller åtgärd, beroende på scenariot. Detta medför att scenariot avbryts kort efter att gränsen på 40 minuter har nåtts
 
   Kedningsscenarier räknas inte med i tidsgränsen för scenariokörning. Ett överordnat scenario tar inte lång tid i väntan på att ett underordnat scenario ska köras.
 * Den största tillåtna storleken för en scenarioplan är **5 MB**, men vi rekommenderar att du behåller scenariostorleken under **3 MB**.
 
   Programmoduler som skapar eller uppdaterar data med ett stort antal fält kan orsaka mycket stora utkast.
 
-   * När du använder appen [!DNL Workfront] ska du bara välja fält som behövs för dina användningsfall för att skapa eller uppdatera.
+   * När du använder Workfront ska du bara välja de fält som behövs för att skapa eller uppdatera användningsfall.
    * När du använder andra program kan du använda anpassade API-moduler för att interagera med valfri posttyp som har ett stort antal fält.
 
-* Även om det inte finns något tak för antalet moduler i ett scenario, påverkar scenarier med fler än 150 moduler prestandan i ditt [!DNL Workfront Fusion]-system negativt. Därför rekommenderar vi inte att du skapar scenarier med fler än 150 moduler.
+* Även om det inte finns något tak för antalet moduler i ett scenario, påverkar scenarier med mer än 150 moduler prestandan i ditt Workfront Fusion-system negativt. Därför rekommenderar vi inte att du skapar scenarier med fler än 150 moduler.
 
-## Operationer
+## Användning
 
 * Standardåtgärdens timeout är vanligtvis **40 sekunder**.
 
@@ -60,7 +60,7 @@ Mer information finns i [Arbeta med stora filer](/help/workfront-fusion/referenc
 
 * Den maximala standardstorleken för en nyttolast är **5 MB**.
 * Webbhooks är begränsade till **100 begäranden per sekund**. När den här gränsen har nåtts skickar Workfront Fusion en 429-status ([!UICONTROL Too Many Requests]).
-* [!DNL Workfront Fusion] lagrar webkrocknyttolaster i 30 dagar. Om du får åtkomst till en webkrok-nyttolast mer än 30 dagar efter att den togs emot uppstår felet [!UICONTROL Failed to read file from storage.]
+* Workfront Fusion lagrar webkrocknyttolaster i 30 dagar. Om du får åtkomst till en webkrok-nyttolast mer än 30 dagar efter att den togs emot uppstår felet [!UICONTROL Failed to read file from storage.]
 * Webhooks inaktiveras automatiskt om något av följande gäller:
 
    * Webbkroken har inte varit ansluten till något scenario på mer än fem dagar

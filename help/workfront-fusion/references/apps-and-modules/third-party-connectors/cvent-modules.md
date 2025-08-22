@@ -1,19 +1,19 @@
 ---
 title: Kundmoduler
-description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera arbetsflöden som använder Event och ansluta det till flera tredjepartsprogram och -tjänster.
+description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder Cvent samt ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion
 exl-id: b7e16180-1db8-4aff-bb7b-69ca98194b00
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1025'
 ht-degree: 0%
 
 ---
 
 # [!DNL Cvent] moduler
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som använder [!DNL Cvent] samt ansluta det till flera tredjepartsprogram och -tjänster.
+I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder [!DNL Cvent] samt ansluta det till flera tredjepartsprogram och -tjänster.
 
 Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -28,35 +28,35 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
+   <td role="rowheader">Adobe Workfront-plan*</td>
   <td> <p>[!UICONTROL Pro] eller högre</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
+   <td role="rowheader">Adobe Workfront-licens*</td>
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuellt licenskrav: Inga Workfront Fusion-licenskrav.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Gammalt licenskrav: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Aktuellt produktkrav: Om du har Adobe Workfront-planen [!UICONTROL Select] eller [!UICONTROL Prime] måste din organisation köpa Adobe Workfront Fusion samt Adobe Workfront för att kunna använda de funktioner som beskrivs i den här artikeln. Workfront Fusion ingår i Workfront-planen för [!UICONTROL Ultimate].</p>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Krav för äldre produkter: Din organisation måste köpa Adobe Workfront Fusion och Adobe Workfront för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Kontakta Workfront-administratören om du vill veta vilken plan, licenstyp eller åtkomst du har.
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## Förutsättningar
 
@@ -81,21 +81,21 @@ Händelsekopplingen använder följande:
  </tbody> 
  </table>
 
-## Anslut [!DNL Cvent] till [!DNL Adobe Workfront Fusion] {#connect-cvent-to-adobe-workfront-fusion}
+## Anslut [!DNL Cvent] till Adobe Workfront Fusion {#connect-cvent-to-adobe-workfront-fusion}
 
 >[!NOTE]
 >
 >Modulerna [!DNL Cvent] fungerar genom ett [!UICONTROL SOAP] API. Om du vill skapa en anslutning till [!DNL Cvent] måste du se till följande:
 >
 >* Du har [!UICONTROL SOAP] åtkomst till API:t [!DNL Cvent].
->* IP-adresserna för [!DNL Workfront Fusion] har lagts till i din organisations tillåtelselista.
+>* IP-adresserna för Workfront Fusion har lagts till i din organisations tillåtelselista.
 >
->  En lista över [!DNL Workfront Fusion] IP-adresser finns i [Konfigurera IP-adresser för Fusion i din organisations tillåtelselista](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
+>  En lista över IP-adresser för Workfront Fusion finns i [Konfigurera IP-adresser för Fusion i din organisations tillåtelselista](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
 
 
 Du kan skapa en anslutning till ditt [!DNL Cvent]-konto direkt inifrån en [!DNL Cvent]-modul.
 
-1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL Connection] i någon [!DNL Cvent]-modul.
+1. Klicka på [!DNL Cvent] bredvid fältet **[!UICONTROL Add]** i någon [!UICONTROL Connection]-modul.
 1. Markera det område som du vill ansluta till.
 
    * [!UICONTROL North America]
@@ -106,7 +106,7 @@ Du kan skapa en anslutning till ditt [!DNL Cvent]-konto direkt inifrån en [!DNL
 
 ## [!DNL Cvent]-moduler och deras fält
 
-När du konfigurerar [!DNL Cvent] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL Cvent] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL Cvent]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL Cvent] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -139,7 +139,7 @@ Modulen returnerar statuskoden, tillsammans med rubrikerna och brödtexten för 
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Ansluta [!DNL Cvent] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till Workfront Fusion finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Cvent] till Adobe Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Åtgärd</td> 
@@ -162,7 +162,7 @@ Den här åtgärdsmodulen läser information om en viss post.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Ansluta [!DNL Cvent] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till Workfront Fusion finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Cvent] till Adobe Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Record type]</p> </td> 
@@ -189,7 +189,7 @@ Den här åtgärdsmodulen registrerar en inbjudan för en händelse.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Ansluta [!DNL Cvent] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till Workfront Fusion finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Cvent] till Adobe Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Inbjudan-ID</p> </td> 
@@ -212,7 +212,7 @@ Den här åtgärdsmodulen bjuder in en kontakt till en händelse.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Ansluta [!DNL Cvent] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till Workfront Fusion finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Cvent] till Adobe Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Contact ID]</p> </td> 
@@ -235,7 +235,7 @@ Den här åtgärdsmodulen tar bort en enskild kontakt i Event.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Ansluta [!DNL Cvent] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till Workfront Fusion finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Cvent] till Adobe Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Contact ID]</td> 
@@ -254,7 +254,7 @@ Den här åtgärdsmodulen uppdaterar en befintlig kontakt med dess ID.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Ansluta [!DNL Cvent] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till Workfront Fusion finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Cvent] till Adobe Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Contact ID]</p> </td> 
@@ -281,7 +281,7 @@ Den här åtgärdsmodulen lägger till en mötesförfrågan till ditt konto.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Ansluta [!DNL Cvent] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till Workfront Fusion finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Cvent] till Adobe Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Form ID]</p> </td> 
@@ -314,7 +314,7 @@ Den här sökmodulen hämtar information om alla poster av en viss typ.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Ansluta [!DNL Cvent] till [!DNL Adobe Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Cvent]-konto till Workfront Fusion finns i <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Cvent] till Adobe Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Record type]</p> </td> 

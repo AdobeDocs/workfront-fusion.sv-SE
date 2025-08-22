@@ -1,19 +1,19 @@
 ---
 title: Adobe Campaign v7/v8-moduler
-description: Med  [!DNL Adobe Campaign] modulerna kan du starta ett [!DNL Adobe Workfront Fusion] scenario baserat på händelser i ditt [!DNL Adobe Campaign] konto, skapa, läsa eller uppdatera avtal och andra poster, söka efter poster med villkor som du anger och överföra dokument.
+description: Med  [!DNL Adobe Campaign] modulerna kan du starta ett Adobe Workfront Fusion-scenario baserat på händelser i ditt [!DNL Adobe Campaign] konto, skapa, läsa eller uppdatera avtal och andra poster, söka efter poster med villkor som du anger och överföra dokument.
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Campaign] moduler
 
-Med modulerna [!DNL Adobe Campaign] kan du starta ett [!DNL Adobe Workfront Fusion]-scenario baserat på händelser i ditt [!DNL Adobe Campaign v7/v8]-konto, skapa, läsa eller uppdatera poster, söka efter poster med villkor som du anger och utföra anpassade API-anrop.
+Med modulerna [!DNL Adobe Campaign] kan du starta ett Adobe Workfront Fusion-scenario baserat på händelser i ditt [!DNL Adobe Campaign v7/v8]-konto, skapa, läsa eller uppdatera poster, söka efter poster med villkor som du anger och utföra anpassade API-anrop.
 
 ## Åtkomstkrav
 
@@ -54,7 +54,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -62,7 +62,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 Du måste lägga till Fusion-IP-adresserna till [!DNL Adobe Campaign].
 
-* Instruktioner om hur du lägger till IP-adresser i Campaign-tillåtelselista finns i [Lägga till IP-adresser i tillåtelselista](https://experienceleague.adobe.com/sv/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) i Adobe Campaign-dokumentationen.
+* Instruktioner om hur du lägger till IP-adresser i Campaign-tillåtelselista finns i [Lägga till IP-adresser i tillåtelselista](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) i Adobe Campaign-dokumentationen.
 * En lista över IP-adresser som ska läggas till i tillåtelselista finns i [Konfigurera IP-adresser för Fusion i din organisations tillåtelselista](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
 ## Adobe Campaign API-information
@@ -80,15 +80,15 @@ Adobe Campaign Connector använder följande:
  </tbody> 
  </table>
 
-## Anslut [!DNL Adobe Campaign] till [!DNL Adobe Workfront Fusion]
+## Anslut [!DNL Adobe Campaign] till Adobe Workfront Fusion
 
 >[!IMPORTANT]
 >
 >Vi rekommenderar att du skapar en server-till-server-anslutning. Adobe Campaign har uppdaterat sitt API så att det endast accepterar server-till-server-anslutningar. Om du ansluter till Campaign version 8 eller senare måste du **skapa en server-till-server-anslutning**.
 >
->Mer information om Campaigns nya anslutningskrav finns i [Migrering av tekniska operatorer för Campaign till Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=sv-SE) i dokumentationen för Campaign.
+>Mer information om Campaigns nya anslutningskrav finns i [Migrering av tekniska operatorer för Campaign till Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html) i dokumentationen för Campaign.
 
-1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL Connection] i någon [!DNL Adobe Campaign]-modul.
+1. Klicka på [!DNL Adobe Campaign] bredvid fältet **[!UICONTROL Add]** i någon [!UICONTROL Connection]-modul.
 1. Fyll i följande fält:
    <table style="table-layout:auto"> 
       <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -134,7 +134,7 @@ Adobe Campaign Connector använder följande:
 
 ## [!DNL Adobe Campaign]-moduler och deras fält
 
-När du konfigurerar [!DNL Adobe Campaign] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL Adobe Campaign] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL Adobe Campaign]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL Adobe Campaign] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -269,7 +269,7 @@ Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Campaign]
       <td>
         <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p>
         <p>Exempel: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] lägger till [!UICONTROL x-security]-tokenhuvudet automatiskt.</p>
+        <p>Workfront Fusion lägger automatiskt till tokenhuvudet [!UICONTROL x-security].</p>
       </td>
     </tr>
     <tr>
@@ -283,7 +283,7 @@ Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Campaign]
 
 Den här åtgärdsmodulen utför en markerad åtgärd på ett objekt i API:t [!DNL Adobe Campaign].
 
-Mer information om specifika åtgärder och fält finns i [[!DNL Adobe Campaign] - API-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=sv-SE).
+Mer information om specifika åtgärder och fält finns i [[!DNL Adobe Campaign] - API-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html).
 
 <table style="table-layout:auto"> 
  <col> 

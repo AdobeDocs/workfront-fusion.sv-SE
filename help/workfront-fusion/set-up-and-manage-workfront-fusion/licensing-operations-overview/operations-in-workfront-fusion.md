@@ -1,17 +1,17 @@
 ---
-title: Operationer
+title: Användning
 description: En åtgärd i Adobe Workfront Fusion är en uppgift som utförs av en modul. För spårningsändamål är en lyckad åtgärd som utförs av en modul en åtgärd.
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: 3470f7a9658ac4e6214c27f94f5b41821f2f8665
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 0%
+source-wordcount: '353'
+ht-degree: 1%
 
 ---
 
-# Operationer
+# Användning
 
 En åtgärd i Adobe Workfront Fusion är en uppgift som utförs av en modul. För spårningsändamål är en lyckad åtgärd som utförs av en modul en åtgärd.
 
@@ -29,16 +29,16 @@ En åtgärd i Adobe Workfront Fusion är en uppgift som utförs av en modul. Fö
 
 ## Operationsbegränsningar
 
-Din organisation kan ha en månatlig driftgräns. Detta baseras på den [!DNL Workfront]-plan som din organisation har köpt. Planen [!UICONTROL Ultimate] [!DNL Workfront] erbjuder ett obegränsat antal åtgärder.
+Din organisation kan ha en månatlig driftgräns. Detta baseras på den Workfront-plan som din organisation har köpt. Workfront-planen [!UICONTROL Ultimate] erbjuder ett obegränsat antal åtgärder.
 
-Om din organisation har en månadsgräns meddelas du när din organisation har nått gränsen. Om din organisation överskrider gränsen kontaktar [!DNL Workfront] din organisation för att säkerställa att din plan uppfyller dina behov.
+Om din organisation har en månadsgräns meddelas du när din organisation har nått gränsen. Om ni överskrider gränsen kontaktar Workfront er organisation för att säkerställa att er plan uppfyller era behov.
 
 Workfront Fusion skickar ett meddelande när din organisation når följande procentandelar av organisationens månadsgräns:
 
-* 50 %
+* 50 %
 * 75 %
-* 90 %
-* 100 %
+* 90%
+* 100 %
 
 ## Visa antalet åtgärder som har utförts under de senaste 30 dagarna
 

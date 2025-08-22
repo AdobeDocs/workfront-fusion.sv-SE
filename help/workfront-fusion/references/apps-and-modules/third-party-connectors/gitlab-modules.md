@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion kräver en Adobe Workfront Fusion-licens fö
 author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3554'
+source-wordcount: '3594'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Adobe Workfront Fusion kräver en Adobe Workfront Fusion-licens förutom en Adobe Workfront-licens.
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som använder [!UICONTROL GitLab] samt ansluta det till flera tredjepartsprogram och -tjänster.
+I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder [!UICONTROL GitLab] samt ansluta det till flera tredjepartsprogram och -tjänster.
 
 >[!NOTE]
 >
@@ -34,39 +34,39 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
+   <td role="rowheader">Adobe Workfront-plan*</td>
   <td> <p>[!UICONTROL Pro] eller högre</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
+   <td role="rowheader">Adobe Workfront-licens*</td>
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuellt licenskrav: Inga Workfront Fusion-licenskrav.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automatisering och integrering av arbetet] </p>
+   <p>Gammalt licenskrav: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Aktuellt produktkrav: Om du har Adobe Workfront-planen [!UICONTROL Select] eller [!UICONTROL Prime] måste din organisation köpa Adobe Workfront Fusion samt Adobe Workfront för att kunna använda de funktioner som beskrivs i den här artikeln. Workfront Fusion ingår i Workfront-planen för [!UICONTROL Ultimate].</p>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Krav för äldre produkter: Din organisation måste köpa Adobe Workfront Fusion och Adobe Workfront för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Kontakta Workfront-administratören om du vill veta vilken plan, licenstyp eller åtkomst du har.
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## Anslut [!DNL GitLab] till [!DNL Workfront Fusion] {#connect-gitlab-to-workfront-fusion}
+## Anslut [!DNL GitLab] till Workfront Fusion {#connect-gitlab-to-workfront-fusion}
 
-1. Klicka på **[!UICONTROL Add]** bredvid anslutningsfältet i en [!DNL Workfront Fusion] [!DNL Gitlab]-modul.
+1. Klicka på [!DNL Gitlab] bredvid anslutningsfältet i en Workfront Fusion **[!UICONTROL Add]**-modul.
 1. Konfigurera följande fält:
 
    <table style="table-layout:auto"> 
@@ -94,7 +94,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 ## [!DNL GitLab]-moduler och deras fält
 
-När du konfigurerar [!DNL GitLab] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL GitLab] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL GitLab]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL GitLab] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -253,7 +253,7 @@ Den schemalagda utlösarmodulen startar ett scenario när ett nytt projekt lägg
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Instruktioner om hur du ansluter ditt [!DNL GitLab]-konto till [!DNL Workfront] Fusion finns i <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Anslut [!DNL GitLab] till [!DNL Workfront] Fusion</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du ansluter ditt [!DNL GitLab]-konto till Workfront Fusion finns i <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL GitLab] till Workfront Fusion </a> i den här artikeln.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">Maximalt antal resultat</td> 
@@ -274,7 +274,7 @@ Denna schemalagda utlösarmodul startar ett scenario när en ny gren läggs till
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Instruktioner om hur du ansluter ditt [!DNL GitLab]-konto till [!DNL Workfront] Fusion finns i <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Anslut [!DNL GitLab] till [!DNL Workfront] Fusion</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du ansluter ditt [!DNL GitLab]-konto till Workfront Fusion finns i <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL GitLab] till Workfront Fusion </a> i den här artikeln.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">Maximalt antal resultat</td> 
@@ -364,7 +364,7 @@ Den här åtgärdsmodulen avbryter en enskild version av ett projekt.
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Instruktioner om hur du ansluter ditt [!DNL GitLab]-konto till [!DNL Workfront] Fusion finns i <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Anslut [!DNL GitLab] till [!DNL Workfront] Fusion</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du ansluter ditt [!DNL GitLab]-konto till Workfront Fusion finns i <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL GitLab] till Workfront Fusion </a> i den här artikeln.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -389,7 +389,7 @@ Den här åtgärdsmodulen avbryter en enskild version av ett projekt.
    </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL SHA]</td> 
-   <td>Om det finns måste SHA-värdet matcha HEAD i källgrenen. Om den inte matchar misslyckas sammanfogningen.</td> 
+   <td>Om det finns måste SHA matcha HEAD för källgrenen. Om den inte matchar misslyckas sammanfogningen.</td> 
    </tr> 
    </tbody> 
 </table>
@@ -768,7 +768,7 @@ Mer information om fält finns i [Visa alla anteckningar för sammanfogningsbeg�
 
 Den här modulen hämtar en lista med alla anteckningar för ett enskilt kodfragment. Utdragsanteckningar är kommentarer som användare kan skicka till ett utdrag.
 
-Mer information om fält finns i [??](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) i [!DNL GitLab]-dokumentationen.
+Mer information om fält finns i [🔗](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) i [!DNL GitLab]-dokumentationen.
 
 +++
 

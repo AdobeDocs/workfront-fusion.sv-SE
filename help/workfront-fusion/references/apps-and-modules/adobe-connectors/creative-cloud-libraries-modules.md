@@ -4,16 +4,16 @@ description: Med  [!DNL Adobe Workfront Fusion Adobe Creative Cloud] biblioteksm
 author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1234'
 ht-degree: 0%
 
 ---
 
 # Moduler för Adobe Creative Cloud Libraries
 
-Med modulerna [!DNL Adobe Workfront Fusion] [!DNL Adobe Creative Cloud Libraries] kan du starta ett scenario när ett element eller bibliotek skapas eller uppdateras. Du kan också överföra, hämta, arkivera eller lista element, eller ringa ett anrop till [!DNL Adobe Creative Cloud Libraries]-API:t.
+Med Adobe Workfront Fusion [!DNL Adobe Creative Cloud Libraries]-modulerna kan du starta ett scenario när ett element eller bibliotek skapas eller uppdateras. Du kan också överföra, hämta, arkivera eller lista element, eller ringa ett anrop till [!DNL Adobe Creative Cloud Libraries]-API:t.
 
 Om du behöver instruktioner om hur du skapar ett scenario kan du läsa artiklarna under [Skapa ett scenario: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -62,13 +62,13 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Förutsättningar
 
-Du måste ha ett [!UICONTROL Adobe Creative Cloud]-konto för att kunna använda [!DNL Adobe Creative Cloud Libraries]-moduler.
+Du måste ha ett [!DNL Adobe Creative Cloud Libraries]-konto för att kunna använda [!UICONTROL Adobe Creative Cloud]-moduler.
 
 ## API-information för Adobe Creative Cloud Libraries
 
@@ -91,7 +91,7 @@ Adobe Creative Cloud Libraries-kopplingen använder följande:
 
 ## [!UICONTROL Adobe Creative Cloud Libraries]-moduler och deras fält
 
-När du konfigurerar [!UICONTROL Adobe Creative Cloud Libraries] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL Adobe Creative Cloud Libraries] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!UICONTROL Adobe Creative Cloud Libraries]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL Adobe Creative Cloud Libraries] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -115,7 +115,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 * [[!UICONTROL Upload an Element]](#upload-an-element)
 
-* [[!UICONTROL [Se nytt element i bibliotek]]](#watch-new-element-in-library)
+* [!UICONTROL [Se nytt element i bibliotek]](#watch-new-element-in-library)
 
 * [[!UICONTROL Watch Updated Elements]](#watch-updated-elements)
 

@@ -1,12 +1,12 @@
 ---
 title: HTTP > Gör en OAuth 2.0-begärandemodul
-description: För att kunna göra en  [!DNL Adobe Workfront Fusion] HTTP(S)-begäran till servrar som kräver en OAuth 2.0-auktorisering måste du först skapa en OAuth-anslutning. [!DNL Adobe Workfront Fusion] ser till att alla anrop som görs med den här anslutningen har rätt auktoriseringshuvuden och att associerade tokens uppdateras automatiskt när det behövs.
+description: För att kunna göra en Adobe Workfront Fusion HTTP(S)-begäran till servrar som kräver OAuth 2.0-behörighet måste du först skapa en OAuth-anslutning. Adobe Workfront Fusion säkerställer att alla anrop som görs med den här anslutningen har rätt autentiseringsrubriker och att associerade tokens uppdateras automatiskt när det behövs.
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '2039'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL Adobe Workfront Fusion] kräver en [!DNL Adobe Workfront Fusion]-licens utöver en [!DNL Adobe Workfront]-licens.
+>Adobe Workfront Fusion kräver en Adobe Workfront Fusion-licens förutom en Adobe Workfront-licens.
 
-För att kunna göra en [!DNL Adobe Workfront Fusion] HTTP(S)-begäran till servrar som kräver en OAuth 2.0-auktorisering måste du först skapa en OAuth-anslutning. [!DNL Adobe Workfront Fusion] ser till att alla anrop som görs med den här anslutningen har lämpliga auktoriseringshuvuden och att associerade tokens uppdateras automatiskt när det behövs.
+För att kunna göra en Adobe Workfront Fusion HTTP(S)-begäran till servrar som kräver OAuth 2.0-behörighet måste du först skapa en OAuth-anslutning. Adobe Workfront Fusion säkerställer att alla anrop som görs med den här anslutningen har rätt autentiseringsrubriker och att associerade tokens uppdateras automatiskt när det behövs.
 
-[!DNL Workfront Fusion] stöder följande OAuth 2.0-autentiseringsflöden:
+Workfront Fusion stöder följande OAuth 2.0-autentiseringsflöden:
 
 * Auktoriseringskodflöde
 * Implicit flöde
@@ -73,7 +73,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -85,7 +85,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 ### Allmänna instruktioner för att skapa en anslutning i modulen [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]
 
-1. Skapa en OAuth-klient i tjänsten [!DNL target] som du vill att [!DNL Adobe Workfront Fusion] ska kommunicera med. Det här alternativet finns troligen i avsnittet [!UICONTROL Developer] i den angivna tjänsten.
+1. Skapa en OAuth-klient i tjänsten [!DNL target] som du vill att Adobe Workfront Fusion ska kommunicera med. Det här alternativet finns troligen i avsnittet [!UICONTROL Developer] i den angivna tjänsten.
 
    1. När du skapar en klient anger du rätt URL i fältet `[!UICONTROL Redirect URL]` eller `[!UICONTROL Callback URL]`:
 
@@ -95,14 +95,14 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
    1. När du har skapat klienten visar den angivna tjänsten två nycklar: `[!UICONTROL Client ID]` och `[!UICONTROL Client Secret]`. Vissa tjänster anropar dessa `[!UICONTROL App Key]` och `[!UICONTROL App Secret]`. Spara nyckeln och hemligheten på en säker plats så att du kan ange dem när du skapar anslutningen i Workfront Fusion.
 
-1. Sök efter `[!UICONTROL Authorize URI]` och `[!UICONTROL Token URI]` i API-dokumentationen för den angivna tjänsten. Det här är URL-adresser som [!DNL Workfront Fusion] kommunicerar med tjänsten [!DNL target] genom. Adresserna används för OAuth-auktorisering.
+1. Sök efter `[!UICONTROL Authorize URI]` och `[!UICONTROL Token URI]` i API-dokumentationen för den angivna tjänsten. Detta är URL-adresser som Workfront Fusion kommunicerar med tjänsten [!DNL target] via. Adresserna används för OAuth-auktorisering.
 
    >[!NOTE]
    >
    >Om tjänsten använder implicit flöde behöver du bara `[!UICONTROL Authorize URI]`.
 
-1. (Villkorligt) Om måltjänsten använder omfattningar (åtkomsträttigheter) kontrollerar du hur tjänsten skiljer enskilda omfattningar åt och ser till att du anger avgränsaren i de avancerade inställningarna i enlighet med detta. Om avgränsaren inte är rätt inställd kan [!DNL Workfront Fusion] inte skapa anslutningen och du får ett ogiltigt omfångsfel.
-1. När du har slutfört stegen ovan kan du börja skapa OAuth-anslutningen i [!DNL Workfront Fusion]. Lägg till HTTP > Gör en OAuth 2-begärandemodul i ditt scenario.
+1. (Villkorligt) Om måltjänsten använder omfattningar (åtkomsträttigheter) kontrollerar du hur tjänsten skiljer enskilda omfattningar åt och ser till att du anger avgränsaren i de avancerade inställningarna i enlighet med detta. Om avgränsaren inte är rätt inställd kan Workfront Fusion inte skapa anslutningen och du får ett ogiltigt omfångsfel.
+1. När du har utfört stegen ovan kan du börja skapa OAuth-anslutningen i Workfront Fusion. Lägg till HTTP > Gör en OAuth 2-begärandemodul i ditt scenario.
 1. Klicka på **[!UICONTROL Add]** i anslutningsfältet i modulen.
 
 1. Fyll i följande fält för att skapa en anslutning:
@@ -137,7 +137,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Scope separator] </td> 
-      <td> <p>Välj vilka scope som ska avgränsas av ovan. Den här informationen finns i den angivna tjänstens API-dokumentation (developer).</p> <p>Varning! Om avgränsaren inte är rätt inställd kan [!DNL Workfront Fusion] inte skapa anslutningen och du får ett ogiltigt omfångsfel.</p> </td> 
+      <td> <p>Välj vilka scope som ska avgränsas av ovan. Den här informationen finns i den angivna tjänstens API-dokumentation (developer).</p> <p>Varning! Om avgränsaren inte är rätt inställd kan Workfront Fusion inte skapa anslutningen och du får ett ogiltigt omfångsfel.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client ID] </td> 
@@ -193,7 +193,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
         <li><strong>[!UICONTROL client_id]</strong>: Det klient-ID som du fick när du skapade kontot inkluderas automatiskt i begärandetexten</li> 
         <li><strong>client_secrets</strong>: Klienthemligheten som du fick när du skapade kontot inkluderas automatiskt i begärandetexten</li> 
         <li><strong>kod</strong>: Koden som returnerades av auktoriseringsbegäran</li> 
-       </ul> <p>Obs!  <p>OAuth 2.0-standarden stöder minst två metoder för klientautentisering under det här steget (<code>[!UICONTROL client_secret_basic]</code> och <code>[!UICONTROL client_secret_post]</code>). [!DNL Workfront Fusion] skickar automatiskt angivet klient-ID och hemlighet via metoden <code>[!UICONTROL client_secret_post]</code>. Därför inkluderas dessa parametrar automatiskt som en del av tokenbegärandetexten. </p> <p>Mer information om OAuth 2.0-autentisering finns i <a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 Authorization Framework</a>.</p> </p> </td> 
+       </ul> <p>Obs!  <p>OAuth 2.0-standarden stöder minst två metoder för klientautentisering under det här steget (<code>[!UICONTROL client_secret_basic]</code> och <code>[!UICONTROL client_secret_post]</code>). Workfront Fusion skickar automatiskt angivet klient-ID och hemlighet via metoden <code>[!UICONTROL client_secret_post]</code>. Därför inkluderas dessa parametrar automatiskt som en del av tokenbegärandetexten. </p> <p>Mer information om OAuth 2.0-autentisering finns i <a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 Authorization Framework</a>.</p> </p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Refresh token parameters]</p> </td> 
@@ -203,11 +203,11 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
         <li> <p><strong>[!UICONTROL refresh_token]</strong>: Den senaste uppdateringstoken som erhölls av tjänsten som du ansluter till</p> </li> 
         <li> <p><strong>[!UICONTROL client_id]</strong>: Det klient-ID som du fick när du skapade kontot inkluderas automatiskt i begärandetexten</p> </li> 
         <li> <p><strong>[!UICONTROL client_secret]</strong>: Den klienthemlighet du fick när du skapade kontot inkluderas automatiskt i begärandetexten</p> </li> 
-       </ul> <p>Obs!  <p>OAuth 2.0-standarden stöder minst två metoder för klientautentisering under det här steget (<code>[!UICONTROL client_secret_basic]</code> och <code>[!UICONTROL client_secret_post]</code>). [!DNL Workfront Fusion] skickar automatiskt angivet klient-ID och hemlighet via metoden <code>[!UICONTROL client_secret_post]</code>. Därför inkluderas dessa parametrar automatiskt som en del av tokenbegärandetexten. </p> <p>Mer information om OAuth 2.0-autentisering finns i <a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 Authorization Framework</a>.</p> </p> </td> 
+       </ul> <p>Obs!  <p>OAuth 2.0-standarden stöder minst två metoder för klientautentisering under det här steget (<code>[!UICONTROL client_secret_basic]</code> och <code>[!UICONTROL client_secret_post]</code>). Workfront Fusion skickar automatiskt angivet klient-ID och hemlighet via metoden <code>[!UICONTROL client_secret_post]</code>. Därför inkluderas dessa parametrar automatiskt som en del av tokenbegärandetexten. </p> <p>Mer information om OAuth 2.0-autentisering finns i <a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 Authorization Framework</a>.</p> </p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Custom Headers]</p> </td> 
-      <td> <p>Ange eventuella ytterligare nycklar och värden som ska inkluderas i huvudet i [!UICONTROL Token]- och R[!UICONTROL efresh Token]-stegen.</p> <p>Obs!  <p>OAuth 2.0-standarden stöder minst två metoder för klientautentisering under det här steget (<code>[!UICONTROL client_secret_basic]</code> och <code>[!UICONTROL client_secret_post]</code>). [!DNL Workfront Fusion] stöder inte automatiskt metoden <code>[!UICONTROL client_secret_basic]</code>. Om tjänsten som du ansluter till förväntar sig att klient-ID och klienthemlighet ska kombineras till en enda sträng och sedan base64 kodas i auktoriseringshuvudet, ska du lägga till det huvud- och nyckelvärdet här.</p> <p> Mer information om OAuth 2.0-autentisering finns i <a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 Authorization Framework</a>.</p> </p> </td> 
+      <td> <p>Ange eventuella ytterligare nycklar och värden som ska inkluderas i huvudet i [!UICONTROL Token]- och R[!UICONTROL efresh Token]-stegen.</p> <p>Obs!  <p>OAuth 2.0-standarden stöder minst två metoder för klientautentisering under det här steget (<code>[!UICONTROL client_secret_basic]</code> och <code>[!UICONTROL client_secret_post]</code>). Workfront Fusion stöder inte automatiskt metoden <code>[!UICONTROL client_secret_basic]</code>. Om tjänsten som du ansluter till förväntar sig att klient-ID och klienthemlighet ska kombineras till en enda sträng och sedan base64 kodas i auktoriseringshuvudet, ska du lägga till det huvud- och nyckelvärdet här.</p> <p> Mer information om OAuth 2.0-autentisering finns i <a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 Authorization Framework</a>.</p> </p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Token placement]</p> </td> 
@@ -231,7 +231,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 I följande exempel visas hur du använder [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0]-begärandemodulen för att ansluta till [!DNL Google].
 
-1. Kontrollera att du har skapat ett projekt, konfigurerat OAuth-inställningar och genererat dina autentiseringsuppgifter enligt beskrivningen i artikeln[Anslut [!DNL Adobe Workfront Fusion] till [!DNL Google Services] med en anpassad OAuth-klient](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
+1. Kontrollera att du har skapat ett projekt, konfigurerat OAuth-inställningar och genererat dina autentiseringsuppgifter enligt beskrivningen i artikeln[Ansluta Adobe Workfront Fusion till [!DNL Google Services] med en anpassad OAuth-klient](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 1. Öppna modulen [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request].
 1. Klicka på **[!UICONTROL Add]** bredvid rutan Anslutning i någon av modulerna.
 1. Ange följande värden:
@@ -294,9 +294,9 @@ I följande exempel visas hur du använder [!UICONTROL HTTP] > [!UICONTROL Make 
 
 När du har upprättat en OAuth 2.0-anslutning fortsätter du att konfigurera modulen efter behov. Alla auktoriseringstoken inkluderas automatiskt i denna begäran och i alla andra begäranden som använder samma anslutning.
 
-När du konfigurerar modulen [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] visar [!DNL Workfront Fusion] fälten som listas nedan. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar modulen [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] visas fälten som listas nedan i Workfront Fusion. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
-Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan i [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan i Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -376,7 +376,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Disable serialization of multiple same query string keys as arrays]</p> </td> 
-   <td> <p>Som standard hanterar [!DNL Workfront Fusion] flera värden för samma URL-frågesträngsparameternyckel som matriser. <code>www.test.com?foo=bar&amp;foo=baz</code> konverteras till exempel till <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>. Aktivera det här alternativet om du vill inaktivera funktionen. </p> </td> 
+   <td> <p>Som standard hanterar Workfront Fusion flera värden för samma URL-frågesträngsparameternyckel som arrayer. <code>www.test.com?foo=bar&amp;foo=baz</code> konverteras till exempel till <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>. Aktivera det här alternativet om du vill inaktivera funktionen. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Request compressed content]</td> 
@@ -384,7 +384,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Use Mutual TLS]</td> 
-   <td> <p>Aktivera det här alternativet om du vill använda ömsesidig TLS i HTTP-begäran.</p> <p>Mer information om ömsesidigt TLS finns i <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Använd ömsesidigt TLS i HTTP-moduler i [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Aktivera det här alternativet om du vill använda ömsesidig TLS i HTTP-begäran.</p> <p>Mer information om ömsesidigt TLS finns i <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Använd ömsesidigt TLS i HTTP-moduler i Adobe Workfront Fusion</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

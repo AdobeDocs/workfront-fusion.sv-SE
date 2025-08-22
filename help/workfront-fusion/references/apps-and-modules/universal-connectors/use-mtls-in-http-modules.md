@@ -4,14 +4,14 @@ description: Du kan använda Mutual TLS i dina Adobe Workfront Fusion HTTP-modul
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 89017451c8e0b821616adda861222127e100a08d
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
 
-# Använd ömsesidig TLS i HTTP-moduler i [!DNL Adobe Workfront Fusion]
+# Använd ömsesidig TLS i HTTP-moduler i Adobe Workfront Fusion
 
 ## Översikt över Ömsesidig TLS
 
@@ -68,15 +68,15 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## Tillhandahåller ditt offentliga certifikat för [!DNL Workfront Fusion]
+## Ange ditt offentliga certifikat för Workfront Fusion
 
-När du ansluter till en webbtjänst med en HTTP-begäran kräver webbtjänsten vanligtvis ett [!DNL Workfront Fusion] offentligt certifikat för verifiering. Detta gör att webbtjänsten kan jämföra det certifikat som anges i HTTP-begäran med det som finns tillgängligt, för att säkerställa att certifikatet finns på webbtjänstens tillåtelselista.
+När du ansluter till en webbtjänst med en HTTP-begäran kräver webbtjänsten vanligtvis ett offentligt Workfront Fusion-certifikat för verifiering. Detta gör att webbtjänsten kan jämföra det certifikat som anges i HTTP-begäran med det som finns tillgängligt, för att säkerställa att certifikatet finns på webbtjänstens tillåtelselista.
 
-Instruktioner om hur du överför det offentliga certifikatet [!DNL Adobe Workfront Fusion] till en webbtjänst finns i webbtjänstens dokumentation.
+Instruktioner om hur du överför det offentliga certifikatet för Adobe Workfront Fusion till en webbtjänst finns i webbtjänstens dokumentation.
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Du kan använda följande länkar för att hämta Workfront Fusion publika certi
 
 >[!IMPORTANT]
 >
->* Dessa [!DNL Workfront Fusion] offentliga certifikat upphör att gälla den **4 april 2026** (USA och EU) eller den **25 november 2025** (Azure). När ditt certifikat har upphört att gälla måste du överföra ett nytt certifikat till webbtjänsten. Vi rekommenderar att du:
+>* Dessa offentliga Workfront Fusion-certifikat upphör att gälla den **4 april 2026** (USA och EU) eller den **2 november 2025** (Azure). När ditt certifikat har upphört att gälla måste du överföra ett nytt certifikat till webbtjänsten. Vi rekommenderar att du:
 >
 >   * Notera förfallodatumet och ange en påminnelse för dig själv om att överföra certifikatet till din webbtjänst.
 >   * Bokmärk den här sidan för att enkelt hitta nya certifikat.
@@ -97,9 +97,9 @@ Du kan använda följande länkar för att hämta Workfront Fusion publika certi
 
 | Datacenter | Hämta länk | Giltiga datum |
 |---|---|---|
-| Amerikanskt datacenter | [Hämta [!DNL Workfront Fusion] US Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | 3 mars 2025-4 april 2026 |
-| EU Datacenter | [Hämta [!DNL Workfront Fusion] EU-certifikat 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | 3 mars 2025-4 april 2026 |
-| Azure-kluster | [Hämta [!DNL Workfront Fusion] Azure Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 24 oktober 2024-25 november 2025 |
+| Amerikanskt datacenter | [Hämta Workfront Fusion US-certifikat 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | 3 mars 2025-4 april 2026 |
+| EU Datacenter | [Hämta Workfront Fusion EU Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | 3 mars 2025-4 april 2026 |
+| Azure-kluster | [Hämta Workfront Fusion Azure Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 24 oktober 2024-25 november 2025 |
 
 <!--
 
@@ -108,7 +108,7 @@ Du kan använda följande länkar för att hämta Workfront Fusion publika certi
 >[!IMPORTANT]
 >
 >* We recommend installing the certificates for 2025, available above.
->* These [!DNL Workfront Fusion] public certificates expire on **May 7, 2025**. After yours expires you will need to upload a new certificate to the web service. We recommend that you:
+>* These Workfront Fusion public certificates expire on **May 7, 2025**. After yours expires you will need to upload a new certificate to the web service. We recommend that you:
 >
 >   * Make note of the expiration date and set a reminder for yourself to upload the certificate to your web service.
 >   * Bookmark this page to easily find the new certificates.
@@ -117,14 +117,14 @@ Du kan använda följande länkar för att hämta Workfront Fusion publika certi
 
 | Datacenter | Download link | Dates valid |
 |---|---|---|
-| US Datacenter | [Download [!DNL Workfront Fusion] Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
-| EU Datacenter | [Download [!DNL Workfront Fusion] EU Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
+| US Datacenter | [Download Workfront Fusion Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
+| EU Datacenter | [Download Workfront Fusion EU Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
 
 -->
 
-## Aktivera Ömsesidig TLS i [!DNL Workfront Fusion] HTTP-moduler
+## Aktivera Ömsesidig TLS i Workfront Fusion HTTP-moduler
 
-Alla [!DNL Workfront Fusion] [!UICONTROL HTTP]-förfrågningsmoduler har möjlighet att aktivera ömsesidigt TLS.
+Alla begärandemoduler för Workfront Fusion [!UICONTROL HTTP] har möjlighet att aktivera ömsesidigt TLS.
 
 Så här aktiverar du Ömsesidig TLS i en [!UICONTROL HTTP]-begärandemodul:
 

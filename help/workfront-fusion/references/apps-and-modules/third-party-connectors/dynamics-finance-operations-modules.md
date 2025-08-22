@@ -1,19 +1,19 @@
 ---
 title: Microsoft Dynamics 365 - ekonomi- och driftmoduler
-description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera arbetsflöden som använder Microsoft Dynamics 365 Finance och Operations samt ansluta det till flera tredjepartsprogram och -tjänster.
+description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder Microsoft Dynamics 365 Finance och Operations samt ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion
 exl-id: 96f8d4f1-f97b-4da8-8d82-83cccb54ec68
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
 
 # [!DNL Microsoft Dynamics 365 Finance and Operations modules]
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som använder [!DNL Microsoft Dynamics 365] samt ansluta det till flera tredjepartsprogram och -tjänster.
+I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder [!DNL Microsoft Dynamics 365] samt ansluta det till flera tredjepartsprogram och -tjänster.
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ Den här åtgärdsmodulen skapar en ny enhetspost i Microsoft Dynamics 365 Finan
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>Instruktioner om hur du ansluter Microsoft Dynamics 365 Finance och Operations till [!DNL Workfront Fusion] finns i <a href="#create-a-connection" class="MCXref xref">Skapa en anslutning</a> i den här artikeln.</p> </td> 
+    <td> <p>Instruktioner om hur du ansluter Microsoft Dynamics 365 Finance och Operations till Workfront Fusion finns i <a href="#create-a-connection" class="MCXref xref">Skapa en anslutning</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Entity]</td>
@@ -123,7 +123,7 @@ Den här åtgärdsmodulen tar bort en entitetsobjekt från Dynamics Finance och 
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>Instruktioner om hur du ansluter Microsoft Dynamics 365 Finance och Operations till [!DNL Workfront Fusion] finns i <a href="#create-a-connection" class="MCXref xref">Skapa en anslutning</a> i den här artikeln.</p> </td> 
+    <td> <p>Instruktioner om hur du ansluter Microsoft Dynamics 365 Finance och Operations till Workfront Fusion finns i <a href="#create-a-connection" class="MCXref xref">Skapa en anslutning</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Entity]</td>
@@ -146,7 +146,7 @@ Den här åtgärdsmodulen gör ett anpassat anrop till Dynamics finans- och drif
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-    <td> <p>Instruktioner om hur du ansluter Microsoft Dynamics 365 Finance och Operations till [!DNL Workfront Fusion] finns i <a href="#create-a-connection" class="MCXref xref">Skapa en anslutning</a> i den här artikeln.</p> </td> 
+    <td> <p>Instruktioner om hur du ansluter Microsoft Dynamics 365 Finance och Operations till Workfront Fusion finns i <a href="#create-a-connection" class="MCXref xref">Skapa en anslutning</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
@@ -158,7 +158,7 @@ Den här åtgärdsmodulen gör ett anpassat anrop till Dynamics finans- och drif
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt. Detta avgör begärans innehållstyp.</p> <p>Exempel:<code> {"Content-type":"application/json"}</code></p> <p>Obs! Om du får felmeddelanden och det är svårt att fastställa deras ursprung bör du överväga att ändra rubrikerna baserat på [!DNL Workfront]-dokumentationen. Om ditt anpassade API-anrop returnerar ett 422 HTTP-begärandefel kan du försöka med att använda en <code>"Content-Type":"text/plain"</code>-rubrik.</p> </td> 
+   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt. Detta avgör begärans innehållstyp.</p> <p>Exempel:<code> {"Content-type":"application/json"}</code></p> <p>Obs! Om du får felmeddelanden och det är svårt att fastställa deras ursprung bör du överväga att ändra rubrikerna baserat på Workfront-dokumentationen. Om ditt anpassade API-anrop returnerar ett 422 HTTP-begärandefel kan du försöka med att använda en <code>"Content-Type":"text/plain"</code>-rubrik.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query string]</td> 
@@ -186,7 +186,7 @@ Den här åtgärdsmodulen returnerar data från ett entitetsobjekt. Objektet ide
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>Instruktioner om hur du ansluter Microsoft Dynamics 365 Finance och Operations till [!DNL Workfront Fusion] finns i <a href="#create-a-connection" class="MCXref xref">Skapa en anslutning</a> i den här artikeln.</p> </td> 
+    <td> <p>Instruktioner om hur du ansluter Microsoft Dynamics 365 Finance och Operations till Workfront Fusion finns i <a href="#create-a-connection" class="MCXref xref">Skapa en anslutning</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Entity]</td>
@@ -207,7 +207,7 @@ Den här åtgärdsmodulen returnerar data från ett entitetsobjekt. Objektet ide
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>Instruktioner om hur du ansluter Microsoft Dynamics 365 Finance och Operations till [!DNL Workfront Fusion] finns i <a href="#create-a-connection" class="MCXref xref">Skapa en anslutning</a> i den här artikeln.</p> </td> 
+    <td> <p>Instruktioner om hur du ansluter Microsoft Dynamics 365 Finance och Operations till Workfront Fusion finns i <a href="#create-a-connection" class="MCXref xref">Skapa en anslutning</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Entity]</td>
@@ -234,7 +234,7 @@ Sökmodulen returnerar resultat baserat på villkor som du anger.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter din [!DNL Workfront]-app till [!DNL Workfront Fusion] finns i <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Workfront] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter din Workfront-app till Workfront Fusion finns i <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Ansluta Workfront till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Entity]</td> 
@@ -268,7 +268,7 @@ This module lists all records for a given entity.  The item is identified by its
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>For instructions about connecting Microsoft Dynamics 365 Finance and Operations to [!DNL Workfront Fusion], see <a href="#create-a-connection" class="MCXref xref">Create a connection</a> in this article.</p> </td> 
+    <td> <p>For instructions about connecting Microsoft Dynamics 365 Finance and Operations to Workfront Fusion, see <a href="#create-a-connection" class="MCXref xref">Create a connection</a> in this article.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Record Type]</td>
@@ -291,15 +291,15 @@ This trigger module starts a scenario when a record of the given type is created
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-    <td> <p>For instructions about connecting Microsoft Dynamics 365 Finance and Operations to [!DNL Workfront Fusion], see <a href="#create-a-connection" class="MCXref xref">Create a connection</a> in this article.</p> </td> 
+    <td> <p>For instructions about connecting Microsoft Dynamics 365 Finance and Operations to Workfront Fusion, see <a href="#create-a-connection" class="MCXref xref">Create a connection</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>Select the type of [!DNL Workfront] record that you want the module to watch.</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to watch.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filter]</td> 
-   <td> <p>Enter the field that you want to search by, the operator you want to use in your query, and the value that you are searching for in the field.</p> <p>Note: Do not use <code>username </code>in your search criteria. Including <code>username </code>in an API query to [!DNL Workfront] logs the user into Workfront, and the search will not be successful.</p> <p>Note: <code>In</code> and <code>NotIn</code>work with arrays. The inputs should be in array format.</p></td> 
+   <td> <p>Enter the field that you want to search by, the operator you want to use in your query, and the value that you are searching for in the field.</p> <p>Note: Do not use <code>username </code>in your search criteria. Including <code>username </code>in an API query to Workfront logs the user into Workfront, and the search will not be successful.</p> <p>Note: <code>In</code> and <code>NotIn</code>work with arrays. The inputs should be in array format.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 

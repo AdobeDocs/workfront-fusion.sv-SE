@@ -1,19 +1,19 @@
 ---
 title: Dropbox moduler
-description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera arbetsflöden som använder Dropbox och ansluta det till flera tredjepartsprogram och -tjänster. På så sätt kan du automatisera aktiviteter som övervakning, sökning, hämtning, listning, skapande och redigering av filer och mappar i din Dropbox.
+description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder Dropbox och ansluta det till flera tredjepartsprogram och -tjänster. På så sätt kan du automatisera aktiviteter som övervakning, sökning, hämtning, listning, skapande och redigering av filer och mappar i din Dropbox.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 2ed8e4e956bacc18a43947c4c55482cf32533054
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2956'
 ht-degree: 0%
 
 ---
 
 # [!DNL Dropbox] moduler
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som använder [!UICONTROL Dropbox] eller [!DNL Dropbox Business], samt ansluta det till flera tredjepartsprogram och -tjänster. På så sätt kan du automatisera aktiviteter som övervakning, sökning, hämtning, listning, skapande och redigering av filer och mappar i [!UICONTROL Dropbox].
+I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder [!UICONTROL Dropbox] eller [!DNL Dropbox Business], samt ansluta det till flera tredjepartsprogram och -tjänster. På så sätt kan du automatisera aktiviteter som övervakning, sökning, hämtning, listning, skapande och redigering av filer och mappar i [!UICONTROL Dropbox] .
 
 Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -58,7 +58,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -69,10 +69,10 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 >[!IMPORTANT]
 >
 >* Om du vill använda Dropbox-anslutningen måste du först skapa ett program i Dropbox.
->   Om du vill ha mer information kan du söka efter&quot;Skapa ett program&quot; i utvecklarhandboken för Dropbox.
+>  >   Om du vill ha mer information kan du söka efter&quot;Skapa ett program&quot; i utvecklarhandboken för Dropbox.
 >* Använd följande omdirigerings-URI när du skapar programmet: `https://app.workfrontfusion.com/oauth/cb/dropbox`
 >* Dropbox måste godkänna program med fler än 50 användare.
->   Mer information finns i&quot;Produktionsgodkännande&quot; i utvecklarhandboken för Dropbox.
+>  >   Mer information finns i&quot;Produktionsgodkännande&quot; i utvecklarhandboken för Dropbox.
 
 ## Dropbox API-information
 
@@ -147,7 +147,7 @@ Så här skapar du en anslutning för dina [!DNL Dropbox]-moduler:
 
 ## [!DNL Dropbox]-moduler och deras fält
 
-När du konfigurerar [!DNL Dropbox] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL Dropbox] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL Dropbox]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL Dropbox] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -170,7 +170,7 @@ Den här modulen för utlösare returnerar filinformation när filen i en angive
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref"> Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -215,7 +215,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref"> Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>Olika sätt att välja filer</td> 
@@ -244,7 +244,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref"> Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>ID för delad mapp</td> 
@@ -269,7 +269,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref"> Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>Lista </td> 
@@ -305,7 +305,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref"> Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>Olika sätt att välja filer</td> 
@@ -334,7 +334,7 @@ Du kan mappa den här informationen i efterföljande moduler i scenariot.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref"> Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Search] </td> 
@@ -390,7 +390,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref"> Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder Name] </td> 
@@ -421,7 +421,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref"> Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Select to]</td> 
@@ -450,7 +450,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref"> Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Way of selecting files]</td> 
@@ -492,7 +492,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref"> Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Way of selecting files]</td> 
@@ -521,7 +521,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref"> Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Way of selecting files / folders] </td> 
@@ -566,7 +566,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref"> Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>Olika sätt att välja filer</td> 
@@ -600,7 +600,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref"> Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Way of selecting files]</td> 
@@ -633,7 +633,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref"> Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder]</td> 
@@ -665,7 +665,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref">Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Dropbox]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-dropbox" class="MCXref xref"> Skapa en anslutning till [!DNL Dropbox]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL URL]</p> </td> 
@@ -677,7 +677,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td>[!UICONTROL Headers] </td> 
-   <td> <p>Ange önskade begäranderubriker. [!DNL Workfront Fusion] lägger till auktoriseringshuvuden automatiskt.</p> </td> 
+   <td> <p>Ange önskade begäranderubriker. Workfront Fusion lägger automatiskt till auktoriseringsrubriker.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Query String]</td> 
@@ -734,7 +734,7 @@ Följande kan bero på att det inte går att överföra eller uppdatera en fil:
 
 Den URL som returneras av [!UICONTROL Dropbox] >[!UICONTROL Create a shared link] länkar inte direkt till en bild, utan till en [!DNL Dropbox]-sida. Ersätt efterföljande `?dl=0` med `?dl=1` om du vill tvinga bilden att hämtas. Om du vill tvinga bilden att återges (till exempel i en webbläsare eller i Facebook Messenger) lägger du till `&raw=1` i URL:en.
 
-Om du behöver hämta den direkta eller råa länken till bilden för webbplatsen eller för andra [!DNL Workfront Fusion]-moduler måste du ändra den ursprungliga delade URL:en på följande sätt:
+Om du behöver få en direkt eller rå länk till bilden för din webbplats eller för andra Workfront Fusion-moduler måste du ändra den ursprungliga delade URL:en på följande sätt:
 
 Ursprunglig URL:
 

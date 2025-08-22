@@ -4,9 +4,9 @@ description: 'Adobe Workfront Fusion skiljer ut fem typer av moduler: åtgärdsm
 author: Becky
 feature: Workfront Fusion
 exl-id: 4c8fe028-8425-426d-a006-f0c66871b3cd
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Scenarier kan innehålla ett obegränsat antal åtgärdsmoduler, men ett stort a
 
 **Exempel:**
 
-* **[!DNL Workfront]>[!UICONTROL Upload a file]** skickar en fil till [!DNL Workfront] och returnerar dess identifierare.
+* **Workfront >[!UICONTROL Upload a file]** skickar en fil till Workfront och returnerar dess identifierare.
 * **[!UICONTROL Image]>[!UICONTROL Resize]** tar emot en bild, ändrar storlek på den till angivna mått och överför den storleksändrade bilden till nästa åtgärd.
 
 >[!ENDSHADEBOX]
@@ -44,7 +44,7 @@ Scenarier kan innehålla ett obegränsat antal åtgärdsmoduler, men ett stort a
 
 * Skapa
 * Läs
-* Uppdatera
+* Uppdatering
 * Ta bort
 
 Undertypen Uppdatera innehåller följande tre åtgärder:
@@ -80,7 +80,7 @@ Scenarier kan innehålla ett obegränsat antal sökmoduler, men ett stort antal 
 
 **Exempel:**
 
-**[!DNL Workfront]>[!UICONTROL Read Related Records]** läser poster som matchar den sökfråga du anger, i ett visst överordnat objekt.
+**Workfront >[!UICONTROL Read Related Records]** läser poster som matchar den sökfråga du anger i ett visst överordnat objekt.
 
 >[!ENDSHADEBOX]
 
@@ -94,7 +94,7 @@ Eftersom utlösare gör att scenarier börjar köras, kan de bara placeras i bö
 
 Varje scenario kan bara innehålla en utlösare.
 
-[!DNL Workfront Fusion] använder två typer av utlösare: avsökningsutlösare och direktutlösare.
+I Workfront Fusion används två typer av utlösare: avsökningsutlösare och direktutlösare.
 
 ### Avsökningsutlösare
 
@@ -110,7 +110,7 @@ Mer information finns i [Välja var en utlösarmodul ska starta](/help/workfront
 
 **Exempel:**
 
-* **[!DNL Workfront]>[!UICONTROL Watch records]** returnerar poster som nyligen har lagts till efter den senaste körningen av scenariot.
+* **Workfront >[!UICONTROL Watch records]** returnerar poster som nyligen har lagts till efter den senaste körningen av scenariot.
 
 * **[!DNL Google Sheets]>[!UICONTROL Watch Rows]** returnerar nya rader som lagts till efter den senaste gången scenariot kördes.
 
@@ -118,7 +118,7 @@ Mer information finns i [Välja var en utlösarmodul ska starta](/help/workfront
 
 ### Direktutlösare
 
-Direktutlösare gör att en tjänst kan meddela [!DNL Workfront Fusion] om en ändring omedelbart efter att den har utförts. Vi rekommenderar att du schemalägger ett scenario som innehåller en direktutlösare som körs omedelbart.
+Direktutlösare gör att en tjänst kan meddela Workfront Fusion om en ändring direkt efter att den har utförts. Vi rekommenderar att du schemalägger ett scenario som innehåller en direktutlösare som körs omedelbart.
 
 Instruktioner finns i [Schemalägg ett scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
@@ -128,7 +128,7 @@ Mer information om hur inkommande data hanteras av en direktutlösare finns i [D
 
 **Exempel:**
 
-* **[!DNL Workfront]>[!UICONTROL Watch Events]** returnerar information när en viss typ av händelse inträffar i Workfront, till exempel när en uppgift skapas.
+* **Workfront >[!UICONTROL Watch Events]** returnerar information när en viss typ av händelse inträffar i Workfront, till exempel när en uppgift skapas.
 * **[!DNL Google Sheets]>[!UICONTROL Watch Changes]** returnerar information när en cell uppdateras.
 
 >[!ENDSHADEBOX]

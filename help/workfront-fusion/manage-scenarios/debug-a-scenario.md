@@ -4,16 +4,16 @@ description: Med Adobe Workfront Fusion Devtool kan du förstå och felsöka sce
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1367'
 ht-degree: 0%
 
 ---
 
 # Felsöka ett scenario
 
-Utvecklingsverktyget [!DNL Adobe Workfront Fusion] hjälper dig att förstå och felsöka scenarier. Med utvecklingsverktyget kan du kontrollera alla manuella körningar av ditt scenario, granska alla utförda åtgärder och se information om alla API-anrop som utförs. Du kan se vilken modul, åtgärd eller enskilt svar som orsakade felet och använda den kunskapen för att förfina ditt scenario.
+Adobe Workfront Fusion Devtool hjälper er att förstå och felsöka scenarier. Med utvecklingsverktyget kan du kontrollera alla manuella körningar av ditt scenario, granska alla utförda åtgärder och se information om alla API-anrop som utförs. Du kan se vilken modul, åtgärd eller enskilt svar som orsakade felet och använda den kunskapen för att förfina ditt scenario.
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ Utvecklingsverktyget [!DNL Adobe Workfront Fusion] hjälper dig att förstå och
 En videointroduktion och genomgång av verktyget Fusion Devtool finns på
 
 * [Fusion Development Tool](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Gå igenom utvecklingsverktyget](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=sv-SE)
+* [Gå igenom utvecklingsverktyget](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
 
 ## Åtkomstkrav
 
@@ -35,17 +35,17 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront package</td> 
    <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens</td> 
-   <td> <p>Nytt: [!UICONTROL Standard]</p><p>eller</p><p>Aktuell: [!UICONTROL Work] eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: [!UICONTROL Work] eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuell: Inga [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
    <p>Äldre: Alla </p>
    </td> 
@@ -53,16 +53,16 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Workfront]: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] ingår.</li></ul>
+   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] Workfront-plan: Din organisation måste köpa Adobe Workfront Fusion.</li><li>[!UICONTROL Ultimate] Workfront: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Konfigurationer på åtkomstnivå*</td> 
    <td> 
-     <p>Du måste vara administratör för [!DNL Workfront Fusion] för din organisation.</p>
-     <p>Du måste vara administratör för [!DNL Workfront Fusion] för ditt team.</p>
+     <p>Du måste vara Workfront Fusion-administratör för din organisation.</p>
+     <p>Du måste vara Workfront Fusion-administratör för ditt team.</p>
    </td> 
   </tr> 
    </td> 
@@ -72,7 +72,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -91,7 +91,7 @@ Eller:
 1. Högerklicka i ett tomt område på sidan (inte i en modul).
 1. Välj **Öppna utvecklingsverktyget**.
 
-## Använd utvecklingsverktyget [!DNL Workfront Fusion]
+## Använda Workfront Fusion Devtool
 
 Workfront Fusion Devtool är uppdelat i tre huvudavsnitt. De finns i den vänstra panelen i fönstret Utvecklare.
 
@@ -124,15 +124,15 @@ Live Stream visar vad som händer i bakgrunden när du klickar på Kör en gång
         <li> <p>Begärandetext</p> </li> 
         <li> <p>Svarshuvuden</p> </li> 
         <li> <p>Svarstext</p> </li> 
-       </ul> <p>Om du vill visa den här informationen klickar du på lämplig flik i den högra panelen i utvecklingsverktyget [!DNL Workfront Fusion].</p> </td> 
+       </ul> <p>Om du vill visa den här informationen klickar du på lämplig flik i den högra panelen i Workfront Fusion Devtool.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Sök efter händelser efter innehåll</p> </td> 
-      <td> <p>Ange söktermen i sökfältet på den vänstra panelen i utvecklingsverktyget [!DNL Workfront Fusion] om du bara vill visa begäranden som innehåller söktermen.</p> </td> 
+      <td> <p>Ange söktermen i sökfältet på den vänstra panelen i Workfront Fusion Devtool om du bara vill visa begäranden som innehåller söktermen.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Rensa listan över förfrågningar </p> </td> 
-      <td> <p>Klicka på papperskorgsikonen i det övre högra hörnet av utvecklingsverktygets vänstra panel för att rensa listan över begäranden som spelats in med utvecklingsverktyget [!DNL Workfront Fusion]. </p> </td> 
+      <td> <p>Klicka på papperskorgsikonen i det övre högra hörnet av utvecklingsverktygets vänstra panel för att rensa listan över begäranden som spelats in med Workfront Fusion Devtool. </p> </td> 
      </tr> 
      <!--<tr> 
       <td role="rowheader"> <p>Enable Console Logging</p> </td> 
@@ -160,7 +160,7 @@ Scenariofelsökaren är användbar för mer komplexa scenarier. Den visar histor
 
 ### verktyg
 
-Utvecklingsverktyget [!DNL Workfront Fusion] innehåller verktyg som gör det enklare att konfigurera ditt scenario.
+Workfront Fusion-utvecklingsverktyget har verktyg som gör det enklare att konfigurera ditt scenario.
 
 1. Klicka på ikonen **[!UICONTROL Tools]** ![Konsolverktyg](assets/console-tools-icon.png) för att öppna verktygen.
 1. Välj det verktyg som du vill använda

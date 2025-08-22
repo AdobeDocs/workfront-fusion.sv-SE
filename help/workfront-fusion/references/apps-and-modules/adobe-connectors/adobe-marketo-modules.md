@@ -1,19 +1,19 @@
 ---
 title: Marketo moduler
-description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera arbetsflöden som använder  [!DNL Marketo] samt ansluta det till flera tredjepartsprogram och -tjänster.
+description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder  [!DNL Marketo] och ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion
 exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1814'
+source-wordcount: '1880'
 ht-degree: 0%
 
 ---
 
 # [!DNL Marketo] moduler
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som använder [!DNL Marketo] samt ansluta det till flera tredjepartsprogram och -tjänster.
+I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder [!DNL Marketo] samt ansluta det till flera tredjepartsprogram och -tjänster.
 
 En videointroduktion till Marketo Connector finns på:
 
@@ -62,7 +62,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -141,7 +141,7 @@ Du kan skapa en anslutning till ditt [!DNL Marketo]-konto direkt inifrån en [!D
 
 ## [!DNL Marketo] moduler och deras fält
 
-När du konfigurerar [!DNL Marketo] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL Marketo] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL Marketo]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL Marketo] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -185,7 +185,7 @@ Den här utlösarmodulen startar ett scenario när en post skapas eller uppdater
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Marketo] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till Workfront Fusion finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Marketo] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -230,7 +230,7 @@ Den här åtgärdsmodulen lägger till en eller flera leads till en lista med le
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Marketo] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till Workfront Fusion finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Marketo] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL List ID]</td> 
@@ -253,7 +253,7 @@ Den här åtgärdsmodulen gör en kopia av ett program med det befintliga progra
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Marketo] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till Workfront Fusion finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Marketo] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Existing Program ID]</td> 
@@ -280,7 +280,7 @@ Denna åtgärdsmodul skapar en ny post i [!DNL Marketo]
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Marketo] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till Workfront Fusion finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Marketo] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -337,7 +337,7 @@ Med den här åtgärdsmodulen kan du göra ett anpassat autentiserat anrop till 
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Marketo] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till Workfront Fusion finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Marketo] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -372,7 +372,7 @@ Den här åtgärdsmodulen hämtar en fil med hjälp av fil-ID:t.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Marketo] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till Workfront Fusion finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Marketo] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
@@ -391,7 +391,7 @@ Den här åtgärdsmodulen läser information om en post med hjälp av dess ID.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Marketo] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till Workfront Fusion finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Marketo] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -409,7 +409,7 @@ Den här åtgärdsmodulen läser information om en post med hjälp av dess ID.
    <td>Välj den information som du vill inkludera i utdatapaketet för den här modulen. Fälten är tillgängliga baserat på den [!UICONTROL Record Type] du har valt.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL &lt;Object> ID]</td> 
+   <td role="rowheader">[!UICONTROL <Object> ID]</td> 
    <td>Ange eller mappa ID:t för objektet som du vill hämta information om.</td> 
   </tr> 
  </tbody> 
@@ -425,7 +425,7 @@ Den här åtgärdsmodulen tar bort en eller flera leads från en lista med lead-
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Marketo] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till Workfront Fusion finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Marketo] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL List ID]</td> 
@@ -448,7 +448,7 @@ Den här åtgärdsmodulen schemalägger en befintlig kampanj för ett visst datu
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Marketo] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till Workfront Fusion finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Marketo] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Campaign ID]</td> 
@@ -471,7 +471,7 @@ Den här åtgärdsmodulen uppdaterar en befintlig post med dess ID.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Marketo] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till Workfront Fusion finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Marketo] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -527,7 +527,7 @@ Den här åtgärdsmodulen överför en ny fil till [!UICONTROL Marketo].
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Marketo] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till Workfront Fusion finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Marketo] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
@@ -559,7 +559,7 @@ Denna åtgärdsmodul hämtar alla poster av en viss typ.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Marketo] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till Workfront Fusion finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Marketo] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -595,7 +595,7 @@ Den här sökmodulen hämtar en lista med poster som matchar specifika sökvillk
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Marketo] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Marketo]-konto till Workfront Fusion finns i <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Marketo] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 

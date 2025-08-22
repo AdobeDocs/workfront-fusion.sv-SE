@@ -4,9 +4,9 @@ description: Följande strängfunktioner är tillgängliga på panelen för mapp
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Konverterar det första tecknet i en textsträng till versaler.
 
 `capitalize( workfront )`
 
-Returnerar: [!DNL Workfront]
+Returer: Workfront
 
 >[!ENDSHADEBOX]
 
@@ -78,7 +78,7 @@ Tar bort alla icke-ASCII-tecken från en textsträng.
 
 * `ascii(` `Wěošrčkřfžrýoáníté` `)`
 
-Returnerar: [!DNL Workfront]
+Returer: Workfront
 
 * `ascii(` `ěščřž` `;` `true` `)`
 
@@ -239,7 +239,7 @@ Returnerar: [!UICONTROL Automate your workflow]
 
 ## [!UICONTROL escapeHTML (text)]
 
-Ignorerar alla HTML-taggar i text.
+Innebär att alla HTML-taggar kapslas in i text.
 
 >[!BEGINSHADEBOX]
 

@@ -1,19 +1,19 @@
 ---
 title: Microsoft SQL Server-moduler
-description: Du kan använda  [!DNL Adobe Workfront Fusion] för att ansluta till Microsoft SQL Server.
+description: Du kan använda Adobe Workfront Fusion för att ansluta till Microsoft SQL Server.
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
 
 # [!DNL Microsoft SQL Server] moduler
 
-Du kan ansluta till [!UICONTROL Microsoft SQL Server] med [!DNL Adobe Workfront Fusion].
+Du kan ansluta till [!UICONTROL Microsoft SQL Server] med Adobe Workfront Fusion.
 
 ## Åtkomstkrav
 
@@ -54,11 +54,11 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## Ansluter tjänsten [!DNL Microsoft SQL Server] till [!DNL Workfront Fusion]
+## Ansluta tjänsten [!DNL Microsoft SQL Server] till Workfront Fusion
 
 Instruktioner om hur du ansluter ditt [!DNL Microsoft SQL Server]-konto till [!UICONTROL Workfront Fusion] finns i [Skapa en anslutning till [!UICONTROL Adobe Workfront Fusion] - grundläggande instruktioner](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
@@ -70,17 +70,17 @@ Instruktioner om hur du ansluter ditt [!DNL Microsoft SQL Server]-konto till [!U
 
 ## Använder [!DNL Microsoft SQL Server] moduler
 
-Du kan köra din anpassade logik direkt på databasservern via lagrade procedurer. [!DNL Adobe Workfront Fusion] läser in gränssnittet för in-/utdataparametrar och postmängd dynamiskt så att varje parameter eller värde kan mappas individuellt. Innan du börjar konfigurera ditt scenario bör du kontrollera att kontot som du använder för att ansluta till databasen har läsåtkomst till `INFORMATION_SCHEMA.ROUTINES`- och `INFORMATION_SCHEMA.PARAMETERS`-vyer.
+Du kan köra din anpassade logik direkt på databasservern via lagrade procedurer. Adobe Workfront Fusion läser in gränssnittet för in-/utdataparametrar och postmängder dynamiskt så att varje parameter eller värde kan mappas individuellt. Innan du börjar konfigurera ditt scenario bör du kontrollera att kontot som du använder för att ansluta till databasen har läsåtkomst till `INFORMATION_SCHEMA.ROUTINES`- och `INFORMATION_SCHEMA.PARAMETERS`-vyer.
 
 När [!DNL Fusion] upprättar anslutningen till [!DNL SQL server]-målet identifierar användaren [!DNL Fusion] värden (domännamnet eller IP-adressen där servern finns) och porten. [!DNL Fusion] kan ansluta till alla tillgängliga värdar och portar.
 
-Mer information om IP-adresser som används av [!DNL Workfront Fusion] finns i [IP-adresser för åtkomst [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
+Mer information om IP-adresser som används av Workfront Fusion finns i [IP-adresser för åtkomst till Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
 
 Mer information om hur du skapar en lagrad procedur finns i [!DNL Microsoft SQL Server]-dokumentationen.
 
 >[!NOTE]
 >
->[!DNL Workfront Fusion] stöder inte flera postmängder. Endast den första bearbetas.
+>Workfront Fusion stöder inte flera postmängder. Endast den första bearbetas.
 
 ## Felsökningsfel [!UICONTROL ER_LOCK_WAIT_TIMEOUT: Lock wait timeout exceeded; try restarting transaction]
 

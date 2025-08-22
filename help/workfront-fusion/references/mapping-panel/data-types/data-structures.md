@@ -4,16 +4,16 @@ description: En datastruktur är ett dokument som i detalj beskriver formatet p�
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-source-git-commit: 2a81e013845f8a0e2720292984c451501e6011a0
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
 
 # Datastrukturer
 
-En datastruktur är ett dokument eller mönster som i detalj beskriver formatet på data som bearbetas i [!DNL Adobe Workfront Fusion]. Baserat på det här dokumentet kan scenarioredigeraren ta reda på vilken datatyp som returneras eller tas emot. Datastrukturdokumenten används oftast för serialisering/tolkning av dataformat som JSON, XML, CSV med flera.
+En datastruktur är ett dokument eller mönster som i detalj beskriver formatet på de data som behandlas i Adobe Workfront Fusion. Baserat på det här dokumentet kan scenarioredigeraren ta reda på vilken datatyp som returneras eller tas emot. Datastrukturdokumenten används oftast för serialisering/tolkning av dataformat som JSON, XML, CSV med flera.
 
 Du kan skapa en datastruktur genom att klicka på knappen [!UICONTROL Create a new data structure] i avsnittet [!UICONTROL Data structure overview] eller i inställningarna för modulen som kräver en datastrukturspecifikation.
 

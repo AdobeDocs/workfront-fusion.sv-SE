@@ -1,17 +1,17 @@
 ---
 title: Adobe Workfront Fusion - översikt
-description: Rollen för  [!DNL Adobe Workfront Fusion] är att automatisera processerna så att du kan koncentrera dig på nya uppgifter i stället för att upprepa samma uppgifter om och om igen. Det fungerar genom att länka åtgärder inom och mellan program och tjänster för att skapa ett scenario som överför och omvandlar data automatiskt. Scenariot du skapar letar efter data i en app eller tjänst och bearbetar data för att ge det resultat du vill ha.
+description: Adobe Workfront Fusions roll är att automatisera processerna så att ni kan koncentrera er på nya uppgifter istället för att upprepa samma uppgifter om och om igen. Det fungerar genom att länka åtgärder inom och mellan program och tjänster för att skapa ett scenario som överför och omvandlar data automatiskt. Scenariot du skapar letar efter data i en app eller tjänst och bearbetar data för att ge det resultat du vill ha.
 author: Becky
 feature: Workfront Fusion
 exl-id: 49df566f-59e9-469c-9123-27d1e15069e4
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
-# [!DNL Adobe Workfront Fusion] - översikt
+# Adobe Workfront Fusion - översikt
 
 Adobe Workfront Fusions roll är att automatisera era processer så att användarna inte behöver lägga så mycket tid på rutinuppgifter. Det fungerar genom att länka åtgärder inom och mellan program och tjänster för att skapa ett scenario som överför och omvandlar data automatiskt. Scenariot du skapar letar efter data i en app eller tjänst och bearbetar data för att ge det resultat du vill ha.
 
@@ -27,11 +27,11 @@ Workfront Fusion innehåller även funktioner som stöder scenarier som mallar f
 >
 >Workfront Fusion stöder endast Chrome-baserade webbläsare.
 
-## Resurs
+## Resurser
 
 När du börjar arbeta med Workfront Fusion kan du få hjälp med följande resurser:
 
-* Utbildningsresurser för Workfront Fusion finns i [Workfront Fusion Training Overview](https://experienceleague.adobe.com/sv/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
+* Utbildningsresurser för Workfront Fusion finns i [Workfront Fusion Training Overview](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
 
 
 * Mer information om scenarier finns i [Översikt över scenarier](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).

@@ -1,19 +1,19 @@
 ---
 title: Microsoft Dynamics 365-moduler
-description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera arbetsflöden som använder Microsoft Dynamics 365 samt ansluta det till flera tredjepartsprogram och -tjänster.
+description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder Microsoft Dynamics 365 samt ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion
 exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1673'
 ht-degree: 0%
 
 ---
 
 # [!DNL Microsoft Dynamics 365 modules]
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som använder [!DNL Microsoft Dynamics 365] samt ansluta det till flera tredjepartsprogram och -tjänster.
+I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder [!DNL Microsoft Dynamics 365] samt ansluta det till flera tredjepartsprogram och -tjänster.
 
 >[!NOTE]
 >
@@ -64,13 +64,13 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Förutsättningar
 
-Du måste ha ett [!DNL Microsoft Dynamics 365]-konto för att kunna använda [!DNL Microsoft Dynamics] 365.
+Du måste ha ett [!DNL Microsoft Dynamics]-konto för att kunna använda [!DNL Microsoft Dynamics 365] 365.
 
 ## Anslut Microsoft Dynamics 365 till Workfront Fusion
 
@@ -82,7 +82,7 @@ Du kan skapa en anslutning till ditt [!DNL Microsoft Dynamics 365]-konto direkt 
 >
 >Om en användare till exempel har behörighet att läsa tabell som beviljats via Excel-anslutningen och sedan skapar en anslutning i Outlook-anslutningen för att läsa e-post, visar tillståndsskärmen både den behörighet som redan har beviljats för att läsa tabell och den behörighet som nyligen har krävts för att skriva e-post.
 
-1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL Connection] i någon [!DNL Microsoft Dynamics 365]-modul.
+1. Klicka på [!DNL Microsoft Dynamics 365] bredvid fältet **[!UICONTROL Add]** i någon [!UICONTROL Connection]-modul.
 
 
 1. Fyll i följande fält:
@@ -129,14 +129,14 @@ Du kan skapa en anslutning till ditt [!DNL Microsoft Dynamics 365]-konto direkt 
 
 >[!NOTE]
 >
->Använd följande omdirigerings-URI när du registrerar [!DNL Workfront Fusion] i din [!DNL Microsoft Azure]-portal:
+>Använd följande omdirigerings-URI när du registrerar Workfront Fusion i din [!DNL Microsoft Azure]-portal:
 >
 >* `https://app.workfrontfusion.com/oauth/cb/workfront-microsoft-dynamics2`
 
 
 ## [!DNL Microsoft Dynamics 365]-moduler och deras fält
 
-När du konfigurerar [!DNL Microsoft Dynamics 365] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL Microsoft Dynamics 365] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL Microsoft Dynamics 365]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL Microsoft Dynamics 365] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -167,7 +167,7 @@ En webkrok krävs i den här modulen.
     <ol> 
      <li value="1"> <p>Klicka på <strong>[!UICONTROL Add]</strong> till höger om Webkrok-fältet</p> </li> 
      <li value="2"> <p>Skriv ett beskrivande namn för webkroken i fältet <strong>[!UICONTROL Webhook]</strong>.</p> </li> 
-     <li value="3"> <p>I fältet <strong>[!UICONTROL Connection]</strong> väljer du den anslutning som du vill använda markerad</p> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Microsoft Dynamics 365] till [!DNL Workfront Fusion]</a> i den här artikeln. </p> </li> 
+     <li value="3"> <p>I fältet <strong>[!UICONTROL Connection]</strong> väljer du den anslutning som du vill använda markerad</p> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till Workfront Fusion finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Microsoft Dynamics 365] till Workfront Fusion </a> i den här artikeln. </p> </li> 
      <li value="4"> <p>Klicka på <strong>[!UICONTROL Save]</strong> om du vill spara din webkrok och gå tillbaka till modulen.</p> </li> 
     </ol> </td> 
   </tr> 
@@ -190,7 +190,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> "
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Microsoft Dynamics 365] till [!DNL Workfront Fusion]</a> i den här artikeln. </p> </td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till Workfront Fusion finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Microsoft Dynamics 365] till Workfront Fusion </a> i den här artikeln. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Include]</td> 
@@ -236,7 +236,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Microsoft Dynamics 365] till [!DNL Workfront Fusion]</a> i den här artikeln. </p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till Workfront Fusion finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Microsoft Dynamics 365] till Workfront Fusion </a> i den här artikeln. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -269,7 +269,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Microsoft Dynamics 365] till [!DNL Workfront Fusion]</a> i den här artikeln. </p> </td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till Workfront Fusion finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Microsoft Dynamics 365] till Workfront Fusion </a> i den här artikeln. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -298,7 +298,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Microsoft Dynamics 365] till [!DNL Workfront Fusion]</a> i den här artikeln. </p> </td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till Workfront Fusion finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Microsoft Dynamics 365] till Workfront Fusion </a> i den här artikeln. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -310,7 +310,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p> <p>Exempel: <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] lägger till auktoriseringsrubrikerna åt dig.</p> </td> 
+   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p> <p>Exempel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion lägger till auktoriseringsrubrikerna åt dig.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -342,7 +342,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Microsoft Dynamics 365] till [!DNL Workfront Fusion]</a> i den här artikeln. </p> </td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till Workfront Fusion finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Microsoft Dynamics 365] till Workfront Fusion </a> i den här artikeln. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -375,7 +375,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Microsoft Dynamics 365] till [!DNL Workfront Fusion]</a> i den här artikeln. </p> </td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till Workfront Fusion finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Microsoft Dynamics 365] till Workfront Fusion </a> i den här artikeln. </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -410,7 +410,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Microsoft Dynamics 365] till [!DNL Workfront Fusion]</a> i den här artikeln. </p> </td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Microsoft Dynamics 365]-konto till Workfront Fusion finns i <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Microsoft Dynamics 365] till Workfront Fusion </a> i den här artikeln. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 

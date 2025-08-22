@@ -4,20 +4,20 @@ description: Den här artikeln innehåller information om åtkomst och behörigh
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
 # Organisations- och teamroller
 
-I den här artikeln beskrivs åtkomst och funktionalitet som är tillgängliga för de olika team- och organisationsrollerna i [!DNL Workfront Fusion].
+I den här artikeln beskrivs vilka funktioner som är tillgängliga för de olika team- och organisationsrollerna i Workfront Fusion.
 
 >[!NOTE]
 >
->Organisationsroller är åtskilda från teamroller i [!DNL Workfront Fusion]. Mer information om organisation och teamroller finns i [Översikt över organisationer och team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
+>Organisationsroller är åtskilda från teamroller i Workfront Fusion. Mer information om organisation och teamroller finns i [Översikt över organisationer och team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
 
 ## Organisationsroller
 

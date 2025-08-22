@@ -4,9 +4,9 @@ description: Följande datum- och tidsfunktioner är tillgängliga i panelen fö
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -139,7 +139,7 @@ Den här funktionen returnerar ett nytt datum med de sekunder som anges i parame
 
 Ange ett tal mellan 0 och 59. Om talet ligger utanför det intervallet returnerar funktionen en sekund från föregående minut (för ett negativt tal) eller efterföljande minut (för ett positivt tal).
 
-Om du behöver ange ett tal utanför intervallet rekommenderar vi att du använder [!UICONTROL &#x200B; addSeconds], enligt beskrivningen ovan i avsnittet [addSeconds (date; number)](#addseconds-date-number).
+Om du behöver ange ett tal utanför intervallet rekommenderar vi att du använder [!UICONTROL  addSeconds], enligt beskrivningen ovan i avsnittet [addSeconds (date; number)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -341,7 +341,7 @@ Funktionen `formatDate` returnerar en textrepresentation av det angivna Date-vä
 
 * `formatDate(1. Date created; YYYY-MM-DD hh:mm A)`
 
-  Returnerar 2018-10-01 09:32
+  Returnerar 2018-10-01 09:32 AM
 
 * `formatDate(1. Date created;DD.MM.YYYY HH:mm;UTC)`
 
@@ -459,7 +459,7 @@ Om ingen enhet anges returnerar funktionen differensen i millisekunder.
 
 #### Så här beräknar du den n:e veckodagen i månaden
 
-Det här avsnittet är anpassat för [!DNL Workfront Fusion] från webbsidan [!DNL Exceljet] som förklarar hur du hämtar den nionde veckodagen i en månad.
+Det här avsnittet är anpassat för Workfront Fusion från webbsidan [!DNL Exceljet] som förklarar hur du hämtar den nionde veckodagen i en månad.
 
 Om du behöver beräkna ett datum som motsvarar den n:e veckodagen i månaden (till exempel den första tisdagen, den tredje fredagen och så vidare) kan du använda följande formel:
 

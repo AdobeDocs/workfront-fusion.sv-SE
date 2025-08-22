@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion JSON-appen innehåller moduler som bearbetar
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL JSON] moduler
 
-Appen [!DNL Adobe Workfront Fusion] [!UICONTROL JSON] innehåller moduler som bearbetar data i JSON-format så att [!DNL Adobe Workfront Fusion] kan arbeta vidare med datainnehållet eller skapa nytt JSON-innehåll.
+Appen Adobe Workfront Fusion [!UICONTROL JSON] innehåller moduler för att bearbeta data i JSON-format så att Adobe Workfront Fusion kan arbeta vidare med datainnehållet eller skapa nytt JSON-innehåll.
 
 ## Åtkomstkrav
 
@@ -54,7 +54,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -65,11 +65,11 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 ### Datastruktur
 
-Datastrukturen beskriver hur JSON-data ordnas och möjliggör mappning av enskilda JSON-objekt till andra moduler i ditt scenario. Om du inte anger datastrukturen kan du köra modulen manuellt och [!DNL Workfront Fusion] skapar strukturen från den angivna JSON:
+Datastrukturen beskriver hur JSON-data ordnas och möjliggör mappning av enskilda JSON-objekt till andra moduler i ditt scenario. Om du inte anger datastrukturen kan du köra modulen manuellt, och Workfront Fusion bygger strukturen från den tillhandahållna JSON:
 
 1. Lägg till modulen [!UICONTROL Parse JSON] i ett scenario.
 1. I fältet **[!UICONTROL JSON String]** anger du den JSON som du vill bygga en datastruktur från.
-1. Anslut inte andra moduler till modulen [!UICONTROL Parse JSON] än. Eftersom [!DNL Workfront Fusion] ännu inte känner till strukturen för JSON-data går det inte att mappa data från modulen [!UICONTROL Parse JSON] till andra moduler i ditt scenario.
+1. Anslut inte andra moduler till modulen [!UICONTROL Parse JSON] än. Eftersom Workfront Fusion ännu inte känner till JSON-datastrukturen är det ännu inte möjligt att mappa data från modulen [!UICONTROL Parse JSON] till andra moduler i ditt scenario.
 1. Kör scenariot manuellt. Detta gör att modulen [!UICONTROL Parse JSON] kan identifiera JSON-strukturen från den JSON som du har angett.
 1. Nu kan du ansluta följande moduler. Objekten från JSON-modulen Parse är nu tillgängliga för mappning.
 
@@ -121,7 +121,7 @@ Om JSON-strängfältet innehåller arrayen `[ ... ]` är utdata en serie paket. 
 
 ## [!UICONTROL JSON]-moduler och deras fält
 
-När du konfigurerar [!DNL JSON] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare JSON-fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL JSON]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare JSON-fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

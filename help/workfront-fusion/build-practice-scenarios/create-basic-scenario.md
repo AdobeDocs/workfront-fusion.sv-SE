@@ -3,20 +3,20 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
 title: Skapa ett grundläggande scenario
-description: Lär dig skapa ett enkelt automatiseringsscenario med Adobe Workfront Fusion. Automatiseringsscenarier automatiserar Workfront-processer, inklusive datamanipulering och -omvandling. Det här exemplet tar dig genom processen att skapa ett scenario som söker efter en [!DNL Workfront] aktivitet i Workfront och konverterar den till ett projekt.
+description: Lär dig skapa ett enkelt automatiseringsscenario med Adobe Workfront Fusion. Automatiseringsscenarier automatiserar Workfront-processer, inklusive datamanipulering och -omvandling. I det här exemplet går du igenom processen att skapa ett scenario som söker efter en Workfront-uppgift i Workfront och konverterar den till ett projekt.
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1354'
 ht-degree: 0%
 
 ---
 
 # Skapa ett grundläggande scenario
 
-Rollen för [!DNL Adobe Workfront Fusion] är att automatisera dina processer så att du kan koncentrera dig på nya uppgifter i stället för att upprepa samma uppgifter om och om igen. Det fungerar genom att länka åtgärder inom och mellan program och tjänster för att skapa ett scenario som överför och omvandlar data automatiskt. Scenariot du skapar letar efter data i en app eller tjänst och bearbetar data för att ge det resultat du vill ha.
+Adobe Workfront Fusions roll är att automatisera processerna så att ni kan koncentrera er på nya uppgifter istället för att upprepa samma uppgifter om och om igen. Det fungerar genom att länka åtgärder inom och mellan program och tjänster för att skapa ett scenario som överför och omvandlar data automatiskt. Scenariot du skapar letar efter data i en app eller tjänst och bearbetar data för att ge det resultat du vill ha.
 
 I det här exemplet går du igenom processen att skapa ett scenario som söker efter en begäran i Workfront och konverterar den till ett projekt.
 
@@ -31,17 +31,17 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront package</td> 
    <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens</td> 
-   <td> <p>Nytt: [!UICONTROL Standard]</p><p>eller</p><p>Aktuell: [!UICONTROL Work] eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: [!UICONTROL Work] eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuell: Inga [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
    <p>Äldre: Alla </p>
    </td> 
@@ -49,9 +49,9 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Workfront]: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] ingår.</li></ul>
+   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] Workfront-plan: Din organisation måste köpa Adobe Workfront Fusion.</li><li>[!UICONTROL Ultimate] Workfront: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -59,7 +59,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -84,9 +84,9 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
    En lista över program visas till höger om modulen.
 
-1. Välj **[!DNL Adobe Workfront]**. Om sökfältet inte visas klickar du på sökfältet längst ned i listan, skriver&quot;Workfront&quot; och markerar det när det visas i listan.
+1. Välj **Adobe Workfront**. Om sökfältet inte visas klickar du på sökfältet längst ned i listan, skriver&quot;Workfront&quot; och markerar det när det visas i listan.
 
-   Listan ändras till att visa alla [!DNL Workfront] moduler som du kan använda.
+   Listan ändras och visar alla Workfront-moduler som du kan använda.
 
 1. Klicka på modulen **[!UICONTROL Search]**.
 
@@ -95,11 +95,11 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 1. I rutan [!UICONTROL Connection] väljer du din Workfront-anslutning.
 
    Om du inte har någon Workfront-anslutning kan du läsa [Skapa en anslutning](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
-1. Välj **[!UICONTROL Issue]** i rutan [!UICONTROL Record Type]. Detta anger att modulen endast ska söka efter problem, som omfattar förfrågningar.
+1. Välj [!UICONTROL Record Type] i rutan **[!UICONTROL Issue]**. Detta anger att modulen endast ska söka efter problem, som omfattar förfrågningar.
 
    Du kan hitta **[!UICONTROL Issue]** i listan om du börjar skriva ordet [!UICONTROL Issue].
 
-1. Välj **[!UICONTROL First Matching Record]** i rutan **[!UICONTROL Result Set]**.
+1. Välj **[!UICONTROL Result Set]** i rutan **[!UICONTROL First Matching Record]**.
 
    Detta ställer in modulen så att endast den första posten som uppfyller villkoren returneras.
 1. Konfigurera villkoren i området **[!UICONTROL Search criteria]** för att returnera den specifika aktiviteten.
@@ -122,7 +122,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 1. Högerklicka på modulen, klicka på **[!UICONTROL Rename]**, skriv ett namn som beskriver vad du vill att modulen ska göra (till exempel&quot;Sök efter begäranden&quot;) och klicka sedan på **[!UICONTROL OK]**.
 
-   Namnet visas precis nedanför modulen. Under det finns en kort beskrivning av den typ av åtgärd som har utförts av modulen i [!DNL Workfront Fusion].
+   Namnet visas precis nedanför modulen. Nedan finns en kort beskrivning av vilken typ av åtgärd som utförts i modulen i Workfront Fusion.
 
    ![Modulen har bytt namn](assets/module-renamed-wf.png)
 
@@ -131,10 +131,10 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 ## Lägg till och konfigurera den andra modulen
 
 1. Håll pekaren över den partiella cirkeln till höger om modulen och klicka sedan på **[!UICONTROL Add another module]**.
-1. Välj [!DNL Adobe Workfront] i listan med program och välj sedan modulen **[!UICONTROL Convert object]**.
+1. Välj Adobe Workfront i listan över program och välj sedan modulen **[!UICONTROL Convert object]**.
 1. I fältet [!UICONTROL Connection] väljer du samma Workfront-anslutning som du använde i den tidigare modulen.
 1. I fältet **[!UICONTROL Record type]** väljer du **[!UICONTROL issue]** eftersom modulen kommer att konvertera ett problem.
-1. Välj **Projekt** i fältet **[!UICONTROL Convert to]**.
+1. Välj **[!UICONTROL Convert to]** Projekt **i fältet**.
 1. Klicka på mappningsväxeln bredvid fältet Aktivitets-ID för att aktivera det.
 
    Växeln blir blå när den är aktiverad. Detta gör att du kan mappa uppgifts-ID:t från föregående modul.
@@ -174,7 +174,7 @@ I det här scenariot skulle ett lyckat test resultera i att begäran lokaliseras
    * Allmän information finns i [Körningsflöde för scenario](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
    * Mer information om bearbetade paket finns i [Scenariokörning, cykler och faser](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-1. I [!DNL Workfront Fusion] klickar du på **[!UICONTROL Save]** i det nedre vänstra hörnet för att spara förloppet för scenariot.
+1. I Workfront Fusion klickar du på **[!UICONTROL Save]** i det nedre vänstra hörnet för att spara förloppet för scenariot.
 
    >[!IMPORTANT]
    >

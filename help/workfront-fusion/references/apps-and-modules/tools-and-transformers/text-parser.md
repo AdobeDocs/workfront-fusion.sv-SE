@@ -1,19 +1,19 @@
 ---
 title: Textparser
-description: Du kan använda textanalysverktyget för att tolka text som ska användas i andra  [!DNL Adobe Workfront Fusion] scenariomoduler. Textparsern kräver ingen anslutning.
+description: Du kan använda textanalysverktyget för att tolka text som ska användas i andra scenariomoduler i Adobe Workfront Fusion. Textparsern kräver ingen anslutning.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Text parser]
 
-Du kan använda [!UICONTROL Text parser tool] för att tolka text för användning i andra [!DNL Adobe Workfront Fusion] scenariomoduler. [!UICONTROL Text parser] kräver ingen anslutning.
+Du kan använda [!UICONTROL Text parser tool] för att tolka text för användning i andra Adobe Workfront Fusion-scenariomoduler. [!UICONTROL Text parser] kräver ingen anslutning.
 
 ## Åtkomstkrav
 
@@ -52,7 +52,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -73,7 +73,7 @@ Textparserkopplingen använder följande:
 
 ## [!UICONTROL Text parser]-moduler och deras fält
 
-När du konfigurerar [!UICONTROL Text parser] moduler visar [!DNL Adobe Workfront Fusion] fälten som listas nedan. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!UICONTROL Text parser]-moduler visas fälten som listas nedan i Adobe Workfront Fusion. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

@@ -4,9 +4,9 @@ description: Du kan använda Adobe Workfront Fusion Adobe Workfront-kontakten f�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 9dfab6838057a5852a2725dbfd398144ea2097dd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '7530'
+source-wordcount: '7536'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 
 >[!NOTE]
@@ -206,7 +206,7 @@ Modulen returnerar alla standardfält som är associerade med posten, tillsamman
 
 När webbkroken har skapats kan du visa adressen till slutpunkten som händelser skickas till.
 
-Mer information finns i avsnittet [Exempel på händelsenyttolaster](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) i artikeln Event Subscription API (Händelseprenumerations-API) i Workfront-dokumentationen.
+Mer information finns i avsnittet [Exempel på händelsenyttolaster](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) i artikeln Event Subscription API (Händelseprenumerations-API) i Workfront-dokumentationen.
 
 Se en lista över de Workfront-objekttyper som du kan använda den här modulen för i [Workfront-objekttyper som är tillgängliga för varje Workfront-modul](#workfront-object-types-available-for-each-workfront-module).
 
@@ -347,7 +347,7 @@ Den här åtgärdsmodulen gör någon av följande konverteringar:
    <td>Markera det objekt som du vill konvertera det till. Detta är den typ som objektet har efter konverteringen.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL &lt;Object> ID]</td> 
+   <td>[!UICONTROL <Object> ID]</td> 
    <td> <p>Ange objektets ID. </p> <p>Obs! När du anger ID:t för ett objekt kan du börja skriva namnet på objektet och sedan markera det i listan. Modulen anger sedan rätt ID i fältet.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -375,7 +375,7 @@ Den här åtgärdsmodulen gör någon av följande konverteringar:
 
 +++
 
-+++ **[!UICONTROL Create a record]**
++++ **[!UICONTROL Create a record]** 
 
 I den här åtgärdsmodulen skapas ett objekt, t.ex. ett projekt, en uppgift eller ett problem i Workfront, och du kan lägga till ett anpassat formulär i det nya objektet. I modulen kan du välja vilka av objektets fält som är tillgängliga i modulen.
 
@@ -439,7 +439,7 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 >
 >   Om du vill lösa användare som lagts till i en stor grupp kan du lägga till gruppen med användare direkt i Adobe Admin Console.
 >
->   Instruktioner finns i [Hantera flera användare | Massöverföring av CSV ](https://helpx.adobe.com/se/enterprise/using/bulk-upload-users.html) i Adobe-dokumentationen.
+>   Instruktioner finns i [Hantera flera användare | Massöverföring av CSV ](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) i Adobe-dokumentationen.
 
 +++
 
@@ -448,7 +448,7 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 >[!IMPORTANT]
 >
 >Den här modulen har ersatts med modulen Skapa en post. Vi rekommenderar att du använder den modulen i nya scenarier.
->Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
+>>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
 
 Den här åtgärdsmodulen skapar ett objekt, till exempel ett projekt, en uppgift eller ett problem i Workfront. I modulen kan du välja vilka av objektets fält som är tillgängliga i modulen.
 
@@ -665,7 +665,7 @@ När du konfigurerar den här modulen visas följande fält.
       </ul> <p>För alla andra posttyper väljer du <b>[!UICONTROL Other objects and endpoints]</b> och letar upp posttypen på de alfabetiskt sorterade sidorna.</p> </li> 
      <li value="2"> <p>På sidan med rätt posttyp söker du efter åtgärden (Ctrl-F eller Cmd-F).</p> </li> 
      <li value="3"> <p>Visa beskrivningar för tillgängliga fält under den valda åtgärden.</p> </li> 
-    </ol> <p>Obs!  <p>När du skapar ett korrektur med Workfront [!UICONTROL Misc Action]-modulen är det bästa sättet att skapa ett korrektur utan några avancerade alternativ och sedan uppdatera korrekturet med SOAP-API:t i [!DNL Workfront Proof] .</p><p>Mer information om hur du skapar ett korrektur med Workfront API (som används i den här modulen) finns i <a href="https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Lägga till avancerade korrekturalternativ när du skapar ett korrektur via Adobe Workfront API</a></p> </p> </td> 
+    </ol> <p>Obs!  <p>När du skapar ett korrektur med Workfront [!UICONTROL Misc Action]-modulen är det bästa sättet att skapa ett korrektur utan några avancerade alternativ och sedan uppdatera korrekturet med SOAP-API:t i [!DNL Workfront Proof] .</p><p>Mer information om hur du skapar ett korrektur med Workfront API (som används i den här modulen) finns i <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Lägga till avancerade korrekturalternativ när du skapar ett korrektur via Adobe Workfront API</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -886,7 +886,7 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 >[!IMPORTANT]
 >
 >Den här modulen har ersatts med modulen Läs en post. Vi rekommenderar att du använder den modulen i nya scenarier.
->Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
+>>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
 
 Den här åtgärdsmodulen hämtar data från en enda post.
 
@@ -939,7 +939,7 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 
 Workfront har nyligen släppt en ny version av sin abonnemangstjänst. Den nya versionen är inte en ändring av Workfront API, utan snarare en ändring av prenumerationsfunktionen för evenemang. Den här åtgärdsmodulen uppdaterar den händelsenyttolastversion som används för det här scenariot.
 
-Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
+Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
 
 Mer information om hur du bevarar dina Workfront Fusion-scenarier under händelseprenumerationsuppgraderingen, inklusive en webbinariainspelning, finns i [Bevara dina Fusion-scenarier under händelseprenumerationsuppgraderingen v2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
@@ -1015,7 +1015,7 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 >[!IMPORTANT]
 >
 >Den här modulen har ersatts med modulen Uppdatera en post. Vi rekommenderar att du använder den modulen i nya scenarier.
->Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
+>>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
 
 Den här åtgärdsmodulen uppdaterar ett objekt, t.ex. ett projekt, en uppgift eller ett problem. I modulen kan du välja vilka av objektets fält som är tillgängliga i modulen.
 
@@ -1249,7 +1249,7 @@ När du konfigurerar den här modulen visas följande fält.
 >[!IMPORTANT]
 >
 >Den här modulen har ersatts med modulen Sök efter poster. Vi rekommenderar att du använder den modulen i nya scenarier.
->Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
+>>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
 
 Den här sökmodulen söker efter poster i ett objekt i Workfront som matchar den sökfråga du anger.
 
@@ -1509,7 +1509,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Anteckning</td> 
+   <td>Obs</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1617,7 +1617,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Uppdatera</td> 
+   <td>Uppdatering</td> 
    <td> </td> 
    <td> </td> 
    <td> </td> 
@@ -1876,7 +1876,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Anteckning</td> 
+   <td>Obs</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -2036,7 +2036,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Uppdatera</td> 
+   <td>Uppdatering</td> 
    <td> </td> 
    <td>✓</td> 
    <td> </td> 
@@ -2160,7 +2160,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Anteckning</td> 
+   <td>Obs</td> 
    <td>✓</td> 
    <td> </td> 
   </tr> 
@@ -2259,7 +2259,7 @@ Vi rekommenderar att du kontrollerar att det här fungerar som du tänkt dig.
 >
 >* Workfront har nyligen släppt en ny version av sin abonnemangstjänst. Den nya versionen är inte en ändring av Workfront API, utan snarare en ändring av prenumerationsfunktionen för evenemang. Den här åtgärdsmodulen uppdaterar den händelsenyttolastversion som används för det här scenariot.
 >
->   Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
+>   Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
 >
 >   Mer information om hur du bevarar dina Workfront Fusion-scenarier under händelseprenumerationsuppgraderingen, inklusive en webbinariainspelning, finns i [Bevara dina Fusion-scenarier under Evenemangsprenumerationer (V2-uppgradering)(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
@@ -2311,7 +2311,7 @@ Följande operatorer är tillgängliga i Workfront > filtret Bevakningshändelse
 >
 >Om 100 utgåvor skapas per dag, men bara två av dem tilldelas till Ana, körs scenariot 100 gånger. 98 av körningarna stoppades vid filtret, men utlösarmodulen använder fortfarande data och utför åtgärder i alla körningar.
 
-Mer information om Workfront-händelseprenumerationer finns i [Vanliga frågor och svar - Händelseprenumerationer](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
+Mer information om Workfront-händelseprenumerationer finns i [Vanliga frågor och svar - Händelseprenumerationer](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
 
 Mer information om webbhooks finns i [Direktutlösare (webbhooks) i Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 

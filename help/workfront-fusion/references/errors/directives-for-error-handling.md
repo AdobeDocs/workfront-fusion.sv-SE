@@ -1,13 +1,13 @@
 ---
 content-type: reference
 title: Direktiv för felhantering
-description: I den här artikeln beskrivs direktiv som du kan använda för felhantering i dina  [!DNL Adobe Workfront Fusion] -scenarier.
+description: I den här artikeln beskrivs direktiv som du kan använda för felhantering i dina Adobe Workfront Fusion-scenarier.
 author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -27,17 +27,17 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+    <td role="rowheader">Adobe Workfront package</td> 
    <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens</td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
    <td> Nytt: Standard<p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] licens</td> 
    <td>
-   <p>Aktuell: Inga [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
    <p>Äldre: Alla </p>
    </td> 
@@ -45,18 +45,18 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Workfront]: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] ingår.</li></ul>
+   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] Workfront-plan: Din organisation måste köpa Adobe Workfront Fusion.</li><li>[!UICONTROL Ultimate] Workfront: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Kontakta Workfront-administratören om du vill veta vilken plan, licenstyp eller åtkomst du har.
 
-Mer information om [!DNL Adobe Workfront Fusion] finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -98,11 +98,11 @@ Följande felhanteringsdirektiv finns i Workfront Fusion.
 >[!NOTE]
 >
 >* Felhanteringsdirektiv kan inte användas utanför en felhanteringsväg.
->* [!DNL Workfront Fusion] har för närvarande ingen Throw-modul som gör att du enkelt kan generera (utlösa) fel villkorligt, men en tillfällig lösning kan användas för att efterlikna dess funktioner.
+>* I Workfront Fusion finns för närvarande ingen Throw-modul som gör att du enkelt kan generera (utlösa) fel på ett villkorligt sätt, även om du kan använda en tillfällig lösning för att efterlikna dess funktionalitet.
 >
 >  Mer information finns i [Konfigurera `throw` fellösning](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md).
 
-## Resurs
+## Resurser
 
 * Mer information om återställning och återställningsfasen finns i [Återställning](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) i artikeln Körning av scenarier, cykler och faser.
 * Mer information om implementeringsfasen finns i [Verkställ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#commit) i artikeln Körning av scenarier, cykler och faser.

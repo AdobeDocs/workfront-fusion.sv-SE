@@ -1,19 +1,19 @@
 ---
 title: Skapa anslutningar
-description: En anslutning måste uppfylla de krav som anges i API:t för det program eller den webbtjänst den ansluter till. Instruktionerna för hur du konfigurerar en anslutning varierar därför beroende på programmet eller webbtjänsten. Den här artikeln kan hjälpa dig att identifiera och hitta instruktionerna för att ansluta [!DNL Adobe Workfront Fusion] till den app eller webbtjänst du valt.
+description: En anslutning måste uppfylla de krav som anges i API:t för det program eller den webbtjänst den ansluter till. Instruktionerna för hur du konfigurerar en anslutning varierar därför beroende på programmet eller webbtjänsten. I den här artikeln kan du identifiera och hitta instruktioner för hur du ansluter Adobe Workfront Fusion till den app eller webbtjänst du valt.
 author: Becky
 feature: Workfront Fusion
 exl-id: 281403a6-6f88-4976-8a10-1d0848ef9b35
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
 
 # Skapa anslutningar
 
-En anslutning måste uppfylla de krav som anges i API:t för det program eller den webbtjänst den ansluter till. Instruktionerna för hur du konfigurerar en anslutning varierar därför beroende på programmet eller webbtjänsten. Den här artikeln kan hjälpa dig att identifiera och hitta instruktionerna för att ansluta [!DNL Adobe Workfront Fusion] till den app eller webbtjänst du valt.
+En anslutning måste uppfylla de krav som anges i API:t för det program eller den webbtjänst den ansluter till. Instruktionerna för hur du konfigurerar en anslutning varierar därför beroende på programmet eller webbtjänsten. I den här artikeln kan du identifiera och hitta instruktioner för hur du ansluter Adobe Workfront Fusion till den app eller webbtjänst du valt.
 
 ## Åtkomstkrav
 
@@ -60,7 +60,7 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 
 ## Anslut till ett program eller en webbtjänst som inte kräver konfiguration
 
-I de flesta fall kan du använda modulen för att skapa en anslutning med liten eller ingen extra information. [!DNL Workfront Fusion] hanterar autentiseringen automatiskt.
+I de flesta fall kan du använda modulen för att skapa en anslutning med liten eller ingen extra information. Workfront Fusion hanterar autentiseringen automatiskt.
 
 Instruktioner om hur du skapar en anslutning utan att göra några speciella justeringar finns i [Skapa en anslutning - grundläggande instruktioner](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
@@ -74,7 +74,7 @@ Mer information finns i [artikeln för anslutningen](/help/workfront-fusion/refe
 
 ## Anslut till ett [!DNL Microsoft]-program eller en webbtjänst
 
-I de flesta av [!DNL Microsoft]-apparna i [!DNL Workfront Fusion] kan du skapa en anslutning utan extra information.
+De flesta av [!DNL Microsoft]-apparna i Workfront Fusion låter dig skapa en anslutning utan extra information.
 
 Följande omständigheter kräver extra steg för att skapa en anslutning:
 
@@ -88,7 +88,7 @@ Följande omständigheter kräver extra steg för att skapa en anslutning:
 
 ## Anslut till ett [!DNL Google]-program eller en webbtjänst
 
-Hur du ansluter till [!DNL Google]-appar kan variera beroende på vilken typ av [!DNL Google]-konto du använder. Dessutom kan [!DNL Google]-säkerhetsåtgärder kräva extra konfiguration när du ansluter till [!DNL Workfront Fusion].
+Hur du ansluter till [!DNL Google]-appar kan variera beroende på vilken typ av [!DNL Google]-konto du använder. Dessutom kan [!DNL Google]-säkerhetsåtgärder kräva extra konfiguration när du ansluter till Workfront Fusion.
 
 Mer information finns i:
 
@@ -97,6 +97,6 @@ Mer information finns i:
 
 ## Andra program som kräver ytterligare konfiguration
 
-Vissa appar och tjänster följer inte den grundläggande konfigurationen för [!DNL Workfront Fusion]-anslutningar. Du hittar instruktioner om hur du ansluter de här apparna i artikeln för den appen.
+Vissa program och tjänster följer inte grundkonfigurationen för Workfront Fusion-anslutningar. Du hittar instruktioner om hur du ansluter de här apparna i artikeln för den appen.
 
 Mer information finns i [artikeln för anslutningen](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-third-party-applications).

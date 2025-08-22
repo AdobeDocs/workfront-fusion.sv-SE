@@ -4,9 +4,9 @@ description: Fusion använder specifika IP-adresser och domäner för webbkommun
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-source-git-commit: 59d739093c88238af7a7e97499fd0c7d7cf6053a
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Om du ansluter till Fusion via `experience.adobe.com` kan du kontrollera nätver
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] EU Datacenter</td> 
+   <td role="rowheader">Adobe Workfront EU Datacenter</td> 
    <td> 
     <ul> 
      <li>52.30.133.50</li> 
@@ -91,7 +91,7 @@ Om du ansluter till Fusion via `experience.adobe.com` kan du kontrollera nätver
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] Amerikanskt datacenter</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront US Datacenter</p> </td> 
    <td> 
     <ul> 
      <li>54.244.142.219</li> 
@@ -103,7 +103,7 @@ Om du ansluter till Fusion via `experience.adobe.com` kan du kontrollera nätver
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] på Microsoft Azure-klustret</td> 
+   <td role="rowheader">Adobe Workfront Fusion på Microsoft Azure-klustret</td> 
    <td> 
     <ul> 
      <li>20.36.133.48/28</li> 
@@ -121,15 +121,15 @@ Om din organisation använder utgående nätverksfiltrering lägger du till föl
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] EU Datacenter</td> 
+   <td role="rowheader">Adobe Workfront EU Datacenter</td> 
    <td> <p> hook.app-eu.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] Amerikanskt datacenter</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront US Datacenter</p> </td> 
    <td> <p>hook.app.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront Fusion] på Microsoft Azure-klustret</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront Fusion på Microsoft Azure-klustret</p> </td> 
    <td> <p>hook.app-az.workfrontfusion.com </p> </td> 
   </tr> 
  </tbody> 

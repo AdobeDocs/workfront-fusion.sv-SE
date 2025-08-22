@@ -1,12 +1,12 @@
 ---
-title: Datalager i  [!DNL Adobe Workfront Fusion]
+title: Datalager i Adobe Workfront Fusion
 description: Ett datalager, som liknar en databas eller en enkel tabell, kan lagra data från scenarier, vilket gör det möjligt att överföra data mellan enskilda scenarier eller scenariokörningar. Du kan använda ett datalager för att lagra nya data från olika system under synkroniseringen.
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1260'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Ett datalager, som liknar en databas eller en enkel tabell, kan lagra data från scenarier, vilket gör det möjligt att överföra data mellan enskilda scenarier eller scenariokörningar. Du kan använda ett datalager för att lagra nya data från olika system under synkroniseringen.
 
-Med datalagermodulerna kan du utföra följande åtgärder för poster i datalagret [!DNL Adobe Workfront Fusion]:
+Med datalagermodulerna kan du utföra följande åtgärder på poster i Adobe Workfront Fusion datalager:
 
 * Lägg till
 * Ersätt
-* Uppdatera
+* Uppdatering
 * Hämta
 * Ta bort
 * Sök
@@ -42,17 +42,17 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront package</td> 
    <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens</td> 
-   <td> <p>Nytt: [!UICONTROL Standard]</p><p>eller</p><p>Aktuell: [!UICONTROL Work] eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: [!UICONTROL Work] eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuell: Inga [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
    <p>Äldre: Alla </p>
    </td> 
@@ -60,9 +60,9 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Workfront]: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] ingår.</li></ul>
+   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] Workfront-plan: Din organisation måste köpa Adobe Workfront Fusion.</li><li>[!UICONTROL Ultimate] Workfront: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -70,7 +70,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -87,7 +87,7 @@ Fusion-instanser i Ultimate-paketet tar emot:
 
 ### Select- och Prime-planer
 
-Fusion-instanser på Select- eller Prime-paket tar emot:—>
+Fusion-instanser på Select- eller Prime-paket tar emot :-->
 
 * 100 MB för de första 500 kB-åtgärderna.
 
@@ -97,27 +97,27 @@ Fusion-instanser på Select- eller Prime-paket tar emot:—>
 
 Din organisation kan ha upp till 50 datalager. Den kombinerade storleken på dessa datalager får inte överskrida organisationens totala datalagringsstorlek.
 
-## Skapa ett datalager i [!DNL Workfront Fusion]
+## Skapa ett datalager i Workfront Fusion
 
 * [Konfigurera datalagret](#set-up-the-data-store)
 * [Ställ in datastrukturen](#set-up-the-data-structure)
 
 ### Konfigurera datalagret
 
-Innan du kan använda ett datalager i en modul måste du skapa datalagret i [!DNL Workfront Fusion].
+Innan du kan använda ett datalager i en modul måste du skapa datalagret i Workfront Fusion.
 
 >[!NOTE]
 >
->Din organisation har ett begränsat antal tillgängliga datalager. Om du försöker skapa fler datalager än vad du har tillgängligt returnerar [!DNL Workfront] ett [!UICONTROL Maximum stores reached]-fel.
+>Din organisation har ett begränsat antal tillgängliga datalager. Om du försöker skapa fler datalager än vad du har tillgängligt returnerar Workfront ett [!UICONTROL Maximum stores reached]-fel.
 >
 >Mer information finns i [Maximalt antal arkiv har nått fel](#maximum-stores-reached-error) i den här artikeln.
 
-1. Logga in på ditt [!DNL Workfront Fusion]-konto.
+1. Logga in på ditt Workfront Fusion-konto.
 1. Klicka på **[!UICONTROL Data stores]** i den vänstra navigeringspanelen.
 1. Klicka på **[!UICONTROL Add data store]** i skärmens övre högra hörn.
 1. Ange inställningar för det nya datalagret.
 
-   En rubrik med fet stil i ett fält i en [!DNL Workfront Fusion]-modul anger en obligatorisk inställning.
+   En rubrik med fet stil i ett fält i en Workfront Fusion-modul anger en obligatorisk inställning.
 
    <table style="table-layout:auto">
     <col> 
@@ -175,7 +175,7 @@ Innan du kan använda ett datalager i en modul måste du skapa datalagret i [!DN
           <p><code>&rbrace;</code> </p> 
           <p>De tomma kolumnerna i datalagervyn:</p> 
           <p> <img src="assets/empty-columns-350x132.png" style="width: 350;height: 132;"> </p> 
-          <p>Du kan lägga till värden i datalagret manuellt eller med datalagermodulerna för [!DNL Workfront Fusion].</p> 
+          <p>Du kan lägga till värden i datalagret manuellt eller med datalagermodulerna i Workfront Fusion.</p> 
          </div> </li> 
        </ul> </td> 
      </tr> 
@@ -188,7 +188,7 @@ Innan du kan använda ett datalager i en modul måste du skapa datalagret i [!DN
 
 ## Redigera ett befintligt datalager
 
-Du kan redigera egenskaperna och innehållet i ett befintligt datalager i området [!UICONTROL Data stores] i [!DNL Workfront Fusion].
+Du kan redigera egenskaperna och innehållet i ett befintligt datalager i området [!UICONTROL Data stores] i Workfront Fusion.
 
 * [Redigera egenskaperna för ett datalager](#edit-the-properties-of-a-data-store)
 * [Redigera innehållet i ett datalager](#edit-the-contents-of-a-data-store)

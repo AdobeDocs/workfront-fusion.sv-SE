@@ -4,9 +4,9 @@ description: Med FTP-moduler kan du övervaka filändringar i en vald mapp, öve
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1187'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -115,7 +115,7 @@ Om du vill använda FTP-moduler måste du ha ett konto hos en FTP-tjänst.
     </tr> 
     <tr> 
      <td> <p>[!UICONTROL Self-signed certificate]</p> </td> 
-     <td> <p>Klicka på knappen <b>[!UICONTROL Extract]</b> för att öppna dialogrutan för överföring.</p> <p>Överför certifikatet för att använda TLS med ditt självsignerade certifikat. [!DNL Workfront Fusion] sparar eller lagrar inte data som du anger, t.ex. filer och lösenord. Fil och lösenord används endast för att extrahera certifikatet.</p> </td> 
+     <td> <p>Klicka på knappen <b>[!UICONTROL Extract]</b> för att öppna dialogrutan för överföring.</p> <p>Överför certifikatet för att använda TLS med ditt självsignerade certifikat. Workfront Fusion bevarar eller lagrar inga data som du tillhandahåller, t.ex. filer och lösenord. Fil och lösenord används endast för att extrahera certifikatet.</p> </td> 
     </tr> 
    </tbody> 
    </table>
@@ -147,7 +147,7 @@ Om du vill använda FTP-moduler måste du ha ett konto hos en FTP-tjänst.
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned files] </td> 
-   <td> <p>Ange det maximala antal resultat som du vill att modulen ska arbeta med under en cykel. Om värdet är för högt kan anslutningen avbrytas på FTP-serversidan. [!DNL Workfront Fusion] har ingen påverkan på detta. Vi rekommenderar att du anger ett lägre värde och antingen definierar ett högre värde för det maximala antalet cykler eller kör scenariot oftare.</p> </td> 
+   <td> <p>Ange det maximala antal resultat som du vill att modulen ska arbeta med under en cykel. Om värdet är för högt kan anslutningen avbrytas på FTP-serversidan. Workfront Fusion har ingen effekt på detta. Vi rekommenderar att du anger ett lägre värde och antingen definierar ett högre värde för det maximala antalet cykler eller kör scenariot oftare.</p> </td> 
   </tr> 
  </tbody> 
 </table>

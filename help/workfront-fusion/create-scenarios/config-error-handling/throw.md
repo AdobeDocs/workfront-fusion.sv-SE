@@ -8,9 +8,9 @@ description: I vissa fall kanske du vill stoppa scenariokörningen följt av åt
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Du kan använda följande tillfällig lösning för att efterlikna `throw`-felfu
 
 Mer information om ofullständiga körningar finns i [Visa och lösa ofullständiga körningar i Adobe Workfront Fusion](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
-Mer information om felhanteringsdirektiv finns i [Direktiv om felhantering i [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
+Mer information om felhanteringsdirektiv finns i [Direktiv om felhantering i Adobe Workfront Fusion](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
 ## Åtkomstkrav
 

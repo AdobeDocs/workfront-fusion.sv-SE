@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: f169b9d918d42bbecd885aeec1505bd41088907b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Dessa anslutningar gör att du kan ansluta till alla program och webbtjänster s
 * [Modulen SOAP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
 * [FTP-moduler](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
 * [SFTP-moduler](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
-* [Använd ömsesidig TLS i HTTP-moduler i  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
+* [Använd ömsesidig TLS i HTTP-moduler i Adobe Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
 
 ## Kopplingar för Adobe-produkter
 

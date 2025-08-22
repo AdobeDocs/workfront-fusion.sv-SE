@@ -4,20 +4,20 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Adobe lagringsmoduler
-description: I ett [!DNL Adobe Workfront Fusion] scenario kan du skapa och hantera projekt i Adobe Admin Console.
+description: I ett Adobe Workfront Fusion-scenario kan du skapa och hantera projekt i Adobe Admin Console.
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1368'
 ht-degree: 0%
 
 ---
 
 # Adobe lagringsmoduler
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du skapa och hantera projekt i Adobe Admin Console.
+I ett Adobe Workfront Fusion-scenario kan du skapa och hantera projekt i Adobe Admin Console.
 
 Om du behöver instruktioner om hur du skapar ett scenario kan du läsa artiklarna under [Skapa ett scenario: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -62,7 +62,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -343,7 +343,7 @@ Den här åtgärdsmodulen gör en anpassad HTTP-begäran till Adobe Storage API.
       <td>
         <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p>
         <p>Exempel: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] lägger automatiskt till auktoriseringsrubriker och x-api-key-rubriker.</p>
+        <p>Workfront Fusion lägger automatiskt till auktoriseringshuvuden och x-api-key-huvuden.</p>
       </td>
     </tr>
     <tr>

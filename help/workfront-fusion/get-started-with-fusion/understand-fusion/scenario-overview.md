@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion kräver en Adobe Workfront Fusion-licens fö
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Expandera följande avsnitt för att visa exempelscenarier och deras förklaring
 
 Med Workfront Fusion kan du automatisera enkla eller komplexa arbetsflöden i Workfront, vilket sparar tid och säkerställer att processen utförs på ett enhetligt sätt.
 
-I det här exemplet utlöses scenariot när ett angivet fält ändras i en aktivitet eller ett problem i [!DNL Workfront]. När scenariot aktiveras hämtas information i det relaterade projektet och en skräddarsydd uppdatering skapas för en person som tilldelats en specifik roll i projektet.
+I det här exemplet utlöses scenariot när ett angivet fält ändras i en aktivitet eller ett problem i Workfront. När scenariot aktiveras hämtas information i det relaterade projektet och en skräddarsydd uppdatering skapas för en person som tilldelats en specifik roll i projektet.
 
 ![Mallexempel](assets/fusion-template-example.png)
 
@@ -86,9 +86,9 @@ I det här exemplet utlöses scenariot när ett angivet fält ändras i en aktiv
 
 Workfront Fusion kan ansluta till andra program och webbtjänster. Du kan komma åt, importera, ändra och exportera data från andra program och integrera dem med Workfront eller med varandra.
 
-Många program har dedikerade [!DNL Workfront Fusion]-anslutningar. Om det inte finns någon dedikerad anslutning för programmet som du vill komma åt kan du använda Workfront Fusions HTTP- eller SOAP-moduler för att ansluta till programmet via dess API.
+Många applikationer har särskilda Workfront Fusion-anslutningar. Om det inte finns någon dedikerad anslutning för programmet som du vill komma åt kan du använda Workfront Fusions HTTP- eller SOAP-moduler för att ansluta till programmet via dess API.
 
-I det här exemplet utlöses scenariot när en användare läggs till i ett [!DNL Excel]-kalkylblad. Scenariot kontrollerar om användaren är i [!DNL Workfront]. Om så inte är fallet skapas användaren i [!DNL Workfront] och användar-ID:t för Workfront läggs tillbaka i kalkylbladet.
+I det här exemplet utlöses scenariot när en användare läggs till i ett [!DNL Excel]-kalkylblad. Scenariot kontrollerar om användaren är i Workfront. Om så inte är fallet skapas användaren i Workfront och användar-ID:t för Workfront läggs tillbaka i kalkylbladet.
 
 ![Integrationsexempel](assets/fusion-integration-example.png)
 
@@ -97,7 +97,7 @@ En lista över dedikerade anslutningar finns i [Fusion-program och deras modulre
 
 >[!IMPORTANT]
 >
->[!DNL Adobe Workfront Fusion] kan ansluta till nästan alla webbtjänster. Om appen du vill arbeta med inte har någon dedikerad [!DNL Workfront Fusion]-anslutning använder du universella anslutningar för att ansluta till appen eller tjänsten.
+>Adobe Workfront Fusion kan ansluta till nästan alla webbtjänster. Om appen du vill arbeta med inte har någon dedikerad Workfront Fusion-anslutning använder du universella anslutningar för att ansluta till appen eller tjänsten.
 >
 >En lista över universella anslutningar finns i [Universella anslutningar](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)
 

@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion HTTP > Make a request module är en universe
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL HTTP] > [!UICONTROL Make a request]-modulen
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL Make a request module] är en universell modul som gör att du kan konfigurera en HTTP-begäran och skicka den till en server. Det mottagna HTTP-svaret finns sedan i utdatapaketet.
+Adobe Workfront Fusion [!UICONTROL HTTP] > [!UICONTROL Make a request module] är en universell modul som gör att du kan konfigurera en HTTP-begäran och skicka den till en server. Det mottagna HTTP-svaret finns sedan i utdatapaketet.
 
 >[!NOTE]
 >
@@ -58,13 +58,13 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## [!UICONTROL HTTP] > [!UICONTROL Make a request] modulkonfiguration
 
-När du konfigurerar modulen [!UICONTROL HTTP] > [!UICONTROL Make a request] visar [!DNL Adobe Workfront Fusion] fälten som listas nedan. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar modulen [!UICONTROL HTTP] > [!UICONTROL Make a request] visas fälten som listas nedan i Adobe Workfront Fusion. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -101,7 +101,7 @@ När du konfigurerar modulen [!UICONTROL HTTP] > [!UICONTROL Make a request] vis
        <p>Exempel på det resulterande formatet för HTTP-begäran:</p> 
        <p><code>field1=value1&amp;field2=value2</code> </p> 
       </div> </li> 
-     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL &#x200B; Multipart/form-data] är en HTTP-multipart-begäran som används för att skicka filer och data. Det används ofta för att överföra filer till servern.</p> <p>Lägg till fält som ska skickas i begäran. Varje fält måste innehålla nyckelvärdepar.</p> 
+     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL  Multipart/form-data] är en HTTP-multipart-begäran som används för att skicka filer och data. Det används ofta för att överföra filer till servern.</p> <p>Lägg till fält som ska skickas i begäran. Varje fält måste innehålla nyckelvärdepar.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Ange nyckeln och värdet som ska skickas i begärandetexten.</p> </li> 
        <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Ange nyckeln och ange den källfil som du vill skicka i begärandetexten.</p> <p>Mappa filen som du vill överföra från den tidigare modulen (till exempel [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] eller [!UICONTROL Google Drive] &gt; Hämta en fil) eller ange filnamnet och fildata manuellt.</p> </li> 
@@ -164,7 +164,7 @@ När du konfigurerar modulen [!UICONTROL HTTP] > [!UICONTROL Make a request] vis
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Disable serialization of multiple same query string keys as arrays]</p> </td> 
-   <td> <p>Som standard hanterar [!DNL Workfront Fusion] flera värden för samma URL-frågesträngsparameternyckel som matriser. <code>www.test.com?foo=bar&amp;foo=baz</code> konverteras till exempel till <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>. Aktivera det här alternativet om du vill inaktivera funktionen. </p> </td> 
+   <td> <p>Som standard hanterar Workfront Fusion flera värden för samma URL-frågesträngsparameternyckel som arrayer. <code>www.test.com?foo=bar&amp;foo=baz</code> konverteras till exempel till <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>. Aktivera det här alternativet om du vill inaktivera funktionen. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Request compressed content]</td> 

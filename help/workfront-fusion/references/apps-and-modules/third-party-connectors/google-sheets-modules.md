@@ -1,21 +1,21 @@
 ---
 title: Google bladmoduler
-description: För att kunna använda  [!DNL Google Sheets] med [!DNL Adobe Workfront Fusion],you need the [!UICONTROL Workfront Fusion Google Sheets] tillägget (valfritt, men krävs för direktutlösare).
+description: För att kunna använda  [!DNL Google Sheets]  med Adobe Workfront Fusion behöver du tillägget [!UICONTROL Workfront Fusion Google Sheets] (valfritt, men krävs för direktutlösare).
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3543'
 ht-degree: 0%
 
 ---
 
 # [!DNL Google Sheets] moduler
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som använder [!DNL Google Sheets] samt ansluta det till flera tredjepartsprogram och -tjänster.
+I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder [!DNL Google Sheets] samt ansluta det till flera tredjepartsprogram och -tjänster.
 
-Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till [!DNL Workfront Fusion] finns i [Skapa en anslutning till  [!DNL Adobe Workfront Fusion] - Grundläggande instruktioner](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till Workfront Fusion finns i [Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 ## Åtkomstkrav
 
@@ -56,13 +56,13 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Förutsättningar
 
-Du måste ha ett [!UICONTROL Google]-konto för att kunna använda [!UICONTROL Google Sheets]-moduler.
+Du måste ha ett [!UICONTROL Google Sheets]-konto för att kunna använda [!UICONTROL Google]-moduler.
 
 ## API-information för Google Sheets
 
@@ -89,7 +89,7 @@ Kopplingen Google Sheets använder följande:
 
 ## Google bladmoduler och deras fält
 
-När du konfigurerar [!DNL Google Forms] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL Google Sheets] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL Google Forms]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL Google Sheets] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -113,7 +113,7 @@ Modulen hämtar endast nya rader som inte har fyllts i tidigare. Utlösaren bear
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet] </td> 
@@ -149,7 +149,7 @@ Modulen hämtar endast nya rader som inte har fyllts i tidigare. Utlösaren bear
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Ange det maximala antalet resultat som [!DNL Workfront Fusion] ska arbeta med under en körningscykel.</p> </td> 
+   <td> <p>Ange det maximala antalet resultat som Workfront Fusion ska arbeta med under en körningscykel.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -172,7 +172,7 @@ Modulen hämtar endast nya rader som inte har fyllts i tidigare. Utlösaren bear
 
 Den här modulen lägger till en rad i ett blad.
 
-När du konfigurerar [!DNL Google Sheets] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL Google Sheets] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL Google Sheets]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL Google Sheets] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -184,11 +184,11 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Mode]</td> 
-   <td> <p>Välj om du vill markera kalkylbladet och bladet manuellt eller genom mappning.</p> <p>Obs! Manuell mappning är användbar, till exempel när ett nytt kalkylblad skapas i ett [!DNL Workfront Fusion]-scenario och du vill lägga till data i det nya kalkylbladet direkt i scenariot.</p> </td> 
+   <td> <p>Välj om du vill markera kalkylbladet och bladet manuellt eller genom mappning.</p> <p>Obs! Manuell mappning är användbar när ett nytt kalkylblad skapas i ett Workfront Fusion-scenario och du vill lägga till data i det nya kalkylbladet direkt i scenariot.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -243,7 +243,7 @@ Skapar en ny tabell i ett markerat kalkylblad.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -270,7 +270,7 @@ Tar bort ett värde från en angiven cell.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -297,7 +297,7 @@ Tar bort värden från en angiven rad.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -322,7 +322,7 @@ Tar bort värden från en angiven rad.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Title] </td> 
@@ -366,7 +366,7 @@ Tar bort en angiven rad.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -393,7 +393,7 @@ Tar bort ett visst blad.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -416,7 +416,7 @@ Hämtar ett värde från en markerad cell.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -451,7 +451,7 @@ Med den här åtgärdsmodulen kan du utföra ett anpassat API-anrop.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Google Sheets-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Google Sheets-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -463,7 +463,7 @@ Med den här åtgärdsmodulen kan du utföra ett anpassat API-anrop.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt. Exempel: <code>{"Content-type":"application/json"}</code>. [!DNL Workfront Fusion] lägger till autentiseringsrubrikerna åt dig.</p> </td> 
+   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt. Exempel: <code>{"Content-type":"application/json"}</code>. Workfront Fusion lägger till auktoriseringsrubrikerna åt dig.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -487,7 +487,7 @@ Med den här åtgärdsmodulen kan du utföra ett anpassat API-anrop.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -526,7 +526,7 @@ Med den här modulen kan du ändra cellinnehållet i en markerad rad.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Mode]</td> 
@@ -582,7 +582,7 @@ Med den här modulen kan du ändra cellinnehållet i en markerad rad.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -602,7 +602,7 @@ Med den här modulen kan du ändra cellinnehållet i en markerad rad.
   </tr> 
   <tr> 
    <td>[!UICONTROL Row with headers]</td> 
-   <td>Ange intervallet för tabellrubrikerna. Exempel <code>A1:F1</code>. Om du lämnar fältet tomt hanterar [!DNL Workfront Fusion] den första raden i det angivna intervallet som rubrik.</td> 
+   <td>Ange intervallet för tabellrubrikerna. Exempel <code>A1:F1</code>. Om du låter fältet vara tomt hanterar Workfront Fusion den första raden i det angivna intervallet som rubrik.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Value render option]</td> 
@@ -625,7 +625,7 @@ Den här modulen returnerar en lista med alla tabeller i ett kalkylblad.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -644,7 +644,7 @@ Söker igenom rader med filteralternativen.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Google Sheets-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Google Sheets-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -684,7 +684,7 @@ Söker igenom rader med filteralternativen.
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned rows]</td> 
-   <td>Ange det maximala antalet rader som [!DNL Workfront Fusion] ska returnera under en körningscykel.</td> 
+   <td>Ange det maximala antalet rader som Workfront Fusion ska returnera under en körningscykel.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -699,7 +699,7 @@ Returnerar resultat som matchar de angivna villkoren.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Google Sheets]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Skapa en anslutning - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -741,13 +741,13 @@ Här är &quot;E&quot; kolumnen och &quot;är null&quot; är villkoret. Du kan s
 
 ### Lägga till en knapp i ett blad för att köra ett scenario
 
-1. I [!DNL Workfront Fusion] infogar du modulen **[!UICONTROL Webhook]** > **[!UICONTROL Custom webhooks]** i scenariot och konfigurerar den. Instruktioner finns i [Webbhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
+1. I Workfront Fusion infogar du modulen **[!UICONTROL Webhook]** > **[!UICONTROL Custom webhooks]** i scenariot och konfigurerar den. Instruktioner finns i [Webbhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 
 1. Kopiera webbhollens URL.
 1. Kör scenariot.
 1. I Google Sheets väljer du **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**.. på huvudmenyraden.
 
-1. Klicka på **[!UICONTROL Text box]** -ikonen ![Textrutan](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) i fönstret [!UICONTROL Drawing].
+1. Klicka på [!UICONTROL Drawing] -ikonen **[!UICONTROL Text box]** Textrutan![ i fönstret ](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png).
 1. Utforma en knapp och klicka på knappen **[!UICONTROL Save and Close]** i det övre högra hörnet:
 1. Knappen placeras i kalkylbladet. Klicka på de tre lodräta prickarna i knappens övre högra hörn:
 1. Välj **[!UICONTROL Assign script..].** på menyn.
@@ -769,7 +769,7 @@ Här är &quot;E&quot; kolumnen och &quot;är null&quot; är villkoret. Du kan s
 
 1. Växla tillbaka till [!DNL Google Sheets] och klicka på den nya knappen.
 1. Bevilja nödvändig behörighet till skriptet:
-1. Kontrollera att scenariot har körts i [!DNL Workfront Fusion].
+1. Kontrollera att scenariot har körts korrekt i Workfront Fusion.
 
 ## Lagra datum i ett kalkylblad
 
@@ -810,4 +810,4 @@ Om en sträng med tal som du använder som text tolkas som ett datum i ett [!DNL
 1. I [!DNL Google Sheets] markerar du kolumnen eller cellen som innehåller talet eller talen.
 1. Klicka på **[!UICONTROL Format]** > **[!UICONTROL Number]** > **[!UICONTROL Plain text]**.
 
-En annan tillfällig lösning i [!DNL Workfront Fusion] är att skriva en apostrof (&#39;) före ett tal, till exempel &#39;1-2019 eller &#39;1/47. Apostrofen visas inte i cellen när data har skickats från [!DNL Workfront Fusion].
+En annan lösning i Workfront Fusion är att skriva en apostrof (&#39;) före ett tal, till exempel &#39;1-2019 eller &#39;1/47. Apostrofen visas inte i cellen när data har skickats från Workfront Fusion.

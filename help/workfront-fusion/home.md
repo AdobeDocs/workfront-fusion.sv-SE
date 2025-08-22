@@ -2,21 +2,21 @@
 title: Adobe Workfront Fusion
 description: Välkommen till startsidan för Adobe Workfront Fusion-produkten och den tekniska dokumentationen. Använd följande länkar, hjälpartiklar och andra resurser för att lära dig hur du implementerar och använder Adobe Workfront Fusion effektivt i din organisation.
 exl-id: c005fc89-4b58-4c4e-ba45-0155cd2c8f03
-source-git-commit: 6e62836006dcca1acc2cc314c44dbb114cda0e08
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 0%
+source-wordcount: '306'
+ht-degree: 1%
 
 ---
 
-# [!DNL Workfront] Fusion-dokumentation
+# Workfront Fusion - dokumentation
 
 Välkommen till startsidan för Adobe Workfront Fusion-produkten och den tekniska dokumentationen. Använd följande länkar, hjälpartiklar och andra resurser för att lära dig hur du implementerar och använder Adobe Workfront Fusion effektivt i din organisation.
 
 ## Nyheter
 
 * [Frisläpp aktivitet](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
-* [Kända fel](https://experienceleague.adobe.com/sv/docs/workfront-known-issues/issues/fusion/workfrontfusion)
+* [Kända fel](https://experienceleague.adobe.com/en/docs/workfront-known-issues/issues/fusion/workfrontfusion)
 
 ## Utforska dokumentation
 
@@ -55,7 +55,7 @@ Att söka i dokumentation kan vara mer effektivt med några strategiska strategi
 ### Utforska utbildningsavsnitten
 
 * **Lärarledda kurser** Adobe erbjuder 3-dagars kurser live för Fusion. Mer information och tillgängliga sessioner finns i [Hantera anslutningar och arbetsflöden i Adobe Workfront Fusion](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html).
-* **Utbildningsmaterial**: Navigera till [Introduction and tech strategy](https://experienceleague.adobe.com/sv/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) Workfront Fusion training page där du får lära dig grunderna i Fusion.
+* **Utbildningsmaterial**: Navigera till [Introduction and tech strategy](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) Workfront Fusion training page där du får lära dig grunderna i Fusion.
 
 ### Hitta svar i communityforum
 

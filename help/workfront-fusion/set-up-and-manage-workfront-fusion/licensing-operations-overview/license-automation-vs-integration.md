@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion har två olika licenser som avgör vilken fu
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e2df1a0-c1f9-4833-b1c2-65efb3be9657
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ Kontakta din Workfront Fusion-administratör för att ta reda på vilken typ av 
 
 #### Fördelar med Workfront Fusion for Work Automation
 
-Med en Workfront Fusion for Work Automation-licens kan du automatisera dina [!DNL Workfront]-arbetsflöden. Genom att använda Workfront Fusion for Work Automation kan ni skapa scenarier för att automatisera organisationens unika arbetsprocesser.
+Med en Workfront Fusion for Work Automation-licens kan du automatisera dina Workfront-arbetsflöden. Genom att använda Workfront Fusion for Work Automation kan ni skapa scenarier för att automatisera organisationens unika arbetsprocesser.
 
-Fördelarna med att automatisera dina [!DNL Workfront]-processer är bland annat följande:
+Fördelarna med att automatisera era Workfront-processer är bland annat följande:
 
 * Automatisering går snabbare och mindre felbenägen.
 * Arbetsflöden som inte kräver några beslut eller som har beslut är baserade på enkel logik, som if/then, är bra kandidater för automatisering.
@@ -105,8 +105,8 @@ En lista över tillgängliga dedikerade anslutningar finns i [Fusion-program och
 I följande exempel visas ett arbetsflöde som:
 
 1. Tittar på ett kalkylblad för nya användare
-1. Kontrollerar om användaren finns i [!DNL Workfront]
-1. Skapar användaren i [!DNL Workfront] om användaren inte finns
-1. Överför användar-ID:t [!DNL Workfront] tillbaka till kalkylbladet.
+1. Kontrollerar om användaren finns i Workfront
+1. Skapar användaren i Workfront om användaren inte finns
+1. Överför Workfront användar-ID tillbaka till kalkylbladet.
 
 ![Exempel på automatiseringsscenario](assets/fusion-integration-example.png)

@@ -4,16 +4,16 @@ description: Du kan visa och hantera dina teamanslutningar i området Anslutning
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
 
 # Ta bort scenarioelement
 
-Du kan lagra och ta bort scenarioelement i följande områden i ditt [!DNL Adobe Workfront Fusion]-konto:
+Du kan lagra och ta bort scenarioelement i följande områden på ditt Adobe Workfront Fusion-konto:
 
 * [!UICONTROL Scenario]
 * [!UICONTROL Connections]

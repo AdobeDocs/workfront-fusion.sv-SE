@@ -1,24 +1,24 @@
 ---
 title: Skapa en anslutning - grundläggande instruktioner
-description: Många [!DNL Adobe Workfront Fusion] anslutningar kräver ingen anpassad konfiguration när en anslutning skapas. I den här artikeln beskrivs standardprocessen för att skapa anslutningar.
+description: Många Adobe Workfront Fusion-anslutningar kräver ingen anpassad konfiguration när en anslutning skapas. I den här artikeln beskrivs standardprocessen för att skapa anslutningar.
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: 6aec65919e79a9e9d950a11de53bfbb1051ca20b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
 
 # Skapa en anslutning - grundläggande instruktioner
 
-Många [!DNL Adobe Workfront Fusion]-anslutningar kräver ingen anpassad konfiguration när en anslutning skapas. I den här artikeln beskrivs standardprocessen för att skapa anslutningar.
+Många Adobe Workfront Fusion-anslutningar kräver ingen anpassad konfiguration när en anslutning skapas. I den här artikeln beskrivs standardprocessen för att skapa anslutningar.
 
 >[!NOTE]
 >
 >
->Om Adobe Workfront Fusion inte innehåller någon app för den webbtjänst som du vill använda i ditt scenario kan du ansluta till webbtjänsten med hjälp av [!DNL Workfront Fusion] HTTP- och Webhooks-moduler, vilket förklaras i följande artiklar:
+>Om Adobe Workfront Fusion inte innehåller någon app för den webbtjänst som du vill använda i ditt scenario kan du ansluta till webbtjänsten med Workfront Fusion HTTP- och Webhooks-modulerna, vilket förklaras i följande artiklar:
 >
 >* [Anslut Adobe Workfront Fusion till en webbtjänst som använder API-tokenauktorisering](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
 >* [Konfigurera en webkrok för en webbtjänst utan anslutning](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
@@ -70,7 +70,7 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 
 Om du vill skapa en anslutning till ett visst program måste du finnas i en modul för det programmet. Om du till exempel vill skapa en anslutning till Workfront måste du vara i en Workfront-modul.
 
-Så här skapar du en anslutning inuti en [!DNL Workfront Fusion]-modul:
+Så här skapar du en anslutning inuti en Workfront Fusion-modul:
 
 1. Klicka på **[!UICONTROL Add]** bredvid rutan [!UICONTROL Connection] i en modul för det angivna programmet för att öppna panelen **[!UICONTROL Create a connection]**.
 1. (Valfritt) Ändra standardvärdet **[!UICONTROL Connection name]**.
@@ -82,7 +82,7 @@ Så här skapar du en anslutning inuti en [!DNL Workfront Fusion]-modul:
 
 1. Klicka på **[!UICONTROL Continue]**.
 1. I inloggningsfönstret som visas anger du dina inloggningsuppgifter för att logga in på appen om du inte redan har gjort det.
-1. (Villkorligt) Om en **[!UICONTROL Allow]**-knapp visas kontrollerar du de åtgärder som anslutningsprogrammet kan utföra och klickar sedan på knappen för att ansluta appen till [!DNL Workfront Fusion].
+1. (Villkorligt) Om en **[!UICONTROL Allow]**-knapp visas kontrollerar du de åtgärder som anslutningsprogrammet kan vidta och klickar sedan på knappen för att ansluta appen till Workfront Fusion.
 
    >[!NOTE]
    >

@@ -1,12 +1,12 @@
 ---
 title: Artikeldatatyper
-description: Dina [!DNL Adobe Workfront Fusion] scenarier kan innehålla de typer av objekt som listas nedan i ett paket.
+description: Dina Adobe Workfront Fusion-scenarier kan innehålla de typer av objekt som listas nedan i ett paket.
 author: Becky
 feature: Workfront Fusion
 exl-id: 3ad65959-5c19-4727-bc9d-4ff1d238ad8b
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Du kan innehålla de typer av objekt som listas nedan i ett paket.
 
-Mer information om vilka typer av objekt [!DNL Workfront Fusion] tillåter konvertering mellan varandra finns i [Typtvång](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
+Mer information om vilka typer av objekt som Workfront Fusion tillåter konvertering mellan varandra finns i [Typtvång](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
 
 <table style="table-layout:auto">
  <col> 
@@ -23,11 +23,11 @@ Mer information om vilka typer av objekt [!DNL Workfront Fusion] tillåter konve
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>Text</p> </td> 
-   <td> <p>Den vanligaste artikeltypen. För vissa textobjekt kontrollerar [!DNL Adobe Workfront Fusion] om den högsta eller lägsta tillåtna längden uppfylls eller om objektet utför formatvalidering (e-post, URL eller filnamn).</p> </td> 
+   <td> <p>Den vanligaste artikeltypen. För vissa textobjekt kontrollerar Adobe Workfront Fusion om den högsta eller lägsta tillåtna längden uppfylls eller om objektet utför formatvalidering (e-post, URL eller filnamn).</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Nummer</p> </td> 
-   <td> <p>För vissa numeriska objekt kan [!DNL Workfront Fusion] validera indata för ett angivet intervall (det lägsta eller högsta tillåtna värdet).</p> </td> 
+   <td> <p>För vissa numeriska objekt kan Workfront Fusion validera indata för ett visst intervall (det lägsta eller högsta tillåtna värdet).</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Boolean (Ja/Nej)</p> </td> 
@@ -43,7 +43,7 @@ Mer information om vilka typer av objekt [!DNL Workfront Fusion] tillåter konve
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Buffert (binära data)</p> </td> 
-   <td> <p>Filinnehåll skickas vanligtvis som bufferttypsinnehåll (bildinnehåll, videofil med flera). I vissa fall inkluderas textdata i den här typen (till exempel en textfil). [!DNL Workfront Fusion] kan automatiskt konvertera textdata i binär kod till text och text till textdata i binär kod. Mer information finns i <a href="/help/workfront-fusion/create-scenarios/map-data/map-files.md" class="MCXref xref">Mappa filer</a>.</p> </td> 
+   <td> <p>Filinnehåll skickas vanligtvis som bufferttypsinnehåll (bildinnehåll, videofil med flera). I vissa fall inkluderas textdata i den här typen (till exempel en textfil). Workfront Fusion kan automatiskt konvertera textdata i binär kod till text och text till textdata i binär kod. Mer information finns i <a href="/help/workfront-fusion/create-scenarios/map-data/map-files.md" class="MCXref xref">Mappa filer</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Samling</p> </td> 
@@ -59,7 +59,7 @@ Mer information om vilka typer av objekt [!DNL Workfront Fusion] tillåter konve
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Validering</p> </td> 
-   <td> <p>[!DNL Workfront Fusion] kan utföra validering för varje typ av objekt. Om ett objekt inte godkänns i valideringen avbryts bearbetningen av modulen på grund av ett datafel. Mer information finns i <a href="/help/workfront-fusion/references/errors/error-processing.md" class="MCXref xref">Feltyper </a>. </p> </td> 
+   <td> <p>Workfront Fusion kan utföra validering för varje objekttyp. Om ett objekt inte godkänns i valideringen avbryts bearbetningen av modulen på grund av ett datafel. Mer information finns i <a href="/help/workfront-fusion/references/errors/error-processing.md" class="MCXref xref">Feltyper </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

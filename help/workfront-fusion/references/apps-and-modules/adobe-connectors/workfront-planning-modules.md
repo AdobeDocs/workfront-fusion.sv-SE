@@ -1,12 +1,12 @@
 ---
 title: Adobe Workfront Planning-moduler
-description: Med  [!DNL Adobe Workfront Planning] modulerna kan du starta ett [!DNL Adobe Workfront Fusion] scenario baserat på händelser i ditt [!DNL Adobe] Workfront Planning-konto, skapa, läsa eller uppdatera avtal och andra poster, söka efter poster med villkor som du anger och överföra dokument.
+description: Med  [!DNL Adobe Workfront Planning] modulerna kan du starta ett Adobe Workfront Fusion-scenario baserat på händelser i ditt [!DNL Adobe] Workfront Planning-konto, skapa, läsa eller uppdatera avtal och andra poster, söka efter poster med villkor som du anger och överföra dokument.
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 51bb87572f16f6194f6c37bbe52ea7f27050c303
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -87,9 +87,9 @@ Adobe Workfront Planning Connector använder följande:
 
 ## Skapa en anslutning till [!DNL Adobe Workfront Planning] {#create-a-connection-to-adobe-workfront-planning}
 
-Du kan skapa en anslutning till ditt [!DNL Workfront Planning]-konto direkt inifrån en [!DNL Workfront Fusion]-modul.
+Du kan skapa en anslutning till ditt [!DNL Workfront Planning]-konto direkt inifrån en Workfront Fusion-modul.
 
-1. Klicka på **[!UICONTROL Add]** bredvid anslutningsrutan i någon [!DNL Adobe Workfront Planning]-modul.
+1. Klicka på [!DNL Adobe Workfront Planning] bredvid anslutningsrutan i någon **[!UICONTROL Add]**-modul.
 
 1. Fyll i följande fält:
 
@@ -184,7 +184,7 @@ Den här utlösarmodulen startar ett scenario när en post, posttyp eller arbets
     </tr>
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Events filters]</p> </td> 
-      <td> <p>Du kan ställa in filter så att endast poster som uppfyller de villkor du väljer bevakas.</p> <p>För varje filter anger du fältet som du vill att filtret ska utvärderas, operatorn och värdet som du vill att filtret ska tillåta. Du kan använda mer än ett filter genom att lägga till OCH-regler.</p> <p>Obs! Det går inte att redigera filter i befintliga [!DNL Workfront]-webbböcker. Om du vill ställa in olika filter för [!DNL Workfront]-händelseprenumerationer tar du bort den aktuella webbkroken och skapar en ny.</p> <p>Mer information om händelsefilter finns i <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Evenemangsprenumerationsfilter i [!DNL Workfront] &gt; [!UICONTROL Watch Events] moduler</a> i Workfront-modulartikeln.</p> </td> 
+      <td> <p>Du kan ställa in filter så att endast poster som uppfyller de villkor du väljer bevakas.</p> <p>För varje filter anger du fältet som du vill att filtret ska utvärderas, operatorn och värdet som du vill att filtret ska tillåta. Du kan använda mer än ett filter genom att lägga till OCH-regler.</p> <p>Obs! Du kan inte redigera filter i befintliga Workfront-webbplatser. Om du vill ställa in olika filter för Workfront-händelseprenumerationer tar du bort den aktuella webbkroken och skapar en ny.</p> <p>Mer information om händelsefilter finns i <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Evenemangsprenumerationsfilter i Workfront &gt; [!UICONTROL Watch Events] moduler</a> i Workfront modulartikel.</p> </td> 
      </tr> 
     <tr>
       <td role="rowheader">[!UICONTROL Objects to watch]</td>
@@ -260,7 +260,7 @@ Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Workfront Pl
       <td>
         <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p>
         <p>Exempel: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] lägger till auktoriseringshuvuden automatiskt.</p>
+        <p>Workfront Fusion lägger automatiskt till auktoriseringsrubriker.</p>
       </td>
     </tr>
     <tr>

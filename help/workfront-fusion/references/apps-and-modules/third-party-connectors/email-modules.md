@@ -1,19 +1,19 @@
 ---
 title: E-postmoduler
-description: I ett [!DNL Adobe Workfront Fusion] scenario kan du ansluta ditt e-postkonto till flera tredjepartsprogram och -tjänster. På så sätt kan du hämta e-postmeddelanden via IMAP, skicka e-postmeddelanden via SMTP, skapa nya utkast, flytta och kopiera e-postmeddelanden från en mapp till en annan, markera e-postmeddelanden som lästa eller olästa samt ta bort e-post.
+description: I ett Adobe Workfront Fusion-scenario kan du ansluta ditt e-postkonto till flera tredjepartsprogram och -tjänster. På så sätt kan du hämta e-postmeddelanden via IMAP, skicka e-postmeddelanden via SMTP, skapa nya utkast, flytta och kopiera e-postmeddelanden från en mapp till en annan, markera e-postmeddelanden som lästa eller olästa samt ta bort e-postmeddelanden.
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2048'
 ht-degree: 0%
 
 ---
 
 # E-postmoduler
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du ansluta ditt e-postkonto till flera tredjepartsprogram och -tjänster. På så sätt kan du hämta e-post via IMAP, skicka e-postmeddelanden via SMTP, skapa nya utkast, flytta och kopiera e-postmeddelanden från en mapp till en annan, markera e-postmeddelanden som lästa eller olästa samt ta bort e-postmeddelanden.
+I ett Adobe Workfront Fusion-scenario kan du ansluta ditt e-postkonto till flera tredjepartsprogram och -tjänster. På så sätt kan du hämta e-postmeddelanden via IMAP, skicka e-postmeddelanden via SMTP, skapa nya utkast, flytta och kopiera e-postmeddelanden från en mapp till en annan, markera e-postmeddelanden som lästa eller olästa samt ta bort e-postmeddelanden.
 
 ## Åtkomstkrav
 
@@ -54,7 +54,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -100,7 +100,7 @@ Så här lägger du till ett självsignerat certifikat:
 
 ## [!UICONTROL Email]-moduler och deras fält
 
-När du konfigurerar [!UICONTROL Email] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!UICONTROL Email]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Vissa e-postfält kan redan innehålla data eftersom du använde dem i en annan modul i scenariot. Läs hjälpdokumentationen för e-post om du behöver information om dem.
 
@@ -161,7 +161,7 @@ Den här utlösarmodulen startar ett scenario när ett nytt e-postmeddelande tas
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of results]</td> 
-   <td> <p> Ange eller mappa det maximala antalet e-postmeddelanden som [!DNL Workfront Fusion] ska returnera under en körningscykel för scenario.</p> </td> 
+   <td> <p> Ange eller mappa det högsta antalet e-postmeddelanden som Workfront Fusion ska returnera under en körningscykel för ett scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -251,7 +251,7 @@ Den här åtgärdsmodulen skapar och lägger till ett nytt utkast i en markerad 
   </tr> 
   <!--<tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>Enter or map the email address (and name, if needed) that appears in the [!UICONTROL From] field in the email. </p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code>.</p> <p>Note:  Normally, [!DNL Workfront Fusion] uses the email address that you entered when creating the connection as the sender address. If you enter any other email address, an error may occur when sending a message because your account may not have permission to send emails from a different address than your own. E.g. <code>test@mail.com</code> or "<code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>Enter or map the email address (and name, if needed) that appears in the [!UICONTROL From] field in the email. </p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code>.</p> <p>Note:  Normally, Workfront Fusion uses the email address that you entered when creating the connection as the sender address. If you enter any other email address, an error may occur when sending a message because your account may not have permission to send emails from a different address than your own. E.g. <code>test@mail.com</code> or "<code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Sender]</p> </td> 
@@ -371,11 +371,11 @@ Den här modulen returnerar e-postmeddelanden som matchar de angivna villkoren.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Email ID (UID)]</td> 
-   <td> <p> Ange e-post-ID (UID) för e-postmeddelandet vars information du vill hämta.</p> <p>Du kan hämta UID för e-postmeddelandet med hjälp av [!UICONTROL &#x200B; Watch Email]-modulen eller [!UICONTROL Search Email] för [!DNL Workfront Fusion].</p> </td> 
+   <td> <p> Ange e-post-ID (UID) för e-postmeddelandet vars information du vill hämta.</p> <p>Du kan hämta UID för e-postmeddelandet med Workfront Fusions [!UICONTROL  Watch Email]-modul eller [!UICONTROL Search Email]-modul.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of results]</td> 
-   <td> <p> Det högsta antalet e-postmeddelanden [!DNL Workfront Fusion] ska returneras under en körningscykel för scenario.</p> </td> 
+   <td> <p> Det högsta antalet e-postmeddelanden som Workfront Fusion får returnera under en körningscykel.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
@@ -467,11 +467,11 @@ Skickar ett nytt e-postmeddelande.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till [!DNL Workfront Fusion] finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Anslut din e-post till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt e-postkonto till Workfront Fusion finns i <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Ansluta ditt e-postmeddelande till [!UICONTROL Workfront Fusion]</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Save Message after Sending]</td> 
-   <td>När e-postmeddelandet har skickats sparas det i din postlåda. Aktivera det här alternativet om du vill spara e-postmeddelanden som har skickats med [!DNL Workfront Fusion] till mappen <i>[!UICONTROL Sent mail]</i> eller en annan mapp i postlådan. Vissa e-posttjänster, till exempel [!DNL Gmail], sparar skickade meddelanden automatiskt.</td> 
+   <td>När e-postmeddelandet har skickats sparas det i din postlåda. Aktivera det här alternativet om du vill spara e-postmeddelanden som skickats med Workfront Fusion till mappen <i>[!UICONTROL Sent mail]</i> eller en annan mapp i din postlåda. Vissa e-posttjänster, till exempel [!DNL Gmail], sparar skickade meddelanden automatiskt.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL To] </td> 
@@ -545,7 +545,7 @@ Skickar ett nytt e-postmeddelande.
   </tr> 
 <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>Ange eller mappa e-postadressen (och namnet om det behövs) som visas i fältet [!UICONTROL From] i e-postmeddelandet. </p> <p>Viktigt: Använd rätt syntax: <code>name@email.com</code> eller <code>"Name" name@email.com</code>.</p> <p>Obs! I [!DNL Workfront Fusion] används normalt den e-postadress som du angav när du skapade anslutningen som avsändaradress. Om du anger en annan e-postadress kan ett fel inträffa när du skickar ett meddelande, eftersom ditt konto kanske inte har behörighet att skicka e-post från en annan adress än din egen. Exempel: <code>test@mail.com</code> eller <code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>Ange eller mappa e-postadressen (och namnet om det behövs) som visas i fältet [!UICONTROL From] i e-postmeddelandet. </p> <p>Viktigt: Använd rätt syntax: <code>name@email.com</code> eller <code>"Name" name@email.com</code>.</p> <p>Obs! Normalt används den e-postadress som du angav när du skapade anslutningen som avsändaradress i Workfront Fusion. Om du anger en annan e-postadress kan ett fel inträffa när du skickar ett meddelande, eftersom ditt konto kanske inte har behörighet att skicka e-post från en annan adress än din egen. Exempel: <code>test@mail.com</code> eller <code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

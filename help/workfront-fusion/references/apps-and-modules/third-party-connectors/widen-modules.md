@@ -1,20 +1,20 @@
 ---
 title: Bredda moduler
-description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera arbetsflöden som använder [!UICONTROL Widen] samt ansluta det till flera tredjepartsprogram och -tjänster.
+description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder [!UICONTROL Widen] samt ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 11376e58-a44b-4766-85dc-e2421b0112de
-source-git-commit: b5387e4ba84d67d6ea2472282c212e396ba93d4f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
 
 # [!DNL Widen] moduler
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som använder [!UICONTROL Widen] samt ansluta det till flera tredjepartsprogram och -tjänster.
+I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder [!UICONTROL Widen] samt ansluta det till flera tredjepartsprogram och -tjänster.
 
 Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -59,7 +59,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -86,11 +86,11 @@ För Widen-anslutningen används följande:
  </tbody> 
  </table>
 
-## Anslut [!DNL Widen] till [!DNL Workfront Fusion]  {#connect-widen-to-workfront-fusion}
+## Anslut [!DNL Widen] till Workfront Fusion  {#connect-widen-to-workfront-fusion}
 
 Du kan skapa en anslutning till ditt [!DNL Widen]-konto direkt inifrån en [!DNL Widen]-modul.
 
-1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL Connection] i någon [!DNL Widen]-modul.
+1. Klicka på [!DNL Widen] bredvid fältet **[!UICONTROL Add]** i någon [!UICONTROL Connection]-modul.
 1. Välj den miljö och typ av konto som du ansluter till. Detta är endast till för information och visas i området Anslutningar i Fusion.
 1. Välj den [!DNL Widen]-domän som du vill ansluta till.
 1. Ange token för ditt [!DNL Widen]-konto. Instruktioner om hur du hittar denna token finns i [[!DNL Widen] API FAQs](https://community.widen.com/collective/s/article/API-FAQs).
@@ -98,7 +98,7 @@ Du kan skapa en anslutning till ditt [!DNL Widen]-konto direkt inifrån en [!DNL
 
 ## [!DNL Widen]-moduler och deras fält
 
-När du konfigurerar [!DNL Widen] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL Widen] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL Widen]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL Widen] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -120,7 +120,7 @@ Den här utlösarmodulen startar ett scenario när en resurs skapas eller uppdat
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Widen] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till Workfront Fusion finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Widen] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Event type]</td> 
@@ -161,7 +161,7 @@ Den här åtgärdsmodulen lägger till en eller flera resurser i samlingar.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Widen] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till Workfront Fusion finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Widen] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Collections ID]</td> 
@@ -192,7 +192,7 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Widen] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till Workfront Fusion finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Widen] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL API Version]</td> 
@@ -234,7 +234,7 @@ Den här åtgärdsmodulen hämtar en resurs från ditt [!DNL Widen]-konto.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Widen] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till Workfront Fusion finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Widen] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -253,7 +253,7 @@ Den här åtgärdsmodulen hämtar en enskild resurs med dess unika ID.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Widen] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till Workfront Fusion finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Widen] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -280,7 +280,7 @@ Den här åtgärdsmodulen tar bort en eller flera resurser från samlingar.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Widen] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till Workfront Fusion finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Widen] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
   <tr> 
@@ -310,7 +310,7 @@ Den här åtgärdsmodulen uppdaterar metadatafälten för en resurs.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Widen] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till Workfront Fusion finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Widen] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -341,7 +341,7 @@ Den här åtgärdsmodulen överför en fil till ditt [!DNL Widen]-konto.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Widen] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till Workfront Fusion finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Widen] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Upload Profile]</td> 
@@ -385,7 +385,7 @@ Den här åtgärdsmodulen hämtar en lista med resurser i en samling.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Widen] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till Workfront Fusion finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Widen] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Collection ID]</td> 
@@ -424,7 +424,7 @@ Den här sökmodulen hämtar en lista med resurser som matchar de specifika sök
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Widen] till [!DNL Workfront Fusion] </a> i den här artikeln.</p> </td> 
+  <td> <p>Instruktioner om hur du ansluter ditt [!DNL Widen]-konto till Workfront Fusion finns i <a href="#connect-widen-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Widen] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search query]</td> 

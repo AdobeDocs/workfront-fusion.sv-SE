@@ -5,9 +5,9 @@ description: I den här artikeln beskrivs hur ett scenario körs och hur data fl
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ Om utlösarmodulen returnerar alla data, skickas dessa paket vidare till nästa 
 
 Om paketprocessen sker korrekt genom alla moduler markeras scenariot som lyckat på sidan med scenarioinformation.
 
-### Exempel: [!UICONTROL [!DNL Workfront Fusion] for Work Automation]
+### Exempel: [!UICONTROL Workfront Fusion for Work Automation]
 
 >[!BEGINSHADEBOX]
 
-**Exempel:** I det här scenariot, som söker efter inkommande begäranden i [!DNL Workfront] och sedan konverterar dem till [!DNL Workfront] -projekt, skulle data flöda så här:
+**Exempel:** I det här scenariot, som söker efter inkommande begäranden i Workfront och sedan konverterar dem till Workfront-projekt, skulle data flöda enligt följande:
 
 Scenariots första steg, som utförs av den första modulen, är att bevaka begäranden. Varje begäran som hittas betraktas som ett paket. Om modulen körs utan att några paket hittas avslutas scenariot efter den första modulen.
 
@@ -42,11 +42,11 @@ Om den första modulen returnerar ett paket, skickas paketet igenom resten av sc
 
 >[!ENDSHADEBOX]
 
-### Exempel: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration]
+### Exempel: [!UICONTROL Workfront Fusion for Work Automation and Integration]
 
 >[!BEGINSHADEBOX]
 
-**Exempel:** I det här scenariot, som hämtar dokument från [!DNL Adobe Workfront] och skickar dem till en mapp i [!DNL Dropbox], skulle data flöda så här:
+**Exempel:** I det här scenariot, som hämtar dokument från Adobe Workfront och skickar dem till en mapp i [!DNL Dropbox], skulle data flöda så här:
 
 Scenariots första steg, som utförs av den första modulen, är att bevaka dokument i Workfront. Varje dokument som hittas betraktas som ett paket. Om modulen körs utan att några paket hittas avslutas scenariot efter den första modulen.
 
@@ -92,7 +92,7 @@ Om modulen hittade mer än ett problem hämtas informationen för varje paket se
 
 Ett fel kan uppstå under scenariot. Om du till exempel har tagit bort mallen som modulen ska använda för att skapa det nya projektet avslutas scenariot med ett felmeddelande. Mer information om hur du hanterar fel finns i [Feltyper](/help/workfront-fusion/references/errors/error-processing.md).
 
-## Resurs
+## Resurser
 
 * Mer information om hur du konfigurerar ett scenario finns i [Scenarieredigeraren](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md).
 * Mer information om sidan med scenarioinformation finns i [Scenarioinformation](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).

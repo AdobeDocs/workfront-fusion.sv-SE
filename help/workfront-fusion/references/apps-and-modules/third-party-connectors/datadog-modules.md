@@ -1,19 +1,19 @@
 ---
 title: Datadogmoduler
-description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera arbetsflöden som använder Datadog samt ansluta den till flera tredjepartsprogram och -tjänster.
+description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder Datadog samt ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
 
 # [!DNL Datadog] moduler
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som använder [!DNL Datadog] samt ansluta det till flera tredjepartsprogram och -tjänster.
+I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder [!DNL Datadog] samt ansluta det till flera tredjepartsprogram och -tjänster.
 
 Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -58,7 +58,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -81,11 +81,11 @@ Datadoggkopplingen använder följande:
  </tbody> 
  </table>
 
-## Anslut [!DNL Datadog] till [!DNL Workfront Fusion] {#connect-datadog-to-workfront-fusion}
+## Anslut [!DNL Datadog] till Workfront Fusion {#connect-datadog-to-workfront-fusion}
 
 ### Hämta API-nyckeln och programnyckeln {#retrieve-your-api-key-and-application-key}
 
-Om du vill ansluta ditt [!DNL Datadog]-konto till [!DNL Workfront Fusion] måste du hämta en API-nyckel och en programnyckel från ditt [!DNL Datadog]-konto.
+Om du vill ansluta ditt [!DNL Datadog]-konto till Workfront Fusion måste du hämta en API-nyckel och en programnyckel från ditt [!DNL Datadog]-konto.
 
 1. Logga in på ditt [!DNL Datadog]-konto.
 1. Klicka på **[!UICONTROL Integrations]** i den vänstra navigeringspanelen och sedan på **[!UICONTROL APIs]**.
@@ -96,11 +96,11 @@ Om du vill ansluta ditt [!DNL Datadog]-konto till [!DNL Workfront Fusion] måste
 1. Hovra över det lila fältet för att visa programnyckeln.
 1. Kopiera programnyckeln till en säker plats.
 
-### Skapa en anslutning till [!DNL Datadog] i [!DNL Workfront Fusion]
+### Skapa en anslutning till [!DNL Datadog] i Workfront Fusion
 
 Du kan skapa en anslutning till ditt [!DNL Datadog]-konto direkt inifrån en [!UICONTROL Datadog]-modul.
 
-1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL Connection] i någon [!UICONTROL Datadog]-modul.
+1. Klicka på [!UICONTROL Datadog] bredvid fältet **[!UICONTROL Add]** i någon [!UICONTROL Connection]-modul.
 1. Fyll i modulens fält enligt följande:
 
    <table style="table-layout:auto">
@@ -138,7 +138,7 @@ Du kan skapa en anslutning till ditt [!DNL Datadog]-konto direkt inifrån en [!U
 
 ## [!DNL Datadog]-moduler och deras fält
 
-När du konfigurerar [!DNL Datadog] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL Datadog] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL Datadog]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL Datadog] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -159,7 +159,7 @@ Med den här åtgärdsmodulen kan du utföra ett anpassat API-anrop.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Datadog]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Datadog] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Datadog]-konto till Workfront Fusion finns i <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Datadog] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Use Dedicated Domain]</td> 
@@ -217,7 +217,7 @@ Gränsen för komprimerade nyttolaster är 3,2 megabyte (3200000) och 62 megabyt
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Datadog]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL Datadog] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Datadog]-konto till Workfront Fusion finns i <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Datadog] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 

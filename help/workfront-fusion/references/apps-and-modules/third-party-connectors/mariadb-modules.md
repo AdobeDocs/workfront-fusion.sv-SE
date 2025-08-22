@@ -1,20 +1,20 @@
 ---
 title: MariaDB-moduler
-description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera arbetsflöden som använder  [!DNL MariaDB] samt ansluta det till flera tredjepartsprogram och -tjänster.
+description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder  [!DNL MariaDB] och ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 41179cfe-c0f9-4d18-ab7e-374670ac688b
-source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
 
 # [!DNL MariaDB] moduler
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som använder [!DNL MariaDB] samt ansluta det till flera tredjepartsprogram och -tjänster.
+I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder [!DNL MariaDB] samt ansluta det till flera tredjepartsprogram och -tjänster.
 
 Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -59,7 +59,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -67,11 +67,11 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 Du måste ha ett [!DNL MariaDB]-konto för att kunna använda [!DNL MariaDB]-moduler.
 
-## Anslut [!DNL MariaDB] till [!DNL Workfront Fusion]
+## Anslut [!DNL MariaDB] till Workfront Fusion
 
 Du kan skapa en anslutning till ditt [!DNL MariaDB]-konto direkt inifrån en [!DNL MariaDB]-modul.
 
-1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL Connection] i någon [!DNL MariaDB]-modul.
+1. Klicka på [!DNL MariaDB] bredvid fältet **[!UICONTROL Add]** i någon [!UICONTROL Connection]-modul.
 1. Konfigurera följande fält:
 
    <table style="table-layout:auto"> 
@@ -99,7 +99,7 @@ Du kan skapa en anslutning till ditt [!DNL MariaDB]-konto direkt inifrån en [!D
       <td>Standardporten är 3306. Om du använder en port som inte är standard anger du det här numret till din port. </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Database &#x200B;]</td> 
+      <td role="rowheader">[!UICONTROL Database ]</td> 
       <td>Ange namnet på den databas som du vill interagera med.</td> 
      </tr> 
      <tr> 
@@ -117,7 +117,7 @@ Du kan skapa en anslutning till ditt [!DNL MariaDB]-konto direkt inifrån en [!D
 
 ## [!DNL MariaDB] moduler och deras fält
 
-När du konfigurerar [!DNL MariaDB] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL MariaDB] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL MariaDB]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL MariaDB] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -133,7 +133,7 @@ Den här åtgärdsmodulen hämtar information från databasen baserat på en fr�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Instruktioner om hur du ansluter ditt [!DNL MariaDB]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL MariaDB] till [!DNL Workfront Fusion]</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du ansluter ditt [!DNL MariaDB]-konto till Workfront Fusion finns i <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL MariaDB] till Workfront Fusion </a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
@@ -152,7 +152,7 @@ Den här modulen läser post från din databas.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Instruktioner om hur du ansluter ditt [!DNL MariaDB]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL MariaDB] till [!DNL Workfront Fusion]</a> i den här artikeln.</td> 
+   <td>Instruktioner om hur du ansluter ditt [!DNL MariaDB]-konto till Workfront Fusion finns i <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL MariaDB] till Workfront Fusion </a> i den här artikeln.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Table]</td> 

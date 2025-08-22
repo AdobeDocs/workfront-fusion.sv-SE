@@ -1,12 +1,12 @@
 ---
 title: Körning av scenarier, cykler och faser
-description: I den här artikeln beskrivs händelser som inträffar när ett  [!DNL Adobe Workfront Fusion] scenario körs, till exempel initiering, åtgärder, implementeringar och återställningar.
+description: I den här artikeln beskrivs händelser som inträffar när ett Adobe Workfront Fusion-scenario körs, till exempel initiering, åtgärder, implementeringar och återställningar.
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -53,11 +53,11 @@ Du kan ange maximalt antal cykler på panelen [!UICONTROL scenario settings]. St
 Under operationsfasen utförs en läs- eller skrivåtgärd
 
 * En läsåtgärd består av att hämta data från en tjänst som sedan bearbetas av andra moduler enligt ett fördefinierat scenario. Modulen [!UICONTROL Workfront] >[!UICONTROL Watch records] returnerar till exempel nya paket (poster) som skapats sedan den senaste scenariokörningen.
-* En skrivåtgärd består av att skicka data till en viss tjänst för vidare bearbetning. Modulen [!DNL Workfront] >[!UICONTROL Upload Document] överför till exempel en fil till Workfront.
+* En skrivåtgärd består av att skicka data till en viss tjänst för vidare bearbetning. Workfront >[!UICONTROL Upload Document]-modulen överför till exempel en fil till Workfront.
 
 #### Verkställ
 
-Om operationsfasen lyckas börjar den implementeringsfas under vilken alla åtgärder som utförs av modulerna verkställs. Det innebär att [!DNL Workfront Fusion] skickar information till alla tjänster som är inblandade i operationsfasen om att åtgärden lyckades.
+Om operationsfasen lyckas börjar den implementeringsfas under vilken alla åtgärder som utförs av modulerna verkställs. Detta innebär att Workfront Fusion skickar information till alla de avdelningar som deltar i operationsfasen om hur det lyckades.
 
 ### Återställning
 
@@ -65,7 +65,7 @@ Om ett fel inträffar under operations- eller implementeringsfasen i en modul av
 
 >[!IMPORTANT]
 >
->Alla [!DNL Workfront Fusion]-moduler som stöder återställning (kallas även för transaktioner) markeras med ACID-taggen.
+>Alla Workfront Fusion-moduler som stöder återställning (kallas även transaktionalitet) markeras med ACID-taggen.
 >
 >![Acid-moduler](assets/acid-modules.png)
 >
@@ -75,6 +75,6 @@ Om ett fel inträffar under operations- eller implementeringsfasen i en modul av
 
 Under slutförandefasen stängs öppna anslutningar (till exempel FTP-anslutningar, databasanslutningar och så vidare) och scenariot slutförs.
 
-## Resurs
+## Resurser
 
 Mer information finns i [Konfigurera scenarioinställningar](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).

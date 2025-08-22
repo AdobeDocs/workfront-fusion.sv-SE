@@ -5,16 +5,16 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: 896597fa4a0689c19eb56d98f447c6a719d90ca2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3626'
+source-wordcount: '3643'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe PDF Services]
 
-Med [!DNL Adobe Workfront Fusion] [!DNL Adobe PDF Services] kan du extrahera data från en PDF-fil eller generera en ny PDF-fil från data du anger. Dessutom kan du konvertera en mängd olika filtyper till PDF-filer eller PDF-filer till andra filtyper. Med PDF Services kan du också kombinera, komprimera och läsa metadata för en PDF-fil samt styra lösenordsskyddet för filen.
+Med Adobe Workfront Fusion [!DNL Adobe PDF Services] kan du extrahera data från en PDF-fil eller generera en ny PDF-fil från data du anger. Dessutom kan du konvertera en mängd olika filtyper till PDF-filer eller PDF-filer till andra filtyper. Med PDF Services kan du också kombinera, komprimera och läsa metadata för en PDF-fil samt styra lösenordsskyddet för filen.
 
 Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -24,7 +24,7 @@ Mer information om API:t som används för PDF Services finns i [Adobe API för 
 
 ## Säkerhetsaspekter vid användning av [!DNL Adobe PDF Services]
 
-[!DNL Adobe PDF Services] kan läsa, konvertera eller ändra dina filer, men varken [!DNL Adobe] eller [!DNL Workfront Fusion] lagrar dina filer eller data. Detta innebär att
+[!DNL Adobe PDF Services] kan läsa, konvertera eller ändra dina filer, men varken [!DNL Adobe] eller Workfront Fusion lagrar dina filer eller data. Detta innebär att
 
 * Du behåller kontrollen över dina filer, inklusive deras säkerhet
 * Du behöver inte ha något [!UICONTROL Adobe]-lagringskonto eller molnlagringskonto för att kunna använda PDF Services.
@@ -68,7 +68,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -101,7 +101,7 @@ Adobe PDF Services Connector använder följande:
 
 Så här skapar du en anslutning för dina [!DNL Adobe PDF Services]-moduler:
 
-1. Klicka på **[!UICONTROL Add]** bredvid anslutningsrutan i någon [!DNL Adobe PDF Services]-modul.
+1. Klicka på [!DNL Adobe PDF Services] bredvid anslutningsrutan i någon **[!UICONTROL Add]**-modul.
 
 1. Fyll i följande fält:
 
@@ -176,7 +176,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe PDF Services]-moduler:
 
 ## [!DNL Adobe PDF Services]-moduler och deras fält
 
-När du konfigurerar [!DNL PDF Services] visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En fetstilt titel i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL PDF Services] visar Workfront Fusion fälten som listas nedan. Dessutom kan ytterligare fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En fetstilt titel i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -577,7 +577,7 @@ Fyll i fälten i modulen [!UICONTROL Generate document] enligt följande:
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source File]</td> 
-   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> <p>Den här källfilen är mallen [!DNL Microsoft Word] som används i modulen för att skapa nya PDF.</p> <p>Vi rekommenderar att du skapar ett projekt i [!DNL Workfront] för de [!DNL Microsoft Word] -mallar som du använder i [!DNL Workfront Fusion]. Du kan sedan använda modulen [!DNL Workfront] &gt; [!UICONTROL Download document] för att hämta rätt mall till ditt scenario.</p> </td> 
+   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> <p>Den här källfilen är mallen [!DNL Microsoft Word] som används i modulen för att skapa nya PDF.</p> <p>Vi rekommenderar att du skapar ett projekt i Workfront för de [!DNL Microsoft Word]-mallar som du använder i Workfront Fusion. Du kan sedan använda modulen Workfront &gt; [!UICONTROL Download document] för att hämta rätt mall till ditt scenario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output Format]</td> 

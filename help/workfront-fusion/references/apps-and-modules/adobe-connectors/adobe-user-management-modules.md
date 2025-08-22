@@ -4,20 +4,20 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Adobe-moduler för användarhantering
-description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera arbetsflöden som hanterar användare i ditt Adobe-konto.
+description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som hanterar användare på ditt Adobe-konto.
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2357'
 ht-degree: 0%
 
 ---
 
 # Adobe-moduler för användarhantering
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du automatisera arbetsflöden som hanterar användare i ditt Adobe-konto.
+I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som hanterar användare på ditt Adobe-konto.
 
 Om du behöver instruktioner om hur du skapar ett scenario kan du läsa artiklarna under [Skapa ett scenario: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -34,35 +34,35 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] eller senare</p> </td>
+   <td role="rowheader">Adobe Workfront-plan*</td>
+  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens*</td>
-   <td> <p>[!UICONTROL -plan], [!UICONTROL -arbete]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens*</td>
+   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuellt licenskrav: Inget [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuellt licenskrav: Inga Workfront Fusion-licenskrav.</p>
    <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL [!DNL Workfront Fusion] för Automation och integrering av arbetet], [!UICONTROL [!DNL Workfront Fusion] för Automatisering av arbete]</p>
+   <p>Gammalt licenskrav: [!UICONTROL Workfront Fusion for Work Automation and Integration],  [!UICONTROL Workfront Fusion for Work Automation]</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Adobe Workfront] måste din organisation köpa både [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln. [!DNL Workfront Fusion] ingår i planen [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Aktuellt produktkrav: Om du har planen [!UICONTROL Select] eller [!UICONTROL Prime] Adobe Workfront måste din organisation köpa Adobe Workfront Fusion samt Adobe Workfront för att kunna använda de funktioner som beskrivs i den här artikeln. Workfront Fusion ingår i Workfront-planen för [!UICONTROL Ultimate].</p>
    <p>eller</p>
-   <p>Äldre produktkrav: Din organisation måste köpa [!DNL Adobe Workfront Fusion] och [!DNL Adobe Workfront] för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Krav för äldre produkter: Din organisation måste köpa Adobe Workfront Fusion och Adobe Workfront för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Kontakta Workfront-administratören om du vill veta vilken plan, licenstyp eller åtkomst du har.
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -70,7 +70,7 @@ Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe W
 
 Så här skapar du en anslutning för dina [!DNL Adobe User Management]-moduler:
 
-1. Klicka på **[!UICONTROL Lägg till]** bredvid rutan Anslutning i en modul.
+1. Klicka på **[!UICONTROL Add]** bredvid rutan Anslutning i någon av modulerna.
 
 1. Fyll i följande fält:
 
@@ -81,7 +81,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe User Management]-moduler:
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL -anslutningsnamn]</td>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
         <td>
           <p>Ange ett namn för anslutningen.</p>
         </td>
@@ -91,19 +91,19 @@ Så här skapar du en anslutning för dina [!DNL Adobe User Management]-moduler:
         <td>Ange om du ansluter till en produktionsmiljö eller icke-produktionsmiljö.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL -typ]</td>
+        <td role="rowheader">[!UICONTROL Type]</td>
         <td>Ange om du ansluter till ett tjänstkonto eller ett personligt konto.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL -klient-ID]</td>
-        <td>Ange ditt [!UICONTROL Adobe] [!UICONTROL klient-ID]. Detta finns i avsnittet med information om [!UICONTROL -autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Ange din [!UICONTROL Adobe] [!UICONTROL Client ID]. Detta finns i avsnittet [!UICONTROL Credentials]-information i [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL -klienthemlighet]</td>
-        <td>Ange din [!DNL Adobe] [!UICONTROL -klienthemlighet]. Detta finns i avsnittet med information om [!UICONTROL -autentiseringsuppgifter] i [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Ange din [!DNL Adobe] [!UICONTROL Client Secret]. Detta finns i avsnittet [!UICONTROL Credentials]-information i [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL IMS-organisations-ID]</td>
+        <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
         <td>Ange dina [!DNL Adobe] IMS-autentiseringsuppgifter. Unik identifierare för en organisation. Detta är en sträng i formatet A495E53@AdobeOrg där prefixet före @ är ett hexadecimalt tal. Du kan hitta det här värdet som en del av URL-sökvägen för organisationen i Admin Console eller i adobe.io-konsolen för användarhanteringsintegreringen.</td>
         </tr>
         <tr>
@@ -113,7 +113,7 @@ Så här skapar du en anslutning för dina [!DNL Adobe User Management]-moduler:
       </tbody>
     </table>
 
-1. Klicka på **[!UICONTROL Fortsätt]** för att spara anslutningen och återgå till modulen.
+1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
 
 
 
@@ -565,7 +565,7 @@ Den här åtgärdsmodulen gör ett anpassat anrop till Adobe API för användarh
       <td>
         <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p>
         <p>Exempel: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] lägger automatiskt till auktoriseringsrubriker och x-api-key-rubriker.</p>
+        <p>Workfront Fusion lägger automatiskt till auktoriseringshuvuden och x-api-key-huvuden.</p>
       </td>
     </tr>
     <tr>

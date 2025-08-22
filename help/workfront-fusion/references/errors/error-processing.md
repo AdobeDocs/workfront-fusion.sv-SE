@@ -5,9 +5,9 @@ description: Ibland kan ett fel inträffa när ett scenario körs. Detta händer
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-source-git-commit: d618d5c4b2306a3b940af7e402f93ced988095a3
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1195'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Ibland kan ett fel inträffa när ett scenario körs. Detta händer vanligtvis om en tjänst inte är tillgänglig på grund av ett fel med anslutningen till tjänsten eller om en validering misslyckas.
 
-[!DNL Adobe Workfront Fusion] skiljer mellan flera grundläggande feltyper. Vilken typ av fel det är beror på vad ditt Fusion-scenario kommer att göra härnäst.
+Adobe Workfront Fusion skiljer mellan flera grundläggande feltyper. Vilken typ av fel det är beror på vad ditt Fusion-scenario kommer att göra härnäst.
 
 ## Åtkomstkrav
 
@@ -29,17 +29,17 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+    <td role="rowheader">Adobe Workfront package</td> 
    <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens</td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
    <td> Nytt: Standard<p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] licens</td> 
    <td>
-   <p>Aktuell: Inga [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
    <p>Äldre: Alla </p>
    </td> 
@@ -47,18 +47,18 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Workfront]: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] ingår.</li></ul>
+   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] Workfront-plan: Din organisation måste köpa Adobe Workfront Fusion.</li><li>[!UICONTROL Ultimate] Workfront: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 
-Kontakta [!DNL Workfront]-administratören om du vill ta reda på vilken plan, licenstyp eller åtkomst du har.
+Kontakta Workfront-administratören om du vill veta vilken plan, licenstyp eller åtkomst du har.
 
-Mer information om Adobe Workfront Fusion-licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -68,13 +68,13 @@ Mer information om Adobe Workfront Fusion-licenser finns i [[!DNL Adobe Workfron
 
 Anslutningsfel är ett av de vanligaste felen. De orsakas oftast av att tredjepartstjänsten inte är tillgänglig av olika orsaker, till exempel överbelastning, underhåll eller driftstopp. Standardhanteringen av det här felet beror på vilken modul som påträffade felet.
 
-* Om felet inträffar i den första modulen avslutas körningen av scenariot med ett varningsmeddelande. [!DNL Workfront Fusion] försöker sedan upprepade gånger att köra scenariot igen med ökande tidsintervall. Om alla försök misslyckas inaktiverar [!DNL Workfront Fusion] scenariot.
+* Om felet inträffar i den första modulen avslutas körningen av scenariot med ett varningsmeddelande. Workfront Fusion försöker sedan upprepade gånger att köra scenariot igen med ökande tidsintervall. Om alla försök misslyckas inaktiverar Workfront Fusion scenariot.
 * Om anslutningsfelet inträffar i en annan modul än i den första, är följande steg beroende av alternativet Tillåt lagring av ofullständiga körningar i scenariets avancerade inställningar:
 
-   * Om det här alternativet är aktiverat flyttas körningen av scenariot till mappen [!UICONTROL Incomplete executions] där [!DNL Workfront Fusion] upprepade gånger försöker köra scenariot igen med ökande tidsintervall. Om alla försök misslyckas finns körningen kvar i mappen Ofullständiga körningar i väntan på manuell lösning av användaren.
+   * Om det här alternativet är aktiverat flyttas körningen av scenariot till mappen [!UICONTROL Incomplete executions] där Workfront Fusion upprepade gånger försöker köra scenariot igen med ökande tidsintervall. Om alla försök misslyckas finns körningen kvar i mappen Ofullständiga körningar i väntan på manuell lösning av användaren.
 
      Mer information om ofullständiga körningar finns i [Visa och lösa ofullständiga körningar](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
-   * Om det här alternativet är inaktiverat avslutas körningen av scenariot med ett fel följt av en återställningsfas. [!DNL Workfront Fusion] försöker sedan upprepade gånger att köra scenariot igen med ökande tidsintervall. Om alla försök misslyckas inaktiverar [!DNL Workfront Fusion] scenariot.
+   * Om det här alternativet är inaktiverat avslutas körningen av scenariot med ett fel följt av en återställningsfas. Workfront Fusion försöker sedan upprepade gånger att köra scenariot igen med ökande tidsintervall. Om alla försök misslyckas inaktiverar Workfront Fusion scenariot.
 
   Mer information om inställningen Tillåt lagring av ofullständiga körningar finns i [Tillåt lagring av ofullständiga körningar](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) i artikeln Konfigurera scenarioinställningar.
 
@@ -94,7 +94,7 @@ Med de ökande tidsintervallen förhindras ofta utförda scenarier från att anv
 
 **Exempel:**
 
-Ett scenario innehåller [!DNL Google Sheets]-utlösaren [!UICONTROL Watch Rows]. [!DNL Google Sheets] är inte tillgängligt på 30 minuter på grund av underhåll när [!DNL Workfront Fusion] startar scenariot, så det går inte att hämta nya rader. Scenariot stoppas och försöker igen om 10 minuter. Eftersom [!DNL Google Sheets] fortfarande inte är tillgänglig kan [!DNL Workfront Fusion] fortfarande inte få information om nya rader. Nästa omgång av scenariot är schemalagd om en timme. [!DNL Google Sheets] är tillgängligt igen för tillfället och scenariot kan köras.
+Ett scenario innehåller [!DNL Google Sheets]-utlösaren [!UICONTROL Watch Rows]. [!DNL Google Sheets] är inte tillgängligt på 30 minuter på grund av underhåll när Workfront Fusion startar scenariot, så det går inte att hämta nya rader. Scenariot stoppas och försöker igen om 10 minuter. Eftersom [!DNL Google Sheets] fortfarande inte är tillgängligt kan Workfront Fusion fortfarande inte få information om nya rader. Nästa omgång av scenariot är schemalagd om en timme. [!DNL Google Sheets] är tillgängligt igen för tillfället och scenariot kan köras.
 
 >[!ENDSHADEBOX]
 
@@ -102,7 +102,7 @@ Ett scenario innehåller [!DNL Google Sheets]-utlösaren [!UICONTROL Watch Rows]
 
 `DataError`
 
-Ett datafel genereras när ett objekt är felaktigt mappat och inte godkänns vid den validering som har utförts på [!DNL Workfront Fusion] eller på tredjepartstjänstens sida.
+Ett datafel genereras när ett objekt är felaktigt mappat och inte godkänns vid den validering som utförs på Workfront Fusion-sidan eller på tredjepartstjänstens sida.
 
 Om det här felet inträffar flyttas scenariot, fram till där modulen misslyckades, till mappen för ofullständiga körningar, där du kan felsöka problemet. Scenariot avbryts dock inte och fortsätter att köras enligt schemat. Om du vill stoppa körningen av scenariot när ett datafel visas aktiverar du alternativet Sekventiell bearbetning på panelen Scenarioinställningar.
 
@@ -112,7 +112,7 @@ Om du inte har aktiverat alternativet [!UICONTROL Allow storing incomplete execu
 
 `DuplicateDataError`
 
-Om [!DNL Workfront Fusion] försöker infoga samma paket två gånger i en tjänst som inte tillåter dubblettdata, genereras ett dubblettdatafel. Om det här felet inträffar fortsätter [!DNL Workfront Fusion] på samma sätt som för datafel.
+Om Workfront Fusion försöker infoga samma paket två gånger i en tjänst som inte tillåter dubblettdata, genereras ett dubblettdatafel. Om detta fel inträffar fortsätter Workfront Fusion på samma sätt som för datafel.
 
 Mer information finns i [Datafel](#data-error) i den här artikeln.
 
@@ -121,7 +121,7 @@ Mer information finns i [Datafel](#data-error) i den här artikeln.
 
 `InvalidAccessTokenError`
 
-Ett ogiltigt åtkomsttokenfel inträffar när [!DNL Workfront Fusion] inte kan komma åt ditt konto som är registrerat hos en tredjepartstjänst. Detta inträffar vanligtvis när du återkallar åtkomstbehörighet för [!DNL Workfront Fusion] i administrationen av en viss tjänst, men scenarier där tjänsten används fortsätter att köras enligt schemat.
+Ett ogiltigt åtkomsttokenfel inträffar när Workfront Fusion inte kan komma åt ditt konto som registrerats hos en tredjepartstjänst. Detta inträffar vanligtvis när du återkallar åtkomsträttigheter för Workfront Fusion vid administration av en viss tjänst, men scenarier där tjänsten används fortsätter att köras enligt schemat.
 
 Om det här felet inträffar stoppas körningen av scenariot omedelbart. Resten av scenariot med början från modulen där felet inträffade, flyttas till mappen för ofullständiga körningar.
 
@@ -129,7 +129,7 @@ Om det här felet inträffar stoppas körningen av scenariot omedelbart. Resten 
 
 `RateLimitError`
 
-Om en gräns som angetts av en viss tjänst överskrids genereras ett hastighetsbegränsningsfel. Om det här felet inträffar fortsätter [!DNL Workfront Fusion] på samma sätt som för anslutningsfelet.
+Om en gräns som angetts av en viss tjänst överskrids genereras ett hastighetsbegränsningsfel. Om det här felet inträffar fortsätter Workfront Fusion på samma sätt som för anslutningsfelet.
 
 Mer information finns i [Anslutningsfel](#connection-error) i den här artikeln.
 
@@ -147,7 +147,7 @@ Mer information finns i [Antal efterföljande fel](/help/workfront-fusion/create
 
 **Exempel:**
 
-Ett scenario har [!DNL Workfront]-utlösaren [!UICONTROL Watch Record] inställd på att bevaka dokument. Scenariot körs medan du överför ett stort dokument, till exempel en lång video. Eftersom [!UICONTROL Workfront Fusion] försöker hämta videon medan den fortfarande överförs till Workfront avslutas scenariot med `IncompleteDataError`.
+Ett scenario har Workfront-utlösaren [!UICONTROL Watch Record] inställd på att bevaka dokument. Scenariot körs medan du överför ett stort dokument, till exempel en lång video. Eftersom [!UICONTROL Workfront Fusion] försöker hämta videon medan den fortfarande överförs till Workfront avslutas scenariot med `IncompleteDataError`.
 
 >[!ENDSHADEBOX]
 
@@ -165,7 +165,7 @@ Mer information finns i [Antal efterföljande fel](/help/workfront-fusion/create
 >[!NOTE]
 >
 >Om ett scenario börjar med en direktutlösare och påträffar det här felet, ignoreras inställningen [!UICONTROL Max number of consecutive errors] och scenariot inaktiveras omedelbart.
->Mer information finns i [Direktutlösare](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) i översikten över artikelmodulerna.
+>>Mer information finns i [Direktutlösare](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) i översikten över artikelmodulerna.
 
 ## Inkonsekvens-fel
 
@@ -181,7 +181,7 @@ När du kör ett scenario kan du få en varning som informerar dig om ett proble
 
 En varning kan till exempel visas när den största tillåtna filstorleken överskrids och alternativet [!UICONTROL Enable data loss] inaktiveras.
 
-## Resurs
+## Resurser
 
 Mer information om mappning finns i [Mappningsöversikt](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md).
 

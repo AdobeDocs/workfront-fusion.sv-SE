@@ -4,9 +4,9 @@ description: Du kan använda SOAP-modulen för att ansluta till SOAP API:er i Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -64,13 +64,13 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## SOAP-modulen och dess fält
 
-När du konfigurerar SOAP-moduler visar [!DNL Workfront Fusion] fälten som listas nedan.  En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar SOAP-moduler visas fälten som listas nedan i Workfront Fusion.  En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -145,7 +145,7 @@ I det här exemplet finns referenserna `soapenc:Array`, `soapenc:arrayType` och 
 
 Om modulen [!UICONTROL SOAP] vägrar att bearbeta WSDL-filen eller genererar olika fel i modulens konfiguration kan du försöka med att använda den universella modulen **[!UICONTROL HTTP]>[!UICONTROL Make a request]** i stället:
 
-1. Skapa ett nytt scenario i [!DNL Workfront Fusion].
+1. Skapa ett nytt scenario i Workfront Fusion.
 1. Infoga modulen **[!UICONTROL HTTP]>[!UICONTROL Make a request]** i scenariot.
 1. Öppna modulens konfiguration och fyll i följande fält:
 
@@ -185,7 +185,7 @@ Om modulen [!UICONTROL SOAP] vägrar att bearbeta WSDL-filen eller genererar oli
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Kopiera URL-adressen från attributet `location` när den har hittats.
-1. I [!DNL Workfront Fusion] klistrar du in URL-adressen i HTTP-modulens URL-fält.
+1. I Workfront Fusion klistrar du in URL-adressen i HTTP-modulens URL-fält.
 1. Öppna [onlineklienten [!UICONTROL SOAP] ](https://wsdlbrowser.com/) i ett nytt webbläsarfönster/på en ny flik.
 1. Klistra in WSDL-URL:en i WSDL-URL-fältet.
 1. Klicka på **[!UICONTROL Browse]**.

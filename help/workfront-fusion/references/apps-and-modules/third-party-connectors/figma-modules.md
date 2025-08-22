@@ -1,19 +1,19 @@
 ---
 title: Figma-moduler
-description: Med  [!DNL Adobe Workfront Fusion] Figma-modulen kan du hämta listor med kommentarer, filer, filversioner eller projekt. Du kan också publicera en kommentar eller ringa ett anrop till Figma API.
+description: Med modulerna Adobe Workfront Fusion Figma kan du hämta listor med kommentarer, filer, filversioner och projekt. Du kan också publicera en kommentar eller ringa ett anrop till Figma API.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2280'
 ht-degree: 0%
 
 ---
 
 # [!DNL Figma] moduler
 
-Med modulerna [!DNL Adobe Workfront Fusion] [!DNL Figma] kan du hämta listor med kommentarer, filer, filversioner eller projekt. Du kan också publicera en kommentar eller ringa ett anrop till [!DNL Figma]-API:t.
+Med Adobe Workfront Fusion [!DNL Figma]-modulerna kan du hämta listor med kommentarer, filer, filversioner eller projekt. Du kan också publicera en kommentar eller ringa ett anrop till [!DNL Figma]-API:t.
 
 Om du behöver instruktioner om hur du skapar ett scenario kan du läsa artiklarna under [Skapa ett scenario: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -58,7 +58,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -140,7 +140,7 @@ Så här skapar du en anslutning för dina Figma-moduler:
 
 ## [!DNL Figma]-moduler och deras fält
 
-När du konfigurerar [!DNL Figma] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL Figma] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL Figma]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL Figma] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -174,7 +174,7 @@ Den här åtgärdsmodulen tar bort en enskild kommentar från en fil.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
+      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
       </td>
     </tr>
     <tr>
@@ -198,7 +198,7 @@ I den här sökmodulen visas alla kommentarer som är kopplade till en enskild f
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
+      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL File ID]</td>
@@ -232,7 +232,7 @@ Den här åtgärdsmodulen skickar en kommentar till en Figma-fil.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
+      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
     </tr>
     <tr>
       <td  role="rowheader">[!UICONTROL File ID]</td>
@@ -277,7 +277,7 @@ Den här åtgärdsmodulen hämtar en enda fil eller bild från ett Figma-bibliot
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
+      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Object type]</td>
@@ -500,7 +500,7 @@ Denna sökmodul returnerar versionshistoriken för en enskild fil i [!UICONTROL 
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
+      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
     <tr>
       <td role="rowheader">[!UICONTROL File ID]</td>
       <td>
@@ -532,7 +532,7 @@ Sökmodulen returnerar en lista med alla filer i det angivna projektet.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
+      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL File ID]</td>
@@ -562,7 +562,7 @@ Sökmodulen returnerar en lista över alla projekt i det angivna teamet.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
+      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Team ID]</td>
@@ -588,7 +588,7 @@ Den här åtgärdsmodulen hämtar ett enskilt format eller en komponent, eller e
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
+      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
     </tr>
     <tr>
       <td role="rowheader">Objekt&gt; typ</td>
@@ -643,7 +643,7 @@ Med den här åtgärdsmodulen kan du göra ett anpassat autentiserat anrop till 
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till [!DNL Workfront Fusion] finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
+      <td> <p>Instruktioner om hur du ansluter ditt [!DNL Figma]-konto till Workfront Fusion finns i <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Figma</a> i den här artikeln.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
@@ -661,7 +661,7 @@ Med den här åtgärdsmodulen kan du göra ett anpassat autentiserat anrop till 
       <td>
         <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p>
         <p>Exempel: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] lägger till auktoriseringsrubrikerna åt dig.</p>
+        <p>Workfront Fusion lägger till auktoriseringsrubrikerna åt dig.</p>
       </td>
     </tr>
     <tr>

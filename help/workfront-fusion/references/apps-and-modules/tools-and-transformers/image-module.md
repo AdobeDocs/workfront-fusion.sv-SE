@@ -4,16 +4,16 @@ description: Med Adobe Workfront Fusion Image-modulerna kan du hämta informatio
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: a7696c9d-002d-4bb4-ae10-1f69dc5e66fe
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
 
 # Bildmoduler
 
-Med modulerna [!DNL Adobe Workfront Fusion] [!UICONTROL Image] kan du hämta information om en viss bild (dimensioner, typ och så vidare), konvertera en bild till ett annat filformat och direkt ändra bildens storlek.
+Med Adobe Workfront Fusion [!UICONTROL Image]-modulerna kan du hämta information om en viss bild (dimensioner, typ o.s.v.), konvertera en bild till ett annat filformat och direkt ändra bildens storlek.
 
 ## Åtkomstkrav
 
@@ -52,7 +52,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

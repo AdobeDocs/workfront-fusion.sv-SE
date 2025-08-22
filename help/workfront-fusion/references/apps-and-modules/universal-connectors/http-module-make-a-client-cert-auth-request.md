@@ -1,12 +1,12 @@
 ---
 title: HTTP > Gör en begäran om klientcertifikatautentisering
-description: Med den här  [!DNL Adobe Workfront Fusion] modulen kan du konfigurera en HTTP-begäran med HTTP-klientcertifikatautentisering och skicka den till en server. Det mottagna HTTP-svaret finns sedan i utdatapaketet.
+description: Med denna Adobe Workfront Fusion-modul kan du konfigurera en HTTP-begäran med HTTP-klientcertifikatautentisering och skicka den till en server. Det mottagna HTTP-svaret finns sedan i utdatapaketet.
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '928'
 ht-degree: 1%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe Workfront Fusion kräver en [!DNL Adobe Workfront Fusion]-licens förutom en Adobe Workfront-licens.
+>Adobe Workfront Fusion kräver en Adobe Workfront Fusion-licens förutom en Adobe Workfront-licens.
 
-Med den här [!DNL Adobe Workfront Fusion]-modulen kan du konfigurera en HTTP-begäran med HTTP-klientcertifikatautentisering och skicka den till en server. Det mottagna HTTP-svaret finns sedan i utdatapaketet.
+Med denna Adobe Workfront Fusion-modul kan du konfigurera en HTTP-begäran med HTTP-klientcertifikatautentisering och skicka den till en server. Det mottagna HTTP-svaret finns sedan i utdatapaketet.
 
 >[!NOTE]
 >
@@ -64,15 +64,15 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] modulkonfiguration
 
-När du konfigurerar modulen [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] visar [!DNL Adobe Workfront Fusion] fälten som listas nedan. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar modulen [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] visas fälten som listas nedan i Adobe Workfront Fusion. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
-Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan i [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan i Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -103,7 +103,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx )] </td> 
-   <td> <p>Använd det här alternativet om du vill konfigurera felhantering.</p> <p>Mer information finns i <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Felhantering i [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Använd det här alternativet om du vill konfigurera felhantering.</p> <p>Mer information finns i <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Felhantering i Adobe Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
@@ -187,7 +187,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Disable serialization of multiple same query string keys as arrays]</p> </td> 
-   <td> <p>Som standard hanterar [!DNL Workfront Fusion] flera värden för samma URL-frågesträngsparameternyckel som matriser. <code>www.test.com?foo=bar&amp;foo=baz</code> konverteras till exempel till <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>. Aktivera det här alternativet om du vill inaktivera funktionen. </p> </td> 
+   <td> <p>Som standard hanterar Workfront Fusion flera värden för samma URL-frågesträngsparameternyckel som arrayer. <code>www.test.com?foo=bar&amp;foo=baz</code> konverteras till exempel till <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>. Aktivera det här alternativet om du vill inaktivera funktionen. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Request compressed content]</td> 

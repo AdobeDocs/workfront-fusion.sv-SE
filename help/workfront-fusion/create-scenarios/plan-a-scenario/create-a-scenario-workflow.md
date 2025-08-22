@@ -4,9 +4,9 @@ description: Följ det här allmänna arbetsflödet för att skapa ett scenario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 394f80a2d7c124bbd00e1a5b51ad3dc6e73a996b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
@@ -34,14 +34,14 @@ Kortkommandon
 
 ## Skapa och namnge scenariot
 
-1. Logga in på ditt [!DNL Workfront Fusion]-konto.
+1. Logga in på ditt Workfront Fusion-konto.
 1. Klicka på **[!UICONTROL Scenarios]** ![Scenarioikonen](assets/scenarios-icon.png) i den vänstra panelen.
 
    >[!NOTE]
    >
    >Om den vänstra navigeringspanelen eller dess ikoner inte visas klickar du på ikonen ![Meny](assets/main-menu-icon-left-nav.png) .
 
-1. (Valfritt) Klicka på ikonen **[!UICONTROL Add folder]** ![Lägg till mapp ](assets/add-folder-icon.png) på panelen [!UICONTROL **Mappar**] och skriv sedan ett namn som &quot;Practice scenarios&quot; för den första mappen.
+1. (Valfritt) Klicka på ikonen [!UICONTROL ****] Lägg till mapp **[!UICONTROL Add folder]** på panelen ![Mappar](assets/add-folder-icon.png) och skriv sedan ett namn som &quot;Practice scenarios&quot; för den första mappen.
 
 1. (Valfritt) Öppna mappen och klicka sedan på **[!UICONTROL Create a new scenario]** i det övre högra hörnet på sidan.
 
@@ -105,9 +105,9 @@ Genom att testa ditt scenario kan du avgöra om ditt scenario fungerar som det s
 1. När scenariot är klart klickar du på exekveringsinspektören ovanför varje modul för att visa indata och utdata för den modulen.
 
    * Allmän information om att läsa information om körning av scenarier finns i [Körningsflöde för scenarier](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
-   * Mer information om bearbetade paket finns i [Scenariokörning, cykler och faser i [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+   * Mer information om bearbetade paket finns i [Scenariokörning, cykler och faser i Adobe Workfront Fusion](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-1. I [!DNL Workfront Fusion] klickar du på **[!UICONTROL Save]** ![ikonen Spara](assets/save-icon.png) i det nedre vänstra hörnet för att spara förloppet för scenariot.
+1. I Workfront Fusion klickar du på **[!UICONTROL Save]** ![ikonen Spara](assets/save-icon.png) i det nedre vänstra hörnet för att spara förloppet för scenariot.
 
    >[!IMPORTANT]
    >

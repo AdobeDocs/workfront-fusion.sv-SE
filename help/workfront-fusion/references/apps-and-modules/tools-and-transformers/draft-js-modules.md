@@ -1,19 +1,19 @@
 ---
 title: Moduler för Draft.js
-description: I ett [!DNL Adobe Workfront Fusion] scenario kan du använda modulerna Draft.js för att konvertera Draft.js till HTML och HTML till Draft.js.
+description: I ett Adobe Workfront Fusion-scenario kan du använda modulerna Draft.js för att konvertera Draft.js till HTML och HTML till Draft.js.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-source-git-commit: d8c40e310931e5901a5c5a2be2357b5021452bc2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Draft.js] moduler
 
-I ett [!DNL Adobe Workfront Fusion]-scenario kan du använda modulerna [!UICONTROL Draft.js] för att konvertera Draft.js till HTML och HTML till Draft.js. Du kan använda detta i kombination med Workfront-moduler för att lägga till RTF eller läsa RTF-text från Workfront-fält.
+I ett Adobe Workfront Fusion-scenario kan du använda modulerna [!UICONTROL Draft.js] för att konvertera Draft.js till HTML och HTML till Draft.js. Du kan använda detta i kombination med Workfront-moduler för att lägga till RTF eller läsa RTF-text från Workfront-fält.
 
 Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -56,7 +56,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

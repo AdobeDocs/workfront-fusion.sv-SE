@@ -7,9 +7,9 @@ description: Med filter kan du kontrollera att ditt scenario bara utvecklas om v
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ab27fe-e2dd-4b52-b986-77b4b7ea3b5e
-source-git-commit: 8884aef2237ad358c774110b81ac17b9efb386d4
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -37,17 +37,17 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront package</td> 
    <td> <p>Alla</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licens</td> 
-   <td> <p>Nytt: [!UICONTROL Standard]</p><p>eller</p><p>Aktuell: [!UICONTROL Work] eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront-licens</td> 
+   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: [!UICONTROL Work] eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
    <td>
-   <p>Aktuell: Inga [!DNL Workfront Fusion]-licenskrav.</p>
+   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
    <p>eller</p>
    <p>Äldre: Alla </p>
    </td> 
@@ -55,9 +55,9 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] [!DNL Workfront]: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] ingår.</li></ul>
+   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] Workfront-plan: Din organisation måste köpa Adobe Workfront Fusion.</li><li>[!UICONTROL Ultimate] Workfront: Workfront Fusion ingår.</li></ul>
    <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa [!DNL Adobe Workfront Fusion].</p>
+   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -65,7 +65,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -79,7 +79,7 @@ Du måste skapa scenariot som beskrivs i [Skapa ett grundläggande scenario](/he
 
 1. Öppna scenariot.
 1. Klicka på den första modulen för att öppna den.
-1. Välj `Project` i området **Utdata**.
+1. Välj **i området** Utdata`Project`.
 Du bör nu ha `ID`, `Name` och `Project` markerat.
 1. Klicka på OK för att spara modulinställningarna.
 1. Öppna Workfront.
@@ -96,11 +96,11 @@ Du bör nu ha `ID`, `Name` och `Project` markerat.
 1. Återgå till scenariot i scenarioredigeraren.
 1. Klicka på skiftnyckelsikonen ![skiftningsikonen](assets/wrench-icon.png) mellan den första och den andra modulen och välj **Konfigurera ett filter**.
 1. I fältet Etikett anger du en etikett för det här filtret, till exempel &quot;Filter för begärandekö&quot;.
-1. Mappa `projectID` från den första modulen i det övre fältet i området **Villkor**.
+1. Mappa **från den första modulen i det övre fältet i området** Villkor`projectID`.
 
    ![Mappa projekt-ID](assets/map-proj-id.png)
 1. Låt operatorn **Villkor** vara lika med.
-1. Klistra in det projekt-ID som du antecknade från projekt-URL:en i [Förbered för att lägga till filtret](#prepare-to-add-the-filter) i det nedre fältet i området **Villkor**.
+1. Klistra in det projekt-ID som du antecknade från projekt-URL:en i **Förbered för att lägga till filtret** i det nedre fältet i området [Villkor](#prepare-to-add-the-filter).
 1. Klicka på **OK** om du vill spara filterinställningarna.
 
 ### Testa och aktivera
@@ -113,12 +113,12 @@ Du bör nu ha `ID`, `Name` och `Project` markerat.
 1. När du är säker på att scenariot fungerar som förväntat klickar du på växeln **Schemaläggning** längst ned till vänster på skärmen till **På**.
 
    Detta aktiverar scenariot.
-1. I [!DNL Workfront Fusion] klickar du på **[!UICONTROL Save]** i det nedre vänstra hörnet för att spara förloppet för scenariot.
+1. I Workfront Fusion klickar du på **[!UICONTROL Save]** i det nedre vänstra hörnet för att spara förloppet för scenariot.
 
    >[!IMPORTANT]
    >
    >Spara ofta när du finslipar ett scenario.
 
-## Resurs
+## Resurser
 
 * Mer information om filter finns i [Lägga till ett filter i ett scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).

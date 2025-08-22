@@ -5,16 +5,16 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 94a823a6-3c70-42a1-b6cf-298591dbca15
-source-git-commit: 2b2030d062b5ec8c81476a8950fee3b15f96dcd2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1934'
 ht-degree: 0%
 
 ---
 
 # DocuSign-moduler
 
-Med modulerna [!DNL Adobe Workfront Fusion] [!DNL DocuSign] kan du övervaka och hämta kuvertstatus, söka efter och hämta kuvert eller hämta och skicka ett dokument för signering på ditt [!DNL DocuSign]-konto.
+Med Adobe Workfront Fusion [!DNL DocuSign]-modulerna kan du övervaka och hämta kuvertstatus, söka efter och hämta kuvert eller hämta och skicka ett dokument för signering på ditt [!DNL DocuSign]-konto.
 
 Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -59,7 +59,7 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Mer information om [!DNL Adobe Workfront Fusion] licenser finns i [[!DNL Adobe Workfront Fusion] licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -82,7 +82,7 @@ DocuSign-kopplingen använder följande:
  </tbody> 
  </table>
 
-## Anslut [!DNL DocuSign] till [!DNL Workfront Fusion] {#connect-docusign-to-workfront-fusion}
+## Anslut [!DNL DocuSign] till Workfront Fusion {#connect-docusign-to-workfront-fusion}
 
 Så här skapar du en anslutning för dina [!DNL DocuSign]-moduler:
 
@@ -116,7 +116,7 @@ Så här skapar du en anslutning för dina [!DNL DocuSign]-moduler:
 
 ## [!DNL DocuSign]-moduler och deras fält
 
-När du konfigurerar [!DNL DocuSign] moduler visar [!DNL Workfront Fusion] fälten som listas nedan. Dessutom kan ytterligare [!DNL DocuSign] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
+När du konfigurerar [!DNL DocuSign]-moduler visas fälten som listas nedan i Workfront Fusion. Dessutom kan ytterligare [!DNL DocuSign] fält visas, beroende på faktorer som din åtkomstnivå i appen eller tjänsten. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den för att ange variabler och funktioner för det fältet. Mer information finns i [Mappa information från en modul till en annan](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -137,7 +137,7 @@ Den här utlösarmodulen startar ett scenario när ett kuvert skickas, levereras
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Ansluta dokument till Workfront Fusion</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till Workfront Fusion finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Ansluta dokument till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 
@@ -187,7 +187,7 @@ Den här åtgärdsmodulen lägger till ett anpassat fält i dokumentet
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL DocuSign] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td>
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till Workfront Fusion finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL DocuSign] till Workfront Fusion </a> i den här artikeln.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 
@@ -396,7 +396,7 @@ Med den här åtgärdsmodulen kan du utföra ett anpassat API-anrop.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL DocuSign] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till Workfront Fusion finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL DocuSign] till Workfront Fusion </a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Account]</td> 
@@ -412,7 +412,7 @@ Med den här åtgärdsmodulen kan du utföra ett anpassat API-anrop.
   </tr> 
   <tr> 
    <td>[!UICONTROL Headers]</td> 
-   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt. Detta avgör begärans innehållstyp.</p> <p>Exempel:<code> {"Content-type":"application/json"}</code></p> <p>Obs! Om du får felmeddelanden och det är svårt att fastställa deras ursprung bör du överväga att ändra rubrikerna baserat på [!DNL Workfront]-dokumentationen. Om ditt anpassade API-anrop returnerar ett 422 HTTP-begärandefel kan du försöka med att använda rubriken"Content-Type":"text/plain".</p> </td> 
+   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt. Detta avgör begärans innehållstyp.</p> <p>Exempel:<code> {"Content-type":"application/json"}</code></p> <p>Obs! Om du får felmeddelanden och det är svårt att fastställa deras ursprung bör du överväga att ändra rubrikerna baserat på Workfront-dokumentationen. Om ditt anpassade API-anrop returnerar ett 422 HTTP-begärandefel kan du försöka med att använda rubriken"Content-Type":"text/plain".</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Query String]</td> 
@@ -470,7 +470,7 @@ Den här åtgärdsmodulen hämtar ett enstaka dokument.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL DocuSign] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td>
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till Workfront Fusion finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL DocuSign] till Workfront Fusion </a> i den här artikeln.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 
@@ -521,7 +521,7 @@ Den här åtgärdsmodulen ändrar ett anpassat fält med fältnamnet.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL DocuSign] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td>
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till Workfront Fusion finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL DocuSign] till Workfront Fusion </a> i den här artikeln.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 
@@ -564,7 +564,7 @@ Den här åtgärdsmodulen läser information om ett kuvert i [!DNL DocuSign] med
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL DocuSign] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td>
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till Workfront Fusion finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL DocuSign] till Workfront Fusion </a> i den här artikeln.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 
@@ -591,7 +591,7 @@ Den här åtgärdsmodulen skickar ett utkast till mottagarna.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL DocuSign] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td>
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till Workfront Fusion finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL DocuSign] till Workfront Fusion </a> i den här artikeln.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 
@@ -614,7 +614,7 @@ Den här modulen överför en angiven fil till ett befintligt kuvert i DocuSign.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till [!DNL Workfront Fusion] finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Ansluta [!DNL DocuSign] till [!DNL Workfront Fusion]</a> i den här artikeln.</p> </td>
+   <td> <p>Instruktioner om hur du ansluter ditt [!DNL DocuSign]-konto till Workfront Fusion finns i <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref"> Ansluta [!DNL DocuSign] till Workfront Fusion </a> i den här artikeln.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 
