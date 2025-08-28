@@ -4,9 +4,9 @@ description: Du kan använda SOAP-modulen för att ansluta till SOAP API:er i Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -186,13 +186,11 @@ Om modulen [!UICONTROL SOAP] vägrar att bearbeta WSDL-filen eller genererar oli
 
 1. Kopiera URL-adressen från attributet `location` när den har hittats.
 1. I Workfront Fusion klistrar du in URL-adressen i HTTP-modulens URL-fält.
-1. Öppna [onlineklienten [!UICONTROL SOAP] ](https://wsdlbrowser.com/) i ett nytt webbläsarfönster/på en ny flik.
-1. Klistra in WSDL-URL:en i WSDL-URL-fältet.
-1. Klicka på **[!UICONTROL Browse]**.
-1. Välj från listan med funktioner till vänster, till exempel `getLanguages`.
-1. Kopiera innehållet i textområdet [!UICONTROL Request XML].
-1. I [!UICONTROL Workfront Fusion] klistrar du in det kopierade innehållet i modulens URL-fält.
-1. Ange värden för valda parametrar genom att ersätta frågetecknen med faktiska värden:
+1. Ange värden för valda parametrar genom att ersätta frågetecknen med faktiska värden.
+
+   >[!NOTE]
+   >
+   > Använd ett WSDL-visningsprogram online om du vill hämta specifika värden från WSDL-filen.
 
    <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 

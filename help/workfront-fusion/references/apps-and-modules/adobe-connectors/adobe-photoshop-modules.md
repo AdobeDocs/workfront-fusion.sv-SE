@@ -4,7 +4,7 @@ description: Med Adobe Photoshop-modulerna kan du starta ett Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
 workflow-type: tm+mt
 source-wordcount: '4716'
 ht-degree: 0%
@@ -276,7 +276,7 @@ I den här åtgärdsmodulen används en rad dokument- och lagernivåredigeringar
       <td role="rowheader">
         <p>[!UICONTROL (Options) Layers]</p>
       </td>
-   <td> För varje lager som du vill lägga till klickar du på Lägg till objekt och fyller i lagerinformationen. <p>Mer information om lageralternativ finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_applyPsdEdits/">Tillämpa PSD-redigeringar</a> i Adobe Photoshop-dokumentationen.  </td> 
+   <td> För varje lager som du vill lägga till klickar du på Lägg till objekt och fyller i lagerinformationen. <p>Mer information om lageralternativ finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/modifyDocumentAsync">Tillämpa PSD-redigeringar</a> i Adobe Photoshop-dokumentationen.  </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
@@ -552,7 +552,7 @@ Den här åtgärdsmodulen skapar en ny PSD med valfria lager och skapar återgiv
       <td role="rowheader">
         <p>[!UICONTROL (Options) Layers]</p>
       </td>
-   <td> För varje lager som du vill lägga till klickar du på Lägg till objekt och fyller i lagerinformationen. <p>Mer information om lageralternativ finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">Skapa PSD</a> i Adobe Photoshop-dokumentationen.  </td> 
+   <td> För varje lager som du vill lägga till klickar du på Lägg till objekt och fyller i lagerinformationen. <p>Mer information om lageralternativ finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Skapa PSD</a> i Adobe Photoshop-dokumentationen.  </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -599,7 +599,7 @@ Den här åtgärdsmodulen skapar en ny PSD med valfria lager och skapar återgiv
     <tr>
       <td role="rowheader">[!UICONTROL (Output) Other fields]</td>
       <td>
-        <p><p>Mer information om utdataalternativ finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">Skapa PSD</a> i Adobe Photoshop-dokumentationen.  </p>
+        <p><p>Mer information om utdataalternativ finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Skapa PSD</a> i Adobe Photoshop-dokumentationen.  </p>
       </td>
     </tr>
     </tbody>
@@ -649,7 +649,7 @@ Den här åtgärdsmodulen redigerar textlager i en Photoshop-fil. Du kan ange se
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Layers]</td>
-   <td> <p>För varje textlager som du vill redigera klickar du på <b>Lägg till objekt</b> och anger lageralternativen.<p>Mer information om lageralternativ finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Redigera text</a> i Adobe Photoshop-dokumentationen.</p>  </td>     </tr>
+   <td> <p>För varje textlager som du vill redigera klickar du på <b>Lägg till objekt</b> och anger lageralternativen.<p>Mer information om lageralternativ finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Redigera text</a> i Adobe Photoshop-dokumentationen.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Output) Storage]</td>
       <td>
@@ -723,7 +723,7 @@ Om du vill redigera flera lager använder du modulen [Redigera textlager](#edit-
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Layers]</td>
-   <td> <p>Mer information om lageralternativ finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Redigera textlager</a> i Adobe Photoshop-dokumentationen.</p>  </td>     </tr>
+   <td> <p>Mer information om lageralternativ finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Redigera textlager</a> i Adobe Photoshop-dokumentationen.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Output file storage]</td>
       <td>
@@ -885,7 +885,7 @@ Den här åtgärdsmodulen kör djuposkärpa på den markerade filen.
    <tr>
       <td role="rowheader">[!UICONTROL Other fields]</td>
       <td>
-        <p>Mer information om andra alternativ för djuposkärpa finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Kör djuposkärpa </a> i dokumentationen för Adobe Photoshop API.</p>
+        <p>Mer information om andra alternativ för djuposkärpa finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Kör djuposkärpa </a> i dokumentationen för Adobe Photoshop API.</p>
       </td>
     </tr>
   </tbody>
@@ -972,7 +972,7 @@ Den här åtgärdsmodulen kör en Photoshop-åtgärd på den markerade bilden.
    <tr>
       <td role="rowheader">[!UICONTROL Other fields]</td>
       <td>
-        <p>Mer information om andra alternativ för djuposkärpa finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Kör djuposkärpa </a> i dokumentationen för Adobe Photoshop API.</p>
+        <p>Mer information om andra alternativ för djuposkärpa finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Kör djuposkärpa </a> i dokumentationen för Adobe Photoshop API.</p>
       </td>
     </tr>
   </tbody>
@@ -1047,7 +1047,7 @@ Den här åtgärdsmodulen kör produktbeskärning på den valda bilden.
    <tr>
       <td role="rowheader">[!UICONTROL Other fields]</td>
       <td>
-        <p>Mer information om andra alternativ för djuposkärpa finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Kör djuposkärpa </a> i dokumentationen för Adobe Photoshop API.</p>
+        <p>Mer information om andra alternativ för djuposkärpa finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Kör djuposkärpa </a> i dokumentationen för Adobe Photoshop API.</p>
       </td>
     </tr>
   </tbody>
@@ -1238,7 +1238,7 @@ I den här modulen används API-version 2 för smarta objekt.
       <td role="rowheader">
         <p>[!UICONTROL Layers]</p>
       </td>
-   <td>För varje lager som du vill lägga till i det smarta objektet klickar du på Lägg till och anger objektets namn eller ID, filtjänsten där det smarta objektet lagras och lagrets URL eller bana.<p>Beskrivningar av de avancerade inställningarna i det här området finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Ersätta ett smart objekt</a> i Photoshop API-dokumentationen </td> 
+   <td>För varje lager som du vill lägga till i det smarta objektet klickar du på Lägg till och anger objektets namn eller ID, filtjänsten där det smarta objektet lagras och lagrets URL eller bana.<p>Beskrivningar av de avancerade inställningarna i det här området finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Ersätta ett smart objekt</a> i Photoshop API-dokumentationen </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -1303,7 +1303,7 @@ Den här modulen använder den äldre versionen av smarta objekt.
       <td role="rowheader">
         <p>[!UICONTROL Layers]</p>
       </td>
-   <td>För varje lager som du vill lägga till i det smarta objektet klickar du på Lägg till och anger objektets namn eller ID, filtjänsten där det smarta objektet lagras och lagrets URL eller bana.<p>Beskrivningar av de avancerade inställningarna i det här området finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Ersätta ett smart objekt</a> i Photoshop API-dokumentationen </td> 
+   <td>För varje lager som du vill lägga till i det smarta objektet klickar du på Lägg till och anger objektets namn eller ID, filtjänsten där det smarta objektet lagras och lagrets URL eller bana.<p>Beskrivningar av de avancerade inställningarna i det här området finns i <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Ersätta ett smart objekt</a> i Photoshop API-dokumentationen </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
