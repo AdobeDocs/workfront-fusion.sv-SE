@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: 9865101fe57c2668ecb5ad743b3d6963833feb4a
+source-git-commit: 1e2a9fcfdfb15f1b254e7b4b32fc618b49de56e5
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1743'
 ht-degree: 0%
 
 ---
@@ -450,6 +450,24 @@ Den här åtgärdsmodulen uppdaterar en befintlig post, t.ex. ett problem eller 
 </table>
 
 ### Sökningar
+
+>[!IMPORTANT]
+>
+>Sökmodulen som används av den äldre Jira-anslutningen kan resultera i följande fel:
+>
+>`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
+>
+>Detta beror på en tillbakagång på Jiras sida.
+>
+>Om du råkar ut för det här felet kan du ersätta sökmodulen för den äldre Jira-anslutningen med sökmodulen för den nya anslutningen. Observera att den nya anslutningen gör att du kan välja vilken API-version som ska användas. Var noga med att välja V3 när du skapar anslutningen.
+>
+> ![API-versionsalternativ i ny Jira-anslutning](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
+>
+>Observera att:
+>
+>* Endast sökmodulen påverkas. För närvarande påverkas inte andra Jira API-slutpunkter som används av Fusion-anslutningen av den här borttagningen.
+>
+>* Geografisk utrullning kan orsaka inkonsekvenser. Atlassian rullar ut den här ändringen regionalt, vilket innebär att vissa Jira Cloud-instanser fortfarande har tillfälligt stöd för äldre slutpunkter. Detta kan leda till inkonsekvent beteende i olika miljöer.
 
 #### Sök efter poster
 
