@@ -4,9 +4,9 @@ description: Med Adobe Workfront Fusion Devtool kan du förstå och felsöka sce
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 71bd96915f21922d637433010acea9321ed476d5
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe Workfront Fusion Devtool hjälper er att förstå och felsöka scenarier. 
 En videointroduktion och genomgång av verktyget Fusion Devtool finns på
 
 * [Fusion Development Tool](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Gå igenom utvecklingsverktyget](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=sv-SE)
+* [Gå igenom utvecklingsverktyget](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
 
 ## Åtkomstkrav
 
@@ -150,6 +150,12 @@ Live Stream visar vad som händer i bakgrunden när du klickar på Kör en gång
    </table>
 
 ### Scenariofelsökning
+
+>[!NOTE]
+>
+>Om du snabbt vill gå till felsökaren från ett scenario som har utlösts kan du klicka på **Hämta information** i felmeddelandet i modulutdata.
+>
+>![Hämta information i modulutdata](assets/go-to-debugger.png)
 
 Scenariofelsökaren är användbar för mer komplexa scenarier. Den visar historiken för scenariot som körs och gör att du kan söka efter moduler efter namn eller ID.
 
