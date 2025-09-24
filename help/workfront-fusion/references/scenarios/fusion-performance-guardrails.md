@@ -4,9 +4,9 @@ description: Automatisering kräver snabb bearbetning, så Adobe Workfront Fusio
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Automatisering kräver snabb bearbetning, så Adobe Workfront Fusion har utforma
 ## Filer
 
 * Fusions totala bearbetningskapacitet för filer är **1 GB**. Gränsen baseras på en total minneskostnad. Alla operationer bidrar till den kostnaden. Om en fil på 400 MB laddas ned och överförs blir den totala kostnaden för filkapaciteten 800 MB.
-* Organisationer som har Workfront Ultimate-plan har tillgång till mer än 1 GB filbearbetning. Fusion-plattformen har stöd för enskilda filer upp till 15 GB för en enda åtgärd (t.ex. överföringsfil), men det finns andra faktorer som påverkar dataöverföringen. Storleksgränsen för en åtgärd beror på hur web service Fusion ansluts till. Dataöverföring är den totala bearbetningen för en enskild körning. Detta innebär att flera åtgärder i en enda körning bidrar till den totala dataöverföringen. Fusion bearbetar filer tills körningsgränsen på 40 minuter är nådd.
+* Organisationer som har Workfront Ultimate-plan har tillgång till mer än 1 GB filbearbetning. Det finns dock andra faktorer som påverkar dataöverföringen. Tjänsten som Fusion ansluter till kan begränsa filstorleken, vilket skulle påverka alla filer som bearbetas av tjänsten. Dessutom kan stora filer påverka körningstiden för scenarier. Fusion bearbetar filer tills körningsgränsen på 40 minuter har nåtts, och då misslyckas körningen.
 * Om en fil laddas ned med en modul som stöder stora filer och sedan skickas till en modul som inte stöder stora filer, bearbetas inte filen korrekt i den modulen. Stora filer måste hanteras exklusivt med moduler som stöds i hela arbetsflödet.
 * Moduler som inte stöder stora filer kan bearbeta filer som är högst **200 MB**.
 
@@ -71,7 +71,7 @@ Mer information finns i [Arbeta med stora filer](/help/workfront-fusion/referenc
 ## Körningshistorik
 
 * Körningshistorikloggarna är begränsade till storleken **100 MB**. Om körningshistoriken överskrider den här storleken visas endast de första 100 MB.
-* Om ett scenario har flera samtidiga körningar. Endast 5 körningar visas i området Körningar på sidan med scenarioinformation. Detta gäller även när fler än fem exekveringar körs.
+* Om ett scenario har flera samtidiga körningar visas bara 5 körningar i området Körningar på sidan med scenarioinformation. Detta gäller även när fler än fem exekveringar körs.
 
 ## Ofullständiga körningar
 

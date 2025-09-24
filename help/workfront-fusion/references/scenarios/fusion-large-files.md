@@ -4,9 +4,9 @@ description: Stöd för stora filer finns för närvarande för Workfront- och H
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
+source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -60,13 +60,19 @@ Om du planerar att arbeta med större filer rekommenderar vi att du ersätter de
 
 ![Överför dokument](assets/new-upload-document.png)
 
-## Vanliga frågor
+## Vanliga frågor och svar
 
 ### Vad är den nya storleksgränsen för filer?
 
-Nu kan användare bearbeta filer som överskrider den tidigare 1 GB-gränsen, vilket förbättrar effektiviteten och produktiviteten.  Även om plattformen har stöd för enskilda filer upp till 15 GB för en enda åtgärd (till exempel överföring av en fil), finns det andra faktorer som påverkar dataöverföringen. Storleksgränsen för en åtgärd beror i slutändan på webbtjänsten som Fusion ansluter till. Dataöverföring är den totala bearbetningen för en enskild körning. Detta innebär att flera åtgärder i en enda körning bidrar till den totala dataöverföringen.
+Nu kan användare bearbeta filer som överskrider den tidigare 1 GB-gränsen, vilket förbättrar effektiviteten och produktiviteten.  Även om det inte finns någon definierad gräns för filstorlek för Workfront Fusion-plattformen finns det andra faktorer som kan påverka användningen av stora filer:
 
-Filerna bearbetas i Fusion tills körningsgränsen på 40 minuter har nåtts. Stora filer kan ta en stund att överföra, hämta eller bearbeta i ditt Fusion-scenario. Även om det inte finns någon begränsning för den enskilda filstorleken finns det en 40-minutersgräns för körningstid för scenariot. Om stora filer gör att körningen tar mer än 40 minuter misslyckas scenariot. Scenarions körningstid kan också påverkas av scenariots storlek, modulens komplexitet och nätverkshastigheten. Därför rekommenderar vi att du tar hänsyn till dessa aspekter av dina scenarier när du använder stora filer.
+* **Filstorleksbegränsningar för tjänsten som Fusion ansluter till**: Om tjänsten begränsar filstorleken, kan Workfront Fusion inte överbrygga den begränsningen. Begränsningarna för filstorlek beror i slutändan på webbtjänsten som Fusion ansluter till.
+
+* **Körningstid för scenario**: Filer av valfri storlek bearbetas i Fusion tills körningsgränsen på 40 minuter har nåtts. Stora filer kan ta en stund att överföra, hämta eller bearbeta i ditt Fusion-scenario. Om stora filer gör att körningen tar mer än 40 minuter misslyckas scenariot. Scenarions körningstid kan också påverkas av scenariots storlek, modulens komplexitet och nätverkshastigheten. Därför rekommenderar vi att du tar hänsyn till dessa aspekter av dina scenarier när du använder stora filer.
+
+>[!NOTE]
+>
+>Vi rekommenderar att du begränsar filstorleken till 15 GB.
 
 ### Hur fungerar Fusions nya filöverföring?
 
@@ -92,7 +98,7 @@ Den här funktionen har redan slutförts och distribuerats till produktionen.
 
 Det kan verka komplicerat att utforma ett scenario som ska fungera inom 40 minuters exekveringsgräns. Vi rekommenderar att du tänker på följande när du utformar ett scenario:
 
-* **Förstå dina affärskrav för körningstid**: Fusions plattformsgräns för körningstid är 40 minuter, men de flesta affärsprocessautomatiseringar förväntas köras mycket snabbare. Exempelvis skulle användarinitierade automatiseringar med resultatberoende fortsättning kunna slutföras betydligt under gränsen på 40 minuter.
+* **Förstå dina affärskrav för körningstid**: Fusions plattformsgräns för körningstid är 40 minuter, men de flesta affärsprocessautomatiseringar förväntas köras mycket snabbare. Exempelvis förväntas användarinitierade automatiseringar med resultatberoende fortsättning att slutföras långt under gränsen på 40 minuter.
 * **Överväg körningstid när du utformar**: När du utformar ditt scenario är det viktigt att förstå modulkörningstiden för enskilda filåtgärder, till exempel överföringar och hämtningar. Den här kunskapen hjälper dig att planera scenarier som omfattar flera filåtgärder.  Vi rekommenderar att du avrundar modulens körningstid så att den innehåller en buffert för att försäkra dig om att designen är korrekt.
 Om Fusion till exempel hämtar ett dokument på 144 sekunder (2,4 minuter) kan du förutse att en enda körning kan utföra liknande åtgärder flera gånger. I det här exemplet tar det 144 sekunder att köra modulkörningen och du bör planera för 3 minuters körningstid för hämtning. Om dina krav omfattar både en överföring och en nedladdning är den förväntade körningstiden ungefär 6 minuter. Observera att Fusion-körningstiden är begränsad till 40 minuter.
 
