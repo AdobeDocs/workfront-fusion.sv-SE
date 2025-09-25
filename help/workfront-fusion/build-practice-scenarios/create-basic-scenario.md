@@ -7,9 +7,9 @@ description: Lär dig skapa ett enkelt automatiseringsscenario med Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 7f4709920e52f6b8660370af83de1f11eecbf092
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1364'
 ht-degree: 0%
 
 ---
@@ -191,9 +191,9 @@ I det här scenariot skulle ett lyckat test resultera i att begäran lokaliseras
 >
 >1. Stäng området **[!UICONTROL Notes]**.
 >
->     När du har lagt till en anteckning i ett scenario visas en orange punkt på **[!UICONTROL Notes]**-ikonen ![Anteckningsikonen med en punkt ](assets/notes-icon-w-dot.png) längst ned i scenarioredigeraren.
+>     När du har lagt till en anteckning i ett scenario visas en punkt på ikonen **[!UICONTROL Notes]** ![Anteckningar med en punkt ](assets/notes-icon-w-dot.png) längst ned i scenarioredigeraren.
 >
->1. Klicka på ikonen **[!UICONTROL Notes]** ![Anteckningar med punkt ](assets/notes-icon-w-dot.png) om du vill visa anteckningarna.
+>1. Klicka på ikonen **[!UICONTROL Notes]** ![Anteckningar med punkt ](assets/notes-icon-w-dot.png) om du vill visa anteckningarna. När anteckningar är öppna visas en cirkel runt anteckningsikonen.
 >
 
 ## Aktivera scenariot

@@ -5,9 +5,9 @@ description: Vi rekommenderar den valfria men användbara metoden att lägga til
 author: Becky
 feature: Workfront Fusion
 exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 7f4709920e52f6b8660370af83de1f11eecbf092
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
@@ -25,3 +25,7 @@ Vi rekommenderar den valfria men användbara metoden att lägga till anteckninga
    När du har lagt till en anteckning i ett scenario visas en blå punkt på ikonen **[!UICONTROL Notes]** ![Anteckningar med en punkt ](assets/notes-icon-w-dot.png) längst ned i scenarioredigeraren.
 
 1. Om du vill visa eller dölja alla anteckningar klickar du på ikonen **[!UICONTROL Notes]** ![Anteckningar med punkt ](assets/notes-icon-w-dot.png) .
+
+   När anteckningar är öppna visas en cirkel runt anteckningsikonen.
+
+   ![Anteckningsikon med cirkel](assets/notes-icon-with-circle.png)
