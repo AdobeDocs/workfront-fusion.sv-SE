@@ -4,9 +4,9 @@ description: Adobe Workfront Fusions funktioner för organisation och team gör 
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Användarna måste läggas till i en organisation innan de kan läggas till i et
 En användare har en av följande roller i en organisation:
 
 * **[!UICONTROL Owner]**: Ägaren har alla behörigheter som är tillgängliga i organisationen.
-* **[!UICONTROL Admin]**: Administratörer kan skapa och hantera team och användare för organisationen och godkänna mallar.
+* **[!UICONTROL Admin]**: Administratörer kan hantera användare på Adobe Admin Console om organisationen är aktiverad för Adobe Identity Management System (IMS), eller bjuda in nya användare för organisationer som inte finns i IMS. De kan också godkänna mallar.
 * **[!UICONTROL Member]**: Medlemmar kan använda Workfront Fusion men kan inte göra organisatoriska ändringar.
 * **[!UICONTROL Accountant]**: Kontoansvariga kan se licensinformation på kontrollpanelen för organisationen, men kan inte utföra några åtgärder.
 * **[!UICONTROL App Developer]**: Funktionerna för den här rollen är inte tillgängliga just nu och kommer att göras tillgängliga inom den närmaste framtiden. Vi rekommenderar för närvarande inte att du tilldelar användare till den här rollen.

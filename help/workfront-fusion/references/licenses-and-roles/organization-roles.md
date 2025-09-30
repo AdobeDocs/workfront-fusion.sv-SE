@@ -4,9 +4,9 @@ description: Den här artikeln innehåller information om åtkomst och behörigh
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ I den här artikeln beskrivs vilka funktioner som är tillgängliga för de olik
   <tr> 
    <td> <p>Hantera organisationsanvändare</p> </td> 
    <td>✓ </td> 
-   <td>✓</td> 
+   <td>✓<p>Kan hantera användare på Adobe Admin Console om organisation använder Adobe IMS. Kan bara bjuda in användare till andra organ.</td> 
    <td> </td> 
    <td> </td> 
   </tr> 
