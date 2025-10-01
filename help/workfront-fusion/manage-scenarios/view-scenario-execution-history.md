@@ -4,9 +4,9 @@ description: Du kan visa information om händelser eller körningar i ett scenar
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: c0a4e563657871f856b7d449432d563c6caa27a1
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '862'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ En scenariohändelse är en ändring av scenariot, till exempel redigering, akti
 
 >[!NOTE]
 >
->Ett scenario historik visar alla händelser och körningar i ett scenario de senaste 30 dagarna.
+>Ett scenario historik visar alla körningar i ett scenario de senaste 30 dagarna.
 
 ## Åtkomstkrav
 
