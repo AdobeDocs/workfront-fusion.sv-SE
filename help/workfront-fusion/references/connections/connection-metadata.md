@@ -4,9 +4,9 @@ description: Fusion använder metadata för att identifiera viktiga attribut i e
 author: Becky
 feature: Workfront Fusion
 exl-id: b41fbe8c-30fa-49d0-8a24-3535642b97ae
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,11 @@ Du kan ange anslutningsmetadata när du skapar en ny anslutning. Attributen finn
 
 ![Anslutningsmetadata](assets/connection-metadata-setup.png)
 
-Fusion-användare kan visa och redigera anslutningar från området Anslutningar.
+Fusion-användare kan visa och redigera anslutningar från området Anslutningar. Du når området Anslutningar genom att klicka på Anslutningar i den vänstra navigeringen.
 
-![Anslutningsmetadata i området Anslutningar](assets/connections-area-metadata.png)
+![Området Anslutningar i vänsternavigering](assets/connections-in-left-nav.png)
+
+<!--![Connection metadata in Connections area](assets/connections-area-metadata.png)-->
 
 ## Miljötyp
 
@@ -35,8 +37,8 @@ Fusion-anslutningar kan användas för både tjänstkonton och personliga konton
 
 Autentiseringstypen, liksom andra anslutningsmetadata, används endast i informationssyfte. Användare ansvarar för att ställa in det här attributet korrekt och att använda rätt typ av anslutning i ett scenario.
 
-Mer information om autentiseringstyper finns i [Autentisering](https://developer.adobe.com/developer-console/docs/guides/authentication/) i Adobe autentiseringsguide.
+Mer information om autentiseringstyper finns i [Autentisering](https://developer.adobe.com/developer-console/docs/guides/authentication/) i guiden för Adobe-autentisering.
 
-## Resurs
+## Resurser
 
 * Instruktioner om hur du hanterar anslutningsmetadata finns i [Hantera anslutningar](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md).

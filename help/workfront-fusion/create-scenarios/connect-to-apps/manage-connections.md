@@ -7,9 +7,9 @@ description: För de flesta program är det nödvändigt att skapa en anslutning
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -80,9 +80,10 @@ Du kan hantera alla anslutningar från området Anslutningar.
 1. (Valfritt) Tilldela en miljö och anslutningstyp genom att klicka på listrutorna **Miljö** och **Typ** och välja ett alternativ.
 1. (Valfritt) Om du vill visa vilka behörigheter som har tilldelats Workfront Fusion för anslutningen klickar du på ikonen Visa ![Visa anslutningsbehörigheter](assets/view-connection-permissions.png) för anslutningen.
 1. (Valfritt) Om du vill byta namn på en anslutning markerar du anslutningsnamnet och skriver det nya namnet.
-1. (Valfritt) Om du vill återauktorisera en anslutning klickar du på **Återauktorisera**.
-1. (Valfritt) Om du vill ta bort en anslutning klickar du på **Ta bort** och sedan på **Verkligt?**.
-1. (Valfritt) Klicka på **Verifiera** om du vill verifiera att anslutningen till tjänsten har upprättats.
+1. (Valfritt) Om du vill återauktorisera en anslutning markerar du kryssrutan bredvid anslutningen och klickar sedan på **Återauktorisera** längst ned på skärmen.
+1. (Valfritt) Om du vill ta bort en anslutning markerar du kryssrutan bredvid anslutningen, klickar på **Ta bort** längst ned på skärmen och sedan på **Verkligt?**.
+1. (Valfritt) Om du vill verifiera att anslutningen till tjänsten har upprättats markerar du kryssrutan intill anslutningen och klickar sedan på **Verifiera** längst ned på skärmen.
+1. Om du vill visa aktiva scenarier som använder den här anslutningen markerar du kryssrutan bredvid anslutningen och klickar sedan på **Hämta aktiva scenarier**. Du kan sedan klicka på ett scenario i listan Aktiva scenarier för att gå till det scenariot.
 
 ## Förnya en anslutning
 
@@ -92,7 +93,7 @@ Så här förnyar du en anslutning:
 
 1. Du öppnar området Anslutningar genom att klicka på ikonen **Anslutningar** ![Anslutningar](assets/connections-icon.png) i den vänstra navigeringen.
 1. Leta reda på anslutningen som du vill förnya.
-1. Klicka på knappen **[!UICONTROL Reauthorize]** i området **[!UICONTROL Connections]** på raden för anslutningen.
+1. Markera kryssrutan bredvid anslutningen på raden för den anslutningen och klicka sedan på **Återauktorisera** längst ned på skärmen.
 
 ## Resurser
 
