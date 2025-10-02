@@ -7,9 +7,9 @@ description: För de flesta program är det nödvändigt att skapa en anslutning
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
+source-git-commit: bc1b025af534addf032519142148f6285f481784
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Du kan hantera alla anslutningar från området Anslutningar.
 1. (Valfritt) Om du vill återauktorisera en anslutning markerar du kryssrutan bredvid anslutningen och klickar sedan på **Återauktorisera** längst ned på skärmen.
 1. (Valfritt) Om du vill ta bort en anslutning markerar du kryssrutan bredvid anslutningen, klickar på **Ta bort** längst ned på skärmen och sedan på **Verkligt?**.
 1. (Valfritt) Om du vill verifiera att anslutningen till tjänsten har upprättats markerar du kryssrutan intill anslutningen och klickar sedan på **Verifiera** längst ned på skärmen.
-1. Om du vill visa aktiva scenarier som använder den här anslutningen markerar du kryssrutan bredvid anslutningen och klickar sedan på **Hämta aktiva scenarier**. Du kan sedan klicka på ett scenario i listan Aktiva scenarier för att gå till det scenariot.
+1. (Valfritt) Om du vill visa aktiva scenarier som använder den här anslutningen markerar du kryssrutan intill anslutningen och klickar sedan på **Hämta aktiva scenarier**. Du kan sedan klicka på ett scenario i listan Aktiva scenarier för att gå till det scenariot.
 
 ## Förnya en anslutning
 
