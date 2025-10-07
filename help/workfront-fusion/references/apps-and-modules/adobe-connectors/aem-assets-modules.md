@@ -4,7 +4,7 @@ description: Med Adobe Experience Manager Assets Connector for Adobe Workfront F
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: d62a8bd4675c034581f6cf5f3a1e61c177de5ebc
+source-git-commit: 190c35629f1fc1e07eef4110f3f4f771af1065fb
 workflow-type: tm+mt
 source-wordcount: '3727'
 ht-degree: 0%
@@ -67,10 +67,10 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 * Du måste ha ett Adobe Experience Manager Assets-konto för att kunna använda dessa moduler.
 * Du måste konfigurera flödet från server till server i Adobe Developer-konsolen.
 
-  Instruktioner om hur du konfigurerar server-till-server-flödet i Adobe Developer-konsolen finns i [Generera åtkomsttoken för serversidans API:er](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=sv-SE#the-server-to-server-flow).
+  Instruktioner om hur du konfigurerar server-till-server-flödet i Adobe Developer-konsolen finns i [Generera åtkomsttoken för serversidans API:er](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 * Ditt Adobe Experience Manager-konto måste ha skrivbehörighet.
 
-  Instruktioner om hur du lägger till skrivbehörigheter till ditt Adobe Experience Manager tekniska konto finns i [Tjänstens autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) i Adobe Experience Manager-dokumentationen.
+  Instruktioner om hur du lägger till skrivbehörigheter till ditt Adobe Experience Manager tekniska konto finns i [Tjänstens autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) i Adobe Experience Manager-dokumentationen.
 
 ## Adobe Experience Manager Assets API-information
 
@@ -118,11 +118,11 @@ Så här skapar du en anslutning för dina Adobe Experience Manager Assets-modul
 >
 >* Informationen för dessa fält genereras som en del av konfigurationen av server-till-server-flödet på Adobe Developer Console. Dessa värden finns i JSON-tjänstens inloggningsinformation som genereras som en del av den konfigurationen.
 >
->   Instruktioner om hur du konfigurerar server-till-server-flödet på Adobe Developer Console finns i [Generera åtkomsttoken för API:er på serversidan](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=sv-SE#the-server-to-server-flow).
+>   Instruktioner om hur du konfigurerar server-till-server-flödet på Adobe Developer Console finns i [Generera åtkomsttoken för API:er på serversidan](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 >
 >* Ditt Adobe Experience Manager-konto måste ha skrivbehörighet.
 >
->   Instruktioner om hur du lägger till skrivbehörigheter till ditt Adobe Experience Manager tekniska konto finns i [Tjänstens autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) i Adobe Experience Manager-dokumentationen.
+>   Instruktioner om hur du lägger till skrivbehörigheter till ditt Adobe Experience Manager tekniska konto finns i [Tjänstens autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) i Adobe Experience Manager-dokumentationen.
 
 
 <table style="table-layout:auto"> 
@@ -164,8 +164,8 @@ Så här skapar du en anslutning för dina Adobe Experience Manager Assets-modul
                   <td class="">Ange organisationens ID om du anger information manuellt. Detta är "org"-fältet i JSON-filen för klientinloggningsuppgifter.</td>
               </tr>
               <tr>
-                  <td role="rowheader">Meta-omfång</td>
-                  <td>Ange de meta-scope som genereras i Server-till-server-konfigurationen.</td>
+                  <td role="rowheader">Meta Scopes</td>
+                  <td>Ange de Meta-scope som genereras i Server-till-server-konfigurationen.</td>
               </tr>
               <tr>
                   <td role="rowheader">Privat nyckel</td>
@@ -773,7 +773,7 @@ Den här åtgärdsmodulen överför en ny resurs genom att importera filer från
   </tr> 
   <tr> 
    <td role="rowheader">Utgångsdatum</td> 
-   <td> <p>Ange eller mappa experimenteringsdatumet för resursen.</p><p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</p> </td> 
+   <td> <p>Ange eller mappa tillgångens förfallodatum.</p><p>En lista över vilka datum- och tidsformat som stöds finns i <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typtvång</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Anpassade metadata</td> 

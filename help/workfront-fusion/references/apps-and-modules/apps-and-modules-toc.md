@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: f5d60e10dd500b97b0be8c54be1add495dc452fa
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,7 @@ Fusion erbjuder kopplingar för många tredjepartsprogram.
 * [Slack moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
 * [Dela.io-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
 * [Trello-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
+* [Veeva Vault-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/veeva-vault-modules.md)
 * [Bredda moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
 * [Workday moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
 
