@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion kräver en Adobe Workfront Fusion-licens fö
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 34dad92019ca855f40698d3f3795788698c1cece
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ En lista över dedikerade anslutningar finns i [Fusion-program och deras modulre
 
 >[!IMPORTANT]
 >
->Adobe Workfront Fusion kan ansluta till nästan alla webbtjänster. Om appen du vill arbeta med inte har någon dedikerad Workfront Fusion-anslutning använder du universella anslutningar för att ansluta till appen eller tjänsten.
+>Adobe Workfront Fusion kan ansluta till nästan alla webbtjänster. Om appen du vill arbeta med inte har någon dedikerad Workfront Fusion-anslutning kan du använda universella anslutningar för att ansluta till appen eller tjänsten.
 >
 >En lista över universella anslutningar finns i [Universella anslutningar](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)
 

@@ -2,9 +2,9 @@
 user-guide-title: Dokumentation om Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Använd dokument, självstudiekurser och andra resurser för att lära dig hur du implementerar och använder Adobe Workfront Fusion effektivt i din organisation.
-source-git-commit: a5dbbec63e0871037e6cc3a88255a84b36be85c7
+source-git-commit: f827b299fa8ffd3b0bf3393d5e22b7eb94be78f2
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1861'
 ht-degree: 1%
 
 ---
@@ -89,10 +89,10 @@ ht-degree: 1%
       * [Versionsaktivitet för Workfront Fusion: 3 oktober 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-oct-3-22.md)
       * [Versionsaktivitet för Workfront Fusion: 26 september 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-sept-26-22.md)
       * [Workfront Fusion-versionsaktivitet: 19 september 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-sept-19-22.md)
-      * [Workfront Fusion-versionsaktivitet: 11 juli 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-july-11-22.md)
-      * [Workfront Fusion-versionsaktivitet: 27 juni 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-27-22.md)
-      * [Aktivitet för Workfront Fusion-release: 20 juni 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-20-22.md)
-      * [Aktivitet för Workfront Fusion: 16 maj 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-16-22.md)
+      * [Workfront Fusion-versionsaktivitet: 11 juli 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-july-11-22.md)
+      * [Workfront Fusion-versionsaktivitet: 27 juni 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-27-22.md)
+      * [Aktivitet för Workfront Fusion-release: 20 juni 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-20-22.md)
+      * [Aktivitet för Workfront Fusion: 16 maj 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-16-22.md)
       * [Versionsaktivitet för Workfront Fusion: 9 maj 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-9-22.md)
       * [Workfront Fusion-versionsaktivitet: 25 april 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-apr-25-22.md)
       * [Versionsaktivitet för Workfront Fusion: 18 april 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-apr-18-22.md)
@@ -114,7 +114,7 @@ ht-degree: 1%
       * [Versionsaktivitet för Workfront Fusion: 28 juni 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jun-28.md)
       * [Versionsaktivitet för Workfront Fusion: 21 juni 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jun-21.md)
       * [Aktivitet för Workfront Fusion-release: 17 maj 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-17.md)
-      * [Aktivitet för Workfront Fusion-release: 10 maj 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-10.md)
+      * [Aktivitet för Workfront Fusion-release: 10 maj 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-10.md)
       * [Versionsaktivitet för Workfront Fusion: 3 maj 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-3.md)
       * [Workfront Fusion-versionsaktivitet: 26 april 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-26.md)
       * [Workfront Fusion-versionsaktivitet: 19 april 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-19.md)
@@ -145,6 +145,7 @@ ht-degree: 1%
       * [Modulöversikt](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
       * [Mappningsöversikt](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
       * [Funktionsöversikt](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+      * [Översikt över API:er i Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md)
    * Navigera i Workfront Fusion {#navigate-workfront-fusion}
       * [Navigera i Workfront Fusion: artikelindex](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
       * [Navigera i Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)

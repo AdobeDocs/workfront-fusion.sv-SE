@@ -4,20 +4,20 @@ description: Eftersom de applikationer som Workfront Fusion ansluter till kan up
 author: Becky
 feature: Workfront Fusion
 exl-id: b7f07fa5-9d81-48b3-b0ce-7a18b3b44508
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d0d9d7cdad993ecceaa0abf0ac69e9a9abd78b69
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
 
-# Uppdatera en modul till en ny version
+# Uppgradera en modul till en ny version
 
 Eftersom de applikationer som Workfront Fusion ansluter till kan uppdatera eller släppa nya versioner är det ibland nödvändigt att Fusion släpper uppdaterade moduler för dessa applikationer.
 
 Om en grön uppgraderingsmodulikon visas i en modul i ett scenario har Workfront Fusion släppt en ny version av den modulen.
 
-![Ikon för uppdatering](assets/update-indicator.png)
+![Ikon för uppdatering](assets/update-indicator-workfront.png)
 
 Du kan uppdatera modulen utan att skapa ett nytt scenario.
 
@@ -73,12 +73,29 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 
 +++
 
-## Uppdatera en modul till en ny version
+## Uppgradera en Workfront-modul till en ny version
+
+1. Klicka på ikonen **Uppgraderingsmodul** ![Uppgraderingsikon](assets/upgrade-icon.png) i modulen som du vill uppgradera till en ny version.
+   ![Ikon för uppdatering](assets/update-indicator-workfront.png)
+1. Välj något av följande:
+
+   * Om du vill välja en ny modul som ska ersätta den här modulen (i stället för att uppgradera modulen) klickar du på **Välj ny** och fortsätter sedan enligt beskrivningen i [Uppgradera en modul som inte är från Workfront till en ny version](#upgrade-a-non-workfront-module-to-a-new-version).
+   * Om du bara vill uppgradera den här modulen och behålla modulkonfigurationen klickar du på **Uppgradera**.
+   * Om du vill uppgradera alla Workfront-moduler i scenariot klickar du på **Uppgradera alla**.
+
+1. Spara scenariot.
+
+>[!NOTE]
+>
+>Om du har uppgraderat Workfront-moduler rekommenderar vi att du öppnar dem och kontrollerar modulkonfigurationen.
+
+## Uppgradera en modul från andra program än Workfront till en ny version
 
 1. Klicka på ikonen **Uppgraderingsmodul** ![Uppgraderingsikon](assets/upgrade-icon.png) i modulen som du vill uppgradera till en ny version.
    ![Ikon för uppdatering](assets/update-indicator.png)
-1. Klicka på **Visa nya moduler**.
-1. Välj den nya modulen som matchar den befintliga modulen.
+1. Klicka på **Välj ny**.
+1. Markera den modul som du vill ersätta den tidigare modulen.
 1. Konfigurera modulen med samma inställningar som den befintliga modulen.
 1. Koppla den nya modulen till scenariot på samma plats som den befintliga modulen.
 1. Ta bort den gamla modulen.
+1. Spara scenariot.
