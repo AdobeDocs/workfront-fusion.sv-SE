@@ -3,9 +3,9 @@ title: API-översikt
 description: API:er är ett sätt för program och tjänster att kommunicera med varandra. Fusion använder API:er för att kommunicera med det program du ansluter till. Varje program har ett separat API.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 1ee32ad1faa8c105142f85e83f1b522548fc7f93
+source-git-commit: f5dcb5207581fb68d0f3048d23214d08a28f2f22
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,8 @@ En vanlig orsak till att ändringar bryts är borttagning när en API-ägare tar
 Eftersom dina Fusion-scenarier är konfigurerade med dina specifika data kan du behöva uppdatera dina scenarier.
 
 * Om ändringarna gällde autentisering eller auktorisering kan du behöva uppdatera anslutningarna för det programmet.
-* Om ändringarna var relaterade till en viss åtgärd (slutpunkt) i API:t kan du behöva uppdatera moduler som är kopplade till den åtgärden till en ny version av modulen.
-* Om hela API-versionen som används av Fusion är inaktuell kan du behöva uppdatera alla moduler i den kopplingen till en ny version av en koppling.
+* Om ändringarna var relaterade till en viss åtgärd (slutpunkt) i API:t kan du behöva uppdatera en modul som är relaterad till den åtgärden till en ny version av modulen.
+* Om hela API-versionen som används av Fusion är inaktuell kan du behöva uppdatera alla moduler i den kopplingen till en ny version av anslutningsprogrammet.
 
 I många fall kan du uppgradera till den nya versionen av en modul utan att behöva konfigurera om den modulen.
 
