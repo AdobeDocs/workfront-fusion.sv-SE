@@ -4,7 +4,7 @@ description: Eftersom de applikationer som Workfront Fusion ansluter till kan up
 author: Becky
 feature: Workfront Fusion
 exl-id: b7f07fa5-9d81-48b3-b0ce-7a18b3b44508
-source-git-commit: d0d9d7cdad993ecceaa0abf0ac69e9a9abd78b69
+source-git-commit: b30aac8040cc0b6bcad92914b1c0997a8ddebdd5
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

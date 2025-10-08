@@ -3,7 +3,7 @@ title: API-översikt
 description: API:er är ett sätt för program och tjänster att kommunicera med varandra. Fusion använder API:er för att kommunicera med det program du ansluter till. Varje program har ett separat API.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: f5dcb5207581fb68d0f3048d23214d08a28f2f22
+source-git-commit: b30aac8040cc0b6bcad92914b1c0997a8ddebdd5
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Det faktum att API:er definieras av deras ägare och inte av Fusion leder till n
 
 * **Du kan använda Fusion för att ansluta till alla program eller tjänster som har ett offentligt API**, oavsett om Fusion har en dedikerad anslutning till appen eller tjänsten eller inte. Du kan använda Fusions universella anslutningar för att få in dessa appar eller tjänster i dina scenarier.
 
-  En lista över universella anslutningar finns i [Universella anslutningar](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)
+  En lista över universella anslutningar finns i [Universella anslutningar](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
 * **Ändringar som görs i ett programs API av dess ägare kan påverka Fusion-funktionen.** Om ändringarna är tillräckligt allvarliga kan Fusion behöva uppdatera moduler eller anslutningstyper, eller i extrema fall skapa en ny koppling för programmet.
 
