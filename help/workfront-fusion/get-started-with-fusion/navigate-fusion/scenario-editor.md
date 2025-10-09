@@ -4,9 +4,9 @@ description: Med scenarioredigeraren kan du skapa och redigera scenarier i ett v
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: ce2a41a9708bb0e611ab4056aac733d58d27d7a9
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 | Scenarioinställningar | Panelen för scenarioinställningar innehåller avancerade inställningar för scenariot. Mer information om tillgängliga inställningar finns i [Konfigurera scenarioinställningar](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
 | Anteckningar | Gör anteckningar om scenariot. Andra användare kan visa dessa anteckningar när de befinner sig i ett scenario. |
 | Autojustera | Justera modulerna automatiskt i ditt scenario. |
-| Förklara flöde | Visa en animering som visar hur data flödar genom scenariot. |
+| Förklara flöde | Visa en animering där rörliga punkter visar hur data flödar genom scenariot. |
 | Utvecklingsverktyg | Med utvecklingsverktyget kan du kontrollera alla manuella körningar av ditt scenario, granska alla utförda åtgärder och se information om alla API-anrop som utförs. Du kan se vilken modul, åtgärd eller enskilt svar som orsakade felet och använda den kunskapen för att förfina ditt scenario. Mer information finns i [Felsöka ett scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
 | Mer | På menyn Mer kan du importera eller exportera utkast och återställa scenariot till tidigare versioner. |
 
