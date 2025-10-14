@@ -128,7 +128,7 @@ Du kan redigera alla mallar som är tillgängliga på fliken [!UICONTROL Team te
    Klicka på malldiagrammet.
 
 1. Gör ändringar i mallen. Du kan komma åt alla alternativ som var tillgängliga när du skapade mallen. Information om de här alternativen finns i [Skapa nya mallar](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md).
-1. Klicka på ikonen **[!UICONTROL Save]** ![Spara ](assets/save-icon.png).
+1. Klicka på ikonen **[!UICONTROL Save]** ![Spara &#x200B;](assets/save-icon.png).
 
 >[!NOTE]
 >

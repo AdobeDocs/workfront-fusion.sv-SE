@@ -75,7 +75,7 @@ Instruktioner om hur du ansluter ditt [!DNL Google Workspace]-konto till [!UICON
 
 ### Anslut [!DNL Gmail] till Workfront Fusion med [!DNL gmail.com] eller [!DNL googlemail].com
 
-Om du är [!DNL @gmail.com] eller [!DNL @googlemail.com] användare måste du skapa en OAuth-klient på [ [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) för att få en [!UICONTROL Client ID] och [!UICONTROL Client Secret].
+Om du är [!DNL @gmail.com] eller [!DNL @googlemail.com] användare måste du skapa en OAuth-klient på [&#x200B; [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) för att få en [!UICONTROL Client ID] och [!UICONTROL Client Secret].
 
 Stegvisa instruktioner om hur du skapar OAuth-klienten och hämtar en [!UICONTROL Client ID] och [!UICONTROL Client Secret] finns i [Ansluta Adobe Workfront Fusion till Google Services med en anpassad OAuth-klient](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 

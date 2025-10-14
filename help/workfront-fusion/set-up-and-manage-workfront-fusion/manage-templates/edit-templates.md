@@ -91,7 +91,7 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
    >Om mallen innehåller moduler som kräver att anslutningen, inloggningsuppgifterna eller annan sekretesskänslig information läggs till, delas informationen inte med mallanvändarna.
 
 1. (Valfritt) Klicka på **[!UICONTROL Run once]** för att testa mallen.
-1. Klicka på ikonen **[!UICONTROL Save]** ![Spara ](assets/save-icon.png).
+1. Klicka på ikonen **[!UICONTROL Save]** ![Spara &#x200B;](assets/save-icon.png).
 
 
 ## Konfigurera [!UICONTROL Wizard]-funktioner

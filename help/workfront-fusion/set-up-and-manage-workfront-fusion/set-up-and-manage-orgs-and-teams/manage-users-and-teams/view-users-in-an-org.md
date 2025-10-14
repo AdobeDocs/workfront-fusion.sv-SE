@@ -74,6 +74,6 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 
    Listan Användare öppnas.
 
-1. (Valfritt) Om du vill sortera användarlistan efter en kolumn klickar du på ikonen **Sortera** ![Sortera ](assets/sort-icon.png) för den kolumnen.
+1. (Valfritt) Om du vill sortera användarlistan efter en kolumn klickar du på ikonen **Sortera** ![Sortera &#x200B;](assets/sort-icon.png) för den kolumnen.
 1. (Valfritt) Om du vill dölja eller visa kolumner klickar du på ikonen **Kolumner** ![Kolumner](assets/columns-icon.png) i det övre högra hörnet av listan och aktiverar eller inaktiverar kolumner.
 1. (Valfritt) Om du vill filtrera listan börjar du skriva i sökfältet. Listan innehåller filter som endast innehåller team som innehåller söktermen.

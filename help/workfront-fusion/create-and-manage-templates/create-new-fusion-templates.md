@@ -94,7 +94,7 @@ Du kan skapa en mall på ungefär samma sätt som när du skapar ett scenario. F
    >Om mallen innehåller moduler som kräver att anslutningen, inloggningsuppgifterna eller annan sekretesskänslig information läggs till, delas informationen inte med mallanvändarna.
 
 1. (Valfritt) Klicka på **[!UICONTROL Run once]** om du vill testa mallen.
-1. Klicka på ikonen **[!UICONTROL Save]** ![Spara ](assets/save-icon.png) för att spara mallen.
+1. Klicka på ikonen **[!UICONTROL Save]** ![Spara &#x200B;](assets/save-icon.png) för att spara mallen.
 
 När du sparar mallen blir den synlig för dina teammedlemmar. Om du vill att mallen ska vara tillgänglig utanför ditt team måste du skicka in en begäran om att den ska godkännas och publiceras. Begäran skickas till Adobe Workfront Fusion-teamet för godkännande. När mallen har godkänts är den tillgänglig för andra utanför teamet.
 
@@ -131,7 +131,7 @@ Mer information om publiceringsmallar finns i [Publicera och dela Adobe Workfron
    >Om mallen innehåller moduler som kräver att anslutningen, inloggningsuppgifterna eller annan sekretesskänslig information läggs till, delas informationen inte med mallanvändarna.
 
 1. (Valfritt) Klicka på **[!UICONTROL Run once]** om du vill testa mallen.
-1. Klicka på ikonen **[!UICONTROL Save]** ![Spara ](assets/save-icon.png).
+1. Klicka på ikonen **[!UICONTROL Save]** ![Spara &#x200B;](assets/save-icon.png).
 
 ## Konfigurera [!UICONTROL Wizard]-funktioner {#set-up-wizard-functionality}
 

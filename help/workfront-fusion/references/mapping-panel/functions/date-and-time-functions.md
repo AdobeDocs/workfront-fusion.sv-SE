@@ -463,7 +463,7 @@ Det här avsnittet är anpassat för Workfront Fusion från webbsidan [!DNL Exce
 
 Om du behöver beräkna ett datum som motsvarar den n:e veckodagen i månaden (till exempel den första tisdagen, den tredje fredagen och så vidare) kan du använda följande formel:
 
-![Beräkna dag ](assets/date&time-functions-calc-nth-day-350x31.png)
+![Beräkna dag &#x200B;](assets/date&time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
@@ -510,7 +510,7 @@ Om du bara vill beräkna ett specifikt fall, till exempel varje onsdag, kan du e
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![Variabelvärde för dag ](assets/nth-day-variable-value-350x33.png)
+![Variabelvärde för dag &#x200B;](assets/nth-day-variable-value-350x33.png)
 
 #### Förklaring:
 

@@ -439,7 +439,7 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 >
 >   Om du vill lösa användare som lagts till i en stor grupp kan du lägga till gruppen med användare direkt i Adobe Admin Console.
 >
->   Instruktioner finns i [Hantera flera användare | Massöverföring av CSV ](https://helpx.adobe.com/se/enterprise/using/bulk-upload-users.html) i Adobe-dokumentationen.
+>   Instruktioner finns i [Hantera flera användare | Massöverföring av CSV &#x200B;](https://helpx.adobe.com/se/enterprise/using/bulk-upload-users.html) i Adobe-dokumentationen.
 
 +++
 
