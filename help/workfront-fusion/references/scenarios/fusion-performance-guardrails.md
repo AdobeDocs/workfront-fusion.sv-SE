@@ -4,9 +4,9 @@ description: Automatisering kräver snabb bearbetning, så Adobe Workfront Fusio
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
+source-git-commit: 3a05e5df36bf9b1aacd0611fdad0240c8c52368d
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1083'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,7 @@ Mer information finns i [Arbeta med stora filer](/help/workfront-fusion/referenc
    * Webkroken används bara i inaktiva scenarier, som har varit inaktiva i mer än 30 dagar.
 
 * Inaktiverade webhooks tas bort och avregistreras automatiskt om de inte är anslutna till några scenarier och har inaktiverats i över 30 dagar.
+* Timeout för webkrok-svar är 5 minuter.
 
 ## Körningshistorik
 
