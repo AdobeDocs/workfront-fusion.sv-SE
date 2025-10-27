@@ -4,14 +4,29 @@ description: Du kan använda Adobe Workfront Fusion Adobe Workfront-kontakten f�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d2c873ffec406ae343fbcc72246688dec0bd1eab
 workflow-type: tm+mt
-source-wordcount: '7536'
+source-wordcount: '6880'
 ht-degree: 0%
 
 ---
 
 # Adobe Workfront moduler
+
+>[!IMPORTANT]
+>
+>Den här artikeln innehåller anvisningar för den nya versionen av Workfront Connector som släpptes den 22 oktober 2025. Den nya kopplingen återspeglar ändringar som gjorts i Workfront API.
+>
+>Den nya anslutningen heter &quot;Workfront&quot; och den tidigare tillgängliga anslutningen heter &quot;Workfront (äldre)&quot;.
+>
+>Vi rekommenderar:
+>
+>* Använda den nya kopplingen när du skapar eller uppdaterar ett scenario.
+>* Uppgraderar befintliga moduler till den nya kopplingen.
+>
+>Instruktioner om hur du uppgraderar befintliga moduler finns i [Uppgradera en Workfront-modul till en ny version](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md) i artikeln Uppgradera en modul till en ny version.
+>
+>Information om varför en ny koppling ibland krävs finns i [Översikt över API:er i Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md).
 
 Du kan använda Adobe Workfront Fusion Adobe Workfront-kontakten för att automatisera processerna i Workfront. Du kan även ansluta Workfront till andra program och tjänster.
 
@@ -71,6 +86,11 @@ Workfront-anslutningen använder OAuth 2.0 för att ansluta till Workfront.
 
 Du kan skapa en anslutning till ditt Workfront-konto direkt inifrån en Workfront Fusion-modul.
 
+* [Anslut till Workfront med klient-ID och klienthemlighet](#connect-to-workfront-using-client-id-and-client-secret)
+* [Anslut till Workfront via en server-till-server-anslutning](#connect-to-workfront-using-a-server-to-server-connection)
+
+### Anslut till Workfront med klient-ID och klienthemlighet
+
 1. Klicka på **Lägg till** bredvid anslutningsfältet i en Adobe Workfront-modul.
 1. Fyll i följande fält:
 
@@ -81,21 +101,15 @@ Du kan skapa en anslutning till ditt Workfront-konto direkt inifrån en Workfron
     </col>
     <tbody>
       <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p>Välj <b>Adobe Workfront-autentiseringsanslutning</b>.</p>
+        </td>
+      </tr>
+      <tr>
         <td role="rowheader">[!UICONTROL Connection name]</td>
         <td>
           <p>Ange ett namn för den nya anslutningen.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
-        <td>
-          <p>Välj om du ansluter till en produktionsmiljö eller icke-produktionsmiljö.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL Connection type]</td>
-        <td>
-          <p>Ange om du ansluter till ett tjänstkonto eller ett personligt konto.</p>
         </td>
       </tr>
       <tr>
@@ -109,6 +123,69 @@ Du kan skapa en anslutning till ditt Workfront-konto direkt inifrån en Workfron
       <tr>
         <td role="rowheader">[!UICONTROL Authentication URL]</td>
         <td>Detta kan vara standardvärdet eller så kan du ange URL:en för din Workfront-instans följt av <code>/integrations/oauth2</code>. <p>Exempel: <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Host prefix]</td>
+        <td>I de flesta fall bör det här värdet vara <code>origin</code>.
+      </tr>
+    </tbody>
+    </table>
+
+1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
+
+   Om du inte är inloggad på Workfront dirigeras du till en inloggningsskärm. När du har loggat in kan du tillåta anslutningen.
+
+>[!NOTE]
+>
+>* OAuth 2.0-anslutningar till Workfront API är inte längre beroende av API-nycklar.
+>* Om du vill skapa en anslutning till en Workfront Sandbox-miljö måste du skapa ett OAuth2-program i den miljön och sedan använda det klient-ID och klienthemlighet som genereras av det programmet i anslutningen.
+
+### Anslut till Workfront via en server-till-server-anslutning
+
+1. Klicka på **Lägg till** bredvid anslutningsfältet i en Adobe Workfront-modul.
+1. Fyll i följande fält:
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p>Välj <b>Adobe Workfront Server-till-server-anslutning</b>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Ange ett namn för den nya anslutningen.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Instance name]</td>
+        <td>
+          <p>Ange namnet på din instans, även kallat din domän.</p><p>Exempel: Om din URL är <code>https://example.my.workfront.com</code> anger du <code>example</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Instance lane]</td>
+        <td>
+          <p>Ange den miljötyp som anslutningen ska ansluta till.</p><p>Exempel: Om din URL är <code>https://example.my.workfront.com</code> anger du <code>my</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Ange ditt Workfront klient-ID. Detta finns under OAuth2-program under Konfigurera i Workfront. Öppna det program du ansluter till för att se klient-ID:t.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Ange din Workfront-klienthemlighet. Detta finns under OAuth2-program under Konfigurera i Workfront. Om du inte har någon klienthemlighet för OAuth2-programmet i Workfront kan du generera en annan. Instruktioner finns i dokumentationen för Workfront.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Scopes]</td>
+        <td>Ange eventuella omfattningar för den här anslutningen.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Host prefix]</td>
@@ -206,7 +283,7 @@ Modulen returnerar alla standardfält som är associerade med posten, tillsamman
 
 När webbkroken har skapats kan du visa adressen till slutpunkten som händelser skickas till.
 
-Mer information finns i avsnittet [Exempel på händelsenyttolaster](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) i artikeln Event Subscription API (Händelseprenumerations-API) i Workfront-dokumentationen.
+Mer information finns i avsnittet [Exempel på händelsenyttolaster](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) i artikeln Event Subscription API (Händelseprenumerations-API) i Workfront-dokumentationen.
 
 Se en lista över de Workfront-objekttyper som du kan använda den här modulen för i [Workfront-objekttyper som är tillgängliga för varje Workfront-modul](#workfront-object-types-available-for-each-workfront-module).
 
@@ -347,7 +424,7 @@ Den här åtgärdsmodulen gör någon av följande konverteringar:
    <td>Markera det objekt som du vill konvertera det till. Detta är den typ som objektet har efter konverteringen.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL &lt;Object> ID]</td> 
+   <td>[!UICONTROL <Object> ID]</td> 
    <td> <p>Ange objektets ID. </p> <p>Obs! När du anger ID:t för ett objekt kan du börja skriva namnet på objektet och sedan markera det i listan. Modulen anger sedan rätt ID i fältet.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -407,7 +484,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Attach Custom Form]</td> 
-   <td>Markera de anpassade formulär som du vill lägga till i det nya objektet och ange eller mappa värden för fälten.</td> 
+   <td>Markera de anpassade formulär som du vill lägga till i det nya objektet, markera de fält som du vill ange värden för och ange eller mappa värden för dessa fält.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -439,28 +516,30 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 >
 >   Om du vill lösa användare som lagts till i en stor grupp kan du lägga till gruppen med användare direkt i Adobe Admin Console.
 >
->   Instruktioner finns i [Hantera flera användare | Massöverföring av CSV &#x200B;](https://helpx.adobe.com/se/enterprise/using/bulk-upload-users.html) i Adobe-dokumentationen.
+>   Instruktioner finns i [Hantera flera användare | Massöverföring av CSV ](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) i Adobe-dokumentationen.
 
 +++
+
+<!--
 
 +++ **[!UICONTROL Create Record (Legacy)]**
 
 >[!IMPORTANT]
 >
->Den här modulen har ersatts med modulen Skapa en post. Vi rekommenderar att du använder den modulen i nya scenarier.
->&#x200B;>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
+>This module has been replaced with the Create a record module. We recommend using that module in new scenarios.
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
 
-Den här åtgärdsmodulen skapar ett objekt, till exempel ett projekt, en uppgift eller ett problem i Workfront. I modulen kan du välja vilka av objektets fält som är tillgängliga i modulen.
+This action module creates an object, such as a project, task, or issue in Workfront. The module allows you to select which of the object's fields are available in the module.
 
-Du anger postens ID.
+You specify the ID of the record.
 
-Modulen returnerar postens ID och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+The module returns the ID of the  record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
-Se till att du anger det minsta antalet inmatningsfält. Om du till exempel vill skapa ett problem måste du ange ett giltigt överordnat projekt-ID i fältet Projekt-ID för att ange var problemet ska finnas i Workfront. Du kan använda mappningspanelen för att mappa den här informationen från en annan modul i ditt scenario, eller ange den manuellt genom att skriva in namnet och sedan välja den i listan.
+Make sure you provide the minimum number of input fields. For example, if you want to create an issue, you need to provide a valid parent project ID in the Project ID field to indicate where the issue should live in Workfront. You can use the mapping panel to map this information from another module in your scenario, or you can enter it manually by typing in the name and then selecting it from the list.
 
-Den här modulen kopplar inte anpassade formulär när objektet skapas. Använd modulen [!UICONTROL Create a record (attaching custom forms)] om du vill bifoga anpassade formulär när du skapar ett objekt.
+This module does not attach custom forms when creating the object. To attach custom forms while creating an object, use the [!UICONTROL Create a record (attaching custom forms)] module.
 
-När du konfigurerar den här modulen visas följande fält.
+When you are configuring this module, the following fields display.
 
 <table style="table-layout:auto">
  <col> 
@@ -470,27 +549,29 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter din Workfront-app till Workfront Fusion finns i <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Ansluta Workfront till Workfront Fusion</a> i den här artikeln.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>Välj den typ av Workfront-post som du vill att modulen ska skapa.</p> <p>Om du till exempel vill skapa ett projekt väljer du [!UICONTROL Project] i listrutan.</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to create.</p> <p>For example, if you want to create a Project, select [!UICONTROL Project] from the dropdown list.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Select fields to map]</td> 
-   <td>Markera de fält som du vill ska vara tillgängliga för datainmatning. På så sätt kan du använda de här fälten utan att behöva bläddra igenom de fält du inte behöver.</td> 
+   <td>Select the fields that you want available for data input. This allows you to use these fields without having to scroll through the ones you don't need.</td> 
   </tr> 
  </tbody> 
 </table>
 
-Se en lista över de Workfront-objekttyper som du kan använda den här modulen för i [Workfront-objekttyper som är tillgängliga för varje Workfront-modul](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
->* När du anger ID:t för ett objekt kan du börja skriva namnet på objektet och sedan markera det i listan. Modulen anger sedan rätt ID i fältet.
->* När du anger text för ett anpassat fält eller ett [!UICONTROL Note]-objekt (kommentar eller svar) kan du använda HTML-taggar i fältet [!UICONTROL Note Text] för att skapa RTF, till exempel fet eller kursiv text.
+>* When entering the ID of an object, you can begin typing the name of the object, then select it from the list. The module then enters the appropriate ID into the field.
+>* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
 +++
+
+-->
 
 +++ **[!UICONTROL Custom API Call]**
 
@@ -629,6 +710,29 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 
 +++
 
+### **Hämta en försignerad fil-URL**
+
+Den här åtgärdsmodulen hämtar försignerade fil-URL:er som senare kan användas av andra API:er.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter din Workfront-app till Workfront Fusion finns i <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Ansluta Workfront till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Document ID]</td> 
+   <td> <p>Mappa eller ange det unika Workfront-ID:t för dokumentet som du vill hämta en försignerad URL-adress för manuellt.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Time to URL expiration]</td> 
+   <td> <p>Ange eller mappa antalet minuter som URL:en ska finnas innan den upphör att gälla. Standardvärdet är 1 minut.</p><p>Om du vill ändra det här värdet måste den här parametern vara aktiverad av Workfront Fusion-teamet. Om det inte är aktiverat kommer värdet att vara 1 minut oavsett vilket nummer du anger.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 +++ **[!UICONTROL Misc Action]**
 
 Med den här åtgärdsmodulen kan du utföra åtgärder mot API:t.
@@ -665,7 +769,7 @@ När du konfigurerar den här modulen visas följande fält.
       </ul> <p>För alla andra posttyper väljer du <b>[!UICONTROL Other objects and endpoints]</b> och letar upp posttypen på de alfabetiskt sorterade sidorna.</p> </li> 
      <li value="2"> <p>På sidan med rätt posttyp söker du efter åtgärden (Ctrl-F eller Cmd-F).</p> </li> 
      <li value="3"> <p>Visa beskrivningar för tillgängliga fält under den valda åtgärden.</p> </li> 
-    </ol> <p>Obs!  <p>När du skapar ett korrektur med Workfront [!UICONTROL Misc Action]-modulen är det bästa sättet att skapa ett korrektur utan några avancerade alternativ och sedan uppdatera korrekturet med SOAP-API:t i [!DNL Workfront Proof] .</p><p>Mer information om hur du skapar ett korrektur med Workfront API (som används i den här modulen) finns i <a href="https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Lägga till avancerade korrekturalternativ när du skapar ett korrektur via Adobe Workfront API</a></p> </p> </td> 
+    </ol> <p>Obs!  <p>När du skapar ett korrektur med Workfront [!UICONTROL Misc Action]-modulen är det bästa sättet att skapa ett korrektur utan några avancerade alternativ och sedan uppdatera korrekturet med SOAP-API:t i [!DNL Workfront Proof] .</p><p>Mer information om hur du skapar ett korrektur med Workfront API (som används i den här modulen) finns i <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Lägga till avancerade korrekturalternativ när du skapar ett korrektur via Adobe Workfront API</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -881,22 +985,24 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 
 +++
 
+<!--
+
 +++ **[!UICONTROL Read a Record (Legacy)]**
 
 >[!IMPORTANT]
 >
->Den här modulen har ersatts med modulen Läs en post. Vi rekommenderar att du använder den modulen i nya scenarier.
->&#x200B;>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
+>This module has been replaced with the Read a record module. We recommend using that module in new scenarios.
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
 
-Den här åtgärdsmodulen hämtar data från en enda post.
+This action module retrieves data from a single record.
 
-Du anger postens ID. Du kan också ange vilka relaterade poster som du vill att modulen ska läsa.
+You specify the ID of the record. You can also specify which related records you want the module to read.
 
-Om posten som modulen läser till exempel är ett projekt kan du ange att du vill att projektets uppgifter ska läsas.
+For example, if the record that the module is reading is a project, you can specify that you want the project's tasks read.
 
-Modulen returnerar en array med data från de utdatafält som du har angett.
+The module returns an array of data from the output fields you specified.
 
-När du konfigurerar den här modulen visas följande fält.
+When you are configuring this module, the following fields display.
 
 <table style="table-layout:auto">
  <col> 
@@ -904,42 +1010,44 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>Instruktioner om hur du ansluter din Workfront-app till Workfront Fusion finns i <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Ansluta Workfront till Workfront Fusion</a> i den här artikeln.</p> </td> 
+    <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Record Type]</td>
-
-<td>Välj den Workfront-objekttyp som du vill att modulen ska läsa.</td> 
+  
+   <td>Choose the Workfront object type that you want the module to read.</td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Outputs]</td>
-
-<td> <p>Välj den information som du vill inkludera i utdatapaketet för den här modulen.</p> </td> 
+  
+   <td> <p>Select the information you want included in the output bundle for this module.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL References]</td>
-   <td>Markera de referensfält som du vill ta med i utdata.</td> 
+   <td>Select any reference fields that you want to include in the output.</td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Collections]</td>
-   <td>Markera de referensfält som du vill ta med i utdata.</td> 
+   <td>Select any reference fields that you want to include in the output.</td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL ID]</td>
-   <td> <p>Ange det unika Workfront-ID:t för den post som du vill att modulen ska läsa.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Enter the unique Workfront ID of the record that you want the module to read.</p> <p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Se en lista över de Workfront-objekttyper som du kan använda den här modulen för i [Workfront-objekttyper som är tillgängliga för varje Workfront-modul](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 +++
+
+-->
 
 +++ **Uppdatera nyttolastversion för händelser**
 
 Workfront har nyligen släppt en ny version av sin abonnemangstjänst. Den nya versionen är inte en ändring av Workfront API, utan snarare en ändring av prenumerationsfunktionen för evenemang. Den här åtgärdsmodulen uppdaterar den händelsenyttolastversion som används för det här scenariot.
 
-Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
+Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
 
 Mer information om hur du bevarar dina Workfront Fusion-scenarier under händelseprenumerationsuppgraderingen, inklusive en webbinariainspelning, finns i [Bevara dina Fusion-scenarier under händelseprenumerationsuppgraderingen v2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
@@ -1010,20 +1118,22 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 
 +++
 
+<!--
+
 +++ **[!UICONTROL Update Record (Legacy)]**
 
 >[!IMPORTANT]
 >
->Den här modulen har ersatts med modulen Uppdatera en post. Vi rekommenderar att du använder den modulen i nya scenarier.
->&#x200B;>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
+>This module has been replaced with the Update a record module. We recommend using that module in new scenarios.
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
 
-Den här åtgärdsmodulen uppdaterar ett objekt, t.ex. ett projekt, en uppgift eller ett problem. I modulen kan du välja vilka av objektets fält som är tillgängliga i modulen.
+This action module updates an object, such as a project, task, or issue. The module allows you to select which of the object's fields are available in the module.
 
-Du anger postens ID.
+You specify the ID of the record.
 
-Modulen returnerar objektets ID och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+The module returns the ID of the  object and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
-När du konfigurerar den här modulen visas följande fält.
+When you are configuring this module, the following fields display.
 
 <table style="table-layout:auto">
  <col> 
@@ -1033,31 +1143,33 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter din Workfront-app till Workfront Fusion finns i <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Ansluta Workfront till Workfront Fusion</a> i den här artikeln.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
-   <td> <p>Ange det unika Workfront-ID:t för den post som du vill att modulen ska uppdatera.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Enter the unique Workfront ID of the record that you want the module to update.</p> <p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr> 
    <td>[!DNL Record Type]</td> 
-   <td> <p>Markera den typ av Workfront-post som du vill att modulen ska uppdatera.</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to update.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Select fields to map]</td> 
-   <td>Markera de fält som du vill ska vara tillgängliga för datainmatning. På så sätt kan du använda de här fälten utan att behöva bläddra igenom de fält du inte behöver. Du kan sedan ange eller mappa data till dessa fält.</td> 
+   <td>Select the fields that you want available for data input. This allows you to use these fields without having to scroll through the ones you don't need. You can then enter or map data into these fields.</td> 
   </tr> 
  </tbody> 
 </table>
 
-Se en lista över de Workfront-objekttyper som du kan använda den här modulen för i [Workfront-objekttyper som är tillgängliga för varje Workfront-modul](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
->* När du anger ID:t för ett objekt kan du börja skriva namnet på objektet och sedan markera det i listan. Modulen anger sedan rätt ID i fältet.
->* När du anger text för ett anpassat fält eller ett [!UICONTROL Note]-objekt (kommentar eller svar) kan du använda HTML-taggar i fältet [!UICONTROL Note Text] för att skapa RTF, till exempel fet eller kursiv text.
+>* When entering the ID of an object, you can begin typing the name of the object, then select it from the list. The module then enters the appropriate ID into the field.
+>* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
 +++
+
+-->
 
 +++ **[!UICONTROL Upload Document]**
 
@@ -1102,15 +1214,17 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 
 +++
 
+<!--
+
 +++ **[!UICONTROL Upload Document (Legacy)]**
 
-Den här åtgärdsmodulen överför ett dokument till ett Workfront-objekt, t.ex. ett projekt, en uppgift eller ett problem. Hela dokumentet överförs samtidigt.
+This action module uploads a document to a Workfront object, such as a project, task, or issue. It uploads the entire document at once. 
 
-Du anger platsen för dokumentet, filen som du vill överföra och ett valfritt nytt namn för filen.
+You specify the location for the document, the file you want to upload, and an optional new name for the file.
 
-Modulen returnerar ID:t för dokumentet och eventuella associerade fält, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
+The module returns the ID of the document and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
-När du konfigurerar den här modulen visas följande fält.
+When you are configuring this module, the following fields display.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1118,30 +1232,32 @@ När du konfigurerar den här modulen visas följande fält.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Instruktioner om hur du ansluter din Workfront-app till Workfront Fusion finns i <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Ansluta Workfront till Workfront Fusion</a> i den här artikeln.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Related Record ID]</td> 
-   <td>Ange det unika Workfront-id för den post som du vill överföra dokumentet till.</td> 
+   <td>Enter the unique Workfront ID of the record to which you want to upload the document.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Related Record Type]</td> 
-   <td>Välj den typ av Workfront-post där du vill att modulen ska överföra dokumentet.</td> 
+   <td>Select the type of Workfront record where you want the module to upload the document.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder ID]</td> 
-   <td>Beroende på vilken typ av relaterad post det är kan du behöva ange eller mappa ett mapp-ID.</td> 
+   <td>Depending on the type of related record, you may need to enter or map a folder ID.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Source file]</td> 
-   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p> </td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Se en lista över de Workfront-objekttyper som du kan använda den här modulen för i [Workfront-objekttyper som är tillgängliga för varje Workfront-modul](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
+
 
 +++
+-->
 
 ### Sökningar
 
@@ -1249,7 +1365,7 @@ När du konfigurerar den här modulen visas följande fält.
 >[!IMPORTANT]
 >
 >Den här modulen har ersatts med modulen Sök efter poster. Vi rekommenderar att du använder den modulen i nya scenarier.
->&#x200B;>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
+>>Befintliga scenarier som använder den här modulen fortsätter att fungera som förväntat. Den här modulen tas bort från modulväljaren i maj 2025.
 
 Den här sökmodulen söker efter poster i ett objekt i Workfront som matchar den sökfråga du anger.
 
@@ -2259,7 +2375,7 @@ Vi rekommenderar att du kontrollerar att det här fungerar som du tänkt dig.
 >
 >* Workfront har nyligen släppt en ny version av sin abonnemangstjänst. Den nya versionen är inte en ändring av Workfront API, utan snarare en ändring av prenumerationsfunktionen för evenemang. Den här åtgärdsmodulen uppdaterar den händelsenyttolastversion som används för det här scenariot.
 >
->   Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
+>   Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
 >
 >   Mer information om hur du bevarar dina Workfront Fusion-scenarier under händelseprenumerationsuppgraderingen, inklusive en webbinariainspelning, finns i [Bevara dina Fusion-scenarier under Evenemangsprenumerationer (V2-uppgradering)(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
@@ -2311,7 +2427,7 @@ Följande operatorer är tillgängliga i Workfront > filtret Bevakningshändelse
 >
 >Om 100 utgåvor skapas per dag, men bara två av dem tilldelas till Ana, körs scenariot 100 gånger. 98 av körningarna stoppades vid filtret, men utlösarmodulen använder fortfarande data och utför åtgärder i alla körningar.
 
-Mer information om Workfront-händelseprenumerationer finns i [Vanliga frågor och svar - Händelseprenumerationer](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
+Mer information om Workfront-händelseprenumerationer finns i [Vanliga frågor och svar - Händelseprenumerationer](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
 
 Mer information om webbhooks finns i [Direktutlösare (webbhooks) i Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
