@@ -3,9 +3,9 @@ title: Veeva Vault-moduler
 description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder Veeva Vault samt ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 6e7125bee77526caa93edc17f05b75bdfd7d7ac4
+source-git-commit: 4f5a4cf8691e5bb47eec6f6b2842369c5c6fbad8
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1516'
 ht-degree: 1%
 
 ---
@@ -318,7 +318,7 @@ Den här modulen uppdaterar ett enstaka dokument, en bindare eller en mall.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Typ</p> </td> 
-   <td> <p>Välj om du vill skapa ett dokument, en bindare eller en mall.</p> </td> 
+   <td> <p>Välj om du vill skapa ett dokument, en dokumentversion, en bindare eller en mall.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>ID / Namn</p> </td> 
