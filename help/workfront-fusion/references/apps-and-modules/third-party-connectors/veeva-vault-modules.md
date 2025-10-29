@@ -3,9 +3,9 @@ title: Veeva Vault-moduler
 description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder Veeva Vault samt ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 4f5a4cf8691e5bb47eec6f6b2842369c5c6fbad8
+source-git-commit: 37cb18a2e13a494c4174514539c0c7e43cdee011
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1660'
 ht-degree: 1%
 
 ---
@@ -59,6 +59,56 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 ## Förutsättningar
 
 Om du vill använda Veeva Vault-moduler måste du ha ett Veeva Vault-konto.
+
+## Connect Veeva Vault till Workfront Fusion
+
+Du kan skapa en anslutning till ditt Vevavaultkonto direkt från en Vevavaultmodul.
+
+1. Klicka på **Lägg till** intill anslutningsfältet i valfri Vevavaultmodul.
+1. Fyll i följande fält.
+
+   <table style="table-layout:auto"> 
+     <col> 
+     <col> 
+     <tbody> 
+      <tr> 
+       <td role="rowheader">Anslutningsnamn</td> 
+       <td> <p>Ange ett namn för anslutningen.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">Miljö</td>
+        <td>
+          <p>Välj om du ansluter till en produktionsmiljö eller icke-produktionsmiljö.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Typ</td>
+        <td>
+          <p>Ange om du ansluter till ett tjänstkonto eller ett personligt konto.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Användarnamn</td>
+        <td>
+          <p>Ange användarnamnet för Veeva Vault-kontot.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Lösenord</td>
+        <td>
+          <p>Ange lösenordet för Veeva Vault-kontot.</p>
+        </td>
+      </tr>
+      <tr> 
+       <td role="rowheader">Valv-DNS</td> 
+       <td>Ange veeva-valvets DNS (domännamn).</p><p>Om du vill hitta DNS:en för ditt veeva-valv kontrollerar du den URL som du använder för att komma åt veeva-valvet.</p>I URL:en <code>https://my-dns.veevavault.com</code> är till exempel DNS <code>my-dns</code>. Du behöver inte ange hela URL:en.</td> 
+      </tr> 
+     </tbody> 
+    </table>
+
+1. Klicka på **[!UICONTROL Continue]** för att skapa anslutningen och gå tillbaka till modulen.
+
+
 
 ## Veeva Vault-moduler och deras fält
 

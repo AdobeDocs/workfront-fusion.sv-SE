@@ -4,7 +4,7 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl√
 author: Becky
 feature: Workfront Fusion
 exl-id: 7d738a96-5424-4c30-831f-82e1d4c6f9d2
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 28de0fbe4fd6dfbcdc8ea4032e1aa95ae3e7c556
 workflow-type: tm+mt
 source-wordcount: '1570'
 ht-degree: 0%
