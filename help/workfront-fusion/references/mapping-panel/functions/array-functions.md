@@ -4,9 +4,9 @@ description: Följande arrayfunktioner är tillgängliga i panelen för mappning
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
+source-git-commit: 9b61a3b18df1f755cc7ccc28889564e4bcb6cda0
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -57,9 +57,9 @@ Returnerar en primitiv array som innehåller värden för en komplex array. Den 
 
   Returnerar en primitiv array med e-post
 
-* `map(Emails[];email;label;work;home)`
+* `map(Emails[];email;label;work)`
 
-  Returnerar en primitiv matris med e-postmeddelanden som har en etikett som är lika med arbetet eller hemmet
+  Returnerar en primitiv array med e-postmeddelanden som har en etikett som är lika med arbetet
 
 >[!ENDSHADEBOX]
 
