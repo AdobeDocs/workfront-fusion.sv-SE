@@ -4,9 +4,9 @@ description: En webkrok är ett HTTP-anrop som aktiveras av en händelse. Du kan
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: 3a05e5df36bf9b1aacd0611fdad0240c8c52368d
+source-git-commit: 1fce6f9db83aa700538a29d7a15c61f60d522e58
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1408'
 ht-degree: 0%
 
 ---
@@ -70,11 +70,16 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 
 Så här använder du en webkrok för att ansluta en app till Workfront Fusion:
 
-1. Lägg till **[!UICONTROL Webhooks]** >**[!UICONTROL Custom Webhook]**-modulen för snabbutlösare i ditt scenario.
+1. Lägg till modulen **[!UICONTROL Webhooks]** > **[!UICONTROL Custom Webhook]** för snabbutlösare i ditt scenario.
 
 1. Klicka på **[!UICONTROL Add]** bredvid Webkrok-fältet och ange ett namn för den nya webkroken.
 1. (Valfritt) Klicka på **[!UICONTROL Advanced Settings]**.
 1. I fältet **[!UICONTROL IP restrictions]** anger du en kommaavgränsad lista över IP-adresser som modulen kan ta emot data från.
+1. Om du vill validera inkommande data markerar eller lägger du till den datastruktur du vill använda i fältet **Datastruktur**.
+
+   Mer information om datastrukturer finns i [Datastrukturer](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+1. I fältet **Autentiseringsuppgifter** kan du ange autentiseringsuppgifter som ska användas för auktorisering. Om du vill ange autentiseringsuppgifter klickar du på **Lägg till** och anger autentiseringsuppgifter.
+1. Aktivera andra inställningar efter behov.
 1. Klicka på **[!UICONTROL Save]**
 
 När du har skapat en webbkrok visas en unik URL. Det här är adressen som webbhoven skickar data till. Workfront Fusion validerar de data som skickas till den här adressen och skickar dem sedan för behandling i scenariot.
@@ -289,27 +294,27 @@ Tidsgränsen för att skicka ett svar är 5 minuter. Om svaret inte är tillgän
 >Konfigurera modulen [!UICONTROL Webhook Response] enligt följande:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>2xx lyckad HTTP-statuskod, t.ex. 200</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
->&gt;   <td> <p>HTML code</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>Nyckel</strong>: Innehållstyp</li> 
->&gt;     <li><strong>Värde</strong>: text/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>2xx lyckad HTTP-statuskod, t.ex. 200</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+&gt;   <td> <p>HTML code</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>Nyckel</strong>: Innehållstyp</li> 
+&gt;     <li><strong>Värde</strong>: text/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Anpassade rubriker](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -324,23 +329,23 @@ Tidsgränsen för att skicka ett svar är 5 minuter. Om svaret inte är tillgän
 >**Exempel:** Konfigurera modulen [!UICONTROL Webhook Response] enligt följande:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>3 x omdirigerings-HTTP-statuskod, t.ex. 303</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL Key]</strong>: Plats</li> 
->&gt;     <li><strong>[!UICONTROL Value]</strong>: Den URL som du vill omdirigera till.</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>3 x omdirigerings-HTTP-statuskod, t.ex. 303</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[!UICONTROL Key]</strong>: Plats</li> 
+&gt;     <li><strong>[!UICONTROL Value]</strong>: Den URL som du vill omdirigera till.</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Webkrok-svar](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
