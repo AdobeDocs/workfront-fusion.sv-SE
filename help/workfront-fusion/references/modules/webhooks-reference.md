@@ -4,9 +4,9 @@ description: Många tjänster tillhandahåller webbhookar för att leverera snab
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: e0cfe4e6af0c6d1fe8f44fd72e13f9e9d5e6a73f
+source-git-commit: 3746ba1cd213a19a042da1a30b0d57bd1140907c
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1076'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,7 @@ Du kan visa en lista med webbböcker i området Webhooks.
 1. Om du vill inaktivera eller aktivera en webkrok inaktiverar eller aktiverar du växlingsknappen i statuskolumnen på raden för den webkroken.
 1. Om du vill se om en webbhookö är full kontrollerar du kolumnen Full kö. Numret i den här kolumnen är antalet objekt som finns i kön.
 1. Om du vill visa åtgärder som hanteras av en webkrok klickar du på **Åtgärder** i kolumnen Fullständig kö för den webkroken.
+1. Om du vill se om en webkrok har upphört att gälla markerar du kolumnen Förfallen. Utgångna webhooks är inte kopplade till något scenario eller har inte tagit emot några händelser på 120 timmar.
 1. Om du vill visa scenariot där en webkrok används klickar du på knappen **Scenario** i kolumnen Scenario för den webbkroken.
 1. Klicka på knappen **Anslutning** i anslutningskolumnen för den webbkroken om du vill visa anslutningen som används för den här webkroken.
 1. Om du vill dölja kolumner eller visa tidigare dolda kolumner klickar du på ikonen **Kolumner** ![Kolumner](assets/glist-column.png) och markerar eller avmarkerar kolumnnamn.
