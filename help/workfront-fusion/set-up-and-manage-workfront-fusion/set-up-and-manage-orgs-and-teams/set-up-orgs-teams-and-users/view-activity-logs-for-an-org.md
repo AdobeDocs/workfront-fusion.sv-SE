@@ -4,9 +4,9 @@ description: Du kan visa en logg med aktiviteter, som att skapa eller aktivera s
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -19,48 +19,31 @@ Du kan visa en logg med aktiviteter, som att skapa ett scenario eller bjuda in e
 
 +++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
 
-Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront</td>
-   <td> <p>Nytt: Ultimate</p> <p>eller</p> <p>Aktuell: Inte tillgänglig</p></td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Adobe Workfront Workflow Ultimate och Adobe Workfront Automation and Integration Ultimate</p><p>Workfront Ultimate</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-licens</td> 
-   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Inte tillgänglig</p> </td> 
+   <td role="rowheader">Adobe Workfront-licenser</td> 
+   <td> <p>Standard</p></td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
-   <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
-   <p>eller</p>
-   <p>Äldre: Alla </p>
-   </td> 
-  </tr> 
-   <tr> 
+  <tr data-mc-conditions=""> 
    <td role="rowheader">Konfigurationer på åtkomstnivå</td> 
-   <td> <p>Du måste vara en Fusion-administratör för att kunna använda aktivitetsloggen.</p></td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Produkt</td> 
-   <td>
-   <p>Den här funktionaliteten är endast tillgänglig för organisationer med Ultimate Workfront-planen, som innehåller Workfront Fusion. Inga ytterligare inköp krävs.</p>
+   <td> 
+     <p>Du måste vara Workfront Fusion-administratör för din organisation.</p>
+     <p>Du måste vara Workfront Fusion-administratör för ditt team.</p>
    </td> 
-  </tr>
+  </tr> 
  </tbody> 
 </table>
 
-Mer information om informationen i den här tabellen finns i [Åtkomstkrav i Workfront-dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
-
-
 
 ## Visa aktivitetsloggar
 
