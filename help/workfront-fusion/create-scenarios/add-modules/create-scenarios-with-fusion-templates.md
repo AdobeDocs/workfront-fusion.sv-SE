@@ -70,6 +70,6 @@ Offentliga mallar är tillgängliga utan krav.
 
 1. När du har konfigurerat alla inställningar som krävs för mallen får du ett meddelande om att mallen är klar att användas och standardscenarioalternativen visas längst ned på skärmen. Du kan nu fortsätta att skapa ditt scenario.
 
-1. Klicka på ikonen **Spara** ![Spara ](assets/save-icon.png) längst ned på skärmen för att spara ditt scenario.
+1. Klicka på ikonen **Spara** ![Spara &#x200B;](assets/save-icon.png) längst ned på skärmen för att spara ditt scenario.
 
    Scenariot sparas i scenarioområdet i Workfront Fusion.

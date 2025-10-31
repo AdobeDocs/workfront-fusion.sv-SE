@@ -196,7 +196,7 @@ Egenskaperna för ett datalager omfattar datastrukturen som används i datalagre
 
 ### Redigera innehållet i ett datalager
 
-1. Klicka på ikonen **[!UICONTROL Data Store]** ![ för datalagring ](assets/data-store-icon.png) i den vänstra navigeringspanelen för att öppna området [!UICONTROL Data Store].
+1. Klicka på ikonen **[!UICONTROL Data Store]** ![&#x200B; för datalagring &#x200B;](assets/data-store-icon.png) i den vänstra navigeringspanelen för att öppna området [!UICONTROL Data Store].
 1. Klicka på **[!UICONTROL Browse]** bredvid det datalager som du vill redigera.
 1. (Valfritt) Ändra ordning på kolumner genom att dra dem till önskad plats.
 1. (Valfritt) [!UICONTROL Edit] en enskild cell genom att klicka på ikonen **[!UICONTROL Edit]** i den cellen och sedan ange önskat värde.

@@ -53,9 +53,9 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 1. Klicka på **Klar** för att spara anteckningen.
 1. Dra anteckningen till önskad plats i scenredigeraren.
 
-   När du har lagt till en anteckning i ett scenario visas en blå punkt på ikonen **[!UICONTROL Notes]** ![Anteckningar med en punkt ](assets/notes-icon-w-dot.png) längst ned i scenarioredigeraren.
+   När du har lagt till en anteckning i ett scenario visas en blå punkt på ikonen **[!UICONTROL Notes]** ![Anteckningar med en punkt &#x200B;](assets/notes-icon-w-dot.png) längst ned i scenarioredigeraren.
 
-1. Om du vill visa eller dölja alla anteckningar klickar du på ikonen **[!UICONTROL Notes]** ![Anteckningar med punkt ](assets/notes-icon-w-dot.png) .
+1. Om du vill visa eller dölja alla anteckningar klickar du på ikonen **[!UICONTROL Notes]** ![Anteckningar med punkt &#x200B;](assets/notes-icon-w-dot.png) .
 
    När anteckningar är öppna visas en cirkel runt anteckningsikonen.
 

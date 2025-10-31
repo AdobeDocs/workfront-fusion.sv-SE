@@ -47,7 +47,7 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 ## Visa och hantera versionshistorik för ett scenario
 
 1. Klicka på **[!UICONTROL Scenarios]** ![Scenarioikonen](assets/scenarios-icon.png) i den vänstra panelen och klicka sedan på scenariot för att öppna det.
-1. Klicka på ikonen [!UICONTROL More] ![Mer ](assets/more-icon.png) längst ned på skärmen och klicka sedan på **[!UICONTROL Previous Versions]**.
+1. Klicka på ikonen [!UICONTROL More] ![Mer &#x200B;](assets/more-icon.png) längst ned på skärmen och klicka sedan på **[!UICONTROL Previous Versions]**.
 
    En lista över tidigare versioner visas.
 1. (Valfritt) Om du vill byta namn på versionen klickar du på menyn Mer ![Mer](assets/more-icon-vertical.png) på raden för den versionen, väljer **Redigera** och anger ett namn i fältet. Klicka på **Spara** för att spara det nya namnet.
