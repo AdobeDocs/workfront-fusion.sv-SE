@@ -4,9 +4,9 @@ description: En Iterator-modul är en särskild typ av modul som konverterar en 
 author: Becky
 feature: Workfront Fusion
 exl-id: 43d39955-3dd7-453d-8eb0-3253a768e114
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -19,47 +19,30 @@ En [!UICONTROL Iterator] är en typ av modul som konverterar en array till en se
 
 +++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
 
-Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Alla</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla Adobe Workfront Workflow-paket och alla Adobe Workfront Automation and Integration-paket</p><p>Workfront Ultimate</p><p>Workfront Prime- och Select-paket med ytterligare köp av Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-licens</td> 
-   <td> Nytt: Standard<p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] licens</td> 
-   <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs.</p>
-   <p>eller</p>
-   <p>Äldre: Alla </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront-licenser</td> 
+   <td> <p>Standard</p><p>Arbeta eller högre</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>[!UICONTROL Select] eller [!UICONTROL Prime] Workfront-plan: Din organisation måste köpa Adobe Workfront Fusion.</li><li>[!UICONTROL Ultimate] Workfront: Workfront Fusion ingår.</li></ul>
-   <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
+   <p>Om ni har ett Select- eller Prime Workfront-paket som inte innehåller Workfront Automation and Integration måste ni köpa Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Kontakta Workfront-administratören om du vill veta vilken plan, licenstyp eller åtkomst du har.
-
-Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-+++
-
-## Modulkonfiguration för [!UICONTROL Iterator]
++++## [!UICONTROL Iterator] modulkonfiguration
 
 Den allmänna iteratormodulen har ett enda fält, fältet [!UICONTROL Array]. Det här fältet innehåller arrayen som ska konverteras eller delas upp i separata paket.
 
@@ -115,7 +98,7 @@ Starta scenariot manuellt i scenarioredigeraren.
 >Om du vill förhindra att hela scenariot körs kan du:
 >
 >* Avlänka modulerna efter modulen [!UICONTROL JSON] > [!UICONTROL Parse JSON] för att förhindra att flödet fortsätter.
->  &#x200B;>   eller
+>  >   eller
 >* Högerklicka på modulen [!UICONTROL JSON] > [!UICONTROL Parse JSON] och välj **[!UICONTROL Run this module only]** på snabbmenyn om du bara vill köra modulen [!UICONTROL JSON] > [!UICONTROL Parse JSON] .
 
 När [!UICONTROL JSON] > [!UICONTROL Parse JSON] har körts kan den sedan tillhandahålla information om dess utdata till alla efterföljande moduler, inklusive Iterator-modulen. Mappningspanelen i Iteratorns inställningar visar sedan objekten:

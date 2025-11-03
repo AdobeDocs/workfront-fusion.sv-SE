@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du ansluta ditt e-postkon
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '2048'
+source-wordcount: '2054'
 ht-degree: 0%
 
 ---
@@ -19,34 +19,29 @@ I ett Adobe Workfront Fusion-scenario kan du ansluta ditt e-postkonto till flera
 
 +++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
 
-Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Alla</p> </td> 
+   <td> <p>Alla Adobe Workfront Workflow-paket och alla Adobe Workfront Automation and Integration-paket</p><p>Workfront Ultimate</p><p>Workfront Prime- och Select-paket med ytterligare köp av Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-licens</td> 
-   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront-licenser</td> 
+   <td> <p>Standard</p><p>Arbeta eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
-   <p>eller</p>
-   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
+   <p>Operationsbaserad: Ingen Workfront Fusion-licens krävs</p>
+   <p>Kopplingsbaserad (äldre): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
-   <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
+   <p>Om ni har ett Select- eller Prime Workfront-paket som inte innehåller Workfront Automation and Integration måste ni köpa Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -371,7 +366,7 @@ Den här modulen returnerar e-postmeddelanden som matchar de angivna villkoren.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Email ID (UID)]</td> 
-   <td> <p> Ange e-post-ID (UID) för e-postmeddelandet vars information du vill hämta.</p> <p>Du kan hämta UID för e-postmeddelandet med Workfront Fusions [!UICONTROL &#x200B; Watch Email]-modul eller [!UICONTROL Search Email]-modul.</p> </td> 
+   <td> <p> Ange e-post-ID (UID) för e-postmeddelandet vars information du vill hämta.</p> <p>Du kan hämta UID för e-postmeddelandet med Workfront Fusions [!UICONTROL  Watch Email]-modul eller [!UICONTROL Search Email]-modul.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of results]</td> 

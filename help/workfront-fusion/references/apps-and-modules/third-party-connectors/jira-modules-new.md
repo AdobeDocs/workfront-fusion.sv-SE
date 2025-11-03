@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: 1e2a9fcfdfb15f1b254e7b4b32fc618b49de56e5
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
@@ -29,34 +29,29 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 +++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
 
-Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Alla</p> </td> 
+   <td> <p>Alla Adobe Workfront Workflow-paket och alla Adobe Workfront Automation and Integration-paket</p><p>Workfront Ultimate</p><p>Workfront Prime- och Select-paket med ytterligare köp av Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-licens</td> 
-   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront-licenser</td> 
+   <td> <p>Standard</p><p>Arbeta eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
-   <p>eller</p>
-   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
+   <p>Operationsbaserad: Ingen Workfront Fusion-licens krävs</p>
+   <p>Kopplingsbaserad (äldre): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
-   <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
+   <p>Om ni har ett Select- eller Prime Workfront-paket som inte innehåller Workfront Automation and Integration måste ni köpa Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 

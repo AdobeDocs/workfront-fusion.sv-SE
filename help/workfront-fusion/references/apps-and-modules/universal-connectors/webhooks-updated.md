@@ -4,9 +4,9 @@ description: En webkrok är ett HTTP-anrop som aktiveras av en händelse. Du kan
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: f4d3c64b1cf7f34ca71f8882a8f65c11afe674f5
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -23,34 +23,29 @@ En webkrok är ett HTTP-anrop som aktiveras av en händelse. Du kan använda web
 
 +++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
 
-Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Alla</p> </td> 
+   <td> <p>Alla Adobe Workfront Workflow-paket och alla Adobe Workfront Automation and Integration-paket</p><p>Workfront Ultimate</p><p>Workfront Prime- och Select-paket med ytterligare köp av Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-licens</td> 
-   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront-licenser</td> 
+   <td> <p>Standard</p><p>Arbeta eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
-   <p>eller</p>
-   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
+   <p>Operationsbaserad: Ingen Workfront Fusion-licens krävs</p>
+   <p>Kopplingsbaserad (äldre): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
-   <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
+   <p>Om ni har ett Select- eller Prime Workfront-paket som inte innehåller Workfront Automation and Integration måste ni köpa Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -294,27 +289,27 @@ Tidsgränsen för att skicka ett svar är 5 minuter. Om svaret inte är tillgän
 >Konfigurera modulen [!UICONTROL Webhook Response] enligt följande:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>2xx lyckad HTTP-statuskod, t.ex. 200</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
->&gt;   <td> <p>HTML code</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>Nyckel</strong>: Innehållstyp</li> 
->&gt;     <li><strong>Värde</strong>: text/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>2xx lyckad HTTP-statuskod, t.ex. 200</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+&gt;   <td> <p>HTML code</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>Nyckel</strong>: Innehållstyp</li> 
+&gt;     <li><strong>Värde</strong>: text/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Anpassade rubriker](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -329,23 +324,23 @@ Tidsgränsen för att skicka ett svar är 5 minuter. Om svaret inte är tillgän
 >**Exempel:** Konfigurera modulen [!UICONTROL Webhook Response] enligt följande:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>3 x omdirigerings-HTTP-statuskod, t.ex. 303</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL Key]</strong>: Plats</li> 
->&gt;     <li><strong>[!UICONTROL Value]</strong>: Den URL som du vill omdirigera till.</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>3 x omdirigerings-HTTP-statuskod, t.ex. 303</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[!UICONTROL Key]</strong>: Plats</li> 
+&gt;     <li><strong>[!UICONTROL Value]</strong>: Den URL som du vill omdirigera till.</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Webkrok-svar](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 

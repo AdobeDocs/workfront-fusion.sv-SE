@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5d4072ba-c598-4347-a42f-c59c7add0a1b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2452'
 ht-degree: 0%
 
 ---
@@ -19,34 +19,29 @@ I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som anv�
 
 +++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
 
-Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Alla</p> </td> 
+   <td> <p>Alla Adobe Workfront Workflow-paket och alla Adobe Workfront Automation and Integration-paket</p><p>Workfront Ultimate</p><p>Workfront Prime- och Select-paket med ytterligare köp av Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-licens</td> 
-   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront-licenser</td> 
+   <td> <p>Standard</p><p>Arbeta eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
-   <p>eller</p>
-   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
+   <p>Operationsbaserad: Ingen Workfront Fusion-licens krävs</p>
+   <p>Kopplingsbaserad (äldre): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
-   <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
+   <p>Om ni har ett Select- eller Prime Workfront-paket som inte innehåller Workfront Automation and Integration måste ni köpa Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -285,7 +280,7 @@ Den här sökmodulen söker efter meddelanden baserat på specifika villkor.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search]</td> 
-   <td>Ange din sökfråga. Mer information om hur du skriver en sökfråga finns i [!DNL Microsoft] supportartikeln <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">Sök efter e-post och personer i [!DNL Outlook.com]</a>.</td> 
+   <td>Ange din sökfråga. Mer information om hur du skriver en sökfråga finns i [!DNL Microsoft] supportartikeln <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Sök efter e-post och personer i [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Order by]</td> 
@@ -331,7 +326,7 @@ Den här utlösarmodulen startar ett scenario när ett nytt e-postmeddelande ski
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search]</td> 
-   <td>Ange din sökfråga. Modulen returnerar meddelanden som matchar den här frågan. Mer information om hur du skriver en sökfråga finns i [!DNL Microsoft] supportartikeln <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">Sök efter e-post och personer i [!DNL Outlook.com]</a>.</td> 
+   <td>Ange din sökfråga. Modulen returnerar meddelanden som matchar den här frågan. Mer information om hur du skriver en sökfråga finns i [!DNL Microsoft] supportartikeln <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Sök efter e-post och personer i [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 

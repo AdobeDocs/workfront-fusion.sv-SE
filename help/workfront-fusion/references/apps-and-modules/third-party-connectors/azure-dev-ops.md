@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1633'
 ht-degree: 0%
 
 ---
@@ -23,34 +23,29 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 +++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
 
-Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Alla</p> </td> 
+   <td> <p>Alla Adobe Workfront Workflow-paket och alla Adobe Workfront Automation and Integration-paket</p><p>Workfront Ultimate</p><p>Workfront Prime- och Select-paket med ytterligare köp av Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-licens</td> 
-   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront-licenser</td> 
+   <td> <p>Standard</p><p>Arbeta eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
-   <p>eller</p>
-   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
+   <p>Operationsbaserad: Ingen Workfront Fusion-licens krävs</p>
+   <p>Kopplingsbaserad (äldre): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
-   <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
+   <p>Om ni har ett Select- eller Prime Workfront-paket som inte innehåller Workfront Automation and Integration måste ni köpa Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -190,7 +185,7 @@ Modulen matar ut objekt-ID:t för det nya arbetsobjektet eller URL:en och status
        <li> <p><strong>[!UICONTROL Description]</strong>: Ange eller mappa en beskrivning för det nya projektet. </p> </li> 
        <li> <p><strong>[!UICONTROL Visibility]</strong>: Välj om du vill att projektet ska vara offentligt eller privat. Användarna måste vara inloggade i organisationen och ha beviljats åtkomst till projektet för att kunna interagera med ett privat projekt. Offentliga projekt är synliga för användare som inte är inloggade på din organisation.</p> </li> 
        <li> <p><strong>[!UICONTROL Version control]</strong>: Välj om du vill att projektet ska använda [!DNL Git] eller [!UICONTROL Team Foundation Version Control (TFCV)] för versionskontroll.</p> </li> 
-       <li> <p><strong>[!UICONTROL Work item process]</strong>: Välj den arbetsprocess som du vill använda för projektet. Alternativen är [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] och [!UICONTROL Agile].</p> <p>Mer information om [!DNL Azure DevOps]-processer finns i <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&tabs=basic-process">Standardprocesser och processmallar</a> i [!DNL Azure DevOps]-dokumentationen.</p> </li> 
+       <li> <p><strong>[!UICONTROL Work item process]</strong>: Välj den arbetsprocess som du vill använda för projektet. Alternativen är [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] och [!UICONTROL Agile].</p> <p>Mer information om [!DNL Azure DevOps]-processer finns i <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">Standardprocesser och processmallar</a> i [!DNL Azure DevOps]-dokumentationen.</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Work item]</strong> </p> <p>Fyll i följande fält:</p> 
       <ul> 

@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1586'
 ht-degree: 0%
 
 ---
@@ -21,34 +21,29 @@ Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scen
 
 +++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
 
-Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Alla</p> </td> 
+   <td> <p>Alla Adobe Workfront Workflow-paket och alla Adobe Workfront Automation and Integration-paket</p><p>Workfront Ultimate</p><p>Workfront Prime- och Select-paket med ytterligare köp av Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-licens</td> 
-   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront-licenser</td> 
+   <td> <p>Standard</p><p>Arbeta eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
-   <p>eller</p>
-   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
+   <p>Operationsbaserad: Ingen Workfront Fusion-licens krävs</p>
+   <p>Kopplingsbaserad (äldre): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
-   <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
+   <p>Om ni har ett Select- eller Prime Workfront-paket som inte innehåller Workfront Automation and Integration måste ni köpa Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -69,13 +64,13 @@ Du måste ha ett [!DNL Gmail]-konto för att kunna använda [!DNL Gmail]-moduler
 * [Anslut [!DNL Gmail] till Workfront Fusion med  [!DNL Google Workspace]](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
 * [Anslut [!DNL Gmail] till Workfront Fusion med  [!DNL gmail.com]  eller [!DNL googlemail].com](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### Anslut [!DNL Gmail] till Workfront Fusion med [!DNL &#x200B; Google Workspace]
+### Anslut [!DNL Gmail] till Workfront Fusion med [!DNL  Google Workspace]
 
 Instruktioner om hur du ansluter ditt [!DNL Google Workspace]-konto till [!UICONTROL Workfront Fusion] finns i [Skapa en anslutning - grundläggande instruktioner](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
 ### Anslut [!DNL Gmail] till Workfront Fusion med [!DNL gmail.com] eller [!DNL googlemail].com
 
-Om du är [!DNL @gmail.com] eller [!DNL @googlemail.com] användare måste du skapa en OAuth-klient på [&#x200B; [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) för att få en [!UICONTROL Client ID] och [!UICONTROL Client Secret].
+Om du är [!DNL @gmail.com] eller [!DNL @googlemail.com] användare måste du skapa en OAuth-klient på [ [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) för att få en [!UICONTROL Client ID] och [!UICONTROL Client Secret].
 
 Stegvisa instruktioner om hur du skapar OAuth-klienten och hämtar en [!UICONTROL Client ID] och [!UICONTROL Client Secret] finns i [Ansluta Adobe Workfront Fusion till Google Services med en anpassad OAuth-klient](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 

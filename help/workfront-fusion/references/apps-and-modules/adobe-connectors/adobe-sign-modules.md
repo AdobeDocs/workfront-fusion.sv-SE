@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Acrobat Sign] modulerna kan du starta ett Adobe Wo
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '5620'
+source-wordcount: '5613'
 ht-degree: 0%
 
 ---
@@ -17,42 +17,41 @@ Med modulerna [!DNL Adobe Acrobat Sign] kan du starta ett Adobe Workfront Fusion
 
 ## Åtkomstkrav
 
-Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront-plan*</td>
-  <td> <p>[!UICONTROL Pro] eller högre</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla Adobe Workfront Workflow-paket och alla Adobe Workfront Automation and Integration-paket</p><p>Workfront Ultimate</p><p>Workfront Prime- och Select-paket med ytterligare köp av Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-licens*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-licenser</td> 
+   <td> <p>Standard</p><p>Arbeta eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens</td> 
    <td>
-   <p>Aktuellt licenskrav: Inga Workfront Fusion-licenskrav.</p>
-   <p>eller</p>
-   <p>Gammalt licenskrav: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
-   </td>  
+   <p>Operationsbaserad: Ingen Workfront Fusion-licens krävs</p>
+   <p>Kopplingsbaserad (äldre): Workfront Fusion for Work Automation and Integration </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuellt produktkrav: Om du har Adobe Workfront-planen [!UICONTROL Select] eller [!UICONTROL Prime] måste din organisation köpa Adobe Workfront Fusion samt Adobe Workfront för att kunna använda de funktioner som beskrivs i den här artikeln. Workfront Fusion ingår i Workfront-planen för [!UICONTROL Ultimate].</p>
-   <p>eller</p>
-   <p>Krav för äldre produkter: Din organisation måste köpa Adobe Workfront Fusion och Adobe Workfront för att kunna använda de funktioner som beskrivs i den här artikeln.</p>
+   <p>Om ni har ett Select- eller Prime Workfront-paket som inte innehåller Workfront Automation and Integration måste ni köpa Adobe Workfront Fusion.</li></ul>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Kontakta Workfront-administratören om du vill veta vilken plan, licenstyp eller åtkomst du har.
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusion-licenser](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## API-information för [!DNL Adobe Acrobat Sign]
 
@@ -124,7 +123,7 @@ Den här utlösarmodulen startar ett scenario när ett avtal skapas eller uppdat
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Find text]</td> 
-   <td> <p>Ange termer som du vill söka efter. Modulen returnerar poster som innehåller dessa termer som fältvärden.</p> <p>Mer information om hur du söker efter fält i [!DNL Adobe Acrobat Sign] finns i"Hur textsökning fungerar" i <a href="https://helpx.adobe.com/se/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign-sökning - hur den fungerar</a>.</p> </td> 
+   <td> <p>Ange termer som du vill söka efter. Modulen returnerar poster som innehåller dessa termer som fältvärden.</p> <p>Mer information om hur du söker efter fält i [!DNL Adobe Acrobat Sign] finns i"Hur textsökning fungerar" i <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign-sökning - hur den fungerar</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned agreements]</td> 
@@ -973,7 +972,7 @@ Den här sökmodulen söker efter avtal baserat på de villkor du anger.
     <ul> 
      <li> <p><b>[!UICONTROL Find text]</b> </p> <p>Ange den text som du vill söka efter i avtalsmetadata. Varje ord behandlas som ett separat textobjekt. </p> </li> 
      <li> <p><b>[!UICONTROL Find text in]</b> </p> <p>Markera metadatafälten som du vill söka efter text i. Om du inte markerar något söks alla metadata igenom.</p> </li> 
-    </ul> <p>Modulen returnerar alla avtal som innehåller någon av den angivna texten i något av de markerade fälten. Exempel: om du anger "vårkampanj" och väljer alternativen Titel och Anteckning returneras alla avtal med orden "vår" eller "Campaign" i antingen Titel eller Anteckning.</p> <p>Mer information om hur du söker efter fält i [!DNL Adobe Acrobat Sign] finns i"Hur textsökning fungerar" i <a href="https://helpx.adobe.com/se/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Sök - Så fungerar det </a>.</p> </td> 
+    </ul> <p>Modulen returnerar alla avtal som innehåller någon av den angivna texten i något av de markerade fälten. Exempel: om du anger "vårkampanj" och väljer alternativen Titel och Anteckning returneras alla avtal med orden "vår" eller "Campaign" i antingen Titel eller Anteckning.</p> <p>Mer information om hur du söker efter fält i [!DNL Adobe Acrobat Sign] finns i"Hur textsökning fungerar" i <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Sök - Så fungerar det </a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Created date]</td> 

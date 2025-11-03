@@ -4,9 +4,9 @@ description: Många tjänster tillhandahåller webbhookar för att leverera snab
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 3746ba1cd213a19a042da1a30b0d57bd1140907c
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,35 @@ En videointroduktion till webbhooks i Workfront Fusion finns på:
 * [Introduktion till Webhooks](https://video.tv.adobe.com/v/3427025/){target=_blank}
 * [Mellanliggande webbhooks](https://video.tv.adobe.com/v/3427030/){target=_blank}
 
+## Åtkomstkrav
+
++++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Alla Adobe Workfront Workflow-paket och alla Adobe Workfront Automation and Integration-paket</p><p>Workfront Ultimate</p><p>Workfront Prime- och Select-paket med ytterligare köp av Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront-licenser</td> 
+   <td> <p>Standard</p><p>Arbeta eller högre</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produkt</td> 
+   <td>
+   <p>Om ni har ett Select- eller Prime Workfront-paket som inte innehåller Workfront Automation and Integration måste ni köpa Adobe Workfront Fusion.</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
+
 ## Visa webbkrokinformation
 
 Du kan visa en lista med webbböcker i området Webhooks.
@@ -54,6 +83,7 @@ Du kan visa en lista med webbböcker i området Webhooks.
 1. Om du vill visa scenariot där en webkrok används klickar du på knappen **Scenario** i kolumnen Scenario för den webbkroken.
 1. Klicka på knappen **Anslutning** i anslutningskolumnen för den webbkroken om du vill visa anslutningen som används för den här webkroken.
 1. Om du vill dölja kolumner eller visa tidigare dolda kolumner klickar du på ikonen **Kolumner** ![Kolumner](assets/glist-column.png) och markerar eller avmarkerar kolumnnamn.
+
 
 ## Schemalägg direktutlösare
 

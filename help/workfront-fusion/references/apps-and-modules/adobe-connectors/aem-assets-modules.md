@@ -4,9 +4,9 @@ description: Med Adobe Experience Manager Assets Connector for Adobe Workfront F
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: 190c35629f1fc1e07eef4110f3f4f771af1065fb
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '3727'
+source-wordcount: '3734'
 ht-degree: 0%
 
 ---
@@ -23,34 +23,29 @@ En videointroduktion till Adobe Experience Manager Assets Connector finns på:
 
 +++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
 
-Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Alla</p> </td> 
+   <td> <p>Alla Adobe Workfront Workflow-paket och alla Adobe Workfront Automation and Integration-paket</p><p>Workfront Ultimate</p><p>Workfront Prime- och Select-paket med ytterligare köp av Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-licens</td> 
-   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront-licenser</td> 
+   <td> <p>Standard</p><p>Arbeta eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
-   <p>eller</p>
-   <p>Äldre: Workfront Fusion for Automation and Integration </p>
+   <p>Operationsbaserad: Ingen Workfront Fusion-licens krävs</p>
+   <p>Kopplingsbaserad (äldre): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
-   <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
+   <p>Om ni har ett Select- eller Prime Workfront-paket som inte innehåller Workfront Automation and Integration måste ni köpa Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -67,10 +62,10 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 * Du måste ha ett Adobe Experience Manager Assets-konto för att kunna använda dessa moduler.
 * Du måste konfigurera flödet från server till server i Adobe Developer-konsolen.
 
-  Instruktioner om hur du konfigurerar server-till-server-flödet i Adobe Developer-konsolen finns i [Generera åtkomsttoken för serversidans API:er](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=sv-SE#the-server-to-server-flow).
+  Instruktioner om hur du konfigurerar server-till-server-flödet i Adobe Developer-konsolen finns i [Generera åtkomsttoken för serversidans API:er](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 * Ditt Adobe Experience Manager-konto måste ha skrivbehörighet.
 
-  Instruktioner om hur du lägger till skrivbehörigheter till ditt Adobe Experience Manager tekniska konto finns i [Tjänstens autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) i Adobe Experience Manager-dokumentationen.
+  Instruktioner om hur du lägger till skrivbehörigheter till ditt Adobe Experience Manager tekniska konto finns i [Tjänstens autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) i Adobe Experience Manager-dokumentationen.
 
 ## Adobe Experience Manager Assets API-information
 
@@ -118,11 +113,11 @@ Så här skapar du en anslutning för dina Adobe Experience Manager Assets-modul
 >
 >* Informationen för dessa fält genereras som en del av konfigurationen av server-till-server-flödet på Adobe Developer Console. Dessa värden finns i JSON-tjänstens inloggningsinformation som genereras som en del av den konfigurationen.
 >
->   Instruktioner om hur du konfigurerar server-till-server-flödet på Adobe Developer Console finns i [Generera åtkomsttoken för API:er på serversidan](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=sv-SE#the-server-to-server-flow).
+>   Instruktioner om hur du konfigurerar server-till-server-flödet på Adobe Developer Console finns i [Generera åtkomsttoken för API:er på serversidan](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 >
 >* Ditt Adobe Experience Manager-konto måste ha skrivbehörighet.
 >
->   Instruktioner om hur du lägger till skrivbehörigheter till ditt Adobe Experience Manager tekniska konto finns i [Tjänstens autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) i Adobe Experience Manager-dokumentationen.
+>   Instruktioner om hur du lägger till skrivbehörigheter till ditt Adobe Experience Manager tekniska konto finns i [Tjänstens autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) i Adobe Experience Manager-dokumentationen.
 
 
 <table style="table-layout:auto"> 

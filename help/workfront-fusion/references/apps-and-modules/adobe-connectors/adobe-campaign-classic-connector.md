@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Campaign] modulerna kan du starta ett Adobe Workfr
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -19,34 +19,29 @@ Med modulerna [!DNL Adobe Campaign] kan du starta ett Adobe Workfront Fusion-sce
 
 +++ Expandera om du vill visa åtkomstkrav för funktionerna i den här artikeln.
 
-Du måste ha följande åtkomst för att kunna använda funktionerna i den här artikeln:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Alla</p> </td> 
+   <td> <p>Alla Adobe Workfront Workflow-paket och alla Adobe Workfront Automation and Integration-paket</p><p>Workfront Ultimate</p><p>Workfront Prime- och Select-paket med ytterligare köp av Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-licens</td> 
-   <td> <p>Nytt: Standard</p><p>eller</p><p>Aktuell: Arbete eller högre</p> </td> 
+   <td role="rowheader">Adobe Workfront-licenser</td> 
+   <td> <p>Standard</p><p>Arbeta eller högre</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion-licens**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-licens</td> 
    <td>
-   <p>Aktuell: Inga Workfront Fusion-licenser krävs</p>
-   <p>eller</p>
-   <p>Äldre: Workfront Fusion for Work Automation and Integration </p>
+   <p>Operationsbaserad: Ingen Workfront Fusion-licens krävs</p>
+   <p>Kopplingsbaserad (äldre): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Nytt:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront-paket: Workfront Fusion ingår.</li></ul>
-   <p>eller</p>
-   <p>Aktuell: Din organisation måste köpa Adobe Workfront Fusion.</p>
+   <p>Om ni har ett Select- eller Prime Workfront-paket som inte innehåller Workfront Automation and Integration måste ni köpa Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -62,7 +57,7 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 
 Du måste lägga till Fusion-IP-adresserna till [!DNL Adobe Campaign].
 
-* Instruktioner om hur du lägger till IP-adresser i Campaign-tillåtelselista finns i [Lägga till IP-adresser i tillåtelselista](https://experienceleague.adobe.com/sv/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) i Adobe Campaign-dokumentationen.
+* Instruktioner om hur du lägger till IP-adresser i Campaign-tillåtelselista finns i [Lägga till IP-adresser i tillåtelselista](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) i Adobe Campaign-dokumentationen.
 * En lista över IP-adresser som ska läggas till i tillåtelselista finns i [Konfigurera IP-adresser för Fusion i din organisations tillåtelselista](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
 ## Adobe Campaign API-information
@@ -86,7 +81,7 @@ Adobe Campaign Connector använder följande:
 >
 >Vi rekommenderar att du skapar en server-till-server-anslutning. Adobe Campaign har uppdaterat sitt API så att det endast accepterar server-till-server-anslutningar. Om du ansluter till Campaign version 8 eller senare måste du **skapa en server-till-server-anslutning**.
 >
->Mer information om Campaigns nya anslutningskrav finns i [Migrering av tekniska operatorer för Campaign till Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=sv-SE) i dokumentationen för Campaign.
+>Mer information om Campaigns nya anslutningskrav finns i [Migrering av tekniska operatorer för Campaign till Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html) i dokumentationen för Campaign.
 
 1. Klicka på [!DNL Adobe Campaign] bredvid fältet **[!UICONTROL Add]** i någon [!UICONTROL Connection]-modul.
 1. Fyll i följande fält:
@@ -283,7 +278,7 @@ Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Campaign]
 
 Den här åtgärdsmodulen utför en markerad åtgärd på ett objekt i API:t [!DNL Adobe Campaign].
 
-Mer information om specifika åtgärder och fält finns i [[!DNL Adobe Campaign] - API-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=sv-SE).
+Mer information om specifika åtgärder och fält finns i [[!DNL Adobe Campaign] - API-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html).
 
 <table style="table-layout:auto"> 
  <col> 
