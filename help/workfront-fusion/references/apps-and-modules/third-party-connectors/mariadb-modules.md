@@ -94,7 +94,7 @@ Du kan skapa en anslutning till ditt [!DNL MariaDB]-konto direkt inifrån en [!D
       <td>Standardporten är 3306. Om du använder en port som inte är standard anger du det här numret till din port. </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Database ]</td> 
+      <td role="rowheader">[!UICONTROL Database &#x200B;]</td> 
       <td>Ange namnet på den databas som du vill interagera med.</td> 
      </tr> 
      <tr> 

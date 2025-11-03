@@ -167,7 +167,7 @@ Den här åtgärdsmodulen hämtar en fil från en bucket.
 
 Den här åtgärdsmodulen gör ett anpassat anrop till AWS S3 API.
 
-Mer information om API:t [!DNL Amazon S3] finns i [[!DNL Amazon S3] [!UICONTROL REST] API-introduktion ](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html).
+Mer information om API:t [!DNL Amazon S3] finns i [[!DNL Amazon S3] [!UICONTROL REST] API-introduktion &#x200B;](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html).
 
 <table style="table-layout:auto">
  <col> 

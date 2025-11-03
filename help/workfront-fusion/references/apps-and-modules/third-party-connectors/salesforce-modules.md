@@ -184,7 +184,7 @@ Denna utlösarmodul startar ett scenario när ett fält uppdateras i [!DNL Sales
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
-   <td> <p>Välj den typ av post som innehåller fältet som du vill att modulen ska bevaka. Du måste välja en posttyp som har [!UICONTROL Field History] aktiverat i [!DNL Salesforce]-konfigurationen. Mer information finns i <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">Spåra fälthistorik</a> i [!DNL Salesforce]-dokumentationen. </p> </td> 
+   <td> <p>Välj den typ av post som innehåller fältet som du vill att modulen ska bevaka. Du måste välja en posttyp som har [!UICONTROL Field History] aktiverat i [!DNL Salesforce]-konfigurationen. Mer information finns i <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&type=5">Spåra fälthistorik</a> i [!DNL Salesforce]-dokumentationen. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
@@ -572,7 +572,7 @@ Den här åtgärdsmodulen överför en fil till Salesforce.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till[!DNL  Adobe Workfront Fusion] - grundläggande instruktioner</a></td> 
+   <td>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till[!DNL &#x200B; Adobe Workfront Fusion] - grundläggande instruktioner</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
@@ -612,7 +612,7 @@ Den här åtgärdsmodulen hämtar alla poster som uppfyller ett visst villkor.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till[!DNL  Adobe Workfront Fusion] - grundläggande instruktioner</a></td> 
+   <td>Instruktioner om hur du ansluter ditt [!DNL Salesforce]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till[!DNL &#x200B; Adobe Workfront Fusion] - grundläggande instruktioner</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 

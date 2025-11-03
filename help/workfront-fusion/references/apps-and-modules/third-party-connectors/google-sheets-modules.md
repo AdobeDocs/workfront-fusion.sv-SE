@@ -742,7 +742,7 @@ Här är &quot;E&quot; kolumnen och &quot;är null&quot; är villkoret. Du kan s
 1. Kör scenariot.
 1. I Google Sheets väljer du **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**.. på huvudmenyraden.
 
-1. Klicka på [!UICONTROL Drawing] -ikonen **[!UICONTROL Text box]** Textrutan![ i fönstret ](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png).
+1. Klicka på [!UICONTROL Drawing] -ikonen **[!UICONTROL Text box]** Textrutan![&#x200B; i fönstret &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png).
 1. Utforma en knapp och klicka på knappen **[!UICONTROL Save and Close]** i det övre högra hörnet:
 1. Knappen placeras i kalkylbladet. Klicka på de tre lodräta prickarna i knappens övre högra hörn:
 1. Välj **[!UICONTROL Assign script..].** på menyn.

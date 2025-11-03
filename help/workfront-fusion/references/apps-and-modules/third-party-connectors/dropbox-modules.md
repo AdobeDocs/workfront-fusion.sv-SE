@@ -64,10 +64,10 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 >[!IMPORTANT]
 >
 >* Om du vill använda Dropbox-anslutningen måste du först skapa ett program i Dropbox.
->  >   Om du vill ha mer information kan du söka efter&quot;Skapa ett program&quot; i utvecklarhandboken för Dropbox.
+>  &#x200B;>   Om du vill ha mer information kan du söka efter&quot;Skapa ett program&quot; i utvecklarhandboken för Dropbox.
 >* Använd följande omdirigerings-URI när du skapar programmet: `https://app.workfrontfusion.com/oauth/cb/dropbox`
 >* Dropbox måste godkänna program med fler än 50 användare.
->  >   Mer information finns i&quot;Produktionsgodkännande&quot; i utvecklarhandboken för Dropbox.
+>  &#x200B;>   Mer information finns i&quot;Produktionsgodkännande&quot; i utvecklarhandboken för Dropbox.
 
 ## Dropbox API-information
 

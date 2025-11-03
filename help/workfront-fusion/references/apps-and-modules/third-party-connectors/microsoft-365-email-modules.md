@@ -280,7 +280,7 @@ Den här sökmodulen söker efter meddelanden baserat på specifika villkor.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search]</td> 
-   <td>Ange din sökfråga. Mer information om hur du skriver en sökfråga finns i [!DNL Microsoft] supportartikeln <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Sök efter e-post och personer i [!DNL Outlook.com]</a>.</td> 
+   <td>Ange din sökfråga. Mer information om hur du skriver en sökfråga finns i [!DNL Microsoft] supportartikeln <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">Sök efter e-post och personer i [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Order by]</td> 
@@ -326,7 +326,7 @@ Den här utlösarmodulen startar ett scenario när ett nytt e-postmeddelande ski
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search]</td> 
-   <td>Ange din sökfråga. Modulen returnerar meddelanden som matchar den här frågan. Mer information om hur du skriver en sökfråga finns i [!DNL Microsoft] supportartikeln <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Sök efter e-post och personer i [!DNL Outlook.com]</a>.</td> 
+   <td>Ange din sökfråga. Modulen returnerar meddelanden som matchar den här frågan. Mer information om hur du skriver en sökfråga finns i [!DNL Microsoft] supportartikeln <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">Sök efter e-post och personer i [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
