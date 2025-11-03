@@ -123,7 +123,7 @@ Den här utlösarmodulen startar ett scenario när ett avtal skapas eller uppdat
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Find text]</td> 
-   <td> <p>Ange termer som du vill söka efter. Modulen returnerar poster som innehåller dessa termer som fältvärden.</p> <p>Mer information om hur du söker efter fält i [!DNL Adobe Acrobat Sign] finns i"Hur textsökning fungerar" i <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign-sökning - hur den fungerar</a>.</p> </td> 
+   <td> <p>Ange termer som du vill söka efter. Modulen returnerar poster som innehåller dessa termer som fältvärden.</p> <p>Mer information om hur du söker efter fält i [!DNL Adobe Acrobat Sign] finns i"Hur textsökning fungerar" i <a href="https://helpx.adobe.com/se/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign-sökning - hur den fungerar</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned agreements]</td> 
@@ -972,7 +972,7 @@ Den här sökmodulen söker efter avtal baserat på de villkor du anger.
     <ul> 
      <li> <p><b>[!UICONTROL Find text]</b> </p> <p>Ange den text som du vill söka efter i avtalsmetadata. Varje ord behandlas som ett separat textobjekt. </p> </li> 
      <li> <p><b>[!UICONTROL Find text in]</b> </p> <p>Markera metadatafälten som du vill söka efter text i. Om du inte markerar något söks alla metadata igenom.</p> </li> 
-    </ul> <p>Modulen returnerar alla avtal som innehåller någon av den angivna texten i något av de markerade fälten. Exempel: om du anger "vårkampanj" och väljer alternativen Titel och Anteckning returneras alla avtal med orden "vår" eller "Campaign" i antingen Titel eller Anteckning.</p> <p>Mer information om hur du söker efter fält i [!DNL Adobe Acrobat Sign] finns i"Hur textsökning fungerar" i <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Sök - Så fungerar det </a>.</p> </td> 
+    </ul> <p>Modulen returnerar alla avtal som innehåller någon av den angivna texten i något av de markerade fälten. Exempel: om du anger "vårkampanj" och väljer alternativen Titel och Anteckning returneras alla avtal med orden "vår" eller "Campaign" i antingen Titel eller Anteckning.</p> <p>Mer information om hur du söker efter fält i [!DNL Adobe Acrobat Sign] finns i"Hur textsökning fungerar" i <a href="https://helpx.adobe.com/se/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Sök - Så fungerar det </a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Created date]</td> 
