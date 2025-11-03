@@ -4,9 +4,9 @@ description: Ett datalager, som liknar en databas eller en enkel tabell, kan lag
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: b59532d96d64f77c04d31d03f6ae5addf15c0dd7
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1248'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Fusion-instanser på Select- eller Prime-paket tar emot :-->
 
   En organisation med 600 kB-åtgärder får till exempel 110 MB.
 
-Din organisation kan ha upp till 50 datalager. Den kombinerade storleken på dessa datalager får inte överskrida organisationens totala datalagringsstorlek.
+Varje team i organisationen kan ha upp till 50 datalager. Den kombinerade storleken på dessa datalager får inte överskrida organisationens totala datalagringsstorlek.
 
 ## Skapa ett datalager i Workfront Fusion
 
@@ -196,7 +196,7 @@ Egenskaperna för ett datalager omfattar datastrukturen som används i datalagre
 
 ### Redigera innehållet i ett datalager
 
-1. Klicka på ikonen **[!UICONTROL Data Store]** ![&#x200B; för datalagring &#x200B;](assets/data-store-icon.png) i den vänstra navigeringspanelen för att öppna området [!UICONTROL Data Store].
+1. Klicka på ikonen **[!UICONTROL Data Store]** ![ för datalagring ](assets/data-store-icon.png) i den vänstra navigeringspanelen för att öppna området [!UICONTROL Data Store].
 1. Klicka på **[!UICONTROL Browse]** bredvid det datalager som du vill redigera.
 1. (Valfritt) Ändra ordning på kolumner genom att dra dem till önskad plats.
 1. (Valfritt) [!UICONTROL Edit] en enskild cell genom att klicka på ikonen **[!UICONTROL Edit]** i den cellen och sedan ange önskat värde.
