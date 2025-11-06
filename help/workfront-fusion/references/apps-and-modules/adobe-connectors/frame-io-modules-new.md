@@ -1,12 +1,12 @@
 ---
-title: Frame.io-moduler (Beta)
+title: Frame.io-moduler
 description: Kontot  [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] .
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3178'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ Du kan ansluta automatiskt med inloggningsuppgifter, manuellt skapa en anslutnin
 
 Den här metoden skapar en anslutning automatiskt om du är inloggad på Frame.io, eller ansluter dig till inloggningssidan Frame.io så att du kan logga in.
 
-1. Klicka **[!UICONTROL Add]** bredvid anslutningsrutan i någon av modulerna Frame.io Beta.
+1. Klicka på **[!UICONTROL Add]** bredvid anslutningsrutan i någon Frame.io-modul.
 1. Ange ett namn för anslutningen.
 1. Klicka på **Fortsätt**.
 1. Om du uppmanas att logga in på ditt Frame.io-konto gör du det.
@@ -177,7 +177,7 @@ Om du inte redan har inloggningsuppgifter för server-till-server i ett Adobe De
 
 #### Konfigurera en anslutning för användarautentisering
 
-1. Klicka **[!UICONTROL Add]** bredvid anslutningsrutan i någon av modulerna Frame.io Beta.
+1. Klicka på **[!UICONTROL Add]** bredvid anslutningsrutan i någon Frame.io-modul.
 1. Klicka på **Visa avancerade inställningar** i rutan Skapa en anslutning.
 
 1. Fyll i följande fält:
@@ -252,7 +252,7 @@ Om du inte redan har inloggningsuppgifter för server-till-server i ett Adobe De
 
 #### Konfigurera en server-till-server-anslutning
 
-1. Klicka **[!UICONTROL Add]** bredvid anslutningsrutan i någon av modulerna Frame.io Beta.
+1. Klicka på **[!UICONTROL Add]** bredvid anslutningsrutan i någon Frame.io-modul.
 
 1. Fyll i följande fält:
 
