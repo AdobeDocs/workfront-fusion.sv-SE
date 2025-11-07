@@ -4,9 +4,9 @@ description: Kontot  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
+source-git-commit: 52dbf75ebb65a1de1a7a86619af4c7633e0cbe03
 workflow-type: tm+mt
-source-wordcount: '3178'
+source-wordcount: '3952'
 ht-degree: 0%
 
 ---
@@ -303,6 +303,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 * [Projekt](#projects)
 * [Aktier](#shares)
 * [Arbetsytor](#workspaces)
+* [Metadata](#metadata)
 * [Övriga](#other)
 
 ### Assets
@@ -315,6 +316,61 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 * [Titta på ny resurs](#watch-new-asset)
 
 #### [!UICONTROL Create an asset] <!--different for v4-->
+
+Den här åtgärdsmodulen skapar en ny resurs. Du kan överföra en lokal fil eller ange URL-adressen till en fjärrfil som resursen ska skapas från.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till Adobe Workfront Fusion </a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Markera kontot eller mappa ID:t för kontot som innehåller projektet som du vill skapa en resurs för.</p> </td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Markera arbetsytan eller mappa ID:t för arbetsytan som innehåller projektet som du vill skapa en resurs för.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td> <p>Markera projektet eller mappa ID:t för projektet som du vill skapa en resurs för.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Path] </td> 
+   <td> <p>Välj den sökväg där du vill skapa en resurs.</p> </td> 
+  </tr> 
+<!--  <tr> 
+   <td role="rowheader">[!UICONTROL File Name] </td> 
+   <td> <p>Enter the name of the file that you want to use for this asset.</p> </td> 
+  </tr> -->
+    <tr> 
+    <td role="rowheader">Överföringstyp </td> 
+    <td> <p>Ange om du skapar en resurs från en lokal fil eller en fjärrmiljö.</p> </td> 
+   </tr>
+    <tr> 
+    <td role="rowheader">Filstorlek </td> 
+    <td> <p>Om du överför en lokal fil anger eller mappar du filstorleken i byte.</p> </td> 
+   </tr>
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source URL] </td> 
+   <td> <p>Om du skapar resursen från en fjärrfil anger du URL-adressen till filen som du vill överföra.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Source file]</td> 
+   <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn.</p> </td> 
+  </tr> 
+<!--  <tr> 
+   <td role="rowheader">[!UICONTROL Media type] </td> 
+   <td> <p>Select the media type for this asset.</p> </td> 
+  </tr> -->
+  </tbody> 
+</table>
+
+#### [!UICONTROL Create an asset (Legacy)] <!--different for v4-->
 
 Den här åtgärdsmodulen skapar en ny resurs.
 
@@ -967,6 +1023,183 @@ Den här modulen visar alla arbetsytor i ett konto.
    <td role="rowheader">[!UICONTROL Maximum number of returned workspaces] </td> 
    <td> <p>Ange eller mappa maximalt antal arbetsytor
    du vill att modulen ska returneras under varje körningscykel för scenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Metadata
+
+* [Skapa ett kontonivåfält](#create-an-account-level-field)
+* [Ta bort ett kontonivåfält](#delete-an-account-level-field)
+* [Hämta metadata](#get-metadata)
+* [Visa kontonivåfält](#list-account-level-fields)
+* [Uppdatera en fältdefinition på kontonivå](#update-an-account-level-field-definition)
+* [Uppdatera metadata i flera filer](#update-metadata-across-multiple-files)
+
+#### Skapa ett kontonivåfält
+
+Den här åtgärdsmodulen skapar och konfigurerar ett nytt metadatafält på kontonivå.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till Adobe Workfront Fusion </a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Markera eller mappa kontot där du vill skapa metadata.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Fälttyp </td> 
+   <td> <p>Välj den typ av metadatafält som du vill skapa och konfigurera sedan alternativen för det fältet.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Namn </td> 
+   <td> <p>Ange eller mappa ett namn för det nya fältet.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Ta bort ett kontonivåfält
+
+Den här åtgärdsmodulen tar bort ett metadatafält på kontonivå.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till Adobe Workfront Fusion </a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Markera eller mappa kontot som innehåller metadatafältet som du vill ta bort.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Fältdefinition-ID </td> 
+   <td> <p>Ange eller mappa ID:t för fältet som du vill ta bort. Du kan hitta fält-ID:n med modulen Fält på listkontonivå.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Hämta metadata
+
+Den här åtgärdsmodulen hämtar metadata för en fil i Frame.io.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till Adobe Workfront Fusion </a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Markera eller mappa kontot som innehåller filen som du vill hämta metadata för.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Fil-ID </td> 
+   <td> <p>Ange eller mappa ID:t för filen som du vill hämta metadata för.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Visa null </td> 
+   <td> <p>Aktivera det här alternativet om du vill inkludera fält med värdet null i utdata.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Visa kontonivåfält
+
+Den här modulen hämtar en lista med metadatafält på kontonivå för det angivna kontot.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till Adobe Workfront Fusion </a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Markera eller mappa kontot som du vill visa fält från.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Maximum number of returned agreements]</td> 
+   <td> <p>Ange eller mappa det maximala antal fält som du vill att modulen ska returnera under varje körningscykel för scenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Uppdatera en fältdefinition på kontonivå
+
+Den här modulen uppdaterar definitionen för ett befintligt metadatafält.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till Adobe Workfront Fusion </a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Markera eller mappa kontot där du vill skapa metadata.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Fältdefinition-ID </td> 
+   <td> <p>Ange eller mappa ID:t för fältet som du vill uppdatera. Du kan hitta fält-ID:n med modulen Fält på listkontonivå.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Fälttyp </td> 
+   <td> <p>Om du vill ändra fälttypen för fältet väljer du den typ av metadatafält som du vill skapa och konfigurerar sedan alternativen för det fältet.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Namn </td> 
+   <td> <p>Ange eller mappa ett nytt namn för fältet.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Uppdatera metadata i flera filer
+
+Den här modulen uppdaterar metadatafält för en eller flera filer med värden som du anger.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till Adobe Workfront Fusion </a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Markera eller mappa det konto som innehåller de filer som du vill uppdatera metadata för.</p> </td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Markera arbetsytan eller mappa ID:t för arbetsytan som innehåller projektet som du vill skapa en resurs för.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td> <p>Markera projektet eller mappa ID:t för projektet som du vill skapa en resurs för.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL File IDs] </td> 
+   <td> <p>För varje fil som du vill uppdatera metadata för klickar du på <b>Lägg till objekt</b> och anger eller mappar filens ID.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Values] </td> 
+   <td> <p>För varje fält som du vill uppdatera metadata för klickar du på <b>Lägg till objekt</b> och anger eller mappar ID:t för fältdefinitionen och det värde som du vill placera i fältet. Alla filer som anges i fältet Fil-ID uppdateras med det här fältvärdet.</p> </td> 
   </tr> 
  </tbody> 
 </table>
