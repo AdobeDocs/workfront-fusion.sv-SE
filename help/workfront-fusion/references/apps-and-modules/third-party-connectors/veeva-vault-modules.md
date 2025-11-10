@@ -3,10 +3,10 @@ title: Veeva Vault-moduler
 description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder Veeva Vault samt ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 37cb18a2e13a494c4174514539c0c7e43cdee011
+source-git-commit: 4ba05a5f400ba1bdfb97586500baf741b555cd20
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 1%
+source-wordcount: '2324'
+ht-degree: 0%
 
 ---
 
@@ -118,18 +118,23 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [Dokument](#document)
+* [Objekt](#object)
+* [Övriga](#other)
+
 ### Dokument
 
 * [Skapa ett enstaka dokument](#create-a-single-document)
 * [Skapa flera dokument](#create-multiple-documents)
 * [Ta bort ett enstaka dokument](#delete-a-single-document)
+* [Hämta en fil](#download-file)
 * [Exportera dokument](#export-documents)
 * [Skaffa ett enda dokument](#get-a-single-document)
 * [Initiera användaråtgärd](#initiate-user-action)
 * [Visa dokument](#list-documents)
 * [Hämta dokumentexportresultat](#retrieve-document-export-results)
-* [Uppdatera flera dokument](#update-multiple-documents)
 * [Uppdatera ett enstaka dokument](#update-a-single-document)
+* [Uppdatera flera dokument](#update-multiple-documents)
 
 #### Skapa ett enstaka dokument
 
@@ -196,6 +201,41 @@ Den här modulen tar bort ett enstaka dokument, en bindare eller en mall.
   <tr> 
    <td role="rowheader"><p>Dokument-ID / Binder-ID / Mallnamn</p> </td> 
    <td> <p>Markera de fält som du vill ta bort.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Hämta fil
+
+Den här modulen hämtar ett dokument, en dokumentversion eller en mall från Veeva Vault.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Typ</p> </td> 
+   <td> <p>Välj om du vill hämta ett dokument eller en mall.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Hämtningstyp</p> </td> 
+   <td> <p>Välj om du vill hämta ett dokument eller en dokumentversion.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Dokument-ID / mallnamn</p> </td> 
+   <td> <p>Ange eller mappa ID:t för dokumentet eller namnet på mallen som du vill hämta.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Checka ut dokument</p> </td> 
+   <td> <p>Om du hämtar ett dokument aktiverar du det här alternativet för att checka ut dokumentet innan du hämtar det.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Version</p> </td> 
+   <td> <p>Om du hämtar en dokumentversion väljer du den version du vill hämta.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -387,9 +427,106 @@ Den här modulen uppdaterar ett enstaka dokument, en bindare eller en mall.
 
 ### Objekt
 
+* [Skapa en objektspost](#create-a-single-object-record)
+* [Ta bort en objektpost](#delete-a-single-object-record)
+* [Hämta ett enskilt objekt](#get-a-single-object)
+* [Listobjektsposter](#list-objects-records)
+* [Uppdatera en objektpost](#update-a-single-object-record)
 
+#### Skapa en objektspost
 
-#### Listobjekt
+Den här modulen skapar, kopierar eller djup kopierar en enstaka objektpost.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Typ</p> </td> 
+   <td> <p>Välj om du vill skapa eller kopiera en post eller om en post ska djupkopieras.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Migreringsläge</td> 
+   <td>Om du skapar eller kopierar en post aktiverar du det här alternativet för att skapa eller uppdatera objektposter i ett icke-initialt läge och med minimal validering, skapa inaktiva poster och ange standardfält och systemhanterade fält som <code>createdby_v</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Inga utlösare</td> 
+   <td>Om värdet är true och migreringsläget är aktiverat, kringgår modulen alla system-, standard-, anpassade SDK-utlösare och Action Triggers.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Objektnamn</td> 
+   <td>Ange eller mappa objektnamnet__v, till exempel <code>product__v</code>, <code>country__v</code> eller <code>custom_object__c</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Post-ID</td> 
+   <td>Om du kopierar en post djupt markerar du den post som ska kopieras.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Postfält</td> 
+   <td>Om du kopierar en post djupt markerar du de fält som du vill ange värden för och anger sedan dessa värden.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Ta bort en objektpost
+
+Den här modulen tar bort eller tar bort en enstaka objektpost. När du tar bort en post tas posten och alla dess underordnade objekt bort.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Typ</p> </td> 
+   <td> <p>Välj om en post ska tas bort eller om en post ska tas bort.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Objektnamn</td> 
+   <td>Markera det objekt som du vill ta bort.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Post-ID</td> 
+   <td>Markera ID:t för den post som du vill ta bort.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Externt ID</td> 
+   <td>I stället för post-ID kan du använda det här användardefinierade dokumentets externa ID.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Hämta ett enskilt objekt
+
+Den här modulen hämtar metadata som konfigurerats för en specifik objektpost i ditt valv.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Objektnamn</td> 
+   <td>Markera objektet som du vill hämta metadata för.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Post-ID</td> 
+   <td>Markera ID:t för den post som du vill hämta metadata för.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Listobjektsposter
 
 Den här modulen hämtar alla vaultobjekt i det autentiserade valvet.
 
@@ -408,6 +545,55 @@ Den här modulen hämtar alla vaultobjekt i det autentiserade valvet.
   <tr> 
    <td role="rowheader">Maximalt antal returnerade resultat</td> 
    <td>Ange eller mappa det maximala antal poster som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<!--#### Update a single object record-->
+
+Den här modulen uppdaterar fält i en befintlig objektpost.
+
+Den här modulen skapar, kopierar eller djup kopierar en enstaka objektpost.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Typ</p> </td> 
+   <td> <p>Välj om du vill skapa eller kopiera en post eller om en post ska djupkopieras.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Migreringsläge</td> 
+   <td>Aktivera det här alternativet om du vill skapa eller uppdatera objektposter i ett icke-initialt läge och med minimal validering, skapa inaktiva poster och ange standardfält och systemhanterade fält som <code>createdby_v</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Inga utlösare</td> 
+   <td>Om migreringsläget är aktiverat kan du aktivera det här alternativet för att kringgå alla system-, standard-, anpassade SDK-utlösare och Action Triggers.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Objektnamn</td> 
+   <td>Ange eller mappa objektnamnet__v, till exempel <code>product__v</code>, <code>country__v</code> eller <code>custom_object__c</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Post-ID</td> 
+   <td>Markera ID:t för den post som ska uppdateras.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Läge</td> 
+   <td>Ange postens livscykeltillstånd när <code>X-VaultAPI-MigrationMode</code> har värdet true.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Tillståndsetikett</td> 
+   <td>Ange postens livscykeltillståndstyp när <code>X-VaultAPI-MigrationMode</code> har värdet true. Använd formatet <code>base:object_lifecycle:</code> följt av objektets tillståndstyp.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Postfält</td> 
+   <td>Om du kopierar en post djupt markerar du de fält som du vill ange värden för och anger sedan dessa värden.</td> 
   </tr> 
  </tbody> 
 </table>
