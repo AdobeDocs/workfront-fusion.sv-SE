@@ -2,9 +2,9 @@
 user-guide-title: Dokumentation om Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Använd dokument, självstudiekurser och andra resurser för att lära dig hur du implementerar och använder Adobe Workfront Fusion effektivt i din organisation.
-source-git-commit: 43b4c261859074c01759c0a0f924233c18401072
+source-git-commit: 4648fd66281e3771bd1859969f7aa7627b1d3434
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1899'
 ht-degree: 1%
 
 ---
@@ -94,10 +94,10 @@ ht-degree: 1%
       * [Versionsaktivitet för Workfront Fusion: 3 oktober 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-oct-3-22.md)
       * [Versionsaktivitet för Workfront Fusion: 26 september 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-sept-26-22.md)
       * [Workfront Fusion-versionsaktivitet: 19 september 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-sept-19-22.md)
-      * [Workfront Fusion-versionsaktivitet: 11 juli 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-july-11-22.md)
-      * [Workfront Fusion-versionsaktivitet: 27 juni 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-27-22.md)
-      * [Aktivitet för Workfront Fusion-release: 20 juni 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-20-22.md)
-      * [Aktivitet för Workfront Fusion: 16 maj 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-16-22.md)
+      * [Workfront Fusion-versionsaktivitet: 11 juli 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-july-11-22.md)
+      * [Workfront Fusion-versionsaktivitet: 27 juni 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-27-22.md)
+      * [Aktivitet för Workfront Fusion-release: 20 juni 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-20-22.md)
+      * [Aktivitet för Workfront Fusion: 16 maj 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-16-22.md)
       * [Versionsaktivitet för Workfront Fusion: 9 maj 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-9-22.md)
       * [Workfront Fusion-versionsaktivitet: 25 april 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-apr-25-22.md)
       * [Versionsaktivitet för Workfront Fusion: 18 april 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-apr-18-22.md)
@@ -119,7 +119,7 @@ ht-degree: 1%
       * [Versionsaktivitet för Workfront Fusion: 28 juni 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jun-28.md)
       * [Versionsaktivitet för Workfront Fusion: 21 juni 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jun-21.md)
       * [Aktivitet för Workfront Fusion-release: 17 maj 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-17.md)
-      * [Aktivitet för Workfront Fusion-release: 10 maj 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-10.md)
+      * [Aktivitet för Workfront Fusion-release: 10 maj 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-10.md)
       * [Versionsaktivitet för Workfront Fusion: 3 maj 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-3.md)
       * [Workfront Fusion-versionsaktivitet: 26 april 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-26.md)
       * [Workfront Fusion-versionsaktivitet: 19 april 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-19.md)
@@ -394,7 +394,8 @@ ht-degree: 1%
          * [Salesforce moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
          * [Hanterade SDL-översättningsmoduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
          * [ServiceNow-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
-         * [Slack moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
+         * [Slack moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules-new.md)
+         * [Slack-moduler (äldre)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
          * [Dela.io-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
          * [Trello-moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
          * [Bredda moduler](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
