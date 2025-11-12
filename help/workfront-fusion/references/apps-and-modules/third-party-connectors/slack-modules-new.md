@@ -481,7 +481,7 @@ Den här åtgärdsmodulen skapar en textfil.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Thread ID (timestamp)]</td> 
-   <td> <p>Om du överför filen som ett svar anger eller mappar du tidsstämpeln för det meddelande du vill svara på.</p> <p>Obs! Tidsstämpeln kan hämtas med en annan modul, till exempel modulen [!UICONTROL  Watch Private Channel].</p> </td> 
+   <td> <p>Om du överför filen som ett svar anger eller mappar du tidsstämpeln för det meddelande du vill svara på.</p> <p>Obs! Tidsstämpeln kan hämtas med en annan modul, till exempel modulen [!UICONTROL &#x200B; Watch Private Channel].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Initial comment]</td> 
