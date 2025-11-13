@@ -3,17 +3,19 @@ title: Kedjemoduler
 description: Med hjälp av de här modulerna kan du kedja ihop olika scenarier och göra ett anrop till ett annat.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
 
 # Kedjemoduler
+
+>[!NOTE]
+>
+>Den här funktionen finns i Beta.
 
 Med hjälp av kedjemodulerna kan du koppla ett scenario till ett annat.
 

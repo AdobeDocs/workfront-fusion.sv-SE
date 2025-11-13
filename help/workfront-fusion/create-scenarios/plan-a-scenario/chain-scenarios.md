@@ -3,17 +3,19 @@ title: Kedja flera scenarier tillsammans
 description: Du kan kedja scenarier tillsammans, så att ett scenario kan utlösa ett annat och returnera data från det andra scenariot till det första.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: b41f7795273d35dc4e0c019c568f8939926b875a
+exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
+source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1247'
 ht-degree: 0%
 
 ---
 
-
 # Kedja flera scenarier tillsammans
+
+>[!NOTE]
+>
+>Den här funktionen finns i Beta.
 
 Du kan kedja scenarier tillsammans, så att ett scenario kan utlösa ett annat och returnera data från det andra scenariot till det första. Detta gör det möjligt att skapa ett mer modulärt scenario där du inte behöver duplicera scenarioavsnitt i flera scenarier.
 
