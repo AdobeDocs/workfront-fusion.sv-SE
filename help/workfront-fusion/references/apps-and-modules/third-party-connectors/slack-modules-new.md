@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: b5892f64c73c41524029621591e64c942c146432
+source-git-commit: bb1cd0c54ae2c81c601d463cdc281d6ae7b8c434
 workflow-type: tm+mt
-source-wordcount: '3897'
+source-wordcount: '3785'
 ht-degree: 0%
 
 ---
@@ -454,43 +454,6 @@ Den här utlösarmodulen startar scenariot när ett nytt meddelande läggs till 
 +++
 
 ### Filer
-
-+++ **[!UICONTROL Create a Text File]**
-
-Den här åtgärdsmodulen skapar en textfil.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Slack]-konto till [!DNL Workfront Fusion] finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till [!DNL Adobe Workfront Fusion] - grundläggande instruktioner</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Channels]</td> 
-   <td> <p>För varje kanal som du vill överföra filen till klickar du på <b>[!UICONTROL Add item]</b> och väljer sedan kanaltyp och kanal.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Title]</td> 
-   <td>Ange en titel för filen som du vill överföra</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Thread ID (timestamp)]</td> 
-   <td> <p>Om du överför filen som ett svar anger eller mappar du tidsstämpeln för det meddelande du vill svara på.</p> <p>Obs! Tidsstämpeln kan hämtas med en annan modul, till exempel modulen [!UICONTROL &#x200B; Watch Private Channel].</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Initial comment]</td> 
-   <td> <p>Ange eller mappa texten i det meddelande som presenterar filen.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
 
 +++ **[!UICONTROL Delete a File]**
 
