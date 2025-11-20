@@ -4,9 +4,9 @@ description: Med modulerna Adobe Workfront Fusion Figma kan du hämta listor med
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 545bc38a619c44dd39bb746d751775f63e7aa16d
 workflow-type: tm+mt
-source-wordcount: '2286'
+source-wordcount: '2324'
 ht-degree: 0%
 
 ---
@@ -86,6 +86,11 @@ Figma-kopplingen använder följande:
 
 ## Skapa en anslutning till Figma
 
+>[!IMPORTANT]
+>
+>* Figma ändrade sina autentiseringskrav i januari 2025. Anslutningstypen `Figma` uppfyller de nya kraven. Anslutningstypen `Figma (Legacy)` har tagits bort och kommer att tas bort inom den närmaste framtiden.
+>* Använd `https://oauth.app.workfrontfusion.com/oauth/cb/figma3` om du använder en omdirigering.
+
 Så här skapar du en anslutning för dina Figma-moduler:
 
 1. Klicka på **[!UICONTROL Add]** bredvid anslutningsrutan i en Figma-modul.
@@ -101,7 +106,7 @@ Så här skapar du en anslutning för dina Figma-moduler:
         <tr>
         <td role="rowheader">[!UICONTROL Connection type]</td>
         <td>
-          <p> För nya anslutningar väljer du <code>Figma</code> utan taggen Äldre. </p><p>Figma ändrade sina autentiseringskrav i januari 2025. Anslutningstypen <code>Figma</code> uppfyller de nya kraven. Anslutningstypen <code>Figma (Legacy)</code> kommer att tas bort i framtiden.</p>
+          <p> Välj <code>Figma</code> utan taggen Legacy. </p><p>Figma ändrade sina autentiseringskrav i januari 2025. Anslutningstypen <code>Figma</code> uppfyller de nya kraven. Anslutningstypen <code>Figma (Legacy)</code> har tagits bort och kommer att tas bort i framtiden.</p>
         </td>
         </tr>
         <tr>
@@ -112,7 +117,7 @@ Så här skapar du en anslutning för dina Figma-moduler:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Ange din [!UICONTROL Figme] [!UICONTROL Client ID].</td>
+        <td>Ange din [!UICONTROL Figma] [!UICONTROL Client ID].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
