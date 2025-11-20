@@ -4,9 +4,9 @@ description: Du kan visa en logg med aktiviteter, som att skapa eller aktivera s
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 2ffb7676067720a5b9daa51b560389396f4a665f
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 # Visa aktivitetsloggar för en organisation
 
 Du kan visa en logg med aktiviteter, som att skapa ett scenario eller bjuda in en användare, för din organisation.
+
+Aktivitetsloggar visar tre månaders data. Data som är äldre än tre månader kan exporteras.
 
 ## Åtkomstkrav
 
