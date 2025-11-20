@@ -2,7 +2,7 @@
 user-guide-title: Dokumentation om Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Använd dokument, självstudiekurser och andra resurser för att lära dig hur du implementerar och använder Adobe Workfront Fusion effektivt i din organisation.
-source-git-commit: 7eadd6f39db2fe7e0c7ec46e0e5b3fc998f528e9
+source-git-commit: 1a3865325fed3ebb0862f05641cdeb28d9e6c9f3
 workflow-type: tm+mt
 source-wordcount: '1913'
 ht-degree: 1%
@@ -95,10 +95,10 @@ ht-degree: 1%
       * [Versionsaktivitet för Workfront Fusion: 3 oktober 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-oct-3-22.md)
       * [Versionsaktivitet för Workfront Fusion: 26 september 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-sept-26-22.md)
       * [Workfront Fusion-versionsaktivitet: 19 september 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-sept-19-22.md)
-      * [Workfront Fusion-versionsaktivitet: 11 juli 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-july-11-22.md)
-      * [Workfront Fusion-versionsaktivitet: 27 juni 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-27-22.md)
-      * [Aktivitet för Workfront Fusion-release: 20 juni 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-20-22.md)
-      * [Aktivitet för Workfront Fusion: 16 maj 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-16-22.md)
+      * [Workfront Fusion-versionsaktivitet: 11 juli 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-july-11-22.md)
+      * [Workfront Fusion-versionsaktivitet: 27 juni 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-27-22.md)
+      * [Aktivitet för Workfront Fusion-release: 20 juni 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-20-22.md)
+      * [Aktivitet för Workfront Fusion: 16 maj 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-16-22.md)
       * [Versionsaktivitet för Workfront Fusion: 9 maj 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-9-22.md)
       * [Workfront Fusion-versionsaktivitet: 25 april 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-apr-25-22.md)
       * [Versionsaktivitet för Workfront Fusion: 18 april 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-apr-18-22.md)
@@ -120,7 +120,7 @@ ht-degree: 1%
       * [Versionsaktivitet för Workfront Fusion: 28 juni 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jun-28.md)
       * [Versionsaktivitet för Workfront Fusion: 21 juni 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jun-21.md)
       * [Aktivitet för Workfront Fusion-release: 17 maj 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-17.md)
-      * [Aktivitet för Workfront Fusion-release: 10 maj 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-10.md)
+      * [Aktivitet för Workfront Fusion-release: 10 maj 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-10.md)
       * [Versionsaktivitet för Workfront Fusion: 3 maj 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-3.md)
       * [Workfront Fusion-versionsaktivitet: 26 april 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-26.md)
       * [Workfront Fusion-versionsaktivitet: 19 april 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-19.md)
@@ -176,7 +176,7 @@ ht-degree: 1%
          * [Lägg till en användare i ett team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
          * [Ange alternativ för teammeddelanden](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
          * [Visa aktivitetsloggen för en organisation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
-         * [Visa kontrollpanelen för prestanda för en organisation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-performace-dashboard.md)
+         * [Visa kontrollpanelen för prestanda för en organisation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-performance-dashboard.md)
       * Hantera användare och team {#manage-users-and-teams}
          * [Hantera användare och team: artikelindex](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/manage-users-and-teams.md)
          * [Visa användare i en organisation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-users-in-an-org.md)
