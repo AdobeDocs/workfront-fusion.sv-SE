@@ -2,9 +2,9 @@
 user-guide-title: Dokumentation om Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Använd dokument, självstudiekurser och andra resurser för att lära dig hur du implementerar och använder Adobe Workfront Fusion effektivt i din organisation.
-source-git-commit: 1a3865325fed3ebb0862f05641cdeb28d9e6c9f3
+source-git-commit: e254122177cffb69eb34ebc2459239ebc9e055a7
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1916'
 ht-degree: 1%
 
 ---
@@ -95,10 +95,10 @@ ht-degree: 1%
       * [Versionsaktivitet för Workfront Fusion: 3 oktober 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-oct-3-22.md)
       * [Versionsaktivitet för Workfront Fusion: 26 september 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-sept-26-22.md)
       * [Workfront Fusion-versionsaktivitet: 19 september 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-sept-19-22.md)
-      * [Workfront Fusion-versionsaktivitet: 11 juli 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-july-11-22.md)
-      * [Workfront Fusion-versionsaktivitet: 27 juni 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-27-22.md)
-      * [Aktivitet för Workfront Fusion-release: 20 juni 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-20-22.md)
-      * [Aktivitet för Workfront Fusion: 16 maj 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-16-22.md)
+      * [Workfront Fusion-versionsaktivitet: 11 juli 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-july-11-22.md)
+      * [Workfront Fusion-versionsaktivitet: 27 juni 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-27-22.md)
+      * [Aktivitet för Workfront Fusion-release: 20 juni 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-20-22.md)
+      * [Aktivitet för Workfront Fusion: 16 maj 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-16-22.md)
       * [Versionsaktivitet för Workfront Fusion: 9 maj 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-9-22.md)
       * [Workfront Fusion-versionsaktivitet: 25 april 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-apr-25-22.md)
       * [Versionsaktivitet för Workfront Fusion: 18 april 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-apr-18-22.md)
@@ -120,7 +120,7 @@ ht-degree: 1%
       * [Versionsaktivitet för Workfront Fusion: 28 juni 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jun-28.md)
       * [Versionsaktivitet för Workfront Fusion: 21 juni 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jun-21.md)
       * [Aktivitet för Workfront Fusion-release: 17 maj 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-17.md)
-      * [Aktivitet för Workfront Fusion-release: 10 maj 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-10.md)
+      * [Aktivitet för Workfront Fusion-release: 10 maj 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-10.md)
       * [Versionsaktivitet för Workfront Fusion: 3 maj 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-3.md)
       * [Workfront Fusion-versionsaktivitet: 26 april 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-26.md)
       * [Workfront Fusion-versionsaktivitet: 19 april 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-19.md)
@@ -340,6 +340,7 @@ ht-degree: 1%
          * [Adobe Marketo Modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
          * [Adobe PDF Services-moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
          * [Adobe Photoshop moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
+         * [Adobe Substansmoduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-substance-modules.md)
          * [Adobe lagringsmoduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
          * [Adobe Target moduler](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
          * [Adobe-moduler för användarhantering](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)

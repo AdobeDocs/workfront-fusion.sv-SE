@@ -4,7 +4,7 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: f23a089565c2cfb7d2d1321a7bf67ae14e336af3
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Adobe Target] moduler
 
-I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder [!DNL Adobe Target] samt ansluta det till flera tredjepartsprogram och -tjänster. Med modulerna [!DNL Adobe Target] kan du skapa, skapa, läsa, uppdatera eller ta bort poster, lista alla poster av en viss typ, söka efter poster baserat på villkor som du anger eller utföra ett anpassat API-anrop till API:t [!DNL Adobe Target] .
+I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder [!DNL Adobe Target] samt ansluta det till flera tredjepartsprogram och -tjänster. Med modulerna [!DNL Adobe Target] kan du skapa, läsa, uppdatera eller ta bort poster, lista alla poster av en viss typ, söka efter poster baserat på villkor som du anger eller utföra ett anpassat API-anrop till API:t [!DNL Adobe Target] .
 
 
 Om du behöver instruktioner om hur du skapar ett scenario kan du läsa artiklarna under [Skapa ett scenario: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
