@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 1a3865325fed3ebb0862f05641cdeb28d9e6c9f3
+source-git-commit: 671773fa1baaac8e01e0f01546602a738e219fdf
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,10 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 +++
 
 ## Komponenter i kontrollpanelen för prestanda
+
+>[!NOTE]
+>
+>Mätvärden visas av arbetarpoolen. Om du vill visa en annan arbetarpool klickar du på fältet Pool i det övre vänstra hörnet av instrumentpanelen och väljer sedan den pool som du vill visa mätvärden för.
 
 På kontrollpanelen för Fusion-prestanda kan du se följande mätvärden.
 
