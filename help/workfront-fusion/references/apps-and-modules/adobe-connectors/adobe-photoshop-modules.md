@@ -4,9 +4,9 @@ description: Med Adobe Photoshop-modulerna kan du starta ett Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+source-git-commit: a68de976258d17631459f0951d28657fd0e0dcf6
 workflow-type: tm+mt
-source-wordcount: '4722'
+source-wordcount: '4738'
 ht-degree: 0%
 
 ---
@@ -186,6 +186,8 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 ### Använda PSD-redigeringar
 
 I den här åtgärdsmodulen används en rad dokument- och lagernivåredigeringar.
+
+Den här modulen stöder stora filer. Mer information om stora filer finns i [Arbeta med stora filer](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 
 <table style="table-layout:auto"> 
   <col/>
