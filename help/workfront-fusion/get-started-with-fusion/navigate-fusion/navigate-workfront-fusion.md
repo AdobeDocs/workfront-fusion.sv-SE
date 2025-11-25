@@ -4,7 +4,7 @@ description: När du öppnar Fusion har du många alternativ för åtgärder. De
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: d76f199b766d6f18e371f2ce1107a96529afbfd1
+source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 0%
