@@ -3,9 +3,9 @@ title: Veeva Vault-moduler
 description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder Veeva Vault samt ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 4ba05a5f400ba1bdfb97586500baf741b555cd20
+source-git-commit: 881e5ba39d1730b641085cf0d02137d18e443135
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2483'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,12 @@ Om du vill använda Veeva Vault-moduler måste du ha ett Veeva Vault-konto.
 
 Du kan skapa en anslutning till ditt Vevavaultkonto direkt från en Vevavaultmodul.
 
+När du skapar en anslutning kan du välja om du vill använda ett lösenord eller om OAuth2-autentisering ska användas.
+
+### Anslut till Veeva Vault med ett användarnamn och lösenord
+
 1. Klicka på **Lägg till** intill anslutningsfältet i valfri Vevavaultmodul.
+1. Välj **i fältet** Anslutningstyp`Veeva Username Password`.
 1. Fyll i följande fält.
 
    <table style="table-layout:auto"> 
@@ -75,18 +80,6 @@ Du kan skapa en anslutning till ditt Vevavaultkonto direkt från en Vevavaultmod
        <td role="rowheader">Anslutningsnamn</td> 
        <td> <p>Ange ett namn för anslutningen.</p> </td> 
       </tr> 
-      <tr>
-        <td role="rowheader">Miljö</td>
-        <td>
-          <p>Välj om du ansluter till en produktionsmiljö eller icke-produktionsmiljö.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">Typ</td>
-        <td>
-          <p>Ange om du ansluter till ett tjänstkonto eller ett personligt konto.</p>
-        </td>
-      </tr>
       <tr>
         <td role="rowheader">Användarnamn</td>
         <td>
@@ -108,6 +101,58 @@ Du kan skapa en anslutning till ditt Vevavaultkonto direkt från en Vevavaultmod
 
 1. Klicka på **[!UICONTROL Continue]** för att skapa anslutningen och gå tillbaka till modulen.
 
+### Anslut till Veeva Vault med OAuth2-autentisering
+
+1. Klicka på **Lägg till** intill anslutningsfältet i valfri Vevavaultmodul.
+1. Välj **i fältet** Anslutningstyp`Veeva Oauth 2`.
+1. Fyll i följande fält.
+
+   <table style="table-layout:auto"> 
+     <col> 
+     <col> 
+     <tbody> 
+      <tr> 
+       <td role="rowheader">Anslutningsnamn</td> 
+       <td> <p>Ange ett namn för anslutningen.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">Klient-ID</td>
+        <td>
+          <p>Ange klient-ID:t för Veeva Vault-programmet som den här anslutningen ska använda.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Klienthemlighet</td>
+        <td>
+          <p>Ange klienthemlighet för Veeva-valverappen som den här anslutningen ska använda.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Omfång</td>
+        <td>
+          <p>Ange omfattningen för den här anslutningen.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Klient-ID</td>
+        <td>
+          <p>Ange klientorganisations-ID för den här anslutningen.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Profil-ID</td>
+        <td>
+          <p>Ange ID:t för din OAuth2-/Copen ID-anslutningsprofil.</p>
+        </td>
+      </tr>
+      <tr> 
+       <td role="rowheader">Valv-DNS</td> 
+       <td>Ange veeva-valvets DNS (domännamn).</p><p>Om du vill hitta DNS:en för ditt veeva-valv kontrollerar du den URL som du använder för att komma åt veeva-valvet.</p>I URL:en <code>https://my-dns.veevavault.com</code> är till exempel DNS <code>my-dns</code>. Du behöver inte ange hela URL:en.</td> 
+      </tr> 
+     </tbody> 
+    </table>
+
+1. Klicka på **[!UICONTROL Continue]** för att skapa anslutningen och gå tillbaka till modulen.
 
 
 ## Veeva Vault-moduler och deras fält
