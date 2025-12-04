@@ -4,9 +4,9 @@ description: Många tjänster tillhandahåller webbhookar för att leverera snab
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,11 @@ Du kan visa en lista med webbböcker i området Webhooks.
 1. Om du vill visa scenariot där en webkrok används klickar du på knappen **Scenario** i kolumnen Scenario för den webbkroken.
 1. Klicka på knappen **Anslutning** i anslutningskolumnen för den webbkroken om du vill visa anslutningen som används för den här webkroken.
 1. Om du vill dölja kolumner eller visa tidigare dolda kolumner klickar du på ikonen **Kolumner** ![Kolumner](assets/glist-column.png) och markerar eller avmarkerar kolumnnamn.
+1. Om du vill visa händelseprenumerationer som är kopplade till en Workfront-webkrok markerar du kryssrutan bredvid webkroken och väljer **Visa detaljer** längst ned på sidan.
+
+   >[!NOTE]
+   >
+   > Information om händelseprenumerationer finns endast för Workfront webbhooks som har skapats i den nya Workfront Connector. Webkrokinformation är för närvarande inte tillgänglig för andra anslutningar.
 
 
 ## Schemalägg direktutlösare

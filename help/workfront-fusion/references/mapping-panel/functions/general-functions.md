@@ -4,9 +4,9 @@ description: Följande allmänna funktioner är tillgängliga på panelen för m
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: 295004ab7536b85124bc366d6832c08365338d08
+source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,12 @@ ht-degree: 0%
 
 ## Variabel
 
-Det finns två allmänna variabler som du kan använda för att identifiera information om en körning:
+Du kan använda dessa allmänna variabler för att identifiera information om en körning:
 
 * `executionID`: ID för den här scenariokörningen
 * `triggerTimestamp`: Den tidpunkt då den här körningen utlöstes
+* `scenarioID`: ID:t för det öppna scenariot
+* `operationsConsumed`: antalet åtgärder som användes vid den punkten i scenariot.
 
 ## [!UICONTROL get (object or array; path)]
 
@@ -41,7 +43,7 @@ Returnerar `value1` om uttrycket utvärderas till true, annars returneras `value
 
 Om du vill skapa en if-programsats som bara returnerar ett värde om två eller flera uttryck utvärderas till true använder du nyckelordet `and`.
 
-Använd operatorerna `and` och `or` om du vill kombinera `if`-satser.
+Använd operatorerna `if` och `and` om du vill kombinera `or`-satser.
 
 ![och operator](assets/and-in-if-statement.png)
 
