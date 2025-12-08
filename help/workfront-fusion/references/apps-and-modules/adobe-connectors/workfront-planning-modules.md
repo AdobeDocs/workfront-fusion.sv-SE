@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Workfront Planning] modulerna kan du starta ett Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: 30ddefa8519e6f2052308482137d0fa018676902
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -35,14 +35,16 @@ Med modulerna [!DNL Adobe Workfront Planning] kan du utlösa ett scenario när h
    <td role="rowheader">Produkt</td> 
    <td>
    <p>Om ni har ett Select- eller Prime Workfront-paket som inte innehåller Workfront Automation and Integration måste ni köpa Adobe Workfront Fusion.</li></ul>
-   </td> 
+   </td>
   </tr>
  </tbody> 
 </table>
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++# Förutsättningar
++++
+
+s## Förutsättningar
 
 Du måste ha följande för att få tillgång till Workfront Planning:
 
