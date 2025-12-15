@@ -41,7 +41,7 @@ Kortkommandon
    >
    >Om den vänstra navigeringspanelen eller dess ikoner inte visas klickar du på ikonen ![Meny](assets/main-menu-icon-left-nav.png) .
 
-1. (Valfritt) Klicka på ikonen [!UICONTROL ****] Lägg till mapp **[!UICONTROL Add folder]** på panelen ![Mappar](assets/add-folder-icon.png) och skriv sedan ett namn som &quot;Practice scenarios&quot; för den första mappen.
+1. (Valfritt) Klicka på ikonen [!UICONTROL **&#x200B;**] Lägg till mapp **[!UICONTROL Add folder]** på panelen ![Mappar](assets/add-folder-icon.png) och skriv sedan ett namn som &quot;Practice scenarios&quot; för den första mappen.
 
 1. (Valfritt) Öppna mappen och klicka sedan på **[!UICONTROL Create a new scenario]** i det övre högra hörnet på sidan.
 
