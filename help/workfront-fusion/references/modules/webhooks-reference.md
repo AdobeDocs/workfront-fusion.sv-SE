@@ -4,9 +4,9 @@ description: Många tjänster tillhandahåller webbhookar för att leverera snab
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: 45efeecd1758e302f57498bab842594800a84c1d
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1256'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,9 @@ Du kan visa en lista med webbböcker i området Webhooks.
 
 1. Om du vill söka efter en specifik webkrok anger du söktermen i sökrutan.
 1. Om du vill kopiera en webkrok klickar du på ikonen ![Kopiera webkrok](assets/copy-webhook-icon.png) nära webbadressen på raden för den webkroken.
+1. Om du vill ange prioritet för en webkrok klickar du på listrutan i kolumnen Prioritet och väljer den nya prioriteten.
+
+   Webbhooks med högre prioritet hanteras först, vilket kan vara bra om en arbetarpool har många automatiseringar som konkurrerar om resurser.
 1. Om du vill inaktivera eller aktivera en webkrok inaktiverar eller aktiverar du växlingsknappen i statuskolumnen på raden för den webkroken.
 1. Om du vill se om en webbhookö är full kontrollerar du kolumnen Full kö. Numret i den här kolumnen är antalet objekt som finns i kön.
 1. Om du vill visa åtgärder som hanteras av en webkrok klickar du på **Åtgärder** i kolumnen Fullständig kö för den webkroken.

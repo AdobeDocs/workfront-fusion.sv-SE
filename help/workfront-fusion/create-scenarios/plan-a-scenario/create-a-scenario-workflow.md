@@ -4,9 +4,9 @@ description: Följ det här allmänna arbetsflödet för att skapa ett scenario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '783'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Kortkommandon
    >
    >Om den vänstra navigeringspanelen eller dess ikoner inte visas klickar du på ikonen ![Meny](assets/main-menu-icon-left-nav.png) .
 
-1. (Valfritt) Klicka på ikonen [!UICONTROL **&#x200B;**] Lägg till mapp **[!UICONTROL Add folder]** på panelen ![Mappar](assets/add-folder-icon.png) och skriv sedan ett namn som &quot;Practice scenarios&quot; för den första mappen.
+1. (Valfritt) Klicka på ikonen [!UICONTROL ****] Lägg till mapp **[!UICONTROL Add folder]** på panelen ![Mappar](assets/add-folder-icon.png) och skriv sedan ett namn som &quot;Practice scenarios&quot; för den första mappen.
 
 1. (Valfritt) Öppna mappen och klicka sedan på **[!UICONTROL Create a new scenario]** i det övre högra hörnet på sidan.
 
@@ -166,6 +166,11 @@ Du kan använda följande kortkommandon när du skapar eller redigerar ett scena
    <td role="rowheader">[!UICONTROL Paste]</td> 
    <td>Ctrl+V</td> 
    <td>Cmd+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Search for modules]</td> 
+   <td>Ctrl+K</td> 
+   <td>Cmd+K</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Klistra in cURL i scenario för att skapa HTTP-modul</td> 
