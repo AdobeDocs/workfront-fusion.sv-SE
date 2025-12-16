@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Campaign] modulerna kan du starta ett Adobe Workfr
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: aa5b5f1fe805f43b6398e26bf1773d7540ef1634
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 
 Du måste lägga till Fusion-IP-adresserna till [!DNL Adobe Campaign].
 
-* Instruktioner om hur du lägger till IP-adresser i Campaign-tillåtelselista finns i [Lägga till IP-adresser i tillåtelselista](https://experienceleague.adobe.com/sv/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) i Adobe Campaign-dokumentationen.
+* Instruktioner om hur du lägger till IP-adresser i Campaign-tillåtelselista finns i [Lägga till IP-adresser i tillåtelselista](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) i Adobe Campaign-dokumentationen.
 * En lista över IP-adresser som ska läggas till i tillåtelselista finns i [Konfigurera IP-adresser för Fusion i din organisations tillåtelselista](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
 ## Adobe Campaign API-information
@@ -81,7 +81,7 @@ Adobe Campaign Connector använder följande:
 >
 >Vi rekommenderar att du skapar en server-till-server-anslutning. Adobe Campaign har uppdaterat sitt API så att det endast accepterar server-till-server-anslutningar. Om du ansluter till Campaign version 8 eller senare måste du **skapa en server-till-server-anslutning**.
 >
->Mer information om Campaigns nya anslutningskrav finns i [Migrering av tekniska operatorer för Campaign till Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=sv-SE) i dokumentationen för Campaign.
+>Mer information om Campaigns nya anslutningskrav finns i [Migrering av tekniska operatorer för Campaign till Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html) i dokumentationen för Campaign.
 
 1. Klicka på [!DNL Adobe Campaign] bredvid fältet **[!UICONTROL Add]** i någon [!UICONTROL Connection]-modul.
 1. Fyll i följande fält:
@@ -201,7 +201,7 @@ Den här åtgärdsmodulen skapar en ny post i [!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Välj den typ av [!DNL Adobe Campaign]-post som du vill skapa.</td> 
+   <td>Välj den typ av [!DNL Adobe Campaign]-post som du vill skapa eller välj **Anpassad resurs** och ange resursinformationen.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields] </td> 
@@ -228,7 +228,7 @@ Den här åtgärdsmodulen tar bort en post från [!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Välj den typ av resurs som du vill ta bort.</td> 
+   <td>Välj den typ av resurs som du vill ta bort eller välj **Anpassad resurs** och ange resursinformationen.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -278,7 +278,7 @@ Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Campaign]
 
 Den här åtgärdsmodulen utför en markerad åtgärd på ett objekt i API:t [!DNL Adobe Campaign].
 
-Mer information om specifika åtgärder och fält finns i [[!DNL Adobe Campaign] - API-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=sv-SE).
+Mer information om specifika åtgärder och fält finns i [[!DNL Adobe Campaign] - API-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -287,6 +287,10 @@ Mer information om specifika åtgärder och fält finns i [[!DNL Adobe Campaign]
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
    <td>Instruktioner om hur du skapar en anslutning till [!DNL Adobe Campaign] finns i <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Skapa en anslutning till [!DNL Adobe Campaign]</a> i den här artikeln.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td>Välj vilken typ av resurs du vill utföra en åtgärd på eller välj **Anpassad resurs** och ange resursinformationen.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Action]</td> 
@@ -317,7 +321,7 @@ Den här åtgärdsmodulen läser en post från [!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Välj den typ av [!DNL Adobe Campaign]-post som du vill läsa.</td> 
+   <td>Välj den typ av [!DNL Adobe Campaign]-post som du vill läsa eller välj **Anpassad resurs** och ange resursinformationen.</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -376,7 +380,7 @@ Den här åtgärdsmodulen uppdaterar en enskild post i [!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Välj den typ av [!DNL Adobe Campaign]-post som du vill skapa.</td> 
+   <td>Välj den typ av [!DNL Adobe Campaign]-post som du vill uppdatera eller välj **Anpassad resurs** och ange resursinformationen.</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -409,7 +413,7 @@ Sökmodulen returnerar poster baserat på angivna villkor.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Välj den typ av [!DNL Adobe Campaign]-post som du vill skapa.</td> 
+   <td>Välj den typ av [!DNL Adobe Campaign]-post som du vill returnera eller välj **Anpassad resurs** och ange resursinformationen.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search criteria]</td> 
