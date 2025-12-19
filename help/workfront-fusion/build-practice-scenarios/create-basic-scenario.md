@@ -7,9 +7,9 @@ description: Lär dig skapa ett enkelt automatiseringsscenario med Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
@@ -162,7 +162,7 @@ I det här scenariot skulle ett lyckat test resultera i att begäran lokaliseras
 
    >[!IMPORTANT]
    >
-   >Spara ofta när du finslipar ett scenario.
+   >Spara ofta när du finslipar ett scenario. Du kan behöva skapa ett nytt problem i ditt Workfront-konto för att utlösa scenariot.
 
 >[!TIP]
 >
@@ -175,9 +175,9 @@ I det här scenariot skulle ett lyckat test resultera i att begäran lokaliseras
 >
 >1. Stäng området **[!UICONTROL Notes]**.
 >
->     När du har lagt till en anteckning i ett scenario visas en punkt på ikonen **[!UICONTROL Notes]** ![Anteckningar med en punkt &#x200B;](assets/notes-icon-w-dot.png) längst ned i scenarioredigeraren.
+>     När du har lagt till en anteckning i ett scenario visas en punkt på ikonen **[!UICONTROL Notes]** ![Anteckningar med en punkt ](assets/notes-icon-w-dot.png) längst ned i scenarioredigeraren.
 >
->1. Klicka på ikonen **[!UICONTROL Notes]** ![Anteckningar med punkt &#x200B;](assets/notes-icon-w-dot.png) om du vill visa anteckningarna. När anteckningar är öppna visas en cirkel runt anteckningsikonen.
+>1. Klicka på ikonen **[!UICONTROL Notes]** ![Anteckningar med punkt ](assets/notes-icon-w-dot.png) om du vill visa anteckningarna. När anteckningar är öppna visas en cirkel runt anteckningsikonen.
 >
 
 ## Aktivera scenariot

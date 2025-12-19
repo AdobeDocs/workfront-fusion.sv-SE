@@ -7,9 +7,9 @@ description: Med filter kan du kontrollera att ditt scenario bara utvecklas om v
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ab27fe-e2dd-4b52-b986-77b4b7ea3b5e
-source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
+source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ Du bör nu ha `ID`, `Name` och `Project` markerat.
 
    >[!IMPORTANT]
    >
-   >Spara ofta när du finslipar ett scenario.
+   >Spara ofta när du finslipar ett scenario. Du kan behöva skapa ett nytt problem i ditt Workfront-konto för att utlösa scenariot.
 
 ## Resurser
 

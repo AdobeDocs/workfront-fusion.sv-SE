@@ -7,9 +7,9 @@ description: Lär dig hur du lägger till en funktion för att uppdatera en arbe
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
+source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ När det här scenariot konverterar en begäran till ett projekt är projektets 
 
    >[!IMPORTANT]
    >
-   >Spara ofta när du finslipar ett scenario.
+   >Spara ofta när du finslipar ett scenario. Du kan behöva skapa ett nytt problem i ditt Workfront-konto för att utlösa scenariot.
 
 ## Resurser
 
