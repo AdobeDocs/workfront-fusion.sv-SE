@@ -175,9 +175,9 @@ I det här scenariot skulle ett lyckat test resultera i att begäran lokaliseras
 >
 >1. Stäng området **[!UICONTROL Notes]**.
 >
->     När du har lagt till en anteckning i ett scenario visas en punkt på ikonen **[!UICONTROL Notes]** ![Anteckningar med en punkt ](assets/notes-icon-w-dot.png) längst ned i scenarioredigeraren.
+>     När du har lagt till en anteckning i ett scenario visas en punkt på ikonen **[!UICONTROL Notes]** ![Anteckningar med en punkt &#x200B;](assets/notes-icon-w-dot.png) längst ned i scenarioredigeraren.
 >
->1. Klicka på ikonen **[!UICONTROL Notes]** ![Anteckningar med punkt ](assets/notes-icon-w-dot.png) om du vill visa anteckningarna. När anteckningar är öppna visas en cirkel runt anteckningsikonen.
+>1. Klicka på ikonen **[!UICONTROL Notes]** ![Anteckningar med punkt &#x200B;](assets/notes-icon-w-dot.png) om du vill visa anteckningarna. När anteckningar är öppna visas en cirkel runt anteckningsikonen.
 >
 
 ## Aktivera scenariot
