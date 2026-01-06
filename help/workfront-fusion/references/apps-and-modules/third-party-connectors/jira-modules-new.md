@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+source-git-commit: 017341e045a703f5d6e933a6df860f4fc8c0649d
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '2345'
 ht-degree: 0%
 
 ---
@@ -65,54 +65,118 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 
 ## Förutsättningar
 
-För att kunna använda Jira-moduler måste du ha ett Jira-konto.
+* För att kunna använda Jira-moduler måste du ha ett Jira-konto.
+* Du måste ha tillgång till Jira Developer Console för att skapa ett OAuth2-program i Jira.
 
 ## Anslut Jira till Workfront Fusion
 
-### Skapa nödvändiga autentiseringsuppgifter
+Hur du skapar en anslutning till Jira varierar beroende på om du skapar en grundläggande anslutning eller en OAuth2-anslutning.
 
-Om du vill skapa anslutningar till Jira behöver du följande:
+* [Skapa en OAuth2-anslutning till Jira](#create-an-oauth2-connection-to-jira)
+* [Skapa en grundläggande anslutning till Jira](#create-a-basic-connection-to-jira)
 
-| Anslutningstyp | Kontotyp | Autentiseringsuppgifter krävs |
-|---|---|---|
-| OAuth 2 | Alla | Klient-ID och klienthemlighet |
-| Grundläggande | Jira Cloud | Jira API-token |
-| Grundläggande | Jira Data Center | Jira Personal Access Token (PAT) |
+### Skapa en OAuth2-anslutning till Jira
 
-Instruktioner om hur du skapar något av dessa finns i Jiras dokumentation.
+Om du vill skapa en OAuth2-anslutning till Jira måste du skapa ett program i Jira innan du kan konfigurera anslutningen i Fusion.
 
-När du skapar dessa autentiseringsuppgifter behöver du följande information:
+* [Skapa ett OAuth2-program i Jira](#create-an-oauth2-application-in-jira)
+* [Konfigurera OAutt2-anslutningen i Fusion](#configure-the-oauth2-connection-in-fusion)
 
-* För OAuth 2:
+#### Skapa ett OAuth2-program i Jira
 
-  | Fusion datacenter | Omdirigeringsadress |
-  |---|---|
-  | USA | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
-  | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2` |
-  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2` |
+>[!IMPORTANT]
+>
+>Du måste ha tillgång till Jira Developer Console för att skapa och konfigurera ett OAuth2-program för din Jira-anslutning.
 
+1. Gå till [Jira Developer Console](https://developer.atlassian.com/console.myapps/).
+1. Klicka på **Skapa** i området Mina program och välj sedan **OAuth 2.0-integrering**.
+1. Ange ett namn för integreringen, godkänn utvecklarvillkoren och klicka på **Skapa**.
 
+   Programmet skapas och du dirigeras till programkonfigurationsområdet.
+1. Klicka på **Behörigheter** i den vänstra navigeringspanelen.
+1. Gå till raden för **Jira API** i området Behörigheter.
+1. Klicka på **Lägg till** på Jira API-raden och klicka sedan på **Fortsätt** på samma rad.
+1. Aktivera följande scope:
 
-* För personliga åtkomsttoken (PAT):
+   * Visa Jira-utleveransdata (`read:jira-work`)
+   * Visa användarprofiler (`read:jira-user`)
+   * Skapa och hantera problem (`write:jira-work`)
 
-  | Fusion datacenter | Omdirigeringsadress |
-  |---|---|
-  | USA | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
-  | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira` |
-  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira` |
+1. Klicka på **Behörighet** i den vänstra navigeringen.
+1. Klicka på **Lägg till** på raden för OAuth 2.0-auktorisering.
+1. I fältet **Återanrops-URL** anger du en av följande URL:er, baserat på ditt Workfront Fusion-datacenter:
 
-  >[!IMPORTANT]
-  >
-  >Om du vill använda en PAT-fil måste du aktivera följande i filerna `jira/bin/WEB-INF/classes` i filen `jira-config.properties`:
-  >
-  >* `jira.rest.auth.allow.basic = true`
-  >* `jira.rest.csrf.disabled = true`
-  >
-  >Om filen inte finns måste du skapa den.
+   | Fusion datacenter | Återanrops-URL |
+   |---|---|
+   | USA | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
+   | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2` |
+   | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2` |
 
-### Skapa anslutningen till Jira i Workfront Fusion
+1. Klicka på **Inställningar** i den vänstra navigeringen.
+1. (Valfritt) Ange en beskrivning i fältet Beskrivning och klicka på **Spara ändringar** under det fältet.
+1. Kopiera klient-ID och klienthemlighet från inställningsområdet till en säker plats, eller lämna den här sidan öppen när du konfigurerar anslutningen i Fusion.
+1. Fortsätt till [Konfigurera OAutt2-anslutningen i Fusion](#configure-the-oauth2-connection-in-fusion)
 
-Så här skapar du en anslutning i Workfront Fusion:
+#### Konfigurera OAuth2-anslutningen i Fusion
+
+1. Klicka på **Lägg till** bredvid anslutningsfältet i en Jira-modul.
+1. Konfigurera följande fält:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>Anslutningstyp</p> </td> 
+      <td> <p>Välj <b>OAuth 2</b>.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>Anslutningsnamn</p> </td> 
+      <td> <p>Ange ett namn för den nya anslutningen.</p> </td> 
+     </tr> 
+     <tr>
+      <td role="rowheader">Tjänst-URL</td>
+      <td>Ange din Jira-instans-URL. Det här är den URL du använder för att komma åt Jira.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">Jira-kontotyp</td>
+       <td>Välj om du ansluter till Jira Cloud eller Jira Data Center.</td>
+     </tr>
+     <tr> 
+      <td role="rowheader">Klient-ID</td> 
+      <td> <p>Ange klient-ID för Jira-programmet som du skapade i <a href="#create-an-oauth2-application-in-jira" class="MCXref xref" data-mc-variable-override="">Skapa ett OAuth2-program i Jira</a>.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">Klienthemlighet</td> 
+      <td> <p>Ange klienthemligheten för Jira-programmet som du skapade i <a href="#create-an-oauth2-application-in-jira" class="MCXref xref" data-mc-variable-override="">Skapa ett OAuth2-program i Jira</a>.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">Ytterligare omfattningar</td> 
+      <td>Ange eventuella ytterligare scope som du vill lägga till i anslutningen.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">API-version</td> 
+      <td>Välj den Jira API-version som du vill att anslutningen ska ansluta till.</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. Klicka på **[!UICONTROL Continue]** för att skapa anslutningen och gå tillbaka till modulen.
+
+### Skapa en grundläggande anslutning till Jira
+
+Hur du skapar en grundläggande anslutning till Jira varierar beroende på om du skapar en anslutning till Jira Cloud eller Jira Data Center.
+
+* [Skapa en grundläggande anslutning till Jira Cloud](#create-a-basic-connection-to-jira-cloud)
+* [Skapa en grundläggande anslutning till Jira Data Center](#create-a-basic-connection-to-jira-data-center)
+
+#### Skapa en grundläggande anslutning till Jira Cloud
+
+>[!IMPORTANT]
+>
+> Om du vill skapa en grundläggande anslutning till Jira Cloud måste du ha en Jira API-token.
+>Instruktioner om hur du skaffar en Jira API-token finns i [Hantera API-token för ditt Atlassiankonto](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account) i dokumentationen för Atlassian.
+
 
 1. Klicka på **Lägg till** bredvid anslutningsfältet i en Jira-modul.
 1. Konfigurera följande fält:
@@ -138,24 +202,12 @@ Så här skapar du en anslutning i Workfront Fusion:
        <td>Välj om du ansluter till Jira Cloud eller Jira Data Center.</td>
      </tr>
      <tr> 
-      <td role="rowheader">Klient-ID</td> 
-      <td> <p>Om du skapar en OAuth 2-anslutning anger du ditt Jira Client-ID</p> </td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">Klienthemlighet</td> 
-      <td> <p>Om du skapar en OAuth 2-anslutning anger du din Jira-klienthemlighet</p> </td> 
-     </tr> 
-     <tr> 
       <td role="rowheader">E-post</td> 
-      <td>Om du skapar en grundläggande anslutning till Jira Cloud anger du din e-postadress.</td> 
+      <td>Ange din e-postadress.</td> 
      </tr> 
      <tr> 
       <td role="rowheader">API-token</td> 
-      <td>Om du skapar en grundläggande anslutning till Jira Cloud anger du din API-token.</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">Personlig åtkomsttoken</td> 
-      <td>Om du skapar en grundläggande anslutning till Jira Data Center anger du din personliga åtkomsttoken.</td> 
+      <td>Ange din API-token.</td> 
      </tr> 
      <tr> 
       <td role="rowheader">API-version</td> 
@@ -166,6 +218,74 @@ Så här skapar du en anslutning i Workfront Fusion:
 
 1. Klicka på **[!UICONTROL Continue]** för att skapa anslutningen och gå tillbaka till modulen.
 
+#### Skapa en grundläggande anslutning till Jira Data Center
+
+>[!IMPORTANT]
+>
+> Om du vill skapa en grundläggande anslutning till Jira Data Center måste du ha en personlig åtkomsttoken (PAT) för Jira.
+>Instruktioner om hur du hämtar en personlig Jira-åtkomsttoken finns i [Hantera API-token för ditt Atlassiankonto](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html) i dokumentationen för Atlassian.
+>Information om hur du skapar PAT finns i [Konfigurera din PAT](#configure-your-pat) i den här artikeln.
+
+1. Klicka på **Lägg till** bredvid anslutningsfältet i en Jira-modul.
+1. Konfigurera följande fält:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>Anslutningstyp</p> </td> 
+      <td> <p>Ange om du skapar en grundläggande anslutning eller en OAuth 2-anslutning.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>Anslutningsnamn</p> </td> 
+      <td> <p>Ange ett namn för den nya anslutningen.</p> </td> 
+     </tr> 
+     <tr>
+      <td role="rowheader">Tjänst-URL</td>
+      <td>Ange din Jira-instans-URL. Det här är den URL du använder för att komma åt Jira.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">Jira-kontotyp</td>
+       <td>Välj om du ansluter till Jira Cloud eller Jira Data Center.</td>
+     </tr>
+     <tr> 
+      <td role="rowheader">PAT (personlig åtkomsttoken)</td> 
+      <td>Ange din Jira-token för personlig åtkomst.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">API-version</td> 
+      <td>Välj den Jira API-version som du vill att anslutningen ska ansluta till.</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. Klicka på **[!UICONTROL Continue]** för att skapa anslutningen och gå tillbaka till modulen.
+
+##### Konfigurera din PAT
+
+Om du vill skapa en grundläggande anslutning till Jira Data Center måste du ha en personlig åtkomsttoken (PAT) för Jira.
+
+Instruktioner om hur du hämtar en personlig Jira-åtkomsttoken finns i [Hantera API-token för ditt Atlassiankonto](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html) i dokumentationen för Atlassian.
+
+Du kan behöva följande information när du konfigurerar din PAT
+
+* Omdirigerings-URL:er
+
+  | Fusion datacenter | Omdirigeringsadress |
+  |---|---|
+  | USA | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira` |
+
+* Filkonfigurationer
+
+Om du vill använda en PAT-fil måste du aktivera följande i filerna `jira/bin/WEB-INF/classes` i filen `jira-config.properties`:
+
+* `jira.rest.auth.allow.basic = true`
+* `jira.rest.csrf.disabled = true`
+
+Om filen inte finns måste du skapa den.
 
 ## Jira-moduler och deras fält
 

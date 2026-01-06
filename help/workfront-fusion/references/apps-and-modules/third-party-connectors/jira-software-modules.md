@@ -4,7 +4,7 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+source-git-commit: 017341e045a703f5d6e933a6df860f4fc8c0649d
 workflow-type: tm+mt
 source-wordcount: '2170'
 ht-degree: 0%
@@ -185,7 +185,7 @@ Om du vill hämta en privat nyckel för din [!DNL Workfront Fusion Jira]-anslutn
 #### Konfigurera klientappen som en konsument i [!DNL Jira]
 
 1. Logga in på din [!DNL Jira]-instans.
-1. Klicka på ikonen **[!UICONTROL [!DNL Jira] Settings]** ![Jira settings &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]** i den vänstra navigeringspanelen.
+1. Klicka på ikonen **[!UICONTROL [!DNL Jira] Settings]** ![Jira settings ](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]** i den vänstra navigeringspanelen.
 1. I fältet **[!UICONTROL Enter the URL of the application you want to link]** anger du
 
    ```
@@ -204,7 +204,7 @@ Om du vill hämta en privat nyckel för din [!DNL Workfront Fusion Jira]-anslutn
 1. Fyll i URL-fälten enligt följande:
 
    | Fält | Beskrivning |
-   |---|---|
+   | --- | --- |
    | [!UICONTROL Request Token URL] | `<Jira base url>/plugins/servlet/oauth/request-token` |
    | [!UICONTROL Authorization URL] | `<Jira base url>/plugins/servlet/oauth/authorize` |
    | [!UICONTROL Access Token URL] | `<Jira base url>/plugins/servlet/oauth/access-token` |
