@@ -8,9 +8,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: aa3bdd7d14c86085c36e3859f6d53c0cadb28920
+source-git-commit: c3d1abb898eec6fc84dc1de0fb7799d13d9e3571
 workflow-type: tm+mt
-source-wordcount: '4075'
+source-wordcount: '4171'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
   Mer information och instruktioner finns i [Konfiguration av tekniskt konto](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) i Adobe-dokumentationen.
 * Du måste använda systemadministratörsbehörighet för det tekniska kontot i området Adobe Admin Console produktprofiler.
 
-  Mer information och instruktioner finns i [Skapa systemadministratörer i Workfront med Adobe Admin Console](https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+  Mer information och instruktioner finns i [Skapa systemadministratörer i Workfront med Adobe Admin Console](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
 
 ### Jira
 
@@ -156,13 +156,13 @@ Om du vill använda dessa moduler måste följande skapas i Workfront:
 
 1. Skapa en systemintegreringsanvändare i Workfront. Den här användaren används endast av Workfront Fusion och representerar inte en mänsklig användare. Aktiviteter som tilldelats den här användaren utlöser scenariot som synkroniserar Workfront med Jira.
 
-   Instruktioner finns i [Lägga till användare](https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) i Workfront-dokumentationen.
+   Instruktioner finns i [Lägga till användare](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) i Workfront-dokumentationen.
 
 #### Skapa ett anpassat formulär i Workfront
 
 1. Börja skapa ett anpassat formulär i Workfront.
 
-   Instruktioner finns i [Skapa ett anpassat formulär](https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) i Workfront-dokumentationen.
+   Instruktioner finns i [Skapa ett anpassat formulär](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) i Workfront-dokumentationen.
 1. Namnge formuläret **JIRA-fält**.
 1. Inkludera följande fält i det anpassade formuläret:
 
@@ -179,7 +179,7 @@ Om du vill använda dessa moduler måste följande skapas i Workfront:
 >
 >Vi rekommenderar att du begränsar det här formuläret från att redigeras av andra användare. Du kan uppnå detta genom att se till att alla användare som läggs till i det anpassade formuläret bara har åtkomst till Visa.
 >
->Instruktioner finns i [Dela ett anpassat formulär](https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) i Workfront-dokumentationen.
+>Instruktioner finns i [Dela ett anpassat formulär](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) i Workfront-dokumentationen.
 
 ### Konfigurera anslutningar i Workfront Fusion
 
@@ -204,11 +204,11 @@ All användning av de här mallarna eller tilläggen av mallarna betraktas som a
 * **[Workfront till Jira: Skapa JIRA-problem från Workfront-aktivitet eller -problemtilldelning](#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)**
 * [JIRA till Workfront: JIRA till Workfront: Skicka uppdateringar om problem och kommentarer tillbaka till Workfront från Jira](#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)
 * [Workfront till Jira: Ändringar i Workfront uppgift till JIRA-problem](#scenario-3-workfront-to-jira-changes-to-workfront-task-to-jira-issue)
-* Workfront till Jira: Ändringar i Workfront-utgåvan av JIRA-utgåvan
-* Workfront till Jira: Skapa kommentar i JIRA när en ny anteckning om Workfront-aktivitet eller -problem
-* Workfront till Jira: Skapa kommentar i JIRA om borttagen anteckning om Workfront-aktivitet eller -problem
-* Workfront till Jira: Skapa kommentar i JIRA när ett nytt dokument om Workfront-aktivitet eller -problem skapas
-* Workfront till Jira: Skapa kommentar i JIRA om borttagna dokument om Workfront-aktivitet eller -problem
+* [Workfront till Jira: Ändringar i Workfront-utgåvan av JIRA-utgåvan](#scenario-4-workfront-to-jira-changes-to-workfront-issue-to-jira-issue)
+* [Workfront till Jira: Skapa kommentar i JIRA när en ny anteckning om Workfront-aktivitet eller -problem](#scenario-5-workfront-to-jira-create-comment-in-jira-when-new-note-on-workfront-task-or-issue)
+* [Workfront till Jira: Skapa kommentar i JIRA om borttagen anteckning om Workfront-aktivitet eller -problem](#scenario-6-workfront-to-jira-create-comment-in-jira-on-deleted-note-on-workfront-task-or-issue)
+* [Workfront till Jira: Skapa kommentar i JIRA när ett nytt dokument om Workfront-aktivitet eller -problem skapas](#scenario-7-workfront-to-jira-create-comment-in-jira-when-new-document-on-workfront-task-or-issue)
+* [Workfront till Jira: Skapa kommentar i JIRA om borttagna dokument om Workfront-aktivitet eller -problem](#scenario-8-workfront-to-jira-create-comment-in-jira-on-deleted-document-on-workfront-task-or-issue)
 
 ### Allmänna parametrar
 
@@ -274,9 +274,9 @@ Om en Workfront-uppgift tilldelas är problemet i Jira en uppgift. Om ett Workfr
 
 1. Fortsätt till [Mappa anpassade fält i Jira](#map-custom-fields-in-jira)
 
-#### Mappa anpassade fält i Jira.
+<!--#### Map custom fields in Jira. 
 
-<!--Awaiting feedback-->
+Awaiting feedback-->
 
 +++
 
@@ -355,7 +355,7 @@ Detta scenario skapar en Workfront-uppgift eller ett problem när ett problem sk
 1. Aktivera alternativet **Uteslut uppdateringar som gjorts av anslutningen**.
 1. Välj **i fältet** Postens ursprung`Updated record only`.
 1. Klicka på **Spara** för att spara webkroken och klicka sedan på **OK** för att spara utlösarmodulen.
-1. Ange följande variabler i den andra modulen och klicka sedan på **OK** för att spara modulen.
+1. Ange följande variabler i modulen **Ange JIRA-variabler** och klicka sedan på **OK** för att spara modulen.
 
    | Variabelnamn | Variabelvärde |
    |---|---|
@@ -366,16 +366,13 @@ Detta scenario skapar en Workfront-uppgift eller ett problem när ett problem sk
 1. I **each** Workfront-modulen i anslutningsfältet väljer du den Workfront-anslutning som använder inloggningsuppgifterna för systemintegrering och klickar sedan på **OK** för att spara modulen.
 1. I **each** Jira-modulen i anslutningsfältet väljer du den Jira-anslutning som använder inloggningsuppgifterna för systemintegrering och klickar sedan på **OK** för att spara modulen.
 
-
 +++
-
-
 
 ### Scenario 4: Workfront till Jira: Ändringar i Workfront-utgåvan av JIRA-utgåvan
 
 Det här scenariot skickar uppdateringar från Workfront-utgåvor till tidigare anslutna JIRA-utgåvor.
 
-+++**Expandera om du vill visa instruktioner för hur du konfigurerar scenario 4: WF-to-Jira-ändringar (problem)**
++++**Expandera om du vill visa instruktioner för hur du konfigurerar scenario 4: Workfront till Jira: Ändringar i Workfront-utgåvan av JIRA-problemet**
 
 1. Klicka på ikonen **Mallar** ![Mallar](assets/templates-icon.png) i den vänstra navigeringspanelen.
 1. Sök efter mallen med hjälp av sökfältet i skärmens övre vänstra hörn. Du kan söka efter mallnamn eller inkluderade program.
@@ -387,20 +384,20 @@ Det här scenariot skickar uppdateringar från Workfront-utgåvor till tidigare 
 1. Välj den organisation och det team som ska äga det här scenariot.
 1. Börja lägga till en webkrok i den första modulen.
 1. I anslutningsfältet väljer du den Workfront-anslutning som använder inloggningsuppgifterna för systemintegrering.
-1. Välj **i fältet** Posttyp`??`.
+1. Välj **i fältet** Posttyp`Issues`.
 1. Välj **i fältet** Läge`New state`.
 1. Konfigurera filtret med följande åtgärder med alternativet **And**:
 
    | Fält | Operator | Värde |
    |---|---|---|
-   | (Uppdateringar om problem) |  |  |
    | tilldelatToID | Lika med | Ange Workfront-ID för systemintegreringsanvändaren |
    | projectID | Lika med | Ange ID:t för det eller de projekt som du vill att webbkroken ska titta på. |
-   | WF ID | Finns |  |
+   | DE: Jira Key | Finns |  |
 
 1. Aktivera alternativet **Uteslut uppdateringar som gjorts av anslutningen**.
+1. Välj **i fältet** Postens ursprung`Updated record only`.
 1. Klicka på **Spara** för att spara webkroken och klicka sedan på **OK** för att spara utlösarmodulen.
-1. Ange följande variabler i den andra modulen och klicka sedan på **OK** för att spara modulen.
+1. Ange följande variabler i modulen **Ange JIRA-variabler** och klicka sedan på **OK** för att spara modulen.
 
    | Variabelnamn | Variabelvärde |
    |---|---|
@@ -411,14 +408,11 @@ Det här scenariot skickar uppdateringar från Workfront-utgåvor till tidigare 
 1. I **each** Workfront-modulen i anslutningsfältet väljer du den Workfront-anslutning som använder inloggningsuppgifterna för systemintegrering och klickar sedan på **OK** för att spara modulen.
 1. I **each** Jira-modulen i anslutningsfältet väljer du den Jira-anslutning som använder inloggningsuppgifterna för systemintegrering och klickar sedan på **OK** för att spara modulen.
 
-
 +++
 
+### Scenario 5: Workfront till Jira: Skapa kommentar i JIRA när en ny anteckning om Workfront aktivitet eller problem
 
-
-### Scenario 5: Nya anteckningar från WF till Jira (uppgifter och problem)
-
-+++**Expandera om du vill visa instruktioner om hur du konfigurerar scenario 5: WF-to-Jira Nya anteckningar (Aktiviteter och problem)**
++++**Expandera om du vill visa instruktioner för att konfigurera scenario 5: Workfront till Jira: Skapa kommentar i JIRA när en ny anteckning om Workfront-aktivitet eller -problem**
 
 1. Klicka på ikonen **Mallar** ![Mallar](assets/templates-icon.png) i den vänstra navigeringspanelen.
 1. Sök efter mallen med hjälp av sökfältet i skärmens övre vänstra hörn. Du kan söka efter mallnamn eller inkluderade program.
@@ -427,19 +421,20 @@ Det här scenariot skickar uppdateringar från Workfront-utgåvor till tidigare 
    En vy av mallen öppnas med information och en animering av dataflödet.
 1. Börja lägga till en webkrok i den första modulen.
 1. I anslutningsfältet väljer du den Workfront-anslutning som använder inloggningsuppgifterna för systemintegrering.
-1. Välj **i fältet** Posttyp`??`.
+1. Välj **i fältet** Posttyp`Note`.
 1. Välj **i fältet** Läge`New state`.
-1. Konfigurera filtret med följande åtgärder med alternativet **And**:
+1. Konfigurera filtret med följande åtgärder:
 
    | Fält | Operator | Värde |
    |---|---|---|
-   | (Skapa och uppdatera på anteckningar.) |  |  |
-   | tilldelatToID | Lika med | Ange Workfront-ID för systemintegreringsanvändaren |
-   | projectID | Lika med | Ange ID:t för det eller de projekt som du vill att webbkroken ska titta på. |
+   | projectID<br>AND<br>TaskID | Lika med <br><br>finns | Ange ID:t för det eller de projekt som du vill att webbkroken ska titta på. |
+   | ELLER |  |  |
+   | projectID<br>AND<br>OpTaskID | Lika med <br><br>finns | Ange ID:t för det eller de projekt som du vill att webbkroken ska titta på. |
 
 1. Aktivera alternativet **Uteslut uppdateringar som gjorts av anslutningen**.
+1. Välj **i fältet** Postens ursprung`New record only`.
 1. Klicka på **Spara** för att spara webkroken och klicka sedan på **OK** för att spara utlösarmodulen.
-1. Ange följande variabler i den andra modulen och klicka sedan på **OK** för att spara modulen.
+1. Ange följande variabler i modulen **Ange variabler** och klicka sedan på **OK** för att spara modulen.
 
    | Variabelnamn | Variabelvärde |
    |---|---|
@@ -447,20 +442,14 @@ Det här scenariot skickar uppdateringar från Workfront-utgåvor till tidigare 
    | JiraBaseURL | Bas-URL:en för det Jira-konto som du ansluter till. |
    | wfBaseURL | Bas-URL:en för det Workfront-konto du ansluter till. |
 
-1. Aktivera alternativet **Uteslut uppdateringar som gjorts av anslutningen**.
-1. Klicka på **Spara** för att spara webkroken och klicka sedan på **OK** för att spara utlösarmodulen.
 1. I **each** Workfront-modulen i anslutningsfältet väljer du den Workfront-anslutning som använder inloggningsuppgifterna för systemintegrering och klickar sedan på **OK** för att spara modulen.
 1. I **each** Jira-modulen i anslutningsfältet väljer du den Jira-anslutning som använder inloggningsuppgifterna för systemintegrering och klickar sedan på **OK** för att spara modulen.
 
-
 +++
 
+### Scenario 6: Workfront till Jira: Skapa kommentar i JIRA om borttagen anteckning om Workfront-aktivitet eller -problem
 
-
-
-### Scenario 6: WF-to-Jira Remove notes (Tasks and Issues)
-
-+++**Expandera om du vill visa instruktioner för konfiguration av scenario :WF-to-Jira Ta bort anteckningar (aktiviteter och problem)**
++++**Expandera om du vill visa instruktioner för hur du konfigurerar scenario 6: Workfront till Jira: Skapa kommentar i JIRA för borttagen anteckning om Workfront-aktivitet eller -problem**
 
 1. Klicka på ikonen **Mallar** ![Mallar](assets/templates-icon.png) i den vänstra navigeringspanelen.
 1. Sök efter mallen med hjälp av sökfältet i skärmens övre vänstra hörn. Du kan söka efter mallnamn eller inkluderade program.
@@ -469,18 +458,18 @@ Det här scenariot skickar uppdateringar från Workfront-utgåvor till tidigare 
    En vy av mallen öppnas med information och en animering av dataflödet.
 1. Börja lägga till en webkrok i den första modulen.
 1. I anslutningsfältet väljer du den Workfront-anslutning som använder inloggningsuppgifterna för systemintegrering.
-1. Välj **i fältet** Posttyp`??`.
+1. Välj **i fältet** Posttyp`Note`.
 1. Välj **i fältet** Läge`New state`.
-1. Konfigurera filtret med följande åtgärder med alternativet **And**:
+1. Konfigurera filtret med följande åtgärder:
 
    | Fält | Operator | Värde |
    |---|---|---|
-   | (Ta bort på anteckningar.) |  |  |
-   | tilldelatToID | Lika med | Ange Workfront-ID för systemintegreringsanvändaren |
-   | projectID | Lika med | Ange ID:t för det eller de projekt som du vill att webbkroken ska titta på. |
-   | WF ID | Finns |  |
+   | projectID<br>AND<br>TaskID | Lika med <br><br>finns | Ange ID:t för det eller de projekt som du vill att webbkroken ska titta på. |
+   | ELLER |  |  |
+   | projectID<br>AND<br>OpTaskID | Lika med <br><br>finns | Ange ID:t för det eller de projekt som du vill att webbkroken ska titta på. |
 
 1. Aktivera alternativet **Uteslut uppdateringar som gjorts av anslutningen**.
+1. Välj **i fältet** Postens ursprung`Deleted record only`.
 1. Klicka på **Spara** för att spara webkroken och klicka sedan på **OK** för att spara utlösarmodulen.
 1. Ange följande variabler i den andra modulen och klicka sedan på **OK** för att spara modulen.
 
@@ -493,14 +482,11 @@ Det här scenariot skickar uppdateringar från Workfront-utgåvor till tidigare 
 1. I **each** Workfront-modulen i anslutningsfältet väljer du den Workfront-anslutning som använder inloggningsuppgifterna för systemintegrering och klickar sedan på **OK** för att spara modulen.
 1. I **each** Jira-modulen i anslutningsfältet väljer du den Jira-anslutning som använder inloggningsuppgifterna för systemintegrering och klickar sedan på **OK** för att spara modulen.
 
-
 +++
 
+### Scenario 7: Workfront till Jira: Skapa kommentar i JIRA när ett nytt dokument om Workfront-aktivitet eller -problem
 
-
-### Scenario 7: Nya bifogade filer från WF till Jira (uppgifter och problem)
-
-+++**Expandera om du vill visa instruktioner för konfiguration av cenario 7: WF-to-Jira Nya bifogade filer (aktiviteter och problem)**
++++**Expandera om du vill visa instruktioner för att konfigurera scenario 7: Workfront till Jira: Skapa kommentar i JIRA när ett nytt dokument om Workfront-aktivitet eller -problem**
 
 1. Klicka på ikonen **Mallar** ![Mallar](assets/templates-icon.png) i den vänstra navigeringspanelen.
 1. Sök efter mallen med hjälp av sökfältet i skärmens övre vänstra hörn. Du kan söka efter mallnamn eller inkluderade program.
@@ -509,13 +495,12 @@ Det här scenariot skickar uppdateringar från Workfront-utgåvor till tidigare 
    En vy av mallen öppnas med information och en animering av dataflödet.
 1. Börja lägga till en webkrok i den första modulen.
 1. I anslutningsfältet väljer du den Workfront-anslutning som använder inloggningsuppgifterna för systemintegrering.
-1. Välj **i fältet** Posttyp`??`.
+1. Välj **i fältet** Posttyp`Document`.
 1. Välj **i fältet** Läge`New state`.
 1. Konfigurera filtret med följande åtgärder med alternativet **And**:
 
    | Fält | Operator | Värde |
    |---|---|---|
-   | (Skapa i dokument.) |  |  |
    | tilldelatToID | Lika med | Ange Workfront-ID för systemintegreringsanvändaren |
    | projectID | Lika med | Ange ID:t för det eller de projekt som du vill att webbkroken ska titta på. |
 
@@ -528,18 +513,16 @@ Det här scenariot skickar uppdateringar från Workfront-utgåvor till tidigare 
    | wfBaseURL | Bas-URL:en för det Workfront-konto du ansluter till. |
 
 1. Aktivera alternativet **Uteslut uppdateringar som gjorts av anslutningen**.
+1. Välj **i fältet** Postens ursprung`New record only`.
 1. Klicka på **Spara** för att spara webkroken och klicka sedan på **OK** för att spara utlösarmodulen.
 1. I **each** Workfront-modulen i anslutningsfältet väljer du den Workfront-anslutning som använder inloggningsuppgifterna för systemintegrering och klickar sedan på **OK** för att spara modulen.
 1. I **each** Jira-modulen i anslutningsfältet väljer du den Jira-anslutning som använder inloggningsuppgifterna för systemintegrering och klickar sedan på **OK** för att spara modulen.
 
-
 +++
 
+### Scenario 8: Workfront till Jira: Skapa kommentar i JIRA om borttagna dokument om Workfront-aktivitet eller -problem
 
-
-### Scenario 8: Ta bort bifogade filer (uppgifter och problem) från WF-till-Jira
-
-+++**Expandera om du vill visa instruktioner för att konfigurera scenario 8: Ta bort bifogade filer (aktiviteter och problem) från WF-till-Jira**
++++**Expandera om du vill visa instruktioner för att konfigurera scenario 8: Workfront till Jira: Skapa kommentar i JIRA för borttagna dokument för Workfront-uppgift eller -problem**
 
 1. Klicka på ikonen **Mallar** ![Mallar](assets/templates-icon.png) i den vänstra navigeringspanelen.
 1. Sök efter mallen med hjälp av sökfältet i skärmens övre vänstra hörn. Du kan söka efter mallnamn eller inkluderade program.
@@ -548,17 +531,17 @@ Det här scenariot skickar uppdateringar från Workfront-utgåvor till tidigare 
    En vy av mallen öppnas med information och en animering av dataflödet.
 1. Börja lägga till en webkrok i den första modulen.
 1. I anslutningsfältet väljer du den Workfront-anslutning som använder inloggningsuppgifterna för systemintegrering.
-1. Välj **i fältet** Posttyp`??`.
+1. Välj **i fältet** Posttyp`Document`.
 1. Välj **i fältet** Läge`New state`.
-1. Konfigurera filtret med följande åtgärder med alternativet **And**:
+1. Konfigurera filtret med följande åtgärder:
 
    | Fält | Operator | Värde |
    |---|---|---|
-   | (Ta bort på dokument) |  |  |
-   | tilldelatToID | Lika med | Ange Workfront-ID för systemintegreringsanvändaren |
-   | projectID | Lika med | Ange ID:t för det eller de projekt som du vill att webbkroken ska titta på. |
+   | projectID<br>AND<br>TaskID | Lika med <br><br>finns | Ange ID:t för det eller de projekt som du vill att webbkroken ska titta på. |
+   | ELLER |  |  |
+   | projectID<br>AND<br>OpTaskID | Lika med <br><br>finns | Ange ID:t för det eller de projekt som du vill att webbkroken ska titta på. |
 
-1. Ange följande variabler i den andra modulen.
+1. Ange följande variabler i modulen **Ange variabler**.
 
    | Variabelnamn | Variabelvärde |
    |---|---|
@@ -567,6 +550,7 @@ Det här scenariot skickar uppdateringar från Workfront-utgåvor till tidigare 
    | wfBaseURL | Bas-URL:en för det Workfront-konto du ansluter till. |
 
 1. Aktivera alternativet **Uteslut uppdateringar som gjorts av anslutningen**.
+1. Välj **i fältet** Postens ursprung`Deleted record only`.
 1. Klicka på **Spara** för att spara webkroken och klicka sedan på **OK** för att spara utlösarmodulen.
 1. I **each** Workfront-modulen i anslutningsfältet väljer du den Workfront-anslutning som använder inloggningsuppgifterna för systemintegrering och klickar sedan på **OK** för att spara modulen.
 1. I **each** Jira-modulen i anslutningsfältet väljer du den Jira-anslutning som använder inloggningsuppgifterna för systemintegrering och klickar sedan på **OK** för att spara modulen.
