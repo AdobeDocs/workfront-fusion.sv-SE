@@ -4,9 +4,9 @@ description: Kontot  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 52dbf75ebb65a1de1a7a86619af4c7633e0cbe03
+source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
 workflow-type: tm+mt
-source-wordcount: '3952'
+source-wordcount: '4082'
 ht-degree: 0%
 
 ---
@@ -1207,6 +1207,7 @@ Den här modulen uppdaterar metadatafält för en eller flera filer med värden 
 ### Övriga
 
 * [Göra ett anpassat API-anrop](#make-a-custom-api-call)
+* [Se händelser](#watch-events)
 * [Se metadatavärdet uppdaterat](#watch-metadata-value-updated)
 
 
@@ -1247,6 +1248,48 @@ Med den här modulen kan du utföra ett anpassat API-anrop.
   </tr> 
  </tbody> 
 </table>
+
+#### Se händelser
+
+Den här snabbutlösarmodulen startar ett scenario när den valda händelsen inträffar i Frame.io.
+
+Du kan använda en befintlig webbkrok eller skapa en ny.
+
+Så här skapar du en ny webbkrok:
+
+1. Klicka på **Lägg till** bredvid Webkrok-fältet.
+1. Fyll i följande information:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+     <td role="rowheader">Webkrocksnamn </td> 
+      <td> <p>Ange ett namn för den nya webbkroken.</p> </td> 
+     </tr> 
+     <tr> 
+       <td role="rowheader">[!UICONTROL Connection] </td> 
+       <td>Instruktioner om hur du skapar en anslutning till [!DNL Frame.io] finns i <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> Ansluta [!DNL Frame.io] till Adobe Workfront Fusion </a> i den här artikeln.</td> 
+     </tr> 
+     <tr> 
+     <td role="rowheader">[!UICONTROL Account ID] </td> 
+      <td> <p>Markera eller mappa kontot som innehåller arbetsytan där du vill se händelser.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+      <td> <p>Ange ID:t för arbetsytan där du vill se händelser.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Events]</td> 
+      <td> <p>Välj de händelser som du vill ska utlösa den här modulen</p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. Klicka på **Spara** för att spara webkroken och återgå till modulen.
+1. Klicka på **OK** i modulen Bevaka händelser för att spara konfigurationen.
+
 
 #### Se metadatavärdet uppdaterat
 
