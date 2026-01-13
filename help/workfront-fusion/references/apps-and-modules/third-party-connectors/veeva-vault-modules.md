@@ -3,9 +3,9 @@ title: Veeva Vault-moduler
 description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder Veeva Vault samt ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 881e5ba39d1730b641085cf0d02137d18e443135
+source-git-commit: b57ae36cf9225705c7f4923d7302b1749aa04d94
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2537'
 ht-degree: 0%
 
 ---
@@ -115,6 +115,26 @@ När du skapar en anslutning kan du välja om du vill använda ett lösenord ell
        <td role="rowheader">Anslutningsnamn</td> 
        <td> <p>Ange ett namn för anslutningen.</p> </td> 
       </tr> 
+      <tr> 
+       <td role="rowheader">Leverantör av auktoriseringsserver</td> 
+       <td> <p>Välj den provider som du vill använda för den här autentiseringen.</p> </td> 
+      </tr> 
+      <tr> 
+       <td role="rowheader">Ping-värd</td> 
+       <td> <p>Om du använder PingFederate anger du ping-värden.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">Omfång</td>
+        <td>
+          <p>Ange omfattningen för den här anslutningen.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Klient-ID</td>
+        <td>
+          <p>Om du använder Azure AD/Microsoft Entra ID för din auktoriseringsserverleverantör anger du klientorganisations-ID för den här anslutningen.</p>
+        </td>
+      </tr>
       <tr>
         <td role="rowheader">Klient-ID</td>
         <td>
@@ -128,18 +148,6 @@ När du skapar en anslutning kan du välja om du vill använda ett lösenord ell
         </td>
       </tr>
       <tr>
-        <td role="rowheader">Omfång</td>
-        <td>
-          <p>Ange omfattningen för den här anslutningen.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">Klient-ID</td>
-        <td>
-          <p>Ange klientorganisations-ID för den här anslutningen.</p>
-        </td>
-      </tr>
-      <tr>
         <td role="rowheader">Profil-ID</td>
         <td>
           <p>Ange ID:t för din OAuth2-/Copen ID-anslutningsprofil.</p>
@@ -149,6 +157,12 @@ När du skapar en anslutning kan du välja om du vill använda ett lösenord ell
        <td role="rowheader">Valv-DNS</td> 
        <td>Ange veeva-valvets DNS (domännamn).</p><p>Om du vill hitta DNS:en för ditt veeva-valv kontrollerar du den URL som du använder för att komma åt veeva-valvet.</p>I URL:en <code>https://my-dns.veevavault.com</code> är till exempel DNS <code>my-dns</code>. Du behöver inte ange hela URL:en.</td> 
       </tr> 
+      <tr>
+        <td role="rowheader">Förfallotid för din session i minuter</td>
+        <td>
+          <p>Ange sessionens förfallotid i minuter.</p>
+        </td>
+      </tr>
      </tbody> 
     </table>
 
