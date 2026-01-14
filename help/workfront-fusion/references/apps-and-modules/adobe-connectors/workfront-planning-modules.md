@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Workfront Planning] modulerna kan du starta ett Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 30ddefa8519e6f2052308482137d0fa018676902
+source-git-commit: 86747ffc38fddde91352558277d40572d13ba2b0
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1846'
 ht-degree: 0%
 
 ---
@@ -71,54 +71,129 @@ Adobe Workfront Planning Connector använder följande:
  </tbody> 
  </table>
 
-## Skapa en anslutning till [!DNL Adobe Workfront Planning] {#create-a-connection-to-adobe-workfront-planning}
+## Anslut Workfront Planning till Workfront Fusion
 
-Du kan skapa en anslutning till ditt [!DNL Workfront Planning]-konto direkt inifrån en Workfront Fusion-modul.
+Workfront Planning Connector använder OAuth 2.0 för att ansluta till Workfront Planning.
 
-1. Klicka på [!DNL Adobe Workfront Planning] bredvid anslutningsrutan i någon **[!UICONTROL Add]**-modul.
+Du kan skapa en anslutning till ditt Workfront Planning-konto direkt från en Workfront Planning Fusion-modul.
 
+* [Anslut till Workfront Planning med klient-ID och klienthemlighet](#connect-to-workfront-planning-using-client-id-and-client-secret)
+* [Anslut till Workfront Planning via en Server-till-Server-anslutning](#connect-to-workfront--planning-using-a-server-to-server-connection)
+
+### Anslut till Workfront Planning med klient-ID och klienthemlighet
+
+1. Klicka på **Lägg till** bredvid anslutningsfältet i en planeringsmodul i Adobe Workfront.
 1. Fyll i följande fält:
 
    <table style="table-layout:auto"> 
-      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
-      </col>
-      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
-      </col>
-      <tbody>
-        <tr>
-          <td role="rowheader">[!UICONTROL Connection name]</td>
-          <td>
-            <p>Ange ett namn för anslutningen.</p>
-          </td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Environment]</td>
-          <td>Ange om du ansluter till en produktionsmiljö eller icke-produktionsmiljö.</td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Type]</td>
-          <td>Välj om du vill ansluta till ett tjänstkonto eller ett personligt konto.</td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Client ID]<p>(Valfritt)</p></td>
-          <td>Ange din [!DNL Adobe] [!UICONTROL Client ID]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].</td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Client Secret]<p>(Valfritt)</p></td>
-          <td>Ange din [!DNL Adobe] [!UICONTROL Client Secret]. Detta finns i avsnittet [!UICONTROL Credentials details] i [!DNL Adobe Developer Console].
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]</td>
-          <td>Ange den URL som din instans av Workfront ska använda för att autentisera anslutningen. <p>Standardvärdet är <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Host prefix]</td>
-          <td>Ange värdprefixet.<p>Standardvärdet är <code>origin-</code>.</p>
-        </tr>
-      </tbody>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p>Välj <b>Adobe Workfront-autentiseringsanslutning</b>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Ange ett namn för den nya anslutningen.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Ange ditt Workfront klient-ID. Detta finns under OAuth2-program under Konfigurera i Workfront. Öppna det program du ansluter till för att se klient-ID:t.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Ange din Workfront-klienthemlighet. Detta finns under OAuth2-program under Konfigurera i Workfront. Om du inte har någon klienthemlighet för OAuth2-programmet i Workfront kan du generera en annan. Instruktioner finns i dokumentationen för Workfront.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Authentication URL]</td>
+        <td>Detta kan vara standardvärdet eller så kan du ange URL:en för din Workfront-instans följt av <code>/integrations/oauth2</code>. <p>Exempel: <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Host prefix]</td>
+        <td>I de flesta fall bör det här värdet vara <code>origin</code>.
+      </tr>
+    </tbody>
     </table>
 
 1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
+
+   Om du inte är inloggad på Workfront Planning dirigeras du till en inloggningsskärm. När du har loggat in kan du tillåta anslutningen.
+
+>[!NOTE]
+>
+>* OAuth 2.0-anslutningar till Workfront API är inte längre beroende av API-nycklar.
+>* Om du vill skapa en anslutning till en Workfront Sandbox-miljö måste du skapa ett OAuth2-program i den miljön och sedan använda det klient-ID och klienthemlighet som genereras av det programmet i anslutningen.
+
+### Anslut till Workfront Planning via en Server-till-Server-anslutning
+
+1. Klicka på **Lägg till** bredvid anslutningsfältet i en planeringsmodul i Adobe Workfront.
+1. Fyll i följande fält:
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p>Välj <b>Adobe Workfront Server-till-server-anslutning</b>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Ange ett namn för den nya anslutningen.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Instance name]</td>
+        <td>
+          <p>Ange namnet på din instans, även kallat din domän.</p><p>Exempel: Om din URL är <code>https://example.my.workfront.com</code> anger du <code>example</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Instance lane]</td>
+        <td>
+          <p>Ange den miljötyp som anslutningen ska ansluta till.</p><p>Exempel: Om din URL är <code>https://example.my.workfront.com</code> anger du <code>my</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Ange ditt Workfront klient-ID. Detta finns under OAuth2-program under Konfigurera i Workfront. Öppna det program du ansluter till för att se klient-ID:t.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Ange din Workfront-klienthemlighet. Detta finns under OAuth2-program under Konfigurera i Workfront. Om du inte har någon klienthemlighet för OAuth2-programmet i Workfront kan du generera en annan. Instruktioner finns i dokumentationen för Workfront.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Scopes]</td>
+        <td>Ange eventuella omfattningar för den här anslutningen.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Host prefix]</td>
+        <td>I de flesta fall bör det här värdet vara <code>origin</code>.
+      </tr>
+    </tbody>
+    </table>
+
+1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
+
+   Om du inte är inloggad på Workfront Planning dirigeras du till en inloggningsskärm. När du har loggat in kan du tillåta anslutningen.
+
+>[!NOTE]
+>
+>* OAuth 2.0-anslutningar till Workfront API är inte längre beroende av API-nycklar.
+>* Om du vill skapa en anslutning till en Workfront Sandbox-miljö måste du skapa ett OAuth2-program i den miljön och sedan använda det klient-ID och klienthemlighet som genereras av det programmet i anslutningen.
+
 
 ## [!DNL Adobe Workfront Planning]-moduler och deras fält
 
