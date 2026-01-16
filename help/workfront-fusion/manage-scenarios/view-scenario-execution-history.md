@@ -4,9 +4,9 @@ description: Du kan visa information om händelser eller körningar i ett scenar
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: ab12dbf0dbad25a8300eb1201fa3e0fde9148acc
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '859'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,10 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 ### Visa scenariohistorik på fliken Historik
 
 Fliken [!UICONTROL History] visar fler detaljer än vad som är tillgängligt på sidan [!UICONTROL Scenario detail]. Du kan även filtrera och sortera körningarna på fliken [!UICONTROL History].
+
+>[!NOTE]
+>
+>Om du visar en scenariohistorik medan den fortfarande körs, visar Fusion en anteckning som informerar dig om att data fortfarande bearbetas, och endast partiell scenariohistorik visas tills bearbetningen är slutförd.
 
 1. Klicka på fliken **[!UICONTROL Scenario]** i den vänstra panelen och klicka sedan på scenariot.
 
@@ -111,7 +115,7 @@ Fliken [!UICONTROL History] visar fler detaljer än vad som är tillgängligt p�
 
 Du kan filtrera körningshistoriken så att endast körningar med angivna värden visas.
 
-1. Öppna helsideshistoriken för ett scenario enligt beskrivningen i [Visa historik för scenariokörning på fliken [!UICONTROL History] &#x200B;](#view-scenario-history-on-the-history-tab) i den här artikeln.
+1. Öppna helsideshistoriken för ett scenario enligt beskrivningen i [Visa historik för scenariokörning på fliken [!UICONTROL History] ](#view-scenario-history-on-the-history-tab) i den här artikeln.
 1. Klicka på ikonen [!UICONTROL filter] ![Scenariofilterikon](assets/fusion-scenario-filter-icon.png) i kolumnrubriken som du vill filtrera efter.
 1. Ange de värden som du vill filtrera efter i dialogrutan [!UICONTROL filter].
 1. Klicka på **[!UICONTROL Save]**.
@@ -130,7 +134,7 @@ You can sort the scenario execution history.
 
 ## Sök i alla körningar av ett scenario
 
-1. Öppna helsideshistoriken för ett scenario enligt beskrivningen i [Visa historik för scenariokörning på fliken [!UICONTROL History] &#x200B;](#view-scenario-history-on-the-history-tab) i den här artikeln.
+1. Öppna helsideshistoriken för ett scenario enligt beskrivningen i [Visa historik för scenariokörning på fliken [!UICONTROL History] ](#view-scenario-history-on-the-history-tab) i den här artikeln.
 1. Klicka på **[!UICONTROL Fulltext search]** högst upp i listan över körningar.
 
    eller
