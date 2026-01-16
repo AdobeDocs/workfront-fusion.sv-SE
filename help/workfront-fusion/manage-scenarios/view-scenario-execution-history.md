@@ -115,7 +115,7 @@ Fliken [!UICONTROL History] visar fler detaljer än vad som är tillgängligt p�
 
 Du kan filtrera körningshistoriken så att endast körningar med angivna värden visas.
 
-1. Öppna helsideshistoriken för ett scenario enligt beskrivningen i [Visa historik för scenariokörning på fliken [!UICONTROL History] ](#view-scenario-history-on-the-history-tab) i den här artikeln.
+1. Öppna helsideshistoriken för ett scenario enligt beskrivningen i [Visa historik för scenariokörning på fliken [!UICONTROL History] &#x200B;](#view-scenario-history-on-the-history-tab) i den här artikeln.
 1. Klicka på ikonen [!UICONTROL filter] ![Scenariofilterikon](assets/fusion-scenario-filter-icon.png) i kolumnrubriken som du vill filtrera efter.
 1. Ange de värden som du vill filtrera efter i dialogrutan [!UICONTROL filter].
 1. Klicka på **[!UICONTROL Save]**.
@@ -134,7 +134,7 @@ You can sort the scenario execution history.
 
 ## Sök i alla körningar av ett scenario
 
-1. Öppna helsideshistoriken för ett scenario enligt beskrivningen i [Visa historik för scenariokörning på fliken [!UICONTROL History] ](#view-scenario-history-on-the-history-tab) i den här artikeln.
+1. Öppna helsideshistoriken för ett scenario enligt beskrivningen i [Visa historik för scenariokörning på fliken [!UICONTROL History] &#x200B;](#view-scenario-history-on-the-history-tab) i den här artikeln.
 1. Klicka på **[!UICONTROL Fulltext search]** högst upp i listan över körningar.
 
    eller
