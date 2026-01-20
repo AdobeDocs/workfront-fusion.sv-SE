@@ -4,9 +4,9 @@ description: Nyckelkedjan i Adobe Workfront Fusion hjälper dig att administrera
 author: Becky
 feature: Workfront Fusion
 exl-id: b92e54ed-fa03-4af7-be7b-436907b2bff9
-source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
+source-git-commit: 3ae274720ea2d7e4ee823a8467b750ad6f4d0c52
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 
 +++
 
-## Använda tangenter i Workfront Fusion
+## Skapa en nyckel
 
 På samma sätt som för anslutningar läggs nycklar till i enskilda moduler och är sedan tillgängliga för användning i andra moduler.
 
@@ -55,3 +55,11 @@ På samma sätt som för anslutningar läggs nycklar till i enskilda moduler och
    Klicka på **Lägg till** bredvid nyckelfältet, ange ett namn för nyckeln och själva nyckeln och klicka sedan på **Skapa en nyckel**.
 
 Om du vill visa befintliga tangenter klickar du på området **Tangenter** i den vänstra navigeringen.
+
+## Uppdatera en nyckel
+
+Du kan uppdatera en befintlig nyckel. När nyckeln uppdateras kommer alla scenarier som använder nyckeln att använda den uppdaterade nyckeln.
+
+1. I Fusion klickar du på Tangenter ![Tangenter-ikonen](assets/keys-icon.png) i den vänstra navigeringen.
+1. Markera den tangent som du vill redigera och klicka sedan på Redigera i fältet längst ned på skärmen.
+1. Redigera tangenten efter behov.
