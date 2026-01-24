@@ -1034,7 +1034,7 @@ Workfront har nyligen släppt en ny version av sin abonnemangstjänst. Den nya v
 
 Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
 
-Mer information om hur du bevarar dina Workfront Fusion-scenarier under händelseprenumerationsuppgraderingen, inklusive en webbinariainspelning, finns i [Bevara dina Fusion-scenarier under händelseprenumerationsuppgraderingen v2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
+Mer information om hur du bevarar dina Workfront Fusion-scenarier under händelseprenumerationsuppgraderingen, inklusive en webbinariainspelning, finns i [Bevara dina Fusion-scenarier under händelseprenumerationsuppgraderingen v2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=sv).
 
 <table style="table-layout:auto">
  <col> 
@@ -2362,7 +2362,7 @@ Vi rekommenderar att du kontrollerar att det här fungerar som du tänkt dig.
 >
 >   Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
 >
->   Mer information om hur du bevarar dina Workfront Fusion-scenarier under händelseprenumerationsuppgraderingen, inklusive en webbinariainspelning, finns i [Bevara dina Fusion-scenarier under Evenemangsprenumerationer (V2-uppgradering)(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
+>   Mer information om hur du bevarar dina Workfront Fusion-scenarier under händelseprenumerationsuppgraderingen, inklusive en webbinariainspelning, finns i [Bevara dina Fusion-scenarier under Evenemangsprenumerationer (V2-uppgradering)(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=sv)].
 
 Workfront [!UICONTROL Watch Events]-modulen utlöser scenarier baserat på en webkrok som skapar en händelseprenumeration i Workfront API. Händelseprenumerationen är en uppsättning data som avgör vilka händelser som skickas till webbkroken. Om du t.ex. har konfigurerat en [!UICONTROL Watch Events]-modul som bevakar problem, skickar händelseprenumerationen endast händelser som rör problem.
 
