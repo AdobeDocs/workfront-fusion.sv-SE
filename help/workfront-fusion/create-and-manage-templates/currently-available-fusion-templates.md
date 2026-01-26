@@ -4,9 +4,9 @@ description: Följande offentliga mallar är för närvarande tillgängliga i Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1660'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Om du vill visa tillgängliga mallar klickar du på ikonen **Mallar** ![Mallar](
 
 Mallarna automatiserar Workfront processer och arbetsflöden.
 
-### [!BADGE Nytt! &#x200B;]{type=Informative} Workfront - Justera automatiskt projekttidslinjen när aktiviteter har slutförts tidigt
+### Workfront - Justera automatiskt projekttidslinjen när åtgärderna är klara tidigt
 
 <!--New June 10, 2025-->
 
@@ -33,13 +33,13 @@ Om ditt team kämpar för att behålla tempot på grund av att projekttidslinjer
 
 Den här Fusion-mallen automatiserar den processen. När en uppgift har slutförts tidigt schemaläggs alla beroende (efterföljande) aktiviteter automatiskt om till att starta tidigare, vilket gör att teamet kan gå snabbare och arbeta smidigt.
 
-### [!BADGE Nytt! &#x200B;]{type=Informative} HTTP>CSV>WF - Skapa en lista med händelsedelare per domän och nivå och exportera till CSV
+### [!BADGE Nytt! ]{type=Informative} HTTP>CSV>WF - Skapa en lista med händelsedelare per domän och nivå och exportera till CSV
 
 Ladda ned prenumerationsinformation för event, skapa en CSV-fil och ladda upp filen till Workfront.
 
 <!--New August 8, 2025-->
 
-### [!BADGE Nytt! &#x200B;]{type=Informative} Workfront-kort - Ta bort arkiverade kort från den angivna kolumnen (på begäran)
+### Workfront-kort - ta bort arkiverade kort från angiven kolumn (på begäran)
 
 <!--New March 12, 2025-->
 
@@ -117,7 +117,7 @@ Granska dina projektmallar en gång i månaden med hjälp av din egen policy med
 
 Mallarna automatiserar arbetsflöden som kombinerar Workfront med Workfront Proof.
 
-### [!BADGE Nytt! &#x200B;]{type=Informative} Workfront > Workfront Proof - Ändra användarrollen för korrektur till skrivskyddad och lås korrektur när projektet avslutas
+### Workfront > Workfront Proof - Ändra användarrollen för korrektur till skrivskyddat och lås Korrektur när projektet avslutas
 
 <!--New March 12, 2025-->
 
@@ -184,7 +184,7 @@ Med den här mallen kan du se om en SharePoint-mapp har ändrats.
 
 Dessa mallar stöder integreringen mellan Workfront och Anaplan och förväntar sig en specifik konfiguration i båda Anaplan i Workfront. Mer information om de här mallarna och deras konfigurationer finns i artiklarna för de enskilda mallarna.
 
-Mer information om integreringen av Workfront-Anaplan finns i [Adobe Workfront med Anaplan](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) i dokumentationen för Workfront.
+Mer information om integreringen av Workfront-Anaplan finns i [Adobe Workfront med Anaplan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) i dokumentationen för Workfront.
 
 >[!NOTE]
 >
@@ -192,19 +192,34 @@ Mer information om integreringen av Workfront-Anaplan finns i [Adobe Workfront m
 
 ### Arbetsflöden för utgiftsoptimering
 
-* [Skicka Adobe Workfront-projektuppdateringar till ett [!DNL Anaplan] listobjekt](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [Skicka Adobe Workfront-utgifter till ett [!DNL Anaplan] listobjekt](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [Skicka uppdateringar av verkliga timmar för Adobe Workfront till ett [!DNL Anaplan] listobjekt](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [Skicka Adobe Workfront-projektuppdateringar till ett [!DNL Anaplan] listobjekt](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [Skicka Adobe Workfront-utgifter till ett [!DNL Anaplan] listobjekt](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [Skicka uppdateringar av verkliga timmar för Adobe Workfront till ett [!DNL Anaplan] listobjekt](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### Arbetsflöden för länkning av budgetbegäranden
 
-* [Skapa ett [!DNL Anaplan] listobjekt från en Adobe Workfront-budgetförfrågan](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Använd en [!DNL Anaplan] budgetallokering i ett Adobe Workfront-projekt](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Skapa ett [!DNL Anaplan] listobjekt från en Adobe Workfront-budgetförfrågan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Använd en [!DNL Anaplan] budgetallokering i ett Adobe Workfront-projekt](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### Arbetsflöden för att länka kampanjförfrågningar
 
-* [Skapa ett [!DNL Anaplan] listobjekt från en Adobe Workfront-kampanjförfrågan](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Använd en [!DNL Anaplan] budgetallokering på en kampanjförfrågan eller ett kampanjprojekt från Adobe Workfront](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Skapa ett [!DNL Anaplan] listobjekt från en Adobe Workfront-kampanjförfrågan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Använd en [!DNL Anaplan] budgetallokering på en kampanjförfrågan eller ett kampanjprojekt från Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+
+## Workfront - Jira-mallar
+
+Mallarna representerar vanliga arbetsflöden mellan Workfront och Jira.
+
+Mer information om de här mallarna finns i [Använda mallar för att ansluta Adobe Workfront Fusion och Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md).
+
+* [Workfront till Jira: Skapa JIRA-problem från Workfront-aktivitet eller -problemtilldelning](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)
+* [JIRA till Workfront: JIRA till Workfront: Skicka uppdateringar om problem och kommentarer tillbaka till Workfront från Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)
+* [Workfront till Jira: Ändringar i Workfront uppgift till JIRA-problem](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-3-workfront-to-jira-changes-to-workfront-task-to-jira-issue)
+* [Workfront till Jira: Ändringar i Workfront-utgåvan av JIRA-utgåvan](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-4-workfront-to-jira-changes-to-workfront-issue-to-jira-issue)
+* [Workfront till Jira: Skapa kommentar i JIRA när en ny anteckning om Workfront-aktivitet eller -problem](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-5-workfront-to-jira-create-comment-in-jira-when-new-note-on-workfront-task-or-issue)
+* [Workfront till Jira: Skapa kommentar i JIRA om borttagen anteckning om Workfront-aktivitet eller -problem](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-6-workfront-to-jira-create-comment-in-jira-on-deleted-note-on-workfront-task-or-issue)
+* [Workfront till Jira: Skapa kommentar i JIRA när ett nytt dokument om Workfront-aktivitet eller -problem skapas](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-7-workfront-to-jira-create-comment-in-jira-when-new-document-on-workfront-task-or-issue)
+* [Workfront till Jira: Skapa kommentar i JIRA om borttagna dokument om Workfront-aktivitet eller -problem](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-8-workfront-to-jira-create-comment-in-jira-on-deleted-document-on-workfront-task-or-issue)
 
 
 <!--[!BADGE New!]{type=Informative} -->
