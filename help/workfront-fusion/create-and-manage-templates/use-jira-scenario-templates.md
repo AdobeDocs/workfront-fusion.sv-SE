@@ -59,7 +59,7 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
   Mer information och instruktioner finns i [Konfiguration av tekniskt konto](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) i Adobe-dokumentationen.
 * Du måste använda systemadministratörsbehörighet för det tekniska kontot i området Adobe Admin Console produktprofiler.
 
-  Mer information och instruktioner finns i [Skapa systemadministratörer i Workfront med Adobe Admin Console](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+  Mer information och instruktioner finns i [Skapa systemadministratörer i Workfront med Adobe Admin Console](https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
 
 ### Jira
 
@@ -154,13 +154,13 @@ Om du vill använda dessa moduler måste följande skapas i Workfront:
 
 1. Skapa en systemintegreringsanvändare i Workfront. Den här användaren används endast av Workfront Fusion och representerar inte en mänsklig användare. Aktiviteter som tilldelats den här användaren utlöser scenariot som synkroniserar Workfront med Jira.
 
-   Instruktioner finns i [Lägga till användare](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) i Workfront-dokumentationen.
+   Instruktioner finns i [Lägga till användare](https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) i Workfront-dokumentationen.
 
 #### Skapa ett anpassat formulär i Workfront
 
 1. Börja skapa ett anpassat formulär i Workfront.
 
-   Instruktioner finns i [Skapa ett anpassat formulär](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) i Workfront-dokumentationen.
+   Instruktioner finns i [Skapa ett anpassat formulär](https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) i Workfront-dokumentationen.
 1. Namnge formuläret **JIRA-fält**.
 1. Inkludera följande fält i det anpassade formuläret:
 
@@ -177,7 +177,7 @@ Om du vill använda dessa moduler måste följande skapas i Workfront:
 >
 >Vi rekommenderar att du begränsar det här formuläret från att redigeras av andra användare. Du kan uppnå detta genom att se till att alla användare som läggs till i det anpassade formuläret bara har åtkomst till Visa.
 >
->Instruktioner finns i [Dela ett anpassat formulär](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) i Workfront-dokumentationen.
+>Instruktioner finns i [Dela ett anpassat formulär](https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) i Workfront-dokumentationen.
 
 ### Konfigurera anslutningar i Workfront Fusion
 
