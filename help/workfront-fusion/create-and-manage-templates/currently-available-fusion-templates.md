@@ -33,7 +33,7 @@ Om ditt team kämpar för att behålla tempot på grund av att projekttidslinjer
 
 Den här Fusion-mallen automatiserar den processen. När en uppgift har slutförts tidigt schemaläggs alla beroende (efterföljande) aktiviteter automatiskt om till att starta tidigare, vilket gör att teamet kan gå snabbare och arbeta smidigt.
 
-### [!BADGE Nytt! ]{type=Informative} HTTP>CSV>WF - Skapa en lista med händelsedelare per domän och nivå och exportera till CSV
+### [!BADGE Nytt! &#x200B;]{type=Informative} HTTP>CSV>WF - Skapa en lista med händelsedelare per domän och nivå och exportera till CSV
 
 Ladda ned prenumerationsinformation för event, skapa en CSV-fil och ladda upp filen till Workfront.
 
