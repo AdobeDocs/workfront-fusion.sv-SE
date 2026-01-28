@@ -5,9 +5,9 @@ description: Du kan konfigurera specifika inställningar för scenarier på pane
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
@@ -186,3 +186,7 @@ Mer information om fel finns i [Feltyper](/help/workfront-fusion/references/erro
 >* Mer än en arbetarpool är kopplad till din organisation.
 
 Den här inställningen tilldelar scenariot till en specifik arbetarpool som är kopplad till din organisation, så att du kan tilldela resurser till högprioriterade scenarier.
+
+>[!NOTE]
+>
+>Organisationer kan begära etablering av ytterligare en arbetarpool (för totalt 2).
