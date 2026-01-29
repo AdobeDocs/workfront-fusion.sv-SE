@@ -3,9 +3,9 @@ title: API-översikt
 description: API:er är ett sätt för program och tjänster att kommunicera med varandra. Fusion använder API:er för att kommunicera med det program du ansluter till. Varje program har ett separat API.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: b30aac8040cc0b6bcad92914b1c0997a8ddebdd5
+source-git-commit: 95cdc14b313a3f76d6feebabb59f72b4277ae9e4
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,11 @@ ht-degree: 0%
 API:er är ett sätt för program och tjänster att kommunicera med varandra. Fusion använder API:er för att kommunicera med de program som du ansluter till.
 
 API:er skapas och styrs av programägarna. Workfront API ägs till exempel av Workfront team på Adobe, och Microsoft Graph API ägs av Microsoft. Ägaren till API:t definierar vilka åtgärder som är tillgängliga via API:t.
+
+>[!NOTE]
+>
+>Workfront Fusion har ett eget API som du kan använda för att automatisera åtgärder i Fusion, till exempel för att hantera anslutningar, kopplingar, scenarier, exekveringar, loggar och andra viktiga automatiseringsresurser.
+>Mer information om Workfront Fusion API finns i [Workfront Fusion API](https://developer.adobe.com/workfront-fusion-apis/).
 
 ## Överväganden
 
