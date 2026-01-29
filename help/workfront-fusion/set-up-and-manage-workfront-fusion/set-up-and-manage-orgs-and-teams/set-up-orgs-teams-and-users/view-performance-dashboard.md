@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
+source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -51,9 +51,13 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 >
 >Mätvärden visas av arbetarpoolen. Om du vill visa en annan arbetarpool klickar du på fältet Pool i det övre vänstra hörnet av instrumentpanelen och väljer sedan den pool som du vill visa mätvärden för.
 
+<!--
+
 >[!NOTE]
 >
->Organisationer kan begära etablering för ytterligare en arbetarpool (för totalt 2).
+>Organizations can request provisioning for one additional worker pool (for a total of 2).
+
+-->
 
 På kontrollpanelen för Fusion-prestanda kan du se följande mätvärden.
 
