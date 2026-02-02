@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
+source-git-commit: b4c9cd075cc2bb7aa3d5c568bb91fb8ce5c6f31e
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
@@ -61,14 +61,22 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 
 På kontrollpanelen för Fusion-prestanda kan du se följande mätvärden.
 
-* Körningar som väntar på att bearbetas
-I det här diagrammet visas antalet körningar som väntar på att bearbetas vid en viss tidpunkt.
-* Poolanvändning
+* **Körningar väntar på att bearbetas**
+I det här diagrammet visas antalet körningar som väntar på att bearbetas (kallas även körningseftersläpning) vid en viss tidpunkt.
+
+  Ett stort antal körningar som väntar på att bearbetas kan påverka prestanda i Fusion-instansen. Du får ett meddelande om din exekveringstid når 5 000 exekveringar. Vi rekommenderar att du identifierar ansvariga scenarier och ändrar eller inaktiverar dem. Om eftersläpningen med höga exekveringsfel kvarstår skyddar Fusion-teamet prestanda för din Fusion-instans genom att inaktivera de ansvariga scenarierna.
+* **Poolanvändning**
 I det här diagrammet visas användningen av arbetarpooler över tiden. Om det här diagrammet regelbundet visar användningen av arbetspoolen kanske du vill tilldela en annan pool vissa scenarier.
-* Körningar per scenario
+
+  Om en pool närmar sig 100 % utnyttjande kan andra resurser som använder samma pool fördröjas eller störas. Om detta inträffar rekommenderar vi att du omtilldelar ett scenario med hög användning till en annan arbetarpool eller ändrar befintliga scenarier så att de blir mindre resurskrävande.
+* **Körningar per scenario**
 I det här diagrammet visas körningar per scenario. Olika färger representerar olika scenarier. När du håller pekaren över diagrammet visas ett fönster som visar vilken färg som är det scenario som ska användas.
-* Körningarnas längd
+
+  Du kan använda det här diagrammet för att identifiera vilka scenarier som kan orsaka en exekveringseftersläpning eller användning av hög arbetarpool.
+* **Varaktighet för körningar**
 I det här diagrammet visas körningar per scenario. Olika färger representerar olika scenarier. När du håller pekaren över diagrammet visas ett fönster som visar vilken färg som är det scenario som ska användas.
+
+  Du kan använda det här diagrammet för att identifiera scenarier som tar längre tid än vanligt, inklusive de som påverkas av problem med en ansluten app eller tjänst.
 
 ## Visa Fusion Performance Dashboard
 
