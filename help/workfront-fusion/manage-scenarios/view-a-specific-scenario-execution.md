@@ -4,7 +4,7 @@ description: Du kan visa information om en viss scenariokörning, inklusive filt
 author: Becky
 feature: Workfront Fusion
 exl-id: 34dd9836-9a1b-4ce2-b24e-ae769888a52a
-source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
+source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 Du kan visa en körning från scenariohistoriken.
 
 
-1. Klicka på fliken **[!UICONTROL Scenario]** i den vänstra panelen och klicka sedan på scenariot.
+1. Klicka på fliken **[!UICONTROL Scenarios]** i den vänstra panelen och klicka sedan på scenariot.
 
    eller
 

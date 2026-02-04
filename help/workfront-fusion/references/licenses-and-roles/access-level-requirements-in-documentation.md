@@ -5,7 +5,7 @@ author: Becky
 feature: System Setup and Administration
 role: Admin
 exl-id: 823aa376-fbfe-4750-82dc-4f34224c1a48
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Vissa rader innehåller information med etiketterna&quot;Nytt&quot; och&quot;Akt
    <td role="rowheader">Adobe Workfront package 
    <td> Adobe Workfront-paket avser den uppsättning funktioner som din organisation har köpt. De flesta Fusion-funktionerna finns i alla planer, men det finns några undantag som bara är tillgängliga för organisationer som har ett Ultimate Workfront-paket. 
    <ul><li>Kontakta Workfront-administratören om du vill ta reda på vilket Adobe Workfront-paket din organisation använder, inklusive om din organisation är under den nya eller aktuella paketeringsmodellen.</li>
-   <li>Instruktioner om hur en Workfront-administratör kan hitta din organisations Workfront-paket finns i <a href="https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">Visa din organisations kluster och Workfront-plan</a> i Workfront-dokumentationen.</li><li>Mer information om nya Workfront-paket finns i <a href="https://business.adobe.com/se/products/workfront/pricing.html">Adobe Workfront priser och paketering</a>.</li></ul> </td> 
+   <li>Instruktioner om hur en Workfront-administratör kan hitta din organisations Workfront-paket finns i <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">Visa din organisations kluster och Workfront-plan</a> i Workfront-dokumentationen.</li><li>Mer information om nya Workfront-paket finns i <a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfront priser och paketering</a>.</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront-licens</td> 
@@ -43,9 +43,9 @@ Vissa rader innehåller information med etiketterna&quot;Nytt&quot; och&quot;Akt
    <li>Kontakta Workfront-administratören om du vill veta vilken licens du har tilldelats.</li>
    <li>Adobe Workfront går över till en ny prissättnings- och paketeringsmodell. Mer information om licenser finns i:
    <ul>
-   <li>Nytt: <a href="https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Översikt över nya licenser</a></li>
-   <li>Aktuell: <a href="https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Licensöversikt</a></li></ul></li>
-   <li>Om du har rätt åtkomstnivå och fortfarande inte har åtkomst, frågar du Workfront-administratören om de har angett ytterligare begränsningar för din åtkomstnivå. Mer information om hur en Workfront-administratör kan ändra åtkomstnivån finns i <a href="https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">Skapa eller ändra anpassade åtkomstnivåer</a>.
+   <li>Nytt: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Översikt över nya licenser</a></li>
+   <li>Aktuell: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Licensöversikt</a></li></ul></li>
+   <li>Om du har rätt åtkomstnivå och fortfarande inte har åtkomst, frågar du Workfront-administratören om de har angett ytterligare begränsningar för din åtkomstnivå. Mer information om hur en Workfront-administratör kan ändra åtkomstnivån finns i <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">Skapa eller ändra anpassade åtkomstnivåer</a>.
    </ul>
       </p> </td> 
   </tr> 
@@ -55,6 +55,7 @@ Vissa rader innehåller information med etiketterna&quot;Nytt&quot; och&quot;Akt
   <tr> 
    <td role="rowheader">Åtkomstnivå</td> 
    <td> Åtkomstnivåer är behörighetsgrupper för åtgärder som du kan utföra i Fusion. Vissa åtgärder kan till exempel bara utföras av en Fusion Administrator. 
+   </tr>
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-licens</td> 
    <td>Adobe Workfront Fusion har en separat licensieringsmodell än Workfront. 

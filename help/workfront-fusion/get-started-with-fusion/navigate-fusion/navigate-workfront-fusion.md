@@ -4,7 +4,7 @@ description: När du öppnar Fusion har du många alternativ för åtgärder. De
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
+source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Du kan navigera genom de olika områdena i Adobe Workfront Fusion med hjälp av 
 I den här artikeln presenteras de här områdena och här finns länkar till mer information om varje område.
 
 | Område | Beskrivning | Mer information finns i |
-|---|---|---|
+| --- | --- | --- |
 | Organisationsöversikt <br> ![Organisationsikon](assets/org-icon.png) | Här finns information om din Fusion-organisation. Du kan visa antalet åtgärder som har utförts av scenarier i den här organisationen samt en lista över aktiva scenarier. Du kan även visa listor över den här organisationens team, användare och miljöer.<br>Den valda organisationen visas ovanför den här ikonen. | [Organisationer och team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Teamöversikt <br> ![Teamikon](assets/team-icon.png) | Här kan du se information om Fusion-team, t.ex. antalet åtgärder som utförts av scenarier i det här teamet och en lista över aktiva scenarier. Du kan också visa och hantera användare i det här teamet. När du visar ett team kan du välja ett annat team i en listruta högst upp på den här sidan.<br>Det valda teamet visas ovanför den här ikonen.<br>Du kan behöva skapa ett team innan du kan se gruppöversikten eller någon av de gruppavsnitt som listas i den här artikeln. | [Organisationer och team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Scenarier <br> ![Scenarioikon](assets/scenarios-icon.png) | Ett scenario i Fusion representerar ett automatiserat arbetsflöde. Ett scenario kan till exempel bevaka inkommande Workfront-begäranden och konvertera dem till projekt, medan ett annat scenario kan generera bilder, överföra dem till en dokumentleverantör och lägga till godkännandeuppgifter i Workfront. Det mesta av ditt arbete i Fusion är att konfigurera och hantera scenarier. I området Scenarier kan du visa och ordna en lista över teamets scenarier, välja enskilda scenarier att visa eller ändra eller börja skapa ett nytt scenario. | [Scenarioöversikt](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) |
