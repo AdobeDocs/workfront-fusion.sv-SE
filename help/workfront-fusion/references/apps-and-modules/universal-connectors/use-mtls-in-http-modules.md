@@ -4,9 +4,9 @@ description: Du kan använda Mutual TLS i dina Adobe Workfront Fusion HTTP-modul
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+source-git-commit: b48b7ad0954208ae80e99501e9297a3adaede228
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,25 @@ Du kan använda följande länkar för att hämta Workfront Fusion publika certi
 
 >[!IMPORTANT]
 >
+>* Dessa offentliga Workfront Fusion-certifikat upphör att gälla den **2 mars 2027** (USA och EU) eller **8 mars 2027** (Azure). När ditt certifikat har upphört att gälla måste du överföra ett nytt certifikat till webbtjänsten. Vi rekommenderar att du:
+>
+>   * Notera förfallodatumet och ange en påminnelse för dig själv om att överföra certifikatet till din webbtjänst.
+>   * Bokmärk den här sidan för att enkelt hitta nya certifikat.
+>
+>* Dessa är mTLS-certifikat som inte är jokertecken.
+
+| Datacenter | Hämta länk | Giltiga datum |
+| --- | --- | --- |
+| Amerikanskt datacenter | [Hämta Workfront Fusion US-certifikat 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | 29 januari 2026-2 mars 2027 |
+| EU Datacenter | [Hämta Workfront Fusion EU Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | 29 januari 2026-2 mars 2027 |
+| Azure-kluster | [Hämta Workfront Fusion Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | 4 februari 2026-8 mars 2027 |
+
+
+### Certifikat för 2025
+
+>[!IMPORTANT]
+>
+>* Vi rekommenderar att du installerar certifikaten för 2026, som finns ovan.
 >* Dessa offentliga Workfront Fusion-certifikat upphör att gälla den **4 april 2026** (USA och EU) eller den **2 november 2025** (Azure). När ditt certifikat har upphört att gälla måste du överföra ett nytt certifikat till webbtjänsten. Vi rekommenderar att du:
 >
 >   * Notera förfallodatumet och ange en påminnelse för dig själv om att överföra certifikatet till din webbtjänst.
@@ -91,7 +110,7 @@ Du kan använda följande länkar för att hämta Workfront Fusion publika certi
 >* Dessa är mTLS-certifikat som inte är jokertecken.
 
 | Datacenter | Hämta länk | Giltiga datum |
-|---|---|---|
+| --- | --- | --- |
 | Amerikanskt datacenter | [Hämta Workfront Fusion US-certifikat 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | 3 mars 2025-4 april 2026 |
 | EU Datacenter | [Hämta Workfront Fusion EU Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | 3 mars 2025-4 april 2026 |
 | Azure-kluster | [Hämta Workfront Fusion Azure Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 24 oktober 2024-25 november 2025 |
