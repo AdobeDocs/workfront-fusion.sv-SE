@@ -4,9 +4,9 @@ description: Du kan använda Mutual TLS i dina Adobe Workfront Fusion HTTP-modul
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: e0b25da3d0c7a2cab454adafc7525f14c4f0b4eb
+source-git-commit: 6a4bf090e7804f0b2b9ca6eefbb7490d1c35b6ce
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Du kan använda följande länkar för att hämta Workfront Fusion publika certi
 
 >[!IMPORTANT]
 >
->* Dessa offentliga Workfront Fusion-certifikat upphör att gälla den **2 mars 2027** (USA och EU) eller **8 mars 2027** (Azure). När ditt certifikat har upphört att gälla måste du överföra ett nytt certifikat till webbtjänsten. Vi rekommenderar att du:
+>* Dessa offentliga Workfront Fusion-certifikat upphör att gälla på olika dagar beroende på ditt kluster. Markera diagrammet nedan för att se när det upphör att gälla. När det upphör att gälla måste du överföra ett nytt certifikat till webbtjänsten. Vi rekommenderar att du:
 >
 >   * Notera förfallodatumet och ange en påminnelse för dig själv om att överföra certifikatet till din webbtjänst.
 >   * Bokmärk den här sidan för att enkelt hitta nya certifikat.
@@ -92,9 +92,10 @@ Du kan använda följande länkar för att hämta Workfront Fusion publika certi
 
 | Datacenter | Hämta länk | Giltiga datum |
 | --- | --- | --- |
-| Amerikanskt datacenter | [Hämta Workfront Fusion US-certifikat 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | 29 januari 2026-2 mars 2027 |
-| EU Datacenter | [Hämta Workfront Fusion EU Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | 29 januari 2026-2 mars 2027 |
-| Azure-kluster | [Hämta Workfront Fusion Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | 4 februari 2026-8 mars 2027 |
+| AWS Datacenter, USA | [Hämta Workfront Fusion US-certifikat 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | 29 januari 2026-2 mars 2027 |
+| US Azure-kluster | [Hämta Workfront Fusion US Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | 21 september 2025-23 oktober 2026 |
+| AWS Datacenter | [Hämta Workfront Fusion EU Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | 29 januari 2026-2 mars 2027 |
+| EU Azure-kluster | [Hämta Workfront Fusion EU Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | 4 februari 2026-8 mars 2027 |
 
 
 ### Certifikat för 2025
