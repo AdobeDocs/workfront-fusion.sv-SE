@@ -3,9 +3,8 @@ title: Visa kontrollpanelen för prestanda för en organisation
 description: Fusion-administratörer kan visa en kontrollpanel som visar en organisations exekveringsvärden.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: b4c9cd075cc2bb7aa3d5c568bb91fb8ce5c6f31e
+exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
+source-git-commit: 1d8504b10d9ca74a5df5532232cda235c67b0185
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 0%
@@ -93,6 +92,3 @@ I det här diagrammet visas körningar per scenario. Olika färger representerar
 1. Om du vill ändra tidsintervallet för kontrollpanelen markerar du fältet Tidsintervall i det övre högra hörnet av kontrollpanelen och väljer sedan en ny tidsram. Den längsta tillgängliga tidsramen är 24 timmar och den kortaste är 15 minuter.
 1. Om du vill uppdatera diagrammen klickar du på ikonen Uppdatera i det övre högra hörnet av kontrollpanelen.
 1. Om du vill visa en annan arbetarpool klickar du på fältet Pool i det övre vänstra hörnet av instrumentpanelen och väljer sedan den pool som du vill visa.
-
-
-
