@@ -4,7 +4,7 @@ description: I följande ordlista förklaras några vanliga termer i Adobe Workf
 author: Becky
 feature: Workfront Fusion
 exl-id: 7f098ec2-8594-4e5d-9ce7-d1738a05f9a6
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: c89536b6d3e6ca5f7e5048b8487a2d86bda3b213
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 0%
