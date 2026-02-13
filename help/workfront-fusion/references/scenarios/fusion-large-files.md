@@ -4,9 +4,9 @@ description: Stöd för stora filer finns för närvarande för Workfront- och H
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: a68de976258d17631459f0951d28657fd0e0dcf6
+source-git-commit: 2493ce7ccca599e30b44b62558573ce2a55b03e0
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,7 @@ För närvarande har följande kopplingar stöd för stora filer.
    * Använda PSD Edits
 * SharePoint
    * Skapa en fil
+   * Skapa en fil (äldre)
    * Hämta en fil
 * Salesforce
    * Överför fil

@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 2493ce7ccca599e30b44b62558573ce2a55b03e0
 workflow-type: tm+mt
-source-wordcount: '3375'
+source-wordcount: '3489'
 ht-degree: 0%
 
 ---
@@ -222,7 +222,37 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 #### Skapa en fil
 
-Den här modulen returnerar ändringar som har gjorts i SharePoint.
+Den här modulen returnerar en fil i SharePoint. Modulen har bättre prestanda än modulen Skapa en fil (äldre).
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Microsoft SharePoint Online-konto till Workfront Fusion finns i <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Ansluta Microsoft SharePoint Online till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
+   <td> <p>Välj hur du vill identifiera platsen för mappen som du vill hämta ändringar i.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Ange eller mappa <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL Drive ID]</strong> och <strong>[!UICONTROL Folder ID]</strong> för den plats där du vill skapa filen.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Välj den plats där du vill skapa filen. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file] </td>
+      <td><p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p></td>
+  </tr>  </tbody> 
+</table>
+
+
+
+#### Skapa en fil (äldre)
+
+I den här modulen skapas en fil i SharePoint.
+
+För bättre prestanda rekommenderar vi att du använder modulen [Skapa en fil](#create-a-file).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -242,7 +272,7 @@ Den här modulen returnerar ändringar som har gjorts i SharePoint.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
-      <p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p>
+      <td><p>Välj en källfil från en tidigare modul eller mappa källfilens namn och data.</p></td>
   </tr>  </tbody> 
 </table>
 
