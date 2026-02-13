@@ -65,7 +65,7 @@ Innan du kan skapa anpassade funktioner måste du initiera körningsmiljön. Det
 >
 >När initieringen är klar kan alla användare i det team där initieringen utfördes skapa och använda funktioner.
 
-1. Klicka på fliken **Funktioner** ![Funktioner ](assets/functions-icon.png) i den vänstra panelen.
+1. Klicka på fliken **Funktioner** ![Funktioner &#x200B;](assets/functions-icon.png) i den vänstra panelen.
 
    Om du ännu inte har konfigurerat runtime-modulen visas meddelandet&quot;Körningsmiljön har inte konfigurerats&quot;.
 1. Klicka på **Initiera körningsmiljö**.
@@ -85,7 +85,7 @@ När körningsmiljön har konfigurerats kan du börja skapa anpassade funktioner
 >   * Ändra namnet
 >   * Visa standardparametervärden
 
-1. Klicka på fliken **Funktioner** ![Funktioner ](assets/functions-icon.png) i den vänstra panelen.
+1. Klicka på fliken **Funktioner** ![Funktioner &#x200B;](assets/functions-icon.png) i den vänstra panelen.
 1. Klicka på **Lägg till funktion**.
 1. Ange ett namn för den anpassade funktionen.
 
