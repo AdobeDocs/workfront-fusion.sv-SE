@@ -3,9 +3,10 @@ title: Slack moduler
 description: I ett [!DNL Adobe Workfront Fusion] scenario kan du automatisera arbetsflöden som använder Slack och ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 0dbe23c5eb7a0d890b7b543f2f310b163baa3793
+exl-id: 4c14fa36-8333-40d6-bd0a-fc6b0d9f4410
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
 workflow-type: tm+mt
-source-wordcount: '3805'
+source-wordcount: '3806'
 ht-degree: 0%
 
 ---
@@ -294,7 +295,7 @@ Sökmodulen returnerar meddelanden som matchar en sökfråga.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
-   <td> <p>Ange frågan som du vill söka efter. </p> <p>Mer information om hur du skapar formler från mappningspanelen finns i <a href="/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md" class="MCXref xref">Mappa objekt med funktioner i [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Ange frågan som du vill söka efter. </p> <p>Mer information om hur du skapar formler från mappningspanelen finns i <a href="/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md" class="MCXref xref">Mappa objekt med inbyggda funktioner i [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
@@ -1528,4 +1529,3 @@ Följande terminologi kan vara användbar när du konfigurerar [!DNL Slack] modu
 * **Privat kanal**: tidigare [!UICONTROL Group]
 * **Direktmeddelande**: tidigare [!UICONTROL IM]
 * **Kanal**: [!UICONTROL Conversation] i API-dokumentationen, [!UICONTROL channel] i appen [!DNL Slack].
-

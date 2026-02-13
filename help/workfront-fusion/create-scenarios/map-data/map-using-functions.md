@@ -1,22 +1,23 @@
 ---
-title: Mappa objekt med funktioner
+title: Mappa objekt med inbyggda funktioner
 description: När du mappar objekt kan du använda funktioner för att skapa enkla eller komplexa formler.
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
 
-# Mappa ett objekt med funktioner
+# Mappa ett objekt med inbyggda funktioner
 
-När du mappar objekt kan du använda funktioner för att skapa enkla eller komplexa formler. De tillgängliga funktionerna liknar funktionerna i Excel och i vissa programmeringsspråk:
+Workfront Fusion innehåller inbyggda funktioner med vilka du kan skapa enkla eller komplexa formler. Funktionerna omfattar en mängd olika användningsområden, bland annat funktioner för arrayer, strängar, tal och data från tidigare moduler.
 
-* De utvärderar allmän logik, matematik, text, datum och arrayer.
-* Med dem kan du utföra villkorsstyrd logik och omformningar av objektvärden, som att konvertera text till versaler, trimma text, konvertera ett datum till ett annat format och mycket mer.
+Dessutom kan du skapa anpassade funktioner som dina scenarier sedan kan använda för att omforma och hantera data.
+
+Mer information och instruktioner om anpassade funktioner finns i [Mappa data med anpassade funktioner](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
 
 ## Åtkomstkrav
 
@@ -37,7 +38,7 @@ När du mappar objekt kan du använda funktioner för att skapa enkla eller komp
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Om ni har ett Select- eller Prime Workfront-paket som inte innehåller Workfront Automation and Integration måste ni köpa Adobe Workfront Fusion.</li></ul>
+   <p><ul><li>Om ni har ett Select- eller Prime Workfront-paket som inte innehåller Workfront Automation and Integration måste ni köpa Adobe Workfront Fusion.</li><li>Du måste ha en licens för Adobe App Builder för att kunna använda anpassade funktioner.</ul>
    </td> 
   </tr>
  </tbody> 
@@ -47,7 +48,14 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 
 +++
 
-## Infoga funktioner i fält
+## Mappa data med inbyggda funktioner
+
+När du mappar objekt kan du använda funktioner för att skapa enkla eller komplexa formler. De tillgängliga funktionerna liknar funktionerna i Excel och i vissa programmeringsspråk:
+
+* De utvärderar allmän logik, matematik, text, datum och arrayer.
+* Med dem kan du utföra villkorsstyrd logik och omformningar av objektvärden, som att konvertera text till versaler, trimma text, konvertera ett datum till ett annat format och mycket mer.
+
+### Infoga funktioner i fält
 
 Så här infogar du en funktion i ett fält:
 
@@ -86,7 +94,7 @@ I det här exemplet begränsar delsträngsfunktionen projektnamnet till 50 tecke
 
 >[!ENDSHADEBOX]
 
-## Kapslingsfunktioner
+### Kapslingsfunktioner
 
 Du kan kapsla in funktioner i varandra.
 
@@ -112,7 +120,7 @@ Så här kapslar du en funktion:
 1. Fortsätt konfigurera funktionen efter behov.
 1. Fortsätt konfigurera modulen eller klicka på **OK**.
 
-## Använd [!DNL Google Sheets]-funktioner
+### Använd [!DNL Google Sheets]-funktioner
 
 Om Workfront Fusion inte innehåller någon funktion som du vill använda, men den finns i [!DNL Google Sheets], kan du använda den genom att följa de här stegen:
 

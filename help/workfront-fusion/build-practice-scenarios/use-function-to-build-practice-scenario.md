@@ -7,9 +7,9 @@ description: Lär dig hur du lägger till en funktion för att uppdatera en arbe
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -111,4 +111,4 @@ När det här scenariot konverterar en begäran till ett projekt är projektets 
 
 ## Resurser
 
-* [Mappa objekt med funktioner](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+* [Mappa objekt med inbyggda funktioner](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)

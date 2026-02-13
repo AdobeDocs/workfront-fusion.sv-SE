@@ -4,9 +4,9 @@ description: Mappning är processen att tilldela en moduls utdata, strukturerade
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ De andra flikarna innehåller funktioner, operatorer och nyckelord som du kan an
 
 Mer information om funktionsflikar finns i [Funktionsöversikt](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
-Mer information om att mappa objekt med funktioner finns i [Mappa objekt med funktioner](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
+Mer information om att mappa objekt med funktioner finns i [Mappa objekt med inbyggda funktioner](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
 
 ## Samlingar
 

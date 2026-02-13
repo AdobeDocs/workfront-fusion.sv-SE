@@ -4,9 +4,9 @@ description: När du öppnar Fusion har du många alternativ för åtgärder. De
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,7 @@ I den här artikeln presenteras de här områdena och här finns länkar till me
 | Tangenter <br> ![Tangentikon](assets/keys-icon.png) | Offentliga och privata nycklar används för att kryptera och dekryptera data. Den offentliga nyckeln kan distribueras och alla som har den offentliga nyckeln kan kryptera data, men bara den privata nyckeln kan dekryptera den. På samma sätt kan en användare med en privat nyckel kryptera data som alla med den offentliga nyckeln kan dekryptera. I området Nycklar kan du visa och hantera nycklar som ditt team äger. | [Tangenter](/help/workfront-fusion/references/modules/keys.md) |
 | Datalager <br> ![Ikon för datalager](assets/data-store-icon.png) | Datalager är små databaser som finns utanför scenarier. Med datalager kan du överföra data mellan olika scenarier eller mellan olika körningar av ett scenario. I området Datalager kan du visa och hantera datalager som ägs av ditt team. | [Datalager](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) |
 | Datastrukturer <br> ![Ikon för datastrukturer](assets/data-structure-icon.png) | Datastrukturer beskriver formatet för data som överförs till Fusion och används ofta för serialisering eller tolkning av format som JSON, XML och CSV. I datastrukturerna kan du visa och hantera datastrukturer som ägs av ditt team. | [Datastrukturer](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) |
+| Funktioner <br> ![Funktionsikon](assets/functions-icon.png) | Anpassade funktioner är JavaScript-funktioner som kan läggas till i scenarier för att hantera och omforma data. <br>Din organisation måste ha en licens för Adobe App Builder för att kunna skapa och använda anpassade funktioner. | [Mappa data med anpassade funktioner](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) |
 
 >[!NOTE]
 >
