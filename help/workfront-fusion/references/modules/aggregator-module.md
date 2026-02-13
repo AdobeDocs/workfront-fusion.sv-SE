@@ -4,7 +4,7 @@ description: En aggregeringsmodul är en typ av modul som utformats för att sam
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -42,7 +42,9 @@ En aggregeringsmodul är en modul som sammanfogar flera datapaket till ett enda 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## [!UICONTROL Aggregator] - översikt
++++
+
+## Översikt över modulen [!UICONTROL Aggregator]
 
 När en [!UICONTROL Aggregator]-modul körs gör den följande:
 

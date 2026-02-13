@@ -5,7 +5,7 @@ description: I den här artikeln beskrivs direktiv som du kan använda för felh
 author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
-source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -43,7 +43,9 @@ Med felhanteringsdirektiv kan du välja vad som ska hända när ett scenario på
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Direktiv för felhantering
++++
+
+## Direktiv för felhantering
 
 Följande felhanteringsdirektiv finns i Workfront Fusion.
 

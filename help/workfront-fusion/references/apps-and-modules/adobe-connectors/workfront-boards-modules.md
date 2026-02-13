@@ -4,7 +4,7 @@ description: Du kan använda Adobe Workfront Boards-kontakten för att automatis
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '2694'
 ht-degree: 0%
@@ -50,7 +50,9 @@ Du kan använda modulen Adobe Workfront Boards för att läsa eller uppdatera po
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++# Förutsättningar
++++
+
+## Förutsättningar
 
 Du måste ha konfigurerat en anslagstavla i Adobe Workfront innan du kan ansluta till den.
 

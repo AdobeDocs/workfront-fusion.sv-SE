@@ -4,7 +4,7 @@ description: En Iterator-modul är en särskild typ av modul som konverterar en 
 author: Becky
 feature: Workfront Fusion
 exl-id: 43d39955-3dd7-453d-8eb0-3253a768e114
-source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -42,7 +42,9 @@ En [!UICONTROL Iterator] är en typ av modul som konverterar en array till en se
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## [!UICONTROL Iterator] modulkonfiguration
++++
+
+## Modulkonfiguration för [!UICONTROL Iterator]
 
 Den allmänna iteratormodulen har ett enda fält, fältet [!UICONTROL Array]. Det här fältet innehåller arrayen som ska konverteras eller delas upp i separata paket.
 
@@ -98,7 +100,7 @@ Starta scenariot manuellt i scenarioredigeraren.
 >Om du vill förhindra att hela scenariot körs kan du:
 >
 >* Avlänka modulerna efter modulen [!UICONTROL JSON] > [!UICONTROL Parse JSON] för att förhindra att flödet fortsätter.
->  &#x200B;>   eller
+>   eller
 >* Högerklicka på modulen [!UICONTROL JSON] > [!UICONTROL Parse JSON] och välj **[!UICONTROL Run this module only]** på snabbmenyn om du bara vill köra modulen [!UICONTROL JSON] > [!UICONTROL Parse JSON] .
 
 När [!UICONTROL JSON] > [!UICONTROL Parse JSON] har körts kan den sedan tillhandahålla information om dess utdata till alla efterföljande moduler, inklusive Iterator-modulen. Mappningspanelen i Iteratorns inställningar visar sedan objekten:

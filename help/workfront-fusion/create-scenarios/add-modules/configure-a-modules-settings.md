@@ -4,7 +4,7 @@ description: Du måste konfigurera inställningar för varje modul som du skapar
 author: Becky
 feature: Workfront Fusion
 exl-id: ae82d1fe-31e1-424a-9c1a-42dc1a20b749
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -48,7 +48,9 @@ I modulen Workfront > Överför dokument måste du till exempel ange den post so
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Konfigurera en moduls inställningar
++++
+
+## Konfigurera en moduls inställningar
 
 1. Klicka på fliken **[!UICONTROL Scenarios]** i den vänstra panelen.
 1. Välj det scenario där du vill lägga till ett filter.

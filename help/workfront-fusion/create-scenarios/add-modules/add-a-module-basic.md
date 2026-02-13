@@ -4,7 +4,7 @@ description: I den här artikeln beskrivs den grundläggande processen att lägg
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
@@ -44,7 +44,9 @@ I den här artikeln beskrivs den grundläggande processen att lägga till en mod
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Lägg till den första modulen i ett scenario
++++
+
+## Lägg till den första modulen i ett scenario
 
 Den första modulen i ett scenario är vanligtvis en utlösarmodul.
 

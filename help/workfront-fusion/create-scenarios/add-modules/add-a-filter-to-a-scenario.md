@@ -4,7 +4,7 @@ description: I vissa scenarier behöver du bara arbeta med paket som uppfyller s
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -49,7 +49,9 @@ Du kan lägga till ett filter mellan två moduler och kontrollera om paket som t
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++# Förutsättningar
++++
+
+## Förutsättningar
 
 Du måste lägga till båda modulerna i ett scenario innan du kan lägga till ett filter mellan dem.
 

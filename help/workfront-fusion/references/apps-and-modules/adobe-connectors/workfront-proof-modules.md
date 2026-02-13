@@ -4,7 +4,7 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '2724'
 ht-degree: 0%
@@ -50,7 +50,9 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Workfront Proof-information
++++
+
+## Information om Workfront Proof
 
 Workfront Proof Connector använder följande:
 

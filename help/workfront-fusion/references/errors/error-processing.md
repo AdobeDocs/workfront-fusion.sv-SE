@@ -5,7 +5,7 @@ description: Ibland kan ett fel inträffa när ett scenario körs. Detta händer
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 0%
@@ -45,7 +45,9 @@ Adobe Workfront Fusion skiljer mellan flera grundläggande feltyper. Vilken typ 
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Anslutningsfel 
++++
+
+## Anslutningsfel
 
 `ConnectionError`
 
@@ -148,7 +150,7 @@ Mer information finns i [Antal efterföljande fel](/help/workfront-fusion/create
 >[!NOTE]
 >
 >Om ett scenario börjar med en direktutlösare och påträffar det här felet, ignoreras inställningen [!UICONTROL Max number of consecutive errors] och scenariot inaktiveras omedelbart.
->&#x200B;>Mer information finns i [Direktutlösare](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) i översikten över artikelmodulerna.
+>Mer information finns i [Direktutlösare](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) i översikten över artikelmodulerna.
 
 ## Inkonsekvens-fel
 

@@ -4,7 +4,7 @@ description: Vissa utlösarmoduler låter dig välja det första paket från vil
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
@@ -46,7 +46,9 @@ Mer information om utlösarmoduler finns i avsnittet [Utlösarmoduler](/help/wor
 
 Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dokumentationen](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Välj var en utlösarmodul ska starta
++++
+
+## Välj var en utlösarmodul ska starta
 
 1. Klicka på fliken **[!UICONTROL Scenarios]** i den vänstra panelen.
 1. Välj det scenario där du vill välja var utlösaren ska börja.
