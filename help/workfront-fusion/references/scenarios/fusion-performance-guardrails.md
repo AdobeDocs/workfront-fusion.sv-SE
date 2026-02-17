@@ -4,7 +4,7 @@ description: Automatisering kräver snabb bearbetning, så Adobe Workfront Fusio
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 086fef455017e19768969533ad63f39c34f962f4
+source-git-commit: c41cc27660b15824a560c770ace663739dccdfa2
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Mer information finns i [Arbeta med stora filer](/help/workfront-fusion/referenc
 
 ## Ofullständiga körningar
 
-* Ofullständiga körningar är begränsade till en total storlek på **11 GB** eller **100 ofullständiga körningar** per scenario, beroende på vilken gräns som nås först. Om en gräns nås kommer inga fler ofullständiga körningar att lagras för det scenariot.
+* Ofullständiga körningar är begränsade till en total storlek på **1 GB** eller **100 ofullständiga körningar** per scenario, beroende på vilken gräns som nås först. Om en gräns nås kommer inga fler ofullständiga körningar att lagras för det scenariot.
 
 ## Försök igen
 
