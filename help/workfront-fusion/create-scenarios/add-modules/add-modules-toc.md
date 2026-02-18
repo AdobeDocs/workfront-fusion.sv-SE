@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 45935dab-199b-46b8-a339-abfea8650320
-source-git-commit: 346a1945d45718e1ec3088b0854181a31e37ef4e
+source-git-commit: bd8e770765ac535fd8c11e6f58620e1e4cadfc3d
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '88'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 0%
 * [Lägga till en modul i ett scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
 * [Konfigurera en modul](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
 * [Generera ett scenariosegment med AI](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
+* [Lägg till en AI-fråga i ditt scenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
 * [Kopiera moduler eller scenarier](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
 * [Skapa scenarier med Adobe Workfront Fusion-mallar](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
 * [Använd cURL för att lägga till en HTTP-modul](/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md)

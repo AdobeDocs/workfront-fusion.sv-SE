@@ -6,14 +6,14 @@ feature: Workfront Fusion
 hide: true
 hidefromtoc: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
-source-git-commit: 5dfca593b17a234c80c807470026a7b192cbf7fa
+source-git-commit: 97abe6bf0ff7b10a139268f02f8a1a24f3e31b47
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
 
-# Modul för MCP (Model Context Protocol)
+# MCP Agent-modul
 
 <!--SET UP REDIRECTS-->
 
@@ -22,6 +22,8 @@ MCP (Model Context Protocol) är ett sätt att på ett säkert sätt ansluta AI-
 Du kan till exempel konfigurera en MCP-server så att den ansluter en AI-modell med Gmail. När du skickar meddelandet&quot;Ge mig mina fem sista e-postmeddelanden från Gmail&quot; kan den komma åt din Gmail och returnera e-postmeddelandena.
 
 Med modulen Model Context Protocol (MCP) kan du bearbeta en användarfråga med hjälp av en språkmodell och MCP-servrar.
+
+Mer information om MCP i Fusion-scenarier finns i [Lägg till en AI-fråga i ditt scenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 
 ## Åtkomstkrav
 
@@ -52,17 +54,20 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 
 +++
 
+## Förutsättningar
 
-
-
+* Du måste ha konfigurerat alla MCP-servrar som du vill ansluta till.
+* Du måste ha en LLM-nyckel för det valda LLM-formatet (Large Language Model).
 
 ## Modellkontextprotokollmodulen och dess fält
-
-När du konfigurerar MCP-modulen visas fälten som listas nedan i Adobe Workfront Fusion. En rubrik med fet stil i en modul visar ett obligatoriskt fält.
 
 ### Fråga om processanvändare
 
 Den här åtgärdsmodulen bearbetar en fråga med språkmodellen och de MCP-servrar du anger.
+
+>[!NOTE]
+>
+>Modulen måste returnera ett objekt. Den returnerar inte utdata som strängar eller tal.
 
 <table style="table-layout:auto"> 
  <col> 
