@@ -4,7 +4,7 @@ description: Du kan använda textanalysverktyget för att tolka text som ska anv
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 5be274105bf13a48e7e76eaa6bd3b62c315f97a9
 workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 0%
@@ -210,7 +210,7 @@ Söker efter ett angivet värde eller reguljärt uttryck i den angivna texten oc
   </tr> 
   <tr> 
    <td>[!UICONTROL New value]</td> 
-   <td> <p> Ange det värde som ska ersätta söktermen.</p> </td> 
+   <td> <p> Ange det värde som du vill ersätta söktermen.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Global match]</td> 
