@@ -3,9 +3,10 @@ title: Veeva Vault-moduler
 description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder Veeva Vault samt ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: b57ae36cf9225705c7f4923d7302b1749aa04d94
+exl-id: 2ef967b6-0a69-4801-8574-5f17c9ce991d
+source-git-commit: 323e7d10795991bbcb6c1439db0af90e4331e687
 workflow-type: tm+mt
-source-wordcount: '2537'
+source-wordcount: '3681'
 ht-degree: 0%
 
 ---
@@ -117,7 +118,9 @@ När du skapar en anslutning kan du välja om du vill använda ett lösenord ell
       </tr> 
       <tr> 
        <td role="rowheader">Leverantör av auktoriseringsserver</td> 
-       <td> <p>Välj den provider som du vill använda för den här autentiseringen.</p> </td> 
+       <td> <p>Välj den provider som du vill använda för den här autentiseringen.</p> 
+       <p><b>OBS!</b> Veeva Vault använder Azure AD-klientautentiseringsuppgifter när Azure väljs som auktoriseringsserverleverantör.</p>
+       </td> 
       </tr> 
       <tr> 
        <td role="rowheader">Ping-värd</td> 
@@ -126,7 +129,7 @@ När du skapar en anslutning kan du välja om du vill använda ett lösenord ell
       <tr>
         <td role="rowheader">Omfång</td>
         <td>
-          <p>Ange omfattningen för den här anslutningen.</p>
+          <p>Ange omfattningen för den här anslutningen. Omfånget måste formateras som <code>{Application ID URI}/.default</code>. Program-ID-URI:n måste tillhöra resursen eller appen som visar behörigheter.</p>
         </td>
       </tr>
       <tr>
@@ -150,12 +153,12 @@ När du skapar en anslutning kan du välja om du vill använda ett lösenord ell
       <tr>
         <td role="rowheader">Profil-ID</td>
         <td>
-          <p>Ange ID:t för din OAuth2-/Copen ID-anslutningsprofil.</p>
+          <p>Ange ID för din OAuth2-/Open ID-anslutningsprofil.</p>
         </td>
       </tr>
       <tr> 
        <td role="rowheader">Valv-DNS</td> 
-       <td>Ange veeva-valvets DNS (domännamn).</p><p>Om du vill hitta DNS:en för ditt veeva-valv kontrollerar du den URL som du använder för att komma åt veeva-valvet.</p>I URL:en <code>https://my-dns.veevavault.com</code> är till exempel DNS <code>my-dns</code>. Du behöver inte ange hela URL:en.</td> 
+       <td>Ange veeva-valvets DNS (domännamn).</p><p>Om du vill hitta DNS:en för ditt veeva-valv kontrollerar du den URL som du använder för att komma åt veeva-valvet.</p>I URL:en <code>https://my-dns.veevavault.com</code> är till exempel DNS <code>my-dns.veevavault.com</code>. </td> 
       </tr> 
       <tr>
         <td role="rowheader">Förfallotid för din session i minuter</td>
@@ -184,15 +187,24 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 ### Dokument
 
 * [Skapa ett enstaka dokument](#create-a-single-document)
+* [Skapa en dokumentrelation](#create-a-single-document-relationship)
+* [Skapa flera anteckningar](#create-multiple-annotations)
 * [Skapa flera dokument](#create-multiple-documents)
+* [Skapa flera dokumentrelationer](#create-multiple-document-relationships)
 * [Ta bort ett enstaka dokument](#delete-a-single-document)
+* [Ta bort en dokumentrelation](#delete-a-single-document-relationship)
+* [Ta bort flera anteckningar](#delete-multiple-annotations)
+* [Ta bort flera dokumentrelationer](#delete-multiple-document-relationships)
 * [Hämta en fil](#download-file)
 * [Exportera dokument](#export-documents)
 * [Skaffa ett enda dokument](#get-a-single-document)
+* [Hämta dokumentanteckningar](#get-document-annotations)
+* [Hämta dokumentrelationer](#get-document-relationships)
 * [Initiera användaråtgärd](#initiate-user-action)
 * [Visa dokument](#list-documents)
 * [Hämta dokumentexportresultat](#retrieve-document-export-results)
 * [Uppdatera ett enstaka dokument](#update-a-single-document)
+* [Uppdatera flera anteckningar](#update-multiple-annotations)
 * [Uppdatera flera dokument](#update-multiple-documents)
 
 #### Skapa ett enstaka dokument
@@ -205,7 +217,7 @@ I den här modulen skapas ett dokument, en bindare eller en mall.
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Typ</p> </td> 
@@ -218,6 +230,114 @@ I den här modulen skapas ett dokument, en bindare eller en mall.
  </tbody> 
 </table>
 
+#### Skapa en dokumentrelation
+
+Denna åtgärdsmodul skapar en relation mellan två dokument
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Dokument-ID</p> </td> 
+   <td> <p>Ange eller mappa ID:t för det dokument där du vill att relationen ska ha sitt ursprung.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Version</p> </td> 
+   <td> <p>Markera eller mappa ID:t för den version som du vill skapa en relation för.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Måldokument-ID</p> </td> 
+   <td> <p>Ange ID:t för dokumentet som relationen pekar på.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Huvudmålversion</p> </td> 
+   <td> <p>Ange måldokumentets huvudversion. Detta är talet före punkten.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Delversion av mål</p> </td> 
+   <td> <p>Ange måldokumentets huvudversion. Detta är numret efter punkten.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Relationstyp</p> </td> 
+   <td> <p>Ange eller mappa den typ av relation som du vill skapa.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Skapa flera anteckningar
+
+I den här åtgärdsmodulen kan du skapa upp till 500 anteckningar.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Anteckningar</p> </td> 
+   <td> <p>För varje anteckning som du vill lägga till klickar du på <b>Lägg till objekt</b> och fyller i de data som beskrivs i <a href="#annotation-fields" class="MCXref xref">Anteckningsfält</a> i den här artikeln.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+##### Anteckningsfält
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anteckningstyp </td> 
+   <td> <p>Välj den typ av anteckning som du vill skapa.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Typ</p> </td> 
+   <td> <p>Ange eller mappa den typ av märkning som du vill använda för den här anteckningen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Sidnummer</p> </td> 
+   <td> <p>Ange eller mappa sidnumret där du vill att den här anteckningen ska visas.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>X-koordinat</p> </td> 
+   <td> <p>Ange eller mappa placeringsmarkeringens X-koordinat.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Y-koordinat</p> </td> 
+   <td> <p>Ange eller mappa placeringsmarkeringens Y-koordinat.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Bredd</p> </td> 
+   <td> <p>Ange eller mappa bildens bredd.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Höjd</p> </td> 
+   <td> <p>Ange eller mappa placeringsmärket.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Stil</p> </td> 
+   <td> <p>Ange eller mappa placeringsmarkeringens format.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Referens</p> </td> 
+   <td> <p>En referens gör att anteckningen kan referera till en extern källa. För varje referens som du vill lägga till i anteckningen klickar du på <b>Lägg till objekt</b> och anger referensens typ, dokumentversions-ID och en anteckning.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Markera fält</p> </td> 
+   <td> <p>Markera de fält som du vill ange värden för och ange sedan värdena i varje fält. Vilka fält som är tillgängliga beror på anteckningstypen.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
 #### Skapa flera dokument
 
 I den här modulen skapas flera dokument eller mallar med hjälp av en CSV-fil.
@@ -228,15 +348,79 @@ I den här modulen skapas flera dokument eller mallar med hjälp av en CSV-fil.
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Typ</p> </td> 
-   <td> <p>Välj om du vill skapa mallar eller dokument</p> </td> 
+   <td> <p>Välj om du vill skapa mallar eller dokument.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">  <p>Fildata</p> </td> 
    <td> <p>Mappa den CSV-fil som ska användas för att skapa dokumenten.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Skapa flera dokumentrelationer
+
+Den här åtgärdsmodulen konfigurerar flera dokumentrelationer.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Indatatyp</p> </td> 
+   <td> <p>Välj den typ av indata som du anger för att skapa dessa relationer.</p> <ul><li>CSV</li><li>JSON</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Fildata</p> </td> 
+   <td> <p>Om du använder en CSV-fil anger eller mappar du CSV-filens data.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Relationsdata</p> </td> 
+   <td> <p>Om du använder JSON, för varje relation som du vill lägga till, klickar du på <b>Lägg till objekt</b> och fyller i de data som beskrivs i <a href="#relationship-fields" class="MCXref xref">Relationsfält</a> i den här artikeln.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+##### Relationsfält
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Source-dokument-ID </td> 
+   <td> <p>Ange eller mappa ID:t för det dokument där du vill att relationen ska ha sitt ursprung.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Source huvudversion</p> </td> 
+   <td> <p>Ange huvudversionen av källdokumentet. Detta är talet före punkten.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Source delversion</p> </td> 
+   <td> <p>Ange huvudversionen av källdokumentet. Detta är numret efter punkten.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Måldokument-ID</p> </td> 
+   <td> <p>Ange ID:t för dokumentet som relationen pekar på.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Huvudmålversion</p> </td> 
+   <td> <p>Ange måldokumentets huvudversion. Detta är talet före punkten.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Delversion av mål</p> </td> 
+   <td> <p>Ange måldokumentets huvudversion. Detta är numret efter punkten.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Relationstyp</p> </td> 
+   <td> <p>Ange eller mappa den typ av relation som du vill skapa.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -251,7 +435,7 @@ Den här modulen tar bort ett enstaka dokument, en bindare eller en mall.
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Typ</p> </td> 
@@ -259,7 +443,88 @@ Den här modulen tar bort ett enstaka dokument, en bindare eller en mall.
   </tr> 
   <tr> 
    <td role="rowheader"><p>Dokument-ID / Binder-ID / Mallnamn</p> </td> 
-   <td> <p>Markera de fält som du vill ta bort.</td> 
+   <td> <p>Markera det objekt som du vill ta bort.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Ta bort en dokumentrelation
+
+Den här åtgärdsmodulen tar bort en relation från ett dokument
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Dokument-ID</p> </td> 
+   <td> <p>Ange eller mappa ID:t för källdokumentet för relationen som du vill ta bort.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Version</p> </td> 
+   <td> <p>Markera eller mappa ID:t för den version som du vill ta bort en relation för.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Relation-ID</p> </td> 
+   <td> <p>Ange eller mappa ID för relationen som du vill ta bort.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Ta bort flera anteckningar
+
+Den här åtgärdsmodulen tar bort anteckningar. Användaren måste ha behörighet att ta bort anteckningar i Veeva Vault. Du kan ta bort upp till 500 anteckningar.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Anteckningar</p> </td> 
+   <td> <p>För varje anteckning som du vill ta bort klickar du på <b>Lägg till objekt</b> och anger följande fält.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID</p> </td> 
+   <td> <p>Ange eller mappa ID:t för anteckningen som du vill ta bort.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Dokumentversions-ID</p> </td> 
+   <td> <p>Ange eller mappa dokumentets versionsnummer som innehåller den anteckning som du vill ta bort.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Ta bort flera dokumentrelationer
+
+Den här åtgärdsmodulen tar bort relationer från flera dokument
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Indatatyp</p> </td> 
+   <td> <p>Välj den typ av indata som du anger för att ta bort dessa relationer.</p> <ul><li>CSV</li><li>JSON</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Fildata</p> </td> 
+   <td> <p>Om du använder en CSV-fil anger eller mappar du CSV-filens data.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Relationsdata</p> </td> 
+   <td> <p>Om du använder JSON klickar du på <b>Lägg till objekt</b> för varje relation som du vill lägga till och anger relations-ID:t.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -274,7 +539,7 @@ Den här modulen hämtar ett dokument, en dokumentversion eller en mall från Ve
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Typ</p> </td> 
@@ -309,7 +574,7 @@ Den här modulen exporterar dokument som du anger, inklusive källor, återgivni
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Typ</p> </td> 
@@ -344,7 +609,7 @@ Den här modulen hämtar metadata för ett enstaka dokument, en bindare eller en
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Typ</p> </td> 
@@ -353,6 +618,60 @@ Den här modulen hämtar metadata för ett enstaka dokument, en bindare eller en
   <tr> 
    <td role="rowheader"><p>Dokument-ID / Binder-ID / Mallnamn</p> </td> 
    <td> <p>Markera de fält som du vill hämta data för.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Hämta dokumentanteckningar
+
+Den här modulen hämtar anteckningar från en specifik dokumentversion. Du kan hämta alla anteckningar eller välja att bara hämta vissa anteckningstyper.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Dokument-ID</p> </td> 
+   <td> <p>Markera eller mappa dokumentet som du vill hämta anteckningar för. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Version</p> </td> 
+   <td> <p>Markera eller mappa ID:t för den version som du vill hämta anteckningar för.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Maximalt antal returnerade anteckningar</td> 
+   <td>Ange eller mappa det maximala antal anteckningar som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Hämta dokumentrelationer
+
+Den här modulen hämtar alla relationer för ett dokument.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Dokument-ID</p> </td> 
+   <td> <p>Markera eller mappa dokumentet som du vill hämta relationer för. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Version</p> </td> 
+   <td> <p>Markera eller mappa ID:t för den version som du vill hämta relationer för.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Maximalt antal returnerade relationer</td> 
+   <td>Ange eller mappa det maximala antalet relationer som du vill att modulen ska returnera under varje körningscykel för scenario.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -367,7 +686,7 @@ Den här modulen initierar åtgärder för dokument och bindare, som att skicka 
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Typ</p> </td> 
@@ -398,7 +717,7 @@ I den här modulen visas alla dokument av den valda typen.
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Typ</p> </td> 
@@ -421,11 +740,30 @@ Den här modulen returnerar resultatet av en tidigare begärd dokumentexport.
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Jobb-ID</p> </td> 
    <td> <p>Ange eller mappa ID:t för jobbet som du vill returnera resultat för. </p> </td> 
+  </tr> 
+  </tbody> 
+</table>
+
+#### Uppdatera flera anteckningar
+
+Den här åtgärdsmodulen uppdaterar upp till 500 anteckningar.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Anteckningar</p> </td> 
+   <td> <p>För varje anteckning som du vill uppdatera klickar du på <b>Lägg till objekt</b> och fyller i de data som beskrivs i <a href="#annotation-fields" class="MCXref xref">Anteckningsfält</a> i den här artikeln.</p> </td> 
   </tr> 
   </tbody> 
 </table>
@@ -440,7 +778,7 @@ Den här modulen uppdaterar flera dokument eller mallar med hjälp av en CSV-fil
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Typ</p> </td> 
@@ -463,7 +801,7 @@ Den här modulen uppdaterar ett enstaka dokument, en bindare eller en mall.
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Typ</p> </td> 
@@ -502,7 +840,7 @@ Den här modulen skapar, kopierar eller djup kopierar en enstaka objektpost.
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Typ</p> </td> 
@@ -541,7 +879,7 @@ Den här modulen tar bort eller tar bort en enstaka objektpost. När du tar bort
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Typ</p> </td> 
@@ -572,11 +910,11 @@ Den här modulen hämtar metadata som konfigurerats för en specifik objektpost 
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Objektnamn</td> 
-   <td>Markera objektet som du vill hämta metadata för.</td> 
+   <td>Markera det objekt som du vill hämta metadata för.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Post-ID</td> 
@@ -595,7 +933,7 @@ Den här modulen hämtar alla vaultobjekt i det autentiserade valvet.
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Hämta lokaliserade etiketter</p> </td> 
@@ -620,7 +958,7 @@ Den här modulen skapar, kopierar eller djup kopierar en enstaka objektpost.
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Typ</p> </td> 
@@ -673,7 +1011,7 @@ Den här åtgärdsmodulen gör ett anpassat anrop till veeva Vault API.
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning</td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
@@ -711,7 +1049,7 @@ Den här modulen skapar en fråga med VQL (Vault Query Language).
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Typ</p> </td> 
@@ -734,7 +1072,7 @@ Den här modulen returnerar data från granskningsspår
  <tbody> 
   <tr> 
    <td role="rowheader">Anslutning </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt Vevavaultkonto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Granskningstyp</p> </td> 
@@ -758,5 +1096,3 @@ Den här modulen returnerar data från granskningsspår
   </tr> 
  </tbody> 
 </table>
-
-
