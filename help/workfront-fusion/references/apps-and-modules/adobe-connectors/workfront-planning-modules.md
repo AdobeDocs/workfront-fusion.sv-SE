@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Workfront Planning] modulerna kan du starta ett Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 86747ffc38fddde91352558277d40572d13ba2b0
+source-git-commit: a58a6c25751eb10365508c06ab1571ce7652d0c8
 workflow-type: tm+mt
-source-wordcount: '1846'
+source-wordcount: '1845'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 
 +++
 
-s## Förutsättningar
+## Förutsättningar
 
 Du måste ha följande för att få tillgång till Workfront Planning:
 
@@ -205,7 +205,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Utlösare](#triggers)
-* [Åtgärder](#actions)
+* [Instruktioner](#actions)
 * [Sökningar](#searches)
 * [Okategoriserad](#uncategorized)
 
@@ -260,7 +260,7 @@ Den här utlösarmodulen startar ett scenario när en post, posttyp eller arbets
   </tbody>
 </table>
 
-### Åtgärder
+### Instruktioner
 
 * [Ta bort en posttyp](#delete-a-record-type)
 * [Göra ett anpassat AI-anrop](#make-a-custom-api-call)
