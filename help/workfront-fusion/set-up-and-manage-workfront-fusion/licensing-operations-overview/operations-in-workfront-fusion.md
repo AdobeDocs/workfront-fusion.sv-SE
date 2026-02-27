@@ -4,9 +4,9 @@ description: En åtgärd i Adobe Workfront Fusion är en uppgift som utförs av 
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d630251ec01f5e11bad0305a2f49fb447bf1dd1e
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '410'
 ht-degree: 1%
 
 ---
@@ -20,12 +20,17 @@ En åtgärd i Adobe Workfront Fusion är en uppgift som utförs av en modul. Fö
 * I allmänhet betraktas varje lyckad åtgärd som en åtgärd.
 * Den första modulen i ett scenario körs bara en gång och räknas alltid som en åtgärd, även om den inte returnerar ett paket.
 * Hur många gånger resten av modulerna körs beror på hur många paket de måste behandla.  En serie av en modul för ett paket är en åtgärd. Ett undantag är aggregeringsmodulen, som räknas som en åtgärd per uppsättning paket som bearbetas.
+* Åtgärderna kan variera i värde. Vissa blir mindre, enklare och andra blir mer komplexa. De åtgärder ni utför räknas in i totalsumman oavsett hur enkla eller komplexa de är.
 * Åtgärder räknas vid [!UICONTROL Finalization]-steget i en scenariokörning.
 * Följande räknas **inte** som åtgärder:
    * Alla filtersteg.
    * Alla åtgärder som innehåller fel eller stopp.
    * Alla vägar som inte körs eftersom ruttens regler inte uppfylls, till exempel återgångsvägar eller inaktiverade rutter.
    * Alla åtgärder som inte körs, antingen på grund av att ett filter inte tillåter data genom eller på grund av att scenariot stoppades på grund av ett fel.
+
+>[!NOTE]
+>
+>Om din organisation rutinmässigt försöker använda fler åtgärder än vad ditt Workfront Fusion-paket tillåter rekommenderar vi att du uppgraderar till Ultimate-paketet Automation and Integration.
 
 ## Operationsbegränsningar
 
