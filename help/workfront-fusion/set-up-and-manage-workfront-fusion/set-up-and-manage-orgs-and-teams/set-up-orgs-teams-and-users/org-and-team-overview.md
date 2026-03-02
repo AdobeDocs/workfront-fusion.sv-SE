@@ -4,9 +4,9 @@ description: Adobe Workfront Fusions funktioner för organisation och team gör 
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
+source-git-commit: 9cb630b713f5fac90acff54fa2034e9d65dd1611
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,18 @@ Instruktioner om hur du skapar ett team finns i [Skapa ett team](/help/workfront
 Workfront Fusion-användare tillhör en organisation.
 
 Användarna måste läggas till i en organisation innan de kan läggas till i ett team.
+
+### Organisationsresurser
+
+Följande resurser påverkar hela Fusion-organisationen och ägs och hanteras därför på organisationsnivå:
+
+* **Arbetarpooler:**: En arbetspool är en mängd Workfront Fusion-bearbetningsresurser som är dedikerade till en viss organisation.
+
+  Mer information finns i [Arbetarpooler](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md).
+
+* **Åtgärder**: En åtgärd i Adobe Workfront Fusion är en uppgift som utförs av en modul.
+
+  Mer information finns i [Åtgärder](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md).
 
 ### Organisationsroller
 
