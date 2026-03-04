@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion kräver en Adobe Workfront Fusion-licens fö
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: a5a1f8f596b55b2f1eca9d7874b5885e435b2489
 workflow-type: tm+mt
-source-wordcount: '1923'
+source-wordcount: '1957'
 ht-degree: 0%
 
 ---
@@ -89,8 +89,10 @@ Airtable-kontakten använder följande:
 1. Open your account overview and generate the API key.
 -->
 1. Öppna Workfront Fusion och dialogrutan **Skapa en anslutning** i den önskade modulen.
+1. Ange om du använder en personlig åtkomsttoken eller OAuth 2-auktorisering.
 1. Ange ett namn för anslutningen.
-1. (Valfritt) Klicka på Visa avancerade inställningar och ange ditt Airtable Client ID och Klienthemlighet.
+1. (Villkorligt) Om du använder en personlig åtkomsttoken klickar du på Visa avancerade inställningar och anger din personliga åtkomsttoken.
+1. (Villkorligt) Om du använder OAuth 2 klickar du på Visa avancerade inställningar och anger ditt Airtable Client ID och Klienthemlighet.
 1. Klicka på knappen **Fortsätt** för att skapa anslutningen och återgå till modulen.
 
 ## Luftburna moduler och deras fält
