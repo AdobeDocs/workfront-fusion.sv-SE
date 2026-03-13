@@ -34,7 +34,7 @@ Vissa rader innehåller information som är märkt &quot;Ny&quot; och &quot;Aktu
    <td role="rowheader">Adobe Workfront-paket 
    <td> Adobe Workfront-paket avser den uppsättning funktioner som din organisation har köpt. De flesta Fusion-funktionerna finns i alla planer, men det finns några undantag som bara är tillgängliga för organisationer som har ett Ultimate Workfront-paket. 
    <ul><li>Kontakta Workfront-administratören om du vill ta reda på vilket Adobe Workfront-paket din organisation använder, inklusive om din organisation är under den nya eller aktuella paketeringsmodellen.</li>
-   <li>Anvisningar om hur en Workfront-administratör kan hitta organisationens Workfront-paket finns i <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-package">Visa organisationens kluster- och Workfront-plan</a> i artikeln Brandväggsöversikt.</li><li>Mer information om nya Workfront-paket finns i <a href="https://business.adobe.com/products/workfront/pricing.html">Priser och förpackningar för Adobe Workfront</a>.</li></ul> </td> 
+   <li>Anvisningar om hur en Workfront-administratör kan hitta organisationens Workfront-paket finns i <a href="https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-package">Visa organisationens kluster- och Workfront-plan</a> i artikeln Brandväggsöversikt.</li><li>Mer information om nya Workfront-paket finns i <a href="https://business.adobe.com/se/products/workfront/pricing.html">Priser och förpackningar för Adobe Workfront</a>.</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront-licens</td> 
@@ -43,9 +43,9 @@ Vissa rader innehåller information som är märkt &quot;Ny&quot; och &quot;Aktu
    <li>Kontakta Workfront-administratören för att ta reda på vilken licens du har tilldelats.</li>
    <li>Adobe Workfront går över till en ny prissättnings- och paketeringsmodell. Mer information om licenser finns i:
    <ul>
-   <li>Nytt: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Översikt över nya licenser</a></li>
-   <li>Aktuell: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Licensöversikt</a></li></ul></li>
-   <li>Om du har rätt åtkomstnivå och fortfarande inte har åtkomst, frågar du Workfront-administratören om de ställer in ytterligare begränsningar för din åtkomstnivå. Mer information om hur en Workfront-administratör kan ändra din åtkomstnivå finns i <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/configure-access/create-modify-access-levels" class="MCXref xref">Skapa och ändra anpassade åtkomstnivåer</a>.
+   <li>Nytt: <a href="https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Översikt över nya licenser</a></li>
+   <li>Aktuell: <a href="https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Licensöversikt</a></li></ul></li>
+   <li>Om du har rätt åtkomstnivå och fortfarande inte har åtkomst, frågar du Workfront-administratören om de ställer in ytterligare begränsningar för din åtkomstnivå. Mer information om hur en Workfront-administratör kan ändra din åtkomstnivå finns i <a href="https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/add-users/configure-access/create-modify-access-levels" class="MCXref xref">Skapa och ändra anpassade åtkomstnivåer</a>.
    </ul>
       </p> </td> 
   </tr> 
