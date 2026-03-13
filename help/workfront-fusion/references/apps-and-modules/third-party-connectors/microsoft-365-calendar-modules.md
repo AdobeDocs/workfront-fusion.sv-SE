@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 413736673426c1a77dac9f15defa43d4348638b5
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1647'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som anv�
    <td role="rowheader">Adobe Workfront Fusion-licens</td> 
    <td>
    <p>Operationsbaserad: Ingen Workfront Fusion-licens krävs</p>
-   <p>Kopplingsbaserad (äldre): Workfront Fusion for Work Automation and Integration </p>
+   <p>Anslutningsbaserad (äldre): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
@@ -253,11 +253,11 @@ Den här sökmodulen hämtar information om en händelse när händelsen skapas,
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
+   <td> <p>Anvisningar om hur du ansluter ditt [!DNL Office 365]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Välj den [!UICONTROL calendar group] som innehåller kalendern där du vill bevaka händelser.</td> 
+   <td>Välj [!UICONTROL calendar group] som innehåller kalendern där du vill titta på händelser.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar]</td> 
@@ -557,7 +557,6 @@ Med den här modulen kan du utföra ett anpassat API-anrop.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Office 365]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -566,7 +565,7 @@ Med den här modulen kan du utföra ett anpassat API-anrop.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   td&gt; <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
+   <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
