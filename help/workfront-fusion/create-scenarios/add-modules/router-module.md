@@ -4,9 +4,9 @@ description: Med routermodulen kan du dela in ditt flöde i flera flöden och be
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -54,8 +54,7 @@ Du måste lägga till en routermodul innan du konfigurerar vägar.
 1. Klicka på fliken **[!UICONTROL Scenarios]** i den vänstra panelen.
 1. Välj det scenario där du vill lägga till en router.
 1. Klicka någonstans i scenariot för att öppna Scenarioredigeraren.
-1. Klicka på det högra handtaget i modulen som du vill lägga till routern efter i scenarieredigeraren.
-1. Välj **[!UICONTROL Flow Control]** > **Router** i listan med moduler som visas.
+1. I scenarioredigeraren klickar du på den högra handtaget i modulen efter vilken du vill lägga till routern och väljer sedan **[!UICONTROL Flow Control]** > **Router** i listan med moduler som visas.
 
    ![Anslut vägen](assets/connect-the-router-350x108.png)
 
@@ -69,7 +68,11 @@ Du måste lägga till en routermodul innan du konfigurerar vägar.
 
    Du kan lägga till så många rutter du vill.
 
-1. Om du vill verifiera riktningsordningen klickar du på ikonen Automatisk justering ![Automatisk justering](assets/auto-align.png) .
+1. Kontrollera etiketten för varje rutt för att verifiera rutternas ordning. Flöde 1 körs först, sedan Flöde 2 och så vidare.
+
+   eller
+
+   Klicka på ikonen Automatisk justering ![Automatisk justering](assets/auto-align.png).
 
    Vägarna ordnas i den ordning de utförs. Den översta vägen körs först.
 
@@ -84,6 +87,8 @@ Du måste lägga till en routermodul innan du konfigurerar vägar.
 Du kan lägga ett filter på en väg efter routermodulen för att filtrera paket. Endast paket som passerar genom filtret hanteras av modulerna på vägen.
 
 Om data passerar filtret för mer än en väg hanteras data av båda vägarna. Den översta vägen hanterar data först.
+
+Routrar med filter visar filterikonen ![Filterikon](assets/fusion-scenario-filter-icon.png) på flödesetiketten.
 
 1. Klicka på fliken **[!UICONTROL Scenarios]** i den vänstra panelen.
 1. Välj det scenario där du vill lägga till ett filter.
@@ -102,6 +107,8 @@ Om data passerar filtret för mer än en väg hanteras data av båda vägarna. D
 ## Konfigurera ett reservflöde
 
 Reservvägen är den väg som körs på alla paket som inte skickar något filter till en annan väg.
+
+Reservflöden visar &quot;Reservfall&quot; på etiketten.
 
 Du kan aktivera ett reservflöde på filterpanelen.
 
