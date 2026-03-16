@@ -4,9 +4,9 @@ description: Hantera Adobe Workfront Fusion-användare i organisationen
 author: Becky
 feature: Workfront Fusion
 exl-id: 32c221fa-856b-4921-9fa6-5e60f2aa08cd
-source-git-commit: 88d7a92a4b117d10ab114e32ab5e61f03bc5a846
+source-git-commit: 3f9390d8947ef2666336c1a4cc6eab8d174849d5
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
@@ -64,23 +64,19 @@ Adobe Workfront Fusion-administratörer kan visa och uppdatera användarroller f
 1. Klicka på **[!UICONTROL Details]** på raden för den användare som du vill visa.
 1. (Valfritt) Om du vill uppdatera användarens roll i en organisation klickar du på listrutan i kolumnen **[!DNL Role]** på raden i organisationen där du vill ändra användarens roll och väljer sedan den nya rollen.
 
-<!--
+### Att tänka på när du lägger till eller ändrar organisationsägare
 
-### Considerations when adding or changing organization Owners
+Din organisation kan ha fler än en ägare.
 
-Your organization can have more than one Owner. 
+När du tilldelar en användare till eller från en ägarroll bör du tänka på följande.
 
-When assigning a user to or from an Owner role, consider the following. 
-
-* Only an Owner can assign the Owner role, or assign another role to a current Owner.
-* Only Admins can be upgraded to Owner.
-* If there is only one Owner, that Owner role cannot be changed or removed.
-* If there is only one Owner, that Owner cannot be deleted if there are other users in the organization.
-* When an Admin is assigned an Owner role, they automatically become Admin in all teams within the org.
-* When an Owner is assigned to another role, that user automatically becomes a Team Member in all teams.
-* When a new team is created, all Owners are automatically assigned as Team Admins.
-
--->
+* Endast en ägare kan tilldela rollen Ägare eller tilldela en annan roll till en aktuell ägare.
+* Endast administratörer kan uppgraderas till Ägare.
+* Om det bara finns en ägare går det inte att ändra eller ta bort ägarrollen.
+* Om det bara finns en ägare kan den ägaren inte tas bort om det finns andra användare i organisationen.
+* När en administratör tilldelas en ägarroll blir de automatiskt administratörer i alla team i organisationen.
+* När en ägare tilldelas en annan roll blir den användaren automatiskt en teammedlem i alla team.
+* När ett nytt team skapas tilldelas alla ägare automatiskt till teamadministratörer.
 
 ## Visa eller redigera användarroller för ett team
 
