@@ -4,9 +4,9 @@ description: Med routermodulen kan du dela in ditt flöde i flera flöden och be
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
+source-git-commit: c93a342c2300c5a008a95f180dfebd3abaeb95d0
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
@@ -80,6 +80,11 @@ Du måste lägga till en routermodul innan du konfigurerar vägar.
 
    ![Beställningsflöde](assets/order-routes.png)
 
+1. (Valfritt) Om du vill inaktivera en väg högerklickar du på de punkter som leder från routern till den vägen och väljer **Inaktivera väg**.
+
+   Inaktiverade vägar visar grå punkter som leder från routern till den första modulen på vägen och visar den inaktiverade vägikonen ![Inaktiverad rutaikon](assets/disabled-route-icon.png) på etiketten.
+
+1. (Valfritt och villkorligt) Om du vill aktivera en inaktiverad väg klickar du på den inaktiverade ruttikonen ![Ikonen för inaktiverat flöde](assets/disabled-route-icon.png) på ruttens etikett.
 1. Fortsätt till [Lägg till ett filter i ett flöde](#add-a-filter-to-a-route).
 
 ## Lägga till ett filter i ett flöde
@@ -101,6 +106,7 @@ Routrar med filter visar filterikonen ![Filterikon](assets/fusion-scenario-filte
    Mer information finns i [Lägga till ett filter i ett scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
 
 1. Klicka på **[!UICONTROL OK]** om du vill spara filterinställningarna.
+1. (Villkorligt) Om filternamnet är för långt för att få plats i etiketten håller du pekaren över etiketten för att visa hela namnet.
 
 1. Fortsätt till [Konfigurera en reservväg](#configure-a-fallback-route).
 
