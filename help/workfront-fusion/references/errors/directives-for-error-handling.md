@@ -5,9 +5,9 @@ description: I den här artikeln beskrivs direktiv som du kan använda för felh
 author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+source-git-commit: bf2e689f7015b08a0cf773e990077a53144263b6
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Följande felhanteringsdirektiv finns i Workfront Fusion.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>Återställning</p> <p> <img src="assets/rollback.png"> </p> </td> 
-   <td> <ul><li><p>Scenariokörningen stoppas omedelbart.</li><li>En återställningsfas startas för alla moduler i ett försök att återställa alla till deras ursprungliga tillstånd. </li><li>Efterföljande moduler bearbetas inte.</p></li><li> <p>I de flesta fall inaktiveras scenariot efter det antal på varandra följande fel som anges under scenarieinställningarna. Mer information finns i <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Antal efterföljande fel</a>.</p> </li><li><p>Scenariots körningsstatus är markerad som "Fel".</p></li></ul> <p><b>Obs!</b>: Detta är standardbeteendet om ingen felhanterarväg är kopplad till modulen och om inställningen <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Tillåt lagring av ofullständiga körningar</a>Tillåt lagring av ofullständiga körningar under [!UICONTROL Scenario settings] inte är markerad.</p> </td> 
+   <td> <ul><li><p>Scenariokörningen stoppas omedelbart.</li><li>En återställningsfas startas för alla moduler i ett försök att återställa alla till deras ursprungliga tillstånd. </li><li>Efterföljande moduler bearbetas inte.</p></li><li> <p>I de flesta fall inaktiveras scenariot efter det antal på varandra följande fel som anges under scenarieinställningarna. Mer information finns i <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Antal efterföljande fel</a>.</p> </li><li><p>Scenariots körningsstatus är markerad som "Fel".</p></li></ul> <p><b>Obs!</b>: Detta är standardbeteendet om ingen felhanterarväg är kopplad till modulen och scenarioinställningen <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Tillåt lagring av ofullständiga körningar</a> inte är markerad.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Verkställ</p> <p> <img src="assets/commit.png"> </p> </td> 
@@ -63,11 +63,11 @@ Följande felhanteringsdirektiv finns i Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Återuppta</p> <p> <img src="assets/resume.png"> </p> </td> 
-   <td> <ul><li><p>Ett ersättningsutdata anges och skickas till modulen som påträffar ett fel.</p> </li><li><p>Efterföljande moduler bearbetas.</p></li><li> <p>Scenariots körningsstatus är markerad som "success".</p></li></ul> </td> 
+   <td> <ul><li><p>Ett ersättningsutdata anges och skickas till modulen som påträffar ett fel.</p> </li><li><p>Efterföljande moduler bearbetas.</p></li>Om felhanteraren finns på en router fortsätter scenariot genom vägarna som förväntat.<li></li><li> <p>Scenariots körningsstatus är markerad som "success".</p></li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Ignorera</p> <p> <img src="assets/ignore.png"> </p> </td> 
-   <td><ul><li> <p>Felet ignoreras.</li><li> Efterföljande moduler bearbetas inte.</p> </li><li><p>Om det finns obearbetade paket fortsätter scenariokörningen normalt.</p> </li><li><p>Scenariots körningsstatus är markerad som "success".</p> </li></ul></td> 
+   <td><ul><li> <p>Felet ignoreras.</li><li> Efterföljande moduler bearbetas inte.</p> </li><li><p>Om det finns obearbetade paket fortsätter scenariokörningen normalt.</p> </li><li>Om felhanteraren finns på en router hoppas efterföljande vägar från den routern över.</li><li><p>Scenariots körningsstatus är markerad som "success".</p> </li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Brytning</p> <p> <img src="assets/break.png"> </p> </td> 
