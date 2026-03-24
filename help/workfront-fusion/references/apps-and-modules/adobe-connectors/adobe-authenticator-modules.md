@@ -4,9 +4,9 @@ description: Med Adobe Authenticator-modulen kan du ansluta till alla Adobe-prod
 author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: 42ec34b1931eb9962569906d78c281bbef86a57e
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1363'
 ht-degree: 1%
 
 ---
@@ -185,6 +185,7 @@ Så här skapar du en anslutning:
 
 * [Göra ett anpassat API-anrop](#make-a-custom-api-call)
 * [Göra ett anpassat API-anrop (äldre)](#make-a-custom-api-call-legacy)
+* [Göra ett anpassat API-anrop (avsökning)](#make-a-custom-api-call-polling)
 
 ### Göra ett anpassat API-anrop
 
@@ -307,5 +308,90 @@ Med den här åtgärdsmodulen kan du anropa alla Adobe API:er.
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> 
      </div> </p> </td>     </tr>
+  </tbody>
+</table>
+
+### Göra ett anpassat API-anrop (avsökning)
+
+Den här modulen gör ett anpassat anrop och innehåller alternativ för att köra anropet upprepade gånger tills ett visst villkor uppfylls eller en definierad gräns nås.
+
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+     <td role="rowheader">[!UICONTROL Connection]</td>
+     <td>Instruktioner om hur du skapar en anslutning till modulen Adobe Authenticator finns i <a href="#create-a-connection" class="MCXref xref" >Skapa en anslutning</a> i den här artikeln.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Base URL]</p>
+      </td>
+      <td>
+        <p>Ange bas-URL:en för den API-punkt som du vill ansluta till.</p>
+      </td>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL URL]</p>
+      </td>
+      <td>
+        <p>Ange sökvägen i förhållande till bas-URL:en.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Method]</p>
+   <td> <p>Välj den HTTP-förfrågningsmetod som du behöver för att konfigurera API-anropet. Mer information finns i <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metoder för HTTP-begäran</a>.</p> </td> 
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td>
+        <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p>
+        <p>Exempel: <code>{"Content-type":"application/json"}</code></p>
+        <p>Workfront Fusion lägger automatiskt till auktoriseringsrubriker.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Query String]  </td>
+      <td>
+        <p>Ange frågesträngen för begäran.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Body Type]</td>
+   <td> Välj innehållstyp för denna API-begäran:
+   <ul>
+   <li>Raw</li>
+   <li>application/x-www-form-urlencoded</li>
+   <li>multipart/form-data</li>
+   </ul>
+      </td>
+      </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Repeat Until]  </td>
+      <td>
+        <p>Konfigurera ett villkorsstyrt filter som bestämmer när avsökningen ska stoppas. Du kan referera till svarsdata med punktnotation (till exempel <code>body.status</code>, <code>body.data.state</code> eller <code>headers.status</code>). Villkoret utvärderas efter varje körning och avsökningen fortsätter tills villkoret utvärderas till <code>true</code>. Operatorer som stöds är: <code>Equal to</code>, <code>Not equal to</code>, <code>Exists</code>, <code>Does not exist</code></p><p>Du kan till exempel ställa in <code>body.status not equal completed</code> så att avsökningen fortsätter tills API-svaret anger att processen har slutförts.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Repeat Delay]  </td>
+      <td>
+        <p>Ange eller mappa fördröjningen mellan körningar, i sekunder.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Repeat Limit]  </td>
+      <td>
+        <p>Ange eller mappa det maximala antal gånger som du vill att API-anropet ska köras.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Output Type]  </td>
+      <td>
+        <p>Välj den typ av data som du vill att modulen ska visa. Om du inte väljer någon typ väljs en typ automatiskt i modulen.</p>
+      </td>
+    </tr>
   </tbody>
 </table>
