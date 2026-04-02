@@ -4,9 +4,9 @@ description: Automatisering kräver snabb bearbetning, så Adobe Workfront Fusio
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: c41cc27660b15824a560c770ace663739dccdfa2
+source-git-commit: d2bc26f26af530e3d770faba47d24e1d4f73b73d
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,7 @@ Mer information finns i [Arbeta med stora filer](/help/workfront-fusion/referenc
 ## Körningshistorik
 
 * Körningshistorikloggarna är begränsade till storleken **100 MB**. Om körningshistoriken överskrider den här storleken visas endast de första 100 MB.
+* Om en enskild åtgärds in- eller utdata är större än 15 MB visas den inte i körningshistoriken.
 * Om ett scenario har flera samtidiga körningar visas bara 5 körningar i området Körningar på sidan med scenarioinformation. Detta gäller även när fler än fem exekveringar körs.
 
 ## Ofullständiga körningar
