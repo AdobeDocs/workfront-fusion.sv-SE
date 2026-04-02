@@ -4,9 +4,9 @@ description: Ett datalager, som liknar en databas eller en enkel tabell, kan lag
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: b59532d96d64f77c04d31d03f6ae5addf15c0dd7
+source-git-commit: ac19f04af9ce80912e3dd9d63dc2ca414080c0c1
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Innan du kan använda ett datalager i en modul måste du skapa datalagret i Work
 
 ### Ställ in datastrukturen
 
-1. Klicka på **[!UICONTROL Add]** när du skapar eller redigerar ett datalager.
+1. När du skapar eller redigerar ett datalager klickar du på **[!UICONTROL Add]** bredvid datastrukturfältet.
 1. Konfigurera följande fält i rutan **[!UICONTROL Add data structure]** som visas:
 
    <table style="table-layout:auto">
@@ -184,7 +184,7 @@ Du kan redigera egenskaperna och innehållet i ett befintligt datalager i områd
 Egenskaperna för ett datalager omfattar datastrukturen som används i datalagret samt storleken på datalagret.
 
 1. Klicka på **[!UICONTROL Data stores]** ![ikonen för datalagring](assets/data-store-icon.png) i den vänstra navigeringspanelen för att öppna området [!UICONTROL Data stores].
-1. Klicka på **[!UICONTROL Edit]** ![Redigera datalager](assets/data-store-edit.png) bredvid datalagret som du vill redigera.
+1. Klicka i kryssrutan bredvid det datalager som du vill redigera och klicka sedan på **Redigera** i banderollen längst ned på skärmen.
 1. (Valfritt) Om du vill ändra den datastruktur som används av det här datalagret till en annan befintlig datastruktur väljer du den i listrutan **[!UICONTROL Data structure]**.
 
    eller
@@ -196,11 +196,10 @@ Egenskaperna för ett datalager omfattar datastrukturen som används i datalagre
 
 ### Redigera innehållet i ett datalager
 
-1. Klicka på ikonen **[!UICONTROL Data Store]** ![&#x200B; för datalagring &#x200B;](assets/data-store-icon.png) i den vänstra navigeringspanelen för att öppna området [!UICONTROL Data Store].
-1. Klicka på **[!UICONTROL Browse]** bredvid det datalager som du vill redigera.
-1. (Valfritt) Ändra ordning på kolumner genom att dra dem till önskad plats.
-1. (Valfritt) [!UICONTROL Edit] en enskild cell genom att klicka på ikonen **[!UICONTROL Edit]** i den cellen och sedan ange önskat värde.
+1. Klicka på ikonen **[!UICONTROL Data Store]** ![ för datalagring ](assets/data-store-icon.png) i den vänstra navigeringspanelen för att öppna området [!UICONTROL Data Store].
+1. Klicka i kryssrutan bredvid det datalager som du vill redigera och klicka sedan på **Bläddra** i banderollen längst ned på skärmen.
 1. (Valfritt) Lägg till ett nytt objekt i datalagret genom att klicka på **[!UICONTROL Add]** och sedan ange informationen för det nya objektet.
+1. (Valfritt) Ta bort ett eller flera objekt från datalagret genom att klicka i kryssrutan för det objektet och sedan klicka på **Ta bort markerade** eller **Ta bort alla** i skärmens övre högra hörn.
 1. Klicka på **[!UICONTROL Save]**.
 
 ## Felsökning
