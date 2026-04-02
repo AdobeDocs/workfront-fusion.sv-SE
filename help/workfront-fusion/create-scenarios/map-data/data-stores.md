@@ -196,7 +196,7 @@ Egenskaperna för ett datalager omfattar datastrukturen som används i datalagre
 
 ### Redigera innehållet i ett datalager
 
-1. Klicka på ikonen **[!UICONTROL Data Store]** ![ för datalagring ](assets/data-store-icon.png) i den vänstra navigeringspanelen för att öppna området [!UICONTROL Data Store].
+1. Klicka på ikonen **[!UICONTROL Data Store]** ![&#x200B; för datalagring &#x200B;](assets/data-store-icon.png) i den vänstra navigeringspanelen för att öppna området [!UICONTROL Data Store].
 1. Klicka i kryssrutan bredvid det datalager som du vill redigera och klicka sedan på **Bläddra** i banderollen längst ned på skärmen.
 1. (Valfritt) Lägg till ett nytt objekt i datalagret genom att klicka på **[!UICONTROL Add]** och sedan ange informationen för det nya objektet.
 1. (Valfritt) Ta bort ett eller flera objekt från datalagret genom att klicka i kryssrutan för det objektet och sedan klicka på **Ta bort markerade** eller **Ta bort alla** i skärmens övre högra hörn.
