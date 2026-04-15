@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
-source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '93'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ ht-degree: 0%
 * [Visa en specifik scenariekörning](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
 * [Visa en webkroks kö](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
 * [Visa dataflöde i ett pågående scenario](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
+* [Visa kedjade scenarierelationer](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
 * [AI Assistant i Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
 * [Kör scenariobedömningsexperten](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * [Ta bort scenarioelement](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)

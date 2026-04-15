@@ -4,9 +4,9 @@ description: Du kan kedja scenarier tillsammans, så att ett scenario kan utlös
 author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
-source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
+source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Mer information om datastrukturer finns i [Datastrukturer](/help/workfront-fusio
 1. Utdata från retursvaret på den överordnade modulen skickas till det överordnade scenariot.
 1. Utdata för scenariot Anropa ett underordnat scenario är utdata från det underordnade scenariot. Utdata kan bearbetas senare i det överordnade scenariot.
 
-## Användningsexempel
+## Användningsfall
 
 Här följer några exempel på hur du använder kedjningsscenarier:
 
@@ -102,6 +102,8 @@ Följ de här stegen för att undvika rekursion när du kedjer scenarier:
 >
 >* **När ett scenario orsakar rekursion inaktiveras det av Fusion Engineering-teamet för att förhindra ytterligare prestandaproblem.**
 >* Eftersom rekursion är ett resultat av scenariodesign måste du utforma dina scenarier på ett sätt som säkerställer att scenariot inte innehåller åtgärder som utlöser scenariot.
+>* Du kan visa ett diagram över relationerna mellan överordnade och underordnade scenarier.
+>   Instruktioner finns i [Visa kedjade scenarierelationer](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md).
 
 ### Använd felhantering för att säkerställa ett svar
 
