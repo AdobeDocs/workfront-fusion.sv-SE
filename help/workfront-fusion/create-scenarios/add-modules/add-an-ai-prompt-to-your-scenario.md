@@ -3,9 +3,10 @@ title: Lägg till en AI-fråga i ditt scenario
 description: Du kan inkludera en AI-prompt i ditt scenario som ansluter till din
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 09e8ca28c12990a699816671d07f85288d973bc7
+exl-id: d0ac0d0b-e3a0-46de-801d-e53c1c4d63ff
+source-git-commit: 3d957c219cdc5fed4fdf9b0649cab724fae21871
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -13,12 +14,6 @@ ht-degree: 0%
 # Lägg till en AI-fråga i ditt scenario
 
 Du kan inkludera en AI-prompt i ditt scenario med hjälp av Model Context Protocol (MCP) kombinerat med stora språkmodeller (LLM). Genom att konfigurera dessa i modulen MCP Agent kan du använda artificiell intelligens för att skapa arbetsflöden som är effektiva, säkra och flexibla.
-
->[!NOTE]
->
->Den här funktionaliteten skiljer sig från möjligheten att lägga till moduler i ett scenario med hjälp av AI.
->
->Mer information om hur du lägger till moduler med AI finns i [Generera ett scenariosegment med hjälp av AI](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md).
 
 ## Översikt över modellkontextprotokollet
 
