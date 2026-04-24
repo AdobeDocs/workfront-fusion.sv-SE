@@ -4,9 +4,9 @@ description: Fusion-administratörer kan visa en kontrollpanel som visar en orga
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
-source-git-commit: 1d8504b10d9ca74a5df5532232cda235c67b0185
+source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '694'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ I det här diagrammet visas körningar per scenario. Olika färger representerar
 
 ## Visa Fusion Performance Dashboard
 
-1. Klicka på Prestanda i den vänstra navigeringen i Fusion.
+1. Klicka på **Prestanda** i den vänstra navigeringen i Fusion.
 
    Kontrollpanelen öppnas.
 

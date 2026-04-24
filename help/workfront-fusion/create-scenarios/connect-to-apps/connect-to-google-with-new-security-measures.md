@@ -4,9 +4,9 @@ description: Google har infört begränsningar för hur användare kan använda 
 author: Becky
 feature: Workfront Fusion
 exl-id: eac7ba26-664e-464c-b05c-8c2ebf407fb3
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Användare av Google Workspace som föredrar att använda sin egen OAuth-klient 
 
 Användare som har tillgång till Google Services via @gmail.com eller @googlemail.com kan ansluta till Google Services via Personal Use. Det här alternativet är avsett för avancerade användare. Instruktioner finns i [Ansluta Adobe Workfront Fusion till Google Services med en anpassad OAuth-klient](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
-## Vanliga frågor och svar
+## Vanliga frågor
 
 * [Vilka appar i Adobe Workfront Fusion påverkas?](#what-apps-in-adobe-workfront-fusion-are-affected)
 * [Har jag ett Google Workspace-konto?](#do-i-have-a-g-suite-account)
@@ -102,7 +102,7 @@ Om din e-postadress slutar med @gmail.com eller @googlemail.com är ditt konto i
 
 Dessa nya begränsningar gäller endast om du integrerar Google Drive eller Gmail. Om du vill ansluta till Google Drive eller Gmail kan du
 
-* Byt till Google Workspace
+* Byt till Google Workspace.
 
   eller
 

@@ -4,9 +4,9 @@ description: Mappning är processen att tilldela en moduls utdata, strukturerade
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Mer information finns i [Konfigurera en modul](/help/workfront-fusion/create-sce
 
 ### Problem: Saknade objekt på mappningspanelen
 
-Mappningspanelen visar utdataobjekt från tidigare moduler. Det kan hända att vissa objekt saknas på den här panelen. Du kan köra modulen som saknar utdata i scenarioredigeraren, och mappningspanelen kan sedan inkludera dessa objekt i senare moduler. Den exakta proceduren varierar beroende på modulens typ
+Mappningspanelen visar utdataobjekt från tidigare moduler. Det kan hända att vissa objekt saknas på den här panelen. Du kan köra modulen som saknar utdata i scenarioredigeraren, och mappningspanelen kan sedan inkludera dessa objekt i senare moduler. Den exakta proceduren varierar beroende på modulens typ.
 
 * [Direktutlösare](#instant-trigger)
 * [Avsökningsutlösare](#polling-trigger)

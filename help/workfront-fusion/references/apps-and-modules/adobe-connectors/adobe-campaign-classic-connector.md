@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Campaign] modulerna kan du starta ett Adobe Workfr
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1235'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 
 Du måste lägga till Fusion-IP-adresserna till [!DNL Adobe Campaign].
 
-* Instruktioner om hur du lägger till IP-adresser i Campaign-tillåtelselista finns i [Lägga till IP-adresser i tillåtelselista](https://experienceleague.adobe.com/sv/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) i Adobe Campaign-dokumentationen.
+* Instruktioner om hur du lägger till IP-adresser i Campaign-tillåtelselista finns i [Lägga till IP-adresser i tillåtelselista](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) i Adobe Campaign-dokumentationen.
 * En lista över IP-adresser som ska läggas till i tillåtelselista finns i [Konfigurera IP-adresser för Fusion i din organisations tillåtelselista](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
 ## Adobe Campaign API-information
@@ -81,9 +81,9 @@ Adobe Campaign Connector använder följande:
 >
 >Vi rekommenderar att du skapar en server-till-server-anslutning. Adobe Campaign har uppdaterat sitt API så att det endast accepterar server-till-server-anslutningar. Om du ansluter till Campaign version 8 eller senare måste du **skapa en server-till-server-anslutning**.
 >
->Mer information om Campaigns nya anslutningskrav finns i [Migrering av tekniska operatorer för Campaign till Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=sv-SE) i dokumentationen för Campaign.
+>Mer information om Campaigns nya anslutningskrav finns i [Migrering av tekniska operatorer för Campaign till Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html) i dokumentationen för Campaign.
 
-1. Klicka på [!DNL Adobe Campaign] bredvid fältet **[!UICONTROL Add]** i någon [!UICONTROL Connection]-modul.
+1. Klicka på **[!UICONTROL Add]** bredvid fältet [!UICONTROL Connection] i någon [!DNL Adobe Campaign]-modul.
 1. Fyll i följande fält:
    <table style="table-layout:auto"> 
       <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -254,18 +254,20 @@ Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Campaign]
     <tr>
       <td role="rowheader">[!UICONTROL Action]</td>
       <td><p>Välj den åtgärd som du vill att API-anropet ska utföra.</p>
-      <p>[!UICONTROL Execute query]</p>
-      <p>[!UICONTROL Write]</p>
-      <p>[!UICONTROL Get entity if more recent]</p>
-      <p>[!UICONTROL Select all]</p>
-      <p>[!UICONTROL Push event]</p>
+      <ul>
+      <li><p>[!UICONTROL Execute query]</p></li>
+      <li><p>[!UICONTROL Write]</p></li>
+      <li><p>[!UICONTROL Get entity if more recent]</p></li>
+      <li><p>[!UICONTROL Select all]</p></li>
+      <li><p>[!UICONTROL Push event]</p></li>
+      </ul>
     </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Headers]</td>
       <td>
         <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p>
-        <p>Exempel: <code>{"Content-type":"application/json"}</code></p>
+        <p>Till exempel: <code>{"Content-type":"application/json"}</code></p>
         <p>Workfront Fusion lägger automatiskt till tokenhuvudet [!UICONTROL x-security].</p>
       </td>
     </tr>
@@ -280,7 +282,7 @@ Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Campaign]
 
 Den här åtgärdsmodulen utför en markerad åtgärd på ett objekt i API:t [!DNL Adobe Campaign].
 
-Mer information om specifika åtgärder och fält finns i [[!DNL Adobe Campaign] - API-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=sv-SE).
+Mer information om specifika åtgärder och fält finns i [[!DNL Adobe Campaign] - API-dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html).
 
 <table style="table-layout:auto"> 
  <col> 

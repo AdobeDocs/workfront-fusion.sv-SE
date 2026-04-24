@@ -4,9 +4,9 @@ description: När du mappar objekt kan du använda funktioner för att skapa enk
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
@@ -66,11 +66,11 @@ Så här infogar du en funktion i ett fält:
 1. Markera fliken som innehåller den funktion som du vill infoga på mappningspanelen.
 
    Mer information om mappning av panelflikar finns i [Funktionsöversikt](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
-   1. Klicka på funktionsnamnet.
+1. Klicka på funktionsnamnet.
 
-      eller
+   eller
 
-      Dra funktionen till fältet.
+   Dra funktionen till fältet.
 1. Konfigurera funktionsparametrarna.
 
    Om du vill ha en förklaring av funktionsparametrarna håller du pekaren över funktionen på mappningspanelen.

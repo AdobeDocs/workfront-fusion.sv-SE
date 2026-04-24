@@ -4,9 +4,9 @@ description: Följ det här allmänna arbetsflödet för att skapa ett scenario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
+source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Kortkommandon
    >
    >Om den vänstra navigeringspanelen eller dess ikoner inte visas klickar du på ikonen ![Meny](assets/main-menu-icon-left-nav.png) .
 
-1. (Valfritt) Klicka på ikonen [!UICONTROL **&#x200B;**] Lägg till mapp **[!UICONTROL Add folder]** på panelen ![Mappar](assets/add-folder-icon.png) och skriv sedan ett namn som &quot;Practice scenarios&quot; för den första mappen.
+1. (Valfritt) Klicka på ikonen **[!UICONTROL Add folder]** ![Lägg till mapp ](assets/add-folder-icon.png) på panelen [!UICONTROL **Mappar**] och skriv sedan ett namn som &quot;Practice scenarios&quot; för den första mappen.
 
 1. (Valfritt) Öppna mappen och klicka sedan på **[!UICONTROL Create a new scenario]** i det övre högra hörnet på sidan.
 
@@ -115,7 +115,7 @@ Genom att testa ditt scenario kan du avgöra om ditt scenario fungerar som det s
 
 ## Aktivera scenariot
 
-Det här exempelscenariot har ingen utlösarmodul. Om detta vore ett scenario som du skulle använda för riktiga data skulle det börja med en utlösarmodul, och det sista du skulle göra är att aktivera den. När du har aktiverat ett scenario körs det som standard var 15:e minut. Du kan ändra detta genom att definiera när och hur ofta du vill att det ska köras.
+När du har aktiverat ett scenario körs det som standard var 15:e minut. Du kan ändra detta genom att definiera när och hur ofta du vill att det ska köras.
 
 Mer information om att aktivera scenarier finns i [Aktivera eller inaktivera ett scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 

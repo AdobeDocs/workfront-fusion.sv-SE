@@ -4,9 +4,9 @@ description: Med Adobe I/O Events-modulerna kan du starta ett Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -162,8 +162,6 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ### Utlösare
 
-<!--Becky start here-->
-
 #### Skapa en händelseregistrering
 
 Den här åtgärdsmodulen använder en webkrok för att skapa en händelsebeskrivning. Du kan konfigurera en webkrok här. Om du använder en befintlig webkrok är fälten i den här modulen skrivskyddade.
@@ -283,7 +281,7 @@ Den här åtgärdsmodulen gör ett anpassat API-anrop till API:t [!DNL Adobe I/O
       <td role="rowheader">[!UICONTROL Headers]</td>
       <td>
         <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p>
-        <p>Exempel: <code>{"Content-type":"application/json"}</code></p>
+        <p>Till exempel: <code>{"Content-type":"application/json"}</code></p>
         <p>Workfront Fusion lägger automatiskt till auktoriseringshuvuden och x-api-key-huvuden.</p>
       </td>
     </tr>
@@ -358,7 +356,6 @@ Den här sökmodulen hämtar alla händelser för registrering från en journal.
        </tr>
      </tbody>
    </table>
-&lt;!—
 
 Se händelser
 

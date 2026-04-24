@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: aa570f28-7387-47c5-9968-e3554921b0f5
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 
 Du kan ta bort en användare från Workfront Fusion och samtidigt lämna övriga Adobe-produktbehörigheter intakta.
 
-Instruktioner finns i&quot;Ta bort användare och användargrupper från en produkt&quot; i artikeln [Hantera produkter på Admin Console](https://helpx.adobe.com/se/enterprise/using/manage-products.html).
+Instruktioner finns i&quot;Ta bort användare och användargrupper från en produkt&quot; i artikeln [Hantera produkter på Admin Console](https://helpx.adobe.com/enterprise/using/manage-products.html).
 
 ## Inaktivera en användare i alla produkter i [!DNL Adobe Admin Console]
 
@@ -69,13 +69,12 @@ En användare inaktiveras från [!DNL Adobe Admin Console] när något av följa
 * Användaren tas bort från en produktprofil och tilldelas inte till någon annan produktprofil.
 * Användaren tas bort eller inaktiveras i organisationen som innehåller Workfront Fusion.
 
-  Instruktioner finns i avsnittet Ta bort användare i [Hantera användare individuellt](https://helpx.adobe.com/se/enterprise/using/manage-users-individually.html).
+  Instruktioner finns i avsnittet Ta bort användare i [Hantera användare individuellt](https://helpx.adobe.com/enterprise/using/manage-users-individually.html).
 
 I Workfront Fusion påverkar inaktiveringen användaren på något av följande sätt:
 
 * Om användaren bara finns i en organisation inaktiveras användaren.
 * Om användaren finns i mer än en organisation tas användaren bort från organisationen som användaren ändrades i [!DNL Adobe Admin Console].
-* Tänk på följande när du tar bort en användare.
 
 ### Att tänka på när du tar bort en användare i Workfront Fusion
 

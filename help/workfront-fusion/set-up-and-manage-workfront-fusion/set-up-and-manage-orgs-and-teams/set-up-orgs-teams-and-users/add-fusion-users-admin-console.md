@@ -8,9 +8,9 @@ description: Du kan lägga till en användare i Adobe Admin Console och tilldela
 author: Becky
 feature: Workfront Fusion
 exl-id: 7cb1c1a7-3c7a-459a-818f-d9cefcb9988b
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Du kan lägga till en användare i [!DNL Adobe Admin Console] och tilldela dem till Adobe Workfront Fusion, eller tilldela en befintlig användare i [!DNL Adobe Admin Console] till Workfront Fusion.
 
-En demonstrationsvideo om hur du beskriver Workfront Fusion i [!DNL Adobe Admin Console], inklusive hur du lägger till användare, finns i [[!DNL Fusion]  på Adobe IMS &#x200B;](https://video.tv.adobe.com/v/3412464/){target=_blank}.
+En demonstrationsvideo om hur du beskriver Workfront Fusion i [!DNL Adobe Admin Console], inklusive hur du lägger till användare, finns i [[!DNL Fusion]  på Adobe IMS ](https://video.tv.adobe.com/v/3412464/){target=_blank}.
 
 ## Åtkomstkrav
 
@@ -68,11 +68,11 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 
 Innan du använder [!DNL Admin Console] för Workfront bör du få ett e-postmeddelande med en inbjudan till konsolen.
 
-1. Om du inte har använt [!DNL Adobe] tidigare och du har fått ett e-postmeddelande om att du nu har administratörsbehörighet för att hantera [!DNL Adobe]-programvara och tjänster för din organisation klickar du på knappen i e-postmeddelandet för att skapa ett [!DNL Adobe]-konto och öppna [!DNL Admin Console].
+* Om du inte har använt [!DNL Adobe] tidigare och du har fått ett e-postmeddelande om att du nu har administratörsbehörighet för att hantera [!DNL Adobe]-programvara och tjänster för din organisation klickar du på knappen i e-postmeddelandet för att skapa ett [!DNL Adobe]-konto och öppna [!DNL Admin Console].
 
-   eller
+  eller
 
-   Om du redan har ett Adobe-konto går du till [[!DNL Adobe Admin Console] sidan](https://adminconsole.adobe.com).
+  Om du redan har ett Adobe-konto går du till [[!DNL Adobe Admin Console] sidan](https://adminconsole.adobe.com).
 
 
 ## Lägg till en ny användare i [!DNL Adobe Admin Console] och Workfront Fusion
@@ -85,13 +85,13 @@ Innan du använder [!DNL Admin Console] för Workfront bör du få ett e-postmed
 
    ![Fusion-instans i Admin Console](assets/fusion-instances-admin-console.png)
 
-1. Klicka på länken Workfront Fusion **[!UICONTROL Product Profiles]** i den lista som visas med fliken [!UICONTROL Product Profile] markerad.
+1. Klicka på länken Workfront Fusion [!UICONTROL Product Profile] i den lista som visas med fliken **[!UICONTROL Product Profiles]** markerad.
 
    >[!IMPORTANT]
    >
    > Gör inga ändringar i själva [!UICONTROL Product Profile].
 
-1. Klicka på **[!UICONTROL Users]** med fliken **[!UICONTROL Add User]** markerad ovanför listan.
+1. Klicka på **[!UICONTROL Add User]** med fliken **[!UICONTROL Users]** markerad ovanför listan.
 
 1. I rutan **[!UICONTROL Add users to this product profile]** anger du e-postadressen eller namnet på en användare som du vill lägga till och markerar sedan användaren i listan som visas.
 
@@ -99,7 +99,7 @@ Innan du använder [!DNL Admin Console] för Workfront bör du få ett e-postmed
 
    Användaren skapas i Workfront Fusion.
 
-1. (Valfritt) Fortsätt till [Ändra en användares åtkomstnivå i Workfront Fusion](#change-a-users-access-level-in-workfront-fusion)
+1. (Valfritt) Fortsätt till [Ändra en användares åtkomstnivå i Workfront Fusion](#change-a-users-access-level-in-workfront-fusion).
 
 ## Ändra en användares åtkomstnivå i Workfront Fusion
 

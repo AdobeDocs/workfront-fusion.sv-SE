@@ -4,9 +4,9 @@ description: I vissa scenarier behöver du bara arbeta med paket som uppfyller s
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Du kan kopiera ett befintligt filter och klistra in det någon annanstans i scen
 1. Högerklicka på anslutningspunkterna mellan moduler där filtret finns.
 1. Välj **Kopiera filter**.
 1. Högerklicka på de kopplingspunkter mellan moduler där du vill klistra in filtret.
-1. Välj **Klistra in filter
+1. Välj filtret **Klistra in**
 1. (Valfritt) Om du vill justera filtret klickar du på filterikonen eller etiketten och anger värden enligt beskrivningen i [Lägg till ett filter mellan två moduler](#add-a-filter-between-two-modules) i den här artikeln.
 
 
