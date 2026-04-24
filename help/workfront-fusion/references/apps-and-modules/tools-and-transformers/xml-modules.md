@@ -4,10 +4,10 @@ description: Med XML-appen kan du tolka en XML-formaterad text via XML-modulen &
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '1283'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -91,7 +91,7 @@ Modulen [!UICONTROL XML] > [!UICONTROL Create XML] konverterar ett paket till en
 
 Ett typiskt användningsfall är att omvandla data från ett [!DNL Google] >kalkylblad till XML.
 
-1. Placera modulen [!DNL Google Sheets] > [!UICONTROL Select rows] i ditt scenario för att hämta data. Konfigurera modulen för att hämta rader från ditt [!DNL Google]-kalkylblad. Ställ in &#x200B;**[!UICONTROL Maximum number of returned rows]** på ett litet tal, men större än ett för testningsändamål (exempel, tre). Kör modulen [!DNL Google Sheets] genom att högerklicka på den och välja **[!UICONTROL Run this module only]**. Kontrollera modulens utdata.
+1. Placera modulen [!DNL Google Sheets] > [!UICONTROL Select rows] i ditt scenario för att hämta data. Konfigurera modulen för att hämta rader från ditt [!DNL Google]-kalkylblad. Ställ in **[!UICONTROL Maximum number of returned rows]** på ett litet tal, men större än ett för testningsändamål (Exempel: tre). Kör modulen [!DNL Google Sheets] genom att högerklicka på den och välja **[!UICONTROL Run this module only]**. Kontrollera modulens utdata.
 1. Anslut modulen [!UICONTROL Array Aggregator] efter modulen [!DNL Google Sheets]. Välj modulen [!DNL Google Sheets] i fältet **[!UICONTROL Source node]** i modulens konfiguration. Låt de andra fälten vara som de är för tillfället.
 1. Anslut modulen [!UICONTROL XML] > [!UICONTROL Create XML] efter modulen [!UICONTROL Array Aggregator].
 

@@ -4,7 +4,7 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '2170'
 ht-degree: 1%
@@ -185,7 +185,7 @@ Om du vill hämta en privat nyckel för din [!DNL Workfront Fusion Jira]-anslutn
 #### Konfigurera klientappen som en konsument i [!DNL Jira]
 
 1. Logga in på din [!DNL Jira]-instans.
-1. Klicka på ikonen **[!UICONTROL [!DNL Jira] Settings]** ![Jira settings &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]** i den vänstra navigeringspanelen.
+1. Klicka på ikonen **[!UICONTROL [!DNL Jira] Settings]** ![Jira settings ](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]** i den vänstra navigeringspanelen.
 1. I fältet **[!UICONTROL Enter the URL of the application you want to link]** anger du
 
    ```

@@ -4,7 +4,7 @@ description: Du kan visa en logg med aktiviteter, som att skapa eller aktivera s
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: 2ffb7676067720a5b9daa51b560389396f4a665f
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 ## Filtrera aktivitetsloggar
 
 1. Klicka på **Org overview** ![Org overview icon](assets/org-overview-icon.png) i den vänstra navigeringspanelen.
-1. Om du inte är i den organisation du vill visa aktivitetsloggen för klickar du på organisationsnamnet i skärmens övre högra hörn och väljer organisation i listrutan.
+1. Om du inte befinner dig i den organisation som du vill visa aktivitetsloggen för klickar du på organisationsnamnet i skärmens övre högra hörn och väljer organisation i listrutan.
 1. Klicka på fliken **[!UICONTROL Activity Logs]** i skärmens övre del.
 
    Sidan Aktivitetslogg öppnas.

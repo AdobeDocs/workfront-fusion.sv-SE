@@ -7,7 +7,7 @@ description: Lär dig hur du lägger till en funktion för att uppdatera en arbe
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -79,7 +79,7 @@ När det här scenariot konverterar en begäran till ett projekt är projektets 
 1. Klicka på fältet **Namn**.
 
    Mappningspanelen öppnas.
-1. Klicka på ikonen **Text och binära funktioner** på mappningspanelen. ![Ikon för textfunktioner](assets/toolbar-icon-text&binary-functions.png)
+1. Klicka på ikonen **Text och binära funktioner** på mappningspanelen. ![Ikon för textfunktioner](assets/toolbar-icon-text-binary-functions.png)
 1. Markera funktionen **upper**.
 
    Funktionen visas i fältet Namn, inklusive formateringen för de indata som förväntas.

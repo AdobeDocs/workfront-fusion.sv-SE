@@ -1,14 +1,14 @@
 ---
-title: Aktivitet för Workfront Fusion-release:&nbsp;Vecka den 26 april 2021
-description: Aktivitet för Workfront Fusion-release:&nbsp;Vecka den 26 april 2021
+title: 'Versionsaktivitet för Workfront Fusion: 26 april 2021'
+description: 'Versionsaktivitet för Workfront Fusion: 26 april 2021'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 5a70ed9e-9f70-40fb-b289-0955b951bf7a
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ På den här sidan beskrivs alla förbättringar som gjorts i Adobe Workfront Fu
 
 En lista med alla senaste ändringar finns i [Adobe Workfront Fusion-versionsaktivitet](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-En lista med de senaste felkorrigeringarna i Workfront Fusion finns på sidan [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=sv-SE) och sök efter uppdateringar med namnet Workfront Fusion Maintenance Update.
+En lista med de senaste felkorrigeringarna i Workfront Fusion finns på sidan [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) och sök efter uppdateringar med namnet Workfront Fusion Maintenance Update.
 
 ## Microsoft OneDrive-anslutning och moduler är nu tillgängliga
 

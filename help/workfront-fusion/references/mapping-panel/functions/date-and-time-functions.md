@@ -4,7 +4,7 @@ description: Följande datum- och tidsfunktioner är tillgängliga i panelen fö
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 42bf7b0ac6eb414312573b32b93677a5c9650fa8
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Datum- och tidsfunktioner
 
-## Variabel
+## Variabler
 
 ### nu
 
@@ -139,7 +139,7 @@ Den här funktionen returnerar ett nytt datum med de sekunder som anges i parame
 
 Ange ett tal mellan 0 och 59. Om talet ligger utanför det intervallet returnerar funktionen en sekund från föregående minut (för ett negativt tal) eller efterföljande minut (för ett positivt tal).
 
-Om du behöver ange ett tal utanför intervallet rekommenderar vi att du använder [!UICONTROL &#x200B; addSeconds], enligt beskrivningen ovan i avsnittet [addSeconds (date; number)](#addseconds-date-number).
+Om du behöver ange ett tal utanför intervallet rekommenderar vi att du använder [!UICONTROL  addSeconds], enligt beskrivningen ovan i avsnittet [addSeconds (date; number)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -333,7 +333,7 @@ Funktionen `formatDate` returnerar en textrepresentation av det angivna Date-vä
 
 **Exempel:** Scenario och Web timezone var båda inställda på `Europe/Prague` i dessa exempel.
 
-![Exempel på funktion för datum/tid](assets/date&time-functions-examples-350x61.png)
+![Exempel på funktion för datum/tid](assets/date-time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -463,7 +463,7 @@ Det här avsnittet är anpassat för Workfront Fusion från webbsidan [!DNL Exce
 
 Om du behöver beräkna ett datum som motsvarar den n:e veckodagen i månaden (till exempel den första tisdagen, den tredje fredagen och så vidare) kan du använda följande formel:
 
-![Beräkna dag &#x200B;](assets/date&time-functions-calc-nth-day-350x31.png)
+![Beräkna dag ](assets/date-time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
@@ -510,7 +510,7 @@ Om du bara vill beräkna ett specifikt fall, till exempel varje onsdag, kan du e
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![Variabelvärde för dag &#x200B;](assets/nth-day-variable-value-350x33.png)
+![Variabelvärde för dag ](assets/nth-day-variable-value-350x33.png)
 
 #### Förklaring:
 

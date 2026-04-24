@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion kräver en Adobe Workfront Fusion-licens fö
 author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
-source-wordcount: '3587'
+source-wordcount: '3591'
 ht-degree: 0%
 
 ---
@@ -343,7 +343,7 @@ Den här snabbutlösarmodulen startar ett scenario när en wiki-sida skapas elle
 
 +++
 
-### Åtgärder
+### Instruktioner
 
 +++**[!UICONTROL Accept merge request]**
 
@@ -767,7 +767,7 @@ Mer information om fält finns i [Visa alla anteckningar för sammanfogningsbeg�
 
 Den här modulen hämtar en lista med alla anteckningar för ett enskilt kodfragment. Utdragsanteckningar är kommentarer som användare kan skicka till ett utdrag.
 
-Mer information om fält finns i [🔗](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) i [!DNL GitLab]-dokumentationen.
+Mer information om fält finns i [Visa alla textutdrag](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) i [!DNL GitLab]-dokumentationen.
 
 +++
 

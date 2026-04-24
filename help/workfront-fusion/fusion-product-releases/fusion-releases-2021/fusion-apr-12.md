@@ -1,11 +1,11 @@
 ---
-title: Aktivitet för Workfront Fusion-release:&nbsp;Vecka den 12 april 2021
-description: Aktivitet för Workfront Fusion-release:&nbsp;Vecka den 12 april 2021
+title: 'Versionsaktivitet för Workfront Fusion: 12 april 2021'
+description: 'Versionsaktivitet för Workfront Fusion: 12 april 2021'
 author: Luke
 draft: Probably
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Den här sidan beskriver alla förbättringar som gjorts i Adobe Workfront Fusio
 
 En lista med alla senaste ändringar finns i [Adobe Workfront Fusion-versionsaktivitet](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-En lista med de senaste felkorrigeringarna i Workfront Fusion finns på sidan [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=sv-SE) och sök efter uppdateringar med namnet Workfront Fusion Maintenance Update.
+En lista med de senaste felkorrigeringarna i Workfront Fusion finns på sidan [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) och sök efter uppdateringar med namnet Workfront Fusion Maintenance Update.
 
 ## NetSuite-program och -modul är nu tillgängliga
 

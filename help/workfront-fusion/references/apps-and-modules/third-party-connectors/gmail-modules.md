@@ -4,7 +4,7 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 03f4556d7f903689c85cba966ad875973037a2ba
 workflow-type: tm+mt
 source-wordcount: '1586'
 ht-degree: 0%
@@ -64,13 +64,13 @@ Du måste ha ett [!DNL Gmail]-konto för att kunna använda [!DNL Gmail]-moduler
 * [Anslut [!DNL Gmail] till Workfront Fusion med  [!DNL Google Workspace]](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
 * [Anslut [!DNL Gmail] till Workfront Fusion med  [!DNL gmail.com]  eller [!DNL googlemail].com](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### Anslut [!DNL Gmail] till Workfront Fusion med [!DNL &#x200B; Google Workspace]
+### Anslut [!DNL Gmail] till Workfront Fusion med [!DNL  Google Workspace]
 
 Instruktioner om hur du ansluter ditt [!DNL Google Workspace]-konto till [!UICONTROL Workfront Fusion] finns i [Skapa en anslutning - grundläggande instruktioner](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
 ### Anslut [!DNL Gmail] till Workfront Fusion med [!DNL gmail.com] eller [!DNL googlemail].com
 
-Om du är [!DNL @gmail.com] eller [!DNL @googlemail.com] användare måste du skapa en OAuth-klient på [&#x200B; [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) för att få en [!UICONTROL Client ID] och [!UICONTROL Client Secret].
+Om du är [!DNL @gmail.com] eller [!DNL @googlemail.com] användare måste du skapa en OAuth-klient på [ [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) för att få en [!UICONTROL Client ID] och [!UICONTROL Client Secret].
 
 Stegvisa instruktioner om hur du skapar OAuth-klienten och hämtar en [!UICONTROL Client ID] och [!UICONTROL Client Secret] finns i [Ansluta Adobe Workfront Fusion till Google Services med en anpassad OAuth-klient](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
@@ -83,7 +83,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Utlösare](#triggers)
-* [Åtgärder](#actions)
+* [Instruktioner](#actions)
 * [Iteratorer](#iterators)
 
 ### Utlösare
@@ -143,18 +143,18 @@ När du konfigurerar den här modulen visas följande fält.
  </tbody> 
 </table>
 
-### Åtgärder
+### Instruktioner
 
 <!--* [Add labels](#add-labels)-->
 * [[!UICONTROL Copy an email]](#copy-an-email)
 * [[!UICONTROL Create a draft]](#create-a-draft)
 * [[!UICONTROL Delete an email]](#delete-an-email)
-  <!--* [Delete labels](#delete-labels)-->
 * [[!UICONTROL Mark an email as read]](#mark-an-email-as-read)
 * [[!UICONTROL Mark an email as unread]](#mark-an-email-as-unread)
 * [[!UICONTROL Move an email]](#move-an-email)
 * [[!UICONTROL Modify email labels]](#modify-email-labels)
 * [[!UICONTROL Send an email]](#send-an-email)
+  <!--* [Delete labels](#delete-labels)-->
   <!--* [Set labels](#set-labels)-->
 
 <!--#### Add labels-->

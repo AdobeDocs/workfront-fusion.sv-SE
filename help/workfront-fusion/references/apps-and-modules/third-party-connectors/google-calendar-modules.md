@@ -4,7 +4,7 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '2380'
 ht-degree: 0%
@@ -94,7 +94,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 
 * [Utlösare](#triggers)
-* [Åtgärder](#actions)
+* [Instruktioner](#actions)
 * [Iteratorer](#iterators)
 
 ### Utlösare
@@ -158,7 +158,7 @@ Den här utlösarmodulen använder en postlåda för att skapa en e-postadress s
  </tbody> 
 </table>
 
-### Åtgärder
+### Instruktioner
 
 * [Skapa en kalender](#create-a-calendar)
 * [Skapa en händelse](#create-an-event)
@@ -505,7 +505,7 @@ Du kan utlösa ett scenario en viss tid före en händelse med hjälp av standar
    1. Öppna din **[!UICONTROL [!DNL Gmail] settings]**.
    1. Öppna fliken **[!UICONTROL Forwarding and POP/IMAP]**.
    1. Klicka på **[!UICONTROL Add a forwarding address].**
-   1. Klistra in e-postadressen för de kopierade postlådorna, klicka på &#x200B;**[!UICONTROL Next]**, bekräfta genom att trycka på **[!UICONTROL Proceed]** i popup-fönstret och sedan klicka på **[!UICONTROL OK]**.
+   1. Klistra in e-postadressen för de kopierade postlådorna, klicka på **[!UICONTROL Next]**, bekräfta genom att trycka på **[!UICONTROL Proceed]** i popup-fönstret och sedan klicka på **[!UICONTROL OK]**.
 
    1. I Workfront Fusion växlar du till det nya scenario som ska avsluta körningen genom att ta emot bekräftelsemeddelandet via e-post.
    1. Klicka på bubblan ovanför modulen för att kontrollera modulens utdata.
@@ -513,13 +513,13 @@ Du kan utlösa ett scenario en viss tid före en händelse med hjälp av standar
 
       ![Bekräftelsekod](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
-   1. I Gmail klistrar du in bekräftelsekoden i redigeringsrutan och klickar på &#x200B;**[!UICONTROL Verify]**:
+   1. I Gmail klistrar du in bekräftelsekoden i redigeringsrutan och klickar på **[!UICONTROL Verify]**:
 
       ![Klistra in kod](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
 
    1. Öppna fliken **[!UICONTROL Filters and Blocked Addresses]**.
    1. Klicka på **[!UICONTROL Create a new filter]**.
-   1. Konfigurera ett filter för alla e-postmeddelanden som kommer från `     calendar-notification@google.com` och klicka på &#x200B;**[!UICONTROL Create a filter]**:
+   1. Konfigurera ett filter för alla e-postmeddelanden som kommer från `     calendar-notification@google.com` och klicka på **[!UICONTROL Create a filter]**:
    1. Välj **[!UICONTROL Forward it to]** och välj e-postadressen för postlådorna i listan.
    1. Klicka på **[!UICONTROL Create filter]** för att skapa filtret.
 
