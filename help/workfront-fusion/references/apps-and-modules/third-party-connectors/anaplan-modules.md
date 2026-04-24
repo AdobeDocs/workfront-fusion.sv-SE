@@ -4,7 +4,7 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1797'
 ht-degree: 0%
@@ -133,7 +133,8 @@ Så här skapar du en anslutning för dina [!DNL Anaplan]-moduler:
 
 1. Klicka på **[!UICONTROL Continue]** för att spara anslutningen och återgå till modulen.
 
-<!--1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
+<!--
+1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
 1. Select the connection type.
 
    <table style="table-layout:auto">
@@ -151,7 +152,8 @@ Så här skapar du en anslutning för dina [!DNL Anaplan]-moduler:
     </tbody> 
    </table>
 
-1. Click **[!UICONTROL Continue]** to save the connection and return to the module.-->
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
+-->
 
 ## [!DNL Anaplan]-moduler och deras fält
 
@@ -162,7 +164,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Utlösare](#triggers)
-* [Åtgärder](#actions)
+* [Instruktioner](#actions)
 * [Sökningar](#searches)
 
 ### Utlösare
@@ -198,7 +200,7 @@ Den här utlösarmodulen startar ett scenario när en post av den valda typen sk
  </tbody> 
 </table>
 
-### Åtgärder
+### Instruktioner
 
 * [[!UICONTROL Create a list item]](#create-a-list-item)
 * [Ta bort en post](#delete-a-record)

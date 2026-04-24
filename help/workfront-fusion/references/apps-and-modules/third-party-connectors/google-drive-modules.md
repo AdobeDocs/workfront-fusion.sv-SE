@@ -4,7 +4,7 @@ description: Modulerna  [!DNL Adobe Workfront Fusion Google Drive] gör att du k
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 0%
@@ -103,7 +103,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 
 * [Utlösare](#triggers)
-* [Åtgärder](#actions)
+* [Instruktioner](#actions)
 
 ### Utlösare
 
@@ -297,7 +297,7 @@ Startar när en ny fil delas med dig eller när en befintlig delad fil uppdatera
  </tbody> 
 </table>
 
-### Åtgärder
+### Instruktioner
 
 * [[!UICONTROL Copy a file]](#copy-a-file)
 * [[!UICONTROL Create a fFolder]](#create-a-folder)
@@ -625,7 +625,8 @@ Det finns flera orsaker till att det inte går att överföra eller uppdatera en
 * Den överförda filen är för stor och överskrider maxgränsen för filstorlek som tillåts för din [!DNL Google Drive]-plan, eller så har du överskridit lagringsgränsen för [!DNL Google Drive]. Du kan antingen uppgradera din lagringsplan eller ta bort befintliga filer från tjänsten [!DNL Google Drive].
 * Den valda mappen som filen skulle överföras till finns inte längre. I det här fallet upphör scenariot och du måste välja en annan målmapp i modulen.
 
-<!-- Not present February 2025
+<!--
+Not present February 2025
 
 ## Search for files
 

@@ -4,7 +4,7 @@ description: Kontot  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '2281'
 ht-degree: 0%
@@ -168,12 +168,12 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Assets](#assets)
+* [Resurser](#assets)
 * [Kommentar](#comments)
 * [Projekt](#projects)
 * [Övriga](#other)
 
-### Assets
+### Resurser
 
 * [[!UICONTROL Create an Asset]](#create-an-asset)
 * [[!UICONTROL Delete an Asset]](#delete-an-asset)
@@ -215,12 +215,12 @@ Den här åtgärdsmodulen skapar en ny resurs.
   <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
    <td> <p>Ange namnet på den nya filen eller mappen.</p> </td> 
-  </tr> <!--
+  </tr> 
+  <!--
    <tr> 
     <td role="rowheader">File Type </td> 
     <td> <p>Select the type of file you want to upload.</p> </td> 
    </tr>
-  --> <!--
    <tr> 
     <td role="rowheader">File Size </td> 
     <td> <p>The file size in bytes.</p> </td> 
@@ -781,7 +781,7 @@ Med den här modulen kan du utföra ett anpassat API-anrop.
 </table>
 
 
-<!-- 
+<!--
 **Example:** The following API call returns all teams and its details in your [!DNL Frame.io] account:
 
 URL: `/v2/teams`

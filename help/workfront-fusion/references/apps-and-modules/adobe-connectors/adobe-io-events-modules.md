@@ -4,7 +4,7 @@ description: Med Adobe I/O Events-modulerna kan du starta ett Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 0%
@@ -157,7 +157,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Utlösare](#triggers)
-* [Åtgärder](#actions)
+* [Instruktioner](#actions)
 * [Sökningar](#searches)
 
 ### Utlösare
@@ -214,7 +214,7 @@ Så här skapar du en webkrok:
 
 1. Klicka på Spara om du vill spara webkroken och återgå till modulen.
 
-### Åtgärder
+### Instruktioner
 
 * [Hämta provider- och händelse-ID:n](#get-provider-and-event-ids)
 * [Göra ett anpassat API-anrop](#make-a-custom-api-call)
@@ -339,13 +339,15 @@ Den här sökmodulen hämtar alla händelser för registrering från en journal.
          <td>Ange eller mappa ett datum. Modulen returnerar händelser som inträffat efter detta datum.
          </td>
        </tr>
-<!--       <tr>
+<!--
+<tr>
          <td role="rowheader">
            [!UICONTROL Seek]
          </td>
          <td>
          </td>
-       </tr>-->
+       </tr>
+-->
        <tr>
          <td role="rowheader">
            [!UICONTROL Latest]
@@ -373,4 +375,4 @@ Den här utlösarmodulen startar ett scenario när en händelse inträffar i den
    </tbody> 
 </table>
 
-—>
+-->

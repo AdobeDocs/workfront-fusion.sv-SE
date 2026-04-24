@@ -4,7 +4,7 @@ description: Du kan visa information om händelser eller körningar i ett scenar
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: ab12dbf0dbad25a8300eb1201fa3e0fde9148acc
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '859'
 ht-degree: 0%
@@ -115,14 +115,15 @@ Fliken [!UICONTROL History] visar fler detaljer än vad som är tillgängligt p�
 
 Du kan filtrera körningshistoriken så att endast körningar med angivna värden visas.
 
-1. Öppna helsideshistoriken för ett scenario enligt beskrivningen i [Visa historik för scenariokörning på fliken [!UICONTROL History] &#x200B;](#view-scenario-history-on-the-history-tab) i den här artikeln.
+1. Öppna helsideshistoriken för ett scenario enligt beskrivningen i [Visa historik för scenariokörning på fliken [!UICONTROL History] ](#view-scenario-history-on-the-history-tab) i den här artikeln.
 1. Klicka på ikonen [!UICONTROL filter] ![Scenariofilterikon](assets/fusion-scenario-filter-icon.png) i kolumnrubriken som du vill filtrera efter.
 1. Ange de värden som du vill filtrera efter i dialogrutan [!UICONTROL filter].
 1. Klicka på **[!UICONTROL Save]**.
 
 Filterikonen är orange i kolumner med ett aktivt filter.
 
-<!-- don't see how to do this
+<!--
+don't see how to do this
 ## Sort the scenario execution history
 
 You can sort the scenario execution history.
@@ -134,7 +135,7 @@ You can sort the scenario execution history.
 
 ## Sök i alla körningar av ett scenario
 
-1. Öppna helsideshistoriken för ett scenario enligt beskrivningen i [Visa historik för scenariokörning på fliken [!UICONTROL History] &#x200B;](#view-scenario-history-on-the-history-tab) i den här artikeln.
+1. Öppna helsideshistoriken för ett scenario enligt beskrivningen i [Visa historik för scenariokörning på fliken [!UICONTROL History] ](#view-scenario-history-on-the-history-tab) i den här artikeln.
 1. Klicka på **[!UICONTROL Fulltext search]** högst upp i listan över körningar.
 
    eller

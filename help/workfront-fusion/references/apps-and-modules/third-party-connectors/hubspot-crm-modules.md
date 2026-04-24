@@ -4,9 +4,9 @@ description: Med Adobe Workfront Fusion HubSpot CRM-modulerna kan du övervaka h
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
 workflow-type: tm+mt
-source-wordcount: '6644'
+source-wordcount: '6635'
 ht-degree: 0%
 
 ---
@@ -1432,7 +1432,7 @@ Den här åtgärdsmodulen skapar en ny uppgift för en kalender. Anslutningen so
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Category]</td> 
-   <td>Välj händelsetyp.<ul><li><b>Blogginlägg</b><p>Ange ID för innehållsgrupp. Detta är bloggsidans ID.</p></li><li><b>E-post</b><p>Ange eller mappa sökvägen till den e-postmall som du vill använda.</li><li><b>Landningssida</b><p>Ange eller mappa sökvägen till den landningssidmall som du vill använda.</li><li><b>Egen</b></li><ul></td> 
+   <td>Välj händelsetyp.<ul><li><b>Blogginlägg</b><p>Ange ID för innehållsgrupp. Detta är bloggsidans ID.</p></li><li><b>E-post</b><p>Ange eller mappa sökvägen till den e-postmall som du vill använda.</li><li><b>Landningssida</b><p>Ange eller mappa sökvägen till den landningssidmall som du vill använda.</li><li><b>Anpassad</b></li><ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL State]</td> 
@@ -1566,7 +1566,7 @@ Tar bort en befintlig biljett med dess ID.
 
 <!-- List Tickets  Need to find a working connection-->
 
-&lt;!— Uppdatera en biljett Behöver hitta en fungerande anslutning—>
+<!-- Update a Ticket Need to find a working connection-->
 
 <!-- Watch Tickets Need to find a working connection-->
 
@@ -1980,18 +1980,17 @@ Den här sökmodulen hämtar inlägg från en HubSpot-blogg.
 
 +++
 
-<!--+++**Workflows**>
+<!--
++++**Workflows**>
 
-<!--### Workflows May need connection
+### Workflows May need connection
 
 #### Add a Contact to a Workflow
 
 
 #### Remove a Contact from a Workflow
-
++++
 -->
-
-<!--+++-->
 
 ### Prenumerationer
 
@@ -2061,9 +2060,11 @@ Den här utlösarmodulen startar ett scenario när en ny tidslinjeprenumeration 
 
 <!--### Associations-->
 
-<!--#### Associate CRM Objects  May need connection
+<!--
+#### Associate CRM Objects  May need connection
 
-This action module associates two CRM objects.-->
+This action module associates two CRM objects.
+-->
 
 <!--#### Associate Multiple CRM Objects  May need connection-->
 
@@ -2079,7 +2080,9 @@ This action module associates two CRM objects.-->
 
 <!--#### List Associations for a CRM Object May need connection-->
 
-<!--+++-->
+<!--
++++
+-->
 
 ### Övriga
 

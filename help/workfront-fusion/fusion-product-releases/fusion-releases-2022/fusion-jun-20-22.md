@@ -8,9 +8,8 @@ description: Den här sidan beskriver alla förbättringar som gjorts i Adobe Wo
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: eb4b2371-f423-4efc-9e04-ca4be55767d2
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
@@ -23,11 +22,11 @@ Den här sidan beskriver alla förbättringar som gjorts i Adobe Workfront Fusio
 
 En lista med alla senaste ändringar finns i [Adobe Workfront Fusion-versionsaktivitet](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-En lista med de senaste felkorrigeringarna i Workfront Fusion finns på sidan [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=sv-SE) och sök efter uppdateringar med namnet Workfront Fusion Maintenance Update.
+En lista med de senaste felkorrigeringarna i Workfront Fusion finns på sidan [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) och sök efter uppdateringar med namnet Workfront Fusion Maintenance Update.
 
-## Adobe AEM Assets-anslutning och moduler är nu tillgängliga
+## Adobe AEM Assets Connector och moduler är nu tillgängliga
 
-Nu kan du använda Adobe Workfront Fusion för att ansluta till ditt Adobe AEM Assets-konto. Med Adobe AEM Assets-modulerna kan du
+Nu kan du ansluta till ditt Adobe AEM Assets-konto med Adobe Workfront Fusion. Med Adobe AEM Assets-modulerna kan du
 
 * Skapa, uppdatera, läsa eller ta bort mappar, resurser eller återgivningar
 

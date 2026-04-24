@@ -4,7 +4,7 @@ description: När du skapar en mall blir mallen tillgänglig för alla dina team
 author: Becky
 feature: Workfront Fusion
 exl-id: 99a1227d-bff9-479f-b8b9-efcf7cea3708
-source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%
@@ -93,7 +93,8 @@ Följande statusar är tillgängliga:
 * **[!UICONTROL Published]**: Den här mallen visas bara för mallskaparen och deras team. Du kan skicka publicerade mallar för godkännande och kopiera en delbar länk.
 * **[!UICONTROL Approved]**: Den här mallen visas för alla Workfront Fusion-användare på fliken [!UICONTROL Public templates]. Du kan kopiera en delbar länk genom att klicka på [!UICONTROL Options] i skärmens övre högra hörn.
 
-<!--You can also check the status from the [!UICONTROL Team templates] tab. If a template is published, it will have an icon to the right of the template name.
+<!--
+You can also check the status from the [!UICONTROL Team templates] tab. If a template is published, it will have an icon to the right of the template name.
 
 * **Eye icon**: The template is published, it is visible only for the team, and the approval request was not sent.
 * **Yellow checkmark icon**: The template is published, it is visible only for the team, and the approval request was sent.

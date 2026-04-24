@@ -3,10 +3,11 @@ title: Adobe Substansmoduler
 description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder  [!DNL Adobe Substance] och ansluta det till flera tredjepartsprogram och -tjänster.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 2e44c89d487100b3245b40f6927185a0ff12ef2f
+exl-id: 85e2e832-0347-4270-b360-4a07224f2bcc
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -94,7 +95,8 @@ Den här åtgärdsmodulen genererar innehåll för en 3D-sammansättning som inn
    <td role="rowheader">Andra fält</td> 
    <td>Konfigurera andra fält efter behov. Mer information om fält finns i <a href="https://s3d.adobe.io/docs#/operations/v1/composites/compose">Adobe Substance API-dokumentationen</a>.</td> 
   </tr> 
-<!--  <tr> 
+  <!--
+  <tr>
    <td role="rowheader">Camera name</td> 
    <td>Enter or map the name of an existing camera that has been previously defined in the source 3D file.</td> 
   </tr> 
@@ -105,7 +107,8 @@ Den här åtgärdsmodulen genererar innehåll för en 3D-sammansättning som inn
   <tr> 
    <td role="rowheader">Enable ground plane</td> 
    <td>Enable this to enable the auto-generated ground plane under the hero asset. This is useful if the 3D scene contains only a hero asset, without additional elements.</td> 
-  </tr> -->
+  </tr>
+  -->
  </tbody> 
 </table>
 

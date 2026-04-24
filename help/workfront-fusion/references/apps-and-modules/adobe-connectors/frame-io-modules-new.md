@@ -4,7 +4,7 @@ description: Kontot  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '4082'
 ht-degree: 0%
@@ -297,7 +297,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Assets](#assets)
+* [Resurser](#assets)
 * [Kommentar](#comments)
 * [Mappar](#folders)
 * [Projekt](#projects)
@@ -306,7 +306,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 * [Metadata](#metadata)
 * [Övriga](#other)
 
-### Assets
+### Resurser
 
 * [[!UICONTROL Create an asset]](#create-an-asset)
 * [[!UICONTROL Delete an asset]](#delete-an-asset)
@@ -343,10 +343,12 @@ Den här åtgärdsmodulen skapar en ny resurs. Du kan överföra en lokal fil el
    <td role="rowheader">[!UICONTROL Path] </td> 
    <td> <p>Välj den sökväg där du vill skapa en resurs.</p> </td> 
   </tr> 
-<!--  <tr> 
+  <!--
+  <tr>
    <td role="rowheader">[!UICONTROL File Name] </td> 
    <td> <p>Enter the name of the file that you want to use for this asset.</p> </td> 
-  </tr> -->
+  </tr>
+  -->
     <tr> 
     <td role="rowheader">Överföringstyp </td> 
     <td> <p>Ange om du skapar en resurs från en lokal fil eller en fjärrmiljö.</p> </td> 
@@ -363,10 +365,12 @@ Den här åtgärdsmodulen skapar en ny resurs. Du kan överföra en lokal fil el
    <td>[!UICONTROL Source file]</td> 
    <td> <p>Välj en källfil från en tidigare modul eller mappa källfilens namn.</p> </td> 
   </tr> 
-<!--  <tr> 
-   <td role="rowheader">[!UICONTROL Media type] </td> 
-   <td> <p>Select the media type for this asset.</p> </td> 
-  </tr> -->
+  <!--
+  <tr>
+    <td role="rowheader">[!UICONTROL Media type] </td> 
+    <td> <p>Select the media type for this asset.</p> </td> 
+    </tr>
+  -->
   </tbody> 
 </table>
 
@@ -956,7 +960,7 @@ Den här åtgärdsmodulen skapar en ny delningslänk i Frame.io.
    <td> <p>Ange om den här länken har offentlig eller begränsad åtkomst.</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">Assets </td> 
+   <td role="rowheader">Resurser </td> 
    <td> <p>För varje resurs som du vill lägga till i resurslänken klickar du på <b>Lägg till objekt</b> och anger resursens ID.</p> </td> 
   </tr> 
    <tr> 
@@ -1319,7 +1323,7 @@ Välj den webkrok som du vill använda för den här modulen eller klicka på L�
 </table>
 
 
-<!-- 
+<!--
 **Example:** The following API call returns all teams and its details in your [!DNL Frame.io] account:
 
 URL: `/v2/teams`

@@ -4,7 +4,7 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: c9c68a4c-f592-42d1-b15f-a525b9aa3944
-source-git-commit: c5c1f632ce5cc3b4f357118e7bdb8ec852bd91fb
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -277,14 +277,16 @@ Med den här åtgärdsmodulen kan du redigera ett befintligt meddelande.
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Instruktioner om hur du ansluter ditt [!DNL Slack]-konto till Workfront Fusion finns i <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Skapa en anslutning till Adobe Workfront Fusion - grundläggande instruktioner</a>.</p> </td> 
   </tr> 
-<!--  <tr> 
+  <!--
+  <tr>
    <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
    <td> <p>Choose how you want to select the message you want to .</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>In the <strong>[!UICONTROL Channel ID or name]</strong> field, enter or map the Channel ID or of the channel that contains the message, then enter the <strong>[!UICONTROL Time Stamp (Message ID)]</strong> of the message.</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the type of channel, then select the channel, then select the message.</p> </li> 
     </ul> </td> 
-  </tr> -->
+  </tr>
+  -->
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Channel ID]</p> </td> 
    <td> <p>Ange eller mappa ID:t för kanalen som innehåller meddelandet som du vill uppdatera.</p> <p>Obs! Channel-ID kan hämtas med modulen [!UICONTROL List Channels].</td> 

@@ -4,10 +4,10 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 017341e045a703f5d6e933a6df860f4fc8c0649d
+source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
 workflow-type: tm+mt
 source-wordcount: '2170'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -185,7 +185,7 @@ Om du vill hämta en privat nyckel för din [!DNL Workfront Fusion Jira]-anslutn
 #### Konfigurera klientappen som en konsument i [!DNL Jira]
 
 1. Logga in på din [!DNL Jira]-instans.
-1. Klicka på ikonen **[!UICONTROL [!DNL Jira] Settings]** ![Jira settings &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]** i den vänstra navigeringspanelen.
+1. Klicka på ikonen **[!UICONTROL [!DNL Jira] Settings]** ![Jira settings ](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]** i den vänstra navigeringspanelen.
 1. I fältet **[!UICONTROL Enter the URL of the application you want to link]** anger du
 
    ```
@@ -286,7 +286,7 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 ![Växla karta](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Utlösare](#triggers)
-* [Åtgärder](#actions)
+* [Instruktioner](#actions)
 * [Sökningar](#searches)
 
 ### Utlösare
@@ -318,7 +318,7 @@ Denna utlösarmodul startar ett scenario när en post läggs till, uppdateras el
  </tbody> 
 </table>
 
-### Åtgärder
+### Instruktioner
 
 * [[!UICONTROL Add issue to sprint]](#add-issue-to-sprint)
 * [[!UICONTROL Create a Record]](#create-a-record)
@@ -608,7 +608,8 @@ När du konfigurerar den här modulen visas följande fält.
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Max Results]</p> </td> 
    <td> <p>Ange eller mappa det maximala antal poster som du vill att modulen ska hämta under varje körningscykel för scenario.</p> </td> 
-  </tr> <!--
+  </tr> 
+  <!--
    <tr> 
     <td role="rowheader">Offset</td> 
     <td> Enter or map the ID of the first item you want to retrieve details for. This is a way to paginate the records. If you enter the 5000th item as the offset, the module would return items 5000-9999.</td> 

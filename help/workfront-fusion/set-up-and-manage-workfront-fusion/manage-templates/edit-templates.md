@@ -6,7 +6,7 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 473dba8b-faa4-432f-9357-c2146e86b261
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 0%
@@ -63,7 +63,8 @@ Du måste ha följande åtkomst för att kunna använda funktionerna i den här 
 <!--
 For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md). 
 
-For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md). -->
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
+-->
 
 +++
 
@@ -91,7 +92,7 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
    >Om mallen innehåller moduler som kräver att anslutningen, inloggningsuppgifterna eller annan sekretesskänslig information läggs till, delas informationen inte med mallanvändarna.
 
 1. (Valfritt) Klicka på **[!UICONTROL Run once]** för att testa mallen.
-1. Klicka på ikonen **[!UICONTROL Save]** ![Spara &#x200B;](assets/save-icon.png).
+1. Klicka på ikonen **[!UICONTROL Save]** ![Spara ](assets/save-icon.png).
 
 
 ## Konfigurera [!UICONTROL Wizard]-funktioner

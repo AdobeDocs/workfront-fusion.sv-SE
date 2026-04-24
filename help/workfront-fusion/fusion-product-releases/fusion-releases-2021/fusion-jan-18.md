@@ -8,9 +8,8 @@ description: Den här sidan beskriver alla förbättringar som gjorts i Adobe Wo
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 9a76a3d1-66b9-4fcd-848e-3d762e4af0f9
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%
@@ -23,15 +22,15 @@ Den här sidan beskriver alla förbättringar som gjorts i Adobe Workfront Fusio
 
 En lista med alla senaste ändringar finns i [Adobe Workfront Fusion-versionsaktivitet](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-En lista med de senaste felkorrigeringarna i Workfront Fusion finns på sidan [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=sv-SE) och sök efter uppdateringar med namnet Workfront Fusion Maintenance Update.
+En lista med de senaste felkorrigeringarna i Workfront Fusion finns på sidan [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) och sök efter uppdateringar med namnet Workfront Fusion Maintenance Update.
 
 ## Felsöka scenarier med Workfront Fusion DevTool
 
 För att göra det enklare för dig att felsöka dina scenarier har vi skapat ett Chrome-tillägg för Workfront Fusion 2.0 DevTool. Med det här tillägget kan du kontrollera manuella körningar av ditt scenario, granska alla utförda åtgärder och se information om alla API-anrop. DevTool innehåller även verktyg som gör att du kan ändra ditt scenario utan att behöva ändra moduler eller filter en i taget.
 
-## Azure Active Directory-koppling och moduler är nu tillgängliga
+## Azure Active Directory-anslutning och moduler är nu tillgängliga
 
-Nu kan du använda Workfront Fusion för att ansluta till dina Azure Active Directory-program. Med Azure Active Directory-modulerna kan du:
+Nu kan du använda Workfront Fusion för att ansluta till dina Azure Active Directory-program. Med Azure Active Directory-moduler kan du
 
 * Utlös ett scenario när en post skapas eller uppdateras.
 * Skapa poster.
@@ -39,9 +38,9 @@ Nu kan du använda Workfront Fusion för att ansluta till dina Azure Active Dire
 * Sök efter poster baserat på villkor som du anger.
 * Anropa ett anpassat API.
 
-## Azure DevOps-koppling och moduler är nu tillgängliga
+## Azure DevOps-anslutning och moduler finns nu tillgängliga
 
-Nu kan du använda Workfront Fusion för att ansluta till dina Azure DevOps-program. Med Azure DevOps-modulerna kan du:
+Nu kan du använda Workfront Fusion för att ansluta till dina Azure DevOps-program. Med modulerna Azure DevOps kan du
 
 * Utlös ett scenario när en post läggs till, uppdateras eller tas bort.
 * Skapa eller uppdatera poster.

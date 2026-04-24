@@ -4,7 +4,7 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '2962'
 ht-degree: 0%
@@ -64,10 +64,10 @@ Mer information om Adobe Workfront Fusion-licenser finns i [Adobe Workfront Fusi
 >[!IMPORTANT]
 >
 >* Om du vill använda Dropbox-anslutningen måste du först skapa ett program i Dropbox.
->  &#x200B;>   Om du vill ha mer information kan du söka efter&quot;Skapa ett program&quot; i utvecklarhandboken för Dropbox.
+>   Om du vill ha mer information kan du söka efter&quot;Skapa ett program&quot; i utvecklarhandboken för Dropbox.
 >* Använd följande omdirigerings-URI när du skapar programmet: `https://app.workfrontfusion.com/oauth/cb/dropbox`
 >* Dropbox måste godkänna program med fler än 50 användare.
->  &#x200B;>   Mer information finns i&quot;Produktionsgodkännande&quot; i utvecklarhandboken för Dropbox.
+>   Mer information finns i&quot;Produktionsgodkännande&quot; i utvecklarhandboken för Dropbox.
 
 ## Dropbox API-information
 

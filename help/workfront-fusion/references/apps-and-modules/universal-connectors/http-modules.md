@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion HTTP-appen innehåller olika moduler för ko
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%

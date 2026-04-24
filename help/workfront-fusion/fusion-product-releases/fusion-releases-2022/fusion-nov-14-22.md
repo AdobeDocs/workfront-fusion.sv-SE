@@ -8,9 +8,8 @@ description: Den här sidan beskriver alla förbättringar som gjorts i Adobe Wo
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: c9a345cb-cf08-4948-b618-1b26e195169f
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -19,14 +18,14 @@ ht-degree: 0%
 
 # Versionsaktivitet för Workfront Fusion: 14 november 2022
 
-**Microsoft Power BI Connector och moduler är nu tillgängliga**
+**Microsoft Power BI-anslutning och moduler är nu tillgängliga**
 
 Nu kan du ansluta Adobe Workfront Fusion till ditt Microsoft Power BI-konto.
 
-Med Microsoft Power BI-modulerna kan man
+Med Microsoft Power BI-modulerna kan du
 
 * Skapa, läsa eller lista instrumentpaneler och paneler
 * Hämta, kopiera, ta bort eller lista rapporter
 * Skapa, läsa, ta bort, lista eller uppdatera datauppsättningar
 * Lägga till eller ta bort rader i en datauppsättningstabell
-* Göra ett anpassat API-anrop till Microsoft Power BI API
+* Anropa Microsoft Power BI API

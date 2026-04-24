@@ -6,7 +6,8 @@ title: Använd mallar för att ansluta Adobe Workfront Fusion och Jira
 description: Använd dessa mallar för att automatisera arbetsflöden mellan Adobe Workfront Fusion och Jira.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
+exl-id: 7e30c105-54be-4499-b573-949137e6a5e6
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '4171'
 ht-degree: 0%
@@ -59,7 +60,7 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
   Mer information och instruktioner finns i [Konfiguration av tekniskt konto](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) i Adobe-dokumentationen.
 * Du måste använda systemadministratörsbehörighet för det tekniska kontot i området Adobe Admin Console produktprofiler.
 
-  Mer information och instruktioner finns i [Skapa systemadministratörer i Workfront med Adobe Admin Console](https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+  Mer information och instruktioner finns i [Skapa systemadministratörer i Workfront med Adobe Admin Console](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
 
 ### Jira
 
@@ -91,8 +92,8 @@ Dessa moduler förutsätter följande:
 |---|---|---|---|
 | ObjId | WF ID * | WF → Jira | Vid skapande av Jira-problem |
 | Jira-tangenten * | Problemnyckel | Jira → WF | Vid skapande av Jira-problem |
-| Jira URL * | – | Jira → WF | Användare klickbar länk i WF till Jira |
-| – | WF-länk * | WF → Jira | Länk som kan klickas av användaren i Jira till WF |
+| Jira URL * | - | Jira → WF | Användare klickbar länk i WF till Jira |
+| - | WF-länk * | WF → Jira | Länk som kan klickas av användaren i Jira till WF |
 | Namn | Sammanfattning | WF → Jira |  |
 | Beskrivning | Beskrivning | WF → Jira |  |
 | Status | WF-status | WF → Jira | WF-status |
@@ -154,13 +155,13 @@ Om du vill använda dessa moduler måste följande skapas i Workfront:
 
 1. Skapa en systemintegreringsanvändare i Workfront. Den här användaren används endast av Workfront Fusion och representerar inte en mänsklig användare. Aktiviteter som tilldelats den här användaren utlöser scenariot som synkroniserar Workfront med Jira.
 
-   Instruktioner finns i [Lägga till användare](https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) i Workfront-dokumentationen.
+   Instruktioner finns i [Lägga till användare](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) i Workfront-dokumentationen.
 
 #### Skapa ett anpassat formulär i Workfront
 
 1. Börja skapa ett anpassat formulär i Workfront.
 
-   Instruktioner finns i [Skapa ett anpassat formulär](https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) i Workfront-dokumentationen.
+   Instruktioner finns i [Skapa ett anpassat formulär](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) i Workfront-dokumentationen.
 1. Namnge formuläret **JIRA-fält**.
 1. Inkludera följande fält i det anpassade formuläret:
 
@@ -177,7 +178,7 @@ Om du vill använda dessa moduler måste följande skapas i Workfront:
 >
 >Vi rekommenderar att du begränsar det här formuläret från att redigeras av andra användare. Du kan uppnå detta genom att se till att alla användare som läggs till i det anpassade formuläret bara har åtkomst till Visa.
 >
->Instruktioner finns i [Dela ett anpassat formulär](https://experienceleague.adobe.com/sv/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) i Workfront-dokumentationen.
+>Instruktioner finns i [Dela ett anpassat formulär](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) i Workfront-dokumentationen.
 
 ### Konfigurera anslutningar i Workfront Fusion
 
@@ -272,9 +273,11 @@ Om en Workfront-uppgift tilldelas är problemet i Jira en uppgift. Om ett Workfr
 
 1. Fortsätt till [Mappa anpassade fält i Jira](#map-custom-fields-in-jira)
 
-<!--#### Map custom fields in Jira. 
+<!--
+#### Map custom fields in Jira.
 
-Awaiting feedback-->
+Awaiting feedback
+-->
 
 +++
 
@@ -555,4 +558,3 @@ Det här scenariot skickar uppdateringar från Workfront-utgåvor till tidigare 
 
 
 +++
-
