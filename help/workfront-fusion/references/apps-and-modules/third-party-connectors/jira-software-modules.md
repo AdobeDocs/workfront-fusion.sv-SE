@@ -185,7 +185,7 @@ Om du vill hämta en privat nyckel för din [!DNL Workfront Fusion Jira]-anslutn
 #### Konfigurera klientappen som en konsument i [!DNL Jira]
 
 1. Logga in på din [!DNL Jira]-instans.
-1. Klicka på ikonen **[!UICONTROL [!DNL Jira] Settings]** ![Jira settings ](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]** i den vänstra navigeringspanelen.
+1. Klicka på ikonen **[!UICONTROL [!DNL Jira] Settings]** ![Jira settings &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]** i den vänstra navigeringspanelen.
 1. I fältet **[!UICONTROL Enter the URL of the application you want to link]** anger du
 
    ```
