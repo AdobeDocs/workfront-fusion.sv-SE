@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Du kan lägga till en användare i [!DNL Adobe Admin Console] och tilldela dem till Adobe Workfront Fusion, eller tilldela en befintlig användare i [!DNL Adobe Admin Console] till Workfront Fusion.
 
-En demonstrationsvideo om hur du beskriver Workfront Fusion i [!DNL Adobe Admin Console], inklusive hur du lägger till användare, finns i [[!DNL Fusion]  på Adobe IMS ](https://video.tv.adobe.com/v/3412464/){target=_blank}.
+En demonstrationsvideo om hur du beskriver Workfront Fusion i [!DNL Adobe Admin Console], inklusive hur du lägger till användare, finns i [[!DNL Fusion]  på Adobe IMS &#x200B;](https://video.tv.adobe.com/v/3412464/){target=_blank}.
 
 ## Åtkomstkrav
 
