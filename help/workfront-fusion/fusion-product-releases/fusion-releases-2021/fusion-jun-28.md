@@ -2,17 +2,18 @@
 product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
-keywords: update
+keywords: uppdatera
 navigation-topic: fusion-release-activity
 title: 'Versionsaktivitet för Workfront Fusion: 28 juni 2021'
 description: På den här sidan beskrivs alla förbättringar som gjorts i Adobe Workfront Fusion under veckan efter 28 juni 2021.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: cbb15db2-b605-4025-9c8b-abee5b40ddaa
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ På den här sidan beskrivs alla förbättringar som gjorts i Adobe Workfront Fu
 
 En lista med alla senaste ändringar finns i [Adobe Workfront Fusion-versionsaktivitet](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-En lista med de senaste felkorrigeringarna i Workfront Fusion finns på sidan [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=sv-SE) och sök efter uppdateringar med namnet Workfront Fusion Maintenance Update.
+En lista med de senaste felkorrigeringarna i Workfront Fusion finns på sidan [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) och sök efter uppdateringar med namnet Workfront Fusion Maintenance Update.
 
 ## Ny sökmodul i Salesforce Connector
 
