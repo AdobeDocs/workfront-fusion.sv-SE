@@ -4,9 +4,9 @@ description: I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsfl�
 author: Becky
 feature: Workfront Fusion
 exl-id: 2ef967b6-0a69-4801-8574-5f17c9ce991d
-source-git-commit: 323e7d10795991bbcb6c1439db0af90e4331e687
+source-git-commit: d64d894cfb0e1905c135cdf5ea39f11cd7a6e5f2
 workflow-type: tm+mt
-source-wordcount: '3681'
+source-wordcount: '4123'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder Veeva Vault samt ansluta det till flera tredjepartsprogram och -tjänster.
 
-Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
+Mer information om moduler finns i artiklarna under [Moduler: artikelindex ](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Åtkomstkrav
 
@@ -38,7 +38,7 @@ Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/hel
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-licens</td> 
    <td>
-   <p>Operationsbaserad: Ingen Workfront Fusion-licens krävs</p>
+   <p>Operationsbaserad: Workfront Fusion-licens krävs inte</p>
    <p>Kopplingsbaserad (äldre): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -70,7 +70,7 @@ När du skapar en anslutning kan du välja om du vill använda ett lösenord ell
 ### Anslut till Veeva Vault med ett användarnamn och lösenord
 
 1. Klicka på **Lägg till** intill anslutningsfältet i valfri Vevavaultmodul.
-1. Välj **i fältet** Anslutningstyp`Veeva Username Password`.
+1. Välj `Veeva Username Password` i fältet **Anslutningstyp**.
 1. Fyll i följande fält.
 
    <table style="table-layout:auto"> 
@@ -105,7 +105,7 @@ När du skapar en anslutning kan du välja om du vill använda ett lösenord ell
 ### Anslut till Veeva Vault med OAuth2-autentisering
 
 1. Klicka på **Lägg till** intill anslutningsfältet i valfri Vevavaultmodul.
-1. Välj **i fältet** Anslutningstyp`Veeva Oauth 2`.
+1. Välj `Veeva Oauth 2` i fältet **Anslutningstyp**.
 1. Fyll i följande fält.
 
    <table style="table-layout:auto"> 
@@ -182,6 +182,9 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 
 * [Dokument](#document)
 * [Objekt](#object)
+* [Extrahera flera filer](#multi-file-extract)
+* [Inläsning av flera filer](#multi-file-load)
+* [Filmellanlagring](#file-staging)
 * [Övriga](#other)
 
 ### Dokument
@@ -581,7 +584,7 @@ Den här modulen exporterar dokument som du anger, inklusive källor, återgivni
    <td> <p>Välj om du vill ta bort ett dokument, en bindare eller en mall.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"><p>Källa</p> </td> 
+   <td role="rowheader"><p>Source</p> </td> 
    <td> <p>Aktivera det här alternativet om du vill inkludera källfiler i exporten.</p></td> 
   </tr> 
   <tr> 
@@ -995,6 +998,148 @@ Den här modulen skapar, kopierar eller djup kopierar en enstaka objektpost.
  </tbody> 
 </table>
 
+### Extrahera flera filer
+
+* [Extrahera flera filer](#extract-multiple-files)
+* [Hämta extraheringsresultat](#retrieve-extract-results)
+
+#### Extrahera flera filer
+
+Den här åtgärdsmodulen skapar ett inläsarjobb för att extrahera en eller flera datafiler.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Datafiler</td> 
+   <td>För varje fil som du vill extrahera klickar du på <b>Lägg till objekt</b> och anger följande:
+   <ul>
+   <li>Objekttyp</li>
+   <li>VQL-villkor (valfritt): Om du vill filtrera datauppsättningen så att den bara innehåller filer som uppfyller specifika villkor anger du villkoren i VQL (Vault Query Language).</li>
+   </ul>
+    </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Hämta extraheringsresultat
+
+Den här åtgärdsmodulen hämtar resultat från en angiven extraheringsbegäran.
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Jobb-ID</p> </td> 
+   <td> <p>Ange eller mappa jobbet som du vill hämta resultat för. Du kan mappa detta från modulen Extrahera datafiler.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Aktivitets-ID</td> 
+   <td> <p>Ange eller mappa uppgiften som du vill hämta resultat för. Du kan mappa detta från modulen Extrahera datafiler.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Inläsning av flera filer
+
+* [Läs in flera filer](#load-multiple-files)
+* [Hämta loggresultat](#retrieve-log-results)
+
+#### Läs in flera filer
+
+Den här modulen skapar ett inläsningsjobb och läser in en uppsättning datafiler.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Fil</td> 
+   <td>Ange eller mappa filsökvägen till den CSV-fil som jobbet ska använda.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Beställning</td> 
+   <td>Ange eller mappa ordningen för fillistan.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Inga utlösare</td> 
+   <td>Välj Ja om du vill åsidosätta post- eller dokumentutlösare.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Hämta loggresultat
+
+Den här åtgärdsmodulen hämtar en logg med inläsningsjobbresultat.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Jobb-ID</p> </td> 
+   <td> <p>Ange eller mappa jobbet som du vill hämta resultat för. Du kan mappa detta från modulen Läs in datafiler.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Aktivitets-ID</td> 
+   <td> <p>Ange eller mappa uppgiften som du vill hämta resultat för. Du kan mappa detta från modulen Läs in datafiler.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Typ</td> 
+   <td> <p>Välj om du vill hämta slutförda jobb eller misslyckade jobb.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Filmellanlagring
+
+#### Listobjekt vid bana
+
+Den här modulen returnerar en lista med filer och mappar för den angivna sökvägen.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Anslutning </td> 
+   <td> <p>Instruktioner om hur du ansluter ditt Vevaevavalskonto till Workfront Fusion finns i <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Anslut Vevajevault till Workfront Fusion</a> i den här artikeln.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Välj din hemkatalog</td> 
+   <td>Välj den hemkatalog som du vill visa objekt från.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Beställning</td> 
+   <td>Ange eller mappa ordningen för fillistan.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Inga utlösare</td> 
+   <td>Välj Ja om du vill åsidosätta post- eller dokumentutlösare.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Övriga
 
 * [Göra ett anpassat API-anrop](#make-a-custom-api-call)
@@ -1023,11 +1168,11 @@ Den här åtgärdsmodulen gör ett anpassat anrop till veeva Vault API.
   </tr> 
   <tr> 
    <td role="rowheader">Sidhuvuden</td> 
-   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p> <p>Exempel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion lägger till auktoriseringsrubrikerna åt dig.</p> </td> 
+   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p> <p>Till exempel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion lägger till auktoriseringsrubrikerna åt dig.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Frågesträng</td> 
-   <td> <p>Lägg till frågan för API-anropet i form av ett standard-JSON-objekt.</p> <p>Exempel: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td> <p>Lägg till frågan för API-anropet i form av ett standard-JSON-objekt.</p> <p>Till exempel: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Brödtext</td> 
