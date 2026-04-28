@@ -15,9 +15,9 @@ ht-degree: 0%
 
 I ett Adobe Workfront Fusion-scenario kan du automatisera arbetsflöden som använder Veeva Vault samt ansluta det till flera tredjepartsprogram och -tjänster.
 
-Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Mer information om moduler finns i artiklarna under [Moduler: artikelindex ](/help/workfront-fusion/references/modules/modules-toc.md).
+Mer information om moduler finns i artiklarna under [Moduler: artikelindex &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Åtkomstkrav
 

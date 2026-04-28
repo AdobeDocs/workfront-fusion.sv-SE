@@ -271,28 +271,28 @@ Adobe Workfront Fusion kopplar ihop appar och webbtjänster sömlöst så att du
 ### September 2022
 
 * [Versionsaktivitet för Workfront Fusion: Vecka 26 september 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-sept-26-22.md)
-* [Aktivitet: Workfront Fusion Vecka 19 september 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-sept-19-22.md)
+* [Aktivitet: Workfront Fusion Vecka 19 september 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-sept-19-22.md)
 
 ### Juli 2022
 
-* [Aktivitet: Workfront Fusion Vecka 11 juli 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-july-11-22.md)
+* [Aktivitet: Workfront Fusion Vecka 11 juli 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-july-11-22.md)
 
 
 ### Juni 2022
 
-* [Aktivitet: Workfront Fusion Vecka 27 juni 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-27-22.md)
-* [Aktivitet: Workfront Fusion Vecka 20 juni 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-20-22.md)
+* [Aktivitet: Workfront Fusion Vecka 27 juni 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-27-22.md)
+* [Aktivitet: Workfront Fusion Vecka 20 juni 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jun-20-22.md)
 
 
 ### Maj 2022
 
-* [Aktivitet: Workfront Fusion Vecka 16 maj 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-16-22.md)
-* [Aktivitet: Workfront Fusion Vecka 9 maj 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-9-22.md)
+* [Aktivitet: Workfront Fusion Vecka 16 maj 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-16-22.md)
+* [Aktivitet: Workfront Fusion Vecka 9 maj 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-may-9-22.md)
 
 
 ### April 2022
 
-* [Aktivitet: Workfront Fusion Vecka 25 april 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-apr-25-22.md)
+* [Aktivitet: Workfront Fusion Vecka 25 april 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-apr-25-22.md)
 * [Versionsaktivitet för Workfront Fusion: Vecka 18 april 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-apr-18-22.md)
 
 ### Mars 2022
@@ -301,9 +301,9 @@ Adobe Workfront Fusion kopplar ihop appar och webbtjänster sömlöst så att du
 
 ### Februari 2022
 
-* [Aktivitet: Workfront Fusion Vecka 28 februari 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-28-22.md)
-* [Aktivitet: Workfront Fusion Vecka 21 februari 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-21-22.md)
-* [Aktivitet: Workfront Fusion Vecka 14 februari 2022 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-14-22.md)
+* [Aktivitet: Workfront Fusion Vecka 28 februari 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-28-22.md)
+* [Aktivitet: Workfront Fusion Vecka 21 februari 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-21-22.md)
+* [Aktivitet: Workfront Fusion Vecka 14 februari 2022 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-14-22.md)
 
 ### Januari 2022
 
@@ -317,8 +317,8 @@ Adobe Workfront Fusion kopplar ihop appar och webbtjänster sömlöst så att du
 
 ### November 2021
 
-* [Aktivitet: Workfront Fusion Vecka 29 november 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-29-21.md)
-* [Aktivitet: Workfront Fusion Vecka 15 november 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-15-21.md)
+* [Aktivitet: Workfront Fusion Vecka 29 november 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-29-21.md)
+* [Aktivitet: Workfront Fusion Vecka 15 november 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-15-21.md)
 * [Versionsaktivitet för Workfront Fusion: Vecka 8 november 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-8-21.md)
 
 ### Oktober 2021
@@ -331,8 +331,8 @@ Adobe Workfront Fusion kopplar ihop appar och webbtjänster sömlöst så att du
 
 ### Augusti 2021
 
-* [Aktivitet: Workfront Fusion Vecka 30 augusti 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-aug-30-21.md)
-* [Aktivitet: Workfront Fusion Vecka 23 augusti 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-aug-23-21.md)
+* [Aktivitet: Workfront Fusion Vecka 30 augusti 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-aug-30-21.md)
+* [Aktivitet: Workfront Fusion Vecka 23 augusti 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-aug-23-21.md)
 * [Versionsaktivitet för Workfront Fusion: Vecka 2 augusti 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-aug-2.md)
 
 ### Juli 2021
@@ -347,14 +347,14 @@ Adobe Workfront Fusion kopplar ihop appar och webbtjänster sömlöst så att du
 
 ### Maj 2021
 
-* [Aktivitet: Workfront Fusion Vecka 17 maj 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-17.md)
-* [Aktivitet: Workfront Fusion Vecka 10 maj 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-10.md)
+* [Aktivitet: Workfront Fusion Vecka 17 maj 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-17.md)
+* [Aktivitet: Workfront Fusion Vecka 10 maj 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-10.md)
 * [Versionsaktivitet för Workfront Fusion: Vecka 3 maj 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-3.md)
 
 ### April 2021
 
-* [Aktivitet: Workfront Fusion Vecka 26 april 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-26.md)
-* [Aktivitet: Workfront Fusion Vecka 19 april 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-19.md)
+* [Aktivitet: Workfront Fusion Vecka 26 april 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-26.md)
+* [Aktivitet: Workfront Fusion Vecka 19 april 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-19.md)
 
 ### Mars 2021
 
@@ -367,10 +367,10 @@ Adobe Workfront Fusion kopplar ihop appar och webbtjänster sömlöst så att du
 
 ### Januari 2021
 
-* [Aktivitet: Workfront Fusion Vecka 1 februari 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-feb-1.md)
-* [Aktivitet: Workfront Fusion Vecka 25 januari 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-25.md)
-* [Aktivitet: Workfront Fusion Vecka 18 januari 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-18.md)
-* [Aktivitet: Workfront Fusion Vecka 11 januari 2021 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-11.md)
+* [Aktivitet: Workfront Fusion Vecka 1 februari 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-feb-1.md)
+* [Aktivitet: Workfront Fusion Vecka 25 januari 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-25.md)
+* [Aktivitet: Workfront Fusion Vecka 18 januari 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-18.md)
+* [Aktivitet: Workfront Fusion Vecka 11 januari 2021 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-11.md)
 * [Versionsaktivitet för Workfront Fusion: Vecka 4 januari 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-4.md)
 
 +++
@@ -386,7 +386,7 @@ Adobe Workfront Fusion kopplar ihop appar och webbtjänster sömlöst så att du
 ### November 2020
 
 * [Aktivitet: Workfront Fusion Vecka 30 november 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-30.md)
-* [Aktivitet: Workfront Fusion Vecka 16 november 2020 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-16.md)
+* [Aktivitet: Workfront Fusion Vecka 16 november 2020 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-16.md)
 * [Versionsaktivitet för Workfront Fusion: Vecka 2 november 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-2.md)
 
 ### September 2020
@@ -395,7 +395,7 @@ Adobe Workfront Fusion kopplar ihop appar och webbtjänster sömlöst så att du
 
 ### Augusti 2020
 
-* [Aktivitet: Workfront Fusion Vecka 24 augusti 2020 ](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-aug-24.md)
+* [Aktivitet: Workfront Fusion Vecka 24 augusti 2020 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-aug-24.md)
 * [Versionsaktivitet för Workfront Fusion: Vecka 17 augusti 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-aug-17.md)
 
 +++
