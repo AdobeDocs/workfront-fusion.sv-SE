@@ -4,9 +4,9 @@ description: Med  [!DNL Adobe Workfront Planning] modulerna kan du starta ett Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: 35cbede1551bd8d158d2ef502b436bc2f760bcae
 workflow-type: tm+mt
-source-wordcount: '1845'
+source-wordcount: '1959'
 ht-degree: 0%
 
 ---
@@ -157,13 +157,13 @@ Du kan skapa en anslutning till ditt Workfront Planning-konto direkt från en Wo
       <tr>
         <td role="rowheader">[!UICONTROL Instance name]</td>
         <td>
-          <p>Ange namnet på din instans, även kallat din domän.</p><p>Exempel: Om din URL är <code>https://example.my.workfront.com</code> anger du <code>example</code>.</p>
+          <p>Ange namnet på din instans, även kallat din domän.</p><p>Exempel: Om URL:en är <code>https://example.my.workfront.com</code> anger du <code>example</code>.</p>
         </td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Instance lane]</td>
         <td>
-          <p>Ange den miljötyp som anslutningen ska ansluta till.</p><p>Exempel: Om din URL är <code>https://example.my.workfront.com</code> anger du <code>my</code>.</p>
+          <p>Ange den miljötyp som anslutningen ska ansluta till.</p><p>Exempel: Om URL:en är <code>https://example.my.workfront.com</code> anger du <code>my</code>.</p>
         </td>
       </tr>
       <tr>
@@ -214,6 +214,17 @@ Om du ser kartknappen ovanför ett fält eller en funktion kan du använda den f
 #### Se händelser
 
 Den här utlösarmodulen startar ett scenario när en post, posttyp eller arbetsyta skapas, uppdateras eller tas bort i Workfront Planning.
+
+>[!IMPORTANT]
+>
+>Du kan redigera den här modulen senare, vilket redigerar webkroken.
+>
+>Tänk på följande när du uppdaterar en webkrok:
+>
+>* Den redigerade webkroken hanteras av Workfront händelseprenumerationer som en ny prenumeration. Händelseprenumerationshistorik bevaras inte för den tidigare webbkrokkonfigurationen, eftersom detta betraktas som en separat händelseprenumeration.
+>* Övergången från den gamla till den nya händelseprenumerationen kanske inte är helt synkroniserad. Det är därför möjligt att ta emot en händelse två gånger (om den nya prenumerationen börjar köras innan den gamla stoppas) eller att missa en händelse (om den gamla prenumerationen upphör innan den nya börjar köras).
+>
+>Mer information om hur du redigerar webhooks finns i [Redigera webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
 <table style="table-layout:auto"> 
   <col/>
@@ -320,7 +331,7 @@ Den här modulen gör ett anpassat API-anrop till API:t [!DNL Adobe Workfront Pl
       <td role="rowheader">[!UICONTROL Headers]</td>
       <td>
         <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt.</p>
-        <p>Exempel: <code>{"Content-type":"application/json"}</code></p>
+        <p>Till exempel: <code>{"Content-type":"application/json"}</code></p>
         <p>Workfront Fusion lägger automatiskt till auktoriseringsrubriker.</p>
       </td>
     </tr>

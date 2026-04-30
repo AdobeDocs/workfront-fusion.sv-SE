@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
-source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
+source-git-commit: 3b3131516a920d16edf2ebce74235a90a2701864
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '95'
 ht-degree: 0%
 
 ---
@@ -31,3 +31,4 @@ ht-degree: 0%
 * [Kör scenariobedömningsexperten](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * [Ta bort scenarioelement](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
 * [Hantera scenarier från scenarioområdet](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
+* [Redigera webbhotell](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)

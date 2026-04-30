@@ -4,9 +4,9 @@ description: Du kan använda Adobe Workfront Fusion Adobe Workfront-kontakten f�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 35cbede1551bd8d158d2ef502b436bc2f760bcae
 workflow-type: tm+mt
-source-wordcount: '6873'
+source-wordcount: '6805'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 Du kan använda Adobe Workfront Fusion Adobe Workfront-kontakten för att automatisera processerna i Workfront. Du kan även ansluta Workfront till andra program och tjänster.
 
-Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Mer information om moduler finns i artiklarna under [Moduler: artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
+Instruktioner om hur du skapar ett scenario finns i artiklarna under [Skapa scenarier: artikelindex ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Mer information om moduler finns i artiklarna under [Moduler: artikelindex ](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Åtkomstkrav
 
@@ -149,13 +149,13 @@ Du kan skapa en anslutning till ditt Workfront-konto direkt inifrån en Workfron
       <tr>
         <td role="rowheader">[!UICONTROL Instance name]</td>
         <td>
-          <p>Ange namnet på din instans, även kallat din domän.</p><p>Exempel: Om din URL är <code>https://example.my.workfront.com</code> anger du <code>example</code>.</p>
+          <p>Ange namnet på din instans, även kallat din domän.</p><p>Exempel: Om URL:en är <code>https://example.my.workfront.com</code> anger du <code>example</code>.</p>
         </td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Instance lane]</td>
         <td>
-          <p>Ange den miljötyp som anslutningen ska ansluta till.</p><p>Exempel: Om din URL är <code>https://example.my.workfront.com</code> anger du <code>my</code>.</p>
+          <p>Ange den miljötyp som anslutningen ska ansluta till.</p><p>Exempel: Om URL:en är <code>https://example.my.workfront.com</code> anger du <code>my</code>.</p>
         </td>
       </tr>
       <tr>
@@ -220,6 +220,17 @@ Modulen visar alla händelseprenumerationer som är relaterade till webkroken. D
 
 Modulen returnerar alla standardfält som är associerade med posten, tillsammans med eventuella anpassade fält och värden som anslutningen har åtkomst till. Du kan mappa den här informationen i efterföljande moduler i scenariot.
 
+>[!IMPORTANT]
+>
+>Du kan redigera den här modulen senare, vilket redigerar webkroken.
+>
+>Tänk på följande när du uppdaterar en webkrok:
+>
+>* Den redigerade webkroken hanteras av Workfront händelseprenumerationer som en ny prenumeration. Händelseprenumerationshistorik bevaras inte för den tidigare webbkrokkonfigurationen, eftersom detta betraktas som en separat händelseprenumeration.
+>* Övergången från den gamla till den nya händelseprenumerationen kanske inte är helt synkroniserad. Det är därför möjligt att ta emot en händelse två gånger (om den nya prenumerationen börjar köras innan den gamla stoppas) eller att missa en händelse (om den gamla prenumerationen upphör innan den nya börjar köras).
+>
+>Mer information om hur du redigerar webhooks finns i [Redigera webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
+
 1. Klicka på **[!UICONTROL Add]** till höger om rutan **Webkrok**.
 
 1. Konfigurera webkroken i rutan **[!UICONTROL Add a hook]** som visas.
@@ -246,17 +257,17 @@ Modulen returnerar alla standardfält som är associerade med posten, tillsamman
      </tr> 
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Events filters]</p> </td> 
-      <td> <p>Du kan ställa in filter så att endast poster som uppfyller de villkor du väljer bevakas.</p> <p>För varje filter anger du fältet som du vill att filtret ska utvärderas, operatorn och värdet som du vill att filtret ska tillåta. Du kan använda mer än ett filter genom att lägga till OCH-regler.</p> <p><b>Obs!</b> Du kan inte redigera filter i befintliga Workfront-webbböcker. Om du vill ställa in olika filter för Workfront-händelseprenumerationer tar du bort den aktuella webbkroken och skapar en ny.</p> <p>Mer information om händelsefilter finns i <a href="#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Evenemangsprenumerationsfilter i Workfront &gt; [!UICONTROL Watch Events] moduler</a> i den här artikeln.</p> </td> 
+      <td> <p>Du kan ställa in filter så att endast poster som uppfyller de villkor du väljer bevakas.</p> <p>För varje filter anger du fältet som du vill att filtret ska utvärderas, operatorn och värdet som du vill att filtret ska tillåta. Du kan använda mer än ett filter genom att lägga till OCH-regler.</p> <p><b>OBS</b>: Du kan inte redigera filter i befintliga Workfront-webbplatser. Om du vill ställa in olika filter för Workfront-händelseprenumerationer tar du bort den aktuella webbkroken och skapar en ny.</p> <p>Mer information om händelsefilter finns i <a href="#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Evenemangsprenumerationsfilter i Workfront &gt; [!UICONTROL Watch Events] moduler</a> i den här artikeln.</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
       <td>Uteslut händelser som har gjorts i den här anslutningen</td> 
-      <td>Aktivera det här alternativet om du vill exkludera händelser som har skapats eller uppdaterats med samma koppling som den här utlösarmodulen använder. Detta kan förhindra situationer där ett scenario kan utlösa sig självt och få det att upprepas i en oändlig slinga.<p><b>Obs!</b> Tilldelningsposttypen innehåller inte det här alternativet.</p></td> 
+      <td>Aktivera det här alternativet om du vill exkludera händelser som har skapats eller uppdaterats med samma koppling som den här utlösarmodulen använder. Detta kan förhindra situationer där ett scenario kan utlösa sig självt och få det att upprepas i en oändlig slinga.<p><b>OBS</b>: Posttypen för uppdrag innehåller inte det här alternativet.</p></td> 
      </tr> 
      <tr> 
       <td>[!UICONTROL Record Origin]</td> 
       <td>
        <p>Välj om du vill att scenariot ska bevaka [!UICONTROL New Records Only], [!UICONTROL Updated Records Only], [!UICONTROL New and Updated Records] eller [!DNL Deleted Records Only].</p>
-       <p><b>Obs!</b> Om du väljer [!UICONTROL New and Updated Records] skapar webkroken 2 händelseprenumerationer (för samma webkrok-adress).</p>
+       <p><b>OBS</b>: Om du väljer [!UICONTROL New and Updated Records] skapar webbkroken 2 händelseprenumerationer (för samma webbkrokadress).</p>
        </td> 
      </tr> 
     </tbody> 
@@ -268,7 +279,7 @@ Modulen returnerar alla standardfält som är associerade med posten, tillsamman
 
 När webbkroken har skapats kan du visa adressen till slutpunkten som händelser skickas till.
 
-Mer information finns i avsnittet [Exempel på händelsenyttolaster](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) i artikeln Event Subscription API (Händelseprenumerations-API) i Workfront-dokumentationen.
+Mer information finns i avsnittet [Exempel på händelsenyttolaster](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) i artikeln Event Subscription API (Händelseprenumerations-API) i Workfront-dokumentationen.
 
 Se en lista över de Workfront-objekttyper som du kan använda den här modulen för i [Workfront-objekttyper som är tillgängliga för varje Workfront-modul](#workfront-object-types-available-for-each-workfront-module).
 
@@ -409,7 +420,7 @@ Den här åtgärdsmodulen gör någon av följande konverteringar:
    <td>Markera det objekt som du vill konvertera det till. Detta är den typ som objektet har efter konverteringen.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL &lt;Object> ID]</td> 
+   <td>[!UICONTROL <Object> ID]</td> 
    <td> <p>Ange objektets ID. </p> <p>Obs! När du anger ID:t för ett objekt kan du börja skriva namnet på objektet och sedan markera det i listan. Modulen anger sedan rätt ID i fältet.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -501,7 +512,7 @@ Se en lista över de Workfront-objekttyper som du kan använda den här modulen 
 >
 >   Om du vill lösa användare som lagts till i en stor grupp kan du lägga till gruppen med användare direkt i Adobe Admin Console.
 >
->   Instruktioner finns i [Hantera flera användare | Gruppera CSV-överföring](https://helpx.adobe.com/se/enterprise/using/bulk-upload-users.html) i Adobe-dokumentationen.
+>   Instruktioner finns i [Hantera flera användare | Massöverföring av CSV ](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) i Adobe-dokumentationen.
 
 +++
 
@@ -565,11 +576,11 @@ Med den här åtgärdsmodulen kan du göra ett anpassat autentiserat anrop till 
 Modulen returnerar följande information:
 
 * **[!UICONTROL Status Code]** (tal): Detta anger om HTTP-begäran lyckades eller misslyckades. Det här är standardkoder som du kan söka efter på Internet.
-* **[!UICONTROL Headers]** (objekt): En mer detaljerad kontext för svars-/statuskoden som inte relaterar till utdatatexten. Alla sidhuvuden som visas i en svarshuvud är inte svarshuvuden, så en del kanske inte är användbara för dig.
+* **[!UICONTROL Headers]** (objekt): En mer detaljerad kontext för den svars-/statuskod som inte är relaterad till utdatatexten. Alla sidhuvuden som visas i en svarshuvud är inte svarshuvuden, så en del kanske inte är användbara för dig.
 
   Svarshuvuden beror på den HTTP-begäran du valde när du konfigurerade modulen.
 
-* **[!UICONTROL Body]** (objekt): Beroende på den HTTP-begäran du valde när du konfigurerade modulen kan du få tillbaka data. Dessa data, till exempel data från en GET-begäran, finns i det här objektet.
+* **[!UICONTROL Body]** (objekt): Beroende på vilken HTTP-begäran du valde när du konfigurerade modulen kan du få tillbaka data. Dessa data, till exempel data från en GET-begäran, finns i det här objektet.
 
 Du kan mappa den här informationen i efterföljande moduler i scenariot.
 
@@ -597,11 +608,11 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt. Detta avgör begärans innehållstyp.</p> <p>Exempel:<code> {"Content-type":"application/json"}</code></p> <p>Obs! Om du får felmeddelanden och det är svårt att fastställa deras ursprung bör du överväga att ändra rubrikerna baserat på Workfront-dokumentationen. Om ditt anpassade API-anrop returnerar ett 422 HTTP-begärandefel kan du försöka med att använda en <code>"Content-Type":"text/plain"</code>-rubrik.</p> </td> 
+   <td> <p>Lägg till rubrikerna för begäran i form av ett standard-JSON-objekt. Detta avgör begärans innehållstyp.</p> <p>Till exempel:<code> {"Content-type":"application/json"}</code></p> <p>Obs! Om du får felmeddelanden och det är svårt att avgöra var de har sitt ursprung kan du ändra rubrikerna baserat på Workfront-dokumentationen. Om ditt anpassade API-anrop returnerar ett 422 HTTP-begärandefel kan du försöka med att använda en <code>"Content-Type":"text/plain"</code>-rubrik.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
-   <td> <p>Lägg till frågan för API-anropet i form av ett standard-JSON-objekt.</p> <p>Exempel: <code>{"name":"something-urgent"}</code></p> <p>Tips! Vi rekommenderar att du skickar information via JSON-brödtexten i stället för som frågeparametrar.</p> </td> 
+   <td> <p>Lägg till frågan för API-anropet i form av ett standard-JSON-objekt.</p> <p>Till exempel: <code>{"name":"something-urgent"}</code></p> <p>Tips: Vi rekommenderar att du skickar information via JSON-brödtexten i stället för som frågeparametrar.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
@@ -645,7 +656,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>ID</td> 
-   <td> <p>Ange det unika Workfront-ID:t för den post som du vill ta bort modulen.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Ange det unika Workfront-ID:t för den post som du vill ta bort modulen.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Till exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -686,7 +697,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td>[!UICONTROL Document ID]</td> 
-   <td> <p>Mappa eller ange det unika Workfront-id:t för dokumentet som du vill att modulen ska hämta.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Mappa eller ange det unika Workfront-id:t för dokumentet som du vill att modulen ska hämta.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Till exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -709,7 +720,7 @@ Den här åtgärdsmodulen hämtar försignerade fil-URL:er som senare kan använ
   </tr> 
   <tr> 
    <td>[!UICONTROL Document ID]</td> 
-   <td> <p>Mappa eller ange det unika Workfront-ID:t för dokumentet som du vill hämta en försignerad URL-adress för manuellt.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Mappa eller ange det unika Workfront-ID:t för dokumentet som du vill hämta en försignerad URL-adress för manuellt.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Till exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Time to URL expiration]</td> 
@@ -744,7 +755,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Action]</td> 
-   <td> <p>Välj den åtgärd som du vill att modulen ska utföra.</p> <p>Du kan behöva fylla i ytterligare fält, beroende på vilken [!UICONTROL Record Type] och [!UICONTROL Action] du väljer. Vissa kombinationer av dessa två inställningar kan endast kräva ett post-ID, medan andra (till exempel Projekt för <strong>[!UICONTROL Record Type]</strong> och [!UICONTROL Attach Template] för <strong>[!UICONTROL Action]</strong>) kräver ytterligare information (till exempel ett objekt-ID och ett mall-ID).</p><p>Tillgängliga alternativ för vissa åtgärder finns i <a href="#misc-action-options" class="MCXref xref">Alternativ för andra åtgärder</a> i den här artikeln.</p> <p>Mer information om enskilda fält finns i <a href="http://developer.workfront.com/">dokumentationen för Workfront-utvecklare</a>. <p><strong>Obs!</strong> Utvecklarens dokumentationswebbplats innehåller endast information via API-version 14, men innehåller fortfarande värdefull information för API-anrop. </p> 
+   <td> <p>Välj den åtgärd som du vill att modulen ska utföra.</p> <p>Du kan behöva fylla i ytterligare fält, beroende på vilken [!UICONTROL Record Type] och [!UICONTROL Action] du väljer. Vissa kombinationer av dessa två inställningar kan endast kräva ett post-ID, medan andra (till exempel Projekt för <strong>[!UICONTROL Record Type]</strong> och [!UICONTROL Attach Template] för <strong>[!UICONTROL Action]</strong>) kräver ytterligare information (till exempel ett objekt-ID och ett mall-ID).</p><p>Tillgängliga alternativ för vissa åtgärder finns i <a href="#misc-action-options" class="MCXref xref">Alternativ för andra åtgärder</a> i den här artikeln.</p> <p>Mer information om enskilda fält finns i <a href="http://developer.workfront.com/">dokumentationen för Workfront-utvecklare</a>. <p><strong>Obs!</strong>: Utvecklarens dokumentationswebbplats innehåller endast information via API-version 14, men innehåller fortfarande värdefull information för API-anrop. </p> 
     <ol> 
      <li value="1"> <p>Välj posttyp i den vänstra navigeringen på dokumentationssidan för Workfront-utvecklare. Följande typer har egna sidor:</p> 
       <ul> 
@@ -756,11 +767,11 @@ När du konfigurerar den här modulen visas följande fält.
       </ul> <p>För alla andra posttyper väljer du <b>[!UICONTROL Other objects and endpoints]</b> och letar upp posttypen på de alfabetiskt sorterade sidorna.</p> </li> 
      <li value="2"> <p>På sidan med rätt posttyp söker du efter åtgärden (Ctrl-F eller Cmd-F).</p> </li> 
      <li value="3"> <p>Visa beskrivningar för tillgängliga fält under den valda åtgärden.</p> </li> 
-    </ol> <p>Obs!  <p>När du skapar ett korrektur med Workfront [!UICONTROL Misc Action]-modulen är det bästa sättet att skapa ett korrektur utan några avancerade alternativ och sedan uppdatera korrekturet med SOAP-API:t i [!DNL Workfront Proof] .</p><p>Mer information om hur du skapar ett korrektur med Workfront API (som används i den här modulen) finns i <a href="https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Lägga till avancerade korrekturalternativ när du skapar ett korrektur via Adobe Workfront API</a></p> </p> </td> 
+    </ol> <p>Obs!  <p>När du skapar ett korrektur med Workfront [!UICONTROL Misc Action]-modulen är det bästa sättet att skapa ett korrektur utan några avancerade alternativ och sedan uppdatera korrekturet med SOAP-API:t i [!DNL Workfront Proof] .</p><p>Mer information om hur du skapar ett korrektur med Workfront API (som används i den här modulen) finns i <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Lägga till avancerade korrekturalternativ när du skapar ett korrektur via Adobe Workfront API</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
-   <td>Ange eller mappa det unika Workfront-ID:t för den post som du vill att modulen ska interagera med.<p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p></td> 
+   <td>Ange eller mappa det unika Workfront-ID:t för den post som du vill att modulen ska interagera med.<p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Till exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -963,7 +974,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
     <td>[!UICONTROL ID]</td>
-   <td> <p>Ange det unika Workfront-ID:t för den post som du vill att modulen ska läsa.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Ange det unika Workfront-ID:t för den post som du vill att modulen ska läsa.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Till exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1034,9 +1045,9 @@ See a list of the Workfront object types for which you can use this module in [W
 
 Workfront har nyligen släppt en ny version av sin abonnemangstjänst. Den nya versionen är inte en ändring av Workfront API, utan snarare en ändring av prenumerationsfunktionen för evenemang. Den här åtgärdsmodulen uppdaterar den händelsenyttolastversion som används för det här scenariot.
 
-Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
+Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
 
-Mer information om hur du bevarar dina Workfront Fusion-scenarier under händelseprenumerationsuppgraderingen, inklusive en webbinariainspelning, finns i [Bevara dina Fusion-scenarier under händelseprenumerationsuppgraderingen v2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=sv).
+Mer information om hur du bevarar dina Workfront Fusion-scenarier under händelseprenumerationsuppgraderingen, inklusive en webbinariainspelning, finns i [Bevara dina Fusion-scenarier under händelseprenumerationsuppgraderingen v2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -1079,7 +1090,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
-   <td> <p>Ange det unika Workfront-ID:t för den post som du vill att modulen ska uppdatera.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Ange det unika Workfront-ID:t för den post som du vill att modulen ska uppdatera.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Till exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr> 
    <td>[!DNL Record Type]</td> 
@@ -1275,7 +1286,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Parent Record ID]</td> 
-   <td> <p>Ange eller mappa ID:t för den överordnade post vars associerade poster du vill läsa.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Ange eller mappa ID:t för den överordnade post vars associerade poster du vill läsa.</p> <p>Om du vill hämta ID:t öppnar du Workfront-objektet i webbläsaren och kopierar texten i slutet av URL:en efter "ID=.". Till exempel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Collections]</td> 
@@ -1328,7 +1339,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td>[!UICONTROL Search criteria]</td> 
-   <td> <p>Ange fältet som du vill söka efter, operatorn som du vill använda i frågan och värdet som du söker efter i fältet.</p> <p>Obs! Använd inte <code>username </code> i sökvillkoren. Om <code>username </code> inkluderas i en API-fråga till Workfront loggas användaren in i Workfront och sökningen kommer inte att lyckas.</p> <p>Obs! <code>In</code> och <code>NotIn</code>fungerar med arrayer. Indata ska vara i matrisformat.</p></td> 
+   <td> <p>Ange fältet som du vill söka efter, operatorn som du vill använda i frågan och värdet som du söker efter i fältet.</p> <p>Obs! Använd inte <code>username </code> i sökvillkoren. Om <code>username </code> inkluderas i en API-fråga till Workfront loggas användaren in i Workfront och sökningen kommer inte att lyckas.</p> <p>Obs! <code>In</code> och <code>NotIn</code>arbetar med arrayer. Indata ska vara i matrisformat.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Outputs]</td> 
@@ -1386,7 +1397,7 @@ När du konfigurerar den här modulen visas följande fält.
   </tr> 
   <tr> 
    <td>[!UICONTROL Search criteria]</td> 
-   <td> <p>Ange fältet som du vill söka efter, operatorn som du vill använda i frågan och värdet som du söker efter i fältet.</p> <p>Obs! Använd inte <code>username </code> i sökvillkoren. Om <code>username </code> inkluderas i en API-fråga till Workfront loggas användaren in i Workfront och sökningen kommer inte att lyckas.</p> <p>Obs! <code>In</code> och <code>NotIn</code>fungerar med arrayer. Indata ska vara i matrisformat.</p></td> 
+   <td> <p>Ange fältet som du vill söka efter, operatorn som du vill använda i frågan och värdet som du söker efter i fältet.</p> <p>Obs! Använd inte <code>username </code> i sökvillkoren. Om <code>username </code> inkluderas i en API-fråga till Workfront loggas användaren in i Workfront och sökningen kommer inte att lyckas.</p> <p>Obs! <code>In</code> och <code>NotIn</code>arbetar med arrayer. Indata ska vara i matrisformat.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Outputs]</td> 
@@ -1616,7 +1627,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Obs</td> 
+   <td>Anteckning</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1724,7 +1735,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Uppdatering</td> 
+   <td>Uppdatera</td> 
    <td> </td> 
    <td> </td> 
    <td> </td> 
@@ -1983,7 +1994,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Obs</td> 
+   <td>Anteckning</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -2143,7 +2154,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Uppdatering</td> 
+   <td>Uppdatera</td> 
    <td> </td> 
    <td>✓</td> 
    <td> </td> 
@@ -2267,7 +2278,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Obs</td> 
+   <td>Anteckning</td> 
    <td>✓</td> 
    <td> </td> 
   </tr> 
@@ -2366,9 +2377,9 @@ Vi rekommenderar att du kontrollerar att det här fungerar som du tänkt dig.
 >
 >* Workfront har nyligen släppt en ny version av sin abonnemangstjänst. Den nya versionen är inte en ändring av Workfront API, utan snarare en ändring av prenumerationsfunktionen för evenemang. Den här åtgärdsmodulen uppdaterar den händelsenyttolastversion som används för det här scenariot.
 >
->   Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
+>   Mer information om den nya händelseprenumerationsversionen finns i [Versionshantering för händelseteckning](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) i Workfront-dokumentationen
 >
->   Mer information om hur du bevarar dina Workfront Fusion-scenarier under händelseprenumerationsuppgraderingen, inklusive en webbinariainspelning, finns i [Bevara dina Fusion-scenarier under Evenemangsprenumerationer (V2-uppgradering)(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=sv)].
+>   Mer information om hur du bevarar dina Workfront Fusion-scenarier under händelseprenumerationsuppgraderingen, inklusive en webbinariainspelning, finns i [Bevara dina Fusion-scenarier under Evenemangsprenumerationer (V2-uppgradering)(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 Workfront [!UICONTROL Watch Events]-modulen utlöser scenarier baserat på en webkrok som skapar en händelseprenumeration i Workfront API. Händelseprenumerationen är en uppsättning data som avgör vilka händelser som skickas till webbkroken. Om du t.ex. har konfigurerat en [!UICONTROL Watch Events]-modul som bevakar problem, skickar händelseprenumerationen endast händelser som rör problem.
 
@@ -2418,7 +2429,7 @@ Följande operatorer är tillgängliga i Workfront > filtret Bevakningshändelse
 >
 >Om 100 utgåvor skapas per dag, men bara två av dem tilldelas till Ana, körs scenariot 100 gånger. 98 av körningarna stoppades vid filtret, men utlösarmodulen använder fortfarande data och utför åtgärder i alla körningar.
 
-Mer information om Workfront-händelseprenumerationer finns i [Vanliga frågor och svar - Händelseprenumerationer](https://experienceleague.adobe.com/sv/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
+Mer information om Workfront-händelseprenumerationer finns i [Vanliga frågor och svar - Händelseprenumerationer](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
 
 Mer information om webbhooks finns i [Direktutlösare (webbhooks) i Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
