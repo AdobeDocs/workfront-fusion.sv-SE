@@ -3,9 +3,10 @@ title: Visa kedjade scenarierelationer
 description: Du kan mappa relationerna mellan överordnade och underordnade scenarier.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: e7b12ec51474440990cc28996bc70fd97688b082
+exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
+source-git-commit: aee2b35919e240cce5346df6d94a610c34b26e88
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -73,7 +74,7 @@ Så här visar du relationskartan för ett kedjat scenario:
 
    * Rot: Scenariot är början av kedjan och har inget överordnat scenario.
    * Överordnad: Scenariot är ett överordnat scenario.
-   * Underordnat: Scenariot är ett underordnat scenario. Ett scenario kan vara både överordnat och underordnat.
+   * Underordnad: Scenariot är ett underordnat scenario. Ett scenario kan vara både överordnat och underordnat.
    * Aktuell: Detta är det scenario som användaren för närvarande visar. Detta är med andra ord det scenario från vilket användaren öppnade relationskartan.
 
    ![Scenariotaggar i relationskarta](assets/chained-scenario-maps-tag.png)
@@ -88,5 +89,6 @@ Så här visar du relationskartan för ett kedjat scenario:
 
    * Om du bara visar en del av kartan blir den delen mörkare på den förenklade kartan.
    * Det aktuella scenariot är markerat med blått på den förenklade kartan.
+1. Om du vill visa körningshistorik för kedjan klickar du på fliken Historik i vyrens övre del.
 
-
+   Du kan klicka på en historik för att visa specifika data som skickas mellan kedjade scenarier.
