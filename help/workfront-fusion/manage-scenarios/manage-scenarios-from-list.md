@@ -4,9 +4,10 @@ title: Hantera scenarier från scenarioområdet
 description: Det här avsnittet innehåller artiklar om hantering av scenarier i Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 8801b8c175b3cf6ed7b0dc98a8b3d269ca2bbd2b
+exl-id: 4e2f1bbb-fcd6-4724-bd0f-c028f3ea8d69
+source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -54,6 +55,9 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 1. Om du vill söka efter ett specifikt scenario börjar du skriva i sökfältet. Scenarier filtreras när du skriver.
 1. Om du vill aktivera eller inaktivera ett scenario letar du reda på scenariot i listan och växlar sedan till **Status** -kolumnen för det scenariot.
 1. Om du vill gå direkt till detaljsidan för ett scenario letar du reda på scenariot i listan och klickar sedan på **Öppna** på raden för det scenariot.
+1. Om du vill lägga till en beskrivning till ett scenario klickar du i kolumnen Beskrivning för det scenariot och anger en beskrivning.
+
+   Beskrivningar kan innehålla upp till 240 tecken.
 1. Om du vill klona ett scenario klickar du i kryssrutan på raden för det scenariot och väljer sedan **Klona** i fältet längst ned på skärmen.
 
    Mer information om kloningsscenarier finns i [Kopiera ett scenario genom kloning](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md#copy-a-scenario-by-cloning) i artikeln Kopiera moduler eller scenarier.
@@ -61,4 +65,3 @@ Mer information om informationen i den här tabellen finns i [Åtkomstkrav i dok
 1. Om du vill tilldela ett eller flera scenarier till en arbetarpool klickar du i kryssrutan bredvid varje scenario som du vill tilldela en pool och sedan på **Tilldela till arbetspool** i fältet längst ned på skärmen. Välj den arbetarpool som du vill tilldela scenarierna till.
 1. Om du vill ta bort ett scenario klickar du i kryssrutan bredvid det scenario som du vill ta bort och klickar sedan på **Ta bort** i fältet längst ned på sidan.
 1. Om du vill dölja listkolumner klickar du på ikonen **Kolumner** ![Kolumner](assets/glist-column.png) och markerar eller avmarkerar rutorna bredvid kolumnnamnen.
-
