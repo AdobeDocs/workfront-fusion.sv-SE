@@ -6,7 +6,7 @@ feature: Workfront Fusion
 hide: true
 hidefromtoc: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
-source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
+source-git-commit: 44f4fc5de94898e817172a2a83f922776086549f
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Den här åtgärdsmodulen bearbetar en fråga med språkmodellen och de MCP-serv
    <td> Välj en befintlig LLM-nyckel eller skapa en ny genom att klicka på <b>Lägg till</b> och ange följande information: 
      <ul>
        <li><b>Nyckelnamn</b>: Ange ett namn för den nya nyckeln.</li>
-       <li><b>LLM</b>: Välj den stora språkmodell som den här nyckeln är associerad med.</li>
+       <li><b>LLM</b>: Välj den stora språkmodell som den här nyckeln är kopplad till.</li>
        <li><b>Nyckel</b>: Ange eller mappa API-nyckeln för den valda modellen.</li>
        <li><b>Modell</b>: Välj den LLM-modell som nyckeln ska använda.</li>
        <li><b>Max antal token</b>: Ange eller mappa det maximala antalet token som LLM kan generera i sitt svar.<p>En variabel är vanligtvis lika med fyra tecken, eller 0,75 tecken i ett ord på engelska. "Hello world" skulle vara lika med två tokens, och "Authentication" skulle vara lika med två tokens.</li>
@@ -92,7 +92,7 @@ Den här åtgärdsmodulen bearbetar en fråga med språkmodellen och de MCP-serv
        <li><b>Anslutning</b>: Välj den anslutning som Fusion ska använda för att ansluta till MCP-servern.</li>
        <li><b>MCP-servervärd</b>: Ange URL:en för MCP-servern.</li>
        <li><b>MCP-servernamn</b>: Ange eller mappa ett namn för den här MCP-servern.</li>
-       <li><b>Huvuden</b>: Lägg till tillämpliga huvuden.</li>
+       <li><b>Sidhuvuden</b>: Lägg till tillämpliga rubriker.</li>
        <li><b>MCP-servertyp</b>: Välj servertyp.</li>
       </ul>
     </td> 
