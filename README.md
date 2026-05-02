@@ -7,4 +7,4 @@ ht-degree: 0%
 ---
 # ARKIVERAD
 
-Den här rapporten har migrerats till <https://github.com/Adobe-Enterprise-Docs/workfront-fusion.en>.
+Den här rapporten har migrerats till <https://github.com/Adobe-Enterprise-Docs/workfront-fusion.sv-SE>.
